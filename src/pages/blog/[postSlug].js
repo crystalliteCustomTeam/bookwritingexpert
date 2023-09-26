@@ -10,6 +10,10 @@ import Date from "@/lib/Date";
 //
 import arrow from '../../../public/images/blogBanners/right-arrow.webp'
 import logo from '../../../public/favicon.svg'
+import { useRouter } from 'next/router';
+import Router from 'next/router'
+
+
 
 
 export async function getStaticProps({ params }) {
@@ -49,14 +53,18 @@ export default function Post({ postData, featuredImageUrl }) {
 
     const [score, setScore] = useState('Submit Details');
 
+    const router = useRouter();
+    const currentRoute = router.pathname;
+
     const handleSubmit = async (e) => {
 
         e.preventDefault()
 
 
         const data = {
-            name: e.target.name.value,
-            email: e.target.email.value,
+            name: e.target.name1.value,
+            email: e.target.email1.value,
+            pageUrl:currentRoute
         }
 
         const JSONdata = JSON.stringify(data)
@@ -155,10 +163,10 @@ export default function Post({ postData, featuredImageUrl }) {
                                 <h5>Newsletter</h5>
                                 <form className="mt-4" onClick={handleSubmit}>
                                     <div>
-                                        <input type="text" name="name" id="name" placeholder="FULL NAME" />
+                                        <input type="text" name="name1" id="name" placeholder="FULL NAME" />
                                     </div>
                                     <div className="mt-3">
-                                        <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" />
+                                        <input type="email" name="email1" id="email" placeholder="EMAIL ADDRESS" />
                                     </div>
                                     <button type="submit" className={`${styles.arrowBtn} mt-4`}>
                                         <span>{score}</span>
