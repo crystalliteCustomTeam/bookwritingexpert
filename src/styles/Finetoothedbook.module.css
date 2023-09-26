@@ -1,0 +1,129 @@
+.fintop{
+  
+    padding: 1.25rem;
+    border-radius: 5px;
+    height: 334px;
+    box-shadow: 0px 0px 22px -5px rgb(0 0 0 / 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.fintop img{
+    display: block;
+    margin: 0 auto;
+}
+.fintop:hover{
+    background-color: #fc9e31;
+
+}
+.fintop:hover p{
+ 
+    color: #fff;
+}
+.fintop:hover h4{
+ 
+    color: #fff;
+}
+
+.fintopbookedit{
+    background-color: #fff;
+    border: 1px solid #17337c;
+    padding: 1.25rem;
+    border-radius: 5px;
+    height: 300px;
+}
+.fintopbookedit p{
+    height: 170px;
+}
+
+.btnfine{
+    border: 0 solid #319bd8;
+    padding: 10px 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #6a6a6a;
+    color: #fff;
+    box-shadow: 0 0 14px 7px #ddd;
+    text-decoration: none;
+    font-family: 'Poppins';
+
+}
+.btnfine:hover{
+    background: #16467d;
+    color: #fff;
+}
+
+
+
+
+
+.connect {
+    border: 1px solid #17337c;
+    padding: 1.25rem;
+    border-radius: 5px;
+    height: auto;
+}
+.connect h4 {
+    height: 150px;
+}
+@media (max-width:1280px)  {
+
+    .connect h4 {
+        height: 150px;
+    }
+    .connect {
+        width: 30%;
+        margin: 0 auto;
+    }
+    .fintop h4{
+        height: unset;
+    }
+    
+    .fintop p{
+        height: unset;
+    }
+
+    .fintop{
+     
+        height: unset;
+    }
+
+ }
+
+ @media (max-width:991px)  { 
+
+    .connect {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .connect h4 {
+        height: 80px;
+    }
+
+
+ }
+
+ @media (max-width:480px)  { 
+
+    .connect {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .connect h4 {
+        height: 80px;
+    }
+    .connect h4 {
+        height: auto;
+        padding-bottom: 4%;
+    }
+    .fintopbookedit p {
+        height: auto;
+        
+    }
+
+
+ }

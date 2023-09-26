@@ -1,0 +1,120 @@
+.ourportfolio{
+    padding-top: 5%;
+}
+
+.more{
+   
+    font-size: 15px;
+    padding: 11px 35px;
+    background-color: #ff9900;
+    border: 0;
+    color: #fff;
+    font-family: "Poppins";
+    text-decoration: none;
+    border-radius: 50px;
+    float: right;
+}
+.more:hover{
+    color: #fff;
+}
+.provide {
+    display: flex;
+    align-items: center;
+}
+.rate{
+    padding-bottom: 5%;
+    border-bottom: 1px solid #707070;
+    margin-top: 5%;
+}
+.rate1{
+    padding-bottom: 5%;
+    border-bottom: 1px solid #707070;
+  
+}
+
+
+.banner {
+    background-image: url(/images/ourportfolio/banner1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    background-position: center;
+    font-family: "Poppins";
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .free {
+    color: #fff;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 0px 0 0;
+    border: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    background: #FD9802;
+    width: 25%;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+.free:hover{
+    color: #fff;
+}
+.heading{
+    margin-top: -8%;
+    text-align: center;
+}
+
+.position {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+@media (max-width:991px)  {
+
+    .position {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        flex-wrap: wrap;
+    }
+
+
+    .banner {
+        background-image: unset;
+        padding-top: 12%;
+        padding-bottom: 6%;
+        height: unset;
+      }
+
+ }
+
+ @media (max-width:767px)  {
+
+    .position {
+        display: block;
+        justify-content: space-between;
+        margin-top: 5%;
+        flex-wrap: unset;
+    }
+
+    .rate {
+        text-align: center;
+    }
+    .rate1 {
+        text-align: center;
+    }
+
+    .more{
+        float: inherit;
+        top: 10px;
+    }
+
+  }

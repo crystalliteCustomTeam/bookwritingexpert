@@ -1,0 +1,94 @@
+.bookcontent{
+    box-shadow: 0 0 21px 3px #ddd;
+    padding: 6% 3% 10%;
+    align-items: center;
+    height: 320px;
+}
+
+.bookbadges{
+    padding-top: 100px;
+    
+}
+
+.quote{
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #ff9900;
+    border: 0;
+    color: #fff;
+    font-family: 'Poppins';
+    text-decoration: none;
+    cursor: pointer;
+}
+.quote:hover{
+    color:white
+}
+
+.bookbadges .formsaspire{
+    box-shadow:unset;
+    
+}
+
+.cross {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    background-color: #223235;
+    color: white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    cursor: pointer;
+ 
+}
+
+.marketing{
+    text-decoration: underline;
+}
+
+
+@media (max-width:1280px)  { 
+
+.bookcontent {
+    box-shadow: 0 0 21px 3px #ddd;
+    padding: 6% 3% 10%;
+    align-items: center;
+    height: 360px;
+}
+
+}
+
+@media (max-width:767px)  { 
+
+    .bookcontent {
+        box-shadow: 0 0 21px 3px #ddd;
+        padding: 6% 3% 10%;
+        align-items: center;
+        height: unset;
+    }
+
+    .bookcontent img{
+        margin-top: 8%;
+        display: block;
+        width: 145px;
+        height: auto;
+    }
+    
+    }
+
+
+    @media (max-width:480px)  { 
+
+        .bookcontent {
+            padding: 12% 3% 12%;
+        }
+    
+        
+        }

@@ -1,0 +1,139 @@
+.whybookpublishing{
+    background-image: url(/images/whybookpublishing/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+    font-family: 'Poppins';
+}
+
+.publicservices{
+    padding-top: 100px;
+    background-color: #f8f8f8;
+}
+
+.servicetitle{
+    background-color: #f8f8f8;
+    padding-top: 100px;
+}
+
+.posttitle:before {
+    position: absolute;
+    content: '';
+    background-image: url(/images/whybookpublishing/sideicon.png);
+    width: 46px;
+    height: 46px;
+    left: 0;
+    background-size: contain;
+    filter: brightness(0.4);
+
+}
+.posttitle {
+    position: relative;
+    padding-left: 10%;
+}
+
+
+.whybookpublishing h2{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+
+.keepit{
+    display: block;
+}
+.keepit li{
+    list-style: none;
+}
+
+.stillbookwritingservices{
+    background-color: #141d29;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    counter-reset: section;
+}
+
+.finetoothedbook{
+    padding-top: 100px;
+    background-color: #f8f8f8;
+    padding-bottom: 100px;
+   
+    
+}
+
+.alignment{
+    display: block;
+}
+.motive{
+    margin-top: 4%;
+    display: block;
+    cursor: pointer;
+    
+}
+.proper{
+    margin-top: 4%;
+}
+.design{
+    position: relative;
+    
+}
+.design:before{
+    position: absolute;
+    content: "";
+    background-color: #223235;
+    width: 7px;
+    height: 7px;
+    top: 9px;
+    left: -17px;
+    border-radius: 50px;
+}
+.design{
+    display: none;
+}
+.active1{
+    display:block;
+}
+.motive:hover {
+    text-decoration: underline;
+}
+
+.childline{
+    justify-content: space-between;
+}
+
+@media (max-width:991px)  {
+
+    .posttitle {
+        padding-left: 18%;
+    }
+    
+}
+@media (max-width:767px)  {
+
+    .posttitle {
+        padding-left: 11%;
+    }
+    
+}
+@media (max-width:480px)  {
+
+    .whybookpublishing p {
+        padding-top: 3%;
+    }
+
+    .posttitle {
+        padding-left: 18%;
+    }
+
+    .whybookpublishing{
+      
+
+        padding-bottom: 20px;
+
+    }
+    
+}
+
+

@@ -1,0 +1,39 @@
+.customersatisfaction{
+    background-color: #141d29;
+  
+}
+.customersatisfaction{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.customerbrandimg{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+    margin-bottom: 14px;
+    height: 65px;
+
+}
+@media (max-width:991px)  {
+
+    .customerbrandimg{
+        height: 45px;
+    
+    }
+}
+
+@media (max-width:767px)  {
+
+    .customersatisfaction{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .customerbrandimg{
+        height: unset;
+        text-align: center;
+        margin-top: 26px;
+    
+    }
+}

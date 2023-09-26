@@ -1,0 +1,206 @@
+.ourprocess{
+    padding-top: 100px;
+    font-family: 'Poppins';
+}
+.sidepic{
+    border: 1px solid #ff9900;
+    border-style: dashed;
+}
+
+.dataslotz1 {
+    position: relative;
+}
+
+.dataslotz1:after {
+    position: absolute;
+    content: '';
+    width: 0;
+	height: 0;
+    right: -108px;
+	border-top: 15px solid transparent;
+	border-right: 20px solid #ff9900;
+	border-bottom: 15px solid transparent;
+    top: 35%;
+}
+
+.dataslotz2 {
+    position: relative;
+}
+
+.dataslotz2:after {
+    position: absolute;
+    content: '';
+    width: 0;
+	height: 0;
+    right: -132px;
+    border-top: 15px solid transparent;
+	border-left: 25px solid #ff9900;
+	border-bottom: 15px solid transparent;
+    top: 35%;
+}
+
+
+.dataslot1 {
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    height: 200px;
+    margin-bottom: 2%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.dataslot2 {
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    height: 200px;
+    margin-bottom: 2%;
+    align-items: flex-end;
+    justify-content: center;
+}
+.dataslot{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cbcbcb;
+    padding: 6%;
+    height: 200px;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+.ourprocess h3{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+.dataslot1 h3{
+    font-size: 42px;
+    color: #FF9900;
+}
+.dataslot2 h3{
+    font-size: 42px;
+    color: #FF9900;
+}
+.imagesize{
+    width: 100%;
+    height: auto;
+}
+
+.sideline {
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:1400px)  { 
+
+    .dataslotz1:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -123px;
+        border-top: 15px solid transparent;
+        border-right: 20px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+
+    .dataslotz2:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -146px;
+        border-top: 15px solid transparent;
+        border-left: 25px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+
+ }
+
+ @media (max-width:1200px)  {
+
+
+    .dataslot{
+      
+        height: auto;
+        
+    }
+
+
+    .dataslotz1:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -92px;
+        border-top: 15px solid transparent;
+        border-right: 20px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+
+    .dataslotz2:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -116px;
+        border-top: 15px solid transparent;
+        border-left: 25px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+  }
+
+  @media (max-width:991px)  {
+
+    .dataslotz1:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -73px;
+        border-top: 15px solid transparent;
+        border-right: 20px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+
+    .dataslotz2:after {
+        position: absolute;
+        content: '';
+        width: 0;
+        height: 0;
+        right: -96px;
+        border-top: 15px solid transparent;
+        border-left: 25px solid #ff9900;
+        border-bottom: 15px solid transparent;
+        top: 35%;
+    }
+
+   }
+
+   @media (max-width:767px)  { 
+
+  
+
+    .dataslot {
+        height: auto;
+        margin-bottom: 6%;
+    }
+
+    .dataslotz2:after {
+      display: none;
+    }
+
+    .dataslotz1:after {
+        display: none;
+    }
+
+    .dataslot2 {
+      display: none;
+    }
+    .dataslot1 {
+        display: none;
+      }
+   }

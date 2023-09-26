@@ -1,0 +1,21 @@
+.major {
+  padding: 80px 0;
+  background-color: #fd7e14;
+}
+
+.major img {
+  transition: 0.7s;
+  filter: brightness(0) invert(1);
+}
+
+.major img:hover {
+  filter: brightness(1) invert(0);
+}
+
+/* ======= Media Query ======= */
+
+@media screen and (max-width: 991px) {
+  .major {
+    display: none;
+  }
+}

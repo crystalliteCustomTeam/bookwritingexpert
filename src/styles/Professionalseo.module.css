@@ -1,0 +1,54 @@
+.professionalseo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cardbody{
+    padding: 1.25rem;
+    height: 315px;
+}
+.blog{
+    box-shadow: 0 0 21px 3px #ddd;
+}
+.worked{
+    margin-top: 2%;
+    justify-content: center;
+
+}
+
+@media (max-width:1200px)  {
+
+
+    .cardbody {
+        padding: 1.25rem;
+        height: 315px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .blog img{
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width:767px)  {
+
+
+    .cardbody{
+        height: 200px;
+    }
+
+}
+
+@media (max-width:480px)  {
+
+
+    .cardbody{
+        height: 380px;
+    }
+
+  
+}

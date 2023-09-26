@@ -1,0 +1,93 @@
+.aspiring{
+    font-family: 'Poppins';
+}
+
+
+.middle{
+    align-items: center;
+}
+
+
+.btn1{
+    background-color: #FF9900;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 1em 1em;
+    border: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    transition: color 1s;
+    border: 2px solid #EE9D2D;
+    color: #fff ;
+    width: 100%;
+    font-family: 'Poppins'; 
+    text-decoration: none;
+}
+
+.btn1:hover{
+    animation: stripes-move 1s infinite linear;
+    
+    border: 2px solid #EE9D2D;
+    color: #223235;
+}
+.btn2:hover{
+    color: #223235;
+}
+.btn2{
+    background-color: #fff0;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 1em 1em;
+    border: none;
+    border-radius: 50px;
+    text-transform: capitalize;
+    transition: color 1s;
+    color: #223235;
+    border: 2px solid #223235;
+    width: 100%;
+    font-family: 'Poppins'; 
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+
+@media (max-width:1200px)  {
+    .btn1{
+      display: block;
+      text-align: center;
+    }
+    .btn2{
+        display: block;
+        margin-left: 0%;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+ }
+
+@media (max-width:991px)  {
+    .btn1{
+        padding: 1em 1em;
+    }
+    .btn2{
+        padding: 1em 1em;
+    }
+    .stopworrying {
+        background-position: top;
+    }
+
+ }
+
+ @media (max-width:767px)  {
+    .btn1{
+     
+        display: block;
+    
+    }
+    .btn2{
+        display: block;
+        margin-left: 0%;
+        margin-top: 2%;
+    }
+
+ }

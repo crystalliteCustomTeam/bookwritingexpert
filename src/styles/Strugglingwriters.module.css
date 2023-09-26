@@ -1,0 +1,26 @@
+.strugglingwriters{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+.strugglingwriters h2{
+    margin: 0 auto;
+}
+.strugglingwriters p{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.aligncenter{
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:767px)  { 
+
+    .aligncenter img{
+        margin: 0 auto;
+        display: block;
+    }
+
+
+ }

@@ -1,0 +1,57 @@
+.onestepsolutions{
+    background-color: #fff;
+    padding-top: 0px;
+
+}
+
+.onestepsolutions h2{
+
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 900px;
+    margin: 0 auto;
+ 
+}
+
+.onestepsolutions h2 a:hover{
+    color: #fc9e31;
+}
+.join{
+    max-width: 100%;
+    margin-top: 5%;
+    display: block;
+}
+.wrtingtext{
+    height: 160px;
+}
+
+
+@media (max-width:991px)  { 
+
+    .onestepsolutions h2{
+
+        font-size: 40px;
+        line-height: 44px;
+        font-weight: bold;
+        color: #223235;
+        max-width: 100%;
+        margin: 0 auto;
+     
+    }
+
+ }
+@media (max-width:480px)  { 
+
+    .onestepsolutions h2{
+
+        font-size: 25px;
+        line-height: unset;
+        font-weight: bold;
+        color: #223235;
+        max-width: 100%;
+        margin: 0 auto;
+     
+    }
+
+ }
+

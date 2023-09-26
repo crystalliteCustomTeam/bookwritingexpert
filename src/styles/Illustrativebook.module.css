@@ -1,0 +1,98 @@
+.plust {
+    background-color: #141D29;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+}
+.discuss{
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: unset;
+    border: 1px solid #ff9900;
+    font-family: "Poppins";
+}
+.discuss:hover{
+    color: #fff;
+}
+.homenumer:hover{
+    color: #fff;
+}
+.homenumer{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 18px;
+    border: 2px solid #ff9900;
+    color: #fff;
+    text-decoration: unset;
+    font-family: "Poppins";
+    border-radius: 50px;
+    margin-left: 10px;
+
+}
+.cartoon{
+    position: relative;
+}
+.cartoon img{
+    position: absolute;
+    top: -100px;
+    max-width: 110%;
+   
+     
+}
+.cartoon1{
+    position: relative;
+}
+.cartoon1 img{
+    position: absolute;
+    top: -130px;
+   
+     
+}
+.bookspost {
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 991px) {
+
+   
+
+    .cartoon1 img {
+        position: unset;
+        margin-top: 5%;
+      }
+      .cartoon img {
+        position: unset;
+        margin-top: 5%;
+        max-width: 100%;
+      }
+    .cartoon1  {
+        text-align: center;
+      }
+      .cartoon {
+        text-align: center;
+      }
+
+
+ }
+
+ @media (max-width: 480px) {
+    .discuss {
+        display: block;
+        text-align: center;
+    }
+    .homenumer{
+        margin-left: unset;
+        display: block;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+  }
+
+
+

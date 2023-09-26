@@ -1,0 +1,152 @@
+.formfree{
+    padding: 10px 0;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    margin: 0;
+    background: rgba(0,0,0,0);
+    border-bottom: 1px solid #a6a6a6;
+    width: 100%;
+      font-family: 'Poppins'; 
+   
+}
+.formsaspire{
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px #ddd;
+    padding: 7%;
+      font-family: 'Poppins'; 
+}
+.blogformsaspire{
+    background-color: #f2f2f2;
+    padding: 7%;
+    margin-top: 25%;
+    margin-left: 10%;
+      font-family: 'Poppins'; 
+    padding-top: 15%;
+    position: sticky;
+    top: 10%;
+    margin-bottom: 10%;
+  
+}
+
+.blogsays{
+    background-color: #fff;
+    padding: 30px;
+}
+
+
+.label {
+    color: #223235;
+    margin-top: 12px;
+    font-size: 14px;
+      font-family: 'Poppins'; 
+
+}
+
+.formfree::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+    color: #a6a6a6;
+}
+
+.freebtn{
+    border: 0;
+    padding: 12px 30px;
+    border-radius: 0;
+    background-color: #FF9900;
+    color: #fff;
+    text-decoration: unset;
+    border: 1px solid #FF9900;
+    border-radius: 50px;
+    font-family: 'Poppins';
+    width: 100%;
+    margin-top: 2%;
+}
+.middle{
+    align-items: center;
+}
+
+.freediscuss{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 12px 34px;
+    border: 2px solid #FF9900;
+    color: #223235;
+      font-family: 'Poppins'; 
+    text-decoration: none;
+    border-radius: 50px;
+}
+.freediscuss:hover{
+    background-color:#FF9900;
+    color: #fff;
+}
+.freehomenumer {
+    border: 0;
+    padding: 12px 34px;
+    border-radius: 0;
+    background-color:#FF9900;
+    border: 2px solid #FF9900;
+    color: #fff;
+    margin-left: 3%;
+      font-family: 'Poppins'; 
+    text-decoration: none;
+    border-radius: 50px;
+}
+.freehomenumer:hover{
+    color: white;
+    background-color: #223235;
+}
+
+.popquote{
+    padding: 10% 8%;
+}
+.popquote h4{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+@media (max-width:1200px)  { 
+
+    .freediscuss {
+       display: block;
+       text-align: center;
+    }
+    .freehomenumer{
+        display: block;
+        margin-left: 0%;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+}
+@media (max-width:767px)  {
+    .blogsays {
+        margin-top: 15%;
+    }
+
+    .formsaspire{
+        margin-top: 9%;
+    }
+
+    .blogformsaspire{
+      
+
+     margin-top: unset; 
+     margin-left: unset;
+     padding-top: 15%;  
+     
+
+   
+      
+    }
+
+
+}
+
+@media (max-width:480px)  {
+
+    .blogsays {
+        margin-top: 20%;
+    }
+
+ }

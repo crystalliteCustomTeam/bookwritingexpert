@@ -1,0 +1,249 @@
+.innerBlog {
+  padding-top: 175px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  font-family: "Poppins";
+}
+
+.innerBlog a {
+  text-decoration: none;
+}
+
+.contentHeading {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.detailDate {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.detailDate span {
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contentHeading h1 {
+  color: #000;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.contentBody a {
+  color: #000;
+}
+
+.contentBody a:hover {
+color: black;
+}
+
+.contentBody p,
+.contentBody li {
+  margin-bottom: 14px;
+}
+
+.contentBody h2,
+.contentBody h3,
+.contentBody h4,
+.contentBody h5 {
+  color: #000;
+  font-weight: 700;
+  margin: 30px 0 15px;
+}
+
+.contentBody h2 {
+  font-size: 26px;
+  line-height: 36px;
+}
+.contentBody h3 {
+  font-size: 22px;
+  line-height: 32px;
+}
+.contentBody h4,
+.contentBody h5 {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.contentBody ul li,
+.contentBody ol li,
+.contentBody p {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.contentBody ul li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.contentBody ul li::before {
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  color: black;
+}
+
+.ctaBtn {
+  font-size: 12px;
+  padding: 15px 10px;
+  border: unset;
+  color: #000;
+  display: block;
+  max-width: 100%;
+  min-width: 230px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  box-shadow: black
+}
+
+.ctaImg {
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
+    url(../../public/images/blogBanners/cta.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.platForm .subTitle {
+  color: #5e5c5c;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.platForm .title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.platForm .para {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.newsLetter {
+  border: 1px solid #a8a8a8;
+  padding: 30px 20px;
+}
+
+.newsLetter h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.newsLetter h5 {
+  color: #000;
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.newsLetter form input {
+  border: 0;
+  width: 100%;
+  color: #000;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 0;
+  letter-spacing: 1px;
+  border-bottom: 1px solid;
+}
+
+.newsLetter form ::placeholder {
+  color: #a8a8a8;
+  font-weight: 700;
+}
+
+.arrowBtn {
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+}
+
+.newsLetter .arrowBtn {
+  border: 0;
+  font-size: 15px;
+  background-color: #fff;
+}
+
+.arrowBtn > span {
+  margin-right: 8px;
+  transition: 0.4s;
+}
+
+.arrowBtn:hover > span {
+  margin-right: 30px;
+}
+
+.arrowBtn > img {
+  display: inline-block;
+  margin: unset;
+}
+
+/* ============================================= */
+
+@media screen and (max-width: 1200px) {
+
+  .newstyleimg{
+    width: 100%;
+    height: auto;
+  }
+  .ctaBtn {
+    max-width: 100%;
+    min-width: 150px;
+}
+  
+
+}
+@media screen and (max-width: 991px) {
+  .platForm .subTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .platForm .para {
+    font-size: 16px;
+  }
+
+  .arrowBtn {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,48 @@
+.buildyourownidentity{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.lets{
+    border: 0;
+    padding: 12px 30px;
+    border-radius: 0;
+    background-color: #FF9900;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins';
+    border-radius: 50px;
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.lets:hover{
+    color: #fff;
+}
+
+.media{
+    align-items: center;
+}
+
+@media (max-width:1200px)  {
+
+    .lets {
+     
+        padding: 12px 10px;
+        width: 58%;
+        font-size: 9px;
+    }
+
+}
+
+@media (max-width:480px)  {
+
+    .lets {
+     
+        padding: 12px 10px;
+        width: 100%;
+        font-size: 13px;
+    }
+
+}

@@ -1,0 +1,27 @@
+.choosebook{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins';
+}
+
+.whytext{
+
+    max-width: 1053px;
+    margin: 0 auto;
+}
+.whychooseimge{
+    text-align: center;
+}
+
+
+@media (max-width:480px)  { 
+
+    .choosebook{
+        padding-top: 100px;
+       padding-bottom: 100px;
+    }
+    .choosebook p {
+        padding-bottom: 30px;
+    }
+
+}

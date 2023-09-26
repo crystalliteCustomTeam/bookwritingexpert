@@ -1,0 +1,28 @@
+.professionalghostwriter{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.writercenter{
+    justify-content: center;
+    align-items: center;
+}
+
+.professionalghostwriter h2{
+    font-size: 50px;
+    line-height: 44px;
+    font-weight: 700;
+    color: #223235;
+    font-family: 'Poppins';
+}
+.professionalghostwriter h2 a:hover{
+    color: #fc9e31;
+}
+
+@media (max-width:991px)  {  
+
+    .professionalghostwriter h2 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+}

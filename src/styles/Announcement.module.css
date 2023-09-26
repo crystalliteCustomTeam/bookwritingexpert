@@ -1,0 +1,18 @@
+.announcement{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+
+@media (max-width:480px)  {
+.announcement a{
+    font-size: 13px;
+    line-break: anywhere;
+
+}
+
+.announcement ul{
+    padding-left: unset;
+}
+}

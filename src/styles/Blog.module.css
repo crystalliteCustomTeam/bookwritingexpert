@@ -1,0 +1,71 @@
+.bloglisting {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bloglist {
+    box-shadow: 0 0 21px 3px #ddd;
+    height: 470px;
+    
+}
+
+.cardbodylist {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+
+.cardbodylist h3{
+    font-family: "Poppins", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.blogbtn{
+    border: 0;
+    padding: 12px 30px;
+    border-radius: 0;
+    background-color: #ff9900;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins';
+   min-width: 200px;
+   width: fit-content;
+   text-align: center;
+}
+.blogbtn:hover {
+  color: #fff;
+  background-color: #223235;
+}
+
+.cardbodylist h5 {
+  height: 160px;
+}
+
+@media (max-width: 991px) {
+
+  .cardbodylist h3 {
+    font-size: 16px;
+}
+
+
+.blogbtn {
+  min-width: 100%;
+}
+
+ }
+
+@media (max-width: 767px) {
+  .cardbodylist h5 {
+    height: auto;
+    margin-bottom: 6%;
+  }
+  .cardbodylist {
+    padding: 1.25rem;
+    height: auto;
+    padding-bottom: 7%;
+  }
+}

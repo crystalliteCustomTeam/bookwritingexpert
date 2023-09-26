@@ -1,0 +1,37 @@
+.experts {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #24303E;
+  font-family: "Poppins";
+}
+
+.expertdiscuss {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 30px;
+  background-color: #fff;
+  border: 0;
+  color: #223235;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 23px;
+  border-radius: 50px;
+}
+.discuss1 {
+  text-decoration: none;
+  color: #223235;
+  text-transform: uppercase;
+  font-family: "Poppins";
+}
+.expertnum a {
+  text-decoration: none;
+}
+.expertnum a:hover {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .experts p {
+    font-size: 14px;
+  }
+}

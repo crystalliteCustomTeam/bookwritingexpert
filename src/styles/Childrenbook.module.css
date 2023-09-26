@@ -1,0 +1,96 @@
+.number:before{
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 5.5em;
+    font-weight: 900;
+    color: #e9e8e8;
+    margin-top: -70px;
+    margin-left: -63px;
+}
+
+.number1{
+    position: relative;
+}
+.number1:before{
+    counter-increment: section;
+    content: counter(section);
+    position: absolute;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    opacity: .1;
+    font-size: 13.75em;
+    margin-top: -17%;
+    left: 0;
+    right: 0;
+   
+}
+
+
+
+.number{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+
+.number1 h5 {
+  
+    height: 200px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+}
+
+
+
+@media (max-width:1280px)  {
+
+    .number:before {
+     
+        font-size: 2.5em;
+        margin-top: -54px;
+        margin-left: unset;
+    }
+
+   
+}
+
+
+
+
+
+@media (max-width:991px)  {
+    .number1:before {
+        font-size: 10.75em;
+    }
+}
+@media (max-width:767px)  {
+
+    .number:before {
+        display: none;
+    }
+    .number1 h5 {
+    max-width: unset;
+    margin: 0 auto;
+    height: unset;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    }
+    .number1:before {
+        display: none;
+    }
+    .number1 .stilltext{
+        max-width: unset;
+    }
+
+}
+
+
+

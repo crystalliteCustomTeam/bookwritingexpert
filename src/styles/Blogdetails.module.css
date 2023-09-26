@@ -1,0 +1,63 @@
+.blogbg{
+    background-color: #141d29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.above{
+    padding-top: 170px;
+    padding-bottom: 70px;
+}
+
+
+
+/* .tableofcontent{
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    margin-bottom: 5%;
+    margin-top: 10%;
+    padding-left: 10%;
+}
+.understand li a{
+    font-size: 17px;
+    color: #223235;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: 'Poppins';
+  
+}
+.understand li {
+    list-style: none;
+  
+}
+.understand {
+    padding-left: 10%;
+}
+
+.understand li {
+    margin-bottom: 5%;
+}
+
+@media (max-width:991px)  {
+    .above {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width:767px)  {
+    .understand {
+        padding-left: unset;
+    }
+    .tableofcontent{
+     
+        padding-left:unset;
+        margin-top: unset;
+    }
+   
+
+} */

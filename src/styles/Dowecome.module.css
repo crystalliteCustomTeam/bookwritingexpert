@@ -1,0 +1,145 @@
+.subheading {
+  text-decoration: underline;
+}
+
+.Dowecome {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f1f1f1;
+}
+.Dowecome .middle {
+  align-items: center;
+}
+.publishmybook .middle {
+  align-items: center;
+}
+.publishmybook {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #f8f8f8;
+}
+.asnumber:hover {
+  background-color: #223235;
+}
+.asdiscuss:hover {
+  background-color: #16467d;
+  color: #fff;
+}
+
+.asnumber {
+  border: 0;
+  padding: 12px 30px;
+  border-radius: 0;
+  background-color: #16467d;
+  color: #fff;
+  text-decoration: unset;
+  margin-left: 10px;
+  border: 1px solid #16467d;
+  font-family: "Poppins";
+}
+.asnumber:hover {
+  color: white;
+}
+.asdiscuss {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 12px 30px;
+  border: 2px solid #16467d;
+  color: #223235;
+  text-decoration: unset;
+  font-family: "Poppins";
+}
+.imgshowdow {
+  box-shadow: 0 0 21px 3px #ddd;
+}
+.btn1 {
+  background-color: #ff9900;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 50px;
+  text-transform: capitalize;
+  transition: color 1s;
+  border: 2px solid #ee9d2d;
+  color: #fff;
+  width: 100%;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+.btn1:hover {
+  animation: stripes-move 1s infinite linear;
+
+  border: 2px solid #ee9d2d;
+  color: #223235;
+}
+.btn2:hover {
+  color: #223235;
+}
+.btn2 {
+  background-color: #fff0;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 1em 1em;
+  border: none;
+  border-radius: 50px;
+  text-transform: capitalize;
+  transition: color 1s;
+  color: #223235;
+  border: 2px solid #223235;
+  width: 100%;
+  font-family: "Poppins";
+  text-decoration: none;
+  margin-left: 3%;
+}
+
+.cta {
+  padding: 100px 0;
+  background-image: url(/images/stopworrying/worrying.webp);
+}
+
+.cta .dowemargin {
+  text-align: center;
+}
+
+.cta .btn2 {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 991px) {
+  .btn1 {
+    display: block;
+    text-align: center;
+  }
+  .btn2 {
+    display: block;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .asnumber {
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 1%;
+  }
+  .asdiscuss {
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .imgshowdow {
+    margin-top: 5%;
+  }
+  .publishmybook .middle {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .dowemargin {
+    margin-top: 5%;
+  }
+}

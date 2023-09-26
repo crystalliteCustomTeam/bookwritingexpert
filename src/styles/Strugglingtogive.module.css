@@ -1,0 +1,132 @@
+.strugglingtogive {
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+
+}
+.slow{
+    display: flex;
+    gap: 50px;
+}
+.btnget1 {
+    background-color: #fc9e31;
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 1em 1em;
+    border: none;
+    border: 2px solid #fc9e31;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: color 1s;
+    color: #fff;
+    font-family: 'Poppins';
+    border-radius: 50px;
+
+}
+.btnget2{
+    background-color: rgba(255,255,255,0);
+    font: inherit;
+    letter-spacing: inherit;
+    padding: 1em 1.5em;
+    border: none;
+    border: 2px solid #223235;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: color 1s;
+    color: #223235;
+    font-family: 'Poppins';
+    margin-left: 3%;
+    border-radius: 50px;
+}
+.btnget2:hover {
+    animation: stripes-move 1s infinite linear;
+    background-color: #fc9e31;
+    border: 2px solid #fc9e31;
+    color: #fff;
+}
+.rightcolor{
+    color: #223235;
+}
+.slow ul li{
+    list-style: none;
+}
+
+.topper{
+    position: relative;
+    right: 54px;
+    top: 107px;
+}
+
+.forent{
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1920px)  {
+    .topper{
+        position: relative;
+        right: 0px;
+        top: 70px;
+    }
+    
+}
+
+@media (max-width:1920px)  {
+    .topper{
+        position: relative;
+        right: 0px;
+        top: 107px;
+    }
+    
+}
+
+@media (max-width:1200px)  {
+    .slow{
+        display: unset;
+        gap: 0px;
+    }
+    .slow ul{
+        padding-left: 0;
+    }
+
+    .btnget2{
+        margin-left: unset;
+        width: 100%;
+        margin-top: 3%;
+    }
+    .btnget1{
+   
+        width: 100%;
+        margin-top: 1%;
+    }
+
+}
+
+@media (max-width:767px)  { 
+
+    .topper{
+
+        right: 0;
+        top: 10px;
+    }
+
+}
+@media (max-width:480px)  { 
+
+    .topper{
+    margin-top: 15%;
+    }
+
+    .btnget2{
+     
+        margin-top: 3%;
+    }
+    .btnget1{
+   
+ 
+        margin-top: 3%;
+    }
+
+}

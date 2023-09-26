@@ -1,0 +1,67 @@
+.strugglingwriters{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+.strugglingwriters h2{
+    margin: 0 auto;
+}
+.strugglingwriters p{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.portfolio {
+    border: 0;
+    padding: 12px 20px;
+    border-radius: 50px;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: unset;
+    border: 1px solid #ff9900;
+    font-family: "Poppins";
+    width: 20%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.portfolio:hover{
+    color: #fff;
+}
+
+
+.aligncenter{
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:991px)  { 
+
+    .portfolio {
+        width: 30%; 
+    }
+
+
+ }
+@media (max-width:767px)  { 
+
+    .portfolio {
+        width: 50%;
+    }
+
+    .aligncenter img{
+        margin: 0 auto;
+        display: block;
+    }
+
+
+ }
+@media (max-width:480px)  { 
+
+    .portfolio {
+        width: 100%;
+    }
+
+ 
+
+
+ }
