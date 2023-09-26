@@ -4,9 +4,15 @@ import { useState } from "react";
 import Router from 'next/router'
 import axios from "axios";
 
+import { useRouter } from 'next/router';
+
 const Signup = (props) => {
 
   const [score, setScore] = useState('Best time to jump on a quick call:');
+
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   const handleSubmit = async (e) => {
 
@@ -17,6 +23,7 @@ const Signup = (props) => {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
+      pageUrl:currentRoute,
       message: e.target.message.value,
     }
 
