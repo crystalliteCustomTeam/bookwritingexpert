@@ -54,7 +54,7 @@ const Signup = (props) => {
       <p className='font-f t-center'> <em>Drop your details, and we'll soon respond to your inquiry!</em> </p>
       <form onSubmit={handleSubmit}>
         <input type="text" className={styles.nametext} required name="name" placeholder="Full Name:" />
-        <input type="email" className={styles.nametext} required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Email Address:" />
+        <input type="email" className={styles.nametext} required name="email"   placeholder="Email Address:" />
         <input type="number" className={styles.nametext} required name="phone" placeholder="Phone Number:" />
         <textarea required className={styles.textareanew} name="message" cols="40" rows="10" placeholder="Your project brief:"></textarea>
         <button className={styles.freebtn} type="submit">{score} </button>

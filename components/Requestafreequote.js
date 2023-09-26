@@ -8,20 +8,29 @@ import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import Router from 'next/router';
 import axios from "axios";
+import { useRouter } from 'next/router';
+
 
 const Requestafreequote = () => {
 
 
   const [score, setScore] = useState('Submit');
 
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const handleSubmit = async (e) => {
 
-    e.preventDefault()
+    e.preventDefault();
+
+ 
 
 
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
+      pageUrl:currentRoute,
       phone: e.target.phone.value,
     }
 
@@ -62,7 +71,7 @@ const Requestafreequote = () => {
             <Row>
               <Col md={4}> <input type="text" className={styles.formfree} required name="name" placeholder='Name' /></Col>
 
-              <Col md={4}>  <input type="email" className={styles.formfree} required name="email" placeholder='Email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /></Col>
+              <Col md={4}>  <input type="email" className={styles.formfree} required name="email" placeholder='Email'   /></Col>
 
               <Col md={4}>   <input type="number" className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" /> </Col>
             </Row>

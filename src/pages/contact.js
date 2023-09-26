@@ -6,10 +6,36 @@ import Head from 'next/head'
 import Router from 'next/router';
 import axios from "axios";
 import { useState } from "react";
+import { useRouter } from 'next/router';
 
 const Contact = () => {
 
     const [score, setScore] = useState('Submit Form');
+    const [selectedOption3, setSelectedOption3] = useState('');
+
+
+    const [checkboxes, setCheckboxes] = useState([]);
+    const handleOptionChange3 = (e) => {
+      const { value, checked } = e.target;
+  
+      if (checked) {
+        setCheckboxes([...checkboxes, value]);
+      } else {
+        setCheckboxes(checkboxes.filter((checkbox) => checkbox !== value));
+      }
+  
+      
+    };
+
+
+
+    // const handleOptionChange3 = (e) => {
+    //     setSelectedOption3(e.target.value);
+
+    //   };
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
 
     const handleSubmit = async (e) => {
 
@@ -18,11 +44,12 @@ const Contact = () => {
 
         const data = {
             name: e.target.name.value,
-            email: e.target.last.value,
+            email: e.target.email.value,
             phone: e.target.phone.value,
             zip: e.target.zip.value,
-            checknow: e.target.checknow.value,
+            checknow: checkboxes,
             message: e.target.message.value,
+            pageUrl:currentRoute,
         }
 
         const JSONdata = JSON.stringify(data)
@@ -31,7 +58,7 @@ const Contact = () => {
 
 
 
-        fetch('api/quote/route', {
+        fetch('api/contact/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -244,7 +271,10 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Ghostwriting--I want to hire a professional to write or rewrite my book' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            checked={checkboxes.includes('Ghostwriting--I want to hire a professional to write or rewrite my book')}
+                                            onChange={handleOptionChange3}
+                                            value='Ghostwriting--I want to hire a professional to write or rewrite my book' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Ghostwriting--I want to hire a professional to write or rewrite my book
                                             </label>
@@ -252,7 +282,11 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Editing--I have written a manuscript and would like a professional to review and/or edit it' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                           
+                                              checked={checkboxes.includes('Editing--I have written a manuscript and would like a professional to review and/or edit it')}
+                                              onChange={handleOptionChange3}
+                                            value='Editing--I have written a manuscript and would like a professional to review and/or edit it' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Editing--I have written a manuscript and would like a professional to review and/or edit it
                                             </label>
@@ -261,7 +295,11 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Book Coaching--I want to write my book on my own, but with the help of a professional to guide me' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            
+                                             checked={checkboxes.includes('Book Coaching--I want to write my book on my own, but with the help of a professional to guide me')}
+                                             onChange={handleOptionChange3}
+                                            value='Book Coaching--I want to write my book on my own, but with the help of a professional to guide me' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Book Coaching--I want to write my book on my own, but with the help of a professional to guide me
                                             </label>
@@ -269,7 +307,11 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                              
+                                               checked={checkboxes.includes('Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes')}
+                                               onChange={handleOptionChange3}
+                                            value='Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes
                                             </label>
@@ -281,7 +323,10 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Book Proposal' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            checked={checkboxes.includes('Book Proposal')}
+                                            onChange={handleOptionChange3}
+                                            value='Book Proposal' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Book Proposal
                                             </label>
@@ -289,7 +334,10 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Beta Reader Services' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                             checked={checkboxes.includes('Beta Reader Services')}
+                                             onChange={handleOptionChange3}
+                                            value='Beta Reader Services' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Beta Reader Services
                                             </label>
@@ -298,7 +346,10 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Other' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            checked={checkboxes.includes('Other')}
+                                            onChange={handleOptionChange3}
+                                            value='Other' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Other
                                             </label>
@@ -316,7 +367,10 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Business' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                             checked={checkboxes.includes('Business')}
+                                             onChange={handleOptionChange3}
+                                            value='Business' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Business
                                             </label>
@@ -324,7 +378,10 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Memoir/Biography' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                               checked={checkboxes.includes('Memoir/Biography')}
+                                               onChange={handleOptionChange3}
+                                            value='Memoir/Biography' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Memoir/Biography
                                             </label>
@@ -333,7 +390,10 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Health' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                               checked={checkboxes.includes('Health')}
+                                               onChange={handleOptionChange3}
+                                            value='Health' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Health
                                             </label>
@@ -341,7 +401,10 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Self-Help/Personal Development' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                              checked={checkboxes.includes('Self-Help/Personal Development')}
+                                              onChange={handleOptionChange3}
+                                            value='Self-Help/Personal Development' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Self-Help/Personal Development
                                             </label>
@@ -353,7 +416,10 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Fiction' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                              checked={checkboxes.includes('Fiction')}
+                                              onChange={handleOptionChange3}
+                                            value='Fiction' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Fiction
                                             </label>
@@ -361,7 +427,10 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='General Nonfiction' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                             checked={checkboxes.includes('General Nonfiction')}
+                                             onChange={handleOptionChange3}
+                                            value='General Nonfiction' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 General Nonfiction
                                             </label>
@@ -370,7 +439,10 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Children’s' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                                checked={checkboxes.includes('Children’s')}
+                                                onChange={handleOptionChange3}
+                                            value='Children’s' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Children’s
                                             </label>
@@ -378,7 +450,10 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow' value='Others' />
+                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                             checked={checkboxes.includes('Others')}
+                                             onChange={handleOptionChange3}
+                                            value='Others' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Others
                                             </label>

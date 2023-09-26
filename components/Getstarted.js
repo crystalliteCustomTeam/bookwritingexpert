@@ -5,14 +5,23 @@ import axios from "axios";
 import { useState } from "react";
 import { Row, Col } from 'react-bootstrap';
 import Router from 'next/router'
+import { useRouter } from 'next/router';
+
+
 const Getstarted = (props) => {
 
 
   const [score, setScore] = useState('SUBMIT');
 
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
   const handleSubmit = async (e) => {
 
     e.preventDefault()
+
+    
 
 
     const data = {
@@ -21,6 +30,7 @@ const Getstarted = (props) => {
       phone: e.target.phone.value,
       services: e.target.services.value,
       message: e.target.message.value,
+      pageUrl:currentRoute,
     }
 
     const JSONdata = JSON.stringify(data)
@@ -68,7 +78,7 @@ const Getstarted = (props) => {
               <input type="text" className={styles.formfree} required name="name" placeholder="Enter Your Name" />
             </Col>
             <Col md={6}>
-              <input type="email" className={styles.formfree} required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter Your Email" />
+              <input type="email" className={styles.formfree} required name="email"   placeholder="Enter Your Email" />
             </Col>
 
 

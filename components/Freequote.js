@@ -4,11 +4,16 @@ import Link from 'next/link'
 import axios from "axios";
 import { useState } from "react";
 import Router from 'next/router'
+import { useRouter } from 'next/router';
 
 const Freequote = (props) => {
 
 
   const [score, setScore] = useState('Submit');
+
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
 
   const handleSubmit = async (e) => {
@@ -21,6 +26,7 @@ const Freequote = (props) => {
       email: e.target.email.value,
       phone: e.target.phone.value,
       message: e.target.message.value,
+      pageUrl:currentRoute,
     }
 
     const JSONdata = JSON.stringify(data)
@@ -62,7 +68,7 @@ const Freequote = (props) => {
           <input type="text" className={styles.formfree} required name="name" placeholder="Your name..." />
 
           <label className={styles.label}>Email Address*</label>
-          <input type="email" className={styles.formfree} required name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Type Email Address" />
+          <input type="email" className={styles.formfree} required name="email"   placeholder="Type Email Address" />
 
           <label className={styles.label}>Phone *</label>
           <input type="number" className={styles.formfree} required name="phone" placeholder="123-456-7890" />
