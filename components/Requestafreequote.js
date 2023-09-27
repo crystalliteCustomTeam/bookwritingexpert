@@ -64,7 +64,7 @@ const Requestafreequote = () => {
 
   return (
     <>
-      <div className={styles.freequote}>
+      <div className={styles.freequote} id='footercontact'>
         <Container>
           <h2 className="fw700 font50 color-blue font-f t-center mb-3 pt-5 mt-5">Request A Free Quote</h2>
           <form className={styles.formalign} onSubmit={handleSubmit}>

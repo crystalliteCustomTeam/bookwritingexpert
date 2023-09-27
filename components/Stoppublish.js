@@ -66,8 +66,8 @@ const Stoppublish = (props) => {
 
             <div className={styles.aligntop}>
 
-              <Link href='#' className={styles.btn1}> {props.btn1} </Link>
-              <Link href='#' className={styles.btn2}> {props.btn2} </Link>
+              <Link href='#footercontact' className={styles.btn1}> {props.btn1} </Link>
+              <Link href='javascript:$zopim.livechat.window.show();' className={styles.btn2}> {props.btn2} </Link>
               <Link href='tel:2132893888' className={styles.btn2}>(213) 289 3888</Link>
 
             </div>
