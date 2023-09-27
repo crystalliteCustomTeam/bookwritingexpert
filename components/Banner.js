@@ -131,7 +131,7 @@ const Banner = (props) => {
 
                 {props.discuss ?
                   <div className='mt-5'>
-                    <Link className={styles.discuss} href="#">{props.discuss}</Link>
+                    <Link className={styles.discuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
                     <Link className={styles.homenumer} href="tel:(213) 289 3888"> {props.homebannernum}</Link>
 
 
