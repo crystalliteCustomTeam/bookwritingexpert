@@ -13,7 +13,7 @@ import logo from '../../../public/favicon.svg'
 import { useRouter } from 'next/router';
 import Router from 'next/router'
 
-
+ 
 
 
 export async function getStaticProps({ params }) {
