@@ -136,6 +136,11 @@
   border-bottom: 1px solid;
 }
 
+.newsLetter form input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 .newsLetter form ::placeholder {
   color: #a8a8a8;
   font-weight: 700;
