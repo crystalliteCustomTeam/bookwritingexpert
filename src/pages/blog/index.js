@@ -40,9 +40,9 @@ export default function BlogHome({ allPosts }) {
 
 
         const data = {
-            name: e.target.first.value,
-            email: e.target.emailfirst.value,
-            pageUrl:currentRoute
+            name: e.target.name.value,
+            email: e.target.email.value,
+            pageUrl: currentRoute
         }
 
         const JSONdata = JSON.stringify(data)
@@ -159,10 +159,10 @@ export default function BlogHome({ allPosts }) {
                                     <h5>Newsletter</h5>
                                     <form className="mt-4" onClick={handleSubmit}>
                                         <div>
-                                            <input type="text" name="first" id="name" placeholder="FULL NAME" />
+                                            <input type="text" name="name" id="name" placeholder="FULL NAME" />
                                         </div>
                                         <div className="mt-3">
-                                            <input type="email" name="emailfirst" id="email" placeholder="EMAIL ADDRESS" />
+                                            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" />
                                         </div>
                                         <button type="submit" className={`${styles.arrowBtn} mt-4`}>
                                             <span>{score}</span>

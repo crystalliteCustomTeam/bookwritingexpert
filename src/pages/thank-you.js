@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../../components/Banner'
 import Head from 'next/head'
+import Script from 'next/script'
 
 const Thankyou = () => {
 
@@ -42,6 +43,10 @@ const Thankyou = () => {
         <meta name="twitter:data1" content="1 minute" />
         <link rel="icon" href="/favicon.svg" />
       </Head>
+
+      <Script>
+        {`gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`}
+      </Script>
 
       {/* banner components */}
 

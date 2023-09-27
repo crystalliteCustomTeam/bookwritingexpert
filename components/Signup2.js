@@ -22,8 +22,8 @@ const Signup = (props) => {
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
-      pageUrl:currentRoute,
       phone: e.target.phone.value,
+      pageUrl:currentRoute,
     }
 
     const JSONdata = JSON.stringify(data)
