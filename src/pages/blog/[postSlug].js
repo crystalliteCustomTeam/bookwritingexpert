@@ -11,7 +11,7 @@ import Date from "@/lib/Date";
 import arrow from '../../../public/images/blogBanners/right-arrow.webp'
 import logo from '../../../public/favicon.svg'
 import { useRouter } from 'next/router';
-import Router from 'next/router'
+import Router from "next/router";
 
 
 
@@ -54,18 +54,23 @@ export default function Post({ postData, featuredImageUrl }) {
     const [score, setScore] = useState('Submit Details');
 
     const router = useRouter();
-    const currentRoute = router.pathname;
+    const { postSlug } = router.query;
+    const path = router.pathname;
+
+    const slug = `/blog/${postSlug}`;
 
     const handleSubmit = async (e) => {
 
-        e.preventDefault()
+        e.preventDefault();
 
 
         const data = {
-            name: e.target.name.value,
+            name: e.target.first.value,
             email: e.target.email.value,
-            pageUrl: currentRoute
+            pageUrl: slug,
         }
+
+        console.log(data);
 
         const JSONdata = JSON.stringify(data)
 
@@ -73,7 +78,7 @@ export default function Post({ postData, featuredImageUrl }) {
 
 
 
-        fetch('api/submit/route', {
+        fetch('../api/submit/route', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -162,12 +167,12 @@ export default function Post({ postData, featuredImageUrl }) {
                                 <div className={`${styles.newsLetter} mt-5`}>
                                     <h4>Signup for</h4>
                                     <h5>Newsletter</h5>
-                                    <form className="mt-4" onClick={handleSubmit}>
+                                    <form className="mt-4" onSubmit={handleSubmit}>
                                         <div>
-                                            <input type="text" name="name" id="name" placeholder="FULL NAME" />
+                                            <input type="text" name="first" required  placeholder="FULL NAME" />
                                         </div>
                                         <div className="mt-3">
-                                            <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" />
+                                            <input type="email" name="email" required  placeholder="EMAIL ADDRESS" />
                                         </div>
                                         <button type="submit" className={`${styles.arrowBtn} mt-4`}>
                                             <span>{score}</span>
