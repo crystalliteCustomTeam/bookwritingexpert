@@ -58,7 +58,7 @@ const Header = () => {
         <Navbar expand="lg">
           <Container className={styles.headerContainer}>
 
-            <Link href="/"><Image loading="lazy" className={styles.logonew} src={logo} alt='logo'></Image> </Link>
+            <Link href="/"><Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt='logo'></Image> </Link>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className={styles.navalign}>

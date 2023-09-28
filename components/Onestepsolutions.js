@@ -133,7 +133,7 @@ const Onestepsolutions = () => {
                     <div key={i}>
                       <h3 className='color-blue font-f font30 fw600 mb-4'>{item.title}</h3>
                       <p className={` ${styles.wrtingtext} font15 font-f textcolor maxwidth`}>{item.text}</p>
-                      <Image loading="lazy" className='img-fluid' src={item.storiesimg} alt='Book Writing Experts'></Image>
+                      <Image loading="lazy" quality={70} className='img-fluid' src={item.storiesimg} alt='Book Writing Experts'></Image>
                     </div>
                   )
                 })}

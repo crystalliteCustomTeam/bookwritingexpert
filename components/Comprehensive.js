@@ -107,7 +107,7 @@ const Comprehensive = () => {
                                     <div className={styles.flipcard}>
                                         <div className={styles.flipcardinner}>
                                             <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
-                                                <Image loading="lazy" className='img-fluid' src={item.image} alt="book_writing_cube"></Image>
+                                                <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="book_writing_cube"></Image>
                                                 <h3>{item.subTitle}</h3>
                                             </div>
                                             <div className={styles.flipcardback}>
