@@ -2,10 +2,10 @@ import graphqlRequest from "@/lib/graphqlRequest";
 
 export async function getPostList(endCursor = null, taxonomy = null) {
 
-  let condition = `after: "${endCursor}", first: 5, where: {orderby: {field: DATE, order: DESC}}`;
+  let condition = `after: "${endCursor}", first: 10, where: {orderby: {field: DATE, order: DESC}}`;
 
   if (taxonomy) {
-    condition = `after: "${endCursor}", first: 5, where: {orderby: {field: DATE, order: DESC}, ${taxonomy.key}: "${taxonomy.value}"}`;
+    condition = `after: "${endCursor}", first: 10, where: {orderby: {field: DATE, order: DESC}, ${taxonomy.key}: "${taxonomy.value}"}`;
   }
 
   const query = {
@@ -91,19 +91,39 @@ export async function getSinglePost(slug) {
 }
 
 export async function getPostSlugs() {
-  const query = {
-    query: `query getPostSlugs {
-            posts {
-              nodes {
-                slug
-              }
-            }
-          }`
-  };
+  const allSlugs = [];
+  let endCursor = null;
+  let hasNextPage = true;
 
-  const resJson = await graphqlRequest(query);
-  const slugs = resJson.data.posts.nodes;
-  return slugs;
+  while (hasNextPage) {
+    const query = {
+      query: `query getPostSlugs($endCursor: String) {
+        posts(first: 100, after: $endCursor) {
+          nodes {
+            slug
+          }
+          pageInfo {
+            endCursor
+            hasNextPage
+          }
+        }
+      }`,
+      variables: {
+        endCursor,
+      },
+    };
+
+    const resJson = await graphqlRequest(query);
+    const postsData = resJson.data.posts;
+    const slugs = postsData.nodes;
+
+    allSlugs.push(...slugs);
+
+    endCursor = postsData.pageInfo.endCursor;
+    hasNextPage = postsData.pageInfo.hasNextPage;
+  }
+
+  return allSlugs;
 }
 
 export async function getCategorySlugs() {

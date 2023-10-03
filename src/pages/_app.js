@@ -8,17 +8,10 @@ import Script from 'next/script';
 export default function App({ Component, pageProps }) {
 
   const handleLoaded = () => {
-    // ZendeskAPI("messenger", "open");
     zE('webWidget:on', 'open', function () {
     });
   };
 
-  // function openZendeskChat(e) {
-  //   e.preventDefault();
-  //   if (typeof zE !== 'undefined') {
-  //     zE('webWidget', 'open')
-  //   }
-  // }
 
   return (
     <>
@@ -37,7 +30,6 @@ export default function App({ Component, pageProps }) {
 
       <div>
         <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
-        {/* <div href="#" onClick={openZendeskChat}>Open Zendesk Chat</div> */}
       </div>
 
 

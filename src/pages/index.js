@@ -18,7 +18,7 @@ import Strugglingtogive from '../../components/Strugglingtogive'
 import Strugglingwriters from '../../components/Strugglingwriters'
 import Onestepsolutions from '../../components/Onestepsolutions'
 import Script from 'next/script'
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 
 export default function Home() {
@@ -124,7 +124,7 @@ export default function Home() {
         <meta name="twitter:data1" content="13 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-
+        {/* <Schema /> */}
 
         <script
           type="application/ld+json"
@@ -139,8 +139,6 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
         />
-
-        {/* <Schema /> */}
 
       </Head>
 
@@ -172,7 +170,7 @@ export default function Home() {
           homebanlogos={homebannerlogos}
           homebanlogos2={homebanlogos2}
           bannershome='banner'
-          homebancan = 'newbannerclass'
+          homebancan='newbannerclass'
         />
 
 
@@ -216,7 +214,7 @@ export default function Home() {
 
 
         {/*  Comprehensive */}
-        <div className={  windowWidth  > 991 ? 'datacloudco' : '' }>
+        <div className={windowWidth > 991 ? 'datacloudco' : ''}>
           <Comprehensive />
         </div>
 
