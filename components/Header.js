@@ -47,12 +47,18 @@ const Header = () => {
 
   const router = useRouter();
 
+  const { postSlug } = router.query;
 
+  const slug = `/${postSlug}`;
+  const slug1 = `/${postSlug}`;
  
+//  alert(postSlug);
+
+  
   return (
     <>
 
-      <header className={ router.pathname == '/illustration' || router.pathname == '/ghostwriting-services2' || router.pathname == '/audiobookproduction' || router.pathname == '/ourportfolio' || router.pathname == '/portfoliobookediting' || router.pathname == '/portfoliobookmarketing' || router.pathname == '/portfoliobookwriting' || router.pathname == '/portfoliobookpublishing' || router.pathname == '/blog' || router.pathname == '/blog/[postSlug]'   ?  styles.headerblue : styles.headerhome}>
+      <header className={ router.pathname == '/illustration' || router.pathname == '/ghostwriting-services2' || router.pathname == '/audiobookproduction' || router.pathname == '/ourportfolio' || router.pathname == '/portfoliobookediting' || router.pathname == '/portfoliobookmarketing' || router.pathname == '/portfoliobookwriting' || router.pathname == '/portfoliobookpublishing' || router.pathname == '/blog' || slug1 == `${slug}`   ?  styles.headerblue : styles.headerhome}>
 
 
         <Navbar expand="lg">

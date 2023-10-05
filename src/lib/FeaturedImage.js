@@ -11,7 +11,7 @@ export default function FeaturedImage({ post }) {
     }
 
     return (
-        <Link href={`/blog/${post.slug}`} >
+        <Link href={`${post.slug}`} >
             <Image src={defaultFeaturedImage} width="350" height="300" alt={post.title} className="img-fluid" />
         </Link>
     )
