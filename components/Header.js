@@ -115,13 +115,13 @@ const Header = () => {
                             <p>Professional and unmatched Reliable Ghostwriting Solutions For All!</p>
                           </div>
                         </li>
-                        <li className={`${styles.navlinks} ${styles.megaLinks}`}>
+                        {/* <li className={`${styles.navlinks} ${styles.megaLinks}`}>
                           <Image loading="lazy" alt="Book Writing Experts" src={headericon3} className='img-fluid'></Image>
                           <div className={styles.megaDiv}>
                             <Link className={styles.menulinks} href="/ghostwriting-services2">Ghostwriting Servicesnew</Link>
                             <p>Professional and unmatched Reliable Ghostwriting Solutions For All!</p>
                           </div>
-                        </li>
+                        </li> */}
                         <li className={`${styles.navlinks} ${styles.megaLinks}`}>
                           <Image loading="lazy" alt="Book Writing Experts" src={headericon5} className='img-fluid'></Image>
                           <div className={styles.megaDiv}>
