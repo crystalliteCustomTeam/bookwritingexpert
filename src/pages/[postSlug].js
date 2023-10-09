@@ -51,6 +51,9 @@ export async function getStaticPaths() {
 export default function Post({ postData, featuredImageUrl }) {
 
 
+
+
+
     const [score, setScore] = useState('Submit Details');
 
     const router = useRouter();
@@ -131,7 +134,7 @@ export default function Post({ postData, featuredImageUrl }) {
                                 <div className="mt-4">
                                     <Image src={featuredImageUrl} className={styles.newstyleimg} alt="Book Writing Experts" width={736} height={450} />
                                 </div>
-                                <div className={`${styles.contentBody} mt-4`}
+                                <div className={`${styles.contentBody} ${styles.imgsizes} mt-4`}
                                     dangerouslySetInnerHTML={{ __html: postData.content }}>
                                 </div>
                             </div>
