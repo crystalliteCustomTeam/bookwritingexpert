@@ -55,7 +55,7 @@ const Getstarted = (props) => {
 
     const { pathname } = Router
     if (pathname == pathname) {
-      Router.push('/thank-you')
+      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
     }
 
   }
