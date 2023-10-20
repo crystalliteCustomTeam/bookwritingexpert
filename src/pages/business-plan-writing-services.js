@@ -41,7 +41,7 @@ const businessplanWringservices = () => {
       title: newSpan,
       pra: 'It goes unsaid that a business plan helps business owners secure financing, attract investors, and grow the business. If you need help getting your business off the ground, our team at Book Writing Experts can assist you. We specialize in creating customized business plans that will help you secure funding and launch your company successfully. Our services are affordable, and we offer a free consultation to get started. Contact us today to learn more about how we can help you achieve your business goals!',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'ghostwriting',
 
@@ -426,7 +426,7 @@ const businessplanWringservices = () => {
         <Selfpublishing
           title='Helping Entrepreneurs And Small Businesses Achieve Their Goals'
           text={text}
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
           image={newimagetwoo}
           whychooseclass="marketyourbook"
@@ -453,7 +453,7 @@ const businessplanWringservices = () => {
         <Aspiring
           title='Professional Business Plan Writing Services We Give New Life To Your Words'
           text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

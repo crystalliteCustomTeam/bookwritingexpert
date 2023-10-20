@@ -44,7 +44,7 @@ const Bookpublishingservices = () => {
       title: newSpan,
       pra: ideas,
       discuss: discuss,
-      homebannernum: 'Call Us Now At (213) 289 3888 ',
+      homebannernum: 'Call Us Now At (855) 500 0057 ',
       banlogo: homebannerlogos,
       banners: 'bookeditingservices',
 
@@ -432,7 +432,7 @@ const Bookpublishingservices = () => {
       <Selfpublishing
         title={Editing}
         text={matters}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Hire The Best Book Editing Company Now!"
         image={whychooseourbookeditingservices1}
         whychooseclass="marketyourbook"
@@ -443,7 +443,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title='Editorial Assessment Service'
         text='Our editorial assessment provides you with a comprehensive evaluation of your manuscript, highlighting its strengths and areas for improvement. With our expert analysis and detailed recommendations, you`ll gain valuable insights into your writing style, plot structure, pacing, and more.'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={whychooseourbookeditingservices2}
         whychooseclass="marketyourbook"
@@ -455,7 +455,7 @@ const Bookpublishingservices = () => {
       <Selfpublishing
         title={structural}
         text={turn}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Chat With Us Now! "
         image={whychooseourbookeditingservices3}
         whychooseclass="marketyourbook"
@@ -466,7 +466,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title={approach}
         text={purview}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Discuss Your Project and Get Started With Us!"
         image={whychooseourbookeditingservices4}
         whychooseclass="marketyourbook"
@@ -500,7 +500,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title={glance}
           text={perplexing}
-          number="Call Us At (213) 289 3888 "
+          number="Call Us At (855) 500 0057 "
         />
       </div>
 

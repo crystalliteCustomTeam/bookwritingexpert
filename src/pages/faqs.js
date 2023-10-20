@@ -16,7 +16,7 @@ const Faqs = () => {
       title: faqsHead,
       pra: 'At highly affordable pricing, we bring our team of competent non fiction ghostwriters with their promising expertise',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       faqs: 'faqs',
     }
@@ -152,7 +152,7 @@ const Faqs = () => {
         <Aspiring
           title='Allow us to dominate all the bookshelves and digital libraries, entrust our professional book writers with your book today!'
           text="Pick up the phone or email us, and book our book consultancy services today! The only thing standing in your way of being a best-selling author is not signing up for our professional book writing services! Allow us to assist you in getting there and getting the best and the most affordable book writers for hire today!"
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
 

@@ -41,7 +41,7 @@ const Bookpublishingservices = () => {
         <> Are you facing complications regarding <Link className='textdocationnone text-white hover' href="/book-publishing-services/">book publishing</Link>? Break free from the challenges of <Link className='textdocationnone text-white hover' href="/book-publishing-services/">book publishing</Link> with the help of Book Writing Experts! </>
       ),
       discuss: (<> Hire The Best Book Publishers Today! </>),
-      homebannernum: 'Call Us at (213) 289 3888',
+      homebannernum: 'Call Us at (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
@@ -311,7 +311,7 @@ const Bookpublishingservices = () => {
       <Selfpublishing
         title='Prime-Quality and Expertise'
         text={<> Our <Link className='textdocationnone textcolor hover' href='/book-publishing-services/'>Amazon Publishing Services</Link> are backed by a team of experienced professionals who have in-depth knowledge and expertise in the publishing industry. We are committed to delivering high-quality content that meets industry standards and exceeds your expectations. With our services, you can trust that your books will be handled with care and precision. </>}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Consult With Our Expert Team Now!"
         image={publishmybook}
         whychooseclass="marketyourbook"
@@ -321,7 +321,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title='Enhanced Visibility and Reach'
         text={<> Choosing our <Link className='textdocationnone textcolor hover' href='/book-publishing-services/'>Amazon Publishing Services</Link> opens up new avenues for your book to reach a wider audience. With Amazon's vast customer base and powerful marketing tools, we can help boost the visibility of your book, increase its discoverability, and maximize its potential for success. Our strategies are designed to enhance your book's presence and attract more readers. </>}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Let’s Discuss Your Book Publishing Project"
         image={typeofbooks}
         whychooseclass="marketyourbook"
@@ -331,7 +331,7 @@ const Bookpublishingservices = () => {
       <Selfpublishing
         title='Streamlined Publishing Process'
         text={<> We at Book Writing Experts understand the importance of a smooth and efficient <Link className='textdocationnone textcolor hover' href='/book-publishing-services/'>book publishing</Link> process. With our services, you can expect a streamlined workflow that simplifies the publishing journey. From manuscript formatting and editing to cover design and eBook conversion, we handle every aspect professionally, allowing you to focus on your writing while we take care of the technicalities. </>}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Chat Now!"
         image={copy}
         whychooseclass="marketyourbook"
@@ -342,7 +342,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title='Comprehensive Marketing Support'
         text={<> Our <Link className='textdocationnone textcolor hover' href='/book-publishing-services/'>Amazon Publishing Services</Link> go beyond just publishing your book. We offer comprehensive marketing support to help you build a strong author platform and promote your work effectively. Our marketing strategies include targeted advertising, social media campaigns, email marketing, and more, tailored to your specific audience and genre. We strive to maximize your book's exposure and generate buzz in the competitive publishing landscape. </>}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Click On This Chat Button and Get Our Assistance"
         image={marketyourbook}
         whychooseclass="marketyourbook"
@@ -368,7 +368,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title={<> Choose Our <Link className='textdocationnone color-blue fw700 hover' href='/book-publishing-services/'>Book Publishing Company</Link> and Expand Your Reach in the Book Realm! </>}
           text={<> Ready to turn the page on your publishing dreams? Let us write your success story together! Choose our <Link className='textdocationnone color-lightgray hover' href='/book-publishing-services/'>book publishing company</Link> and let your words come to life. Start your literary journey now! </>}
-          number="Call at (213) 289 3888"
+          number="Call at (855) 500 0057"
         />
 
       </div>

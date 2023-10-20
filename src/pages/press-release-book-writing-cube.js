@@ -112,7 +112,7 @@ const Announcement = () => {
                                 </li>
                                 <li className='font-f'><strong>Email: </strong> <Link className='colortextgrey font-f textdocationnone' href="mailto:support@bookwritingexperts.com">support@bookwritingexperts.com</Link>
                                 </li>
-                                <li className='font-f'><strong>Phone: </strong> <Link className='colortextgrey font-f textdocationnone' href="tel:+1302 883-8877">(213) 289 3888</Link>
+                                <li className='font-f'><strong>Phone: </strong> <Link className='colortextgrey font-f textdocationnone' href="tel:+1302 883-8877">(855) 500 0057</Link>
                                 </li>
                                 <li className='font-f'><strong>Working hours: </strong> Mon-Fri, 9:00 AM - 5:00 PM
                                 </li>
@@ -149,7 +149,7 @@ const Announcement = () => {
             <Aspiring
                 title='Professional Book Writing and Publishing We Give New Life To Your Words'
                 text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-                number="(213) 289 3888"
+                number="(855) 500 0057"
                 discuss="LET'S DISCUSS"
             />
 

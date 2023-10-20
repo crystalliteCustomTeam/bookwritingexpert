@@ -166,7 +166,7 @@ export default function Home() {
           title={newSpan}
           text='We understand being an author is a challenging yet respectable profession, but not everybody is lucky enough to become one.'
           discuss={discuss}
-          homebannernum='(213) 289 3888'
+          homebannernum='(855) 500 0057'
           homebanlogos={homebannerlogos}
           homebanlogos2={homebanlogos2}
           bannershome='banner'
@@ -190,14 +190,14 @@ export default function Home() {
           list8="Continuous Revisions"
           btn1="Get a free Proposal"
           btn2="Talk to an expert"
-          btn3="(213) 289 3888"
+          btn3="(855) 500 0057"
         />
 
         {/* Talk To Our Experts! */}
         <Experts
           title={exprtSpan}
           text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
 
@@ -232,7 +232,7 @@ export default function Home() {
         {/* <Experts
           title={exprtSpan}
           text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         /> */}
 

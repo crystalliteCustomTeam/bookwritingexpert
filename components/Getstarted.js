@@ -69,7 +69,7 @@ const Getstarted = (props) => {
         <h4 className="t-center font30 fw700 colortextgrey font-f">Let’s Get Started</h4>
 
 
-        <p className="textcolor font-f mb-4 font15 t-center mt-3">Call us on: <Link className='textdocationnone colorexpertgrey hover fw600' href="tel:(213) 289 3888">(213) 289 3888</Link> or use the form below to start a conversation and show you how we can help!</p>
+        <p className="textcolor font-f mb-4 font15 t-center mt-3">Call us on: <Link className='textdocationnone colorexpertgrey hover fw600' href="tel:(855) 500 0057">(855) 500 0057</Link> or use the form below to start a conversation and show you how we can help!</p>
 
         <form className={styles.formalign} onSubmit={handleSubmit}>
 

@@ -87,7 +87,7 @@ const Bookpublishingservices = () => {
       title: newSpan,
       pra: 'Let our experts fire the imagination of your readers with their killer writing techniques. Your story needs to be heard, and Book Writing Experts make sure your story keep the readers hooked onto it until the end.',
       discuss: 'LET S DISCUSS',
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'ghostwriting',
     }
@@ -384,7 +384,7 @@ const Bookpublishingservices = () => {
         title='A Complete Solution To Your Ghost Writing Essentials Is Here!'
         text='Book Writing Experts has got you covered with the Best-Ghostwriting services. You are just one click away!'
 
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={newimagetwoo}
         whychooseclass="marketyourbook"
@@ -410,7 +410,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title='When It Comes Down To It, You Need The Whole Nine Yards To Nail It!'
           text="Call us or send us an email, and our professionals will walk you through the full procedure, requirements, and packages for ghostwriting services for your book!"
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

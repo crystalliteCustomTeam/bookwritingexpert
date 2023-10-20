@@ -39,7 +39,7 @@ const Bookpublishingservices = () => {
       ),
       pra: 'Are you struggling to connect with your intended audience? Worry no more because your book is yearning for readers to immerse themselves in its pages, but the world has yet to discover its wonders!',
       discuss: 'Hire Our Book Promotion Services Today!',
-      homebannernum: 'Call Us Now at (213) 289 3888',
+      homebannernum: 'Call Us Now at (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpromotionservices',
     }
@@ -446,7 +446,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title={<> Transforming Your Book into a Literary Gem: Join the Ranks of Literature With The Best <Link className='textdocationnone color-blue fw700 hover' href='/book-promotion-services/'>Book Promotion Services</Link>! </>}
           text={<> Ready to witness your work soar to new heights? Look no further than the <strong>Book Writing Experts</strong>. Our extensive industry experience gives us the knowledge and expertise to make your book stand out and garner unparalleled exposure. Take the leap and call us today to propel your book to the next level! </>}
-          number="Call us at (213) 289 3888"
+          number="Call us at (855) 500 0057"
         />
       </div>
 

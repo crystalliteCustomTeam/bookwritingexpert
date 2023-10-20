@@ -43,7 +43,7 @@ const articleWritingServices = () => {
       title: newSpan,
       pra: 'Words have an enchanting effect on people, which is why we offer professional article writing services to produce captivating articles that leave your readers wanting more. Our team of highly-skilled and talented article writers understands the importance of content when it comes to expanding your reach for greater success. Book Writing Experts aims to curate compelling pieces that aid your business’s success always!',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
@@ -369,7 +369,7 @@ const articleWritingServices = () => {
       <Selfpublishing
         title='Want Articles That Boost Engagement And Expand Your Reach?'
         text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
@@ -380,7 +380,7 @@ const articleWritingServices = () => {
         title='Our Willingness To Publish Knows No Bounds!'
         text={text}
         subtext={subtext}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={typeofbooks}
         whychooseclass="marketyourbook"
@@ -390,7 +390,7 @@ const articleWritingServices = () => {
       {/* <Selfpublishing
         title='Want Articles That Boost Engagement And Expand Your Reach?'
         text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={copy}
         whychooseclass="marketyourbook"
@@ -402,7 +402,7 @@ const articleWritingServices = () => {
         title='All Of Your Burning Book Marketing Questions- Answered!'
         text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
         subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={marketyourbook}
         whychooseclass="marketyourbook"
@@ -429,7 +429,7 @@ const articleWritingServices = () => {
           title='Book Cover Designs That Stand Out'
           text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
 
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
 
         />

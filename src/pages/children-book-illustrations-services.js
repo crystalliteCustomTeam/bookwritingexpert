@@ -28,7 +28,7 @@ const Childrenbookillustrationsservices = () => {
       title: newSpan,
       pra: 'While your words might do justice, illustrations take your book experience to a whole new level. Let us bring your imaginary characters on the paper for your readers to connect.',
       discuss: 'LET S DISCUSS',
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
 
@@ -241,7 +241,7 @@ const Childrenbookillustrationsservices = () => {
  title= {dateset}
  text= 'It’s time you get book marketing experts on board and take their help in marketing your book. Your story needs to be heard by everyone; make sure you are not going for the shady agency and putting your book reputation in jeopardy.'
  subtext= 'Trust the marketing professionals for it, do not risk it!'
- number="(213) 289 3888"
+ number="(855) 500 0057"
  discuss="LET'S DISCUSS"
  img= {together}
 />
@@ -326,7 +326,7 @@ const Childrenbookillustrationsservices = () => {
         title='What Type Of Books Do We Publish?'
         text={text}
         subtext={subtext}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
@@ -349,7 +349,7 @@ const Childrenbookillustrationsservices = () => {
         <Aspiring
           title='You Are One Step Closer To Displaying Your Writing Excellence. Let Our Professional Help You Out.'
           text="Editing, proofreading, publishing--all that form the criticalities of the book writing process. We know the effort it takes, the perseverance it needs, and the struggle it brings, so why not hire a helping hand? We are only a call, message, or email away! Let’s collaborate."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

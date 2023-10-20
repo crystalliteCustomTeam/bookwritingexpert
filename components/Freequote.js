@@ -83,7 +83,7 @@ const Freequote = (props) => {
 
           <div className='mt-4'>
             <Link className={styles.freediscuss} href="#">LET'S DISCUSS</Link>
-            <Link className={styles.freehomenumer} href="tel:(213) 289 3888">(213) 289 3888</Link>
+            <Link className={styles.freehomenumer} href="tel:(855) 500 0057">(855) 500 0057</Link>
           </div>
 
 

@@ -40,7 +40,7 @@ const EbookWritingservices = () => {
       title: newSpan,
       pra: 'We offer book formatting services that help make your book look professional and appealing to readers. We understand the importance of a well-formatted book, and our team of experts will work closely with you to ensure that your book meets all the necessary requirements. To help your masterpiece be error-free, our formatting services fit the bill! Hone your writing skills with us. Rest assured, we are the ones you need to make your book the best it can be!',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'articlewritingservices',
 
@@ -398,7 +398,7 @@ const EbookWritingservices = () => {
         <Selfpublishing
           title={WaitingForSomeone}
           text={text}
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
           image={newimagetwoo}
           whychooseclass="marketyourbook"
@@ -425,7 +425,7 @@ const EbookWritingservices = () => {
         <Aspiring
           title='Professional Book Formatting Services We Give New Life To Your Words'
           text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

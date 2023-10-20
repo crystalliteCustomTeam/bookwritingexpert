@@ -44,7 +44,7 @@ const Bookpublishingservices = () => {
       title: newSpan,
       pra: 'Is Your Book Ready to Be Read, But Struggling to Reach Its Target Audience?',
       discuss: discuss,
-      homebannernum: 'Call Our Team At (213) 289 3888',
+      homebannernum: 'Call Our Team At (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpromotionservices',
 
@@ -407,7 +407,7 @@ const Bookpublishingservices = () => {
         title='Our Personalized Approach to Strategic Planning:'
         text={<>We understand that getting your book visibility in today's crowded marketplace can be a challenge. Our <Link href='/book-marketing-services/' className='textdocationnone textcolor hover'>book marketing services</Link> are designed to increase your visibility across all major platforms, including social media, email marketing, and book review sites.</>}
         subtext={<>We believe in developing a comprehensive, tailored marketing strategy for every book we work with. Our experienced <Link href='/book-marketing-services/' className='textdocationnone textcolor hover'>book marketing</Link> professional carefully analyzes your book, target audience, and market trends to develop a roadmap that will help you achieve your goals. From crafting compelling email campaigns to designing eye-catching book covers, we focus on increasing your book's sales, building your author platform, and generating buzz around your new release.</>}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={bookmarketingservices1}
         whychooseclass="marketyourbook"
@@ -418,7 +418,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title='Our Unique Approach to Boosting Visibility:'
         text={support}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={bookmarketingservices2}
         whychooseclass="marketyourbook"
@@ -430,7 +430,7 @@ const Bookpublishingservices = () => {
       <Selfpublishing
         title={second}
         text={demands}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={bookmarketingservices3}
         whychooseclass="marketyourbook"
@@ -441,7 +441,7 @@ const Bookpublishingservices = () => {
       <Whychoosebookwritingcube
         title={impressive}
         text={tailored}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="Let’s Discuss Your Project"
         image={bookmarketingservices4}
         whychooseclass="marketyourbook"
@@ -461,7 +461,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title={industry}
           text={challenging}
-          number="Call Our Team - (213) 289 3888"
+          number="Call Our Team - (855) 500 0057"
         />
 
       </div>

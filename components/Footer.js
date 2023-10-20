@@ -155,7 +155,8 @@ const Footer = () => {
               <Image loading="lazy" className={styles.footerlogosize} src={footerlogo} alt='book writing expert'></Image>
               <ul className={styles.footermenu1}>
                 <li className={`${styles.footermenulinks} mt-4`}><MdEmail size={16} />  <Link className={styles.styleset} href="mailto:support@bookwritingexperts.com">support@bookwritingexperts.com</Link></li>
-                <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:213-289-3888"> (213) 289 3888 </Link></li>
+                <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(855) 500 0057"> (855) 500 0057 </Link></li>
+                <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(213) 289 3888"> (213) 289 3888 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
 
 

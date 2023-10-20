@@ -272,9 +272,9 @@ const Header = () => {
 
                 <li className={`${styles.navlinks} ${styles.headertel}`}>
 
-                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="tel:(213) 289 3888">
+                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="tel:(855) 500 0057">
 
-                    <BsFillTelephoneFill className={styles.valuenum} size={12} /> (213) 289 3888 </Link>
+                    <BsFillTelephoneFill className={styles.valuenum} size={12} /> (855) 500 0057 </Link>
 
                 </li>
 

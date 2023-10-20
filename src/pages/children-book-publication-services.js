@@ -64,7 +64,7 @@ const Childrenbookpublicationservices = () => {
       title: newSpan,
       pra: 'Publish a book that children will enjoy. Realistic books that are representative of socially conscious children!',
       discuss: 'LET S DISCUSS',
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
 
@@ -243,7 +243,7 @@ const Childrenbookpublicationservices = () => {
  title= {dateset}
  text= 'It’s time you get book marketing experts on board and take their help in marketing your book. Your story needs to be heard by everyone; make sure you are not going for the shady agency and putting your book reputation in jeopardy.'
  subtext= 'Trust the marketing professionals for it, do not risk it!'
- number="(213) 289 3888"
+ number="(855) 500 0057"
  discuss="LET'S DISCUSS"
  img= {together}
 />
@@ -284,7 +284,7 @@ const Childrenbookpublicationservices = () => {
           title='What Type Of Books Do We Publish?'
           text={text}
           subtext={subtext}
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
           image={copy}
           whychooseclass="marketyourbook"
@@ -349,7 +349,7 @@ const Childrenbookpublicationservices = () => {
         <Aspiring
           title='Your Accomplishment Cements Our Reputation!'
           text="Our professionals understand how much time and effort a single literary composition necessitates. We cherish the work done and admire the budding authors' enthusiasm for publishing. And we vow to assist you in completing a composition that you will be proud of!"
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

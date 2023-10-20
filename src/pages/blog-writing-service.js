@@ -43,7 +43,7 @@ const blogWritingService = () => {
       title: newSpan,
       pra: 'Ever wish your audience gets lost in your stories? With blog writing services, our professionals help your dreams turn into reality. It’s not a piece of cake to bring in motivated readers and target customers to the arsenal. However, experts at our company excel at driving promising leads to your website and generating more interest in what you have to offer. Our blog writing services serve as the ideal mode of marketing and advertising for your business or book. So, are you ready to attract new customers and promote your products or services in a positive light? Just give us a call, and let the pros do wonders with our content blog writing services!',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
@@ -374,7 +374,7 @@ const blogWritingService = () => {
       <Selfpublishing
         title= "Make A World Of Difference In How You Express Yourself & How You Connect With The World!"
         text='With professional blog writers, we help you control the narrative and allow you to share your ideas and thoughts with the world! '
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
@@ -385,7 +385,7 @@ const blogWritingService = () => {
         title='Our Willingness To Publish Knows No Bounds!'
         text={text}
         subtext={subtext}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={typeofbooks}
         whychooseclass="marketyourbook"
@@ -395,7 +395,7 @@ const blogWritingService = () => {
       {/* <Selfpublishing
         title='Want Articles That Boost Engagement And Expand Your Reach?'
         text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={copy}
         whychooseclass="marketyourbook"
@@ -407,7 +407,7 @@ const blogWritingService = () => {
         title='All Of Your Burning Book Marketing Questions- Answered!'
         text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
         subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={marketyourbook}
         whychooseclass="marketyourbook"
@@ -434,7 +434,7 @@ const blogWritingService = () => {
           title='Book Cover Designs That Stand Out'
           text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
 
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
 
         />

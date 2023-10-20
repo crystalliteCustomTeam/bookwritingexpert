@@ -237,7 +237,7 @@ const Privacypolicy = () => {
 
                         <ul>
                             <li className='font15  textcolor font-f'>
-                                Toll-Free number: <Link className='textdocationnone color-blue hover' href="tel:213-289-3888">(213) 289 3888</Link>
+                                Toll-Free number: <Link className='textdocationnone color-blue hover' href="tel:(855) 500 0057">(855) 500 0057</Link>
                             </li>
                             <li className='font15  textcolor font-f'>
                                 E-mail: <Link className='textdocationnone color-blue hover' href="mailto:support@bookwritingexperts.com">support@bookwritingexperts.com</Link>
@@ -259,7 +259,7 @@ const Privacypolicy = () => {
                 <Aspiring
                     title='Professional Book Writing and Publishing We Give New Life To Your Words'
                     text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-                    number="(213) 289 3888"
+                    number="(855) 500 0057"
                     discuss="LET'S DISCUSS"
                 />
             </div>

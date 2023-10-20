@@ -31,7 +31,7 @@ const Authormarketingpromotionservices = () => {
       title: 'Capitalize On Your Visibility and Online Presence with Finest Author Marketing Promotion Services',
       pra: 'Reach a broader audience with author marketing promotion services. Our author book marketing services guarantee you an improved reputation and sales.',
       discuss: 'LET S DISCUSS',
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'authormarketingpromotionservices',
 
@@ -269,7 +269,7 @@ const Authormarketingpromotionservices = () => {
         title={dateset}
         text='It’s time you get book marketing experts on board and take their help in marketing your book. Your story needs to be heard by everyone; make sure you are not going for the shady agency and putting your book reputation in jeopardy.'
         subtext='Trust the marketing professionals for it, do not risk it!'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         img={together}
       />
@@ -360,7 +360,7 @@ const Authormarketingpromotionservices = () => {
       <Aspiring
         title='Create the right buzz for every title you pen down with our Author Marketing Promotion Services!'
         text="From amateur author to a brilliant success story, our author marketing services transform your name into a recognized brand."
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />
 

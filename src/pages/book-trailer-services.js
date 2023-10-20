@@ -45,7 +45,7 @@ const BookTrailerServcies = () => {
       title: newSpan,
       pra: 'Looking for a new and captivating way to promote your upcoming book? Look no further, Book Writing Experts have you covered! Our unmatched book video trailer services help you create the online hype your book deserves. Our experts bring creativity and passion into the mix.',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookvideotrailer',
 
@@ -308,7 +308,7 @@ const BookTrailerServcies = () => {
         title={leveup}
         text='First impression is indeed the last impression, which is why Book Writing Experts offer the best book video trailer services for our valued clients. Make the right impression on your readers with compelling book video trailers! '
 
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={newimagetwoo}
         whychooseclass="marketyourbook"
@@ -338,8 +338,8 @@ const BookTrailerServcies = () => {
       <div className='datacloud'>
         <Aspiring
           title='Let’s Commence On The Journey To Book Excellence!'
-          text="Give us a call at (213) 289 3888, or hit us up with your queries by filling out the form below."
-          number="(213) 289 3888"
+          text="Give us a call at (855) 500 0057, or hit us up with your queries by filling out the form below."
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
 

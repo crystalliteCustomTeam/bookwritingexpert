@@ -43,7 +43,7 @@ const audioBookRecordingServices = () => {
       title: newSpan,
       pra: 'Audiobooks are an investment that pays off in the longer run. Audiobook recording services help you get your book on audio, making it easier for people to enjoy while they’re on the go. If you’re looking for a professional and high-quality audiobook recording service, look no further than Book Writing Experts. We offer the latest technology and equipment to ensure that your book is recorded to the highest standards possible. Call us right away and learn more about our best audiobook service. ',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
@@ -371,7 +371,7 @@ const audioBookRecordingServices = () => {
       <Selfpublishing
         title='Our Team Of Experienced Professionals Will Help Your Book Sound The Best!'
         text='We make it easy for you to capture your story and share it with the world. Our professional audiobook recording services will help you bring your words to life, and our engaging tone of voice will keep your listeners hooked until the very end. Share your story with the world, and let them hear it in your own words with the unbeatable audiobook production service.'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
@@ -382,7 +382,7 @@ const audioBookRecordingServices = () => {
         title='Our Willingness To Publish Knows No Bounds!'
         text={text}
         subtext={subtext}
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={typeofbooks}
         whychooseclass="marketyourbook"
@@ -392,7 +392,7 @@ const audioBookRecordingServices = () => {
       {/* <Selfpublishing
         title='Want Articles That Boost Engagement And Expand Your Reach?'
         text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={copy}
         whychooseclass="marketyourbook"
@@ -404,7 +404,7 @@ const audioBookRecordingServices = () => {
         title='All Of Your Burning Book Marketing Questions- Answered!'
         text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
         subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(213) 289 3888"
+        number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={marketyourbook}
         whychooseclass="marketyourbook"
@@ -431,7 +431,7 @@ const audioBookRecordingServices = () => {
           title='Book Cover Designs That Stand Out'
           text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
 
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
 
         />

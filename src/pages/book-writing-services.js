@@ -40,7 +40,7 @@ const Bookpublishingservices = () => {
       title: newSpan,
       pra: 'Is Your Book Ready to Be Read, But Struggling to Reach Its Target Audience?',
       discuss: discuss,
-      homebannernum: '(213) 289 3888',
+      homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'ebook',
 
@@ -450,7 +450,7 @@ const Bookpublishingservices = () => {
         <Selfpublishing
           title='Planning >> Writing >> Designing = Book Customization Formula'
           text={text}
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
           image={publishmybook}
           whychooseclass="marketyourbook"
@@ -496,7 +496,7 @@ const Bookpublishingservices = () => {
         <Aspiring
           title='Professional Book Writing and Publishing We Give New Life To Your Words'
           text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-          number="(213) 289 3888"
+          number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
       </div>

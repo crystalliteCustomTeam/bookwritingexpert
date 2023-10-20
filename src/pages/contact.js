@@ -204,7 +204,7 @@ const Contact = () => {
                                     Let’s get in touch!
                                 </p>
                                 <p className='font20 fw500 font-f color-white'>
-                                    <span className=''>Phone:</span> <Link href='tel:213-289-3888' className={` ${styles.numpost} fw700 color-white textdocationnone`}> (213) 289 3888 </Link>
+                                    <span className=''>Phone:</span> <Link href='tel:(855) 500 0057' className={` ${styles.numpost} fw700 color-white textdocationnone`}> (855) 500 0057 </Link>
                                 </p>
                                 <p className='font20 fw500 font-f color-white'>
                                     <span className=''>Email:</span> <Link href='mailto:info(@)bookwritingcube(.)com' className={` ${styles.numpost} fw700 color-white textdocationnone`}>

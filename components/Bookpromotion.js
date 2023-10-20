@@ -25,7 +25,7 @@ const BookPromotion = (props) => {
 
         {
             title: 'STANDARD',
-            para: 'Digital Marketing Service for 6 months to make your ROI 200% and make your book a best seller on Amazon with 100% Money Back Guarantee.',
+            para: 'Digital Marketing Service for 3-6 months to make your book a top seller on Amazon and stand out.',
             btnname: 'Get A Quote',
             bookbadges1: bookbadges2,
         },
