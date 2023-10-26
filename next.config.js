@@ -10,7 +10,10 @@ const nextConfig = {
           pathname: '/**',
         }
       ]
-    }
+    },
+    experimental: {
+      nextScriptWorkers: true,
+    },
   }
   
   module.exports = nextConfig

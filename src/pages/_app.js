@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Header />
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
+      <Script strategy="lazyOnload"  src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
       <Script>
         {` window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
