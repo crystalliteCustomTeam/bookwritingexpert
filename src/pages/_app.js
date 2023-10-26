@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 const ZENDESK_KEY = "d1d4aa8a-5573-473a-b921-5b6a8eb467ad";
 import Zendesk, { ZendeskAPI } from "../pages/ZendexConfig";
 import Script from 'next/script';
+import Pixel from '../../components/Pixel';
 
 export default function App({ Component, pageProps }) {
 
@@ -24,7 +25,7 @@ export default function App({ Component, pageProps }) {
            gtag('config', 'AW-411006583');`}
       </Script>
 
-
+      <Pixel />
       <Component {...pageProps} />
       <Footer />
 
