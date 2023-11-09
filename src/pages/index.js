@@ -104,7 +104,7 @@ export default function Home() {
 
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta name="google-site-verification" content="90Ey_qYXNPX6Ubn6vTFe-C1Iq-3uPgP69ZNmSfckJZU" />
+        
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
