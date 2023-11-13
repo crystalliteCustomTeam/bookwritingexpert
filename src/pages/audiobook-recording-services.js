@@ -39,7 +39,7 @@ const Audiobookrecordingservices = () => {
 
     {
       title: 'What is the best audiobook service?',
-      text: 'As an author, you want your audiobook to be perfect. You want every word to be clear, and you want the overall performance to be engaging. This is why so many authors choose Book Writing Cube’s audiobook recording service. We are the best in the industry for a reason. Our team of professional voice actors has years of experience performing audiobooks. They know how to bring a book to life, and they know how to make sure every word is clear. Plus, they’re just plain fun to listen to! ',
+      text: 'As an author, you want your audiobook to be perfect. You want every word to be clear, and you want the overall performance to be engaging. This is why so many authors choose book writing expert’s audiobook recording service. We are the best in the industry for a reason. Our team of professional voice actors has years of experience performing audiobooks. They know how to bring a book to life, and they know how to make sure every word is clear. Plus, they’re just plain fun to listen to! ',
       col6: '6',
     },
     {
@@ -49,7 +49,7 @@ const Audiobookrecordingservices = () => {
     },
     {
       title: 'What is the cheapest audiobook service?',
-      text: 'Book Writing Cube offers affordable audiobook recording services that are perfect for any author. Our packages are designed to fit any budget, and we offer a variety of services that will make your audiobook recording process easy and hassle-free. We understand that not every author has the time or resources to record their own audiobook. That’s why we offer professional recording services that will make your audiobook sound great. We also offer editing and mastering services to ensure that your audiobook is ready for distribution.',
+      text: 'book writing expert offers affordable audiobook recording services that are perfect for any author. Our packages are designed to fit any budget, and we offer a variety of services that will make your audiobook recording process easy and hassle-free. We understand that not every author has the time or resources to record their own audiobook. That’s why we offer professional recording services that will make your audiobook sound great. We also offer editing and mastering services to ensure that your audiobook is ready for distribution.',
       col6: '6',
     },
     {
@@ -150,7 +150,7 @@ const Audiobookrecordingservices = () => {
           <Row>
             <h2 className='font48 fw900 color-blue t-center'>Competent And Impeccable Audiobook Production Service For Your Success</h2>
             <p className='font15 fw500 colortextgrey t-center pb-5'>
-              Audiobooks are becoming more and more popular as time goes on. You can listen to an audiobook while you're working out, cleaning the house, or driving. They're also perfect for people who like to read but don't have a lot of time. Book Writing Cube offers audiobook recording services for just that reason. Here is where your books are brought to life!
+              Audiobooks are becoming more and more popular as time goes on. You can listen to an audiobook while you're working out, cleaning the house, or driving. They're also perfect for people who like to read but don't have a lot of time. book writing expert offers audiobook recording services for just that reason. Here is where your books are brought to life!
             </p>
 
           </Row>
@@ -204,7 +204,7 @@ const Audiobookrecordingservices = () => {
 
 
 
-      {/* Why Choose Book Writing Cube? */}
+      {/* Why Choose book writing expert? */}
       <Whychoosebook
         title="Storytelling Made Easy With Our Audio Book Recording Services"
         text="If you're a book writer, then audiobook production must be on your radar. Even if you're not yet a published author, it's worth learning about the process of turning your words into an audio experience."
@@ -214,7 +214,7 @@ const Audiobookrecordingservices = () => {
 
       {/* Aspiring */}
       <Aspiring
-        title='Dive into The New Era of Audiobooks with Book Writing Cube’s High-Quality Audiobook Recording Services Today!'
+        title='Dive into The New Era of Audiobooks with book writing expert’s High-Quality Audiobook Recording Services Today!'
         text="Get in touch with one of our industry experts for more information about our online blog writing services and pricing details by leaving your email or phone number below!"
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"

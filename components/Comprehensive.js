@@ -147,10 +147,10 @@ const Comprehensive = () => {
                                 return (
 
 
-                                    <div className={styles.flipcard}>
+                                    <div className={styles.flipcard} key={i}>
                                         <div className={styles.flipcardinner}>
                                             <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
-                                                <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="book_writing_cube"></Image>
+                                                <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="Book Writing Experts"></Image>
                                                 <h3>{item.subTitle}</h3>
                                             </div>
                                             <div className={styles.flipcardback}>
@@ -178,7 +178,7 @@ const Comprehensive = () => {
                                         <div className={styles.flipcard}>
                                             <div className={styles.flipcardinner}>
                                                 <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
-                                                    <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="book_writing_cube"></Image>
+                                                    <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="Book Writing Experts"></Image>
                                                     <h3>{item.subTitle}</h3>
                                                 </div>
                                                 <div className={styles.flipcardback}>

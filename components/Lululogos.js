@@ -81,7 +81,7 @@ const Partners = () => {
             {partnerdata.map((item, i) => {
               return (
                 <div key={i}>
-                  <Image loading="lazy" className='pt-3 img-fluid' src={item.img1} alt='book writing expert'></Image>
+                  <Image loading="lazy" className='pt-3 img-fluid' src={item.img1} alt="Book Writing Experts"></Image>
                 </div>
               )
             })}

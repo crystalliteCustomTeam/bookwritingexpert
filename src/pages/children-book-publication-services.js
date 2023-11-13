@@ -75,7 +75,7 @@ const Childrenbookpublicationservices = () => {
 
   const text = <span>We write, edit, publish and market all genres of books. Also, we provide similar services to <Link className='textdocationnone color-blue hover' href="#">self publish ebooks</Link>. So, we can also help you with <Link className='textdocationnone color-blue hover' href="#">self publishing</Link> .</span>;
 
-  const subtext = <span>Benefit from our wide-ranging array of book publication formats and forms and book your place as a book writing cube. We are ranked among the top book publishing companies including children’s book publishers and Amazon publishing services providers.</span>;
+  const subtext = <span>Benefit from our wide-ranging array of book publication formats and forms and book your place as a book writing expert. We are ranked among the top book publishing companies including children’s book publishers and Amazon publishing services providers.</span>;
 
 
 
@@ -333,7 +333,7 @@ const Childrenbookpublicationservices = () => {
 
 
 
-      {/* Why Choose Book Writing Cube? */}
+      {/* Why Choose book writing expert? */}
       {/* <Whychoosebook
    title="What Is Our Children Book Publication Process?"
   text="Our professional book writing services is a collaborative process between our client and our team that has the following steps:"

@@ -140,7 +140,7 @@ const businessplanWringservices = () => {
 
   ]
 
-  const text = <span>We believe that every business deserves a great plan. Our team of experienced writers will help you create an engaging and professional document, while our creative approach ensures that your plan stands out from the competition. So if you’re looking for an edge in today’s competitive marketplace, Book Writing Cube is the perfect partner for business plan service.
+  const text = <span>We believe that every business deserves a great plan. Our team of experienced writers will help you create an engaging and professional document, while our creative approach ensures that your plan stands out from the competition. So if you’re looking for an edge in today’s competitive marketplace, book writing expert is the perfect partner for business plan service.
 
   </span>;
 

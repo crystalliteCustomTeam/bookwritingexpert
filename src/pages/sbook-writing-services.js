@@ -257,7 +257,7 @@ const Bookwritingservices = () => {
           <Row >
             <h2 className='font48 fw900 color-blue  t-center font-f mb-2'>Fine-toothed book writing to give your readers a truly immersive experience with the help of our team of professional eBook writers!</h2>
 
-            <p className='font15 fw500 colortextgrey t-center pb-2'>Book Writing Cube is a portal to bring your thoughts, ideas, or dreams to paper for your readers.</p>
+            <p className='font15 fw500 colortextgrey t-center pb-2'>book writing expert is a portal to bring your thoughts, ideas, or dreams to paper for your readers.</p>
 
           </Row>
 
@@ -281,7 +281,7 @@ const Bookwritingservices = () => {
 
 
 
-      {/* Why Choose Book Writing Cube? */}
+      {/* Why Choose book writing expert? */}
       <Whychoosebook
         title="What Is Our Book Writing Process?"
         text="Our professional book writing services is a collaborative process between our client and our team that has the following steps:"

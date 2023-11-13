@@ -24,14 +24,14 @@ const Serviceproviders = (props) => {
                         <div className={styles.aligntop}>
 
                             <Link href='#footercontact' className={styles.btn1}> Get A Free Proposal  </Link>
-                            <Link href='javascript:$zopim.livechat.window.show();' className={styles.btn2}> Talk To An Expert  </Link>
+                            <Link href='#' className={styles.btn2}> Talk To An Expert  </Link>
                             <Link href='tel:2132893888' className={styles.btn2}>(855) 500 0057</Link>
 
                         </div>
 
                     </Col>
                     <Col md={3}>
-                        <Image alt='book writing expert' src={proposal} className="img-fluid"></Image>
+                        <Image alt="Book Writing Experts" src={proposal} className="img-fluid"></Image>
                     </Col>
                 </Row>
             </Container>

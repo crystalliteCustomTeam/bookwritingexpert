@@ -98,7 +98,7 @@ const Homebanner = (props) => {
                                 }
                                 {props.discuss ?
                                     <div className={`${styles[props.homebancan]} mt-5`}>
-                                        <Link className={styles.discuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
+                                        <Link className={styles.discuss} href="#">{props.discuss}</Link>
                                         <Link className={styles.homenumer} href="tel:(855) 500 0057"> {props.homebannernum}</Link>
 
 
@@ -128,10 +128,10 @@ const Homebanner = (props) => {
                                         <div className="col-12 col-lg-12">
 
                                             <div className={styles.homebannerlogo}>
-                                                <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-3`} src={props.homebanlogos} alt='book writing expert' ></Image>
+                                                <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-3`} src={props.homebanlogos} alt="Book Writing Experts" ></Image>
                                             </div>
                                             {/* <div className={styles.homebannerlogo2}>
-                                                <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-5`} src={props.homebanlogos2} alt='book writing expert' ></Image>
+                                                <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-5`} src={props.homebanlogos2} alt="Book Writing Experts" ></Image>
                                             </div> */}
                                         </div>
                                     </div>
@@ -146,7 +146,7 @@ const Homebanner = (props) => {
                                             {bannerlogo.map((item, i) => {
                                                 return (
                                                     <div key={i}>
-                                                        <Image loading="lazy" className='pt-3 img-fluid brandnewlogo' src={item.banlogo} alt='book writing expert'></Image>
+                                                        <Image loading="lazy" className='pt-3 img-fluid brandnewlogo' src={item.banlogo} alt="Book Writing Experts"></Image>
                                                     </div>
                                                 )
                                             })}

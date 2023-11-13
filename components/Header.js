@@ -64,7 +64,7 @@ const Header = () => {
         <Navbar expand="lg">
           <Container className={styles.headerContainer}>
 
-            <Link href="/"><Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt='logo'></Image> </Link>
+            <Link href="/"><Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt="Book Writing Experts"></Image> </Link>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className={styles.navalign}>
@@ -238,15 +238,15 @@ const Header = () => {
                           <div className={`${styles.megaImg} mt-3`}>
                             <Image loading="lazy" className='img-fluid'
                               src={avtar1}
-                              alt='bookwritingexpert'
+                              alt="Book Writing Experts"
                             />
                             <Image loading="lazy" className='img-fluid'
                               src={avtar2}
-                              alt='bookwritingexpert'
+                              alt="Book Writing Experts"
                             />
                             <Image loading="lazy" className='img-fluid'
                               src={avtar3}
-                              alt='bookwritingexpert'
+                              alt="Book Writing Experts"
                             />
                           </div>
                           <div className={`${styles.megaImgTxt} mt-4`}>

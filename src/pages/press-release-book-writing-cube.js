@@ -53,46 +53,46 @@ const Announcement = () => {
                     <Row>
                         <Col md={12}>
 
-                            <p className='font15 fw500 font-f'> <strong>Beaverton, Oregon, March 28, 23</strong>  – Book Writing Cube, a leading provider of book writing and
+                            <p className='font15 fw500 font-f'> <strong>Beaverton, Oregon, March 28, 23</strong>  – book writing expert, a leading provider of book writing and
                                 publishing services, would like to take this opportunity to clarify a matter of domain
                                 ownership. It has come to our attention that there has been confusion regarding the ownership of
                                 a specific domain name. We would like to take this moment to confirm that this domain, <Link className='textdocationnone' href="/" rel="nofollow" target="_blank">https://www.thebookwritingcube.com/</Link> , is not
-                                owned, operated, or affiliated with Book Writing Cube. The correct domain is <Link className='textdocationnone' href="/">https://www.bookwritingcube.com/</Link>.
+                                owned, operated, or affiliated with book writing expert. The correct domain is <Link className='textdocationnone' href="/">https://www.bookwritingcube.com/</Link>.
                             </p>
 
                             <p className='font15 fw500 font-f'>
-                                Book Writing Cube, with years of experience and a commitment to excellence, have established
+                                book writing expert, with years of experience and a commitment to excellence, have established
                                 a reputation as a trusted and reliable source for writing and publication services. Our goal is
                                 to provide our clients with the best possible experience and deliver results exceeding their
                                 expectations.
                             </p>
                             <p className='font15 fw500 font-f'>
-                                Book Writing Cube is committed to providing our clients with the highest quality service. We
+                                book writing expert is committed to providing our clients with the highest quality service. We
                                 understand the importance of clear and accurate information, especially when it comes to matters
                                 of domain ownership. This is why we have taken the time to issue this official statement. It is
                                 imperative that our clients and the public at large are aware of the correct information
                                 regarding our company and the domains we own. It will ensure that any communications or
-                                transactions made with Book Writing Cube are secure and legitimate.
+                                transactions made with book writing expert are secure and legitimate.
                             </p>
 
                             <p className='font15 fw500 font-f'>We have taken the necessary steps to investigate the issue and have determined that Book Writing
                                 Cube does not own the domain in question. We have also taken steps to address the confusion and
                                 prevent any further misunderstandings. We would like to remind our clients and the public that
-                                Book Writing Cube only operates official websites and domains that are listed on our official
+                                book writing expert only operates official websites and domains that are listed on our official
                                 website. Any other domains or websites claiming to be affiliated with us should be considered
                                 unauthorized and potentially fraudulent.</p>
 
                             <p className='font15 fw500 font-f'>We advise our clients to always verify the authenticity of a website or domain before conducting
                                 any business or providing any personal information. Our clients can do this by checking the
-                                website's URL and ensuring it matches the official domain on Book Writing Cube's website.
+                                website's URL and ensuring it matches the official domain on book writing expert's website.
                             </p>
 
                             <p className='font15 fw500 font-f'>We take the security and privacy of our client's information seriously and will take all
-                                necessary measures to protect it. Book Writing Cube will continue to monitor the situation and
+                                necessary measures to protect it. book writing expert will continue to monitor the situation and
                                 take appropriate action to ensure the accuracy of information regarding our company and domains.
                             </p>
 
-                            <p className='font15 fw500 font-f'>Book Writing Cube would like to thank our clients for their continued support and loyalty. We are
+                            <p className='font15 fw500 font-f'>book writing expert would like to thank our clients for their continued support and loyalty. We are
                                 committed to providing our clients with the best possible experience and will continue to work
                                 towards that goal.
                             </p>
@@ -102,7 +102,7 @@ const Announcement = () => {
                             <h4 className='font-f mt-4 mb-4'>Press Contact:</h4>
 
                             <ul>
-                                <li className='font-f'><strong>Brand Name: </strong> Book Writing Cube
+                                <li className='font-f'><strong>Brand Name: </strong> book writing expert
                                 </li>
                                 <li className='font-f'><strong>Address: </strong> 12365 SW Pioneer Ln Suite 106, Beaverton, Oregon
                                 </li>

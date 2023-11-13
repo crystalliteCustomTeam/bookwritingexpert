@@ -26,11 +26,11 @@ const Professionalseo = () => {
                     <Row className={` ${styles.worked} gy-3 quality`}>
                         <Col md={3}>
                             <div className={styles.blog}>
-                                <Image loading="lazy" src={blog1} className='img-fluid' alt="book_writing_cube"></Image>
+                                <Image loading="lazy" src={blog1} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
                                     <a className='textdocationnone' href="#">
                                         <h5 className='fw700 font17 color-blue font-f'> Quality </h5> </a>
-                                    <p className='font15 fw500 font-f'> At Book Writing Cube, we only work with experienced and professional writers who
+                                    <p className='font15 fw500 font-f'> At book writing expert, we only work with experienced and professional writers who
                                         are experts in their field. This ensures that your articles will be of the highest quality
                                         and will provide accurate and up-to-date information.
                                     </p>
@@ -42,7 +42,7 @@ const Professionalseo = () => {
                         <Col md={3}>
 
                             <div className={styles.blog}>
-                                <Image loading="lazy" src={blog2} className='img-fluid' alt="book_writing_cube"></Image>
+                                <Image loading="lazy" src={blog2} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
                                     <a className='textdocationnone' href="#">
                                         <h5 className='fw700 font17 color-blue font-f'> Creativity </h5> </a>
@@ -57,11 +57,11 @@ const Professionalseo = () => {
                         <Col md={3}>
 
                             <div className={styles.blog}>
-                                <Image loading="lazy" src={blog3} className='img-fluid' alt="book_writing_cube"></Image>
+                                <Image loading="lazy" src={blog3} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
                                     <a className='textdocationnone' href="#">
                                         <h5 className='fw700 font17 color-blue font-f'> Plagiarism Free </h5> </a>
-                                    <p className='font15 fw500 font-f'> When you are looking for SEO article writing services, it is important to find one that offers plagiarism-free content. This is something that Book Writing Cube takes pride in offering. All of their articles are written from scratch, so you can be sure that the content is 100% original.
+                                    <p className='font15 fw500 font-f'> When you are looking for SEO article writing services, it is important to find one that offers plagiarism-free content. This is something that book writing expert takes pride in offering. All of their articles are written from scratch, so you can be sure that the content is 100% original.
                                     </p>
                                 </div>
 

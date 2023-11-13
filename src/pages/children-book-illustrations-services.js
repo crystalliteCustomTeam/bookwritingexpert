@@ -39,7 +39,7 @@ const Childrenbookillustrationsservices = () => {
 
   const text = <span>We write, edit, publish and market all genres of books. Also, we provide similar services to <Link className='textdocationnone color-blue hover' href="#">self publish ebooks</Link>. So, we can also help you with <Link className='textdocationnone color-blue hover' href="#">self publishing</Link> .</span>;
 
-  const subtext = <span>Benefit from our wide-ranging array of book publication formats and forms and book your place as a book writing cube. We are ranked among the top book publishing companies including children’s book publishers and Amazon publishing services providers.</span>;
+  const subtext = <span>Benefit from our wide-ranging array of book publication formats and forms and book your place as a book writing expert. We are ranked among the top book publishing companies including children’s book publishers and Amazon publishing services providers.</span>;
 
   const reasons = [
 
@@ -336,10 +336,10 @@ const Childrenbookillustrationsservices = () => {
 
 
 
-      {/* Why Choose Book Writing Cube? */}
+      {/* Why Choose book writing expert? */}
       {/* <Whychoosebook
    title="5 Steps To Our Children's Book Illustrations Process!"
-  text="We at Book Writing Cube have a detailed five-step process to getting your Children's Book Illustrations as good as you want them to be. This process is pretty much similar for illustrators all over the world, and we appreciate it if we educate our clients beforehand on what goes on in the entire illustration process."
+  text="We at book writing expert have a detailed five-step process to getting your Children's Book Illustrations as good as you want them to be. This process is pretty much similar for illustrators all over the world, and we appreciate it if we educate our clients beforehand on what goes on in the entire illustration process."
   whychoose= {stepstoour}
  /> */}
 

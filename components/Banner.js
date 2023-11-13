@@ -131,7 +131,7 @@ const Banner = (props) => {
 
                 {props.discuss ?
                   <div className='mt-5'>
-                    <Link className={styles.discuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
+                    <Link className={styles.discuss} href="#">{props.discuss}</Link>
                     <Link className={styles.homenumer} href="tel:(855) 500 0057"> {props.homebannernum}</Link>
 
 
@@ -157,7 +157,7 @@ const Banner = (props) => {
                 {props.free ?
                   <div className='mt-4 mb-5'>
 
-                    <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> {props.free} </Link>
+                    <Link className={styles.free} href="#"> {props.free} </Link>
                   </div>
                   : ''}
 
@@ -168,7 +168,7 @@ const Banner = (props) => {
                     <div className="col-12 col-lg-12">
 
                       <div className={styles.homebannerlogo}>
-                        <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-4`} src={props.homebanlogos} alt='book writing expert' ></Image>
+                        <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-4`} src={props.homebanlogos} alt="Book Writing Experts" ></Image>
                       </div>
                     </div>
 
@@ -178,7 +178,7 @@ const Banner = (props) => {
                           {bannerlogo.map((item, i) => {
                             return (
                               <div key={i}>
-                                <Image loading="lazy" className='pt-3 img-fluid brandnewlogo' src={item.banlogo} alt='book writing expert'></Image>
+                                <Image loading="lazy" className='pt-3 img-fluid brandnewlogo' src={item.banlogo} alt="Book Writing Experts"></Image>
                               </div>
                             )
                           })}

@@ -58,16 +58,16 @@ const ourportfolio = () => {
 
                     <Row className='mt-5'>
                         <Col md={3}>
-                            <Image src={bookpublishing1} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookpublishing1} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookpublishing2} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookpublishing2} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookpublishing3} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookpublishing3} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookpublishing4} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookpublishing4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
                
@@ -79,16 +79,16 @@ const ourportfolio = () => {
                    
                     <Row className='mt-5'>
                         <Col md={3}>
-                            <Image src={bookwriting1} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookwriting1} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookwriting2} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookwriting2} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookwriting3} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookwriting3} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookwriting4} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookwriting4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
 
@@ -101,16 +101,16 @@ const ourportfolio = () => {
 
                     <Row className='mt-5'>
                         <Col md={3}>
-                            <Image src={bookediting1} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookediting1} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookediting2} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookediting2} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookediting3} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookediting3} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookediting4} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookediting4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
                    
@@ -127,16 +127,16 @@ const ourportfolio = () => {
 
                     <Row className='mt-5'>
                         <Col md={3}>
-                            <Image src={bookmarketing1} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookmarketing1} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookmarketing2} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookmarketing2} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookmarketing3} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookmarketing3} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                         <Col md={3}>
-                            <Image src={bookmarketing4} className='img-fluid' alt='book writing expert'></Image>
+                            <Image src={bookmarketing4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
 

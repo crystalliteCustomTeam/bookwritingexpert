@@ -221,7 +221,7 @@ export default function Home() {
         {/* Customersatisfaction */}
         <Customersatisfaction />
 
-        {/* Why Choose Book Writing Cube? */}
+        {/* Why Choose book writing expert? */}
         <Whychoosebook
           title="Why Choose Book Writing Expert?"
           text="We are well aware of unique content creation requirements for each client. With a team equipped with a wide array of expertise, experiences and knowledge, we are always an author’s top preference. Book Writing Expert will simplify the Writing, Editing, Publication and Marketing needs for you. Our collaboration would be transparent and hassle-free, reducing all the intricacies from your end. We only deliver content that is remarkable, genuine and original."

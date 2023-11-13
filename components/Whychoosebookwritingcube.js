@@ -15,7 +15,7 @@ const Whychoosebookwritingcube = (props) => {
                         <Col md={4}>
 
                             <div className={styles.image}>
-                                <Image loading="lazy" src={props.image} className={`${styles.imgshowdow} img-fluid`} alt='book writing expert'></Image>
+                                <Image loading="lazy" src={props.image} className={`${styles.imgshowdow} img-fluid`} alt="Book Writing Experts"></Image>
                             </div>
 
                         </Col>
@@ -36,7 +36,7 @@ const Whychoosebookwritingcube = (props) => {
 
 
                                 <div className='mt-4'>
-                                    <Link className={styles.asdiscuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
+                                    <Link className={styles.asdiscuss} href="#">{props.discuss}</Link>
                                     <Link className={styles.asnumber} href="tel:(855) 500 0057"> {props.number}</Link>
 
                                 </div>

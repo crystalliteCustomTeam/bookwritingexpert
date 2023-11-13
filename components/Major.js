@@ -36,7 +36,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon01}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -45,7 +45,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon02}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -54,7 +54,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon03}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -63,7 +63,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon04}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -74,7 +74,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon05}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -83,7 +83,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon06}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -92,7 +92,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon07}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -101,7 +101,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon08}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -112,7 +112,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon09}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -121,7 +121,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon10}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -130,7 +130,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon11}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>
@@ -139,7 +139,7 @@ const Major = () => {
                             <div className='text-center'>
                                 <Image className='img-fluid'
                                     src={icon12}
-                                    alt='book writing expert'
+                                    alt="Book Writing Experts"
                                     loading="lazy"
                                 />
                             </div>

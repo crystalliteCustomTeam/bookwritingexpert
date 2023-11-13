@@ -110,7 +110,7 @@ const Professionalaudiobook = () => {
                 <Container>
                     <Row className='gy-5'>
                         <Col lg={3}>
-                            <Image alt='book writing expert' src={banslider12} className="img-fluid" />
+                            <Image alt="Book Writing Experts" src={banslider12} className="img-fluid" />
                         </Col>
                         <Col lg={9}>
 

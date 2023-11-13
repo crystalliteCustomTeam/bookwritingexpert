@@ -59,7 +59,7 @@ const BookPublishing = (props) => {
                                         </div>
                                     </Col>
                                     <Col md={4}>
-                                        <Image loading="lazy" src={post.bookbadges1} alt='book writing expert' className='img-fluid'></Image>
+                                        <Image loading="lazy" src={post.bookbadges1} alt="Book Writing Experts" className='img-fluid'></Image>
                                     </Col>
                                 </Row>
                             </Col>
