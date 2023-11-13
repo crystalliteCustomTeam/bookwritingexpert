@@ -37,3 +37,14 @@
     
     }
 }
+
+
+@media (max-width:480px)  {
+
+.customersatisfaction h3{
+    font-size: 20px;
+}
+
+
+
+ }

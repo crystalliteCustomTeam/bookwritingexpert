@@ -33,5 +33,6 @@
 @media (max-width: 480px) {
   .experts p {
     font-size: 14px;
-  }
+    line-height: 23px;
+}
 }

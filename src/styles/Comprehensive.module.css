@@ -143,9 +143,12 @@
 
 @media (max-width: 480px) {
   .flipcardback p {
-    font-size: 15px;
-    line-height: 1.2;
-  }
+    font-size: 14px;
+    line-height: 23px;
+    height: 96px;
+    overflow: scroll;
+    margin-top: 10px;
+}
 
   .post {
     margin-bottom: 0%;
