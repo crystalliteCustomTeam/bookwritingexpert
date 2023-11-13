@@ -175,7 +175,7 @@ const Footer = () => {
 
             </Col>
             <Col md={3}>
-              <h2 className='font-f font22 fw500 border-bottom'>Useful Links</h2>
+              <h3 className='font-f font22 fw500 border-bottom'>Useful Links</h3>
               <ul className={`${styles.footermenu1} mt-4`}>
 
                 <li className={`${styles.footermenulinks} `}><Link className={styles.styleset} href="/">Home</Link></li>
@@ -195,7 +195,7 @@ const Footer = () => {
             </Col>
             <Col md={3}>
 
-              <h2 className='font-f font22 fw500 border-bottom'>Services</h2>
+              <h3 className='font-f font22 fw500 border-bottom'>Services</h3>
 
               <ul className={`${styles.footermenu1}  mt-4`}>
 
@@ -225,7 +225,7 @@ const Footer = () => {
 
             </Col>
             <Col md={2}>
-              <h2 className='font-f font22 fw500 border-bottom'>Awards</h2>
+              <h3 className='font-f font22 fw500 border-bottom'>Awards</h3>
 
 
 
