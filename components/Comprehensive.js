@@ -16,9 +16,51 @@ import icon8 from '../public/images/comprehensive/icon8.png'
 import icon9 from '../public/images/comprehensive/icon9.png'
 import icon10 from '../public/images/comprehensive/icon10.png'
 import icon11 from '../public/images/comprehensive/icon11.png'
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const Comprehensive = () => {
+
+
+    var bookrecordingprojects = {
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+
+    const [isSliderActive, setIsSliderActive] = useState(true);
+
+    useEffect(() => {
+
+        const handleResize = () => {
+            if (window.innerWidth < 480) {
+                setIsSliderActive(true);
+            } else {
+                setIsSliderActive(false);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+
+
+
+
     const card =
         [
             {
@@ -67,7 +109,7 @@ const Comprehensive = () => {
 
             },
 
-               {
+            {
                 image: icon8,
                 title: "Children's Book Illustrations",
                 subTitle: "Children's Book Illustrations",
@@ -83,7 +125,7 @@ const Comprehensive = () => {
 
             },
 
-           
+
         ]
     return (
         <>
@@ -98,11 +140,12 @@ const Comprehensive = () => {
                         </Col>
 
                     </Row>
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects}>
 
-                    <Row className='gy-5'>
-                        {card.map((item, i) => {
-                            return(
-                                <Col className={`${styles.post} col-md-3`}  key={i}>
+                            {card.map((item, i) => {
+                                return (
+
 
                                     <div className={styles.flipcard}>
                                         <div className={styles.flipcardinner}>
@@ -117,16 +160,44 @@ const Comprehensive = () => {
                                             </div>
                                         </div>
                                     </div>
-                                  
-                            </Col>
-                            )
-                        })}
-
-                      
 
 
-                    </Row>
+                                )
+                            })}
 
+                        </Slider>
+
+
+                        :
+
+                        <Row className='gy-5'>
+                            {card.map((item, i) => {
+                                return (
+                                    <Col className={`${styles.post} col-md-3`} key={i}>
+
+                                        <div className={styles.flipcard}>
+                                            <div className={styles.flipcardinner}>
+                                                <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
+                                                    <Image loading="lazy" quality={70} className='img-fluid' src={item.image} alt="book_writing_cube"></Image>
+                                                    <h3>{item.subTitle}</h3>
+                                                </div>
+                                                <div className={styles.flipcardback}>
+                                                    <h3 className='mt-2'>{item.title}</h3>
+                                                    <p>{item.pra}</p>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </Col>
+                                )
+                            })}
+
+
+
+
+                        </Row>
+                    }
                 </Container>
 
             </div>

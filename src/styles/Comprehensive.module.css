@@ -142,11 +142,22 @@
 }
 
 @media (max-width: 480px) {
+
+  .flipcardfront1 {
+
+    box-shadow: unset;
+    border:1px solid black;
+    border-radius: unset;
+   
+  }
+
+
+
   .flipcardback p {
     font-size: 14px;
     line-height: 23px;
     height: 96px;
-    overflow: scroll;
+    overflow-y: scroll;
     margin-top: 10px;
 }
 
@@ -164,6 +175,6 @@
 
   .flipcardback {
     height: 90%;
-    width: 100%;
+    width: 99%;
   }
 }

@@ -42,6 +42,10 @@
  }
 @media (max-width:480px)  { 
 
+    .onestepsolutions p{
+        text-align: center;
+    }
+
     .onestepsolutions h2{
 
         font-size: 25px;
@@ -51,6 +55,9 @@
         max-width: 100%;
         margin: 0 auto;
      
+    }
+    .wrtingtext{
+        height: 100px;
     }
 
  }
