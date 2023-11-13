@@ -191,4 +191,15 @@
   .freebtn {
     font-size: 14px;
   }
+  .signup {
+    padding: 42px 20px 40px 20px!important;
+}
+.signup p{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.signup p em{
+  font-style: normal;
+}
 }

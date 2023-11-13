@@ -987,8 +987,10 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   }
 
   .bannergllobal h1 {
-    font-size: 20px;
-}
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+  }
 
   .font70{
     font-size: 40px;
@@ -1017,8 +1019,9 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 
 
-  .font50 {
-    font-size: 20px;
+.font50 {
+  font-size: 28px;
+  line-height: 38px;
 }
 .font40 {
   font-size: 20px;
@@ -1039,6 +1042,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   }
   .font15 {
     font-size: 14px;
+    line-height: 23px;
   }
 
   .testtimonials svg.slick-arrow.slick-prev {
