@@ -44,7 +44,7 @@ const Digitalmarketingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/"
+      "@id": "https://www.bookwritingexperts.com/"
     },
     "headline": "Book Writing Company",
     "description": "Book Writing Company",
@@ -68,10 +68,10 @@ const Digitalmarketingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/digital-marketing-services/",
+    "url": "https://www.bookwritingexperts.com/digital-marketing-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -85,7 +85,7 @@ const Digitalmarketingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/digital-marketing-services/",
+    "url": "https://www.bookwritingexperts.com/digital-marketing-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -116,7 +116,7 @@ const Digitalmarketingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -130,7 +130,7 @@ const Digitalmarketingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/digital...-services/"
+      "@id": "https://www.bookwritingexperts.com/digital...-services/"
     },
     "headline": "Digital Marketing Services",
     "description": "Digital Marketing Services",

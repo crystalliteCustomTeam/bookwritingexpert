@@ -140,11 +140,11 @@ const Bookpublishingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/ghostwriting-services/"
+      "@id": "https://www.bookwritingexperts.com/ghostwriting-services/"
     },
     "headline": "Bring Your Ideas to Life With Our Expert Ghostwriting Services!",
     "description": "Ghostwriting Services",
-    "image": "https://bookwritingexperts.com/wp-content/uploads/2021/02/ghost-writing-jpg.jpg?id=8337",
+    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/ghost-writing-jpg.jpg?id=8337",
     "author": {
       "@type": "Organization",
       "name": "Mini Investments"
@@ -164,10 +164,10 @@ const Bookpublishingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/ghostwriting-services/",
+    "url": "https://www.bookwritingexperts.com/ghostwriting-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -182,7 +182,7 @@ const Bookpublishingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/ghostwriting-services/",
+    "url": "https://www.bookwritingexperts.com/ghostwriting-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -213,7 +213,7 @@ const Bookpublishingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -236,12 +236,12 @@ const Bookpublishingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Top-Tier Ghostwriting Services - Book Writing Experts</title>
         <meta name="description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-        <link rel="canonical" href="https://bookwritingexperts.com/ghostwriting-services/" />
+        <link rel="canonical" href="https://www.bookwritingexperts.com/ghostwriting-services/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Top-Tier Ghostwriting Services - Book Writing Experts" />
         <meta property="og:description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-        <meta property="og:url" content="https://bookwritingexperts.com/ghostwriting-services/" />
+        <meta property="og:url" content="https://www.bookwritingexperts.com/ghostwriting-services/" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-03-31T12:03:02+00:00" />
         <meta name="twitter:card" content="summary_large_image" />

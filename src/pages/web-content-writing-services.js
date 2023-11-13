@@ -152,7 +152,7 @@ const EbookWritingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/web-content-writing-service/"
+      "@id": "https://www.bookwritingexperts.com/web-content-writing-service/"
     },
     "headline": "Web Content Writing Service That Gives Your Business Persona A Professional Look!",
     "description": "Web Content Writing Service",
@@ -176,10 +176,10 @@ const EbookWritingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/web-content-writing-service/",
+    "url": "https://www.bookwritingexperts.com/web-content-writing-service/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -193,7 +193,7 @@ const EbookWritingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/web-content-writing-service/",
+    "url": "https://www.bookwritingexperts.com/web-content-writing-service/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -224,7 +224,7 @@ const EbookWritingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",

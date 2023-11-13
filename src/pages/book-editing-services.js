@@ -148,11 +148,11 @@ const Bookpublishingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/book-editing-services/"
+      "@id": "https://www.bookwritingexperts.com/book-editing-services/"
     },
     "headline": "Professional Book Editing Services For All The Idealists Within Their Reach",
     "description": "Book Editing Services",
-    "image": "https://bookwritingexperts.com/wp-content/uploads/2021/02/editing-jpg.jpg?id=8355",
+    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/editing-jpg.jpg?id=8355",
     "author": {
       "@type": "Organization",
       "name": "Mini Investments"
@@ -174,10 +174,10 @@ const Bookpublishingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/book-editing-services/",
+    "url": "https://www.bookwritingexperts.com/book-editing-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -193,7 +193,7 @@ const Bookpublishingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/book-editing-services/",
+    "url": "https://www.bookwritingexperts.com/book-editing-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -224,7 +224,7 @@ const Bookpublishingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -241,7 +241,7 @@ const Bookpublishingservices = () => {
     "provider": {
       "@type": "Organization",
       "name": "book editing services book editing company book editors",
-      "url": "https://bookwritingexperts.com/book-editing-services/"
+      "url": "https://www.bookwritingexperts.com/book-editing-services/"
     },
     "serviceType": ["book editing services book editing company book editors"],
     "areaServed": {

@@ -151,7 +151,7 @@ const EbookWritingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/formatting-services/"
+      "@id": "https://www.bookwritingexperts.com/formatting-services/"
     },
     "headline": "Formatting Services To Help You Pen Down Your Thoughts Effortlessly!",
     "description": "Formatting Services",
@@ -175,10 +175,10 @@ const EbookWritingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/book-formatting-services/",
+    "url": "https://www.bookwritingexperts.com/book-formatting-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -192,7 +192,7 @@ const EbookWritingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/book-formatting-services/",
+    "url": "https://www.bookwritingexperts.com/book-formatting-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -223,7 +223,7 @@ const EbookWritingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -235,10 +235,10 @@ const EbookWritingservices = () => {
     "@context": "https://schema.org/",
     "@type": "WebSite",
     "name": "bookwritingexperts",
-    "url": "https://bookwritingexperts.com/book-formatting-services/",
+    "url": "https://www.bookwritingexperts.com/book-formatting-services/",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://bookwritingexperts.com/formatting-services/search?q={search_term_string}",
+      "target": "https://www.bookwritingexperts.com/formatting-services/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

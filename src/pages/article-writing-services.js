@@ -70,11 +70,11 @@ const articleWritingServices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/book-publishing-services/"
+      "@id": "https://www.bookwritingexperts.com/book-publishing-services/"
     },
     "headline": "Providing Full Fledged Book Publishing Services To Our Struggling Authors",
     "description": "Top-Rated Book Publishing Services by Book Writing",
-    "image": "https://bookwritingexperts.com/wp-content/uploads/2021/02/publishing.jpg?id=8354",
+    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/publishing.jpg?id=8354",
     "author": {
       "@type": "Organization",
       "name": "Mini Investments"
@@ -97,10 +97,10 @@ const articleWritingServices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/book-publishing-services/",
+    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -116,7 +116,7 @@ const articleWritingServices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/book-publishing-services/",
+    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -147,7 +147,7 @@ const articleWritingServices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -167,7 +167,7 @@ const articleWritingServices = () => {
     "provider": {
       "@type": "Organization",
       "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-      "url": "https://bookwritingexperts.com/book-publishing-services/"
+      "url": "https://www.bookwritingexperts.com/book-publishing-services/"
     },
     "serviceType": ["book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing"],
     "areaServed": {

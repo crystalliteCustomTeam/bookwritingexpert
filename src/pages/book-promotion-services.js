@@ -121,7 +121,7 @@ const Bookpublishingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/book-promotion-services/"
+      "@id": "https://www.bookwritingexperts.com/book-promotion-services/"
     },
     "headline": "Book Promotion Services That Connects You To The Reader’s Fraternity!",
     "description": "Book Promotion Services",
@@ -146,10 +146,10 @@ const Bookpublishingservices = () => {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/book-promotion-services/",
+    "url": "https://www.bookwritingexperts.com/book-promotion-services/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -163,7 +163,7 @@ const Bookpublishingservices = () => {
     "name": "bookwritingexperts",
     "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "@id": "",
-    "url": "https://bookwritingexperts.com/book-promotion-services/",
+    "url": "https://www.bookwritingexperts.com/book-promotion-services/",
     "telephone": "2132893888",
     "priceRange": "$99",
     "address": {
@@ -194,7 +194,7 @@ const Bookpublishingservices = () => {
       "closes": "23:59"
     },
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -210,7 +210,7 @@ const Bookpublishingservices = () => {
     "provider": {
       "@type": "Organization",
       "name": "book promotion services book promotion company",
-      "url": "https://bookwritingexperts.com/book-promotion-services/"
+      "url": "https://www.bookwritingexperts.com/book-promotion-services/"
     },
     "serviceType": ["book promotion services book promotion company"],
     "areaServed": {

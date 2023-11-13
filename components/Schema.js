@@ -7,7 +7,7 @@ const Schema = () => (
           "name": "bookwritingexperts",
           "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
           "@id": "",
-          "url": "https://bookwritingexperts.com/",
+          "url": "https://www.bookwritingexperts.com/",
           "telephone": "2132893888",
           "priceRange": "$99",
           "address": {
@@ -38,7 +38,7 @@ const Schema = () => (
             "closes": "23:59"
           },
           "sameAs": [
-            "https://bookwritingexperts.com/",
+            "https://www.bookwritingexperts.com/",
             "https://www.facebook.com/bookwritingexperts",
             "https://twitter.com/bookwritingexp",
             "https://www.instagram.com/bookwritingexpert/",

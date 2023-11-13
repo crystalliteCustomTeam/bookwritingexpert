@@ -31,11 +31,11 @@ const Thankyou = () => {
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>thankyou - Book Writing</title>
-        <link rel="canonical" href="https://bookwritingexperts.com/thankyou/" />
+        <link rel="canonical" href="https://www.bookwritingexperts.com/thankyou/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="thankyou - Book Writing" />
-        <meta property="og:url" content="https://bookwritingexperts.com/thankyou/" />
+        <meta property="og:url" content="https://www.bookwritingexperts.com/thankyou/" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-01-12T00:08:32+00:00" />
         <meta name="twitter:card" content="summary_large_image" />

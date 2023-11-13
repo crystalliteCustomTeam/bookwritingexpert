@@ -54,7 +54,7 @@ function Illustrationbook() {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://bookwritingexperts.com/"
+      "@id": "https://www.bookwritingexperts.com/"
     },
     "headline": "Book Writing Company",
     "description": "Book Writing Company",
@@ -79,10 +79,10 @@ function Illustrationbook() {
     "@type": "Corporation",
     "name": "bookwritingexperts",
     "alternateName": "Book Writing Experts",
-    "url": "https://bookwritingexperts.com/",
+    "url": "https://www.bookwritingexperts.com/",
     "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
     "sameAs": [
-      "https://bookwritingexperts.com/",
+      "https://www.bookwritingexperts.com/",
       "https://www.facebook.com/bookwritingexperts",
       "https://twitter.com/bookwritingexp",
       "https://www.instagram.com/bookwritingexpert/",
@@ -92,7 +92,7 @@ function Illustrationbook() {
   }
 
   const schema3 = {
-    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://bookwritingexperts.com/" },
+    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://www.bookwritingexperts.com/" },
     "serviceType": ["book writing services book writing company book writers affordable book writing services"], "areaServed": { "@type": "country", "name": "us" }
   }
 
@@ -111,12 +111,12 @@ function Illustrationbook() {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Professional Book Writing Services Company</title>
         <meta name="description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <link rel="canonical" href="https://bookwritingexperts.com/" />
+        <link rel="canonical" href="https://www.bookwritingexperts.com/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Professional Book Writing Services Company" />
         <meta property="og:description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <meta property="og:url" content="https://bookwritingexperts.com/" />
+        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
         <meta name="twitter:card" content="summary_large_image" />
