@@ -24,6 +24,7 @@ import logonew2 from '../public/images/footer/logonew2.png'
 import logonew3 from '../public/images/footer/logonew3.png'
 import logonew4 from '../public/images/footer/logonew4.png'
 import logonew5 from '../public/images/footer/logonew5.png'
+import email from '../public/images/footer/email.png'
 // footer icons
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
@@ -154,7 +155,7 @@ const Footer = () => {
             <Col md={4}>
               <Image loading="lazy" className={styles.footerlogosize} src={footerlogo} alt="Book Writing Experts"></Image>
               <ul className={styles.footermenu1}>
-                <li className={`${styles.footermenulinks} mt-4`}><MdEmail size={16} />  <Link className={styles.styleset} href="mailto:support@bookwritingexperts.com">support@bookwritingexperts.com</Link></li>
+                <li className={`${styles.footermenulinks} mt-4`}><MdEmail size={16} />  <Link className={styles.styleset} href="mailto:support@bookwritingexperts.com"><Image src={email} alt="Book Writing Experts" /></Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(855) 500 0057"> (855) 500 0057 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(213) 289 3888"> (213) 289 3888 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
