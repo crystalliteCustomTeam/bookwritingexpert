@@ -15,7 +15,7 @@ const Sticky = () => {
           </li>
           <li>
             <FaRegComments size={28} />
-            <p><a href="#" >Let's Discuss</a></p>
+            <p><a href="javascript:$zopim.livechat.window.show();" >Let's Discuss</a></p>
           </li>
         </ul>
       </div>

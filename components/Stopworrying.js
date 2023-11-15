@@ -66,7 +66,7 @@ const Stopworrying = (props) => {
             <div className={styles.aligntop}>
 
           
-              <Link href='#' className={styles.btn1}> {props.btn2} </Link>
+              <Link href='javascript:$zopim.livechat.window.show();' className={styles.btn1}> {props.btn2} </Link>
               <Link href='tel:2132893888' className={styles.btn2}>Call Us At (855) 500 0057</Link>
 
             </div>

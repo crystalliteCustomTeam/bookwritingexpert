@@ -22,7 +22,7 @@ const Aspiring = (props) => {
 
                             <div className='mt-5'>
                          
-                                <Link className={styles.btn1} href="#">Get A Free Proposal</Link>
+                                <Link className={styles.btn1} href="javascript:$zopim.livechat.window.show();">Get A Free Proposal</Link>
                                 <Link className={styles.btn2} href="tel:(855) 500 0057"> {props.number}</Link>
 
                             </div>

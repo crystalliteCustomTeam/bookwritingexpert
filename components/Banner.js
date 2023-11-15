@@ -131,13 +131,13 @@ const Banner = (props) => {
 
                 {props.discuss ?
                   <div className='mt-5'>
-                    <Link className={styles.discuss} href="#">{props.discuss}</Link>
+                    <Link className={styles.discuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
                     <Link className={styles.homenumer} href="tel:(855) 500 0057"> {props.homebannernum}</Link>
 
 
                     {props.processs ?
 
-                      <Link onClick={handleShow} className={` ${styles.homenumer} ${styles.new1} `} href='#'> <BsFillPlayFill size={25} /> {props.processs} </Link>
+                      <Link onClick={handleShow} className={` ${styles.homenumer} ${styles.new1} `} href='javascript:$zopim.livechat.window.show();'> <BsFillPlayFill size={25} /> {props.processs} </Link>
 
                       :
                       ''
@@ -157,7 +157,7 @@ const Banner = (props) => {
                 {props.free ?
                   <div className='mt-4 mb-5'>
 
-                    <Link className={styles.free} href="#"> {props.free} </Link>
+                    <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> {props.free} </Link>
                   </div>
                   : ''}
 

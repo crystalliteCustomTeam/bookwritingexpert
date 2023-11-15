@@ -26,13 +26,13 @@ const Buildyourownidentity = () => {
                             <div>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h4>
                                 <p className='font15  textcolor t-center font-f'>Ignite brand growth and engagement by leveraging the power of social media platforms.</p>
-                                <Link className={styles.lets} href='#'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
                             <div className='mt-5'>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>EMAIL MARKETING PLANS</h4>
                                 <p className='font15  textcolor t-center font-f'>Expand your reach and nurture customer relationships with strategic email campaigns.</p>
-                                <Link className={styles.lets} href='#'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
 
@@ -47,13 +47,13 @@ const Buildyourownidentity = () => {
                             <div className=''>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>ADVERTISING PLANS</h4>
                                 <p className='font15  textcolor t-center font-f'>Amplify your brand's visibility through targeted social media advertising for enhanced reach.</p>
-                                <Link className={styles.lets} href='#'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
                             <div className='mt-5'>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>SEO SERVICES</h4>
                                 <p className='font15  textcolor t-center font-f'>Increase your visibility on search engines with our proven SEO strategies.</p>
-                                <Link className={styles.lets} href='#'>Chat With Us To Get Your Book Marketing Plan</Link>
+                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Chat With Us To Get Your Book Marketing Plan</Link>
 
                             </div>
 

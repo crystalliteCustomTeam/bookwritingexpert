@@ -98,13 +98,13 @@ const Homebanner = (props) => {
                                 }
                                 {props.discuss ?
                                     <div className={`${styles[props.homebancan]} mt-5`}>
-                                        <Link className={styles.discuss} href="#">{props.discuss}</Link>
+                                        <Link className={styles.discuss} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
                                         <Link className={styles.homenumer} href="tel:(855) 500 0057"> {props.homebannernum}</Link>
 
 
                                         {props.processs ?
 
-                                            <Link onClick={handleShow} className={` ${styles.homenumer} ${styles.new1} `} href='#'> <BsFillPlayFill size={25} /> {props.processs} </Link>
+                                            <Link onClick={handleShow} className={` ${styles.homenumer} ${styles.new1} `} href='javascript:$zopim.livechat.window.show();'> <BsFillPlayFill size={25} /> {props.processs} </Link>
 
                                             :
                                             ''
