@@ -42,18 +42,13 @@ const Header = () => {
 
   const [show, setShow] = useState(false);
 
-  const [show1, setShow1] = useState(false);
+
 
   function modal(e) { e.preventDefault(); setShow(true); }
   function closemodal() { setShow(false); }
 
 
-  function modal1(e) {
-    e.preventDefault(); setShow1(true);
-  }
-  function closemodal1() {
-    setShow1(false);
-  }
+ 
 
   const router = useRouter();
 
@@ -78,7 +73,7 @@ const Header = () => {
 
 
 
-const thanks = router.pathname == '/thanks-giving'
+
 
 
 
@@ -91,7 +86,7 @@ const thanks = router.pathname == '/thanks-giving'
 
 
 
-      <header onLoad={modal1} className={headercolor ? `${styles.headerblue}` : bloginner ? `${styles.headerblue}` : `${styles.headerhome}`}>
+      <header  className={headercolor ? `${styles.headerblue}` : bloginner ? `${styles.headerblue}` : `${styles.headerhome}`}>
 
 
         <Navbar expand="lg">
@@ -299,16 +294,7 @@ const thanks = router.pathname == '/thanks-giving'
 
       </Modal>
 
-{thanks ? 
-      <Modal show={show1} centered onHide={closemodal1}  className='thanksgiving'>
-          <Modal.Body>
-            <Thanksgiving /> <span onClick={closemodal1} className={styles.cross}>x</span>
-          </Modal.Body>
-      </Modal>
-:
 
-''
-}
     </>
   )
 }

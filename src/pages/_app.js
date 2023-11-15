@@ -11,10 +11,14 @@ import { useRouter } from 'next/router';
 import logo from '../../public/images/logo.svg';
 import loader from '../../public/images/loader.gif';
 import Image from 'next/image';
+import Modal from 'react-bootstrap/Modal';
+import Thanksgiving from '../../components/Thanksgiving';
+import styles from '@/styles/Header.module.css'
+
 
 export default function App({ Component, pageProps }) {
 
-
+ 
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
@@ -48,6 +52,20 @@ export default function App({ Component, pageProps }) {
   const routernew = router.pathname == '/';
 
 
+  const thanks = router.pathname == '/thanks-giving'
+
+
+  const [show1, setShow1] = useState('');
+
+  function modal1() {
+    setShow1(true);
+   
+  }
+  function closemodal1() {
+    setShow1(false);
+  }
+
+
   return (
     <>
 
@@ -70,7 +88,7 @@ export default function App({ Component, pageProps }) {
       {loading && (
         <div className="loading-screen">
           {/* Customize your loader here */}
-          <Image quality={100}  src={logo} alt="Book Writing Experts"></Image>
+          <Image quality={100} src={logo} alt="Book Writing Experts"></Image>
           {/* <Image quality={100}   src={loader} alt="Book Writing Experts"></Image> */}
           <div className="spinner mt-3 mb-3"></div>
           <p className='color-white'>Loading...</p>
@@ -92,11 +110,26 @@ export default function App({ Component, pageProps }) {
         </>
       }
 
+      <div onLoad={modal1}>
+        <Header />
+        </div>
+        <Pixel />
+        <Component {...pageProps} />
+        <Footer />
+     
 
-      <Header />
-      <Pixel />
-      <Component {...pageProps} />
-      <Footer />
+
+      {thanks ? 
+      <Modal show={show1} centered onHide={closemodal1} onLoad={modal1}  className='thanksgiving'>
+          <Modal.Body>
+            <Thanksgiving /> <span onClick={closemodal1} className={styles.cross}>x</span>
+          </Modal.Body>
+      </Modal>
+:
+
+''
+}
+
 
       <div>
         <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
