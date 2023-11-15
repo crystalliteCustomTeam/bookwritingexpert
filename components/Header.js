@@ -78,7 +78,7 @@ const Header = () => {
 
 
 
-
+const thanks = router.pathname == '/thanks-giving'
 
 
 
@@ -299,16 +299,16 @@ const Header = () => {
 
       </Modal>
 
-
+{thanks ? 
       <Modal show={show1} centered onHide={closemodal1}  className='thanksgiving'>
-      
           <Modal.Body>
-
             <Thanksgiving /> <span onClick={closemodal1} className={styles.cross}>x</span>
           </Modal.Body>
-        
       </Modal>
+:
 
+''
+}
     </>
   )
 }
