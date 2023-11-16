@@ -1148,6 +1148,15 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 991px) {
+
+.footercolset .col-md-4, .footercolset .col-md-3, .footercolset .col-md-2{
+  width: 100%;
+}
+
+.footercolset h3{
+  margin-top: 5%;
+}
+
   .thanksgiving .modal-content{
     height: auto;
   }
