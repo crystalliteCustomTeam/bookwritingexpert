@@ -121,7 +121,7 @@ const Thanksgiving = () => {
 
                 <div className={styles.post}>
                   <span className='togpost'>
-                    <Image src={textimage} className='img-fluid w-50 d-block m-auto' />
+                    <Image alt="Book Writing Experts" src={textimage} className='img-fluid w-50 d-block m-auto' />
                   </span>
 
                   
