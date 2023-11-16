@@ -2,11 +2,23 @@ import React from 'react'
 import styles from '@/styles/Signup.module.css'
 import { useState } from "react";
 import Router from 'next/router'
-import axios from "axios";
+import Axios from "axios";
+import { useEffect } from 'react';
+
 
 import { useRouter } from 'next/router';
 
 const Signup = (props) => {
+
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
+  }
+  useEffect(() => {
+    getIPData()
+  }, [])
 
   const [score, setScore] = useState('Best time to jump on a quick call:');
 
@@ -24,7 +36,7 @@ const Signup = (props) => {
       email: e.target.email.value,
       phone: e.target.phone.value,
       message: e.target.message.value,
-      pageUrl:currentRoute,
+      pageUrl: currentRoute,
     }
 
     const JSONdata = JSON.stringify(data)
@@ -47,6 +59,29 @@ const Signup = (props) => {
       }
     })
 
+
+    var currentdate = new Date().toLocaleString() + ''
+    let headersList = {
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
+      "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      "Brand": "BOOK-WRITING-EXPERT",
+      "Page": `${currentRoute}`,
+      "Date": currentdate,
+      "Time": currentdate,
+      "JSON": JSONdata,
+    });
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
+    });
+
     const { pathname } = Router
     if (pathname == pathname) {
       window.location.href = 'https://www.bookwritingexperts.com/thank-you';
@@ -61,7 +96,7 @@ const Signup = (props) => {
       <p className='font-f t-center'> <em>Drop your details, and we'll soon respond to your inquiry!</em> </p>
       <form onSubmit={handleSubmit}>
         <input type="text" className={styles.nametext} required name="name" placeholder="Full Name:" />
-        <input type="email" className={styles.nametext} required name="email"   placeholder="Email Address:" />
+        <input type="email" className={styles.nametext} required name="email" placeholder="Email Address:" />
         <input type="number" className={styles.nametext} required name="phone" placeholder="Phone Number:" />
         <textarea required className={styles.textareanew} name="message" cols="40" rows="10" placeholder="Your project brief:"></textarea>
         <button className={styles.freebtn} type="submit">{score} </button>

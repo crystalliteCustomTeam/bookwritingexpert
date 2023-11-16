@@ -50,36 +50,9 @@ export default async function POST(req, res) {
         }
 
         await transporter.sendMail(mailOptions);
-        var currentdate = new Date().toLocaleString() + ''
-        let headersList = {
-            "Accept": "*/*",
-            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-            "Content-Type": "application/json"
-           }
+       
            
-           let bodyContent = JSON.stringify({
-             "IP" :  req.headers['x-forwarded-for'] || req.connection.remoteAddress,
-             "Brand": "BOOK-WRITING-EXPERT",
-             "Page" : `${pageUrl}`,
-             "Date" : currentdate,
-             "Time" : currentdate,
-             "JSON" : {
-               "form" : {
-                 "name" : `${name}`,
-                 "email": `${email}`,
-                 "phone": `${phone}`,
-                 "message":`${message}`,
-                 "pageURL":`${pageUrl}`
-               } 
-             }
-           });
-           
-         await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", { 
-             method: "POST",
-             body: bodyContent,
-             headers: headersList
-           });
+       
            
 
         return res.json({ "message": "Email send sucessfully", "data": [name, email, phone, message,pageUrl], "status": 200 });

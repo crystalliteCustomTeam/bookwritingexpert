@@ -2,11 +2,22 @@ import React from 'react'
 import styles from '@/styles/Signup.module.css'
 import { useState } from "react";
 import Router from 'next/router'
-import axios from "axios";
+import Axios from "axios";
 import { useRouter } from 'next/router';
-
+import { useEffect } from 'react';
 
 const Signup = (props) => {
+
+
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
+  }
+  useEffect(() => {
+    getIPData()
+  }, [])
 
   const [score, setScore] = useState('Best time to jump on a quick call:');
 
@@ -45,6 +56,30 @@ const Signup = (props) => {
         console.log(`Response Successed ${res}`)
       }
     })
+
+
+    var currentdate = new Date().toLocaleString() + ''
+    let headersList = {
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        "Content-Type": "application/json"
+       }
+       
+       let bodyContent = JSON.stringify({
+        "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+        "Brand": "BOOK-WRITING-EXPERT",
+        "Page": `${currentRoute}`,
+        "Date": currentdate,
+        "Time": currentdate,
+        "JSON": JSONdata,
+      });
+       
+     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", { 
+         method: "POST",
+         body: bodyContent,
+         headers: headersList
+       });
 
     const { pathname } = Router
     if (pathname == pathname) {
