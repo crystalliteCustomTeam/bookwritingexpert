@@ -129,7 +129,7 @@ const Thanksgiving = () => {
                  
                     <input type="text" className={styles.formfree} required name="name" placeholder="Enter Your Name" />
                     <input type="email" className={styles.formfree} required name="email" placeholder="Enter Your Email" />
-                    <input type="number" className={styles.formfree} required name="phone" placeholder="Enter Your Number" />
+                    <input type="tel" minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder="Enter Your Number" />
                     <button className={styles.freebtn} type="submit"> {score}</button>
                   
 

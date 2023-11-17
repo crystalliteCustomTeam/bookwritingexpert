@@ -46,7 +46,7 @@ const ourportfolio = () => {
             <div className={styles.banner}>
                   <div className={styles.heading}>
                   <h1 className='color-black font70 t-center linhight mb-4'>Our <br></br> Editing</h1>
-                    <Link class={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
+                    <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
                   </div>
                 </div>
 

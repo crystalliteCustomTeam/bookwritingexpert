@@ -109,7 +109,7 @@ const Freequote = (props) => {
           <input type="email" className={styles.formfree} required name="email"   placeholder="Type Email Address" />
 
           <label className={styles.label}>Phone *</label>
-          <input type="number" className={styles.formfree} required name="phone" placeholder="123-456-7890" />
+          <input type="tel"  minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder="123-456-7890" />
 
           <label className={styles.label}>Message *</label>
           <textarea className={styles.formfree} required name="message" rows="2" placeholder="Type Your Message Here"></textarea>

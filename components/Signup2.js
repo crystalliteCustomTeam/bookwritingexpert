@@ -96,7 +96,7 @@ const Signup = (props) => {
       <form onSubmit={handleSubmit}>
         <input type="text" className={styles.nametext} required name="name" placeholder="Full Name:" />
         <input type="email" className={styles.nametext} required name="email"   placeholder="Email Address:" />
-        <input type="number" className={styles.nametext} required name="phone" placeholder="Phone Number:" />
+        <input type="tel" className={styles.nametext} required name="phone" minLength="10" maxLength="13" placeholder="Phone Number:" />
         <button className={styles.freebtn} type="submit">{score} </button>
       </form>
     </div>
