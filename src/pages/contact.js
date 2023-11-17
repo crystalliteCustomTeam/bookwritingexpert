@@ -291,7 +291,7 @@ const Contact = () => {
 
                                 <Row className='gy-3'>
                                     <Col md={6}><input className={styles.inputfilet} required id='name' type='text' name='name' placeholder='Name' /></Col>
-                                    <Col md={6}><input className={styles.inputfilet} required id='email' type='email' name='email' placeholder='Email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /></Col>
+                                    <Col md={6}><input className={styles.inputfilet} required id='email' type='email' name='email' placeholder='Email' /></Col>
                                 </Row>
 
                                 <Row className='mt-3 mb-3 gy-3'>
