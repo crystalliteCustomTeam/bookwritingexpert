@@ -263,7 +263,7 @@ const Bookpublishingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Professional Book Editing Services - Book Writing Experts</title>
         <meta name="description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
-        <link rel="canonical" href="/book-editing-services" />
+  
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Professional Book Editing Services - Book Writing Experts" />

@@ -245,7 +245,6 @@ const EbookWritingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Web Content Writing Service - Book Writing Experts</title>
         <meta name="description" content="Web Content Writing Service to help you create a striking impression on your ideal audience. Get in touch with our seasoned writers." />
-        <link rel="canonical" href="/book-writing-services" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Web Content Writing Service - Book Writing Experts" />

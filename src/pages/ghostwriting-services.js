@@ -236,7 +236,7 @@ const Bookpublishingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Top-Tier Ghostwriting Services - Book Writing Experts</title>
         <meta name="description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-        <link rel="canonical" href="https://www.bookwritingexperts.com/ghostwriting-services/" />
+       
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Top-Tier Ghostwriting Services - Book Writing Experts" />

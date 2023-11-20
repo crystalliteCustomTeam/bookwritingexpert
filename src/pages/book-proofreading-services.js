@@ -310,7 +310,7 @@ const Bookpublishingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Best Book Proofreading Services - Book Writing Experts</title>
         <meta name="description" content="Book Proofreading services make your manuscript flawless. Avail the services today from the experts who are adept at keeping an eagle eye on errors." />
-        <link rel="canonical" href="/book-proofreading-services" />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Best Book Proofreading Services - Book Writing Experts" />

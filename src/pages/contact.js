@@ -295,7 +295,7 @@ const Contact = () => {
                                 </Row>
 
                                 <Row className='mt-3 mb-3 gy-3'>
-                                    <Col md={6}> <input className={styles.inputfilet} required id='phone' type="tel" minLength="10" maxLength="13" name='phone' placeholder='Phone' /> </Col>
+                                    <Col md={6}> <input className={styles.inputfilet} required id='phone' type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name='phone' placeholder='Phone' /> </Col>
                                     <Col md={6}> <input className={styles.inputfilet} required id='tel' type='number' name='zip' placeholder='Location/Zip Code' /></Col>
                                 </Row>
 

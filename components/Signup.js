@@ -101,7 +101,7 @@ const Signup = (props) => {
         <input type="text" className={styles.nametext} required name="name" placeholder="Full Name:" />
         <input type="email" className={styles.nametext} required name="email" placeholder="Email Address:" />
         <input type="tel" className={styles.nametext}
-        required name="phone"  minLength="10" maxLength="13" placeholder="Phone Number:" />
+        required name="phone"  minLength="10" maxLength="13" pattern="[0-9]*" placeholder="Phone Number:" />
         <textarea required className={styles.textareanew} name="message" cols="40" rows="10" placeholder="Your project brief:"></textarea>
         <button className={styles.freebtn} type="submit">{score} </button>
       </form>

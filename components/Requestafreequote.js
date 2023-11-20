@@ -108,7 +108,7 @@ const Requestafreequote = () => {
 
               <Col md={4}>  <input type="email" className={styles.formfree} required name="email" placeholder='Email'   /></Col>
 
-              <Col md={4}>   <input type="tel" minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" /> </Col>
+              <Col md={4}>   <input type="tel" minLength="10" maxLength="13"  className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]*" /> </Col>
             </Row>
             <button className={styles.freebtn} type="submit"> {score} </button>
           </form>

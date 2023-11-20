@@ -66,13 +66,27 @@ export default function App({ Component, pageProps }) {
   }
 
 
+ 
+  const sluginer = useRouter().asPath;
+
+
+const weblink = "https://www.bookwritingexperts.com";
+
+
+
+
+
+
+const newcol = weblink+sluginer;
+ 
+
   return (
     <>
 
 
       <Head>
         <meta name="google-site-verification" content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM" />
-
+        <link rel="canonical" href={newcol} />
       </Head>
 
       <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
@@ -120,11 +134,13 @@ export default function App({ Component, pageProps }) {
 
 
       {thanks ? 
+      
       <Modal show={show1} centered onHide={closemodal1} onLoad={modal1}  className='thanksgiving'>
           <Modal.Body>
             <Thanksgiving /> <span onClick={closemodal1} className={styles.cross}>x</span>
           </Modal.Body>
       </Modal>
+     
 :
 
 ''

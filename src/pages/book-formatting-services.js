@@ -253,7 +253,7 @@ const EbookWritingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Book Formatting Services - Book Writing Experts</title>
         <meta name="description" content="Book Formatting Services that meet the global formatting standards. Call the experts to get it done at affordable price range." />
-        <link rel="canonical" href="/book-writing-services" />
+      
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Book Formatting Services - Book Writing Experts" />

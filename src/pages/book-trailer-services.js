@@ -200,7 +200,7 @@ const BookTrailerServcies = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Impactful Book Trailer Services - Book Writing Experts</title>
         <meta name="description" content="Book trailer services to make a lasting impression on your audience. Avail our services and stay ahead of your competitors." />
-        <link rel="canonical" href="/book-trailer-services" />
+     
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Impactful Book Trailer Services - Book Writing Experts" />

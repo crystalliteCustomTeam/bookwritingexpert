@@ -233,7 +233,7 @@ const Bookpublishingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Book Promotion Services For Branding - Book Writing Experts</title>
         <meta name="description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-        <link rel="canonical" href="/book-promotion-services" />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Book Promotion Services For Branding - Book Writing Experts" />

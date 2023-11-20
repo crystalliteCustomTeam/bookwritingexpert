@@ -122,7 +122,7 @@ const Getstarted = (props) => {
 
 
             <Col md={6}>
-              <input type="tel" minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder="Phone Number" />
+              <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" className={styles.formfree} required name="phone" placeholder="Phone Number" />
             </Col>
             <Col md={6}>
               {/* <input type="number" className={styles.formfree} required name="phone" placeholder="Phone Number" /> */}

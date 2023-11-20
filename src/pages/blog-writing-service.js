@@ -224,8 +224,6 @@ const blogWritingService = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
         <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-        <link rel="canonical" href="/book-publishing-services" />
-        <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
         <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
