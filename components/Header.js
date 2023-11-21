@@ -51,24 +51,24 @@ const Header = () => {
  
 
   const router = useRouter();
+  const router1 = router.asPath;
 
+  // Check if postSlug exists and is not 'undefined'
   const { postSlug } = router.query;
+  const slug = postSlug && postSlug !== 'undefined' ? `/${postSlug}` : '';
 
-  const slug = `/${postSlug}`;
-  const slug1 = `/${postSlug}`;
+  const headercolor =
+    router1 === '/illustration' ||
+    router1 === '/ghostwriting-services2' ||
+    router1 === '/audiobookproduction' ||
+    router1 === '/ourportfolio' ||
+    router1 === '/portfoliobookediting' ||
+    router1 === '/portfoliobookmarketing' ||
+    router1 === '/portfoliobookwriting' ||
+    router1 === '/portfoliobookpublishing' ||
+    router1 === '/blog';
 
-  const headercolor = router.pathname == '/illustration' ||
-    router.pathname == '/ghostwriting-services2' ||
-    router.pathname == '/audiobookproduction' ||
-    router.pathname == '/ourportfolio' ||
-    router.pathname == '/portfoliobookediting' ||
-    router.pathname == '/portfoliobookmarketing' ||
-    router.pathname == '/portfoliobookwriting' ||
-    router.pathname == '/portfoliobookpublishing' ||
-    router.pathname == '/blog'
-
-
-  const bloginner = slug1 == `${slug}`
+  
 
 
 
@@ -86,7 +86,7 @@ const Header = () => {
 
 
 
-      <header  className={headercolor ? `${styles.headerblue}` : bloginner ? `${styles.headerblue}` : `${styles.headerhome}`}>
+<header className={headercolor || slug ? `${styles.headerblue}` : `${styles.headerhome}`}>
 
 
         <Navbar expand="lg">
