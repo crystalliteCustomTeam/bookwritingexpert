@@ -350,7 +350,7 @@ const Bookpublishingservices = () => {
       </div>
 
 
-
+<div className='datacloudco'> 
       <Ourprocess
         title='Our Ghostwriting Service Process'
 
@@ -376,7 +376,7 @@ const Bookpublishingservices = () => {
 
 
       />
-
+</div>
 
       {/* Selfpublishing */}
 

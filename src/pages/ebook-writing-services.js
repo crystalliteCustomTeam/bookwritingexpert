@@ -326,7 +326,7 @@ const EbookWritingservices = () => {
 
           </Row>
 
-          <Row className='gy-5'>
+          <Row className='gy-5 pb-5'>
             {fine.map((item, i) =>
               <Finetoothedbook key={i}
                 title={item.title}

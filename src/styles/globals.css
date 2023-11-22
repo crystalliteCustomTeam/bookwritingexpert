@@ -1349,6 +1349,25 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 @media (max-width: 480px) {
 
+  .newdotflod .slick-dots li button:before{
+    color: white;
+  }
+
+  .newdotflod  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ffffff;
+}
+  .newdotflodwhite .slick-dots li button:before{
+    color: black;
+  }
+
+  .newdotflodwhite  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+}
+
+
+
   .modal-backdrop.show {
     opacity: 0!important;
 }

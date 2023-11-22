@@ -188,6 +188,15 @@
   }
 }
 @media (max-width: 480px) {
+
+
+  .ourform {
+    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
   .freebtn {
     font-size: 14px;
   }

@@ -474,13 +474,13 @@ const Bookpublishingservices = () => {
 
 
       {/* Stopworrying */}
-      <div className='dataSetCo'>
+   
         <Stopworrying
           title2={mishaps}
           text={errorless}
           btn2='Chat With Our Experts Today!'
         />
-      </div>
+
 
 
 

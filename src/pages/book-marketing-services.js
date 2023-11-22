@@ -444,7 +444,7 @@ const Bookpublishingservices = () => {
         number="(855) 500 0057"
         discuss="Let’s Discuss Your Project"
         image={bookmarketingservices4}
-        whychooseclass="marketyourbook"
+        whychooseclass="marketyourbookmarketing"
       />
 
 
