@@ -72,7 +72,7 @@ export default function App({ Component, pageProps }) {
 
       <Head>
         <meta name="google-site-verification" content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM" />
-
+        <link rel="canonical" href="https://www.bookwritingexperts.com/"/>
       </Head>
 
       <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
