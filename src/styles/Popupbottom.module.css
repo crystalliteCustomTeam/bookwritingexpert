@@ -1,0 +1,41 @@
+.popUpBottom {
+    background-image: linear-gradient(to left, #ff9900, #c97e0c);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.popUpBottom p {
+    padding-top: 20px;
+}
+
+.popUpBottom button {
+    display: block;
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, #cecece, #fff);
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 8px 18px;
+    color: #272727 !important;
+    border-radius: 7px;
+}
+
+.popUpBottom button:focus {
+    outline: none;
+}

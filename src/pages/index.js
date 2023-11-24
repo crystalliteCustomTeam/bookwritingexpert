@@ -19,6 +19,7 @@ import Strugglingwriters from '../../components/Strugglingwriters'
 import Onestepsolutions from '../../components/Onestepsolutions'
 import Script from 'next/script'
 import { useState, useEffect } from 'react'
+import NewPopup from '../../components/NewPopup'
 
 
 export default function Home() {
@@ -159,6 +160,8 @@ export default function Home() {
           bannershome='banner'
           homebancan='newbannerclass'
         />
+
+        <NewPopup />
 
 
         {/* partners components */}
