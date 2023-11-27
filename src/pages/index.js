@@ -161,7 +161,7 @@ export default function Home() {
           homebancan='newbannerclass'
         />
 
-        <NewPopup />
+        {/* <NewPopup /> */}
 
 
         {/* partners components */}

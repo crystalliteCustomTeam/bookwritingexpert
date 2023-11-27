@@ -133,7 +133,7 @@ const newcol = weblink+sluginer;
      
 
 
-      {thanks ? 
+      {/* {thanks ? 
       
       <Modal show={show1} centered onHide={closemodal1} onLoad={modal1}  className='thanksgiving'>
           <Modal.Body>
@@ -144,7 +144,7 @@ const newcol = weblink+sluginer;
 :
 
 ''
-}
+} */}
 
 
       <div>
