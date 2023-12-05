@@ -1349,6 +1349,11 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 @media (max-width: 480px) {
 
+
+
+  br{
+    display: none;
+  }
   .newdotflod .slick-dots li button:before{
     color: white;
   }

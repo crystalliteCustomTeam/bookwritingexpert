@@ -118,3 +118,13 @@
     }
 
   }
+
+  @media (max-width:767px)  {
+
+.provide h2{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+   }

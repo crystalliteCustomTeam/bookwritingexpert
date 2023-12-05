@@ -26,12 +26,46 @@ import Cta from '../../components/Cta'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 const Bookpublishingservices = () => {
 
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
 
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
 
   const reasons = [
@@ -229,14 +263,14 @@ const Bookpublishingservices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Top-Tier Ghostwriting Services - Book Writing Experts</title>
         <meta name="description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-       
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Top-Tier Ghostwriting Services - Book Writing Experts" />
@@ -335,48 +369,65 @@ const Bookpublishingservices = () => {
 
           </Row>
 
-          <Row className='gy-5'>
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-          </Row>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects}>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+
+            </Slider>
+
+            :
+
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 
 
-<div className='datacloudco'> 
-      <Ourprocess
-        title='Our Ghostwriting Service Process'
+      <div className='datacloudco'>
+        <Ourprocess
+          title='Our Ghostwriting Service Process'
 
-        heading1='Studying, Researching, and Drafting'
-        para1='Our Ghost Writing team leaves no stones unturned when they start the research. Upon that, we draft an outline as per your idea, get it approved, and start working accordingly.'
-        num1='01'
+          heading1='Studying, Researching, and Drafting'
+          para1='Our Ghost Writing team leaves no stones unturned when they start the research. Upon that, we draft an outline as per your idea, get it approved, and start working accordingly.'
+          num1='01'
 
-        heading2='The Initial Writing Begins'
-        para2='As per the outline, our expert ghostwriters start writing the initial content that reflects your ideology behind book writing.'
-        num2='02'
+          heading2='The Initial Writing Begins'
+          para2='As per the outline, our expert ghostwriters start writing the initial content that reflects your ideology behind book writing.'
+          num2='02'
 
-        heading3='Critics, Edits, and Proofreading'
-        para3='We make the Book writing content firm through critical reviews, which leads to required edits by the professionals. After making changes, our proofreaders double-check the content and leave no lapse behind.'
-        num3='03'
+          heading3='Critics, Edits, and Proofreading'
+          para3='We make the Book writing content firm through critical reviews, which leads to required edits by the professionals. After making changes, our proofreaders double-check the content and leave no lapse behind.'
+          num3='03'
 
-        heading4='Formatting And Designing Process'
-        para4='In this step, we determine what looks best where. The Formatting and Designing team critically looks into the finalized content and presents it with the best graphical details.'
-        num4='04'
+          heading4='Formatting And Designing Process'
+          para4='In this step, we determine what looks best where. The Formatting and Designing team critically looks into the finalized content and presents it with the best graphical details.'
+          num4='04'
 
-        heading5='Market And Promote The Book'
-        para5='With the completion of your book, we design strategies. And take complete responsibility to market, distribute, and promote your work through effective channels.'
-        num5='05'
+          heading5='Market And Promote The Book'
+          para5='With the completion of your book, we design strategies. And take complete responsibility to market, distribute, and promote your work through effective channels.'
+          num5='05'
 
 
-      />
-</div>
+        />
+      </div>
 
       {/* Selfpublishing */}
 

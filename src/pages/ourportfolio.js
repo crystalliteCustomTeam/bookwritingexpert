@@ -24,10 +24,80 @@ import bookediting2 from '/public/images/ourportfolio/bookediting/2.svg'
 import bookediting3 from '/public/images/ourportfolio/bookediting/3.svg'
 import bookediting4 from '/public/images/ourportfolio/bookediting/4.svg'
 
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 const ourportfolio = () => {
+
+
+
+    var bookrecordingprojects = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        adaptiveHeight: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+    var bookrecordingprojects2 = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        adaptiveHeight: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+    var bookrecordingprojects3 = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        adaptiveHeight: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+    var bookrecordingprojects4 = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        adaptiveHeight: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+    const [isSliderActive, setIsSliderActive] = useState(true);
+
+    useEffect(() => {
+
+        const handleResize = () => {
+            if (window.innerWidth < 480) {
+                setIsSliderActive(true);
+            } else {
+                setIsSliderActive(false);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+
     return (
 
         <>
@@ -43,10 +113,10 @@ const ourportfolio = () => {
             <section className={styles.ourportfolio}>
 
                 <div className={styles.banner}>
-                  <div className={styles.heading}>
-                  <h1 className='color-black font70 t-center linhight mb-4'>Our <br></br> Portfolio</h1>
-                    <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
-                  </div>
+                    <div className={styles.heading}>
+                        <h1 className='color-black font70 t-center linhight mb-4'>Our <br></br> Portfolio</h1>
+                        <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
+                    </div>
                 </div>
 
 
@@ -63,22 +133,47 @@ const ourportfolio = () => {
                             <Link className={styles.more} href="/portfoliobookpublishing">See More</Link>
                         </Col>
                     </Row>
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects} className='mb-5 mt-5 pb-3'>
 
 
-                    <div className={styles.position}>
-                       
+
+
                             <Image src={bookpublishing1} className='img-fluid' alt="Book Writing Experts"></Image>
-                      
-                       
+
+
                             <Image src={bookpublishing2} className='img-fluid' alt="Book Writing Experts"></Image>
-                      
-                       
+
+
                             <Image src={bookpublishing3} className='img-fluid' alt="Book Writing Experts"></Image>
-                      
-                       
+
+
                             <Image src={bookpublishing4} className='img-fluid' alt="Book Writing Experts"></Image>
-                      
-                    </div>
+
+
+
+                        </Slider>
+
+                        :
+
+
+                        <div className={styles.position}>
+
+                            <Image src={bookpublishing1} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookpublishing2} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookpublishing3} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookpublishing4} className='img-fluid' alt="Book Writing Experts"></Image>
+
+                        </div>
+
+                    }
+
                 </Container>
 
                 <Container className={styles.rate}>
@@ -92,21 +187,37 @@ const ourportfolio = () => {
                     </Row>
 
 
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects2} className='mb-5 mt-5 pb-3'>
 
-                    <div className={styles.position}>
-                       
+
                             <Image src={bookwriting1} className='img-fluid' alt="Book Writing Experts"></Image>
-                        
-                       
+
+
                             <Image src={bookwriting2} className='img-fluid' alt="Book Writing Experts"></Image>
-                        
-                       
+
+
                             <Image src={bookwriting3} className='img-fluid' alt="Book Writing Experts"></Image>
-                        
-                       
+
+
                             <Image src={bookwriting4} className='img-fluid' alt="Book Writing Experts"></Image>
-                            </div> 
-                  
+
+                        </Slider>
+                        :
+                        <div className={styles.position}>
+
+                            <Image src={bookwriting1} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookwriting2} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookwriting3} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookwriting4} className='img-fluid' alt="Book Writing Experts"></Image>
+                        </div>
+                    }
 
 
 
@@ -122,20 +233,35 @@ const ourportfolio = () => {
                         </Col>
                     </Row>
 
-                   
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects3} className='mb-5 mt-5 pb-3'>
+
+                            <Image src={bookediting1} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookediting2} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookediting3} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookediting4} className='img-fluid' alt="Book Writing Experts"></Image>
+
+                        </Slider>
+                        :
                         <div className={styles.position}>
                             <Image src={bookediting1} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                       
+
+
                             <Image src={bookediting2} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                       
+
+
                             <Image src={bookediting3} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                       
+
+
                             <Image src={bookediting4} className='img-fluid' alt="Book Writing Experts"></Image>
-                            </div>
-                  
+                        </div>
+                    }
 
 
 
@@ -154,23 +280,39 @@ const ourportfolio = () => {
                     </Row>
 
 
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects4} className='mb-5 mt-5 pb-3'>
+                            
+
+                                <Image src={bookmarketing1} className='img-fluid' alt="Book Writing Experts"></Image>
 
 
-                    <div className={styles.position}>
-                        
+                                <Image src={bookmarketing2} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                                <Image src={bookmarketing3} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                                <Image src={bookmarketing4} className='img-fluid' alt="Book Writing Experts"></Image>
+                         
+
+                        </Slider>
+                        :
+                        <div className={styles.position}>
+
                             <Image src={bookmarketing1} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                        
-                            <Image src={bookmarketing2} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                        
-                            <Image src={bookmarketing3} className='img-fluid' alt="Book Writing Experts"></Image>
-                       
-                        
-                            <Image src={bookmarketing4} className='img-fluid' alt="Book Writing Experts"></Image>
-                            </div>  
-               
 
+
+                            <Image src={bookmarketing2} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookmarketing3} className='img-fluid' alt="Book Writing Experts"></Image>
+
+
+                            <Image src={bookmarketing4} className='img-fluid' alt="Book Writing Experts"></Image>
+                        </div>
+
+                    }
 
                 </Container>
 

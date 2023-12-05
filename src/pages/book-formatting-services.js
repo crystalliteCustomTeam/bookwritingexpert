@@ -24,11 +24,49 @@ import Selfpublishing from '../../components/Selfpublishing'
 import Major from '../../components/Major'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 
 const EbookWritingservices = () => {
+
+
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'> <Link className='color-white textdocationnone hover' href='/ebook-writing-services'>Book Formatting Services</Link> That Help You Proudly Put Your Name On Your Book! </h1>;
 
@@ -247,13 +285,13 @@ const EbookWritingservices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Book Formatting Services - Book Writing Experts</title>
         <meta name="description" content="Book Formatting Services that meet the global formatting standards. Call the experts to get it done at affordable price range." />
-      
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Book Formatting Services - Book Writing Experts" />
@@ -348,17 +386,32 @@ const EbookWritingservices = () => {
 
           </Row>
 
-          <Row className='gy-5 pb-5'>
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-          </Row>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects} className='mb-5 pb-3'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+
+            </Slider>
+            :
+            <Row className='gy-5 pb-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 

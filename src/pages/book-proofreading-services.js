@@ -19,11 +19,63 @@ import Stillonthefence from '../../components/Stillonthefence'
 import Major from '../../components/Major'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 
 const Bookpublishingservices = () => {
+
+
+
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+  var newslides = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+
+
 
   const newSpan = <h1 className='font50 color-white font-f hero-span'> Refine Your Book with Impeccable Mastery through our Professional <Link className='textdocationnone fw700 color-blue hover' href="/book-proofreading-services">Book Proofreading Services</Link>!</h1>;
 
@@ -303,7 +355,7 @@ const Bookpublishingservices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -399,18 +451,31 @@ const Bookpublishingservices = () => {
 
 
           </Row>
-
-          <Row className='gy-5'>
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-          </Row>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects}>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Slider>
+            :
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 
@@ -501,17 +566,34 @@ const Bookpublishingservices = () => {
           <h2 className='font50 fw700 color-blue t-center font-f mb-5'>Why Should You Spend Time On Our Expert Proofreading Services?</h2>
         </Row>
 
-        <Row className='gy-5'>
-          {reasons.map((item, i) =>
-            <Stillonthefence key={i}
-              title={item.title}
-              text={item.text}
-              col6={item.col}
-              classnumber={item.classnum}
-            />
-          )}
 
-        </Row>
+        {isSliderActive ?
+          <Slider {...newslides} className='newdotflod'>
+            {reasons.map((item, i) =>
+              <Stillonthefence key={i}
+                title={item.title}
+                text={item.text}
+                col6={item.col}
+                classnumber={item.classnum}
+              />
+            )}
+          </Slider>
+
+          :
+          <Row className='gy-5'>
+            {reasons.map((item, i) =>
+              <Stillonthefence key={i}
+                title={item.title}
+                text={item.text}
+                col6={item.col}
+                classnumber={item.classnum}
+              />
+            )}
+
+          </Row>
+
+        }
+
       </Container>
 
 
