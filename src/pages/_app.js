@@ -18,7 +18,7 @@ import styles from '@/styles/Header.module.css'
 
 export default function App({ Component, pageProps }) {
 
- 
+
   const router = useRouter();
   const [loading, setLoading] = useState(true);
 
@@ -59,26 +59,26 @@ export default function App({ Component, pageProps }) {
 
   function modal1() {
     setShow1(true);
-   
+
   }
   function closemodal1() {
     setShow1(false);
   }
 
 
- 
+
   const sluginer = useRouter().asPath;
 
 
-const weblink = "https://www.bookwritingexperts.com";
+  const weblink = "https://www.bookwritingexperts.com";
 
 
 
 
 
 
-const newcol = weblink+sluginer;
- 
+  const newcol = weblink + sluginer;
+
 
   return (
     <>
@@ -89,14 +89,23 @@ const newcol = weblink+sluginer;
         <link rel="canonical" href={newcol} />
       </Head>
 
-      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
+      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
       <Script>
         {` window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', 'AW-411006583');`}
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE06TX00YE');
+        `}
       </Script>
       {/* Other meta tags and head elements */}
+      <Script>
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-K994MT85');
+        `}
+      </Script>
 
 
       {loading && (
@@ -126,11 +135,11 @@ const newcol = weblink+sluginer;
 
       <div onLoad={modal1}>
         <Header />
-        </div>
-        <Pixel />
-        <Component {...pageProps} />
-        <Footer />
-     
+      </div>
+      <Pixel />
+      <Component {...pageProps} />
+      <Footer />
+
 
 
       {/* {thanks ? 
