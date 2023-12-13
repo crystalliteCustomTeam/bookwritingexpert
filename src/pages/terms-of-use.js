@@ -27,7 +27,9 @@ const Termsofuse = () => {
       <Head>
 
         <link rel="icon" href="/favicon.svg" />
-
+        <title>Terms Of Use - Book Writing Experts</title>
+        <meta name="description" content="Review the terms of use guidelines offered by Book Writing Experts, for a better book writing experience." />
+        
       </Head>
 
       {/* banner components */}

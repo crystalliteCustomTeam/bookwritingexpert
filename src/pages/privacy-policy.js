@@ -28,7 +28,8 @@ const Privacypolicy = () => {
             <Head>
 
                 <link rel="icon" href="/favicon.svg" />
-
+                <title>Read Our Privacy Policy - Book Writing Experts</title>
+                <meta name="description" content="Find out how your privacy is protected by Book Writing Experts. For peace of mind and confidence in our services, read our  privacy policy." />
             </Head>
 
             {/* banner components */}
