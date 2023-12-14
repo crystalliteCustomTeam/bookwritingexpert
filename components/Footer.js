@@ -156,6 +156,7 @@ const Footer = () => {
               <Image loading="lazy" className={styles.footerlogosize} src={footerlogo} alt="Book Writing Experts"></Image>
               <ul className={styles.footermenu1}>
                 <li className={`${styles.footermenulinks} mt-4`}><MdEmail size={16} />  <Link className={styles.styleset} href="mailto:support@bookwritingexperts.com"><Image src={email} alt="Book Writing Experts" /></Link></li>
+                <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> Toll Free:<Link className={styles.styleset} href="tel:8555000057"> (855) 500-0057 </Link></li>
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> For Sales Inquiry:<Link className={styles.styleset} href="tel:2135499870"> (213) 549-9870 </Link></li>
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>  <BsFillTelephoneFill size={12} /> For Project Inquiry:<Link className={styles.styleset} href="tel:2135499850"> (213) 549-9850 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
