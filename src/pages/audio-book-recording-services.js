@@ -214,14 +214,14 @@ const audioBookRecordingServices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
         <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-  
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
@@ -234,7 +234,12 @@ const audioBookRecordingServices = () => {
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-    
+        <meta name="DC.title" content="audiobook recording services, audiobook recording service, audiobook recording company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
+
 
 
       </Head>

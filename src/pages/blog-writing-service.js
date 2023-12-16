@@ -217,7 +217,7 @@ const blogWritingService = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -234,6 +234,11 @@ const blogWritingService = () => {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="DC.title" content="blog writing services, blog writing service, blog writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
 
 
 
@@ -353,7 +358,7 @@ const blogWritingService = () => {
         </Container>
       </div>
       <Selfpublishing
-        title= "Make A World Of Difference In How You Express Yourself & How You Connect With The World!"
+        title="Make A World Of Difference In How You Express Yourself & How You Connect With The World!"
         text='With professional blog writers, we help you control the narrative and allow you to share your ideas and thoughts with the world! '
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"

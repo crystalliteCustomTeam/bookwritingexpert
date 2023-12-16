@@ -49,7 +49,7 @@ export default function Home() {
   const discuss = <span>LET'S DISCUSS</span>
 
 
- 
+
 
 
   return (
@@ -78,8 +78,13 @@ export default function Home() {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="13 minutes" />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="DC.title" content="book writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
 
-      
+
+
 
       </Head>
 

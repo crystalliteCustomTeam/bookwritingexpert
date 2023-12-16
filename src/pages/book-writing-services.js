@@ -308,9 +308,15 @@ const Bookpublishingservices = () => {
         <meta name="twitter:data1" content="6 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
+        <meta name="DC.title" content="book writing services, book writing service, book writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-       
+
+
+
 
       </Head>
 
@@ -386,31 +392,31 @@ const Bookpublishingservices = () => {
           </Row>
           {isSliderActive ?
             <Slider {...bookrecordingprojects} className='newdotflodwhite'>
-        
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-         
-          </Slider>
-          :
-          <Row className='gy-5'>
-          {fine.map((item, i) =>
-            <Finetoothedbook key={i}
-              title={item.title}
-              text={item.text}
-              classtop={item.class}
-              img1={item.img}
-              btn={item.btn}
-            />
-          )}
-        </Row>
-            }
+
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+
+            </Slider>
+            :
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 
@@ -517,16 +523,16 @@ const Bookpublishingservices = () => {
 
           {isSliderActive ?
             <Slider {...bookrecordingprojects} className='newdotflod'>
-            
-                {reasons.map((item, i) =>
-                  <Stillonthefence key={i}
-                    title={item.title}
-                    text={item.text}
-                    col6={item.col}
-                    classnumber={item.classnum}
-                  />
-                )}
-         
+
+              {reasons.map((item, i) =>
+                <Stillonthefence key={i}
+                  title={item.title}
+                  text={item.text}
+                  col6={item.col}
+                  classnumber={item.classnum}
+                />
+              )}
+
             </Slider>
             :
             <Row className='gy-5'>

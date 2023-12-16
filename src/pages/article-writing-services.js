@@ -212,7 +212,7 @@ const articleWritingServices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -232,7 +232,13 @@ const articleWritingServices = () => {
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-     
+        <meta name="DC.title" content="article writing services, article writing service, article writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
+
+
 
 
       </Head>

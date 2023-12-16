@@ -299,6 +299,10 @@ const businessplanWringservices = () => {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="6 minutes" />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="DC.title" content="business plan writing services, business plan writing service, business plan writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
 
 
 
@@ -378,24 +382,24 @@ const businessplanWringservices = () => {
                   btn={item.btn}
                 />
               )}
-              </Slider>
-              :
+            </Slider>
+            :
 
 
 
-              <Row className='gy-5'>
-                {fine.map((item, i) =>
-                  <Finetoothedbook key={i}
-                    title={item.title}
-                    text={item.text}
-                    classtop={item.class}
-                    img1={item.img}
-                    btn={item.btn}
-                  />
-                )}
-              </Row>
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
           }
-            </Container>
+        </Container>
       </div>
 
 

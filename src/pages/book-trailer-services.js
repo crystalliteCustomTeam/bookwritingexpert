@@ -255,6 +255,10 @@ const BookTrailerServcies = () => {
         <meta name="twitter:data1" content="7 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
+        <meta name="DC.title" content="book trailer services, book trailer service, book trailer company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
 
 
 

@@ -304,6 +304,12 @@ const EbookWritingservices = () => {
         <meta name="twitter:data1" content="6 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
+        <meta name="DC.title" content="book formatting services, book formatting service, book formatting company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
+
 
 
 

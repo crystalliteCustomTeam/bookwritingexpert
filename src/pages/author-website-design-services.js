@@ -214,7 +214,7 @@ const authorWebsiteDesignServices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -233,7 +233,11 @@ const authorWebsiteDesignServices = () => {
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-      
+        <meta name="DC.title" content="author website design services, author website design service, author website design company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
 
 
       </Head>
@@ -352,7 +356,7 @@ const authorWebsiteDesignServices = () => {
         </Container>
       </div>
       <Selfpublishing
-        title= "Anxious To Get Your Name On A Professional Website?"
+        title="Anxious To Get Your Name On A Professional Website?"
         text='Get a hold of our experts today and get the job done! Book Writing Experts provide reliable and trustworthy website development services, just according to your needs.'
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"

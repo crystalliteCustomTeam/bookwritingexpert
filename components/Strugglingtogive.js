@@ -52,26 +52,35 @@ const Strugglingtogive = (props) => {
             <Container>
                 <Row className={` ${styles.forent} gy-4`}>
                     <Col md={7}>
-                        <h2 className='color-blue font50 fw700 font-f mb-4'>Are You Struggling to give <br className='d-none d-md-block' /> Words to your Ideas?</h2>
+
+
+                        {props.titleills ?
+                            props.titleills
+                            :
+
+                            <h2 className='color-blue font50 fw700 font-f mb-4'>Are You Struggling to give <br className='d-none d-md-block' /> Words to your Ideas?</h2>
+
+                        }
+                        
                         <p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
 
                         {isSliderActive ?
                             <Slider {...bookrecordingprojects} className='demodots'>
-                         
-
-                                   
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list1}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list2}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list3}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list4}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list5}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list6}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list7}</div>
-                                        <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list8}</div>
-                               
 
 
-                          
+
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list1}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list2}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list3}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list4}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list5}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list6}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list7}</div>
+                                <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list8}</div>
+
+
+
+
                             </Slider>
                             :
                             <div className={styles.slow}>

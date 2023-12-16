@@ -214,7 +214,7 @@ const bookCoverDesignServices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -234,7 +234,11 @@ const bookCoverDesignServices = () => {
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-    
+        <meta name="DC.title" content="book cover design services, book cover design service, book cover design company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
 
 
       </Head>
@@ -271,18 +275,18 @@ const bookCoverDesignServices = () => {
       />
 
 
-  
+
 
 
       {/* Stopworrying */}
-    
-        <Stopworrying
-          title2={dateset}
-          subtitle3='In Search For Enticing Book Covers?'
-          btn1='Get a free Proposal'
-          btn2='Talk to an expert'
-        />
-    
+
+      <Stopworrying
+        title2={dateset}
+        subtitle3='In Search For Enticing Book Covers?'
+        btn1='Get a free Proposal'
+        btn2='Talk to an expert'
+      />
+
 
 
 
@@ -319,7 +323,7 @@ const bookCoverDesignServices = () => {
           </Row>
         </Container>
       </div>
-     
+
       {/* Whychoosebookwritingcube */}
       {/* <Whychoosebookwritingcube
         title='Our Willingness To Publish Knows No Bounds!'
@@ -358,7 +362,7 @@ const bookCoverDesignServices = () => {
       <Customersatisfaction />
 
       <Selfpublishing
-        title= "Don’t Know How To Give Your Book An Attractive Cover?"
+        title="Don’t Know How To Give Your Book An Attractive Cover?"
         text='We Can Help You! Book Writing Experts Have Ideas For You That Will Work.'
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"

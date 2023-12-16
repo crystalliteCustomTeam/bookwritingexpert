@@ -154,7 +154,7 @@ const Bookpublishingservices = () => {
   ]
 
 
- 
+
 
 
   return (
@@ -183,7 +183,11 @@ const Bookpublishingservices = () => {
         <meta name="twitter:data1" content="7 minutes" />
         <link rel="icon" href="/favicon.svg" />
 
-      
+        <meta name="DC.title" content="book promotion services, book promotion service, book promotion company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
 
 
 
@@ -366,18 +370,18 @@ const Bookpublishingservices = () => {
 
           {isSliderActive ?
             <Slider {...bookrecordingprojects} className='newdotflod text-center'>
-         
-                {reasons.map((item, i) =>
-                  <Stillonthefence key={i}
-                    title={item.title}
-                    text={item.text}
-                    text2={item.text2}
-                    col6={item.col}
-                    classnumber={item.classnum}
-                  />
-                )}
 
-           
+              {reasons.map((item, i) =>
+                <Stillonthefence key={i}
+                  title={item.title}
+                  text={item.text}
+                  text2={item.text2}
+                  col6={item.col}
+                  classnumber={item.classnum}
+                />
+              )}
+
+
             </Slider>
             :
             <Row className='gy-5'>

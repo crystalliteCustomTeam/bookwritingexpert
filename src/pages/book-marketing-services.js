@@ -175,7 +175,7 @@ const Bookpublishingservices = () => {
 
 
 
- 
+
 
 
   return (
@@ -202,6 +202,10 @@ const Bookpublishingservices = () => {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="7 minutes" />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="DC.title" content="book marketing services, book marketing company, book marketing agency" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
 
 
 
