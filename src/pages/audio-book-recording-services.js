@@ -67,117 +67,38 @@ const audioBookRecordingServices = () => {
 
 
   const schema = {
-
     "@context": "https://schema.org",
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-publishing-services/"
+      "@id": "https://www.bookwritingexperts.com/audio-book-recording-services"
     },
-    "headline": "Providing Full Fledged Book Publishing Services To Our Struggling Authors",
-    "description": "Top-Rated Book Publishing Services by Book Writing",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/publishing.jpg?id=8354",
+    "headline": "Audiobook Recording Services",
+    "description": "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
     "author": {
       "@type": "Organization",
-      "name": "Mini Investments"
-    },
+      "name": "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
+      "url": "https://www.bookwritingexperts.com/"
+    },  
     "publisher": {
       "@type": "Organization",
-      "name": "",
+      "name": "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
       "logo": {
         "@type": "ImageObject",
-        "url": ""
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
       }
     },
-    "datePublished": "2022-03-18"
-
-  }
-
-  const schema1 = {
-
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
+    "datePublished": ""
 
   }
 
 
-  const schema3 = {
 
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "description": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "provider": {
-      "@type": "Organization",
-      "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-      "url": "https://www.bookwritingexperts.com/book-publishing-services/"
-    },
-    "serviceType": ["book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing"],
-    "areaServed": {
-      "@type": "country",
-      "name": "us"
-    }
 
-  }
+
+
+
   const fine = [
 
     {
@@ -239,7 +160,10 @@ const audioBookRecordingServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
       </Head>
