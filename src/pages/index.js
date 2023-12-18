@@ -49,7 +49,31 @@ export default function Home() {
   const discuss = <span>LET'S DISCUSS</span>
 
 
-
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.bookwritingexperts.com/"
+    },
+    "headline": "Book Writing Company",
+    "description": "book writing company",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "author": {
+      "@type": "Organization",
+      "name": "book writing company",
+      "url": "https://www.bookwritingexperts.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "book writing company",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+      }
+    },
+    "datePublished": ""
+  }
 
 
   return (
@@ -82,7 +106,10 @@ export default function Home() {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
 

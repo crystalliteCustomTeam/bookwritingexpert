@@ -148,106 +148,27 @@ const Bookpublishingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-editing-services/"
+      "@id": "https://www.bookwritingexperts.com/book-editing-services"
     },
-    "headline": "Professional Book Editing Services For All The Idealists Within Their Reach",
-    "description": "Book Editing Services",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/editing-jpg.jpg?id=8355",
+    "headline": "Book Editing Services",
+    "description": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
     "author": {
       "@type": "Organization",
-      "name": "Mini Investments"
-    },
+      "name": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
+      "url": "https://www.bookwritingexperts.com/"
+    },  
     "publisher": {
       "@type": "Organization",
-      "name": "",
+      "name": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
       "logo": {
         "@type": "ImageObject",
-        "url": ""
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
       }
     },
-    "datePublished": "2022-03-18"
+    "datePublished": ""
 
 
-  }
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/book-editing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-  const schema2 = {
-
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/book-editing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-  const schema3 = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "book editing services book editing company book editors",
-    "description": "book editing services book editing company book editors book editing services book editing company book editors book editing services book editing company book editors",
-    "provider": {
-      "@type": "Organization",
-      "name": "book editing services book editing company book editors",
-      "url": "https://www.bookwritingexperts.com/book-editing-services/"
-    },
-    "serviceType": ["book editing services book editing company book editors"],
-    "areaServed": {
-      "@type": "country",
-      "name": "us"
-    }
   }
 
 
@@ -281,7 +202,10 @@ const Bookpublishingservices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
       </Head>

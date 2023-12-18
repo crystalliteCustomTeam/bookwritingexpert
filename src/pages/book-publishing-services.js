@@ -53,7 +53,31 @@ const Bookpublishingservices = () => {
 
   const work = <span>Your work is over after creating a masterpiece. Let us take the lead from here. Our <Link className='colortextgrey textdocationnone hover' href='/book-publishing-services/'> Amazon publishing services </Link> include the three crucial areas of the publishing process: Production, Marketing, and Distribution. As the best publishers, our experience lies in publishing many books by professional writers. And our publishing experts have upgraded many authors to published book authors universally. It’s time for you to get famous!</span>
 
-
+  const schema = {
+    "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.bookwritingexperts.com/book-marketing-services"
+  },
+  "headline": "Book Marketing Services",
+  "description": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+  "author": {
+    "@type": "Organization",
+    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+    "url": "https://www.bookwritingexperts.com/"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+  },
+  "datePublished": ""
+  }
 
 
   return (
@@ -88,7 +112,10 @@ const Bookpublishingservices = () => {
 
 
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
       </Head>
 

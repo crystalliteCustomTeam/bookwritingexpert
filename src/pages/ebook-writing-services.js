@@ -172,7 +172,31 @@ const EbookWritingservices = () => {
   const text = <span>Get in touch with our professional book writing specialists today. Our eBooks Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!
   </span>;
 
-
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.bookwritingexperts.com/ebook-writing-services"
+    },
+    "headline": "Ebook Writing Services",
+    "description": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "author": {
+      "@type": "Organization",
+      "name": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
+      "url": "https://www.bookwritingexperts.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+      }
+    },
+    "datePublished": ""
+  }
 
 
 
@@ -206,7 +230,10 @@ const EbookWritingservices = () => {
         <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
       </Head>

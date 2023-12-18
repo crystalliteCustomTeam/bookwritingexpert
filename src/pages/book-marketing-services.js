@@ -174,7 +174,31 @@ const Bookpublishingservices = () => {
   const challenging = <span>Ready to take your book from 'just another story' to a literary sensation? Join forces with us and let's create a <Link className='textdocationnone color-blue hover1' href='/book-marketing-services'>book marketing</Link> strategy that will make your book stand out in a sea of competitors. Don't go at it alone - let's make your story the talk of the town!</span>
 
 
-
+  const schema = {
+    "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.bookwritingexperts.com/book-marketing-services"
+  },
+  "headline": "Book Marketing Services",
+  "description": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+  "author": {
+    "@type": "Organization",
+    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+    "url": "https://www.bookwritingexperts.com/"
+  },  
+  "publisher": {
+    "@type": "Organization",
+    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+  },
+  "datePublished": ""
+  }
 
 
 
@@ -207,7 +231,10 @@ const Bookpublishingservices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
 

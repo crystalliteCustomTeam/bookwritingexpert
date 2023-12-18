@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import homebannerlogos from '/public/images/bannerimages/logos.png'
-import whychoose from '/public/images/whychoosebooks/bg-img.png'
+import whychoose from '/public/images/whychoosebooks/ill.png'
 // import components
 import Banner from '../../components/Banner'
 import Partners from '../../components/Partners'
@@ -50,52 +50,34 @@ function Illustrationbook() {
 
 
 
-  const schema1 = {
+  const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
+      "@id": "https://www.bookwritingexperts.com/illustration"
     },
-    "headline": "Book Writing Company",
-    "description": "Book Writing Company",
-    "image": "",
+    "headline": "Book Illustration Services",
+    "description": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
     "author": {
       "@type": "Organization",
-      "name": "Mini Investments"
-    },
+      "name": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
+      "url": "https://www.bookwritingexperts.com/"
+    },  
     "publisher": {
       "@type": "Organization",
-      "name": "",
+      "name": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
       "logo": {
         "@type": "ImageObject",
-        "url": ""
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
       }
     },
-    "datePublished": "2022-03-21"
+    "datePublished": ""
   }
 
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
 
-  const schema3 = {
-    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://www.bookwritingexperts.com/" },
-    "serviceType": ["book writing services book writing company book writers affordable book writing services"], "areaServed": { "@type": "country", "name": "us" }
-  }
+ 
 
   return (
     <>
@@ -131,7 +113,10 @@ function Illustrationbook() {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
         {/* <Schema /> */}
 

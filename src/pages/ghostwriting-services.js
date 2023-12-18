@@ -174,87 +174,27 @@ const Bookpublishingservices = () => {
     "@type": "Article",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/ghostwriting-services/"
+      "@id": "https://www.bookwritingexperts.com/ghostwriting-services"
     },
-    "headline": "Bring Your Ideas to Life With Our Expert Ghostwriting Services!",
-    "description": "Ghostwriting Services",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/ghost-writing-jpg.jpg?id=8337",
+    "headline": "Ghostwriting Services",
+    "description": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
     "author": {
       "@type": "Organization",
-      "name": "Mini Investments"
+      "name": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
+      "url": "https://www.bookwritingexperts.com/"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "",
+      "name": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
       "logo": {
         "@type": "ImageObject",
-        "url": ""
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
       }
     },
-    "datePublished": "2022-03-18"
-  }
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/ghostwriting-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
+    "datePublished": ""
   }
 
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/ghostwriting-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
 
 
 
@@ -287,7 +227,10 @@ const Bookpublishingservices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
 
 
       </Head>
