@@ -61,8 +61,12 @@ const Strugglingtogive = (props) => {
                             <h2 className='color-blue font50 fw700 font-f mb-4'>Are You Struggling to give <br className='d-none d-md-block' /> Words to your Ideas?</h2>
 
                         }
+                        {props.text ? 
+                        props.text
+                        :
+<p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
+                    }
                         
-                        <p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
 
                         {isSliderActive ?
                             <Slider {...bookrecordingprojects} className='demodots'>

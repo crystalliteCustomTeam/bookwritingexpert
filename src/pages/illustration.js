@@ -156,7 +156,7 @@ function Illustrationbook() {
             </>
           }
           title=""
-          text="You may be a victim of the following nuisances"
+          text={<><p className='textcolor font-f mb-4 font15'>Book Writing Experts helps you overcome the following challenges:</p></>}
           list1="Slow Productivity"
           list2="Lack of Resources"
           list3="Time Management Issues"
