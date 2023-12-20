@@ -55,28 +55,28 @@ const Bookpublishingservices = () => {
 
   const schema = {
     "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.bookwritingexperts.com/book-marketing-services"
-  },
-  "headline": "Book Marketing Services",
-  "description": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-  "author": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "url": "https://www.bookwritingexperts.com/"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-    }
-  },
-  "datePublished": ""
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.bookwritingexperts.com/book-publishing-services"
+    },
+    "headline": "Book Publishing Services",
+    "description": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+    "author": {
+      "@type": "Organization",
+      "name": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
+      "url": "https://www.bookwritingexperts.com/"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+      }
+    },
+    "datePublished": ""
   }
 
 

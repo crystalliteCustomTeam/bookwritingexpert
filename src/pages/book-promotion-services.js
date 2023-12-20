@@ -155,28 +155,28 @@ const Bookpublishingservices = () => {
 
   const schema = {
     "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.bookwritingexperts.com/book-marketing-services"
-  },
-  "headline": "Book Marketing Services",
-  "description": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-  "author": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "url": "https://www.bookwritingexperts.com/"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-    }
-  },
-  "datePublished": ""
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.bookwritingexperts.com/book-promotion-services"
+    },
+    "headline": "Book Promotion Services",
+    "description": "book promotion services, book promotion company, best book promotion services, top book promotion services, professional book promotion services, best book promotion company, top book promotion company, leading book promotion company",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "author": {
+      "@type": "Organization",
+      "name": "book promotion services, book promotion company, best book promotion services, top book promotion services, professional book promotion services, best book promotion company, top book promotion company, leading book promotion company",
+      "url": "https://www.bookwritingexperts.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "book promotion services, book promotion company, best book promotion services, top book promotion services, professional book promotion services, best book promotion company, top book promotion company, leading book promotion company",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+      }
+    },
+    "datePublished": ""
   }
 
 
