@@ -137,7 +137,7 @@ const Childrenbookpublicationservices = () => {
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Hire The Best Children Book Publication Services - Book Writing Experts</title>
-        <meta name="description" content="By hiring Book Writing Experts, you can publish your children's book with perfection. We offer children book publication services for kids with perfect illustrations." />
+        <meta name="description" content="By hiring Book Writing Experts, you can publish your childrens book with perfection. We offer children book publication services for kids with perfect illustrations." />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
