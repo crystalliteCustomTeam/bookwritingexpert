@@ -4,6 +4,7 @@ import styles from '@/styles/Footer.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 // images 
+import { useState,useEffect } from 'react'
 import footerlogo from '../public/images/logo.svg'
 import protectedlogo from '../public/images/footer/protected.png'
 import visa from '../public/images/footer/visa.png'
@@ -74,6 +75,16 @@ const footerlogosnew =
 
 
 const Footer = () => {
+
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  useEffect(() => {
+    const delay = 3000;
+    const timeoutId = setTimeout(() => {
+      setImagesLoaded(true);
+    }, delay);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   var visalogo = {
     dots: false,
@@ -187,7 +198,7 @@ const Footer = () => {
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/contact">Contact</Link></li>
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/faqs">Faq's</Link></li>
-                
+
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="javascript:$zopim.livechat.window.show();">Let's Get Started</Link></li>
 
@@ -234,24 +245,25 @@ const Footer = () => {
 
               <div className={styles.imgvisa}>
 
+                {imagesLoaded &&
 
-                <Slider {...visalogo}>
-
-
-
-                  {footerlogosnew.map((item, i) => {
-                    return (
-                      <div key={i} className={styles.rightlogo}>
-                        <Image loading="lazy" className='img-fluid' src={item.footerlogosfuncy} alt="Book Writing Experts"></Image>
-                      </div>
-                    )
-                  })}
+                  <Slider {...visalogo}>
 
 
 
+                    {footerlogosnew.map((item, i) => {
+                      return (
+                        <div key={i} className={styles.rightlogo}>
+                          <Image loading="lazy" className='img-fluid' src={item.footerlogosfuncy} alt="Book Writing Experts"></Image>
+                        </div>
+                      )
+                    })}
 
-                </Slider>
 
+
+
+                  </Slider>
+                }
 
 
 
@@ -259,19 +271,19 @@ const Footer = () => {
 
               </div>
               <div className={styles.imgvisa}>
+                {imagesLoaded &&
+                  <Slider {...awardslogo}>
 
-                <Slider {...awardslogo}>
+                    {footerlogos1.map((item, i) => {
+                      return (
+                        <div key={i} className={styles.rightlogo}>
+                          <Image loading="lazy" className='pt-1 img-fluid' src={item.footerimg1} alt="Book Writing Experts"></Image>
+                        </div>
+                      )
+                    })}
 
-                  {footerlogos1.map((item, i) => {
-                    return (
-                      <div key={i} className={styles.rightlogo}>
-                        <Image loading="lazy" className='pt-1 img-fluid' src={item.footerimg1} alt="Book Writing Experts"></Image>
-                      </div>
-                    )
-                  })}
-
-                </Slider>
-
+                  </Slider>
+                }
 
               </div>
 
