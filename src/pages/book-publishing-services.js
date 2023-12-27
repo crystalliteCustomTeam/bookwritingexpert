@@ -3,14 +3,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // images
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import typeofbooks from '/public/images/selfpublishingservices/1.jpg'
-import copy from '/public/images/selfpublishingservices/2.jpg'
-import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
-import publishmybook from '/public/images/selfpublishingservices/4.jpg'
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const typeofbooks = await import("/public/images/selfpublishingservices/1.jpg");
+const copy = await import("/public/images/selfpublishingservices/2.jpg");
+const marketyourbook = await import("/public/images/selfpublishingservices/3.jpg");
+const publishmybook = await import("/public/images/selfpublishingservices/4.jpg");
 // components
 import dynamic from 'next/dynamic'
- 
 const Banner = dynamic(() => import('../../components/Banner'));
 const Dowecome = dynamic(() => import('../../components/Dowecome'));
 const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
@@ -54,7 +53,7 @@ const Bookpublishingservices = () => {
     }
   ]
 
-  const work = <span>Your work is over after creating a masterpiece. Let us take the lead from here. Our <Link className='colortextgrey textdocationnone hover' href='/book-publishing-services/'> Amazon publishing services </Link> include the three crucial areas of the publishing process: Production, Marketing, and Distribution. As the best publishers, our experience lies in publishing many books by professional writers. And our publishing experts have upgraded many authors to published book authors universally. It’s time for you to get famous!</span>
+  
 
   const schema = {
     "@context": "https://schema.org",
