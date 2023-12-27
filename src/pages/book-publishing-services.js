@@ -10,20 +10,49 @@ const marketyourbook = await import("/public/images/selfpublishingservices/3.jpg
 const publishmybook = await import("/public/images/selfpublishingservices/4.jpg");
 // components
 import dynamic from 'next/dynamic'
-const Banner = dynamic(() => import('../../components/Banner'));
-const Dowecome = dynamic(() => import('../../components/Dowecome'));
-const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
-const Aspiring = dynamic(() => import('../../components/Aspiring'));
-const Ourprocess = dynamic(() => import('../../components/Ourprocess'));
-const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
-const Makestoriesnew = dynamic(() => import('../../components/Makestoriesnew'));
-const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'));
-const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
-const Lululogos = dynamic(() => import('../../components/Lululogos'));
-const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
-const Bookpublishingservicesweoffer = dynamic(() => import('../../components/Bookpublishingservicesweoffer'));
-const Major = dynamic(() => import('../../components/Major'));
-const Cta = dynamic(() => import('../../components/Cta'));
+const Banner = dynamic(() => import('../../components/Banner'),{
+  ssr:false,
+
+});
+const Dowecome = dynamic(() => import('../../components/Dowecome'),{
+  ssr:false,
+});
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'),{
+  ssr:false,
+});
+const Aspiring = dynamic(() => import('../../components/Aspiring'),{
+  ssr:false,
+});
+const Ourprocess = dynamic(() => import('../../components/Ourprocess'),{
+  ssr:false,
+});
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'),{
+  ssr:false,
+});
+const Makestoriesnew = dynamic(() => import('../../components/Makestoriesnew'),{
+  ssr:false,
+});
+const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'),{
+  ssr:false,
+});
+const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'),{
+  ssr:false,
+});
+const Lululogos = dynamic(() => import('../../components/Lululogos'),{
+  ssr:false,
+});
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'),{
+  ssr:false,
+});
+const Bookpublishingservicesweoffer = dynamic(() => import('../../components/Bookpublishingservicesweoffer'),{
+  ssr:false,
+});
+const Major = dynamic(() => import('../../components/Major'),{
+  ssr:false,
+});
+const Cta = dynamic(() => import('../../components/Cta'),{
+  ssr:false,
+});
 
 // css
 import styles from '@/styles/Whybookpublishing.module.css'

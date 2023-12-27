@@ -102,7 +102,7 @@ export default function App({ Component, pageProps }) {
       {imagesLoaded &&
         <>
           <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
-          <Script>
+          <Script strategy="lazyOnload">
             {` window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -110,7 +110,7 @@ export default function App({ Component, pageProps }) {
         `}
           </Script>
           {/* Other meta tags and head elements */}
-          <Script>
+          <Script strategy="lazyOnload">
             {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
