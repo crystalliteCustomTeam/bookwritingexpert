@@ -9,20 +9,23 @@ import copy from '/public/images/selfpublishingservices/2.jpg'
 import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
 import publishmybook from '/public/images/selfpublishingservices/4.jpg'
 // components
-import Banner from '../../components/Banner'
-import Dowecome from '../../components/Dowecome'
-import Stopworrying from '../../components/Stopworrying'
-import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
-import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
-import Selfpublishing from '../../components/Selfpublishing'
-import Lululogos from '../../components/Lululogos'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Bookpublishingservicesweoffer from '../../components/Bookpublishingservicesweoffer'
-import Major from '../../components/Major'
-import Cta from '../../components/Cta'
+import dynamic from 'next/dynamic'
+ 
+const Banner = dynamic(() => import('../../components/Banner'));
+const Dowecome = dynamic(() => import('../../components/Dowecome'));
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
+const Aspiring = dynamic(() => import('../../components/Aspiring'));
+const Ourprocess = dynamic(() => import('../../components/Ourprocess'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Makestoriesnew = dynamic(() => import('../../components/Makestoriesnew'));
+const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'));
+const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
+const Lululogos = dynamic(() => import('../../components/Lululogos'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Bookpublishingservicesweoffer = dynamic(() => import('../../components/Bookpublishingservicesweoffer'));
+const Major = dynamic(() => import('../../components/Major'));
+const Cta = dynamic(() => import('../../components/Cta'));
+
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 
