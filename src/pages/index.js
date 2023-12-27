@@ -75,6 +75,15 @@ export default function Home() {
     "datePublished": ""
   }
 
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  useEffect(() => {
+    const delay = 5000;
+    const timeoutId = setTimeout(() => {
+      setImagesLoaded(true);
+    }, delay);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
 
   return (
     <>
@@ -118,9 +127,11 @@ export default function Home() {
 
       {/* googletagmanager */}
 
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K994MT85"
-        height="0" width="0" className='d-none'></iframe></noscript>
+      {imagesLoaded &&
 
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K994MT85"
+          height="0" width="0" className='d-none'></iframe></noscript>
+      }
 
       <main>
         {/* banner components */}

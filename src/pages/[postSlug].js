@@ -101,9 +101,81 @@ export default function Post({ postData, featuredImageUrl }) {
         }
 
     }
+    const newpath = router.asPath;
+
 
     return (
         <>
+            {/* {newpath === '/alberta-amazon-kdp' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Dive into global publishing from home. Discover how with our Alberta Amazon KDP guide. Read now!' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/oregon-book-publishers' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Discover how Oregon publishers are taking the lead. Click to read this blog and contact us today to start your book publishing journey' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/hire-ebook-writing-services-usa' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Explore why USA`s ebook writing services are the ultimate choice for emerging authors. Contact us today!' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/amazon-self-publishing' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Discover the 5 essential steps for successful Amazon self publishing. A beginner`s guide to achieve your publishing dreams on the world`s largest platform' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/hire-affordable-fiction-ghostwriting-services' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Learn the 7 advantages of choosing affordable fiction ghostwriting services. Connect with us today!' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/the-benefits-of-hiring-a-book-marketing-company' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Discover why authors should consider hiring a professional book marketing company. Contact us today to increase your book sales today!' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/6-proven-strategies-for-marketing-a-book' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Learn author success with these 6 proven strategies for marketing a book. Call us to learn more!' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/5-common-mistakes-to-avoid-while-publishing-on-amazon-kdp' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Learn how to become a successful author with amazon kdp by avoiding these common book publishing mistakes. Contact us today to get the best amazon kdp services.' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/how-much-does-it-cost-to-self-publish-a-book' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Learn the expenses involved while authors self publish a book. Learn about editing, design, distribution, and marketing costs for your author journey.' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/10-strategies-for-marketing-a-book' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='This blog will help discover ten strategies for marketing a book. Increase visibility, engage readers, and achieve literary success.' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : newpath === '/5-reasons-to-build-author-platform-for-marketing-a-book' ? (
+                <Head>
+                    <title key="title">{postData.title}</title>
+                    <meta name="description" content='Discover why an enduring author platform is important for marketing a book. Learn how it boosts visibility, credibility, and reader engagement' key="metadesc" />
+                    <link rel="icon" href="/favicon.svg" />
+                </Head>
+            ) : null
+
+            } */}
+
             <Head>
                 <title key="title">{postData.title}</title>
                 <meta name="description" content={postData.metaDesc} key="metadesc" />
@@ -115,6 +187,7 @@ export default function Post({ postData, featuredImageUrl }) {
                 <meta property="og:site_name" content={postData.opengraphSiteName} />
                 <link rel="icon" href="/favicon.svg" />
             </Head>
+
 
             <section className={styles.innerBlog}>
                 <Container>
@@ -172,10 +245,10 @@ export default function Post({ postData, featuredImageUrl }) {
                                     <h5>Newsletter</h5>
                                     <form className="mt-4" onSubmit={handleSubmit}>
                                         <div>
-                                            <input type="text" name="first" required  placeholder="FULL NAME" />
+                                            <input type="text" name="first" required placeholder="FULL NAME" />
                                         </div>
                                         <div className="mt-3">
-                                            <input type="email" name="email" required  placeholder="EMAIL ADDRESS" />
+                                            <input type="email" name="email" required placeholder="EMAIL ADDRESS" />
                                         </div>
                                         <button type="submit" className={`${styles.arrowBtn} mt-4`}>
                                             <span>{score}</span>

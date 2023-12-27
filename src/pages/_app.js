@@ -80,6 +80,16 @@ export default function App({ Component, pageProps }) {
   const newcol = weblink + sluginer;
 
 
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  useEffect(() => {
+    const delay = 5000;
+    const timeoutId = setTimeout(() => {
+      setImagesLoaded(true);
+    }, delay);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+
   return (
     <>
 
@@ -89,24 +99,27 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href={newcol} />
       </Head>
 
-      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
-      <Script>
-        {` window.dataLayer = window.dataLayer || [];
+      {imagesLoaded &&
+        <>
+          <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
+          <Script>
+            {` window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'G-HE06TX00YE');
         `}
-      </Script>
-      {/* Other meta tags and head elements */}
-      <Script>
-        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          </Script>
+          {/* Other meta tags and head elements */}
+          <Script>
+            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
-      </Script>
-
+          </Script>
+        </>
+      }
 
       {loading && (
         <div className="loading-screen">
@@ -136,7 +149,9 @@ export default function App({ Component, pageProps }) {
       <div onLoad={modal1}>
         <Header />
       </div>
-      <Pixel />
+      {imagesLoaded &&
+        <Pixel />
+      }
       <Component {...pageProps} />
       <Footer />
 
@@ -155,11 +170,11 @@ export default function App({ Component, pageProps }) {
 ''
 } */}
 
-
-      <div>
-        <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
-      </div>
-
+      {imagesLoaded &&
+        <div>
+          <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
+        </div>
+      }
     </>
   )
 }
