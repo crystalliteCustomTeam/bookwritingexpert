@@ -4,19 +4,22 @@ import homebannerlogos from '/public/images/bannerimages/logos.png'
 import homebanlogos2 from '/public/images/bannerimages/homebannerlogos2.webp'
 import whychoose from '/public/images/whychoosebooks/bg-img.png'
 // import components
-import Homebanner from '../../components/Homebanner'
-import Partners from '../../components/Partners'
-import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
-import Whatourclients from '../../components/Whatourclients'
-import Requestafreequote from '../../components/Requestafreequote'
-import Stopworrying from '../../components/Stopworrying'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Comprehensive from '../../components/Comprehensive'
-import Strugglingtogive from '../../components/Strugglingtogive'
-import Strugglingwriters from '../../components/Strugglingwriters'
-import Onestepsolutions from '../../components/Onestepsolutions'
+import dynamic from 'next/dynamic'
+ 
+const Homebanner = dynamic(() => import('../../components/Homebanner'));
+const Partners = dynamic(() => import('../../components/Partners'));
+const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
+const Gotastory = dynamic(() => import('../../components/Gotastory'));
+const Experts = dynamic(() => import('../../components/Experts'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Comprehensive = dynamic(() => import('../../components/Comprehensive'));
+const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
+const Strugglingwriters = dynamic(() => import('../../components/Strugglingwriters'));
+const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+
 import Script from 'next/script'
 import { useState, useEffect } from 'react'
 import NewPopup from '../../components/NewPopup'
