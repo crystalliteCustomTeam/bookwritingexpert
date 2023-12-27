@@ -71,6 +71,12 @@
 
 @media (max-width: 767px) {
 
+  .stopworrying {
+    background-image: unset;
+    background-color: #24303e;
+  }
+
+
   .aligntop {
     margin-top: 10%;
   }
