@@ -106,7 +106,7 @@ export default function Post({ postData, featuredImageUrl }) {
 
     return (
         <>
-            {/* {newpath === '/alberta-amazon-kdp' ? (
+            {newpath === '/alberta-amazon-kdp' ? (
                 <Head>
                     <title key="title">{postData.title}</title>
                     <meta name="description" content='Dive into global publishing from home. Discover how with our Alberta Amazon KDP guide. Read now!' key="metadesc" />
@@ -174,9 +174,9 @@ export default function Post({ postData, featuredImageUrl }) {
                 </Head>
             ) : null
 
-            } */}
+            }
 
-            <Head>
+            {/* <Head>
                 <title key="title">{postData.title}</title>
                 <meta name="description" content={postData.metaDesc} key="metadesc" />
                 <meta property="og:title" content={postData.opengraphTitle} />
@@ -186,7 +186,7 @@ export default function Post({ postData, featuredImageUrl }) {
                 <meta property="og:locale" content="en_IN" />
                 <meta property="og:site_name" content={postData.opengraphSiteName} />
                 <link rel="icon" href="/favicon.svg" />
-            </Head>
+            </Head> */}
 
 
             <section className={styles.innerBlog}>
