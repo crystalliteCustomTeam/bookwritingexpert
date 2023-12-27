@@ -98,26 +98,26 @@ const Strugglingwriters = () => {
                     <Col md={12}>
                         <Slider {...mockupslider} className='mt-5 mockupslider'>
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover1} className='img-fluid' />
+                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover1}  />
                             </div>
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover2} className='img-fluid' />
+                                <Image width={260} height={395} loading="lazy" quality={70} alt="Book Writing Experts" src={cover2}  />
                             </div>
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover3} className='img-fluid' />
+                                <Image width={260} height={389} loading="lazy" quality={70} alt="Book Writing Experts" src={cover3}  />
                             </div>
                            
                         </Slider>
                         <Slider {...mockupslider2} className='mt-3 mockupslider'>
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover5} className='img-fluid' />
+                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover5}  />
                             </div>
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover6} className='img-fluid' />
+                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover6}  />
                             </div>
                           
                             <div>
-                                <Image width={260} height={391} loading="lazy" quality={70} alt="Book Writing Experts" src={cover8} className='img-fluid' />
+                                <Image width={260} height={389} loading="lazy" quality={70} alt="Book Writing Experts" src={cover8}  />
                             </div>
                         </Slider>
                     </Col>
