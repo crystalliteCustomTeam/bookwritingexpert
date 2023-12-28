@@ -121,13 +121,13 @@ export default function Post({ postData, featuredImageUrl }) {
             ) : newpath === '/hire-ebook-writing-services-usa' ? (
                 <Head>
                     <title key="title">{postData.title}</title>
-                    <meta name="description" content='Explore why USA`s ebook writing services are the ultimate choice for emerging authors. Contact us today!' key="metadesc" />
+                    <meta name="description" content='Explore why USAs ebook writing services are the ultimate choice for emerging authors. Contact us today!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/amazon-self-publishing' ? (
                 <Head>
                     <title key="title">{postData.title}</title>
-                    <meta name="description" content='Discover the 5 essential steps for successful Amazon self publishing. A beginner`s guide to achieve your publishing dreams on the world`s largest platform' key="metadesc" />
+                    <meta name="description" content='Discover the 5 essential steps for successful Amazon self publishing. A beginners guide to achieve your publishing dreams on the worlds largest platform' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/hire-affordable-fiction-ghostwriting-services' ? (
