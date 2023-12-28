@@ -83,6 +83,13 @@
 }
 
 @media (max-width: 767px) {
+
+
+  .stopworrying {
+    background-image: unset;
+    background-color: #24303e;
+  }
+
   .btn1 {
     display: block;
   }
