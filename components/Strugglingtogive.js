@@ -62,7 +62,7 @@ const Strugglingtogive = (props) => {
 
                         }
                         {props.text ? 
-                        props.text
+                       <p className='textcolor font-f mb-4 font15'> {props.text} </p>
                         :
 <p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
                     }
