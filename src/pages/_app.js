@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
   useEffect(() => {
-    const delay = 5000;
+    const delay = 3000;
     const timeoutId = setTimeout(() => {
       setImagesLoaded(true);
     }, delay);
