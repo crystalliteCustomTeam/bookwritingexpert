@@ -884,6 +884,11 @@
 
 @media (max-width: 480px) {
 
+  .audiobookproduction{
+    background-size: 100%;
+    height: unset;
+  }
+
 
  
 

@@ -1,27 +1,30 @@
 import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
 import { Container, Row } from 'react-bootstrap'
+
 // images
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import mission1 from '/public/images/mission/1.png'
-import mission2 from '/public/images/mission/2.png'
-import mission3 from '/public/images/mission/3.png'
-import publishmybook from '/public/images/selfpublishingservices/publishmybook.png'
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const mission1 = await import("/public/images/mission/1.png");
+const mission2 = await import("/public/images/mission/2.png");
+const mission3 = await import("/public/images/mission/3.png");
+const publishmybook = await import("/public/images/selfpublishingservices/publishmybook.png");
+
 // components
-import Banner from '../../components/Banner'
-import Dowecome from '../../components/Dowecome'
-import Stopworrying from '../../components/Stopworrying'
-import Finetoothedbook from '../../components/Finetoothedbook'
-import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
-import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Stillonthefence from '../../components/Stillonthefence'
-import Lululogos from '../../components/Lululogos'
-import Selfpublishing from '../../components/Selfpublishing'
-import Major from '../../components/Major'
-import Cta from '../../components/Cta'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Dowecome = dynamic(() => import('../../components/Dowecome'));
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
+const Finetoothedbook = dynamic(() => import('../../components/Finetoothedbook'));
+const Aspiring = dynamic(() => import('../../components/Aspiring'));
+const Ourprocess = dynamic(() => import('../../components/Ourprocess'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Makestoriesnew = dynamic(() => import('../../components/Makestoriesnew'));
+const Stillonthefence = dynamic(() => import('../../components/Stillonthefence'));
+const Lululogos = dynamic(() => import('../../components/Lululogos'));
+const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
+const Major = dynamic(() => import('../../components/Major'));
+const Cta = dynamic(() => import('../../components/Cta'));
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 import Slider from 'react-slick'

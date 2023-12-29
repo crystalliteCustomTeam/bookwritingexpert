@@ -1,24 +1,24 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import whychoose from '/public/images/whychoosebooks/ill.png'
+import dynamic from 'next/dynamic'
+// images
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const whychoose = await import("/public/images/whychoosebooks/ill.png");
+const banslider12 = await import("/public/images/illustrativebook/cartoon.svg");
 // import components
-import Banner from '../../components/Banner'
-import Partners from '../../components/Partners'
-import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
-import Whatourclients from '../../components/Whatourclients'
-import Requestafreequote from '../../components/Requestafreequote'
-import Stoppublish from '../../components/Stoppublish'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Strugglingtogive from '../../components/Strugglingtogive'
-import Illustrativebook from '../../components/Illustrativebook'
-import Onestepsolutions from '../../components/Onestepsolutions'
-import Script from 'next/script'
-import Stunningillustrations from '../../components/Stunningillustrations'
-import Serviceprovidersillutration from '../../components/Serviceprovidersillutration'
-import banslider12 from '/public/images/illustrativebook/cartoon.svg'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Partners = dynamic(() => import('../../components/Partners'));
+const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
+const Gotastory = dynamic(() => import('../../components/Gotastory'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
+const Stoppublish = dynamic(() => import('../../components/Stoppublish'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
+const Illustrativebook = dynamic(() => import('../../components/Illustrativebook'));
+const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+const Stunningillustrations = dynamic(() => import('../../components/Stunningillustrations'));
+const Serviceprovidersillutration = dynamic(() => import('../../components/Serviceprovidersillutration'));
 
 
 function Illustrationbook() {

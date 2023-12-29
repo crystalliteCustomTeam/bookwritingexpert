@@ -1,26 +1,28 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import whychoose from '/public/images/whychoosebooks/bg-img.png'
+import dynamic from 'next/dynamic'
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const whychoose = await import("/public/images/whychoosebooks/bg-img.png");
 // import components
-import Banner from '../../components/Banner'
-import Partners from '../../components/Partners'
-import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
-import Whatourclients from '../../components/Whatourclients'
-import Requestafreequote from '../../components/Requestafreequote'
-import Stoppublish from '../../components/Stoppublish'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Strugglingtogive from '../../components/Strugglingtogive'
-import Illustrativebook from '../../components/Illustrativebook'
-import Onestepsolutions from '../../components/Onestepsolutions'
-import Script from 'next/script'
-import Stunningillustrations from '../../components/Stunningillustrations'
-import Serviceproviders from '../../components/Serviceproviders'
-import banslider12 from '/public/images/illustrativebook/cartoon1.svg'
-import Providestunning from '../../components/Providestunning'
-import Professionalaudiobook from '../../components/Professionalaudiobook'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Partners = dynamic(() => import('../../components/Partners'));
+const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
+const Gotastory = dynamic(() => import('../../components/Gotastory'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
+const Stoppublish = dynamic(() => import('../../components/Stoppublish'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
+const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+const Serviceproviders = dynamic(() => import('../../components/Serviceproviders'));
+const Providestunning = dynamic(() => import('../../components/Providestunning'));
+const Professionalaudiobook = dynamic(() => import('../../components/Professionalaudiobook'));
+
+
+
+
+
+
 
 
 function Audiobookproduction() {
