@@ -8,62 +8,20 @@ import Pixel from '../../components/Pixel';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import logo from '../../public/images/logo.svg';
-import loader from '../../public/images/loader.gif';
-import Image from 'next/image';
-import Modal from 'react-bootstrap/Modal';
-import Thanksgiving from '../../components/Thanksgiving';
-import styles from '@/styles/Header.module.css'
+import Loader from '../../components/Loader';
 
 
 export default function App({ Component, pageProps }) {
 
 
-  const router = useRouter();
-  const [loading, setLoading] = useState(true);
+  
 
-  useEffect(() => {
-    const handleStart = () => setLoading(true);
-    const handleComplete = () => setLoading(false);
-
-    router.events.on('routeChangeStart', handleStart);
-    router.events.on('routeChangeComplete', handleComplete);
-    router.events.on('routeChangeError', handleComplete);
-
-    // Set initial loading state based on router.isReady
-    if (router.isReady) {
-      setLoading(false);
-    }
-
-    return () => {
-      router.events.off('routeChangeStart', handleStart);
-      router.events.off('routeChangeComplete', handleComplete);
-      router.events.off('routeChangeError', handleComplete);
-    };
-  }, [router]);
 
 
   const handleLoaded = () => {
     zE('webWidget:on', 'open', function () {
     });
   };
-
-
-  const routernew = router.pathname == '/';
-
-
-  const thanks = router.pathname == '/thanks-giving'
-
-
-  const [show1, setShow1] = useState('');
-
-  function modal1() {
-    setShow1(true);
-
-  }
-  function closemodal1() {
-    setShow1(false);
-  }
 
 
 
@@ -99,7 +57,24 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href={newcol} />
       </Head>
 
-      {imagesLoaded &&
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {imagesLoaded ?
         <>
           <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
           <Script strategy="lazyOnload">
@@ -118,18 +93,20 @@ export default function App({ Component, pageProps }) {
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
           </Script>
+          < Header />
+          <Pixel />
+          <Component {...pageProps} />
+          <Footer />
+          <div>
+            <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
+          </div>
         </>
+        :
+
+        <Loader />
+
       }
 
-      {loading && (
-        <div className="loading-screen">
-          {/* Customize your loader here */}
-          <Image quality={100} src={logo} alt="Book Writing Experts"></Image>
-          {/* <Image quality={100}   src={loader} alt="Book Writing Experts"></Image> */}
-          <div className="spinner mt-3 mb-3"></div>
-          <p className='color-white'>Loading...</p>
-        </div>
-      )}
 
 
 
@@ -139,42 +116,7 @@ export default function App({ Component, pageProps }) {
 
 
 
-      {loading &&
-        <>
-          {routernew}
 
-        </>
-      }
-
-      <div onLoad={modal1}>
-        <Header />
-      </div>
-      {imagesLoaded &&
-        <Pixel />
-      }
-      <Component {...pageProps} />
-      <Footer />
-
-
-
-      {/* {thanks ? 
-      
-      <Modal show={show1} centered onHide={closemodal1} onLoad={modal1}  className='thanksgiving'>
-          <Modal.Body>
-            <Thanksgiving /> <span onClick={closemodal1} className={styles.cross}>x</span>
-          </Modal.Body>
-      </Modal>
-     
-:
-
-''
-} */}
-
-      {imagesLoaded &&
-        <div>
-          <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
-        </div>
-      }
     </>
   )
 }
