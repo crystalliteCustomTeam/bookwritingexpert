@@ -70,7 +70,7 @@ export default function App({ Component, pageProps }) {
 
 
 
-
+      <Component {...pageProps} />
 
 
 
@@ -95,7 +95,7 @@ export default function App({ Component, pageProps }) {
           </Script>
           < Header />
           <Pixel />
-          <Component {...pageProps} />
+          
           <Footer />
           <div>
             <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
