@@ -12,7 +12,6 @@ body {
   z-index: 2222;
 }
 
-
 .loading-screen {
   position: fixed;
   top: 0;
@@ -27,7 +26,6 @@ body {
   font-size: 1.5rem;
   z-index: 999;
 }
-
 
 .spinner {
   border: 4px solid white;
@@ -48,7 +46,6 @@ body {
   }
 }
 
-
 /* thanksgiving */
 .main-wrapper_exp {
   font-size: 15vmin;
@@ -68,13 +65,13 @@ body {
   position: relative;
   flex-shrink: 0;
   transform-origin: center 2.5vmin;
-  animation: 1000ms init forwards, 1000ms init-sign-move ease-out 1000ms, 3000ms sign-move 2000ms infinite;
+  animation: 1000ms init forwards, 1000ms init-sign-move ease-out 1000ms,
+    3000ms sign-move 2000ms infinite;
 }
 
 .signboard_exp span {
   font-size: 16px;
   font-style: italic;
-
 }
 
 .signboard-wrapper_exp .signboard_exp {
@@ -176,9 +173,6 @@ body {
   }
 }
 
-
-
-
 /* colors */
 .color-blue {
   color: #ff9900;
@@ -224,7 +218,6 @@ body {
   color: #e47926;
 }
 
-
 .hero-span span {
   color: #fff;
   font-weight: 300;
@@ -245,6 +238,11 @@ body {
 /* fontsizes */
 .font48 {
   font-size: 40px;
+}
+
+.font45 {
+  font-size: 45px;
+  line-height: 55px;
 }
 
 .font40 {
@@ -289,6 +287,10 @@ body {
 
 .font50 {
   font-size: 50px;
+}
+
+.font55 {
+  font-size: 55px;
 }
 
 .font22 {
@@ -449,6 +451,10 @@ body {
   justify-content: center;
   gap: 30px;
   height: 80px;
+}
+
+.servicePartner .slick-track {
+  height: 100%;
 }
 
 .modopp .modalprocess {
@@ -649,7 +655,6 @@ body {
 
 .dateai {
   padding-top: 50px;
-
 }
 
 .waitdatecloud {
@@ -664,7 +669,6 @@ body {
 .bannergllobal {
   text-align: center;
 }
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -683,13 +687,9 @@ input::-webkit-inner-spin-button {
   background-size: cover;
   background-position: center;
   margin-top: 5%;
-
-
-
 }
 
 .getmodal .modal-dialog {
-
   max-width: 70%;
 }
 
@@ -700,15 +700,10 @@ input::-webkit-inner-spin-button {
   background-position: center;
   height: auto;
   margin-top: 5%;
-
-
-
 }
 
 .thanksgiving .modal-dialog {
-
   max-width: 90%;
-
 }
 
 /* .thanksgiving .modal-body {
@@ -729,11 +724,7 @@ input::-webkit-inner-spin-button {
   background-color: #f8f8f8;
 }
 
-
-
-
 /* blog api integration css */
-
 
 .aligncenter {
   width: 70%;
@@ -743,54 +734,51 @@ input::-webkit-inner-spin-button {
 }
 
 .elementor-widget-container p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #777;
   font-size: 15px;
 }
 
 .elementor-widget-container span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   color: #777;
-
 }
 
 .elementor-widget-container h2 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 100;
 }
 
 .elementor-widget-container h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 100;
 }
 
 .elementor-widget-container h3 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 100;
   line-height: 17px;
 }
 
 .elementor-widget-container h5 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 100;
 }
 
 .elementor-widget-container b {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .elementor-widget-container h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: bold;
   font-size: 38px;
   color: #ff9900;
   margin-top: 2%;
-
 }
 
 .elementor-post__meta-data {
-  font-family: 'Poppins';
-
+  font-family: "Poppins";
 }
 
 .elementor-widget-container a {
@@ -809,7 +797,7 @@ input::-webkit-inner-spin-button {
 }
 
 h3.elementor-heading-title.elementor-size-default {
-  color: #A4A4A4;
+  color: #a4a4a4;
   font-family: "Poppins", Sans-serif;
   font-size: 14px;
   margin-bottom: 5%;
@@ -830,12 +818,12 @@ h3.elementor-heading-title.elementor-size-default {
 
 span.elementor-heading-title.elementor-size-default a {
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 span.elementor-heading-title.elementor-size-default {
   padding: 5px 20px 5px 20px;
-  background-color: #FC9E31;
+  background-color: #fc9e31;
 }
 
 .elementor-section .elementor-container {
@@ -843,7 +831,7 @@ span.elementor-heading-title.elementor-size-default {
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  gap: 20px
+  gap: 20px;
 }
 
 .elementor-element.elementor-element-5b119ed1 {
@@ -857,7 +845,7 @@ span.elementor-heading-title.elementor-size-default {
 h3.elementor-post__title a {
   font-family: "Poppins", Sans-serif;
   font-size: 13px;
-  line-height: .2;
+  line-height: 0.2;
 }
 
 .elementor-post__meta-data {
@@ -870,7 +858,6 @@ h3.elementor-post__title a {
 }
 
 .elementor-post__thumbnail img {
-
   width: 50px;
   height: 50px;
 }
@@ -883,9 +870,9 @@ h3.elementor-post__title a {
 }
 
 span.elementor-icon-list-text {
-  color: #A4A4A4;
+  color: #a4a4a4;
   font-size: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 h4.elementor-heading-title.elementor-size-default {
@@ -904,8 +891,6 @@ h4.elementor-heading-title.elementor-size-default {
 section.elementor-section.elementor-top-section.elementor-element.elementor-element-640d66f.elementor-section-stretched.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default {
   display: none;
 }
-
-
 
 .chapter {
   margin-top: -5%;
@@ -953,11 +938,10 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     padding: 0 20px;
     position: relative;
 
-    >* {
+    > * {
       display: flex;
       justify-content: center;
       align-items: center;
-
     }
 
     .toggle-play {
@@ -968,7 +952,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
         height: 0;
         width: 0;
         border: 7px solid #0000;
-        border-left: 13px solid #FD9802;
+        border-left: 13px solid #fd9802;
         transform: scale(1.5);
 
         &:hover {
@@ -1014,7 +998,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
       display: flex;
       gap: 9px;
 
-      >* {
+      > * {
         padding: 2px;
       }
     }
@@ -1044,7 +1028,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
         height: 15px;
         background: white;
         box-shadow: 0 0 20px #000a;
-        transition: .25s;
+        transition: 0.25s;
 
         .volume-percentage {
           background: coral;
@@ -1062,7 +1046,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     }
   }
 }
-
 
 .time {
   display: flex;
@@ -1088,7 +1071,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   right: -36%;
   padding-left: 3%;
 }
-
 
 .scrollBox {
   height: 250px;
@@ -1120,11 +1102,9 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 /* --------------------------- */
 
 @media (max-width: 1440px) {
-
   .font50 {
     font-size: 35px;
   }
-
 }
 
 @media (max-width: 1280px) {
@@ -1142,7 +1122,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 1200px) {
-
   .offpost .font18 {
     font-size: 14px;
   }
@@ -1162,7 +1141,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 991px) {
-
   .offpost .font18 {
     font-size: 20px;
   }
@@ -1170,11 +1148,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   .offpost span.font25 {
     font-size: 20px;
   }
-
-
-  /* .loading-screen {
-    display: none;
-  } */
 
   .footercolset .col-md-4,
   .footercolset .col-md-3,
@@ -1205,15 +1178,17 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     margin-top: 2%;
   }
 
-
   .font50 {
     font-size: 29px;
+  }
+
+  .font55 {
+    font-size: 40px;
   }
 
   .navbar-toggler-icon {
     filter: invert(1);
   }
-
 
   .blogslide .slick-slider.slick-initialized {
     margin-right: unset;
@@ -1253,7 +1228,6 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 767px) {
-
   .offpost .font18 {
     text-align: center;
   }
@@ -1270,28 +1244,11 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
   .getmodal {
     margin: 1rem;
-
   }
 
   .start {
     margin-bottom: 10px;
   }
-
-  /* .clintTesti .slick-slider .slick-next::before {
-    display: none;
-  }
-  
-  .clintTesti .slick-slider .slick-prev {
-    display: none !important;
-  }
-  
-  .bookMarkTesti .slick-slider .slick-next::before {
-    display: none;
-  }
-  
-  .bookMarkTesti .slick-slider .slick-prev::before {
-    display: none;
-  } */
 
   .bookMarkTesti .slick-prev,
   .slick-next {
@@ -1325,6 +1282,10 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
     font-size: 40px;
   }
 
+  .font55 {
+    font-size: 30px;
+  }
+
   .font50 {
     font-size: 23px;
   }
@@ -1348,45 +1309,37 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 480px) {
-
-
-
-  br{
+  br {
     display: none;
   }
-  .newdotflod .slick-dots li button:before{
+  .newdotflod .slick-dots li button:before {
     color: white;
   }
 
-  .newdotflod  .slick-dots li.slick-active button:before {
+  .newdotflod .slick-dots li.slick-active button:before {
     opacity: 1;
     color: #ffffff;
-}
-  .newdotflodwhite .slick-dots li button:before{
+  }
+  .newdotflodwhite .slick-dots li button:before {
     color: black;
   }
 
-  .newdotflodwhite  .slick-dots li.slick-active button:before {
+  .newdotflodwhite .slick-dots li.slick-active button:before {
     opacity: 1;
     color: black;
-}
-
-
+  }
 
   .modal-backdrop.show {
-    opacity: 0!important;
-}
-.thanksgiving{
-  display: none!important;
-}
+    opacity: 0 !important;
+  }
+  .thanksgiving {
+    display: none !important;
+  }
 
   .togpost .w-50 {
     width: 90% !important;
     padding-top: 20px;
   }
-
-  
-
 
   .scrollBox {
     height: auto;
@@ -1418,16 +1371,12 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   }
 
   .getmodal .modal-dialog {
-
     max-width: 90%;
   }
 
   .getmodal {
-    margin: .5rem;
-
+    margin: 0.5rem;
   }
-
-
 
   .font50 {
     font-size: 28px;
