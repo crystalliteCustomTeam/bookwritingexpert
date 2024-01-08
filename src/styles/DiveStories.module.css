@@ -1,0 +1,14 @@
+.active{
+    background: #F7981D;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 7px 5px 6px #cececece;
+}
+
+.analpost{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

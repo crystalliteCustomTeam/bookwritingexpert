@@ -59,7 +59,7 @@ const ServicesPartners = () => {
 
   return (
     <>
-      <div className={`${styles.partners} part bg-white pt-5 pb-5 servicePartner`}>
+      <div className={`${styles.partners} part bg-white pt-5 servicePartner`}>
         <Container>
           <div className="d-md-block d-none">
             <Row>

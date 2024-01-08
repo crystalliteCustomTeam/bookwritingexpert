@@ -1,6 +1,11 @@
-.partners{
-    padding-top: 35px;
-    padding-bottom: 35px;
-    background-color: #141d29;
-    font-family: 'Poppins';
+.partners {
+  padding: 35px 0; 
+  background-color: #141d29;
+  font-family: "Poppins";
+}
+
+@media only screen and (max-width: 991px) {
+  .partners {
+    margin-top: 10px;  
+  }
 }

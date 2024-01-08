@@ -2,6 +2,7 @@
 
 body {
   font-family: "Poppins";
+  overflow-x: hidden;
 }
 
 /* loader */
@@ -334,6 +335,10 @@ body {
   font-weight: 300;
 }
 
+.fw200 {
+  font-weight: 200;
+}
+
 /* font-family */
 .font-f {
   font-family: "Poppins";
@@ -350,6 +355,10 @@ body {
 
 .linhight {
   line-height: 1;
+}
+
+.linehs {
+  line-height: 1.7;
 }
 
 /* alignment */
@@ -581,6 +590,64 @@ body {
   left: 0;
 }
 
+.service .slick-list {
+  overflow: unset;
+}
+
+.service {
+  position: relative;
+}
+
+.service::after {
+  content: "";
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  left: -170px;
+  top: 0;
+  position: absolute;
+}
+
+.slick-prev:before {
+  content: "" !important;
+}
+
+/* .service.slick-prev:before {
+  content: inherit !important;
+  color: inherit !important;
+} */
+
+.service .slick-next {
+  right: 45%;
+  left: inherit;
+  top: inherit;
+  bottom: -33% !important;
+  top: inherit !important;
+  z-index: 9999999 !important;
+}
+
+.service .slick-prev {
+  left: 46.5%;
+  top: inherit;
+  bottom: -33%;
+  z-index: 9999999 !important;
+}
+
+.service.slick-prev:before,
+.service.slick-next:before {
+  font-size: 46px;
+}
+
+.slick-prev {
+  width: 50px !important;
+  height: 51px !important;
+}
+
+.slick-next {
+  width: 50px !important;
+  height: 51px !important;
+}
+
 .faqheading .accordion-button:focus {
   border-color: unset;
   box-shadow: unset;
@@ -588,12 +655,82 @@ body {
 
 /* Farooq Css */
 
-/* .sliderImg .slick-slider img{
-  width: 70%;
+.OurServices .slick-slide.slick-active.slick-current {
+  /* border-right: 2px solid black; */
+  /* padding-right: 22px; */
+  position: relative;
 }
-.sliderImg2 .slick-slider img{
-  width: 70%;
-} */
+
+.OurServices .slick-slide.slick-active.slick-current::after {
+  content: "";
+  position: absolute;
+  right: -22px;
+  top: 10%;
+  width: 2px;
+  height: 90%;
+  background: #cecece;
+}
+
+.ourservices .slick-dots {
+  bottom: -50px !important;
+  left: 50% !important;
+  right: inherit;
+  transform: translateX(-49.3%);
+}
+
+.ourservices .slick-dots li button:before {
+  font-size: 18px;
+  width: 42px;
+  height: 42px;
+  color: #f7981d;
+}
+
+.ourservices .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #f7981d; 
+}
+
+.serviceSlider .slick-next:before {
+  /* content: !important; */
+  opacity: 0;
+}
+
+.serviceSlider .slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 0 !important;
+}
+
+.serviceSlider .slick-prev {
+  right: -89px;
+  left: inherit !important;
+  z-index: 999999;
+}
+
+.serviceSlider .slick-prev:before,
+.slick-next:before {
+  opacity: 0 !important;
+}
+
+.serviceSlider .slick-prev,
+.slick-next {
+  top: 50%;
+}
+
+.serviceSlider .slick-next {
+  right: -156px;
+  z-index: 9999999 !important;
+}
+
+.serviceSlider .slick-prev:before,
+.serviceSlider .slick-next:before {
+  font-size: 75px;
+}
+
+.serviceSlider .slick-next {
+  top: 51% !important;
+}
 
 .slick-slider.homeSlider img {
   filter: brightness(100) invert(1);
@@ -1101,6 +1238,43 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 /* --------------------------- */
 
+@media only screen and (max-width: 1920px) {
+  .service::after {
+    left: -64px;
+  }
+}
+/* @media only screen and (min-width: 1920px) {
+  .service::after {
+    left: -64px;
+  }
+} */
+@media only screen and (max-width: 1600px) {
+  .service::after {
+    left: -159px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .service::after {
+    left: -205px;
+  }
+}
+/* @media only screen and (min-width: 1440px) {
+  .service::after {
+    left: -205px;
+  }
+} */
+
+@media only screen and (max-width: 1366px) {
+  .service::after {
+    left: -130px;
+  }
+}
+/* @media only screen and (min-width: 1280px) {
+  .service::after {
+    left: -174px;
+  }
+} */
+
 @media (max-width: 1440px) {
   .font50 {
     font-size: 35px;
@@ -1224,6 +1398,14 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
   .font30 {
     font-size: 21px;
+  }
+
+  .service .slick-next {
+    right: 42%;
+  }
+
+  .service .slick-prev {
+    left: 42.5%;
   }
 }
 

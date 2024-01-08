@@ -2,40 +2,29 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
-// images
-import publishmybook from "/public/images/selfpublishingservices/4.jpg";
+// components
 import homebannerlogos from "/public/images/amazonbookpublishing/logos.png";
 import homebanlogos2 from "/public/images/amazonbookpublishing/logosTwo.png";
-// components
-import Dowecome from "../../components/Dowecome";
-import Stopworrying from "../../components/Stopworrying";
-import Aspiring from "../../components/Aspiring";
-import Whatourclients from "../../components/Whatourclients";
-import Selfpublishing from "../../components/Selfpublishing";
-import Lululogos from "../../components/Lululogos";
-import Customersatisfaction from "../../components/Customersatisfaction";
-// css
-import styles from "@/styles/Whybookpublishing.module.css";
-import mission1 from "/public/images/mission/1.png";
-import mission2 from "/public/images/mission/2.png";
-import mission3 from "/public/images/mission/3.png";
-import Finetoothedbook from "../../components/Finetoothedbook";
-import Homebanner from "../../components/Homebanner";
 import ServiceBanner from "../../components/ServiceBanner";
 import ServicesPartners from "../../components/ServicePartners";
 import Partners from "../../components/Partners";
+import ServicesPublishing from "../../components/ServicesPublishing";
+import PublishProcess from "../../components/PublishProcess";
+import DiveStories from "../../components/DiveStories";
+import WhyChoose from "../../components/ServiceWhyChoose";
+import Services from "../../components/Services";
+import RequestQuote from "../../components/RequestQuote";
+import OurServices from "../../components/OurServices";
+import Publications from "../../components/Publications";
+import ContactUs from "../../components/ContactUs";
+// Images
+import mission1 from "/public/images/mission/1.png";
+import mission2 from "/public/images/mission/2.png";
+import mission3 from "/public/images/mission/3.png";
+
+import Contact from "./contact";
 
 const amazonbookpublishingservices = () => {
-  const text = <span>We write, market, and review books of all kinds.</span>;
-  const subtext = (
-    <span>
-      {" "}
-      Profit from our wide range of book publication styles and forms to secure
-      your position as a book writing guru. In addition to publishing children's
-      books, we are among the top Amazon publishing service suppliers.
-    </span>
-  );
-
   const BannerSubText = (
     <span>Ensuring Worldwide Publication of your Stories</span>
   );
@@ -59,8 +48,12 @@ const amazonbookpublishingservices = () => {
     </span>
   );
 
-  const discuss = <span>LET'S DISCUSS</span>;
+  const publishing = "Our Recent Publishing";
 
+  const publishDesc =
+    "Dive into the latest literary treasures with our recent collections.";
+
+  const discuss = <span>LET'S DISCUSS</span>;
 
   const geta = (
     <span>
@@ -173,6 +166,7 @@ const amazonbookpublishingservices = () => {
       class: "fintop",
     },
   ];
+
   return (
     <>
       <Head>
@@ -189,6 +183,7 @@ const amazonbookpublishingservices = () => {
           name="robots"
           content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
         />
+        <meta name="robots" content="noindex" />
         <title>
           Get Your Book on Amazon KDP with Top-Rated Book Publishing Services
         </title>
@@ -246,69 +241,25 @@ const amazonbookpublishingservices = () => {
 
       <ServicesPartners />
 
-      <Dowecome title={geta} text={work} Dowecome="publishmybook" />
+      <ServicesPublishing title={publishing} desc={publishDesc} />
 
-      <div className="dataSetCo">
-        <Stopworrying
-          title2={dateset}
-          subtitle3="Do You Want To Increase Readers’ Engagement and Customer Retention?"
-          btn1="Get a free Proposal"
-          btn2="Talk to an expert"
-        />
-      </div>
+      <PublishProcess />
 
-      <div className={`${styles.finetoothedbook} customizedbook`}>
-        <Container>
-          <Row>
-            <h2 className="color-lightgray   font25   t-center font-f mb-2">
-              Our Approach
-            </h2>
+      <DiveStories />
 
-            <p className="font50 font-f fw500 colortextgrey t-center pb-2">
-              Our Three-Step Process Brings <br /> The Perfection To Have Ears
-              On!
-            </p>
-          </Row>
+      <WhyChoose />
 
-          <Row className="gy-5">
-            {fine.map((item, i) => (
-              <Finetoothedbook
-                key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            ))}
-          </Row>
-        </Container>
-      </div>
-      <Selfpublishing
-        title="Our Team Of Experienced Professionals Will Help Your Book Sound The Best!"
-        text="We make it easy for you to capture your story and share it with the world. Our professional audiobook recording services will help you bring your words to life, and our engaging tone of voice will keep your listeners hooked until the very end. Share your story with the world, and let them hear it in your own words with the unbeatable audiobook production service."
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={publishmybook}
-        whychooseclass="marketyourbook"
-      />
+      <Services />
 
-      <Customersatisfaction />
+      <RequestQuote />
 
-      <Whatourclients />
+      <OurServices />
 
-      <div>
-        <Lululogos />
-      </div>
+      <Partners />
 
-      <div className="datacloud">
-        <Aspiring
-          title="Book Cover Designs That Stand Out"
-          text="We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files."
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
-        />
-      </div>
+      <Publications />
+
+      <ContactUs />
     </>
   );
 };
