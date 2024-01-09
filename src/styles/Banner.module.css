@@ -499,7 +499,7 @@
 
 .servicesBanner form {
   background: #46505c;
-  padding: 24px 20px 30px;
+  padding: 24px 25px 30px;
   border-radius: 12px;
 }
 
@@ -516,11 +516,32 @@
   font-weight: 500;
 }
 
+.servicesBanner form input::placeholder {
+  color: white;
+}
+
 .servicesBanner form input:focus {
   outline: 0;
 }
+.servicesBanner form select {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background: #46505c;
+}
 
-.servicesBanner form input::placeholder {
+.servicesBanner form select:focus {
+  outline: 0;
+}
+
+.servicesBanner form select option {
   color: white;
   font-size: 14px;
   font-weight: 400;
@@ -546,8 +567,9 @@
 
 .reviews {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0 10px;
+  gap: 10px;
   margin-top: 30px;
 }
 
@@ -615,10 +637,15 @@
     margin-top: 100px;
   }
 }
+@media (max-width: 1440px) {
+  .subText {
+    width: 61%;
+  }
+}
 
-@media (min-width: 1366px) {
-  .homeBaneLogo {
-    max-width: 100%;
+@media (max-width: 1366px) {
+  .subText {
+    width: 61%;
   }
 }
 
@@ -640,9 +667,9 @@
 }
 
 @media (max-width: 991px) {
-  .servicesBanner { 
-    padding-top: 40px;
-    height: 100%; 
+  .servicesBanner {
+    padding-top: 120px;
+    height: 100%;
   }
 
   .pricing p {
@@ -806,7 +833,13 @@
   }
 
   .servicenumer {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+  .reviews {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .ghostwriting {

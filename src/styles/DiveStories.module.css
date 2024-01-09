@@ -1,14 +1,13 @@
-.active{
-    background: #F7981D;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 7px 5px 6px #cececece;
+.books img {
+  max-height: 400px;
+  color: transparent;
+  min-height: 400px;
+  object-fit: contain;
 }
 
-.analpost{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+@media only screen and (max-width: 567px) {
+  .books img {
+    max-height: unset;
+    min-height: unset;
+  }
 }

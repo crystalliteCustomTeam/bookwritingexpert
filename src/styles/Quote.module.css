@@ -41,12 +41,25 @@
   border: 1px solid #707070;
 }
 
+@media only screen and (max-width: 991px) {
+  .Quote img {
+    height: auto;
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  .Quote {
+    background: #f2f2f1;
+    padding: 60px 0 40px;
+  }
+}
+
 @media only screen and (max-width: 567px) {
   .Quote img {
     width: 100%;
   }
 
-  .formBtn { 
-    width: 94%; 
+  .formBtn {
+    width: 94%;
   }
 }

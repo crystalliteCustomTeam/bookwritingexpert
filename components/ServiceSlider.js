@@ -3,10 +3,11 @@ import React from "react";
 import Slider from "react-slick";
 
 // Images
-import Book1 from "public/images/amazonbookpublishing/book1.png";
-import Book2 from "public/images/amazonbookpublishing/book2.png";
-import Book3 from "public/images/amazonbookpublishing/book3.png";
-import Book4 from "public/images/amazonbookpublishing/book4.png";
+import Book1 from "public/images/amazonbookpublishing/publishRight1.png";
+import Book2 from "public/images/amazonbookpublishing/publishRight2.png";
+import Book3 from "public/images/amazonbookpublishing/publishRight3.png";
+import Book4 from "public/images/amazonbookpublishing/publishRight4.png";
+import Book5 from "public/images/amazonbookpublishing/publishRight5.png";
 
 const ServiceSlider = () => {
   var partnersslider = {
@@ -49,28 +50,34 @@ const ServiceSlider = () => {
     <>
       <Slider {...partnersslider} className="serviceSlider">
         <div>
-          <Image src={Book1} alt="Service-book" width={150} height={200} />
+          <Image src={Book1} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book2} alt="Service-book" width={150} height={200} />
+          <Image src={Book2} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book3} alt="Service-book" width={150} height={200} />
+          <Image src={Book3} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book4} alt="Service-book" width={150} height={200} />
+          <Image src={Book4} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book1} alt="Service-book" width={150} height={200} />
+          <Image src={Book5} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book2} alt="Service-book" width={150} height={200} />
+          <Image src={Book1} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book3} alt="Service-book" width={150} height={200} />
+          <Image src={Book2} alt="Service-book" width={150} height={150} />
         </div>
         <div>
-          <Image src={Book4} alt="Service-book" width={150} height={200} />
+          <Image src={Book3} alt="Service-book" width={150} height={150} />
+        </div>
+        <div>
+          <Image src={Book4} alt="Service-book" width={150} height={150} />
+        </div>
+        <div>
+          <Image src={Book5} alt="Service-book" width={150} height={150} />
         </div>
       </Slider>
     </>

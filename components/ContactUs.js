@@ -38,7 +38,7 @@ const ContactUs = () => {
                 </div>
                 <div className="name">
                   <label>Message *</label>
-                  <textarea rows={4} placeholder="Type Full Name " />
+                  <textarea rows={4} placeholder="Type Details" />
                 </div>
                 <button>Let’s Discuss</button>
               </form>

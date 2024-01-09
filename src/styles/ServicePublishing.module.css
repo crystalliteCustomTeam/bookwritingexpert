@@ -1,6 +1,6 @@
 .servicePublish {
   position: relative;
-  padding: 80px 0;
+  padding: 50px 0 80px;
 }
 
 .slider {
@@ -36,6 +36,10 @@
 }
 
 @media only screen and (max-width: 991px) {
+  .servicePublish {
+    height: 123vh;
+  }
+
   .rightImage img {
     right: 75px;
     max-height: 541px;
@@ -46,6 +50,11 @@
   .Arrows {
     display: none !important;
   }
+
+  .rightImage {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -54,6 +63,7 @@
   }
 
   .servicePublish {
-    padding: 50px 0;
+    padding: 30px 0 40px;
+    height: 135vh;
   }
 }

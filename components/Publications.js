@@ -15,15 +15,15 @@ const Publications = () => {
           <Row>
             <Col lg={12}>
               <h2 class="font50 fw700 text-black text-center mb-4">
-                Many Got Featured In Major Publications Just By Working With Us.
+                Many Got Featured In Major Publications<br className="d-lg-block d-none" /> Just By Working With Us.
               </h2>
               <p className="text-center f20 fw400 mb-5 pb-3">
                 Oftentimes, we find ourselves indulging in thoughts that others
                 might fascinating. Most of them remain limited to the abyss
-                inside our heads. However, some ideas/stories and visions are
+                inside our heads. However, some ideas/<br className="d-lg-block d-none" />stories and visions are
                 meant for the world to read and study. The ideas develop once
                 you write, but the important aspect is to let the world to see
-                your work and change mindsets!
+                your work and<br className="d-lg-block d-none" /> change mindsets!
               </p>
               <div className="Image">
                 <Image src={PublicImage} alt="publicImage" width={1316} height={262}/>

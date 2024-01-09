@@ -72,7 +72,7 @@ const ServiceBanner = (props) => {
         }`}
       >
         <Container>
-          <Row className="align-items-center">
+          <Row>
             <Col lg={8} md={12} className={styles[props.alignclass]}>
               <div
                 className={`${styles.homebannertext} ${styles.serviceBanner}`}
@@ -175,12 +175,37 @@ const ServiceBanner = (props) => {
             </Col>
             <Col lg={4} md={12}>
               <form action="javascript:;" className={styles.serviceBanner}>
-                <h3 className="text-center text-white fw600 font30 mb-3">Request A Free Quote</h3>
+                <h3 className="text-center text-white fw600 font30 mb-3">
+                  Request A Free Quote
+                </h3>
                 <input placeholder="Full Name*" required />
                 <input placeholder="Phone *" required />
                 <input placeholder="Email *" required />
                 <input placeholder="Details" required />
-                <button type="submit" className={`font18 fw600 color-white mb-2 ${styles.serviceBtn}`}>Get A Free Quote</button>
+                <select>
+                  <option>Services</option>
+                  <option>Book Publishing</option>
+                  <option>Book Promotion</option>
+                  <option>Book Writing</option>
+                  <option>Book Editing</option>
+                  <option>Business Plan Writing Services</option>
+                  <option>Ghostwriting Services</option>
+                  <option>Web Content Writing Services</option>
+                  <option>Proofreading Services</option>
+                  <option>Book Marketing</option>
+                  <option>Digital Marketing</option>
+                  <option>Book Trailer Services</option>
+                  <option>Ebook Writing Services</option>
+                  <option>Book Formatting Services</option>
+                  <option>Illustration</option>
+                  <option>Audio Book Production</option>
+                </select>
+                <button
+                  type="submit"
+                  className={`font18 fw600 color-white mb-2 ${styles.serviceBtn}`}
+                >
+                  Get A Free Quote
+                </button>
               </form>
             </Col>
           </Row>

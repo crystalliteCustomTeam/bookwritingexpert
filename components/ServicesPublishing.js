@@ -1,17 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import YellowBtn from "./YellowBtn";
 import WhiteBtn from "./WhiteBtn";
-import ServiceSlider from "./ServiceSlider";
+import Slider from "react-slick";
 import styles from "@/styles/ServicePublishing.module.css";
 import Image from "next/image";
 
-// image
 import RightArrow from "public/images/amazonbookpublishing/right-arrow.png";
 import LeftArrow from "public/images/amazonbookpublishing/left-arrow.png";
-import RightImage from "public/images/amazonbookpublishing/publishRight.png";
+import Book1 from "public/images/amazonbookpublishing/publishRight1.png";
+import Book2 from "public/images/amazonbookpublishing/publishRight2.png";
+import Book3 from "public/images/amazonbookpublishing/publishRight3.png";
+import Book4 from "public/images/amazonbookpublishing/publishRight4.png";
+import Book5 from "public/images/amazonbookpublishing/publishRight5.png";
 
 const ServicesPublishing = (props) => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const contentData = [
+    {
+      title: "Sleeping With The Beast",
+      author: "By Papalia",
+      description:
+        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
+    },
+    {
+      title: "Sleeping With Beast",
+      author: "By Susan",
+      description:
+        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention – A Riveting Journey from our Publishing House",
+    },
+    {
+      title: "Sleeping Beast",
+      author: "By Moroo",
+      description:
+        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight and Intention – A Riveting Journey from our Publishing House",
+    },
+    {
+      title: "With The Beast",
+      author: "By Benjamin",
+      description:
+        "Discover the Blueprint for Lasting Connections: Influence, and Intention – A Riveting Journey from our Publishing House",
+    },
+    {
+      title: " The Beast",
+      author: "By Andrew",
+      description:
+        " Empowering Women to Navigate Relationships with Insight, Influence, and Intention – A Riveting Journey from our Publishing House",
+    },
+    {
+      title: "Sleeping With The Beast",
+      author: "By Abigail",
+      description:
+        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
+    },
+  ];
+
+  var partnersslider = {
+    dots: false,
+    arrows: true,
+    autoplay: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    beforeChange: (current, next) => setActiveSlide(next),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const partnerImages = [Book1, Book2, Book3, Book4, Book5];
+
   return (
     <>
       <section className={styles.servicePublish}>
@@ -24,23 +107,36 @@ const ServicesPublishing = (props) => {
               </div>
             </Col>
             <Col lg={6}>
-              <h2 className="font50 fw700 color-blue ">
-                Sleeping With The Beast
-              </h2>
-              <h5 className="font25 fw700">By Susan Papalia</h5>
-              <p className="mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id
-                tincidunt lorem, eget iaculis ligula. Donec bibendum, elit vel
-                fringilla sagittis,
-              </p>
-              <hr />
-              <div className="d-flex align-items-center gap-3 mt-4">
-                <YellowBtn />
-                <WhiteBtn />
-              </div>
+              {contentData[activeSlide] && (
+                <>
+                  <h2 className="font50 fw700 color-blue ">
+                    {contentData[activeSlide].title}
+                  </h2>
+                  <h5 className="font25 fw700">
+                    {contentData[activeSlide].author}
+                  </h5>
+                  <p className="mb-4">{contentData[activeSlide].description}</p>
+                  <hr />
+                  <div className="d-flex align-items-center gap-3 mt-4">
+                    <YellowBtn />
+                    <WhiteBtn />
+                  </div>
+                </>
+              )}
               <div className={styles.sliderMain}>
                 <div className={`mt-5 ${styles.slider}`}>
-                  <ServiceSlider />
+                  <Slider {...partnersslider} className="serviceSlider">
+                    {partnerImages.map((image, index) => (
+                      <div key={index}>
+                        <Image
+                          src={image}
+                          alt={`Service-book-${index}`}
+                          width={150}
+                          height={150}
+                        />
+                      </div>
+                    ))}
+                  </Slider>
                 </div>
                 <div
                   className={`d-flex align-items-center gap-3 ${styles.Arrows}`}
@@ -60,11 +156,12 @@ const ServicesPublishing = (props) => {
                 </div>
               </div>
             </Col>
+
             <Col lg={6}>
               <div className={styles.rightImage}>
                 <Image
-                  src={RightImage}
-                  alt="Right-Image"
+                  src={partnerImages[activeSlide]}
+                  alt={`Right-Image-${activeSlide}`}
                   width={620}
                   height={902}
                   className="img-fluid"

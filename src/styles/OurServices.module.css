@@ -14,12 +14,15 @@
   top: 0%;
   width: 2px;
   height: 100%;
-  /* background: #cecece; */
 }
 
+.crad {
+  height: 100%;
+  padding: 0 25px;
+}
 
-
-.crad{
-    height: 100%;
-    padding: 0 25px;
+@media only screen and (max-width: 991px) {
+  .ourServices {
+    padding: 40px 0 65px;
+  }
 }

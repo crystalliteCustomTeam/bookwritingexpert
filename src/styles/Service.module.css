@@ -6,7 +6,12 @@
 
 .sliderCard {
   background: #f6f6f6;
-  padding: 55px 14px 30px;
+  padding: 55px 22px 35px;
+  height: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sliderCard {
@@ -35,9 +40,32 @@
   left: 51%;
 }
 
+.btn {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .arrow1 {
+    left: 46%;
+  }
+
+  .sliderCard {
+    min-height: 415px;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .arrow1 {
-    left: 44%;
+    left: 43%;
+    bottom: 35px;
+  }
+  .services {
+    padding: 60px 0 120px;
+  }
+
+  .arrow2 {
+    bottom: 35px;
+    left: 52%;
   }
 }
 
@@ -47,7 +75,7 @@
   }
 
   .services {
-    padding: 40px 0; 
+    padding: 40px 0;
     margin-bottom: 0px;
   }
 }

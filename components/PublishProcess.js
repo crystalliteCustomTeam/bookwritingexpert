@@ -34,17 +34,17 @@ const PublishProcess = () => {
 
   return (
     <>
-      <section className={styles.PublishProcess}>
+      <section className={`${styles.PublishProcess}`}>
         <Container>
           <Row>
             <Col lg={12}>
-              <div className="mb-5">
+              <div className=" mt-lg-5 pt-lg-5 mb-3 mb-sm-5">
                 <h2 className="font50 fw700 text-white text-center">
                   Our Book Publishing Process
                 </h2>
                 <p className="text-center text-white font18 fw400">
                   We meticulously guide authors through a seamless publishing
-                  journey, from manuscript refinement and contract <br />{" "}
+                  journey, from manuscript refinement and contract <br className="d-lg-block d-none"/> 
                   negotiation to expert editing, captivating design, and
                   strategic promotion for a successful book launch.
                 </p>
@@ -96,7 +96,7 @@ const PublishProcess = () => {
                   <h4 className="font60 fw700 text-white">03</h4>
                 </div>
                 <div className={styles.content}>
-                  <h5 className="text-white fw600 font25">Negotiation</h5>
+                  <h5 className="text-white fw600 font25">Delegation</h5>
                   <p className="text-white font15 linehs fw400">
                     We will appoint an experienced book publishing agent to your
                     project based on your requirements.
@@ -151,7 +151,7 @@ const PublishProcess = () => {
             </Row>
           </div>
           <Slider {...partnersslider} className="d-lg-none d-block">
-            <div>
+            <div className="ms-4">
               <div className="number mb-3">
                 <h4 className="font60 fw700 text-white">01</h4>
               </div>
@@ -170,7 +170,7 @@ const PublishProcess = () => {
                 className="mt-3"
               />
             </div>
-            <div>
+            <div className="ms-4">
               <div className="number mb-3">
                 <h4 className="font60 fw700 text-white">02</h4>
               </div>
@@ -189,12 +189,12 @@ const PublishProcess = () => {
                 className="mt-3"
               />
             </div>
-            <div>
+            <div className="ms-4">
               <div className="number mb-3">
                 <h4 className="font60 fw700 text-white">03</h4>
               </div>
               <div className={styles.content}>
-                <h5 className="text-white fw600 font25">Negotiation</h5>
+                <h5 className="text-white fw600 font25">Delegation</h5>
                 <p className="text-white font15 linehs fw400">
                   We will appoint an experienced book publishing agent to your
                   project based on your requirements.
@@ -208,7 +208,7 @@ const PublishProcess = () => {
                 className="mt-3"
               />
             </div>
-            <div>
+            <div className="ms-4">
               <div className="number mb-3">
                 <h4 className="font60 fw700 text-white">04</h4>
               </div>
@@ -227,7 +227,7 @@ const PublishProcess = () => {
                 className="mt-3"
               />
             </div>
-            <div>
+            <div className="ms-4">
               <div className="number mb-3">
                 <h4 className="font60 fw700 text-white">05</h4>
               </div>
