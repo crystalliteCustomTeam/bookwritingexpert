@@ -63,12 +63,20 @@
     bottom: 35px;
   }
   .services {
-    padding: 60px 0 120px;
+    padding: 60px 0;
   }
 
   .arrow2 {
     bottom: 35px;
     left: 52%;
+  }
+
+  .sliderCard {
+    min-height: 345px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
