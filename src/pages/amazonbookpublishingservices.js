@@ -37,13 +37,14 @@ const amazonbookpublishingservices = () => {
       >
         Amazon
       </Link>{" "}
-       Book Publishing Services To Our Struggling Authors
+      Book Publishing Services To Our Struggling Authors
     </h1>
   );
 
   const desc = (
     <span>
-     Is your talent going unnoticed due to problems in publishing? Not anymore! We <br className="d-lg-block d-none" /> have solutions to your problems!
+      Is your talent going unnoticed due to problems in publishing? Not anymore!
+      We <br className="d-lg-block d-none" /> have solutions to your problems!
     </span>
   );
 

@@ -36,7 +36,7 @@ const Services = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-          centerMode: false, 
+          centerMode: false,
         },
       },
     ],
@@ -46,12 +46,12 @@ const Services = () => {
     <>
       <section className={`${styles.services} service`}>
         <Container>
-          <Row className="align-items-center">
+          <Row className="align-items-center gap-5 gap-md-0">
             <Col lg={12}>
               <h2 className="font50 fw700 text-black text-center mb-4">
                 Our Amazon Publishing Services
               </h2>
-              <p className="text-center f20 fw400 mb-sm-5 pb-3">
+              <p className="text-center f20 fw400 mb-sm-5 pb-md-5">
                 Join us on a streamlined journey from manuscript to masterpiece.
                 Our process includes refining narratives, crafting compelling
                 visuals,
@@ -62,139 +62,46 @@ const Services = () => {
                 designed to make your literary vision a global reality.
               </p>
             </Col>
-            <Col lg={12}>
-              <Slider {...partnersslider} className=" mt-5">
-                <div className="mx-lg-5">
-                  <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
-                    <Image
-                      src={Service1}
-                      alt="service"
-                      width={167}
-                      height={167}
-                    />
-                    <div>
-                      <h5 className="font20 fw700">
-                        Prime-Quality and Expertise
-                      </h5>
-                      <p className="font16 fw200 mb-0">
-                        Our Amazon Publishing Services are backed by a team of
-                        experienced professionals who have in-depth knowledge
-                        and expertise in the publishing industry. We are
-                        committed to delivering high-quality content that meets
-                        industry standards and exceeds your expectations. With
-                        our services, you can trust that your books will be
-                        handled with care and precision.
-                      </p>
-                    </div>
-                    <div className="d-flex align-items-center gap-4 mt-3">
-                      <BlackBtn />
-                      <YellowBtn btnShadow={btnShadow} />
-                    </div>
-                  </div>
+            <Col md={6}>
+              <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
+                <Image src={Service1} alt="service" width={167} height={167} />
+                <div>
+                  <h5 className="font20 fw700">Prime-Quality and Expertise</h5>
+                  <p className="font16 fw200 mb-0">
+                    Our Amazon Publishing Services are backed by a team of
+                    experienced professionals who have in-depth knowledge and
+                    expertise in the publishing industry. We are committed to
+                    delivering high-quality content that meets industry
+                    standards and exceeds your expectations. With our services,
+                    you can trust that your books will be handled with care and
+                    precision.
+                  </p>
                 </div>
-                <div className="mx-lg-5">
-                  <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
-                    <Image
-                      src={Service2}
-                      alt="service"
-                      width={167}
-                      height={167}
-                    />
-                    <div>
-                      <h5 className="font20 fw700">
-                        Prime-Quality and Expertise
-                      </h5>
-                      <p className="font16 fw200 mb-0">
-                        Our Amazon Publishing Services are backed by a team of
-                        experienced professionals who have in-depth knowledge
-                        and expertise in the publishing industry. We are
-                        committed to delivering high-quality content that meets
-                        industry standards and exceeds your expectations. With
-                        our services, you can trust that your books will be
-                        handled with care and precision.
-                      </p>
-                    </div>
-                    <div className="d-flex align-items-center gap-4 mt-3">
-                      <BlackBtn />
-                      <YellowBtn btnShadow={btnShadow} />
-                    </div>
-                  </div>
+                <div className="d-flex align-items-center gap-4 mt-3">
+                  <BlackBtn />
+                  <YellowBtn btnShadow={btnShadow} />
                 </div>
-                <div className="mx-lg-5">
-                  <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
-                    <Image
-                      src={Service3}
-                      alt="service"
-                      width={167}
-                      height={167}
-                    />
-                    <div>
-                      <h5 className="font20 fw700">
-                        Streamlined Publishing Process
-                      </h5>
-                      <p className="font16 fw200 mb-0">
-                        We at Book Writing Experts understand the importance of
-                        a smooth and efficient book publishing process. With our
-                        services, you can expect a streamlined workflow that
-                        simplifies the publishing journey. From manuscript
-                        formatting and editing to cover design and eBook
-                        conversion, we handle every aspect professionally,
-                        allowing you to focus on your writing while we take care
-                        of the technicalities.
-                      </p>
-                    </div>
-                    <div className="d-flex align-items-center gap-4 mt-3">
-                      <BlackBtn />
-                      <YellowBtn btnShadow={btnShadow} />
-                    </div>
-                  </div>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
+                <Image src={Service2} alt="service" width={167} height={167} />
+                <div>
+                  <h5 className="font20 fw700">Prime-Quality and Expertise</h5>
+                  <p className="font16 fw200 mb-0">
+                    Our Amazon Publishing Services are backed by a team of
+                    experienced professionals who have in-depth knowledge and
+                    expertise in the publishing industry. We are committed to
+                    delivering high-quality content that meets industry
+                    standards and exceeds your expectations. With our services,
+                    you can trust that your books will be handled with care and
+                    precision.
+                  </p>
                 </div>
-                <div className="mx-lg-5">
-                  <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
-                    <Image
-                      src={Service4}
-                      alt="service"
-                      width={167}
-                      height={167}
-                    />
-                    <div>
-                      <h5 className="font20 fw700">
-                        Comprehensive Marketing Support
-                      </h5>
-                      <p className="font16 fw200 mb-0">
-                        Our Amazon Publishing Services go beyond just publishing
-                        your book. We offer comprehensive marketing support to
-                        help you build a strong author platform and promote your
-                        work effectively. Our marketing strategies include
-                        targeted advertising, social media campaigns, email
-                        marketing, and more, tailored to your specific audience
-                        and genre. We strive to maximize your book's exposure
-                        and generate buzz in the competitive publishing
-                        landscape.
-                      </p>
-                    </div>
-                    <div className="d-flex align-items-center gap-4 mt-3">
-                      <BlackBtn />
-                      <YellowBtn btnShadow={btnShadow} />
-                    </div>
-                  </div>
+                <div className="d-flex align-items-center gap-4 mt-3">
+                  <BlackBtn />
+                  <YellowBtn btnShadow={btnShadow} />
                 </div>
-              </Slider>
-              <div className={styles.btn}>
-                <Image
-                  src={Arrow1}
-                  alt="arrowOne"
-                  width={50}
-                  height={50}
-                  className={styles.arrow1}
-                />
-                <Image
-                  src={Arrow2}
-                  alt="arrowOne"
-                  width={50}
-                  height={50}
-                  className={styles.arrow2}
-                />
               </div>
             </Col>
           </Row>

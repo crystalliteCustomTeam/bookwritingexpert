@@ -20,10 +20,10 @@
 
 .sliderCard img {
   position: absolute;
-  right: -35px;
+  right: -30px;
   top: -50px;
   overflow: visible;
-  z-index: 999999999;
+  z-index: 1;
   width: 25%;
   height: auto;
 }
@@ -50,7 +50,10 @@
   }
 
   .sliderCard {
-    min-height: 415px;
+    min-height: 276px;
+    width: 95%;
+    margin: 0 auto;
+    display: block;
   }
 }
 
