@@ -6,12 +6,12 @@ const YellowBtn = ({ btnShadow }) => {
   return (
     <>
       <Link
-        href="javascript:;"
+        href={btnShadow ? "tel:;" : "javascript:;"}
         className={`${styles.YellowBtn} ${
           btnShadow ? styles.blackShadow : styles.whiteShadow
         }`}
       >
-        {btnShadow ? <div>(302) 883-8877</div> : <div>Learn More</div>}
+        {btnShadow ? <div>(855) 500 0057</div> : <div>Learn More</div>}
       </Link>
     </>
   );

@@ -18,7 +18,7 @@ import Arrow2 from "public/images/amazonbookpublishing/right-arrow.png";
 const Services = () => {
   const btnShadow = true;
 
-  const BtnContent = "(302) 883-8877";
+  const BtnContent = "(855) 500 0057";
 
   var partnersslider = {
     dots: false,
