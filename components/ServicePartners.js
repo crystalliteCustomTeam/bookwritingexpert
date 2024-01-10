@@ -22,6 +22,7 @@ const partnerdata = [
 ];
 
 const ServicesPartners = () => {
+
   var partnersslider = {
     dots: false,
     arrows: false,
@@ -59,7 +60,7 @@ const ServicesPartners = () => {
 
   return (
     <>
-      <div className={`${styles.partners} part bg-white mt-lg-2 pt-lg-5 servicePartner`}>
+      <div className={`${styles.partners} part bg-white mt-lg-2 pt-md-5 servicePartner`}>
         <Container>
           <div className="d-md-block d-none">
             <Row>

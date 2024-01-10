@@ -664,7 +664,7 @@ body {
 .OurServices .slick-slide.slick-active.slick-current::after {
   content: "";
   position: absolute;
-  right: -22px;
+  right: -8px;
   top: 10%;
   width: 2px;
   height: 90%;

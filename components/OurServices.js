@@ -17,7 +17,7 @@ const OurServices = () => {
   var partnersslider = {
     dots: true,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -45,7 +45,7 @@ const OurServices = () => {
                 {...partnersslider}
                 className={`mt-5 ${styles.slider} OurServices`}
               >
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client1}
@@ -78,7 +78,7 @@ const OurServices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client2}
@@ -108,7 +108,7 @@ const OurServices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client3}
@@ -142,7 +142,7 @@ const OurServices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client4}
@@ -174,7 +174,7 @@ const OurServices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client5}
@@ -207,7 +207,7 @@ const OurServices = () => {
                     </div>
                   </div>
                 </div>
-                <div className="mx-lg-4">
+                <div className="">
                   <div className={styles.crad}>
                     <Image
                       src={Client6}

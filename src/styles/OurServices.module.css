@@ -10,7 +10,7 @@
 .slider::after {
   content: "";
   position: absolute;
-  left: 51.7%;
+  left: 30px;
   top: 0%;
   width: 2px;
   height: 100%;

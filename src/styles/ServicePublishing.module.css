@@ -29,6 +29,16 @@
   right: 0;
 }
 
+@media only screen and (max-width: 1440px) {
+  .Arrows {
+    right: -124px;
+  }
+
+  .rightImage img {
+    right: -40px;
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   .rightImage img {
     right: -75px;
@@ -38,6 +48,10 @@
 @media only screen and (max-width: 991px) {
   .servicePublish {
     height: 123vh;
+  }
+
+  .slider {
+    padding-left: 100px;
   }
 
   .rightImage img {
@@ -58,12 +72,16 @@
 }
 
 @media only screen and (max-width: 576px) {
+  .slider {
+    padding-left: 50px;
+  }
+
   .rightImage img {
     position: inherit;
   }
 
   .servicePublish {
     padding: 30px 0 40px;
-    height: 135vh;
+    /* height: 12vh; */
   }
 }

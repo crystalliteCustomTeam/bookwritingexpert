@@ -38,13 +38,14 @@ const PublishProcess = () => {
         <Container>
           <Row>
             <Col lg={12}>
-              <div className=" mt-lg-5 pt-lg-5 mb-3 mb-sm-5">
+              <div className=" mb-3 mb-sm-5">
                 <h2 className="font50 fw700 text-white text-center">
                   Our Book Publishing Process
                 </h2>
                 <p className="text-center text-white font18 fw400">
                   We meticulously guide authors through a seamless publishing
-                  journey, from manuscript refinement and contract <br className="d-lg-block d-none"/> 
+                  journey, from manuscript refinement and contract{" "}
+                  <br className="d-lg-block d-none" />
                   negotiation to expert editing, captivating design, and
                   strategic promotion for a successful book launch.
                 </p>
@@ -67,8 +68,8 @@ const PublishProcess = () => {
                 <Image
                   src={Publish1}
                   alt="Publish1"
-                  width={80}
-                  height={110}
+                  width={70}
+                  height={70}
                   className="mt-3"
                 />
               </Col>
@@ -86,8 +87,8 @@ const PublishProcess = () => {
                 <Image
                   src={Publish2}
                   alt="Publish1"
-                  width={104}
-                  height={104}
+                  width={70}
+                  height={70}
                   className="mt-3"
                 />
               </Col>
@@ -105,8 +106,8 @@ const PublishProcess = () => {
                 <Image
                   src={Publish3}
                   alt="Publish1"
-                  width={115}
-                  height={110}
+                  width={70}
+                  height={70}
                   className="mt-3"
                 />
               </Col>
@@ -124,8 +125,8 @@ const PublishProcess = () => {
                 <Image
                   src={Publish4}
                   alt="Publish1"
-                  width={97}
-                  height={110}
+                  width={70}
+                  height={70}
                   className="mt-3"
                 />
               </Col>
@@ -143,8 +144,8 @@ const PublishProcess = () => {
                 <Image
                   src={Publish5}
                   alt="Publish1"
-                  width={113}
-                  height={110}
+                  width={70}
+                  height={70}
                   className="mt-3"
                 />
               </Col>
@@ -165,8 +166,8 @@ const PublishProcess = () => {
               <Image
                 src={Publish1}
                 alt="Publish1"
-                width={80}
-                height={110}
+                width={70}
+                height={70}
                 className="mt-3"
               />
             </div>
@@ -184,8 +185,8 @@ const PublishProcess = () => {
               <Image
                 src={Publish2}
                 alt="Publish1"
-                width={104}
-                height={104}
+                width={70}
+                height={70}
                 className="mt-3"
               />
             </div>
@@ -203,8 +204,8 @@ const PublishProcess = () => {
               <Image
                 src={Publish3}
                 alt="Publish1"
-                width={115}
-                height={110}
+                width={70}
+                height={70}
                 className="mt-3"
               />
             </div>
@@ -222,8 +223,8 @@ const PublishProcess = () => {
               <Image
                 src={Publish4}
                 alt="Publish1"
-                width={97}
-                height={110}
+                width={70}
+                height={70}
                 className="mt-3"
               />
             </div>
@@ -241,8 +242,8 @@ const PublishProcess = () => {
               <Image
                 src={Publish5}
                 alt="Publish1"
-                width={113}
-                height={110}
+                width={70}
+                height={70}
                 className="mt-3"
               />
             </div>

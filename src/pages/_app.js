@@ -1,42 +1,25 @@
-import '@/styles/globals.css'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import "@/styles/globals.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 const ZENDESK_KEY = "d1d4aa8a-5573-473a-b921-5b6a8eb467ad";
 import Zendesk, { ZendeskAPI } from "../pages/ZendexConfig";
-import Script from 'next/script';
-import Pixel from '../../components/Pixel';
-import Head from 'next/head';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Loader from '../../components/Loader';
-
+import Script from "next/script";
+import Pixel from "../../components/Pixel";
+import Head from "next/head";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Loader from "../../components/Loader";
 
 export default function App({ Component, pageProps }) {
-
-
-  
-
-
-
   const handleLoaded = () => {
-    zE('webWidget:on', 'open', function () {
-    });
+    zE("webWidget:on", "open", function () {});
   };
-
-
 
   const sluginer = useRouter().asPath;
 
-
   const weblink = "https://www.bookwritingexperts.com";
 
-
-
-
-
-
   const newcol = weblink + sluginer;
-
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
   useEffect(() => {
@@ -47,36 +30,24 @@ export default function App({ Component, pageProps }) {
     return () => clearTimeout(timeoutId);
   }, []);
 
-
   return (
     <>
-
-
       <Head>
-        <meta name="google-site-verification" content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM" />
+        <meta
+          name="google-site-verification"
+          content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM"
+        />
         <link rel="canonical" href={newcol} />
       </Head>
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
       <Component {...pageProps} />
 
-
-
-      {imagesLoaded ?
+      {imagesLoaded ? (
         <>
-          <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"></Script>
+          <Script
+            strategy="lazyOnload"
+            src="https://www.googletagmanager.com/gtag/js?id=G-HE06TX00YE"
+          ></Script>
           <Script strategy="lazyOnload">
             {` window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -93,30 +64,17 @@ export default function App({ Component, pageProps }) {
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
           </Script>
-          < Header />
+          <Header />
           <Pixel />
-          
+
           <Footer />
           <div>
             <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
           </div>
         </>
-        :
-
+      ) : (
         <Loader />
-
-      }
-
-
-
-
-
-
-
-
-
-
-
+      )}
     </>
-  )
+  );
 }

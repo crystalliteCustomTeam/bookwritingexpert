@@ -199,7 +199,7 @@ const DiveStories = () => {
               </div>
             </Col>
           </Row> */}
-          <Slider {...partnersslider} className="d-md-none d-block">
+          {/* <Slider {...partnersslider} className="d-md-none d-block">
             <div>
               <div className={styles.books}>
                 <Image
@@ -280,7 +280,7 @@ const DiveStories = () => {
                 />
               </div>
             </div>
-          </Slider>
+          </Slider> */}
         </Container>
       </section>
     </>
