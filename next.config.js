@@ -2,14 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    // remotePatterns: [
-    //   {
-    //     protocol: "https",
-    //     hostname: "wp23.cryscampus.com",
-    //     port: "",
-    //     pathname: "/**",
-    //   },
-    // ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "wp23.cryscampus.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
   },
   experimental: {
     nextScriptWorkers: true,
