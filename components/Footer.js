@@ -298,7 +298,7 @@ const Footer = () => {
                 <Image loading="lazy" className='img-fluid' src={visa} alt="Book Writing Experts"></Image>
               </Col>
               <Col md={4}>
-                <p className='font14 text-center font-f'>© 2023 - All Rights Reserved</p>
+                <p className='font14 text-center font-f'>© 2024 - All Rights Reserved</p>
               </Col>
               <Col md={4}>
                 <div className={styles.aligntextrignt}>
