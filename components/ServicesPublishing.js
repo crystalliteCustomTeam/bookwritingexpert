@@ -9,7 +9,6 @@ import Image from "next/image";
 import RightArrow from "public/images/amazonbookpublishing/right-arrow.png";
 import LeftArrow from "public/images/amazonbookpublishing/left-arrow.png";
 import Book1 from "public/images/amazonbookpublishing/publishRight1.png";
-import Book2 from "public/images/amazonbookpublishing/publishRight2.png";
 import Book3 from "public/images/amazonbookpublishing/publishRight3.png";
 import Book4 from "public/images/amazonbookpublishing/publishRight4.png";
 import Book5 from "public/images/amazonbookpublishing/publishRight5.png";
@@ -23,12 +22,6 @@ const ServicesPublishing = (props) => {
       author: "By Papalia",
       description:
         "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
-    },
-    {
-      title: "Sleeping With Beast",
-      author: "By Susan",
-      description:
-        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention – A Riveting Journey from our Publishing House",
     },
     {
       title: "Sleeping Beast",
@@ -53,6 +46,12 @@ const ServicesPublishing = (props) => {
       author: "By Abigail",
       description:
         "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
+    },
+    {
+      title: "Sleeping Beast",
+      author: "By Moroo",
+      description:
+        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight and Intention – A Riveting Journey from our Publishing House",
     },
   ];
 
@@ -93,7 +92,7 @@ const ServicesPublishing = (props) => {
     ],
   };
 
-  const partnerImages = [Book1, Book2, Book3, Book4, Book5];
+  const partnerImages = [Book1, Book3, Book4, Book5, Book3];
 
   return (
     <>

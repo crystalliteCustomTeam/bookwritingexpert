@@ -9,11 +9,7 @@ import Image from "next/image";
 
 // Images
 import Service1 from "public/images/amazonbookpublishing/service1.png";
-import Service2 from "public/images/amazonbookpublishing/service2.png";
-import Service3 from "public/images/amazonbookpublishing/service3.png";
-import Service4 from "public/images/amazonbookpublishing/service4.png";
-import Arrow1 from "public/images/amazonbookpublishing/left-arrow.png";
-import Arrow2 from "public/images/amazonbookpublishing/right-arrow.png";
+import Service2 from "public/images/amazonbookpublishing/service2.png"; 
 
 const Services = () => {
   const btnShadow = true;
@@ -66,7 +62,9 @@ const Services = () => {
               <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
                 <Image src={Service1} alt="service" width={167} height={167} />
                 <div>
-                  <h5 className="font20 fw700">Prime-Quality and Expertise</h5>
+                  <h5 className="font20 fw700">
+                    Expert Publishing: Elevate Your Content with Precision.
+                  </h5>
                   <p className="font16 fw200 mb-0">
                     Our Amazon Publishing Services are backed by a team of
                     experienced professionals who have in-depth knowledge and
@@ -87,15 +85,15 @@ const Services = () => {
               <div className={`${styles.sliderCard} mx-0 mx-lg-3 mx-xxl-5`}>
                 <Image src={Service2} alt="service" width={167} height={167} />
                 <div>
-                  <h5 className="font20 fw700">Prime-Quality and Expertise</h5>
+                  <h5 className="font20 fw700">
+                    Literary Distinction: Unleashing Excellence <br /> in Book
+                    Publishing
+                  </h5>
                   <p className="font16 fw200 mb-0">
-                    Our Amazon Publishing Services are backed by a team of
-                    experienced professionals who have in-depth knowledge and
-                    expertise in the publishing industry. We are committed to
-                    delivering high-quality content that meets industry
-                    standards and exceeds your expectations. With our services,
-                    you can trust that your books will be handled with care and
-                    precision.
+                    Literary Brilliance Unleashed: Elevate Your Manuscripts with
+                    Our Expert Book Publishing Services. Where Industry
+                    Standards Meet Exceeding Expectations, Trust Us for Your
+                    Unparalleled Publishing Journey.
                   </p>
                 </div>
                 <div className="d-flex align-items-center gap-4 mt-3">

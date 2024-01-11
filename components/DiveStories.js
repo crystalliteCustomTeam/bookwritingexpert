@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Col, Row, Container } from "react-bootstrap";
-// import { useMediaQuery } from 'react-responsive';
+import Image from "next/image"; 
+import { useMediaQuery } from "react-responsive";
 import styles from "@/styles/DiveStories.module.css";
 
-// Images
-import Book1 from "public/images/amazonbookpublishing/dive1.png";
-import Book2 from "public/images/amazonbookpublishing/dive2.png";
-import Book3 from "public/images/amazonbookpublishing/dive3.png";
+// Images 
+import Book2 from "public/images/amazonbookpublishing/dive2.png"; 
 import Book4 from "public/images/amazonbookpublishing/dive4.png";
 import Book5 from "public/images/amazonbookpublishing/dive5.png";
 import Book6 from "public/images/amazonbookpublishing/dive6.png";
@@ -14,7 +13,6 @@ import Book7 from "public/images/amazonbookpublishing/dive7.png";
 import Book8 from "public/images/amazonbookpublishing/dive8.png";
 import Book9 from "public/images/amazonbookpublishing/dive9.png";
 import Book10 from "public/images/amazonbookpublishing/dive10.png";
-import Book11 from "public/images/amazonbookpublishing/dive11.png";
 import Book12 from "public/images/amazonbookpublishing/dive12.png";
 import Book13 from "public/images/amazonbookpublishing/dive13.png";
 import Book14 from "public/images/amazonbookpublishing/dive14.png";
@@ -43,16 +41,12 @@ import Book36 from "public/images/amazonbookpublishing/dive36.png";
 import Book37 from "public/images/amazonbookpublishing/dive37.png";
 import Book38 from "public/images/amazonbookpublishing/dive38.png";
 import Book39 from "public/images/amazonbookpublishing/dive39.png";
-import Image from "next/image";
-import Slider from "react-slick";
-import Link from "next/link";
-import { useMediaQuery } from "react-responsive";
+
 
 const DiveStories = () => {
-  const bookImages = [
-    Book1,
-    Book2,
-    Book3,
+  
+  const bookImages = [ 
+    Book2, 
     Book4,
     Book5,
     Book6,
@@ -142,7 +136,7 @@ const DiveStories = () => {
             {visibleItems.map((bookSrc, index) => (
               <Col md={3}>
                 <div className={styles.books}>
-                  <Image
+                  <Image  
                     quality={75}
                     alt={`Book${index + 3}`}
                     src={bookSrc}
