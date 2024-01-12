@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
@@ -23,8 +23,12 @@ import mission2 from "/public/images/mission/2.png";
 import mission3 from "/public/images/mission/3.png";
 
 import Contact from "./contact";
+import Stopworrying from "../../components/Stopworrying";
+import Comprehensive from "../../components/Comprehensive";
 
 const amazonbookpublishingservices = () => {
+  const [windowWidth, setWindowWidth] = useState(0);
+
   const BannerSubText = (
     <span>Ensuring Worldwide Publication of your Stories</span>
   );
@@ -113,6 +117,19 @@ const amazonbookpublishingservices = () => {
         Audiobook Production Service
       </Link>{" "}
       <br /> For Your Ideal Prospects!
+    </span>
+  );
+
+  const posdata = (
+    <span>
+      Let Our Best{" "}
+      <Link
+        className="dblockmobile textdocationnone color-blue hover fw700"
+        href="/book-publishing-services"
+      >
+        Amazon Kindle Direct Publishing (KDP)
+      </Link>
+      Service Providers Handle All Your Publishing Troubles!
     </span>
   );
 
@@ -246,6 +263,18 @@ const amazonbookpublishingservices = () => {
       <PublishProcess />
 
       <DiveStories />
+
+      <Stopworrying
+        title="Stop worrying about publishing books!"
+        subtitle={posdata}
+        btn1="Get a free Proposal"
+        btn2="Talk to an expert"
+      />
+
+      {/*  Comprehensive */}
+      <div className={windowWidth > 991 ? "datacloudco" : ""}>
+        <Comprehensive />
+      </div>
 
       <WhyChoose />
 

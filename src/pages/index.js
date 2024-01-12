@@ -1,33 +1,37 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import homebanlogos2 from '/public/images/bannerimages/homebannerlogos2.webp'
-import whychoose from '/public/images/whychoosebooks/bg-img.png'
+import Head from "next/head";
+import Link from "next/link";
+import homebannerlogos from "/public/images/bannerimages/logos.png";
+import homebanlogos2 from "/public/images/bannerimages/homebannerlogos2.webp";
+import whychoose from "/public/images/whychoosebooks/bg-img.png";
 // import components
-import dynamic from 'next/dynamic'
- 
-const Homebanner = dynamic(() => import('../../components/Homebanner'));
-const Partners = dynamic(() => import('../../components/Partners'));
-const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
-const Gotastory = dynamic(() => import('../../components/Gotastory'));
-const Experts = dynamic(() => import('../../components/Experts'));
-const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
-const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
-const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
-const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
-const Comprehensive = dynamic(() => import('../../components/Comprehensive'));
-const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
-const Strugglingwriters = dynamic(() => import('../../components/Strugglingwriters'));
-const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+import dynamic from "next/dynamic";
 
-import Script from 'next/script'
-import { useState, useEffect } from 'react'
-import NewPopup from '../../components/NewPopup'
-
+const Homebanner = dynamic(() => import("../../components/Homebanner"));
+const Partners = dynamic(() => import("../../components/Partners"));
+const Whychoosebook = dynamic(() => import("../../components/Whychoosebook"));
+const Gotastory = dynamic(() => import("../../components/Gotastory"));
+const Experts = dynamic(() => import("../../components/Experts"));
+const Whatourclients = dynamic(() => import("../../components/Whatourclients"));
+const Requestafreequote = dynamic(() =>
+  import("../../components/Requestafreequote")
+);
+const Stopworrying = dynamic(() => import("../../components/Stopworrying"));
+const Customersatisfaction = dynamic(() =>
+  import("../../components/Customersatisfaction")
+);
+const Comprehensive = dynamic(() => import("../../components/Comprehensive"));
+const Strugglingtogive = dynamic(() =>
+  import("../../components/Strugglingtogive")
+);
+const Strugglingwriters = dynamic(() =>
+  import("../../components/Strugglingwriters")
+);
+const Onestepsolutions = dynamic(() =>
+  import("../../components/Onestepsolutions")
+);
+import { useState, useEffect } from "react";
 
 export default function Home() {
-
-
   const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
@@ -35,48 +39,89 @@ export default function Home() {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize(); // Initial call to get window width
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
-  const exprtSpan = <span className='fw500 font50 color-white font-f t-center font-f mb-4'><span className='color-blue fw700'><Link className='dblockmobile color-blue hover textdocationnone' href="/">Book Writing Experts</Link></span> Is waiting for you to Ask for a <span className='color-blue fw700'><Link className='dblockmobile color-blue hover textdocationnone' href="/">Professional Ghostwriter</Link></span></span>;
+  const exprtSpan = (
+    <span className="fw500 font50 color-white font-f t-center font-f mb-4">
+      <span className="color-blue fw700">
+        <Link
+          className="dblockmobile color-blue hover textdocationnone"
+          href="/"
+        >
+          Book Writing Experts
+        </Link>
+      </span>{" "}
+      Is waiting for you to Ask for a{" "}
+      <span className="color-blue fw700">
+        <Link
+          className="dblockmobile color-blue hover textdocationnone"
+          href="/"
+        >
+          Professional Ghostwriter
+        </Link>
+      </span>
+    </span>
+  );
 
-  const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Your ONE-STOP</span> <Link className='dblockmobile textdocationnone color-blue hover' href="/"> Ghostwriting, Editing And Publishing Service </Link>  <span className=''>Provider!</span> </h1>;
+  const newSpan = (
+    <h1 className="font50 fw700 color-blue font-f hero-span">
+      {" "}
+      <span className="">Your ONE-STOP</span>{" "}
+      <Link className="dblockmobile textdocationnone color-blue hover" href="/">
+        {" "}
+        Ghostwriting, Editing And Publishing Service{" "}
+      </Link>{" "}
+      <span className="">Provider!</span>{" "}
+    </h1>
+  );
 
-  const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
+  const posdata = (
+    <span>
+      Let Our Best{" "}
+      <Link
+        className="dblockmobile textdocationnone color-blue hover fw700"
+        href="/book-publishing-services"
+      >
+        Amazon Kindle Direct Publishing (KDP)
+      </Link>
+      Service Providers Handle All Your Publishing Troubles!
+    </span>
+  );
 
-  const discuss = <span>LET'S DISCUSS</span>
-
+  const discuss = <span>LET'S DISCUSS</span>;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "mainEntityOfPage": {
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
+      "@id": "https://www.bookwritingexperts.com/",
     },
-    "headline": "Book Writing Company",
-    "description": "book writing company",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-    "author": {
+    headline: "Book Writing Company",
+    description: "book writing company",
+    image:
+      "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    author: {
       "@type": "Organization",
-      "name": "book writing company",
-      "url": "https://www.bookwritingexperts.com/"
+      name: "book writing company",
+      url: "https://www.bookwritingexperts.com/",
     },
-    "publisher": {
+    publisher: {
       "@type": "Organization",
-      "name": "book writing company",
-      "logo": {
+      name: "book writing company",
+      logo: {
         "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
+        url: "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+      },
     },
-    "datePublished": ""
-  }
+    datePublished: "",
+  };
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
   useEffect(() => {
@@ -87,29 +132,43 @@ export default function Home() {
     return () => clearTimeout(timeoutId);
   }, []);
 
-
   return (
     <>
-
-
       <Head>
-
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
 
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        />
         <title>Professional Book Writing Services Company</title>
-        <meta name="description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
+        <meta
+          name="description"
+          content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts."
+        />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Professional Book Writing Services Company" />
-        <meta property="og:description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
+        <meta
+          property="og:title"
+          content="Professional Book Writing Services Company"
+        />
+        <meta
+          property="og:description"
+          content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts."
+        />
         <meta property="og:url" content="https://www.bookwritingexperts.com/" />
         <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
+        <meta
+          property="article:modified_time"
+          content="2023-01-12T00:00:46+00:00"
+        />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="13 minutes" />
@@ -122,38 +181,31 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-
-
-
       </Head>
 
-
-      {/* googletagmanager */}
-
-      {imagesLoaded &&
-
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K994MT85"
-          height="0" width="0" className='d-none'></iframe></noscript>
-      }
+      {imagesLoaded && (
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K994MT85"
+            height="0"
+            width="0"
+            className="d-none"
+          ></iframe>
+        </noscript>
+      )}
 
       <main>
-        {/* banner components */}
-
         <Homebanner
           title={newSpan}
-          text='We understand being an author is a challenging yet respectable profession, but not everybody is lucky enough to become one.'
+          text="We understand being an author is a challenging yet respectable profession, but not everybody is lucky enough to become one."
           discuss={discuss}
-          homebannernum='(855) 500 0057'
+          homebannernum="(855) 500 0057"
           homebanlogos={homebannerlogos}
           homebanlogos2={homebanlogos2}
-          bannershome='banner'
-          homebancan='newbannerclass'
+          bannershome="banner"
+          homebancan="newbannerclass"
         />
 
-        {/* <NewPopup /> */}
-
-
-        {/* partners components */}
         <Partners />
 
         <Strugglingtogive
@@ -180,20 +232,19 @@ export default function Home() {
           discuss="LET'S DISCUSS"
         />
 
-        <div className='sliderImg'>
+        <div className="sliderImg">
           <Strugglingwriters />
         </div>
 
         <Stopworrying
-          title='Stop worrying about publishing books!'
+          title="Stop worrying about publishing books!"
           subtitle={posdata}
-          btn1='Get a free Proposal'
-          btn2='Talk to an expert'
+          btn1="Get a free Proposal"
+          btn2="Talk to an expert"
         />
 
-
         {/*  Comprehensive */}
-        <div className={windowWidth > 991 ? 'datacloudco' : ''}>
+        <div className={windowWidth > 991 ? "datacloudco" : ""}>
           <Comprehensive />
         </div>
 
@@ -206,28 +257,18 @@ export default function Home() {
           text="We are well aware of unique content creation requirements for each client. With a team equipped with a wide array of expertise, experiences and knowledge, we are always an author’s top preference. Book Writing Expert will simplify the Writing, Editing, Publication and Marketing needs for you. Our collaboration would be transparent and hassle-free, reducing all the intricacies from your end. We only deliver content that is remarkable, genuine and original."
           whychoose={whychoose}
         />
-
-        {/* Talk To Our Experts! */}
-        {/* <Experts
-          title={exprtSpan}
-          text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
-        /> */}
-
-
-        <div className='sliderImg2'>
+        
+        <div className="sliderImg2">
           <Onestepsolutions />
         </div>
 
-
         {/* Stopworrying */}
-        <div className='dataSetCo'>
+        <div className="dataSetCo">
           <Stopworrying
-            title='Stop worrying about publishing books!'
+            title="Stop worrying about publishing books!"
             subtitle={posdata}
-            btn1='Get a free Proposal'
-            btn2='Talk to an expert'
+            btn1="Get a free Proposal"
+            btn2="Talk to an expert"
           />
         </div>
 
@@ -239,8 +280,7 @@ export default function Home() {
 
         {/* Talk To Our Requestafreequote! */}
         <Requestafreequote />
-
       </main>
     </>
-  )
+  );
 }
