@@ -50,10 +50,10 @@
   }
 
   .sliderCard {
-    min-height: 276px;
+    /* min-height: 276px; */
     width: 95%;
     margin: 0 auto;
-    display: block;
+    /* display: block; */
   }
 }
 
