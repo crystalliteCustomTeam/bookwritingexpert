@@ -19,46 +19,46 @@ const ServicesPublishing = (props) => {
   const contentData = [
     {
       title: "Sleeping With The Beast",
-      author: "By Papalia",
+      author: "By Susan Papalia",
       description:
         "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
     },
     {
-      title: "Sleeping Beast",
-      author: "By Moroo",
+      title: "A badge well worn",
+      author: "By James Mitchell",
       description:
-        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight and Intention – A Riveting Journey from our Publishing House",
+        "A compilation of unheard and unaccounted tales of survival and determination mustered to enlighten the masses.",
     },
     {
-      title: "With The Beast",
-      author: "By Benjamin",
+      title: "Blissful Misery",
+      author: "By Francine Weinstein",
       description:
-        "Discover the Blueprint for Lasting Connections: Influence, and Intention – A Riveting Journey from our Publishing House",
-    },
-    {
-      title: " The Beast",
-      author: "By Andrew",
-      description:
-        " Empowering Women to Navigate Relationships with Insight, Influence, and Intention – A Riveting Journey from our Publishing House",
+        "Natalie, a forty-five year old wife and mother, is on her way to rehab. She is terrified, confused and unable to comprehend how a good girl like her could end up so messed up.",
     },
     {
       title: "Sleeping With The Beast",
-      author: "By Abigail",
+      author: "By Susan Papalia",
       description:
         "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
     },
     {
-      title: "Sleeping Beast",
-      author: "By Moroo",
+      title: "A badge well worn",
+      author: "By James Mitchell",
       description:
-        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight and Intention – A Riveting Journey from our Publishing House",
+        "A compilation of unheard and unaccounted tales of survival and determination mustered to enlighten the masses.",
+    },
+    {
+      title: "Blissful Misery",
+      author: "By Francine Weinstein",
+      description:
+        "Natalie, a forty-five year old wife and mother, is on her way to rehab. She is terrified, confused and unable to comprehend how a good girl like her could end up so messed up.",
     },
   ];
 
   var partnersslider = {
     dots: false,
     arrows: true,
-    autoplay: true,
+    autoplay: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
