@@ -1536,9 +1536,10 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   }
 
   .bannergllobal h1 {
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 38px;
     text-align: left;
+    padding-top: 100px;
   }
 
   .font70 {
