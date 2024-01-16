@@ -3,9 +3,11 @@ import styles from "@/styles/Banner.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
+import Router from "next/router";
+import Axios from "axios";
 import Slider from "react-slick";
 import Modal from "react-bootstrap/Modal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 
 // images
@@ -13,6 +15,7 @@ import banslider1 from "../public/images/bannerimages/banslider1.png";
 import banslider3 from "../public/images/bannerimages/banslider3.png";
 import banslider4 from "../public/images/bannerimages/banslider4.png";
 import Star from "../public/images/amazonbookpublishing/star.png";
+import { useRouter } from "next/router";
 
 const ServiceBanner = (props) => {
   const bannerlogo = [
@@ -63,6 +66,83 @@ const ServiceBanner = (props) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  // form start
+
+  const [ip, setIP] = useState("");
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get(
+      "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+    );
+    setIP(res.data);
+  };
+  useEffect(() => {
+    getIPData();
+  }, []);
+
+  const [score, setScore] = useState("Get A Free Quote");
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      services: e.target.services.value,
+      pageUrl: currentRoute,
+    };
+
+    const JSONdata = JSON.stringify(data);
+
+    setScore("Sending Data");
+
+    fetch("api/email/route", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    }).then((res) => {
+      console.log(`Response received ${res}`);
+      if (res.status === 200) {
+        console.log(`Response Successed ${res}`);
+      }
+    });
+
+    var currentdate = new Date().toLocaleString() + "";
+    let headersList = {
+      Accept: "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json",
+    };
+
+    let bodyContent = JSON.stringify({
+      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      Brand: "BOOK-WRITING-EXPERT",
+      Page: `${currentRoute}`,
+      Date: currentdate,
+      Time: currentdate,
+      JSON: JSONdata,
+    });
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList,
+    });
+
+    const { pathname } = Router;
+    if (pathname == pathname) {
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
+    }
+  };
 
   return (
     <>
@@ -174,15 +254,37 @@ const ServiceBanner = (props) => {
               </div>
             </Col>
             <Col lg={4} md={12}>
-              <form action="javascript:;" className={styles.serviceBanner}>
+              <form
+                action="javascript:;"
+                className={styles.serviceBanner}
+                onSubmit={handleSubmit}
+              >
                 <h3 className="text-center text-white fw600 font30 mb-3">
                   Request A Free Quote
                 </h3>
-                <input placeholder="Full Name*" required />
-                <input placeholder="Phone *" required />
-                <input placeholder="Email *" required />
-                <input placeholder="Details" required />
-                <select>
+                <input
+                  type="text"
+                  placeholder="Full Name*"
+                  required
+                  name="name"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  minLength="10"
+                  maxLength="13"
+                  pattern="[0-9]*"
+                  placeholder="Phone *"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email *"
+                  name="email"
+                  required
+                />
+                <input placeholder="Details" name="message" required />
+                <select name="services">
                   <option>Services</option>
                   <option>Book Publishing</option>
                   <option>Book Promotion</option>
@@ -204,7 +306,8 @@ const ServiceBanner = (props) => {
                   type="submit"
                   className={`font18 fw600 color-white mb-2 ${styles.serviceBtn}`}
                 >
-                  Get A Free Quote
+                  {/* Get A Free Quote */}
+                  {score}
                 </button>
               </form>
             </Col>
