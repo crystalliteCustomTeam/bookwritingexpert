@@ -349,6 +349,9 @@ body {
   padding-bottom: 16px;
 }
 
+.linh2{
+  line-height: 1.2;
+}
 .linh {
   line-height: 1.4;
 }

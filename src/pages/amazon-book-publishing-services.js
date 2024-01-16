@@ -34,15 +34,12 @@ const amazonbookpublishingservices = () => {
   );
 
   const newSpan = (
-    <h1 className="font55 fw700 color-white font-f hero-span">
-      <Link
-        className="textdocationnone color-blue hover"
-        href="/audio-book-recording-services/"
-      >
-        Amazon
-      </Link>{" "}
-      Book Publishing Services To Our Struggling Authors
-    </h1>
+    <div className="font55 fw700 color-white font-f hero-span linh2">
+      <h1 className="font55 fw700 textdocationnone color-blue hover d-inline">
+        Amazon Book Publishing Services{" "}
+      </h1> 
+      To Our Struggling Authors
+    </div>
   );
 
   const desc = (
