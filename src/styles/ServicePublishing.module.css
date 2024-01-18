@@ -82,6 +82,10 @@
 
   .servicePublish {
     padding: 30px 0 40px;
-    /* height: 12vh; */
+    height: 135vh;
+  }
+
+  .servicePublish p{
+    font-size: 12px;
   }
 }

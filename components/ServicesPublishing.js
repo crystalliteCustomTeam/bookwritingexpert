@@ -36,10 +36,10 @@ const ServicesPublishing = (props) => {
         "Natalie, a forty-five year old wife and mother, is on her way to rehab. She is terrified, confused and unable to comprehend how a good girl like her could end up so messed up.",
     },
     {
-      title: "Sleeping With The Beast",
-      author: "By Susan Papalia",
+      title: "The Plasma Cell Report",
+      author: "By Joel Geiderman",
       description:
-        "Discover the Blueprint for Lasting Connections: Empowering Women to Navigate Relationships with Insight, Influence, and Intention",
+        "We present the narrative of this report to the President of the United States, the United States Congress, and the American people for their consideration.",
     },
     {
       title: "A badge well worn",
