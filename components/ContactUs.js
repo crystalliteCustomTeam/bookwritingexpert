@@ -101,27 +101,65 @@ const ContactUs = () => {
               </p>
             </Col>
             <Col lg={5}>
-              <form action="javascript:;" onSubmit={handleSubmit}>
-                <div className="name">
-                  <label>Full Name*</label>
-                  <input name="name" type="text" placeholder="Type Full Name " />
-                </div>
-                <div className="name">
-                  <label>Phone *</label>
-                  <input type="tel" name="phone"
-                    minLength="10"
-                    maxLength="13"
-                    pattern="[0-9]*" placeholder="(000) 000-0000" />
-                </div>
-                <div className="name">
-                  <label>Email Address *</label>
-                  <input type="email" name="email" placeholder="Type Email " />
-                </div>
-                <div className="name">
-                  <label>Message *</label>
-                  <textarea rows={4} placeholder="Type Details" name="message" />
-                </div>
+              {/* <form action="javascript:;" onSubmit={handleSubmit}>
+                <label>Full Name*</label>
+                <input name="name" type="text" placeholder="Type Full Name " required />
+                <label>Phone *</label>
+                <input type="tel" name="phone"
+                  minLength="10"
+                  maxLength="13"
+                  pattern="[0-9]*" placeholder="(000) 000-0000" required />
+                <label>Email Address *</label>
+                <input type="email" name="email" placeholder="Type Email " required />
+                <label>Message *</label>
+                <textarea rows={4} placeholder="Type Details" name="message" required />
                 <button type="submit">{score}</button>
+              </form> */}
+              <form action="javascript:;" onSubmit={handleSubmit}>
+                <h4 className="font50 fw700 mb-4">Request A Free Quote</h4>
+                <Row>
+                  <Col lg={12} className="px-2">
+                    <label>Full Name*</label>
+                    <input
+                      type="text"
+                      placeholder="Type Full Name*"
+                      className={styles.secInput}
+                      required
+                      name="name"
+                    />
+                  </Col>
+                  <Col lg={12} className="px-2">
+                    <label>Phone *</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      minLength="10"
+                      maxLength="13"
+                      pattern="[0-9]*"
+                      placeholder="(000) 000-0000"
+                      className={styles.secInput}
+                      required
+                    />
+                  </Col>
+                  <Col lg={12} className="px-2">
+                    <label>Email Address *
+                    </label>
+                    <input
+                      placeholder="Type Email *"
+                      className={styles.secInput}
+                      required
+                      name="email"
+                    />
+                  </Col>
+                  <Col lg={12} className="px-2">
+                    <label>Message *</label>
+                    <textarea rows={4} placeholder="Type Details" name="message" required />
+                  </Col>
+                  <button className={`${styles.formBtn}`} type="submit">
+                    {score}
+                  </button>
+                </Row>
+                <hr className={`mt-5 `} />
               </form>
             </Col>
             <Col lg={7}>

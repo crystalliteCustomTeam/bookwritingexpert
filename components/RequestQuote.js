@@ -7,7 +7,7 @@ import Styles from "@/styles/Quote.module.css";
 
 // Images
 import QuoteBook from "public/images/amazonbookpublishing/quoteimage.png";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 
 const RequestQuote = () => {
 
