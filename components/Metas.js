@@ -591,67 +591,67 @@ const Metas = () => {
 
             {newpath === '/alberta-amazon-kdp' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">Alberta Amazon KDP: Your Gateway to Global Publishing</title>
                     <meta name="description" content='Dive into global publishing from home. Discover how with our Alberta Amazon KDP guide. Read now!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/oregon-book-publishers' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">How Oregon Book Publishers Are Leading The Book Publishing Industry</title>
                     <meta name="description" content='Discover how Oregon publishers are taking the lead. Click to read this blog and contact us today to start your book publishing journey' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/hire-ebook-writing-services-usa' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">Why Ebook Writing Services USA Are the Best Investment for First Time Authors</title>
                     <meta name="description" content='Explore why USAs ebook writing services are the ultimate choice for emerging authors. Contact us today!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/amazon-self-publishing' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">Amazon Self Publishing: 5 Proven Steps For First Time Authors</title>
                     <meta name="description" content='Discover the 5 essential steps for successful Amazon self publishing. A beginners guide to achieve your publishing dreams on the worlds largest platform' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/hire-affordable-fiction-ghostwriting-services' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">7 Benefits of Hiring Affordable Fiction Ghostwriting Services</title>
                     <meta name="description" content='Learn the 7 advantages of choosing affordable fiction ghostwriting services. Connect with us today!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/the-benefits-of-hiring-a-book-marketing-company' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">Why Do You Need A Book Marketing Company and How Can It Help Drive Book Sales</title>
                     <meta name="description" content='Discover why authors should consider hiring a professional book marketing company. Contact us today to increase your book sales today!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/6-proven-strategies-for-marketing-a-book' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">The Art Of Marketing A Book: 6 Proven Strategies For Successful Book Marketing</title>
                     <meta name="description" content='Learn author success with these 6 proven strategies for marketing a book. Call us to learn more!' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/5-common-mistakes-to-avoid-while-publishing-on-amazon-kdp' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">5 Common Mistakes To Avoid While Publishing A Book On Amazon KDP</title>
                     <meta name="description" content='Learn how to become a successful author with amazon kdp by avoiding these common book publishing mistakes. Contact us today to get the best amazon kdp services.' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/how-much-does-it-cost-to-self-publish-a-book' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">How Much Does It Cost To Self Publish A Book</title>
                     <meta name="description" content='Learn the expenses involved while authors self publish a book. Learn about editing, design, distribution, and marketing costs for your author journey.' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/10-strategies-for-marketing-a-book' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">10 Strategies Every Author Should Know Before Marketing A Book</title>
                     <meta name="description" content='This blog will help discover ten strategies for marketing a book. Increase visibility, engage readers, and achieve literary success.' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
             ) : newpath === '/5-reasons-to-build-author-platform-for-marketing-a-book' ? (
                 <Head>
-                    <title key="title">{postData.title}</title>
+                    <title key="title">5 Reasons Why You Need To Build A Lasting Author Platform For Marketing A Book</title>
                     <meta name="description" content='Discover why an enduring author platform is important for marketing a book. Learn how it boosts visibility, credibility, and reader engagement' key="metadesc" />
                     <link rel="icon" href="/favicon.svg" />
                 </Head>
