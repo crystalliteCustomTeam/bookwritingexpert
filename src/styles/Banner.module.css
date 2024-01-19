@@ -38,11 +38,10 @@
   background-image: url(/images/amazonbookpublishing/servicesBanner.png);
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 140px;
-  height: 100vh;
+  padding-top: 70px;
   display: flex;
   align-items: center;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   background-position: center;
   font-family: "Poppins";
 }

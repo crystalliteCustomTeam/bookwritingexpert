@@ -55,87 +55,13 @@ function Audiobookproduction() {
 
 
 
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
-    },
-    "headline": "Book Writing Company",
-    "description": "Book Writing Company",
-    "image": "",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-21"
-  }
 
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
-
-  const schema3 = {
-    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://www.bookwritingexperts.com/" },
-    "serviceType": ["book writing services book writing company book writers affordable book writing services"], "areaServed": { "@type": "country", "name": "us" }
-  }
 
   return (
     <>
 
 
-      <Head>
-
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Top Audiobook Production Services - Book Writing Experts</title>
-        <meta name="description" content="Hire the best audiobook production services, we offer a simple and creative process so your audiobook can be heard worldwide. Contact our audiobook production company today!" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Top Audiobook Production Services - Book Writing Experts" />
-        <meta property="og:description" content="Hire the best audiobook production services, we offer a simple and creative process so your audiobook can be heard worldwide. Contact our audiobook production company today!" />
-        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="13 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-
-       
-
-        {/* <Schema /> */}
-
-      </Head>
+   
 
 
       {/* googletagmanager */}

@@ -118,110 +118,12 @@ const Contact = () => {
 
 
 
-    const schema = {
-
-        "@context": "https://schema.org",
-        "@type": "Corporation",
-        "name": "bookwritingexperts",
-        "alternateName": "Book Writing Experts",
-        "url": "https://www.bookwritingexperts.com/contact-us/",
-        "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-        "sameAs": [
-            "https://www.bookwritingexperts.com/",
-            "https://www.facebook.com/bookwritingexperts",
-            "https://twitter.com/bookwritingexp",
-            "https://www.instagram.com/bookwritingexpert/",
-            "https://www.linkedin.com/company/book-writing-exp/",
-            "https://www.pinterest.com/bookwritingexperts/"
-        ]
-
-
-    }
-    const schema1 = {
-
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "bookwritingexperts",
-        "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-        "@id": "",
-        "url": "https://www.bookwritingexperts.com/contact-us/",
-        "telephone": "2132893888",
-        "priceRange": "$99",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "445 S Figueroa St",
-            "addressLocality": "Los Angeles",
-            "addressRegion": "CA",
-            "postalCode": "90071",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 34.0536155,
-            "longitude": -118.2568651
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-        },
-        "sameAs": [
-            "https://www.bookwritingexperts.com/",
-            "https://www.facebook.com/bookwritingexperts",
-            "https://twitter.com/bookwritingexp",
-            "https://www.instagram.com/bookwritingexpert/",
-            "https://www.linkedin.com/company/book-writing-exp/",
-            "https://www.pinterest.com/bookwritingexperts/"
-        ]
-
-    }
+ 
 
     return (
         <>
 
-            <Head>
-                <meta charSet="UTF-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-                
-                <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-                <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-                <title>Contact Us - Book Writing</title>
-                <meta name="description"
-                    content="Contact us and let us define the success of your book with our various book related solutions. We are 24/7 all ears to your needs." />
-                <meta property="og:locale" content="en_US" />
-                <meta property="og:type" content="article" />
-                <meta property="og:title" content="Contact Us - Book Writing" />
-                <meta property="og:description"
-                    content="Contact us and let us define the success of your book with our various book related solutions. We are 24/7 all ears to your needs." />
-                <meta property="og:url" content="/contact" />
-                <meta property="og:site_name" content="Book Writing" />
-                <meta property="article:modified_time" content="2022-08-31T23:04:58+00:00" />
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:label1" content="Est. reading time" />
-                <meta name="twitter:data1" content="4 minutes" />
-                <link rel="icon" href="/favicon.svg" />
-
-
-
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-                />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-                />
-
-            </Head>
+         
 
             <div className={styles.contactbg}>
 

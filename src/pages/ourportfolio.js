@@ -102,10 +102,6 @@ const ourportfolio = () => {
 
         <>
 
-            <Head>
-                <title>Our Portfolio</title>
-                <link rel="icon" href="/favicon.svg" />
-            </Head>
 
 
 

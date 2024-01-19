@@ -174,71 +174,13 @@ const Bookpublishingservices = () => {
   const challenging = <span>Ready to take your book from 'just another story' to a literary sensation? Join forces with us and let's create a <Link className='textdocationnone color-blue hover1' href='/book-marketing-services'>book marketing</Link> strategy that will make your book stand out in a sea of competitors. Don't go at it alone - let's make your story the talk of the town!</span>
 
 
-  const schema = {
-    "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.bookwritingexperts.com/book-marketing-services"
-  },
-  "headline": "Book Marketing Services",
-  "description": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-  "author": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "url": "https://www.bookwritingexperts.com/"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "book marketing services, book marketing company, best book marketing services, professional book marketing services, top book marketing services, best book marketing company, professional book marketing company top book marketing company, book marketing agency, leading book marketing agency, top book marketing agency, best book marketing agency",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-    }
-  },
-  "datePublished": ""
-  }
+
 
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Book Marketing Services - Book Writing Experts</title>
-        <meta name="description" content="Book Marketing Services that makes you your readers&#039; most sought-after choice. Count on us to be counted worldwide. Hire us to get the job done." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Professional Book Marketing Services - Book Writing Experts" />
-        <meta property="og:description" content="Book Marketing Services that makes you your readers&#039; most sought-after choice. Count on us to be counted worldwide. Hire us to get the job done." />
-        <meta property="og:url" content="/book-marketing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T11:37:31+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="7 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-        <meta name="DC.title" content="book marketing services, book marketing company, book marketing agency" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-
-
-      </Head>
+   
 
 
 

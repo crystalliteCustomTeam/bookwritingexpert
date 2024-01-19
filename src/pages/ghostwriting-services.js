@@ -169,71 +169,14 @@ const Bookpublishingservices = () => {
 
 
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/ghostwriting-services"
-    },
-    "headline": "Ghostwriting Services",
-    "description": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-    "author": {
-      "@type": "Organization",
-      "name": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
-      "url": "https://www.bookwritingexperts.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "ghostwriting services, ghostwriting service, ghostwriting company, ghost book writers, ghost writing services, ghostwriters for hire, book ghostwriters, ghost writing service, best ghostwriting services, professional ghostwriting services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
+  
 
 
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Top-Tier Ghostwriting Services - Book Writing Experts</title>
-        <meta name="description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Top-Tier Ghostwriting Services - Book Writing Experts" />
-        <meta property="og:description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-        <meta property="og:url" content="https://www.bookwritingexperts.com/ghostwriting-services/" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:03:02+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="9 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-        <meta name="DC.title" content="ghostwriting services, ghost writing services, ghostwriting company, ghost book writers" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-
-      </Head>
+    
 
 
 
