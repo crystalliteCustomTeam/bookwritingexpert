@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useRouter } from "next/router";
+import Axios from "axios";
+import Router from "next/router";
 
 import styles from "@/styles/ContactUs.module.css";
 
@@ -8,6 +11,81 @@ import Contact from "public/images/amazonbookpublishing/contactImage.png";
 import Image from "next/image";
 
 const ContactUs = () => {
+
+  const [ip, setIP] = useState("");
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get(
+      "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+    );
+    setIP(res.data);
+  };
+  useEffect(() => {
+    getIPData();
+  }, []);
+
+  const [score, setScore] = useState("Let’s Discuss");
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      pageUrl: currentRoute,
+    };
+
+    const JSONdata = JSON.stringify(data);
+
+    setScore("Sending Data");
+
+    fetch("api/email/route", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    }).then((res) => {
+      console.log(`Response received ${res}`);
+      if (res.status === 200) {
+        console.log(`Response Successed ${res}`);
+      }
+    });
+
+    var currentdate = new Date().toLocaleString() + "";
+    let headersList = {
+      Accept: "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json",
+    };
+
+    let bodyContent = JSON.stringify({
+      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      Brand: "BOOK-WRITING-EXPERT",
+      Page: `${currentRoute}`,
+      Date: currentdate,
+      Time: currentdate,
+      JSON: JSONdata,
+    });
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList,
+    });
+
+    const { pathname } = Router;
+    if (pathname == pathname) {
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
+    }
+  };
+
   return (
     <>
       <section className={styles.ContactUs}>
@@ -23,24 +101,27 @@ const ContactUs = () => {
               </p>
             </Col>
             <Col lg={5}>
-              <form action="javascript:;">
+              <form action="javascript:;" onSubmit={handleSubmit}>
                 <div className="name">
                   <label>Full Name*</label>
-                  <input type="text" placeholder="Type Full Name " />
+                  <input name="name" type="text" placeholder="Type Full Name " />
                 </div>
                 <div className="name">
                   <label>Phone *</label>
-                  <input type="number" placeholder="(000) 000-0000" />
+                  <input type="tel" name="phone"
+                    minLength="10"
+                    maxLength="13"
+                    pattern="[0-9]*" placeholder="(000) 000-0000" />
                 </div>
                 <div className="name">
                   <label>Email Address *</label>
-                  <input type="email" placeholder="Type Email " />
+                  <input type="email" name="email" placeholder="Type Email " />
                 </div>
                 <div className="name">
                   <label>Message *</label>
-                  <textarea rows={4} placeholder="Type Details" />
+                  <textarea rows={4} placeholder="Type Details" name="message" />
                 </div>
-                <button>Let’s Discuss</button>
+                <button type="submit">{score}</button>
               </form>
             </Col>
             <Col lg={7}>
