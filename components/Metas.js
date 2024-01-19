@@ -1,6 +1,4 @@
 import React from 'react'
-import styles from '@/styles/Freequote.module.css'
-import Router from "next/router";
 import { useRouter } from 'next/router';
 import Head from "next/head";
 
