@@ -141,74 +141,12 @@ const Bookpublishingservices = () => {
   const perplexing = <span>Let us help you navigate the maze of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editing</Link>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editors</Link>. Call, text, or email us today to make your dream of becoming an author a reality!</span>
 
 
-  const schema = {
 
-
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-editing-services"
-    },
-    "headline": "Book Editing Services",
-    "description": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "book editing services, book editing service, book editing company, book editor, book editors, best book editing services, best book editors, top book editing service, professional book editing services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-
-
-  }
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Book Editing Services - Book Writing Experts</title>
-        <meta name="description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Professional Book Editing Services - Book Writing Experts" />
-        <meta property="og:description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
-        <meta property="og:url" content="/book-editing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:01:27+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="9 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-        <meta name="DC.title" content="book editing services, book editing service, book editing company" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-
-      </Head>
+   
 
 
 

@@ -172,71 +172,13 @@ const EbookWritingservices = () => {
   const text = <span>Get in touch with our professional book writing specialists today. Our eBooks Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!
   </span>;
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/ebook-writing-services"
-    },
-    "headline": "Ebook Writing Services",
-    "description": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-    "author": {
-      "@type": "Organization",
-      "name": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
-      "url": "https://www.bookwritingexperts.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "ebook writing services, ebook writing company, best ebook writing services, top ebook writing services, professional ebook writing services, leading ebook writing services, best ebook writing company, professional ebook writing company, top ebook writing company",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
+
 
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Ebook Writing Services - Book Writing Experts</title>
-        <meta name="description" content="Ebook Writing Services at the most honest rates by the experts. Give us a call and let them define your book success." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Professional Ebook Writing Services - Book Writing Experts" />
-        <meta property="og:description" content="Ebook Writing Services at the most honest rates by the experts. Give us a call and let them define your book success." />
-        <meta property="og:url" content="/ebook-writing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="6 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-        <meta name="DC.title" content="ebook writing services, ebook writing service, ebook writing company" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-
-      </Head>
+    
 
 
 

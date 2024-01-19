@@ -9,6 +9,8 @@ import Head from "next/head";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Loader from "../../components/Loader";
+import Metas from "../../components/Metas";
+
 
 export default function App({ Component, pageProps }) {
   const handleLoaded = () => {
@@ -39,8 +41,9 @@ export default function App({ Component, pageProps }) {
         />
         <link rel="canonical" href={newcol} />
       </Head>
+      <Metas />
 
-      <Component {...pageProps} />
+      
 
       {imagesLoaded ? (
         <>
@@ -63,10 +66,11 @@ export default function App({ Component, pageProps }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
+        
           </Script>
           <Header />
           <Pixel />
-
+          <Component {...pageProps} />
           <Footer />
           <div>
             <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
