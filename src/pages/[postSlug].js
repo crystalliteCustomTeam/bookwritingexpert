@@ -117,7 +117,7 @@ export default function Post({ postData, featuredImageUrl }) {
                                     <h1>{postData.title}</h1>
                                     <h6 className={`${styles.detailDate} mt-5`}>
                                         <Image src={logo} alt="Book Writing Experts" width={25} height={25} />
-                                        <span>By Book Writing Experts Team in 2023</span>
+                                        <span>By Book Writing Experts Team in 2024</span>
                                     </h6>
                                     <h6 className="mt-3 mb-0 fw-bold font14">
                                         Published on  <Date dateString={postData.date} />
