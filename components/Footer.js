@@ -298,7 +298,7 @@ const Footer = () => {
                 <Image loading="lazy" className='img-fluid' src={visa} alt="Book Writing Experts"></Image>
               </Col>
               <Col md={4}>
-              <p className='font14 font-f'> <Link className={styles.styleset} href="/terms-of-use">Terms of Use</Link> | <Link className={styles.styleset} href="/privacy-policy">Privacy Policy</Link></p>
+              <p className='font14 text-center font-f'>© 2023 - All Rights Reserved - <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/">Mini Investment</Link></p>
               </Col>
               <Col md={4}>
                 <div className={styles.aligntextrignt}>

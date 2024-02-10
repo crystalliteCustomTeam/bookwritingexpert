@@ -14,7 +14,7 @@ import Metas from "../../components/Metas";
 
 export default function App({ Component, pageProps }) {
   const handleLoaded = () => {
-    zE("webWidget:on", "open", function () {});
+    zE("webWidget:on", "open", function () { });
   };
 
   const sluginer = useRouter().asPath;
@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Metas />
 
-      
+
 
       {imagesLoaded ? (
         <>
@@ -66,7 +66,7 @@ export default function App({ Component, pageProps }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
-        
+
           </Script>
           <Header />
           <Pixel />
