@@ -55,71 +55,11 @@ const Bookpublishingservices = () => {
 
   
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-publishing-services"
-    },
-    "headline": "Book Publishing Services",
-    "description": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "book publishing services, amazon publishing services, amazon book publishing services, amazon kdp, kindle direct publishing services, amazon kdp publishers, book publishing company, best book publishing services, professional book publishing services, top book publishing services, best book publishing company, top book publishing company, leading book publishing company, top amazon publishers, amazon publishers",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-        <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-        <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-        <meta property="og:url" content="/book-publishing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:04:48+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="9 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-        <meta name="DC.title" content="book publishing services, amazon publishing services, amazon kdp, book publishing company" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-      </Head>
 
 
 

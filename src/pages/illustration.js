@@ -50,31 +50,7 @@ function Illustrationbook() {
 
 
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/illustration"
-    },
-    "headline": "Book Illustration Services",
-    "description": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "book illustration services, book illustration service, book illustration company, leading book illustration services, top book illustration services, professional book illustration services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
+ 
 
 
  
@@ -83,44 +59,7 @@ function Illustrationbook() {
     <>
 
 
-      <Head>
-
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Best Book Illustration Services - Book Writing Experts</title>
-        <meta name="description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Best Book Illustration Services - Book Writing Experts" />
-        <meta property="og:description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
-        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="13 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-        <meta name="DC.title" content="book illustration services, book illustration service, book illustration company" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-
-        {/* <Schema /> */}
-
-      </Head>
+      
 
 
       {/* googletagmanager */}

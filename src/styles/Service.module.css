@@ -1,0 +1,92 @@
+.services {
+  padding: 80px 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sliderCard {
+  background: #f6f6f6;
+  padding: 55px 22px 35px;
+  height: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sliderCard {
+  position: relative;
+}
+
+.sliderCard img {
+  position: absolute;
+  right: -30px;
+  top: -50px;
+  overflow: visible;
+  z-index: 1;
+  width: 25%;
+  height: auto;
+}
+
+.arrow1 {
+  position: absolute;
+  bottom: 20px;
+  left: 47%;
+}
+
+.arrow2 {
+  position: absolute;
+  bottom: 20px;
+  left: 51%;
+}
+
+.btn {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1440px) {
+  .arrow1 {
+    left: 46%;
+  }
+
+  .sliderCard {
+    /* min-height: 276px; */
+    width: 95%;
+    margin: 0 auto;
+    /* display: block; */
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .arrow1 {
+    left: 43%;
+    bottom: 35px;
+  }
+  .services {
+    padding: 60px 0;
+  }
+
+  .arrow2 {
+    bottom: 35px;
+    left: 52%;
+  }
+
+  .sliderCard {
+    min-height: 345px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .btn {
+    display: none;
+  }
+
+  .services {
+    padding: 40px 0;
+    margin-bottom: 0px;
+  }
+}

@@ -34,6 +34,23 @@
   font-family: "Poppins";
 }
 
+.servicesBanner {
+  background-image: url(/images/amazonbookpublishing/servicesBanner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  background-position: center;
+  font-family: "Poppins";
+}
+
+.homeBaneLogo {
+  filter: inherit !important;
+  max-width: 800px;
+}
+
 .pricing {
   background-color: #141d29;
   display: flex;
@@ -43,6 +60,12 @@
   padding-top: 140px;
   padding-bottom: 70px;
   font-family: "Poppins";
+}
+
+.subText {
+  border: 2px solid #f7981d;
+  padding: 4px 10px;
+  width: 52%;
 }
 
 .pricing p {
@@ -378,6 +401,11 @@
   border: 1px solid #223235;
 }
 
+.servicenumer:hover {
+  background-color: #223235;
+  border: 1px solid #223235;
+}
+
 .alignclass {
   width: 69%;
   margin: 0 auto;
@@ -438,6 +466,10 @@
   color: white;
 }
 
+.servicenumer:hover {
+  color: white;
+}
+
 .homenumer {
   border: 0;
   padding: 12px 20px;
@@ -450,6 +482,79 @@
   font-family: "Poppins";
 }
 
+.servicenumer {
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #ff9900;
+  color: #fff;
+  text-decoration: unset;
+  border: 1px solid #ff9900;
+  font-family: "Poppins";
+}
+
+.serviceBanner {
+  margin-top: 100px;
+}
+
+.servicesBanner form {
+  background: #46505c;
+  padding: 24px 25px 30px;
+  border-radius: 12px;
+}
+
+.servicesBanner form input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.servicesBanner form input::placeholder {
+  color: white;
+}
+
+.servicesBanner form input:focus {
+  outline: 0;
+}
+.servicesBanner form select {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  background: #46505c;
+}
+
+.servicesBanner form select:focus {
+  outline: 0;
+}
+
+.servicesBanner form select option {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.serviceBtn {
+  background: #ff9900;
+  border: 0;
+  padding: 8px 0px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
 .homebannerlogo {
   margin-top: 40px;
 }
@@ -457,6 +562,14 @@
 .homebannerlogo img {
   filter: brightness(100) invert(1);
   margin-bottom: 60px;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .bgVideo1 {
@@ -508,7 +621,7 @@
   border: transparent;
   cursor: pointer;
   font-size: 14px;
-  background: #FD9802;
+  background: #fd9802;
   width: 100%;
   font-family: "Poppins";
   text-decoration: none;
@@ -523,43 +636,82 @@
     margin-top: 100px;
   }
 }
+@media (max-width: 1440px) {
+  .subText {
+    width: 61%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .subText {
+    width: 61%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .homeBaneLogo {
+    max-width: 100%;
+  }
+}
 
 @media (max-width: 1200px) {
-
   .new1 {
     display: none !important;
   }
 
-
-
   .new1 {
     margin: 25px auto;
     margin-left: 1%;
-
   }
 }
 
 @media (max-width: 991px) {
+  .servicesBanner {
+    padding-top: 120px;
+    height: 100%;
+  }
 
   .pricing p {
     width: 100%;
   }
 
-  .ghost {
+  .homeBaneLogo {
+    width: 100%;
+    max-width: 100%;
+  }
 
+  .serviceBanner {
+    margin-top: 20px;
+  }
+
+  .subText {
+    width: 54%;
+  }
+
+  .servicesBanner form input {
+    margin-bottom: 15px;
+  }
+
+  .servicesBanner form {
+    padding: 16px 20px 17px;
+  }
+
+  .homebannerlogo img {
+    filter: brightness(100) invert(1);
+    margin-bottom: 10px;
+  }
+
+  .ghost {
     align-items: center;
   }
 
   .audiobookproduction {
-
     align-items: center;
   }
 
   .illustrationbook {
-
     align-items: center;
   }
-
 
   .logonew {
     filter: unset;
@@ -675,22 +827,30 @@
 }
 
 @media (max-width: 767px) {
-
-
-  .ghostwriting {
-
-    height: unset;
-    padding-top: 70px;
-
+  .subText {
+    width: 100%;
   }
 
+  .servicenumer {
+    font-size: 13px;
+    padding: 8px 15px;
+  }
+
+  .reviews {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ghostwriting {
+    height: unset;
+    padding-top: 70px;
+  }
 
   .bookvideotrailer {
     background-image: unset;
     background-color: #141d29;
     height: unset;
     padding-top: 70px;
-
   }
 
   .articlewritingservices {
@@ -698,7 +858,6 @@
     background-color: #141d29;
     height: unset;
     padding-top: 70px;
-
   }
 
   .ghost {
@@ -706,7 +865,6 @@
     background-color: #141d29;
     height: unset;
     padding-top: 70px;
-
   }
 
   .illustrationbook {
@@ -714,7 +872,6 @@
     background-color: #141d29;
     height: unset;
     padding-top: 70px;
-
   }
 
   .discuss {
@@ -731,7 +888,7 @@
     background-image: unset;
     background-color: #141d29;
     height: unset;
-    padding-top: 70px;
+    padding-top: 150px;
   }
 
   .ghostwriting {
@@ -883,22 +1040,16 @@
 }
 
 @media (max-width: 480px) {
-
-  .audiobookproduction{
+  .audiobookproduction {
     background-size: 100%;
     height: unset;
     padding-top: 120px;
   }
 
-
- 
-
   .newPara {
     line-height: 23px;
     text-align: justify;
   }
-
-
 
   .discuss {
     font-size: 15px;
@@ -922,9 +1073,6 @@
     margin-bottom: 20%;
     text-align: center;
   }
-
-
-
 
   .bookpublishingservices h1 {
     max-width: 100%;

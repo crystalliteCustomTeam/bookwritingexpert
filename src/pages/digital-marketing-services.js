@@ -39,31 +39,7 @@ const Digitalmarketingservices = () => {
   ]
 
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/digital-marketing-services"
-    },
-    "headline": "Digital Marketing Services",
-    "description": "digital book marketing services, digital book marketing service, digital book marketing company, digital marketing services, best digital book marketing services, top digital marketing services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "digital book marketing services, digital book marketing service, digital book marketing company, digital marketing services, best digital book marketing services, top digital marketing services",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "digital book marketing services, digital book marketing service, digital book marketing company, digital marketing services, best digital book marketing services, top digital marketing services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
+ 
  
 
 
@@ -73,45 +49,7 @@ const Digitalmarketingservices = () => {
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Top Tier Digital Marketing Services - Book Writing Experts</title>
-        <meta name="description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Top Tier Digital Marketing Services - Book Writing Experts" />
-        <meta property="og:description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
-        <meta property="og:url" content="/digital-marketing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T11:58:56+00:00" />
-        <meta property="og:image" content="/complogo.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="45 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-        <meta name="DC.title" content="digital marketing services, digital marketing service, digital marketing company" />
-        <meta name="geo.region" content="US" />
-        <meta name="geo.position" content="39.78373;-100.445882" />
-        <meta name="ICBM" content="39.78373, -100.445882" />
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      
-
-
-      </Head>
+    
 
 
 

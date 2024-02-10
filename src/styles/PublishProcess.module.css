@@ -1,0 +1,75 @@
+.PublishProcess {
+  padding: 80px 0 600px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/images/amazonbookpublishing/publishprocess-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.content {
+  border-left: 2px solid #f7981d;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.content::after {
+  content: "";
+  background-image: url(/images/amazonbookpublishing/publishBall.png);
+  background-position: center;
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  left: -10px;
+  top: -9px;
+  position: absolute;
+}
+
+.PublishProcess img {
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1280px) {
+  .PublishProcess {
+    padding: 80px 0 433px;
+  }
+  .PublishProcess::before {
+    background-size: 100% 100%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .PublishProcess {
+    height: 100%;
+    background-color: #232f3e;
+    background-image: inherit;
+    padding: 70px 0;
+    margin-bottom: 0%;
+  }
+
+  .PublishProcess::before {
+    position: unset;
+    content: unset;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .PublishProcess img {
+    width: 25%;
+    max-height: 100px;
+    min-height: 100px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .PublishProcess {
+    padding: 40px 0;
+  }
+}

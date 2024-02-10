@@ -1,0 +1,61 @@
+.diveSection {
+  padding: 60px 0;
+}
+
+.books img {
+  max-height: 400px;
+  color: transparent;
+  min-height: 400px;
+  object-fit: contain;
+}
+
+.showMoreBtn {
+  background: #f7981d;
+  padding: 0px;
+  height: 43px;
+  width: 200px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  border: 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: ease-in-out 0.4s;
+  margin: 50px auto 0px;
+}
+
+.showMoreBtn:hover {
+  color: white;
+  background: #223235;
+  transition: ease-in-out 0.4s;
+}
+
+@media only screen and (max-width: 1280px) {
+  .showMoreBtn {
+    margin: 20px auto 0px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .diveSection {
+    padding: 50px 0;
+  }
+  .books img {
+    max-height: unset;
+    min-height: unset;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .books img {
+    max-height: unset;
+    min-height: unset;
+  }
+
+  .showMoreBtn {
+    margin: 10px auto 40px;
+  }
+}

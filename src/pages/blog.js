@@ -31,12 +31,7 @@ export default function BlogHome({ allPosts }) {
 
     return (
         <>
-            <Head>
-                <title>Blogs - Book Writing Experts</title>
-                <meta name="description" content="" />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <link rel="icon" href="/favicon.svg" />
-            </Head>
+         
 
             <BlogListing />
 

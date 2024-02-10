@@ -2,6 +2,7 @@ import React from 'react'
 import styles from '@/styles/Experts.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Experts = (props) => {
   return (
@@ -19,6 +20,7 @@ const Experts = (props) => {
               </div>
               <div className={styles.expertdiscuss}>
                 <Link className={`${styles.discuss1} hover`} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
+                <Image />
               </div>
             </Col>
           </Row>

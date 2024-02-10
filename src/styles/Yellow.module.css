@@ -1,0 +1,29 @@
+.YellowBtn {
+  background: #f7981d;
+  padding: 0px;
+  height: 43px;
+  width: 200px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: ease-in-out 0.4s;
+}
+
+.whiteShadow {
+  box-shadow: 7px 5px 6px #cececece;
+}
+
+.blackShadow {
+  box-shadow: 7px 5px 6px #2b2a2a;
+}
+
+.YellowBtn:hover {
+  color: white;
+  background: #223235;
+  transition: ease-in-out 0.4s;
+}

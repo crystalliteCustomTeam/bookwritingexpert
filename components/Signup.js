@@ -89,9 +89,6 @@ const Signup = (props) => {
 
   }
 
-  
-
-
 
   return (
     <div className={`${styles[props.bannershome]} ${styles[props.form]}`}>
