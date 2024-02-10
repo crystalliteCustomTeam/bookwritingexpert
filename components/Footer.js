@@ -171,6 +171,7 @@ const Footer = () => {
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> For Sales Inquiry:<Link className={styles.styleset} href="tel:2135499870"> (213) 549-9870 </Link></li>
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>  <BsFillTelephoneFill size={12} /> For Project Inquiry:<Link className={styles.styleset} href="tel:2135499850"> (213) 549-9850 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
+                <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 502 W 7th Street STE 100, Erie PA 16502 </li>
 
 
 
