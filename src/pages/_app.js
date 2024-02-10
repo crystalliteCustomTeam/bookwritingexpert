@@ -13,31 +13,15 @@ import Loader from '../../components/Loader';
 
 export default function App({ Component, pageProps }) {
 
-
-  
-
-
-
   const handleLoaded = () => {
     zE('webWidget:on', 'open', function () {
     });
   };
-
-
-
+  // ======================================
   const sluginer = useRouter().asPath;
-
-
   const weblink = "https://www.bookwritingexperts.com";
-
-
-
-
-
-
   const newcol = weblink + sluginer;
-
-
+  // ======================================
   const [imagesLoaded, setImagesLoaded] = useState(false);
   useEffect(() => {
     const delay = 3000;
@@ -46,33 +30,17 @@ export default function App({ Component, pageProps }) {
     }, delay);
     return () => clearTimeout(timeoutId);
   }, []);
-
+  // ======================================
 
   return (
     <>
-
 
       <Head>
         <meta name="google-site-verification" content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM" />
         <link rel="canonical" href={newcol} />
       </Head>
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
       <Component {...pageProps} />
-
-
 
       {imagesLoaded ?
         <>
@@ -93,30 +61,18 @@ export default function App({ Component, pageProps }) {
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
           </Script>
-          < Header />
+
+          <Header />
           <Pixel />
-          
+
           <Footer />
           <div>
             <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
           </div>
         </>
         :
-
         <Loader />
-
       }
-
-
-
-
-
-
-
-
-
-
-
     </>
   )
 }

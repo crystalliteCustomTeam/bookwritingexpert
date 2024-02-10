@@ -50,10 +50,6 @@ export async function getStaticPaths() {
 
 export default function Post({ postData, featuredImageUrl }) {
 
-
-
-
-
     const [score, setScore] = useState('Submit Details');
 
     const router = useRouter();
@@ -99,10 +95,9 @@ export default function Post({ postData, featuredImageUrl }) {
         if (pathname == pathname) {
             window.location.href = 'https://www.bookwritingexperts.com/thank-you';
         }
-
     }
-    const newpath = router.asPath;
 
+    const newpath = router.asPath;
 
     return (
         <>
