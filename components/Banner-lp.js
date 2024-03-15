@@ -39,7 +39,7 @@ const Banner = (props) => {
 
 
     const data = {
-      name: e.target.name.value,
+      name: e.target.firstname.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
       message: e.target.message.value,
@@ -121,7 +121,7 @@ const Banner = (props) => {
               <form onSubmit={handleSubmit}>
               <div className={styles.publish}>
                 <div>
-                  <input type="text" required class=""  name="name" placeholder="Full Name*" />
+                  <input type="text" required class=""  name="firstname" placeholder="Full Name*" />
                 </div>
                 <div>
                 <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" class="" required name="phone" placeholder="Phone*" />
