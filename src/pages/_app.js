@@ -10,6 +10,8 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import Loader from "../../components/Loader";
 import Metas from "../../components/Metas";
+import Headerlp from "../../components/Headerlp";
+import Footerlp from "../../components/Footerlp";
 
 
 export default function App({ Component, pageProps }) {
@@ -18,6 +20,7 @@ export default function App({ Component, pageProps }) {
   };
 
   const sluginer = useRouter().asPath;
+
 
   const weblink = "https://www.bookwritingexperts.com";
 
@@ -68,11 +71,20 @@ export default function App({ Component, pageProps }) {
         `}
 
           </Script>
+
+          {sluginer ?
+         <Headerlp />
+          :
           <Header />
+}
           <Pixel />
           <Component {...pageProps} />
+          {sluginer ? 
+        <Footerlp/>  
+        :
           <Footer />
-          <div>
+}
+        <div>
             <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
           </div>
         </>
