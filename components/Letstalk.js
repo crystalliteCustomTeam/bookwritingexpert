@@ -127,7 +127,7 @@ const Letstalk = () => {
                 <h2 className='font-f fw700'>Let's Talk</h2>
                 <p className='font-f'>For Inquiries, Collaboration Opportunities, Or Any Assistance, Don't Hesitate To Contact Us. Our Dedicated Team Is Ready To Engage And Support Your Needs, Ensuring A Seamless And Productive Partnership.</p>
              
-                <form>
+                <form onSubmit={handleSubmit}>
               <div className={styles.publish}>
                 <div>
                   <input type="text" class="" required name="name" placeholder="Full Name*" />

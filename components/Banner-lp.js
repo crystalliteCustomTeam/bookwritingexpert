@@ -118,7 +118,7 @@ const Banner = (props) => {
 
             <div className={styles.bookshowform}>
               <h3 className='color-white font-f fw700'>Request A Free Quote</h3>
-              <form>
+              <form onSubmit={handleSubmit}>
               <div className={styles.publish}>
                 <div>
                   <input type="text" required class=""  name="name" placeholder="Full Name*" />
