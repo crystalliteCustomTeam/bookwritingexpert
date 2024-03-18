@@ -1429,6 +1429,18 @@ const Metas = () => {
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambsp) }}
                     />
                 </Head>
+            ) :  newpath === '/bookexperlp' ? (
+
+                <Head>
+                   
+                   <link rel="icon" href="/favicon.svg" />
+                    <title>
+                        Book Wrinting Experts
+                    </title>
+                  
+
+                  
+                </Head>
             ) :
 
 

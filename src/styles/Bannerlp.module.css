@@ -198,3 +198,15 @@ outline:unset;
 }
 
   }
+ @media (max-width: 480px) {
+
+  .publish {
+    flex-direction: column;
+}
+.publish div {
+  width: 100%;
+}
+.banner {
+  height: 950px;
+}
+  }

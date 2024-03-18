@@ -503,6 +503,10 @@
 
 @media (max-width: 480px) {
 
+  .headertel {
+    left: 0px;
+}
+
 
   .cross {
     top: -4px;

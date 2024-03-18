@@ -187,7 +187,7 @@ const Footerlp = () => {
               <ul className={styles.socialiconfooter}>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.facebook.com/bookwritingexperts">
                    <Image src={social1} className='img-fluid' /> </Link></li>
-                <li className={styles.socaillinks}><Link className={styles.styleset} href="#"> <Image src={social2} className='img-fluid' /></Link></li>
+                <li className={styles.socaillinks}><Link className={styles.styleset} href="https://twitter.com/bookwritingexp"> <Image src={social2} className='img-fluid' /></Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.instagram.com/bookwritingexp/"> <Image src={social3} className='img-fluid' /></Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.linkedin.com/company/bookwritingexp"> <Image src={social4} className='img-fluid' /></Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.youtube.com/channel/UCMwHkNiJzrMd6MlPOBFMmLA"> <Image src={social5} className='img-fluid' /></Link></li>

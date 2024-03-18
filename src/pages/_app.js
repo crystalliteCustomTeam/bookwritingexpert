@@ -24,6 +24,8 @@ export default function App({ Component, pageProps }) {
 
   const weblink = "https://www.bookwritingexperts.com";
 
+  const newlop = useRouter().asPath == "/bookexperlp";
+
   const newcol = weblink + sluginer;
 
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -72,14 +74,14 @@ export default function App({ Component, pageProps }) {
 
           </Script>
 
-          {sluginer ?
+          {newlop ?
          <Headerlp />
           :
           <Header />
 }
           <Pixel />
           <Component {...pageProps} />
-          {sluginer ? 
+          {newlop ? 
         <Footerlp/>  
         :
           <Footer />

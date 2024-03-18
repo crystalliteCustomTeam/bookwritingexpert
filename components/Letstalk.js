@@ -159,7 +159,7 @@ const Letstalk = () => {
 
                 <ul>
                   <li> <Link href="https://www.facebook.com/bookwritingexperts">  <Image alt="Book Writing Experts" src={fb} className='img-fluid' /> </Link> </li>
-                  <li> <Link href="#">  <Image alt="Book Writing Experts" src={xx} className='img-fluid' /> </Link> </li>
+                  <li> <Link href="https://twitter.com/bookwritingexp">  <Image alt="Book Writing Experts" src={xx} className='img-fluid' /> </Link> </li>
                   <li> <Link href="https://www.instagram.com/bookwritingexp/">  <Image alt="Book Writing Experts" src={insta} className='img-fluid' /> </Link> </li>
                   <li> <Link href="https://www.linkedin.com/company/bookwritingexp">  <Image alt="Book Writing Experts" src={you} className='img-fluid' /> </Link> </li>
                   <li> <Link href="https://www.youtube.com/channel/UCMwHkNiJzrMd6MlPOBFMmLA">  <Image alt="Book Writing Experts" src={link} className='img-fluid' /> </Link> </li>
