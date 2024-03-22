@@ -585,6 +585,264 @@ const Metas = () => {
         datePublished: "",
       };
 
+
+    const schemambspdlp = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/5-ways-to-promote-your-book-on-amazon/"
+        },
+        "headline": "Ways To Promote Your Book On Amazon",
+        "description": "ways to promote your book on amazon, amazon book promotion, promote you book on amazon, book promotion on amazon",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "ways to promote your book on amazon, amazon book promotion, promote you book on amazon, book promotion on amazon",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "ways to promote your book on amazon, amazon book promotion, promote you book on amazon, book promotion on amazon",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+
+
+    const schemambspdlp2 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/an-overview-of-amazon-publisher-services/"
+        },
+        "headline": "Overview Of Amazon Publisher Services",
+        "description": "amazon publisher services, overview of amazon publisher services, what is amazon publisher services",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "amazon publisher services, overview of amazon publisher services, what is amazon publisher services",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "amazon publisher services, overview of amazon publisher services, what is amazon publisher services",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+
+
+    const schemambspdlp3 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-to-hire-the-best-book-publisher/"
+        },
+        "headline": "How To Hire The Best Book Publisher",
+        "description": "how to hire the best book publisher, hire the best book publisher, book publisher for hire, book publishers, best book publishers",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how to hire the best book publisher, hire the best book publisher, book publisher for hire, book publishers, best book publishers",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how to hire the best book publisher, hire the best book publisher, book publisher for hire, book publishers, best book publishers",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp4 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-much-does-it-cost-to-publish-a-book-in-2024/"
+        },
+        "headline": "Book Publishing Cost",
+        "description": "how much does it cost to publish a book, book publishing cost, book publishing costs, cost to publish a book, publish a book on amazon, book publishing",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how much does it cost to publish a book, book publishing cost, book publishing costs, cost to publish a book, publish a book on amazon, book publishing",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how much does it cost to publish a book, book publishing cost, book publishing costs, cost to publish a book, publish a book on amazon, book publishing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp5 ={
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-does-book-publishing-process-works/"
+        },
+        "headline": "Book Publishing Process",
+        "description": "how does the book publishing process works, process of publishing a book, book publishing process, amazon book publishing process, amazon book publishing",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how does a book publishing process works, process of publishing a book, book publishing process, amazon book publishing process, amazon book publishing",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how does a book publishing process works, process of publishing a book, book publishing process, amazon book publishing process, amazon book publishing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp6 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-much-does-book-editing-cost/"
+        },
+        "headline": "Book Editing Cost",
+        "description": "how much does book editing cost, book editing cost, book editing costs, cost of book editing, cost of editing a book",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how much does book editing cost, book editing cost, book editing costs, cost of book editing, cost of editing a book",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how much does book editing cost, book editing cost, book editing costs, cost of book editing, cost of editing a book",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp7 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-much-does-it-costs-to-market-a-book/"
+        },
+        "headline": "How Much Does It Costs To Market A Book",
+        "description": "cost of marketing a book, book marketing cost, how much does it cost to marketing a book, book marketing services cost",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "cost of marketing a book, book marketing cost, how much does it cost to marketing a book, book marketing services cost",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "cost of marketing a book, book marketing cost, how much does it cost to marketing a book, book marketing services cost",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp8 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-to-promote-a-book-online/"
+        },
+        "headline": "How To Promote A Book Online",
+        "description": "how to promote a book online, promote a book online, online book promotion, book promotion services, book promotion company",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how to promote a book online, promote a book online, online book promotion, book promotion services, book promotion company",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how to promote a book online, promote a book online, online book promotion, book promotion services, book promotion company",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp9 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-to-sell-more-books-on-amazon-kdp/"
+        },
+        "headline": "How To Sell More Books On Amazon KDP",
+        "description": "how to sell more books on amazon kdp, ways to sell books on amazon kdp, selling more books on amazon kdp, selling books on amazon kdp",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how to sell more books on amazon kdp, ways to sell books on amazon kdp, selling more books on amazon kdp, selling books on amazon kdp",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how to sell more books on amazon kdp, ways to sell books on amazon kdp, selling more books on amazon kdp, selling books on amazon kdp",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+    const schemambspdlp10 = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.bookwritingexperts.com/how-to-increase-book-sales-on-kindle-direct-publishing/"
+        },
+        "headline": "Increase Book Sales On Kindle Direct Publishing",
+        "description": "how to increase book sales on KDP, increase book sales on kindle direct publishing, increase book sales KDP",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
+        "author": {
+          "@type": "Organization",
+          "name": "how to increase book sales on KDP, increase book sales on kindle direct publishing, increase book sales KDP",
+          "url": "https://www.bookwritingexperts.com/"
+        },  
+        "publisher": {
+          "@type": "Organization",
+          "name": "how to increase book sales on KDP, increase book sales on kindle direct publishing, increase book sales KDP",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+          }
+        },
+        "datePublished": ""
+      };
+
+
+
     return (
         <>
 
@@ -1441,17 +1699,178 @@ const Metas = () => {
 
                   
                 </Head>
-            ) :
+            ) : newpath === '/5-ways-to-promote-your-book-on-amazon' ? (
+
+                <Head>
+                   
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> 5 Effective Ways To Promote Your Book On Amazon </title>
+                    <meta name="description" content="Take your book marketing to the next level with our proven ways to promote your book on Amazon. Market your book on the world's largest online platform."
+                    />
+                    <meta name="DC.title" content="promote your book on amazon, amazon book promotion, book promotion services" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp) }}
+                    />
+                  
+
+                  
+                </Head>
+            ) : newpath === '/an-overview-of-amazon-publisher-services' ? (
+
+                <Head>
+                   
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> A Comprehensive Overview of Amazon Publisher Services </title>
+                    <meta name="description" content="Find out what Amazon Publisher Services is and what it comprises, including analytics and ad solutions. Learn more about how it can help your publishing efforts."
+                    />
+                    <meta name="DC.title" content="amazon publisher services, amazon publisher service, best amazon publisher services" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
 
 
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp2) }}
+                    />
+                  
 
+                  
+                </Head>
+            ) : newpath === '/how-to-hire-the-best-book-publisher' ? (
 
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How to Hire the Best Book Publisher For Your Book </title>
+                    <meta name="description" content="Are you ready to publish your book? Follow our professional guidance on how to hire the best book publisher and take your author career to new heights."
+                    />
+                    <meta name="DC.title" content="best book publisher, book publisher, book publishers" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp3) }}
+                    />
+                </Head>
+            ) : newpath === '/how-much-does-it-cost-to-publish-a-book-in-2024' ? (
 
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How Much Does It Cost To Publish A Book In 2024? </title>
+                    <meta name="description" content="Are you planning to publish your book? Find out how much book publishing services cost in 2024 to plan your budget accordingly."
+                    />
+                   <meta name="DC.title" content="cost of publishing a book, book publishing cost, amazon book publishing" />
+                   <meta name="geo.region" content="US" />
+                   <meta name="geo.position" content="39.78373;-100.445882" />
+                   <meta name="ICBM" content="39.78373, -100.445882" />
 
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp4) }}
+                    />
+                </Head>
+            ) : newpath === '/how-does-book-publishing-process-works' ? (
 
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How Does The Book Publishing Process Works? </title>
+                    <meta name="description" content="Learn about the complexities of book publishing, from conception to release. Discover how the book publishing process works for both authors and publishers."
+                    />
+                   <meta name="DC.title" content="book publishing process, process of publishing a book, amazon book publishing process" />
+                   <meta name="geo.region" content="US" />
+                   <meta name="geo.position" content="39.78373;-100.445882" />
+                   <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp5) }}
+                    />
+                </Head>
+            ) : newpath === '/how-much-does-book-editing-cost' ? (
 
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How Much Does Book Editing Cost? </title>
+                    <meta name="description" content="Find out how much book editing costs and ensure the attention your manuscript needs is given. Plan your budget wisely for publication success."
+                    />
+                   <meta name="DC.title" content="book editing cost, how much does book editing cost, cost of book editing" />
+                   <meta name="geo.region" content="US" />
+                   <meta name="geo.position" content="39.78373;-100.445882" />
+                   <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp6) }}
+                    />
+                </Head>
+            ) : newpath === '/how-much-does-it-costs-to-market-a-book' ? (
 
-                null
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How Much It Costs to Market a Book? </title>
+                    <meta name="description" content="Get ahead in book marketing with our professional advice on successful budgeting. Get your answer to the question of how much it costs to market a book."
+                    />
+                    <meta name="DC.title" content="book marketing cost, cost of book marketing, how much does it cost to market a book" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp7) }}
+                    />
+                </Head>
+            ) : newpath === '/how-to-promote-a-book-online' ? (
+
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How to Promote A Book Online Effectively </title>
+                    <meta name="description" content="Find out how to promote a book online. Learn the most effective tactics to increase your literary masterpiece's visibility, reader engagement, and revenues."
+                    />
+                   <meta name="DC.title" content="how to promote a book online, book promotion online, book promotion services" />
+                   <meta name="geo.region" content="US" />
+                   <meta name="geo.position" content="39.78373;-100.445882" />
+                   <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp8) }}
+                    />
+                </Head>
+            ) : newpath === '/how-to-sell-more-books-on-amazon-kdp' ? (
+
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How to Sell More Books on Amazon KDP? </title>
+                    <meta name="description" content="Learn about tried-and-true tactics and insider ideas on how to sell more books on Amazon KDP. Increase your author income and reach to the fullest now!"
+                    />
+                    <meta name="DC.title" content="how to sell more books on amazon kdp, amazon kdp, sell more books on kdp" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp9) }}
+                    />
+                </Head>
+            ) : newpath === '/how-to-increase-book-sales-on-kindle-direct-publishing' ? (
+
+                <Head>
+                   <link rel="icon" href="/favicon.svg" />
+                   <title> How to Increase Book Sales on Kindle Direct Publishing?</title>
+                    <meta name="description" content="Find practical advice on how to increase book sales on Kindle Direct Publishing. Earn higher royalties by making your book the best-seller."
+                    />
+                    <meta name="DC.title" content="increase book sales on KDP, increase book sales on kindle direct publishing, kdp book sales" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp10) }}
+                    />
+                </Head>
+            ) :  null
 
             }
 
