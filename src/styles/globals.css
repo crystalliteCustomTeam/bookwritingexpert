@@ -1345,6 +1345,12 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   padding-right: 0;
   margin-bottom: 6%;
 }
+
+
+.size-large {
+  width: 100%;
+  height: auto;
+}
 /* --------------------------- */
 
 @media (min-width: 1400px) {
