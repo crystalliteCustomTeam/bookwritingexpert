@@ -866,12 +866,12 @@ input::-webkit-inner-spin-button {
 
 /* blog api integration css */
 
-.aligncenter {
+/* .aligncenter {
   width: 70%;
   margin: 0 auto;
   display: block;
   height: auto;
-}
+} */
 
 .elementor-widget-container p {
   font-family: "Poppins";
