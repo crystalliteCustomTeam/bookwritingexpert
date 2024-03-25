@@ -977,7 +977,7 @@ const Metas = () => {
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
                     />
 
-<script
+                    <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaurl0) }}
                     />
