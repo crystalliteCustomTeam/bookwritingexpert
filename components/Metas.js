@@ -39,6 +39,20 @@ const Metas = () => {
         datePublished: "",
     };
 
+
+    const schemaurl0 = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.bookwritingexperts.com/s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      
+    };
+
     const schemacon = {
 
         "@context": "https://schema.org",
@@ -957,10 +971,17 @@ const Metas = () => {
                     <meta name="geo.region" content="US" />
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
+
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
                     />
+
+<script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaurl0) }}
+                    />
+
                 </Head>
             ) : newpath === '/contact' ? (
                 <Head>
