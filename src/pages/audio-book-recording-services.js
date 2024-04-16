@@ -125,33 +125,6 @@ const audioBookRecordingServices = () => {
     </span>
   );
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/audio-book-recording-services",
-    },
-    headline: "Audiobook Recording Services",
-    description:
-      "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
-    image:
-      "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-    author: {
-      "@type": "Organization",
-      name: "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
-      url: "https://www.bookwritingexperts.com/",
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "audiobook recording services, audiobook recording service, audiobook recording company, best audiobook recording services, top audiobook recording services",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-      },
-    },
-    datePublished: "",
-  };
 
   const fine = [
     {
@@ -228,10 +201,7 @@ const audioBookRecordingServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+        
       </Head>
 
       {/* banner components */}

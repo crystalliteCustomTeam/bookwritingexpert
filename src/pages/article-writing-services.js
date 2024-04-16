@@ -64,33 +64,7 @@ const articleWritingServices = () => {
   const dateset = <span className='fw500'><Link href="/article-writing-services/" className='textdocationnone color-blue hover'>Article Writing Services</Link> Aimed At Entertaining <br /> And Educating Your Ideal Readers!</span>
 
 
-  const schema = {
 
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/article-writing-services"
-    },
-    "headline": "Article Writing Services",
-    "description": "article writing services, article writing service, best article writing services, top article writing services, professional article writing services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
-    "author": {
-      "@type": "Organization",
-      "name": "article writing services, article writing service, best article writing services, top article writing services, professional article writing services",
-      "url": "https://www.bookwritingexperts.com/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "article writing services, article writing service, best article writing services, top article writing services, professional article writing services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-
-  }
 
 
   const fine = [
@@ -155,10 +129,7 @@ const articleWritingServices = () => {
         <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+
 
 
       </Head>

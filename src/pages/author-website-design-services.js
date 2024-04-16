@@ -66,39 +66,13 @@ const authorWebsiteDesignServices = () => {
   const dateset = <span className='fw500'>Why Not Hire The Professional <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Website Developers</Link> <br /> To Create Your Professional Identity?</span>
 
 
-  const schema = {
-
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/author-website-design-services"
-    },
-    "headline": "Author Website Design Services",
-    "description": "author website design services, author website design service, author website design company, best author website design services, top author website design services, professional author website design services",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "author website design services, author website design service, author website design company, best author website design services, top author website design services, professional author website design services",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "author website design services, author website design service, author website design company, best author website design services, top author website design services, professional author website design services",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-
-  }
 
 
- 
 
 
- 
+
+
+
 
 
   const fine = [
@@ -160,10 +134,6 @@ const authorWebsiteDesignServices = () => {
         <meta name="geo.region" content="US" />
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
 
 
       </Head>

@@ -29,6 +29,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react'
 import { useState } from 'react'
+import Script from 'next/script'
 
 
 
@@ -178,7 +179,7 @@ const EbookWritingservices = () => {
 
   return (
     <>
-    
+
 
 
 
@@ -341,7 +342,26 @@ const EbookWritingservices = () => {
         />
       </div>
 
-
+      <Script type="application/ld+json" id="product-schema-ebook">
+        {`
+                            {
+                                "@context": "https://schema.org/", 
+                                "@type": "Product", 
+                                "name": "Ebook Writing Services | Book Writing Experts",
+                                "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+                                "description": "Ebook Writing Services, Get your ebook written with our professional ebook writers in no time.",
+                                "brand": {
+                                  "@type": "Brand",
+                                  "name": "Book Writing Experts"
+                                },
+                                "aggregateRating": {
+                                  "@type": "AggregateRating",
+                                  "ratingValue": "4.9",
+                                  "ratingCount": "1174"
+                                }
+                            }
+                        `}
+      </Script>
     </>
   )
 }

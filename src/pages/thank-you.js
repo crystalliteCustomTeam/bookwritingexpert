@@ -26,12 +26,12 @@ const Thankyou = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>thankyou - Book Writing</title>
-        
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="thankyou - Book Writing" />
@@ -42,11 +42,15 @@ const Thankyou = () => {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="1 minute" />
         <link rel="icon" href="/favicon.svg" />
+        <Script>
+          {` gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`}
+        </Script>
       </Head>
 
-      <Script>
+      {/* <Script>
         {`gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`}
-      </Script>
+      </Script> */}
+
 
       {/* banner components */}
 

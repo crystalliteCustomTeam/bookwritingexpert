@@ -184,35 +184,9 @@ const EbookWritingservices = () => {
   </span>;
 
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-formatting-services"
-    },
-    "headline": "Book Formatting Services",
-    "description": "book formatting services, book formatting service, book formatting company, best book formatting services, top book formatting services, professional book formatting services, book formatting",
-    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-    "author": {
-      "@type": "Organization",
-      "name": "book formatting services, book formatting service, book formatting company, best book formatting services, top book formatting services, professional book formatting services, book formatting",
-      "url": "https://www.bookwritingexperts.com/"
-    },  
-    "publisher": {
-      "@type": "Organization",
-      "name": "book formatting services, book formatting service, book formatting company, best book formatting services, top book formatting services, professional book formatting services, book formatting",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-      }
-    },
-    "datePublished": ""
-  }
-
   return (
     <>
- 
+
 
 
 

@@ -69,33 +69,6 @@ const blogWritingService = () => {
   </span>
 
 
-  const schema = {
-
-    "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.bookwritingexperts.com/blog-writing-service"
-  },
-  "headline": "Blog Writing Services",
-  "description": "blog writing services, blog writing service, blog writing company, best blog writing services, top blog writing services, professional blog writing services",
-  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-  "author": {
-    "@type": "Organization",
-    "name": "blog writing services, blog writing service, blog writing company, best blog writing services, top blog writing services, professional blog writing services",
-    "url": "https://www.bookwritingexperts.com/"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "blog writing services, blog writing service, blog writing company, best blog writing services, top blog writing services, professional blog writing services",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-    }
-  },
-  "datePublished": ""
-
-  }
 
 
 
@@ -162,10 +135,7 @@ const blogWritingService = () => {
         <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+
 
       </Head>
 

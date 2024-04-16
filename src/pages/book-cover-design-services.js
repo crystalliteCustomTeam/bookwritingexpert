@@ -66,40 +66,13 @@ const bookCoverDesignServices = () => {
   const dateset = <span className='fw500'>Why Not Give A Call To Professional <br /> <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Designers!</Link></span>
 
 
-  const schema = {
-
-    "@context": "https://schema.org",
-  "@type": "Article",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.bookwritingexperts.com/book-cover-design-services"
-  },
-  "headline": "Book Cover Design Services",
-  "description": "book cover design services, book cover design service, book cover design company, book cover designer, book cover designers, best book cover design services, top book cover design services",
-  "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",  
-  "author": {
-    "@type": "Organization",
-    "name": "book cover design services, book cover design service, book cover design company, book cover designer, book cover designers, best book cover design services, top book cover design services",
-    "url": "https://www.bookwritingexperts.com/"
-  },  
-  "publisher": {
-    "@type": "Organization",
-    "name": "book cover design services, book cover design service, book cover design company, book cover designer, book cover designers, best book cover design services, top book cover design services",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
-    }
-  },
-  "datePublished": ""
-
-  }
 
 
 
 
 
 
- 
+
   const fine = [
 
     {
@@ -161,10 +134,7 @@ const bookCoverDesignServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
+
 
 
 
