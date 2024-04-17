@@ -398,6 +398,171 @@ const Metas = () => {
             "ratingCount": "1174"
         }
     }
+    const websiteSchemaBookWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-writing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookTrailerServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Trailer Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-trailer-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBusinessPlanWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Business Plan Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/business-plan-writing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaDigitalMarketingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Digital Marketing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/digital-marketing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaEbookWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Ebook Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/ebook-writing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaGhostWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Ghostwriting Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/ghostwriting-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemawebContentWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Web Content Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/web-content-writing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaArticleWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Article Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/article-writing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookEditingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Editing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-editing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookFormattingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Formatting Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-formatting-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaIllustration = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Illustration Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/illustration",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookMarketingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Marketing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-marketing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookPromotionServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Promotion Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-promotion-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookProofreadingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Proofreading Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-proofreading-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    const websiteSchemaBookPublishingServices = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Publishing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-publishing-services",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
     const schemambspdlp3 = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -838,6 +1003,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPublishingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookPublishingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/book-promotion-services' ? (
@@ -874,6 +1043,10 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPromotionServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookPromotionServices) }}
                     />
 
 
@@ -949,6 +1122,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookWritingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookWritingServices) }}
+                    />
                 </Head>
 
 
@@ -986,6 +1163,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookEditingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookEditingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/business-plan-writing-services' ? (
@@ -1016,7 +1197,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBusinessPlanWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1054,6 +1238,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaGhostWritingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaGhostWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1071,7 +1259,7 @@ const Metas = () => {
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content="Web Content Writing Service - Book Writing Experts" />
                     <meta property="og:description" content="Web Content Writing Service to help you create a striking impression on your ideal audience. Get in touch with our seasoned writers." />
-                    <meta property="og:url" content="/book-writing-services" />
+                    <meta property="og:url" content="/web-content-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
@@ -1084,7 +1272,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemawebContentWritingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/book-proofreading-services' ? (
@@ -1120,6 +1311,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookProofreadingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookProofreadingServices) }}
+                    />
                 </Head>
             ) : newpath === '/book-marketing-services' ? (
 
@@ -1153,6 +1348,10 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookMarketingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookMarketingServices) }}
                     />
 
 
@@ -1190,7 +1389,10 @@ const Metas = () => {
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaDigitalMarketingServices) }}
+                    />
 
 
 
@@ -1225,7 +1427,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookTrailerServices) }}
+                    />
 
 
                 </Head>
@@ -1263,6 +1468,10 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaEbookWritingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaEbookWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1282,7 +1491,7 @@ const Metas = () => {
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content="Book Formatting Services - Book Writing Experts" />
                     <meta property="og:description" content="Book Formatting Services that meet the global formatting standards. Call the experts to get it done at affordable price range." />
-                    <meta property="og:url" content="/book-writing-services" />
+                    <meta property="og:url" content="/book-formatting-services" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
@@ -1296,7 +1505,10 @@ const Metas = () => {
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookFormattingServices) }}
+                    />
 
 
                 </Head>
@@ -1312,12 +1524,12 @@ const Metas = () => {
 
                     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
                     <title>Best Book Illustration Services - Book Writing Experts</title>
-                    <meta name="description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
+                    <meta name="description" content="Book Article Writing Services that meet the global article writing standards. Call the experts to get it done at affordable price range." />
 
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content="Best Book Illustration Services - Book Writing Experts" />
-                    <meta property="og:description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
+                    <meta property="og:description" content="Book Article Writing Services that meet the global article writing standards. Call the experts to get it done at affordable price range." />
                     <meta property="og:url" content="https://www.bookwritingexperts.com/" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
@@ -1332,6 +1544,47 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaIllustration) }}
+                    />
+                </Head>
+            ) : newpath === '/article-writing-services' ? (
+
+                <Head>
+
+                    <meta charSet="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+                    <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
+                    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+                    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+                    <title>Best Article Writing Services - Book Writing Experts</title>
+                    <meta name="description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
+
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:title" content="Best Book Illustration Services - Book Writing Experts" />
+                    <meta property="og:description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
+                    <meta property="og:url" content="https://www.bookwritingexperts.com/article-writing-services" />
+                    <meta property="og:site_name" content="Book Writing" />
+                    <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Est. reading time" />
+                    <meta name="twitter:data1" content="13 minutes" />
+                    <link rel="icon" href="/favicon.svg" />
+
+
+                    <meta name="DC.title" content="article writing services, article writing service, article writing company" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaArticleWritingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/audiobookproduction' ? (
@@ -1412,7 +1665,6 @@ const Metas = () => {
                     <meta name="geo.region" content="US" />
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
-
                 </Head>
             ) : newpath === '/bookexperlp' ? (
 

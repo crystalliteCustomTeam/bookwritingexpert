@@ -104,6 +104,17 @@ const bookCoverDesignServices = () => {
 
 
   ]
+  const websiteSchemaBookCoverDesignServices = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Book Cover Design Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/book-cover-design-services",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
   return (
     <>
       <Head>
@@ -135,7 +146,10 @@ const bookCoverDesignServices = () => {
         <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookCoverDesignServices) }}
+        />
 
 
       </Head>

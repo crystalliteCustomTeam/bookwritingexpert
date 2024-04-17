@@ -107,6 +107,17 @@ const blogWritingService = () => {
 
 
   ]
+  const websiteSchemaBlogWritingServices = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
   return (
     <>
       <Head>
@@ -135,7 +146,10 @@ const blogWritingService = () => {
         <meta name="ICBM" content="39.78373, -100.445882" />
 
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBlogWritingServices) }}
+        />
 
       </Head>
 

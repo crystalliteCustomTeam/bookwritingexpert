@@ -124,8 +124,6 @@ const audioBookRecordingServices = () => {
       <br /> For Your Ideal Prospects!
     </span>
   );
-
-
   const fine = [
     {
       img: mission1,
@@ -148,6 +146,17 @@ const audioBookRecordingServices = () => {
       class: "fintop",
     },
   ];
+  const websiteSchemaAudioBookRecordingServices = {
+    "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Audiobook Recording Services | Book Writing Experts",
+  "url": "https://www.bookwritingexperts.com/audio-book-recording-services",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+  }
   return (
     <>
       <Head>
@@ -201,7 +210,10 @@ const audioBookRecordingServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaAudioBookRecordingServices) }}
+        />
       </Head>
 
       {/* banner components */}

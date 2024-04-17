@@ -106,6 +106,17 @@ const authorWebsiteDesignServices = () => {
 
 
   ]
+  const websiteSchemaAuthorWebsiteDesignServices = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Author Website Design Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/author-website-design-services",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
   return (
     <>
       <Head>
@@ -135,7 +146,10 @@ const authorWebsiteDesignServices = () => {
         <meta name="geo.position" content="39.78373;-100.445882" />
         <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaAuthorWebsiteDesignServices) }}
+        />
       </Head>
 
 
