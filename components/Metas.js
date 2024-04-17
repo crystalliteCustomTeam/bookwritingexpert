@@ -1,7 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
 import Head from "next/head";
-import Script from 'next/script';
 
 const Metas = () => {
 
@@ -45,6 +44,22 @@ const Metas = () => {
         ]
 
 
+    }
+    const productSchemaEbookWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Ebook Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Ebook Writing Services, Get your ebook written with our professional ebook writers in no time.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
     }
     const schemacon1 = {
 
@@ -255,7 +270,22 @@ const Metas = () => {
         "datePublished": ""
     };
 
-
+    const productSchemaGhostWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Ghostwriting Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Ghostwriting Services, Explore our ghostwriting services and get your book written from our leading ghostwriters.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
     const schemambspdlp3 = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -893,7 +923,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaGhostWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1092,8 +1125,11 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-                    
 
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaEbookWritingServices) }}
+                    />
 
 
                 </Head>
