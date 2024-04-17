@@ -286,6 +286,118 @@ const Metas = () => {
             "ratingCount": "1174"
         }
     }
+    const productSchemaHome = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Writing Company | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Writing Company, The best book writing company for all types of books.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookEditingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Editing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Editing Services, Discover our wide range of book editing services. Hire our book editing company today.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookProofreadingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Proofreading Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Proofreading Services, Hire our professional book proofreading company today and make your book error free.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookMarketingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Marketing Services, Amazon Book Marketing | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Marketing Services, If you are struggling to market your book on amazon then hire our book marketing company today.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookPromotionServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Promotion Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Promotion Services, Promote your book on various platforms with our top-notch book promotion company.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookPublishingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Publishing Services, Amazon Publishing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Publishing Services, Have your book published on amazon kdp with our leading book publishers.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
+    const productSchemaBookWritingServices = {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Book Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "description": "Book Writing Services, Hire our book writers today and get your masterclass book written.",
+        "brand": {
+            "@type": "Brand",
+            "name": "Book Writing Experts"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "1174"
+        }
+    }
     const schemambspdlp3 = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
@@ -607,7 +719,7 @@ const Metas = () => {
 
                     <script
                         type="application/ld+json"
-                        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaurl0) }}
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaHome) }}
                     />
 
                 </Head>
@@ -722,6 +834,47 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPublishingServices) }}
+                    />
+
+                </Head>
+            ) : newpath === '/book-promotion-services' ? (
+
+                <Head>
+
+                    <meta charSet="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+                    <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
+                    <link rel="profile" href="http://gmpg.org/xfn/11" />
+
+                    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+                    <title>Book Promotion Services For Branding - Book Writing Experts</title>
+                    <meta name="description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
+
+                    <meta property="og:locale" content="en_US" />
+                    <meta property="og:type" content="article" />
+                    <meta property="og:title" content="Book Promotion Services For Branding - Book Writing Experts" />
+                    <meta property="og:description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
+                    <meta property="og:url" content="/book-promotion-services" />
+                    <meta property="og:site_name" content="Book Writing" />
+                    <meta property="article:modified_time" content="2023-03-31T11:38:52+00:00" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:label1" content="Est. reading time" />
+                    <meta name="twitter:data1" content="7 minutes" />
+                    <link rel="icon" href="/favicon.svg" />
+
+                    <meta name="DC.title" content="book promotion services, book promotion service, book promotion company" />
+                    <meta name="geo.region" content="US" />
+                    <meta name="geo.position" content="39.78373;-100.445882" />
+                    <meta name="ICBM" content="39.78373, -100.445882" />
+
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPromotionServices) }}
+                    />
 
 
                 </Head>
@@ -756,42 +909,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
-
-
-                </Head>
-            ) : newpath === '/book-promotion-services' ? (
-
-                <Head>
-
-                    <meta charSet="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-                    <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-                    <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-                    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-                    <title>Book Promotion Services For Branding - Book Writing Experts</title>
-                    <meta name="description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-
-                    <meta property="og:locale" content="en_US" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:title" content="Book Promotion Services For Branding - Book Writing Experts" />
-                    <meta property="og:description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-                    <meta property="og:url" content="/book-promotion-services" />
-                    <meta property="og:site_name" content="Book Writing" />
-                    <meta property="article:modified_time" content="2023-03-31T11:38:52+00:00" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:label1" content="Est. reading time" />
-                    <meta name="twitter:data1" content="7 minutes" />
-                    <link rel="icon" href="/favicon.svg" />
-
-                    <meta name="DC.title" content="book promotion services, book promotion service, book promotion company" />
-                    <meta name="geo.region" content="US" />
-                    <meta name="geo.position" content="39.78373;-100.445882" />
-                    <meta name="ICBM" content="39.78373, -100.445882" />
-
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPromotionServicess) }}
+                    />
 
 
                 </Head>
@@ -824,7 +945,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookWritingServices) }}
+                    />
                 </Head>
 
 
@@ -858,7 +982,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookEditingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/business-plan-writing-services' ? (
@@ -989,7 +1116,10 @@ const Metas = () => {
                     <meta name="geo.region" content="US" />
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookProofreadingServices) }}
+                    />
                 </Head>
             ) : newpath === '/book-marketing-services' ? (
 
@@ -1020,7 +1150,10 @@ const Metas = () => {
                     <meta name="geo.position" content="39.78373;-100.445882" />
                     <meta name="ICBM" content="39.78373, -100.445882" />
 
-
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookMarketingServices) }}
+                    />
 
 
                 </Head>
