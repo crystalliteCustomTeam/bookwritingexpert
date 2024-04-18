@@ -42,8 +42,6 @@ const Metas = () => {
             "https://www.linkedin.com/company/book-writing-exp/",
             "https://www.pinterest.com/bookwritingexperts/"
         ]
-
-
     }
     const productSchemaEbookWritingServices = {
         "@context": "https://schema.org/",
@@ -313,6 +311,48 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaHome = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+
+    const corporationSchemaHome = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+
     const productSchemaBookEditingServices = {
         "@context": "https://schema.org/",
         "@type": "Product",
@@ -420,6 +460,46 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaBookWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-writing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-writing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaBookTrailerServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -430,6 +510,86 @@ const Metas = () => {
             "target": "{search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    const professionalServiceSchemaBookTrailerServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Trailer Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-trailer-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookTrailerServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Trailer Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-trailer-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+    const professionalServiceSchemaBusinessPlanWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Business Plan Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/business-plan-writing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBusinessPlanWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Business Plan Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/business-plan-writing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
     }
     const websiteSchemaBusinessPlanWritingServices = {
         "@context": "https://schema.org/",
@@ -453,6 +613,86 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaDigitalMarketingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Digital Marketing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/digital-marketing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaDigitalMarketingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Digital Marketing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/digital-marketing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+    const professionalServiceSchemaEbookWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ebook Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/ebook-writing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaEbookWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Ebook Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/ebook-writing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaEbookWritingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -475,6 +715,47 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaGhostWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Ghostwriting Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/ghostwriting-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+
+    const corporationSchemaGhostWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Ghostwriting Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/ghostwriting-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemawebContentWritingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -485,6 +766,46 @@ const Metas = () => {
             "target": "{search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    const professionalServiceSchemawebContentWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Web Content Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/web-content-writing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemawebContentWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Web Content Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/web-content-writing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
     }
     const websiteSchemaArticleWritingServices = {
         "@context": "https://schema.org/",
@@ -497,6 +818,46 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaArticleWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Article Writing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/article-writing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaArticleWritingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Article Writing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/article-writing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaBookEditingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -507,6 +868,46 @@ const Metas = () => {
             "target": "{search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    const professionalServiceSchemaBookEditingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Editing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-editing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookEditingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Editing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-editing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
     }
     const websiteSchemaBookFormattingServices = {
         "@context": "https://schema.org/",
@@ -519,6 +920,46 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaBookFormattingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Formatting Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-formatting-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookFormattingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Formatting Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-formatting-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaIllustration = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -530,6 +971,47 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaIllustration = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Illustration Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/illustration",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaIllustration = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Illustration Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/illustration",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
+
     const websiteSchemaBookMarketingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -540,6 +1022,46 @@ const Metas = () => {
             "target": "{search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    const professionalServiceSchemaBookMarketingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Marketing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-marketing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookMarketingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Marketing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-marketing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
     }
     const websiteSchemaBookPromotionServices = {
         "@context": "https://schema.org/",
@@ -552,6 +1074,46 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaBookPromotionServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Promotion Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-promotion-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookPromotionServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Promotion Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-promotion-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaBookProofreadingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -563,6 +1125,46 @@ const Metas = () => {
             "query-input": "required name=search_term_string"
         }
     }
+    const professionalServiceSchemaBookProofreadingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Proofreading Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-proofreading-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+    const corporationSchemaBookProofreadingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Proofreading Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-proofreading-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+    }
     const websiteSchemaBookPublishingServices = {
         "@context": "https://schema.org/",
         "@type": "WebSite",
@@ -573,6 +1175,47 @@ const Metas = () => {
             "target": "{search_term_string}",
             "query-input": "required name=search_term_string"
         }
+    }
+    const professionalServiceSchemaBookPublishingServices = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Book Publishing Services | Book Writing Experts",
+        "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+        "url": "https://www.bookwritingexperts.com/book-publishing-services",
+        "telephone": "855-500-0057",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "445 S.Figueroa Street",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA",
+            "postalCode": "90071",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 34.0533717,
+            "longitude": -118.2573536
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        }
+    }
+
+    const corporationSchemaBookPublishingServices = {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Book Publishing Services | Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/book-publishing-services",
+        "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
     }
     const schemambspdlp3 = {
         "@context": "https://schema.org",
@@ -901,6 +1544,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaHome) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaHome) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaHome) }}
+                    />
 
                 </Head>
             ) : newpath === '/contact' ? (
@@ -1022,6 +1673,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookPublishingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookPublishingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookPublishingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/book-promotion-services' ? (
@@ -1063,43 +1722,13 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookPromotionServices) }}
                     />
-
-
-                </Head>
-            ) : newpath === '/book-promotion-services' ? (
-
-                <Head>
-
-                    <meta charSet="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-                    <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-                    <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-                    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-                    <title>Book Promotion Services For Branding - Book Writing Experts</title>
-                    <meta name="description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-
-                    <meta property="og:locale" content="en_US" />
-                    <meta property="og:type" content="article" />
-                    <meta property="og:title" content="Book Promotion Services For Branding - Book Writing Experts" />
-                    <meta property="og:description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-                    <meta property="og:url" content="/book-promotion-services" />
-                    <meta property="og:site_name" content="Book Writing" />
-                    <meta property="article:modified_time" content="2023-03-31T11:38:52+00:00" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <meta name="twitter:label1" content="Est. reading time" />
-                    <meta name="twitter:data1" content="7 minutes" />
-                    <link rel="icon" href="/favicon.svg" />
-
-                    <meta name="DC.title" content="book promotion services, book promotion service, book promotion company" />
-                    <meta name="geo.region" content="US" />
-                    <meta name="geo.position" content="39.78373;-100.445882" />
-                    <meta name="ICBM" content="39.78373, -100.445882" />
-
                     <script
                         type="application/ld+json"
-                        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaBookPromotionServicess) }}
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookPromotionServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookPromotionServices) }}
                     />
 
 
@@ -1140,6 +1769,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookWritingServices) }}
                     />
                 </Head>
 
@@ -1182,6 +1819,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookEditingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookEditingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookEditingServices) }}
+                    />
 
                 </Head>
             ) : newpath === '/business-plan-writing-services' ? (
@@ -1215,6 +1860,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBusinessPlanWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBusinessPlanWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBusinessPlanWritingServices) }}
                     />
 
 
@@ -1257,6 +1910,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaGhostWritingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaGhostWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaGhostWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1290,6 +1951,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemawebContentWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemawebContentWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemawebContentWritingServices) }}
                     />
 
                 </Head>
@@ -1330,6 +1999,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookProofreadingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookProofreadingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookProofreadingServices) }}
+                    />
                 </Head>
             ) : newpath === '/book-marketing-services' ? (
 
@@ -1367,6 +2044,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookMarketingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookMarketingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookMarketingServices) }}
                     />
 
 
@@ -1408,6 +2093,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaDigitalMarketingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaDigitalMarketingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaDigitalMarketingServices) }}
+                    />
 
 
 
@@ -1445,6 +2138,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookTrailerServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookTrailerServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookTrailerServices) }}
                     />
 
 
@@ -1487,6 +2188,14 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaEbookWritingServices) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaEbookWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaEbookWritingServices) }}
+                    />
 
 
                 </Head>
@@ -1523,6 +2232,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBookFormattingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBookFormattingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBookFormattingServices) }}
                     />
 
 
@@ -1563,6 +2280,15 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaIllustration) }}
                     />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaIllustration) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaIllustration) }}
+                    />
+
                 </Head>
             ) : newpath === '/article-writing-services' ? (
 
@@ -1599,6 +2325,14 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaArticleWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaArticleWritingServices) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaArticleWritingServices) }}
                     />
 
                 </Head>

@@ -118,6 +118,46 @@ const blogWritingService = () => {
       "query-input": "required name=search_term_string"
     }
   }
+  const professionalServiceSchemaBlogWritingServices = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "telephone": "855-500-0057",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "445 S.Figueroa Street",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90071",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0533717,
+      "longitude": -118.2573536
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  const corporationSchemaBlogWritingServices = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+  }
   return (
     <>
       <Head>
@@ -149,6 +189,14 @@ const blogWritingService = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBlogWritingServices) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBlogWritingServices) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBlogWritingServices) }}
         />
 
       </Head>

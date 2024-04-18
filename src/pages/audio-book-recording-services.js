@@ -148,14 +148,54 @@ const audioBookRecordingServices = () => {
   ];
   const websiteSchemaAudioBookRecordingServices = {
     "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "Audiobook Recording Services | Book Writing Experts",
-  "url": "https://www.bookwritingexperts.com/audio-book-recording-services",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{search_term_string}",
-    "query-input": "required name=search_term_string"
+    "@type": "WebSite",
+    "name": "Audiobook Recording Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/audio-book-recording-services",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
+  const professionalServiceSchemaAudioBookRecordingServices = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Audiobook Recording Services | Book Writing Experts",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "url": "https://www.bookwritingexperts.com/audio-book-recording-services",
+    "telephone": "855-500-0057",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "445 S.Figueroa Street",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90071",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0533717,
+      "longitude": -118.2573536
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  const corporationSchemaAudioBookRecordingServices = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Audiobook Recording Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/audio-book-recording-services",
+    "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
   }
   return (
     <>
@@ -213,6 +253,14 @@ const audioBookRecordingServices = () => {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaAudioBookRecordingServices) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaAudioBookRecordingServices) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaAudioBookRecordingServices) }}
         />
       </Head>
 
