@@ -302,6 +302,17 @@ const Metas = () => {
             "ratingCount": "1174"
         }
     }
+    const websiteSchemaHome = {
+        "@context": "https://schema.org/",
+        "@type": "WebSite",
+        "name": "Book Writing Experts",
+        "url": "https://www.bookwritingexperts.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
     const productSchemaBookEditingServices = {
         "@context": "https://schema.org/",
         "@type": "Product",
@@ -885,6 +896,10 @@ const Metas = () => {
                     <script
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemaHome) }}
+                    />
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaHome) }}
                     />
 
                 </Head>
