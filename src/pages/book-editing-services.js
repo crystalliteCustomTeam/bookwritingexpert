@@ -47,10 +47,6 @@ const Bookpublishingservices = () => {
       homebannernum: 'Call Us Now At (855) 500 0057 ',
       banlogo: homebannerlogos,
       banners: 'bookeditingservices',
-
-
-
-
     }
   ]
 
@@ -84,8 +80,6 @@ const Bookpublishingservices = () => {
       title: finetitle,
       text: finepare,
       class: 'fintop',
-
-
     },
 
     {
@@ -93,8 +87,6 @@ const Bookpublishingservices = () => {
       title: finetitle1,
       text: finepare1,
       class: 'fintop',
-
-
     },
 
     {
@@ -102,8 +94,6 @@ const Bookpublishingservices = () => {
       title: finetitle2,
       text: finepare2,
       class: 'fintop',
-
-
     },
 
 
@@ -141,16 +131,9 @@ const Bookpublishingservices = () => {
   const perplexing = <span>Let us help you navigate the maze of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editing</Link>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editors</Link>. Call, text, or email us today to make your dream of becoming an author a reality!</span>
 
 
-
-
-
   return (
     <>
    
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>

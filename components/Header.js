@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image'
 import logo from '../public/images/logo.svg';
+import logochildrenlp from '../public/images/childrenillustration/childrenlp-logo.png';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { FaLocationArrow } from 'react-icons/fa';
@@ -48,7 +49,7 @@ const Header = () => {
   function closemodal() { setShow(false); }
 
 
- 
+
 
   const router = useRouter();
   const router1 = router.asPath;
@@ -68,7 +69,14 @@ const Header = () => {
     router1 === '/portfoliobookpublishing' ||
     router1 === '/blog';
 
-  
+  const navbarTextColor =
+    router1 === '/children-book-illustration'
+
+  const navbarCtaColor =
+    router1 === '/children-book-illustration'
+    
+  const navbarColor =
+    router1 === '/children-book-illustration'
 
 
 
@@ -86,21 +94,29 @@ const Header = () => {
 
 
 
-<header className={headercolor || slug ? `${styles.headerblue}` : `${styles.headerhome}`}>
+      <header className={headercolor || slug ? `${styles.headerblue}` : `${styles.headerhome}`}>
 
 
         <Navbar expand="lg">
           <Container className={styles.headerContainer}>
 
-            <Link href="/"><Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt="Book Writing Experts"></Image> </Link>
+            {navbarTextColor ? (
+              <Link href="/">
+                <Image loading="lazy" quality={70} className={styles.logoNewCbi} src={logochildrenlp} alt="Book Writing Experts" />
+              </Link>
+            ) : (
+              <Link href="/">
+                <Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt="Book Writing Experts" />
+              </Link>
+            )}
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className={styles.navalign}>
               <>
                 <ul className={styles.align_menu}>
-                  <li className={styles.navlinks}><Link className={styles.menulinks} href="/">Home</Link></li>
+                  <li className={styles.navlinks}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="/">Home</Link></li>
                   {/* <li className={styles.navlinks}><Link className={styles.menulinks} href="/about">About us</Link></li> */}
-                  <li onClick={toggle} className={`${styles.navlinks} ${styles.serviceshover}`}><Link className={styles.menulinks} href="">Services <IoMdArrowDropdown size={12} /></Link>
+                  <li onClick={toggle} className={`${styles.navlinks} ${styles.serviceshover}`}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="">Services <IoMdArrowDropdown size={12} /></Link>
 
                     <Row className={click ? `${styles.megamenu} ${styles.active}` : `${styles.megamenu}`}>
                       <Col md={4}>
@@ -258,27 +274,22 @@ const Header = () => {
                       </Col>
                     </Row>
                   </li>
-                  <li className={styles.navlinks}><Link className={styles.menulinks} href="/pricing">Pricing</Link></li>
-                  <li className={styles.navlinks}><Link className={styles.menulinks} href="/ourportfolio"> Our Portfolio</Link></li>
-                  <li className={styles.navlinks}><Link className={styles.menulinks} href="/blog">Blogs</Link></li>
-                  <li className={styles.navlinks}><Link className={styles.menulinks} href="/contact">Contact us</Link></li>
+                  <li className={styles.navlinks}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="/pricing">Pricing</Link></li>
+                  <li className={styles.navlinks}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="/ourportfolio"> Our Portfolio</Link></li>
+                  <li className={styles.navlinks}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="/blog">Blogs</Link></li>
+                  <li className={styles.navlinks}><Link className={navbarTextColor || slug ? `${styles.menuLinksCbi}` : `${styles.menulinks}`} href="/contact">Contact us</Link></li>
                 </ul>
               </>
 
               <ul className={styles.align_menu}>
+                <li className={navbarCtaColor || slug ? `${styles.headerTelCbi}` : `${styles.headertel} ${styles.navlinks}`}>
 
-
-                <li className={`${styles.navlinks} ${styles.headertel}`}>
-
-                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="tel:(855) 500 0057">
+                  <Link className={navbarCtaColor || slug ? `${styles.headerbtnCBIcolor} ${styles.headerCBIicon}` : `${styles.headerbtncolor} ${styles.headericon}`} href="tel:(855) 500 0057">
 
                     <BsFillTelephoneFill className={styles.valuenum} size={12} /> (855) 500 0057 </Link>
 
                 </li>
-
-
-                <li onClick={modal} className={`${styles.navlinks} ${styles.headertel} ${styles.headerbtnspacing}`}><Link className={styles.headerbtncolor} href="">Get A Quote</Link></li>
-
+                <li onClick={modal} className={navbarCtaColor || slug ? `${styles.navlinks} ${styles.headerBtnSpacingCbi} ${styles.headertel}` : `${styles.navlinks} ${styles.headertel} ${styles.headerbtnspacing}`}><Link className={styles.headerbtncolor} href="">Get A Quote</Link></li>
               </ul>
             </Navbar.Collapse>
           </Container>

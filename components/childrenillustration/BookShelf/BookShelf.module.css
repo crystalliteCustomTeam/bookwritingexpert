@@ -1,0 +1,90 @@
+.bookShelf {
+    font-family: "SF Pro Display", sans-serif;
+    padding: 70px 0;
+    background: url('../../../public//images/childrenillustration/table-and-bottom.png');
+    background-size: contain;
+    background-position: 50% bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: relative;
+}
+
+.bookShelf .font_50 {
+    font-size: 50px !important;
+    line-height: 60px;
+}
+
+.bookShelf .font_18 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.bookShelf::before {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 4%;
+    width: 180px;
+    height: 290px;
+    background: url(../../../public//images/childrenillustration/window.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bookShelf::after {
+    position: absolute;
+    content: '';
+    bottom: 0%;
+    right: 0%;
+    width: 240px;
+    height: 510px;
+    background: url(../../../public//images/childrenillustration/right-door.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9999;
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1199px) {
+    .bookShelf::before {
+        display: none;
+    }
+
+    .bookShelf::after {
+        display: none;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .bookShelf {
+        padding: 40px 0;
+        height: 100%;
+        background: inherit;
+        position: relative;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    .bookShelf {
+        padding: 40px 0;
+        height: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    .bookShelf .font_50 {
+        font-size: 40px !important;
+        line-height: 50px;
+    }
+
+    .bookShelf .font_18 {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 0 20px;
+    }
+}

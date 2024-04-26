@@ -34,21 +34,13 @@ const Headerlp = () => {
   const [click, setclick] = useState(false);
 
   function toggle() {
-
     setclick((prevState) => !prevState);
-
-
   }
 
   const [show, setShow] = useState(false);
 
-
-
   function modal(e) { e.preventDefault(); setShow(true); }
   function closemodal() { setShow(false); }
-
-
- 
 
   const router = useRouter();
   const router1 = router.asPath;
@@ -68,32 +60,12 @@ const Headerlp = () => {
     router1 === '/portfoliobookpublishing' ||
     router1 === '/blog';
 
-  
-
-
-
-
-
-
-
-
   return (
     <>
-
-
-
-
-
-
-
-<header className={headercolor || slug ? `${styles.headerblue}` : `${styles.headerhome}`}>
-
-
+      <header className={headercolor || slug ? `${styles.headerblue}` : `${styles.headerhome}`}>
         <Navbar expand="lg">
           <Container className={styles.headerContainer}>
-
             <Link href="/"><Image loading="lazy" quality={70} className={styles.logonew} src={logo} alt="Book Writing Experts"></Image> </Link>
-
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className={styles.navalign}>
               <>

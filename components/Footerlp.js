@@ -4,7 +4,7 @@ import styles from '@/styles/Footerlp.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 // images 
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import footerlogo from '../public/images/logo.svg'
 import protectedlogo from '../public/images/footer/protected.png'
 import visa from '../public/images/footer/visa.png'
@@ -178,15 +178,11 @@ const Footerlp = () => {
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> For Sales Inquiry:<Link className={styles.styleset} href="tel:2135499870"> (213) 549-9870 </Link></li>
                 <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>  <BsFillTelephoneFill size={12} /> For Project Inquiry:<Link className={styles.styleset} href="tel:2135499850"> (213) 549-9850 </Link></li>
                 <li className={`${styles.footermenulinks} ${styles.footerdo} pt-3`}>  <Image src={location} className='img-fluid' /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
-                
-
-
-
               </ul>
 
               <ul className={styles.socialiconfooter}>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.facebook.com/bookwritingexperts">
-                   <Image src={social1} className='img-fluid' /> </Link></li>
+                  <Image src={social1} className='img-fluid' /> </Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://twitter.com/bookwritingexp"> <Image src={social2} className='img-fluid' /></Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.instagram.com/bookwritingexp/"> <Image src={social3} className='img-fluid' /></Link></li>
                 <li className={styles.socaillinks}><Link className={styles.styleset} href="https://www.linkedin.com/company/bookwritingexp"> <Image src={social4} className='img-fluid' /></Link></li>
@@ -255,11 +251,7 @@ const Footerlp = () => {
               <div className={styles.imgvisa}>
 
                 {imagesLoaded &&
-
                   <Slider {...visalogo}>
-
-
-
                     {footerlogosnew.map((item, i) => {
                       return (
                         <div key={i} className={styles.rightlogo}>
@@ -267,17 +259,8 @@ const Footerlp = () => {
                         </div>
                       )
                     })}
-
-
-
-
                   </Slider>
                 }
-
-
-
-
-
               </div>
               <div className={styles.imgvisa}>
                 {imagesLoaded &&
@@ -307,7 +290,7 @@ const Footerlp = () => {
                 <Image loading="lazy" className='img-fluid' src={visa} alt="Book Writing Experts"></Image>
               </Col>
               <Col md={4}>
-              <p className='font14 text-center font-f'>© 2024 - All Rights Reserved <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/"></Link></p>
+                <p className='font14 text-center font-f'>© 2024 - All Rights Reserved <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/"></Link></p>
               </Col>
               <Col md={4}>
                 <div className={styles.aligntextrignt}>
