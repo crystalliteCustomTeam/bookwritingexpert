@@ -50,7 +50,7 @@ const Card = ({
             <div className={`${styles.card}`}>
                 <Container>
                     <Row>
-                        <Col md={10} className='mx-auto mb-3'>
+                        <Col lg={11} className='mx-auto mb-3'>
                             <div>
                                 {subtitle && (<span className="mb-2">
                                     {subtitle}

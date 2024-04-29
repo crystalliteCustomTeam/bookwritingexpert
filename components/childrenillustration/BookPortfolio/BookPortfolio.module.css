@@ -58,6 +58,10 @@
 }
 
 @media (max-width:767.98px) {
+    .font_50 {
+        font-size: 40px;
+        line-height: 50px;
+    }
     .bookPortfolio {
         font-family: "SF Pro Display", sans-serif;
         padding: 70px 0;

@@ -91,7 +91,7 @@ const childrenBookIllustration = () => {
       <Banner
         subtitle="Custom Book"
         title="illustration"
-        desc="We are helping you to share your story with kids that stimulate their <br/> imagination and boom their interest in your stories."
+        desc="We are helping you to share your story with kids that stimulate their <br class='d-lg-none d-block'/> imagination and boom their interest in your stories."
         formTitle="Request A Free Quote"
       />
       <Card
