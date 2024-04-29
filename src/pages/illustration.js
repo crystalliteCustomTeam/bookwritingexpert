@@ -32,8 +32,6 @@ function Illustrationbook() {
 
   const dataspan = <h2 className='font50 color-white font-f hero-span'>  Hire Book Writing Experts: The Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration Company</Link> Ready To Turn Your Book Into A Masterpiece  </h2>;
 
-
-
   const bannertext = [
     {
       title: newSpan,
@@ -119,11 +117,6 @@ function Illustrationbook() {
 
         <Stunningillustrations />
 
-
-
-
-
-
         <Stoppublish
           title='Our best book illustrators come together to create the most perfect book for you.
           '
@@ -145,11 +138,6 @@ function Illustrationbook() {
         {/* Customersatisfaction */}
         <Customersatisfaction />
 
-
-
-
-
-
         <div className='datacloud'>
           <Onestepsolutions />
         </div>
@@ -161,8 +149,6 @@ function Illustrationbook() {
           text={<> <p className="text-white font-f mb-4 font15">Hire Book Writing Experts today and make sure that your readers become glued to your books with our perfect book illustration services.</p> </>}
 
         />
-
-
 
         {/* Talk To Our Whatourclients! */}
         <Whatourclients />

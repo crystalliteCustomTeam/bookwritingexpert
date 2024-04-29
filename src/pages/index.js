@@ -155,7 +155,7 @@ export default function Home() {
         {/* Talk To Our Experts! */}
         <Experts
           title={exprtSpan}
-          text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
+          text="Hit us a message, or give us a call, and make the most of our <a href='https://www.bookwritingexperts.com/ghostwriting-services' class='textdocationnone text-white hover'>Professional Ghostwriters</a>."
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />

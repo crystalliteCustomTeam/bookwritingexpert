@@ -35,6 +35,8 @@ const ourportfolio = () => {
             <Head>
                 <title>Book Marketing</title>
                 <link rel="icon" href="/favicon.svg" />
+                <meta property="og:title" content="Book Marketing Portfolio"/>
+                <meta property="og:description" content="Check out the extensive book marketing portfolio of Book Writing Experts and see how we market best-sellers"/>
             </Head>
 
 

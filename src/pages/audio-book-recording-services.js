@@ -233,6 +233,7 @@ const audioBookRecordingServices = () => {
         />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
         <meta
           property="article:modified_time"
           content="2023-03-31T12:04:48+00:00"

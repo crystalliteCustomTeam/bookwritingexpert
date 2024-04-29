@@ -134,7 +134,7 @@ const Faqslist = () => {
                   <Accordion.Header className='faqheading'>When should I start marketing my book? </Accordion.Header>
                   <Accordion.Body className='textbody'>
 
-                    <p>Marketing your book should not be an afterthought but part of the writing process. To ensure that your book can reach its full potential with readers, you should start marketing your book even before it is published.</p>
+                    <p><a className='textdocationnone textcolor hover' href='https://www.bookwritingexperts.com/book-marketing-services'>Marketing your book</a> should not be an afterthought but part of the writing process. To ensure that your book can reach its full potential with readers, you should start marketing your book even before it is published.</p>
 
 
                     <p> By creating a buzz and building anticipation for the launch of your book, you can ensure that people are already excited about reading it once it comes out. It could involve creating a website or blog to share excerpts and updates about the book, engaging with readers on social media platforms, getting reviews from influential sites or individuals, and writing guest posts for other websites.</p>

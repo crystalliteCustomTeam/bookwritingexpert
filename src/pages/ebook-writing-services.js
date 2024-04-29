@@ -170,7 +170,7 @@ const EbookWritingservices = () => {
 
   ]
 
-  const text = <span>Get in touch with our professional book writing specialists today. Our eBooks Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!
+  const text = <span>Get in touch with our professional <a class='textdocationnone textcolor hover' href="https://www.bookwritingexperts.com/book-writing-services">book writing</a>  specialists today. Our eBooks Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!
   </span>;
 
 

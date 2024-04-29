@@ -1522,6 +1522,8 @@ const Metas = () => {
                     />
                     <meta property="og:url" content="https://www.bookwritingexperts.com/" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
+
                     <meta
                         property="article:modified_time"
                         content="2023-01-12T00:00:46+00:00"
@@ -1646,14 +1648,15 @@ const Metas = () => {
 
                     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
                     <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-                    <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+                    <meta name="description" content="Are you looking for a book publishing company? Hire Book Writing Experts today, as we are the leading Amazon KDP and Amazon publishing service." />
 
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-                    <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+                    <meta property="og:description" content="Are you looking for a book publishing company? Hire Book Writing Experts today, as we are the leading Amazon KDP and Amazon publishing service." />
                     <meta property="og:url" content="/book-publishing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:04:48+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1703,6 +1706,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
                     <meta property="og:url" content="/book-promotion-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T11:38:52+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1751,6 +1755,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book Writing Services at the most honest rates by the experts. Give us a call and let them define your book success." />
                     <meta property="og:url" content="/book-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1800,6 +1805,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
                     <meta property="og:url" content="/book-editing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:01:27+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1847,6 +1853,7 @@ const Metas = () => {
                     <meta property="og:description" content="Business Plan Writing Services offered by Book Writing Experts ensure to turn your dream into a successfully launched and hit business. Call us now." />
                     <meta property="og:url" content="/business-plan-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1890,8 +1897,9 @@ const Metas = () => {
                     <meta property="og:type" content="article" />
                     <meta property="og:title" content="Top-Tier Ghostwriting Services - Book Writing Experts" />
                     <meta property="og:description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
-                    <meta property="og:url" content="https://www.bookwritingexperts.com/ghostwriting-services/" />
+                    <meta property="og:url" content="https://www.bookwritingexperts.com/ghostwriting-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:03:02+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1937,6 +1945,7 @@ const Metas = () => {
                     <meta property="og:description" content="Web Content Writing Service to help you create a striking impression on your ideal audience. Get in touch with our seasoned writers." />
                     <meta property="og:url" content="/web-content-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -1981,6 +1990,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book Proofreading services make your manuscript flawless. Avail the services today from the experts who are adept at keeping an eagle eye on errors." />
                     <meta property="og:url" content="/book-proofreading-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:03:57+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2027,6 +2037,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book Marketing Services that makes you your readers&#039; most sought-after choice. Count on us to be counted worldwide. Hire us to get the job done." />
                     <meta property="og:url" content="/book-marketing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T11:37:31+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2075,8 +2086,9 @@ const Metas = () => {
                     <meta property="og:description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
                     <meta property="og:url" content="/digital-marketing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T11:58:56+00:00" />
-                    <meta property="og:image" content="/complogo.png" />
+                    {/* <meta property="og:image" content="/complogo.png" /> */}
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
                     <meta name="twitter:data1" content="45 minutes" />
@@ -2124,6 +2136,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book trailer services to make a lasting impression on your audience. Avail our services and stay ahead of your competitors." />
                     <meta property="og:url" content="/book-trailer-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T11:37:31+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2168,6 +2181,7 @@ const Metas = () => {
                     <meta property="og:description" content="Ebook Writing Services at the most honest rates by the experts. Give us a call and let them define your book success." />
                     <meta property="og:url" content="/ebook-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2217,6 +2231,7 @@ const Metas = () => {
                     <meta property="og:description" content="Book Formatting Services that meet the global formatting standards. Call the experts to get it done at affordable price range." />
                     <meta property="og:url" content="/book-formatting-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2256,14 +2271,15 @@ const Metas = () => {
 
                     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
                     <title>Best Book Illustration Services - Book Writing Experts</title>
-                    <meta name="description" content="Book Article Writing Services that meet the global article writing standards. Call the experts to get it done at affordable price range." />
+                    <meta name="description" content="Get the best book illustrations for your book by hiring the best book illustration services. Contact us now!" />
 
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content="Best Book Illustration Services - Book Writing Experts" />
-                    <meta property="og:description" content="Book Article Writing Services that meet the global article writing standards. Call the experts to get it done at affordable price range." />
-                    <meta property="og:url" content="https://www.bookwritingexperts.com/" />
+                    <meta property="og:description" content="Get the best book illustrations for your book by hiring the best book illustration services. Contact us now!" />
+                    <meta property="og:url" content="https://www.bookwritingexperts.com/illustration" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2310,6 +2326,7 @@ const Metas = () => {
                     <meta property="og:description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
                     <meta property="og:url" content="https://www.bookwritingexperts.com/article-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
+                    <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
                     <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <meta name="twitter:label1" content="Est. reading time" />
@@ -2352,7 +2369,7 @@ const Metas = () => {
                     <meta property="og:type" content="website" />
                     <meta property="og:title" content="Top Audiobook Production Services - Book Writing Experts" />
                     <meta property="og:description" content="Hire the best audiobook production services, we offer a simple and creative process so your audiobook can be heard worldwide. Contact our audiobook production company today!" />
-                    <meta property="og:url" content="https://www.bookwritingexperts.com/" />
+                    <meta property="og:url" content="https://www.bookwritingexperts.com/audiobookproduction" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
                     <meta name="twitter:card" content="summary_large_image" />

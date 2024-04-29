@@ -13,7 +13,7 @@ const Experts = (props) => {
           <Row>
             <Col md={12}>
               <h2 className='fw700 font50 color-white font-f t-center font-f mb-4'>{props.title}</h2>
-              <p className='fw500 color-white t-center font-f mb-3'> {props.text}</p>
+              <p className='fw500 color-white t-center font-f mb-3' dangerouslySetInnerHTML={{__html : props.text}}/>
 
               <div className={`${styles.expertnum} t-center font-f font-f`}>
                 <Link className='fw500 color-white font18 font-f' href="tel:(855) 500 0057">{props.number}</Link>
