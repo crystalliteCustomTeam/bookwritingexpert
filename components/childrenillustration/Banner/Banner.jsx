@@ -33,13 +33,13 @@ const Banner = ({
                                                 <Col>
                                                     <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="inputText" className="form-label">Full Name*</label>
-                                                        <input type="text" placeholder="Type Full Name " name="first_name" id="" />
+                                                        <input type="text" placeholder="Type Full Name " name="first_name" id="" required/>
                                                     </div>
                                                 </Col>
                                                 <Col>
                                                 <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="inputPhone" className="form-label">Phone*</label>
-                                                        <input type="phone" placeholder="123-456-7890" name="phone" id="" />
+                                                        <input type="phone" placeholder="123-456-7890" name="phone" id="" required/>
                                                     </div>
                                                 </Col>
                                             </Row>
@@ -47,7 +47,7 @@ const Banner = ({
                                                 <Col>
                                                 <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="exampleFormControlInput1" className="form-label">Email*</label>
-                                                        <input type="email" placeholder="Type Full Email" name="email" id="" />
+                                                        <input type="email" placeholder="Type Full Email" name="email" id="" required/>
                                                     </div>
                                                 </Col>
                                                 <Col>

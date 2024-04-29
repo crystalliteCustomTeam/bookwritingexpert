@@ -17,15 +17,15 @@ const Contact = ({ title, desc }) => {
                 <div className='d-flex flex-column gap-3 align-self-start justify-content-start'>
                   <div>
                     <label className='form-label'>Full Name *</label>
-                    <input type="text" className='form-control' name="name" id="" placeholder='Type Full Name ' />
+                    <input type="text" className='form-control' name="name" id="" placeholder='Type Full Name ' required/>
                   </div>
                   <div>
                     <label className='form-label'>Phone *</label>
-                    <input type="number" className='form-control' name="phone" id="" placeholder='(000) 000-0000 ' />
+                    <input type="number" className='form-control' name="phone" id="" placeholder='(000) 000-0000 ' required/>
                   </div>
                   <div>
                     <label className='form-label'>Email Address *</label>
-                    <input type="email" className='form-control' name="email" id="" placeholder='Type Email Address' />
+                    <input type="email" className='form-control' name="email" id="" placeholder='Type Email Address' required/>
                   </div>
 
                   <div>
@@ -37,12 +37,14 @@ const Contact = ({ title, desc }) => {
                     <CTA
                       text='Submit Details'
                       bg="bgGray"
+                      link="javascript:;"
                       classes={`${style.submitDetails} formbgGray py-2`}
                     />
                     <CTA
                       text="(302) 883-8877"
                       bg="bgOrange"
                       classes='py-2'
+                      link="tel:302-883-8877"
                     />
                   </div>
                 </div>

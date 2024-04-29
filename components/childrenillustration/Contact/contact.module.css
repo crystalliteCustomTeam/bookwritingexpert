@@ -32,6 +32,16 @@
     padding: 10px 0 30px;
     border-radius: 0px;
 }
+.contact input:focus{
+   outline: inherit;
+}
+.contact .form-control:focus {
+    color: #212529;
+    background-color: inherit !important;
+    border-color: inherit !important;
+    outline: inherit !important;
+    box-shadow: inherit !important;
+}
 .contact input::placeholder{
     color: #707070;
 }

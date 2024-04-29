@@ -11,6 +11,7 @@ const CTAGroup = ({
                 classes="hover:bg-secondary-100"
                 handle=""
                 bg="bgGray"
+                link="javascript:$zopim.livechat.window.show();"
             />
             <CTA
                 text="(302) 883-8877"

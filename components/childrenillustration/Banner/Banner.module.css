@@ -54,6 +54,11 @@
     padding: 5px 0px;
     width: 100%;
 }
+.childBanner .formClass input:focus {
+    border: none;
+    border-bottom: 1px solid;
+    outline: inherit;
+}
 
 .childBanner .formClass label {
     font-size: 12px;
