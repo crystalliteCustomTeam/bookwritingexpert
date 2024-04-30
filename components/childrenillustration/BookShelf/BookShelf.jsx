@@ -10,25 +10,30 @@ const BookShelf = ({
   desc,
   img1,
   img2,
-  img3
+  img3,
+  img4,
+  img5,
 }) => {
   var settings = {
     infinite: true,
+    arrows: true,
     speed: 500,
     dots: true,
     autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 991,
         settings: {
-          slidesToShow: 3, // Display 2 columns at this breakpoint
-          slidesToScroll: 3, // Scroll 2 columns at this breakpoint
+          slidesToShow: 2, // Display 2 columns at this breakpoint
+          slidesToScroll: 1, // Scroll 2 columns at this breakpoint
         }
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Display 1 column at this breakpoint
+          slidesToShow: 2, // Display 1 column at this breakpoint
           slidesToScroll: 1, // Scroll 1 column at this breakpoint
         }
       },
@@ -61,19 +66,31 @@ const BookShelf = ({
             </Col>
           </Row>
           <Row>
-            <Col md={9} className='mx-auto mt-5 mb-5'>
-              <div className={`d-md-flex flex-row d-none gap-3 align-items-center justify-content-center mb-xl-3 mb-0 px-5`}>
+            <Col md={8} className='mx-auto mt-5 mb-xl-5 mb-lg-3 mb-2'>
+              <div className={`flex-row d-none gap-3 align-items-center justify-content-center mb-xl-3 mb-0 px-5`}>
                 {img1 && <Image src={img1} alt="Children Book Illustration" width={230} height={300} className='img-fluid mx-auto' />}
                 {img2 && <Image src={img2} alt="Children Book Illustration" width={230} height={300} className='img-fluid mx-auto' />}
                 {img3 && <Image src={img3} alt="Children Book Illustration" width={230} height={300} className='img-fluid mx-auto' />}
               </div>
 
-              <div className='d-md-none d-block childrenTestimonial'>
-                <Slider {...settings}>
-                  {img1 && <Image src={img1} alt="Children Book Illustration" className='img-fluid mx-auto' />}
-                  {img2 && <Image src={img2} alt="Children Book Illustration" className='img-fluid mx-auto' />}
-                  {img3 && <Image src={img3} alt="Children Book Illustration" className='img-fluid mx-auto' />}
+              <div className='childrenTestimonial'>
+                <Row>
+                <Slider {...settings} className='mb-lg-3 mb-0'>
+                  <div>
+                    {img1 && <Image src={img1} alt="Children Book Illustration" className='img-fluid mx-auto' />}
+                  </div>
+                  <div>
+                    {img2 && <Image src={img2} alt="Children Book Illustration" className='img-fluid mx-auto' />}
+                  </div>
+                  <div>
+                    {img3 && <Image src={img3} alt="Children Book Illustration" className='img-fluid mx-auto' />}
+                  </div>
+                  <div>{img4 && <Image src={img4} alt="Children Book Illustration" className='img-fluid mx-auto' />}</div>
+                  <div>
+                    {img5 && <Image src={img5} alt="Children Book Illustration" className='img-fluid mx-auto' />}
+                  </div>
                 </Slider>
+                </Row>
               </div>
 
 

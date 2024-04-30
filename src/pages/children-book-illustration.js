@@ -6,9 +6,11 @@ import card2 from '../../public/images/childrenillustration/oriented-content.png
 import card3 from '../../public/images/childrenillustration/device-compatibility.png'
 import card4 from '../../public/images/childrenillustration/easy-upload.png'
 // import img1 from '../../public/images/childrenillustration/table-with-book.png'
-import img1 from '../.../../../public/images/childrenillustration/BookShelf-img11.png'
-import img2 from '../.../../../public/images/childrenillustration/BookShelf-img12.png'
-import img3 from '../.../../../public/images/childrenillustration/BookShelf-img13.png'
+import img1 from '../.../../../public/images/childrenillustration/Bookshelf-1.png'
+import img2 from '../.../../../public/images/childrenillustration/Bookshelf-2.png'
+import img3 from '../.../../../public/images/childrenillustration/Bookshelf-3.png'
+import img4 from '../.../../../public/images/childrenillustration/Bookshelf-4.png'
+import img5 from '../.../../../public/images/childrenillustration/Bookshelf-5.png'
 
 import testimonialImg1 from '../.../../../public/images/childrenillustration/business avatar-02.png'
 import testimonialImg2 from '../.../../../public/images/childrenillustration/business avatar-11.png'
@@ -112,6 +114,8 @@ const childrenBookIllustration = () => {
         img1={img1}
         img2={img2}
         img3={img3}
+        img4={img4}
+        img5={img5}
 
       />
       <BookPortfolio

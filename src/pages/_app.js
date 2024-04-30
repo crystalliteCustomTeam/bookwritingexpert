@@ -96,7 +96,7 @@ export default function App({ Component, pageProps }) {
         <Footer />
       }
       <div>
-        <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
+        {/* <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} /> */}
       </div>
     </>
   );
