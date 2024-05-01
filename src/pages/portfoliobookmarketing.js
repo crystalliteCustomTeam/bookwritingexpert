@@ -33,10 +33,11 @@ const ourportfolio = () => {
         <>
 
             <Head>
-                <title>Book Marketing</title>
+                <title>Book Marketing Portfolio</title>
                 <link rel="icon" href="/favicon.svg" />
-                <meta property="og:title" content="Book Marketing Portfolio"/>
-                <meta property="og:description" content="Check out the extensive book marketing portfolio of Book Writing Experts and see how we market best-sellers"/>
+                <meta name="description" content="Check out the extensive book marketing portfolio of Book Writing Experts and see how we market best-sellers" />
+                <meta property="og:title" content="Book Marketing Portfolio" />
+                <meta property="og:description" content="Check out the extensive book marketing portfolio of Book Writing Experts and see how we market best-sellers" />
             </Head>
 
 
@@ -44,17 +45,17 @@ const ourportfolio = () => {
 
             <section className={styles.ourportfolio}>
 
-            <div className={styles.banner}>
-                  <div className={styles.heading}>
-                  <h1 className='color-black font70 t-center linhight mb-4'>Our <br></br> Marketing</h1>
-                    <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
-                  </div>
+                <div className={styles.banner}>
+                    <div className={styles.heading}>
+                        <h1 className='color-black font70 t-center linhight mb-4'>Our <br></br> Marketing</h1>
+                        <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
+                    </div>
                 </div>
 
 
 
                 <Container className={styles.rate1}>
-                
+
 
 
                     <Row className='mt-5'>
@@ -71,13 +72,13 @@ const ourportfolio = () => {
                             <Image src={bookpublishing4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
-               
-
-      
-                 
 
 
-                   
+
+
+
+
+
                     <Row className='mt-5'>
                         <Col md={3}>
                             <Image src={bookwriting1} className='img-fluid' alt="Book Writing Experts"></Image>
@@ -95,10 +96,10 @@ const ourportfolio = () => {
 
 
 
-       
 
-             
-                  
+
+
+
 
                     <Row className='mt-5'>
                         <Col md={3}>
@@ -114,17 +115,17 @@ const ourportfolio = () => {
                             <Image src={bookediting4} className='img-fluid' alt="Book Writing Experts"></Image>
                         </Col>
                     </Row>
-                   
 
 
 
-             
-
-           
-                   
 
 
-                 
+
+
+
+
+
+
 
                     <Row className='mt-5'>
                         <Col md={3}>
@@ -142,7 +143,7 @@ const ourportfolio = () => {
                     </Row>
 
 
-                    </Container>
+                </Container>
 
 
 
