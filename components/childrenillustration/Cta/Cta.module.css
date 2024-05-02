@@ -16,9 +16,9 @@
 }
 .ctaSection h3{
     font-family: "SF Pro Display", sans-serif;
-    font-size: 60px;
-    line-height: 70px;
-    margin-top: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 .ctaSection p{
@@ -28,11 +28,11 @@
     margin-bottom: 20px;
 }
 
-@media (max-width:1199px) {
+@media (max-width:1199.98px) {
     .ctaSection h3{
         font-family: "SF Pro Display", sans-serif;
-        font-size: 40px;
-        line-height: 45px;
+        font-size: 30px;
+        line-height: 40px;
         margin-top: 50px;
     }
     .ctaSection p{
@@ -46,8 +46,8 @@
 @media (max-width:991.98px) {
     .ctaSection h3{
         font-family: "SF Pro Display", sans-serif;
-        font-size: 35px;
-        line-height: 45px;
+        font-size: 25px;
+        line-height: 35px;
 
     }
     .ctaSection p{

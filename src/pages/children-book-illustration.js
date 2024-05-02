@@ -91,8 +91,8 @@ const childrenBookIllustration = () => {
   return (
     <>
       <Banner
-        subtitle="Your Result To "
-        title="Find an Illustrator for My Book"
+        subtitle="Your Result To Find An "
+        title="Illustrator For My Book"
         desc="Let story book illustrations ignite imagination for children to see and learn from. After all, a picture is worth a thousand words. "
         formTitle="Request A Free Quote"
       />
