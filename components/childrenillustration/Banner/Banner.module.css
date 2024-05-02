@@ -24,8 +24,8 @@
 }
 
 .childBanner h1 {
-    font-size: 100px;
-    line-height: 110px;
+    font-size: 70px;
+    line-height: 80px;
     color: #F7981D;
 }
 
@@ -75,8 +75,8 @@
 
 @media (max-width:1199.98px) {
     .childBanner h1 {
-        font-size: 80px;
-        line-height: 90px;
+        font-size: 50px;
+        line-height: 60px;
     }
     .childBanner h3 {
         font-size: 30px;
@@ -102,6 +102,7 @@
         font-size: 60px;
         line-height: 65px;
         color: #F7981D;
+        text-align: center;
     }
     .childBanner p {
         font-size: 16px;

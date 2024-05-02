@@ -39,24 +39,24 @@ const cardData = [
 ]
 const processData = [
   {
-    number: "01",
-    title: 'Place an order',
-    desc: 'Provide a brief overview of your ideas and information about your book in our order form. If you’re not sure what you want to see on the cover, we’ll gladly help you.'
+    number: "Step 01",
+    title: 'Understanding the Client’s Visual',
+    desc: 'We commence our book illustration process by understanding what our client wants their childrens book character to look like. Once decided, we offer our book illustration rates to proceed with the project.'
   }, 
   {
-    number: "02",
-    title: 'First Draft in 4-7 Business Days',
-    desc: "After we've discussed all the details with you, our illustrators get to work. You'll receive the first black and white sketch in 4-7 days."
+    number: "Step 02",
+    title: 'Detailed Interviews with the Client',
+    desc: "Our picture book illustrators have a detailed correspondence with the client about the attributes they want in each childrens book character."
   },
   {
-    number: "03",
-    title: 'Revision process',
-    desc: "We work with you tightly to make your book illustration look as you always imagined. That’s why we don’t limit the number of revisions."
+    number: "Step 03",
+    title: 'Illustrations Begin',
+    desc: "Once the book illustrators have the needed information, they head off for their storyboard. "
   },
   {
-    number: "04",
-    title: 'Delivery',
-    desc: "Once satisfied with the final look of your book. We will deliver your project as commited."
+    number: "Step 04",
+    title: 'Client’s Feedback',
+    desc: "Here, the picture book illustrators share their drafts via our portal for the client to review."
   },
 ]
 
@@ -91,26 +91,26 @@ const childrenBookIllustration = () => {
   return (
     <>
       <Banner
-        subtitle="Custom Book"
-        title="illustration"
-        desc="We are helping you to share your story with kids that stimulate their <br class='d-lg-none d-block'/> imagination and boom their interest in your stories."
+        subtitle="Your Result To "
+        title="Find an Illustrator for My Book"
+        desc="Let story book illustrations ignite imagination for children to see and learn from. After all, a picture is worth a thousand words. "
         formTitle="Request A Free Quote"
       />
       <Card
         title="<span className='txtOrange'>Children's</span> Book Illustration Services"
         subtile=""
-        desc="Designing a children's book can be quite hectic since we cannot comprehend their choice, but our highly experienced and qualified illustrators can create something that people of all ages would love to read. We make sure that you get to relive your childhood and make children love everything about reading. Our Illustration will surely attract more conversions for your book."
+        desc="Looking to paint a burst of excitement into your children’s book with creativity? At Book Writing Experts, we boast the market’s most polished, gifted, and elite children’s book illustrators ready to bring your aesthetic vision."
         card={cardData}
 
       />
       <Cta
-        title='Talk To Us Today!'
-        desc='Share your exciting ideas with <br/> our bookwritingcube.com for the best results.'
+        title='Leading Children’s Book Illustration Services!'
+        desc='Share your exciting ideas with <br/> our bookwritingexperts.com for the best results.'
       />
 
       <BookShelf
         title="Some Of Our Best Children’s Books"
-        desc="We've created exceptional illustrations for countless children’s books across various genres. Have a look out some of our best work so far."
+        desc="We define the story book illustrations our client desires, be it a fantasy book illustrations, comics, or any other kind. Check out our work."
         img1={img1}
         img2={img2}
         img3={img3}
@@ -120,7 +120,7 @@ const childrenBookIllustration = () => {
       />
       <BookPortfolio
         title="Some Of Our Best Children’s <br class='d-lg-none'/> Book Illustrations"
-        desc={`We've created exceptional illustrations for countless children's books across various genres. Have a look out some of our best work so far.`}
+        desc={`There is a reason we are the leading book illustration company, but we’ll let our work walk the talk!`}
       />
 
       <BookProcess
@@ -130,12 +130,13 @@ const childrenBookIllustration = () => {
       />
       <Testimonial
         title="The Stamp Of Approval For Our Services"
+        desc="Our client’s feedback follows through our service excellence philosophy at Book Writing Experts"
         dataTestimonial={testimonial}
       />
       <Logos/>
       <Contact
         title="Contact Us"
-        desc="Ready to turn the page on your publishing dreams? Let us write your success story together! Choose our book publishing company and let your words come to life. Start your literary journey now!"
+        desc="We know the effort book illustration process takes, so why not hire a book illustration company? We are only a call, message, or email away! Let’s collaborate."
       />
 
     </>
