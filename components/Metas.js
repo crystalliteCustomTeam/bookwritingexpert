@@ -2554,6 +2554,7 @@ const Metas = () => {
             ) : newpath === '/how-much-does-it-costs-to-market-a-book' ? (
 
                 <Head>
+                    <meta name="robots" content="noindex" />
                     <link rel="icon" href="/favicon.svg" />
                     <title> How Much It Costs to Market a Book? </title>
                     <meta name="description" content="Get ahead in book marketing with our professional advice on successful budgeting. Get your answer to the question of how much it costs to market a book."
@@ -2614,6 +2615,51 @@ const Metas = () => {
                         type="application/ld+json"
                         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemambspdlp10) }}
                     />
+                </Head>
+            ) : newpath === '/book-marketing-services-cost' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+            ) : newpath === '/amazon-publishing-services-the-future-of-publishing' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+
+            ) : newpath === '/you-too-can-be-a-published-author-with-the-courtesy-of-amazon-publishing-services' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+
+            ) : newpath === '/affordable-book-marketing-services' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+
+            ) : newpath === '/hire-book-marketing-company-florida' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+            ) : newpath === '/7-benefits-of-hiring-an-amazon-book-marketing-company' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+            ) : newpath === '/top-3-reasons-why-authors-need-book-marketing-services' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+
+            ) : newpath === '/7-strategies-used-by-book-marketing-company-to-increase-book-sales-on-amazon' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+            ) : newpath === '/book-marketing-services-for-self-published-authors' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                </Head>
+
+            ) : newpath === '/4-creative-strategies-used-by-book-marketing-services-companies' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
                 </Head>
             ) : null
 
