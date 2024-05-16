@@ -31,7 +31,7 @@ export default function BlogHome({ allPosts }) {
 
     return (
         <>
-         
+
 
             <BlogListing />
 
@@ -105,7 +105,7 @@ export default function BlogHome({ allPosts }) {
                                     </Link>
                                 </div>
 
-                              <Blogform />
+                                <Blogform />
 
                             </Col>
                         </Row>
