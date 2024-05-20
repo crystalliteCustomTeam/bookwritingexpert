@@ -7,7 +7,7 @@ import Router from "next/router";
 import styles from "@/styles/ContactUs.module.css";
 
 // Image
-import Contact from "public/images/amazonbookpublishing/contactImage.png";
+import Contact from "../public/images/amazonbookpublishing/contactImage.png";
 import Image from "next/image";
 
 const ContactUs = () => {
