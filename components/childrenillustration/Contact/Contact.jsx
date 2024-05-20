@@ -1,10 +1,91 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import style from '../Contact/contact.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import contactImg from '../../../public/images/childrenillustration/contact-img.png'
 import CTA from '../../CTA/CTA'
+import Axios from "axios";
+import Router, { useRouter } from 'next/router'
+
 const Contact = ({ title, desc }) => {
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
+  }
+  useEffect(() => {
+    getIPData()
+  }, [])
+  const [score, setScore] = useState('Best time to jump on a quick call:');
+
+
+  const router = useRouter();
+  const currentRoute = router.pathname;
+
+  const handleSubmit = async (e) => {
+
+    e.preventDefault()
+
+
+    const data = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+      pageUrl: currentRoute,
+    }
+
+    const JSONdata = JSON.stringify(data)
+
+    setScore('Sending Data');
+
+
+
+    fetch('api/email/route', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSONdata
+    }).then((res) => {
+      console.log(`Response received ${res}`)
+      if (res.status === 200) {
+        console.log(`Response Successed ${res}`)
+      }
+    })
+
+
+    var currentdate = new Date().toLocaleString() + ''
+    let headersList = {
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
+      "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      "Brand": "BOOK-WRITING-EXPERT",
+      "Page": `${currentRoute}`,
+      "Date": currentdate,
+      "Time": currentdate,
+      "JSON": JSONdata,
+    });
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
+    });
+
+    const { pathname } = Router
+    if (pathname == pathname) {
+      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+    }
+
+  }
   return (
     <section>
       <div className={`${style.contact}`}>
@@ -13,19 +94,19 @@ const Contact = ({ title, desc }) => {
             <Col lg={6} md={12} className='px-4'>
               <h3 className='fw700 font_50' dangerouslySetInnerHTML={{ __html: title }} />
               <p className='' dangerouslySetInnerHTML={{ __html: desc }} />
-              <form method='post' className='bg-white py-3'>
+              <form method='post' className='bg-white py-3' onSubmit={handleSubmit}>
                 <div className='d-flex flex-column gap-3 align-self-start justify-content-start'>
                   <div>
                     <label className='form-label'>Full Name *</label>
-                    <input type="text" className='form-control' name="name" id="" placeholder='Type Full Name ' required/>
+                    <input type="text" className='form-control' name="name" id="" placeholder='Type Full Name ' required />
                   </div>
                   <div>
                     <label className='form-label'>Phone *</label>
-                    <input type="number" className='form-control' name="phone" id="" placeholder='(000) 000-0000 ' required/>
+                    <input type="number" className='form-control' name="phone" id="" placeholder='(000) 000-0000 ' required />
                   </div>
                   <div>
                     <label className='form-label'>Email Address *</label>
-                    <input type="email" className='form-control' name="email" id="" placeholder='Type Email Address' required/>
+                    <input type="email" className='form-control' name="email" id="" placeholder='Type Email Address' required />
                   </div>
 
                   <div>
@@ -37,8 +118,8 @@ const Contact = ({ title, desc }) => {
                     <CTA
                       text='Submit Details'
                       bg="bgGray"
-                      link="javascript:;"
                       classes={`${style.submitDetails} formbgGray py-2`}
+                      btn={true}
                     />
                     <CTA
                       text="(302) 883-8877"

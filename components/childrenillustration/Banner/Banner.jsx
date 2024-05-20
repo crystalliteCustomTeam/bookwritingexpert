@@ -1,16 +1,96 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from './Banner.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import homeBanner from "../../../public/images/childrenillustration/homeBanner.png"
 import CTAGroup from '../../CTAGroup/CTAGroup'
+import Router, { useRouter } from 'next/router'
+import Axios from "axios";
+
 const Banner = ({
     subtitle,
     title,
     desc,
     formTitle
 }) => {
+
+    const [ip, setIP] = useState('');
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        setIP(res.data);
+    }
+    useEffect(() => {
+        getIPData()
+    }, [])
+    const [score, setScore] = useState('Best time to jump on a quick call:');
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
+    const handleSubmit = async (e) => {
+
+        e.preventDefault()
+
+
+        const data = {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
+            pageUrl: currentRoute,
+        }
+
+        const JSONdata = JSON.stringify(data)
+
+        setScore('Sending Data');
+
+
+
+        fetch('api/email/route', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body: JSONdata
+        }).then((res) => {
+            console.log(`Response received ${res}`)
+            if (res.status === 200) {
+                console.log(`Response Successed ${res}`)
+            }
+        })
+
+
+        var currentdate = new Date().toLocaleString() + ''
+        let headersList = {
+            "Accept": "*/*",
+            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+            "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+            "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+            "Brand": "BOOK-WRITING-EXPERT",
+            "Page": `${currentRoute}`,
+            "Date": currentdate,
+            "Time": currentdate,
+            "JSON": JSONdata,
+        });
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        });
+
+        const { pathname } = Router
+        if (pathname == pathname) {
+            window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+        }
+
+    }
+
     return (
         <section>
             <div>
@@ -28,38 +108,38 @@ const Banner = ({
                                         <div className='d-flex align-items-center justify-content-center'>
                                             <h4 className='fw600' dangerouslySetInnerHTML={{ __html: formTitle }} />
                                         </div>
-                                        <form method='post' action=''>
+                                        <form method='post' onSubmit={handleSubmit}>
                                             <Row>
                                                 <Col>
                                                     <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="inputText" className="form-label">Full Name*</label>
-                                                        <input type="text" placeholder="Type Full Name " name="first_name" id="" required/>
+                                                        <input type="text" placeholder="Type Full Name " name="name" id="" required />
                                                     </div>
                                                 </Col>
                                                 <Col>
-                                                <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
+                                                    <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="inputPhone" className="form-label">Phone*</label>
-                                                        <input type="phone" placeholder="123-456-7890" name="phone" id="" required/>
+                                                        <input type="phone" placeholder="123-456-7890" name="phone" id="" required />
                                                     </div>
                                                 </Col>
                                             </Row>
                                             <Row className='mt-3'>
                                                 <Col>
-                                                <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
+                                                    <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="exampleFormControlInput1" className="form-label">Email*</label>
-                                                        <input type="email" placeholder="Type Full Email" name="email" id="" required/>
+                                                        <input type="email" placeholder="Type Full Email" name="email" id="" required />
                                                     </div>
                                                 </Col>
                                                 <Col>
-                                                <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
+                                                    <div className='d-flex flex-column align-items-start d-block mb-0 w-100'>
                                                         <label for="exampleFormControlTextarea1" className="form-label">Message*</label>
-                                                        <input type="message" placeholder="" name="phone" id="" />
+                                                        <input type="message" placeholder="" name="message" id="" />
                                                     </div>
                                                 </Col>
                                             </Row>
 
                                             <div className='d-flex justify-content-center mt-4'>
-                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`}>Submit Details</button>
+                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`} type='submit'>Submit Details</button>
                                             </div>
                                         </form>
                                     </div>
