@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "@/styles/Publication.module.css"
 
 // images
-import PublicImage from "public/images/amazonbookpublishing/publication_image.png"
+import PublicImage from "../public/images/amazonbookpublishing/publication_image.png"
 import Image from "next/image";
 
 const Publications = () => {

@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "@/styles/Publicationlp.module.css"
 
 // images
-import PublicImage from "public/images/newlp/dem.png"
+import PublicImage from "../public/images/newlp/dem.png"
 import Image from "next/image";
 
 const Publications = () => {

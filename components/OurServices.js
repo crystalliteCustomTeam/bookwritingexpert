@@ -5,13 +5,13 @@ import styles from "@/styles/OurServices.module.css";
 import Image from "next/image";
 
 // Images
-import Client1 from "public/images/amazonbookpublishing/testi1.png";
-import Client2 from "public/images/amazonbookpublishing/testi2.png";
-import Client3 from "public/images/amazonbookpublishing/jacob-hartley.png";
-import Client4 from "public/images/amazonbookpublishing/matthew-udoni.png";
-import Client5 from "public/images/amazonbookpublishing/benjamin-norris.png";
-import Client6 from "public/images/amazonbookpublishing/andrew-peters.png";
-import Star from "public/images/amazonbookpublishing/star.png";
+import Client1 from "../public/images/amazonbookpublishing/testi1.png";
+import Client2 from "../public/images/amazonbookpublishing/testi2.png";
+import Client3 from "../public/images/amazonbookpublishing/jacob-hartley.png";
+import Client4 from "../public/images/amazonbookpublishing/matthew-udoni.png";
+import Client5 from "../public/images/amazonbookpublishing/benjamin-norris.png";
+import Client6 from "../public/images/amazonbookpublishing/andrew-peters.png";
+import Star from "../public/images/amazonbookpublishing/star.png";
 
 const OurServices = () => {
   var partnersslider = {

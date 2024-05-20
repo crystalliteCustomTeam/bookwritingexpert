@@ -8,8 +8,8 @@ import YellowBtn from "./YellowBtn";
 import Image from "next/image";
 
 // Images
-import Service1 from "public/images/amazonbookpublishing/service1.png";
-import Service2 from "public/images/amazonbookpublishing/service2.png"; 
+import Service1 from "../public/images/amazonbookpublishing/service1.png";
+import Service2 from "../public/images/amazonbookpublishing/service2.png"; 
 
 const Services = () => {
   const btnShadow = true;

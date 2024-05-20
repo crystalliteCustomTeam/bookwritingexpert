@@ -6,7 +6,7 @@ import WhiteBtn from "./WhiteBtn";
 import Image from "next/image";
 
 // Images
-import Choose from "public/images/amazonbookpublishing/chooseImage.png";
+import Choose from "../public/images/amazonbookpublishing/chooseImage.png";
 
 const ServiceWhyChoose = () => {
   const btnShadow = true;

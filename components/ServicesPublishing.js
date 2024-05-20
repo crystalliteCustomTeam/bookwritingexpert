@@ -6,12 +6,12 @@ import Slider from "react-slick";
 import styles from "@/styles/ServicePublishing.module.css";
 import Image from "next/image";
 
-import RightArrow from "public/images/amazonbookpublishing/right-arrow.png";
-import LeftArrow from "public/images/amazonbookpublishing/left-arrow.png";
-import Book1 from "public/images/amazonbookpublishing/publishRight1.png";
-import Book3 from "public/images/amazonbookpublishing/publishRight3.png";
-import Book4 from "public/images/amazonbookpublishing/publishRight4.png";
-import Book5 from "public/images/amazonbookpublishing/publishRight5.png";
+import RightArrow from "../public/images/amazonbookpublishing/right-arrow.png";
+import LeftArrow from "../public/images/amazonbookpublishing/left-arrow.png";
+import Book1 from "../public/images/amazonbookpublishing/publishRight1.png";
+import Book3 from "../public/images/amazonbookpublishing/publishRight3.png";
+import Book4 from "../public/images/amazonbookpublishing/publishRight4.png";
+import Book5 from "../public/images/amazonbookpublishing/publishRight5.png";
 
 const ServicesPublishing = (props) => {
   const [activeSlide, setActiveSlide] = useState(0);

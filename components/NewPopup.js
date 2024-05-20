@@ -7,8 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 // Importing image components
-import BellIcon from "public/images/popup/bell-icon.png";
-import Speaker from "public/images/popup/mic-icon.png";
+import BellIcon from "../public/images/popup/bell-icon.png";
+import Speaker from "../public/images/popup/mic-icon.png";
 import Router from "next/router";
 
 // Main component definition

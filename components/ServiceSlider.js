@@ -3,11 +3,11 @@ import React from "react";
 import Slider from "react-slick";
 
 // Images
-import Book1 from "public/images/amazonbookpublishing/publishRight1.png";
-import Book2 from "public/images/amazonbookpublishing/publishRight2.png";
-import Book3 from "public/images/amazonbookpublishing/publishRight3.png";
-import Book4 from "public/images/amazonbookpublishing/publishRight4.png";
-import Book5 from "public/images/amazonbookpublishing/publishRight5.png";
+import Book1 from "../public/images/amazonbookpublishing/publishRight1.png";
+import Book2 from "../public/images/amazonbookpublishing/publishRight2.png";
+import Book3 from "../public/images/amazonbookpublishing/publishRight3.png";
+import Book4 from "../public/images/amazonbookpublishing/publishRight4.png";
+import Book5 from "../public/images/amazonbookpublishing/publishRight5.png";
 
 const ServiceSlider = () => {
   var partnersslider = {

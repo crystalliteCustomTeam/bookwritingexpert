@@ -4,11 +4,11 @@ import styles from "@/styles/PublishProcess.module.css";
 import Image from "next/image";
 
 // Images
-import Publish1 from "public/images/amazonbookpublishing/publish1.png";
-import Publish2 from "public/images/amazonbookpublishing/publish2.png";
-import Publish3 from "public/images/amazonbookpublishing/publish3.png";
-import Publish4 from "public/images/amazonbookpublishing/publish4.png";
-import Publish5 from "public/images/amazonbookpublishing/publish5.png";
+import Publish1 from "../public/images/amazonbookpublishing/publish1.png";
+import Publish2 from "../public/images/amazonbookpublishing/publish2.png";
+import Publish3 from "../public/images/amazonbookpublishing/publish3.png";
+import Publish4 from "../public/images/amazonbookpublishing/publish4.png";
+import Publish5 from "../public/images/amazonbookpublishing/publish5.png";
 import Slider from "react-slick";
 
 const PublishProcess = () => {
