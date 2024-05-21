@@ -70,7 +70,7 @@ const Whatourclients = () => {
               <h3 className='font18 fw700 color-blue mb-4'>Client Testimonials </h3>
               <h2 className={styles.value}>The Stamp of Approval for Our Services</h2>
               <p className={` ${styles.canva} font15 fw100 font-f color-black`}>
-                Book Writing Experts(BWE) has been an absolute lifesaver for me. Their ghostwriting services exceeded my expectations, as they skillfully transformed my ideas into a captivating story. Although there were a few minor hiccups during the ghostwriting process, such as some initial miscommunication about the tone and style I wanted for my book, BWE&#8217;s team was quick to address these concerns. They took the time to understand my vision and made the necessary adjustments to ensure the final product aligned with my expectations.
+                Book Writing Experts(BWE) has been an absolute lifesaver for me. Their book writing services exceeded my expectations, as they skillfully transformed my ideas into a captivating story. Although there were a few minor hiccups during the book writing process, such as some initial miscommunication about the tone and style I wanted for my book, BWE&#8217;s team was quick to address these concerns. They took the time to understand my vision and made the necessary adjustments to ensure the final product aligned with my expectations.
               </p>
 
               <div className={styles.clientData}>

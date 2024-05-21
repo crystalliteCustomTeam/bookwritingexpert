@@ -20,7 +20,7 @@ const Pricing = () => {
 
   const priceHead = <h1 className='font50 fw700 color-blue'>The World Awaits Your Masterpiece!</h1>
 
-  const exprtSpan = <span className='fw500 font50 color-white font-f t-center font-f mb-4'><span className='color-blue fw700'>Book Writing Experts</span> Is waiting for you to Ask for a <span className='color-blue fw700'>Professional Ghostwriter</span></span>;
+  const exprtSpan = <span className='fw500 font50 color-white font-f t-center font-f mb-4'><span className='color-blue fw700'>Book Writing Experts</span> Is waiting for you to Ask for a <span className='color-blue fw700'>Professional Bookwriter</span></span>;
 
   const discuss = <span>LET'S DISCUSS</span>
 
@@ -69,7 +69,7 @@ const Pricing = () => {
 
       <BookProofRead />
 
-      <BookGhostWriting />
+      {/* <BookGhostWriting /> */}
 
       <BookChildrenPublish />
 
@@ -80,7 +80,7 @@ const Pricing = () => {
       {/* Talk To Our Experts! */}
       <Experts
         title={exprtSpan}
-        text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
+        text="Hit us a message, or give us a call, and make the most of our Professional Bookwriters."
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />

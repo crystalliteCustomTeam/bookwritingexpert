@@ -7,14 +7,14 @@ import Faqslist from '../../components/Faqslist'
 
 const Faqs = () => {
 
-  const faqsHead = <h1 className='font50 fw700 color-blue'>Create An Impact With Our Non Fiction ghostwriting Services</h1>
+  const faqsHead = <h1 className='font50 fw700 color-blue'>Create An Impact With Our Non Fiction bookwriting Services</h1>
 
   const discuss = <span>LET'S DISCUSS</span>
 
   const bannertext = [
     {
       title: faqsHead,
-      pra: 'At highly affordable pricing, we bring our team of competent non fiction ghostwriters with their promising expertise',
+      pra: 'At highly affordable pricing, we bring our team of competent non fiction bookwriters with their promising expertise',
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
