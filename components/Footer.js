@@ -226,7 +226,7 @@ const Footer = () => {
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/book-proofreading-services">Proofreading Services</Link></li>
 
-                <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/ghostwriting-services">Ghostwriting</Link></li>
+                {/* <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/ghostwriting-services">Ghostwriting</Link></li> */}
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/children-book-publication-services">Children Book Publication</Link></li>
 

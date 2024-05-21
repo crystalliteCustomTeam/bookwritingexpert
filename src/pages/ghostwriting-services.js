@@ -176,10 +176,6 @@ const Bookpublishingservices = () => {
 
   return (
     <>
-    
-
-
-
 
       {/* banner components */}
 

@@ -75,7 +75,7 @@ export default function Home() {
       <span className="">Your ONE-STOP</span>{" "}
       <Link className="dblockmobile textdocationnone color-blue hover" href="/">
         {" "}
-        Ghostwriting, Editing And Publishing Service{" "}
+        Book Editing And Publishing Service{" "}
       </Link>{" "}
       <span className="">Provider!</span>{" "}
     </h1>
