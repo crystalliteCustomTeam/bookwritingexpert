@@ -1889,7 +1889,7 @@ const Metas = () => {
                     <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
                     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-                    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+                    {/* <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> */}
                     <title>Top-Tier Ghostwriting Services - Book Writing Experts</title>
                     <meta name="description" content="Ghostwriting services that help aspiring authors launch into success. Get them today, as they are affordable and executed to perfection." />
 
