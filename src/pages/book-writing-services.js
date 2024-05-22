@@ -302,7 +302,7 @@ const Bookpublishingservices = () => {
         num1='01'
 
         heading2='The Writing Phase Begins'
-        para2='Our skilled ghostwriters begin writing, keeping in mind your writing philosophy and ideas, in accordance with the framework.'
+        para2='Our skilled bookwriters begin writing, keeping in mind your writing philosophy and ideas, in accordance with the framework.'
         num2='02'
 
         heading3='Q/A and Submission'

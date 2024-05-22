@@ -145,7 +145,7 @@ const Digitalmarketingservices = () => {
 
       <Stopworrying
         title='Conquer the Challenges of Book Selling!'
-        subtitle='One-Stop Solution For Ghostwriting, Promoting, And Branding Your Digital Riches.'
+        subtitle='One-Stop Solution For bookwriting, Promoting, And Branding Your Digital Riches.'
         subtitle2='Trust your books to be crafted by our team of professional writers.'
         btn1='Get a free Proposal'
         btn2='Hire Our Digital Book Marketing Services Now! '

@@ -211,11 +211,11 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                            checked={checkboxes.includes('Ghostwriting--I want to hire a professional to write or rewrite my book')}
+                                            checked={checkboxes.includes('bookwriting--I want to hire a professional to write or rewrite my book')}
                                             onChange={handleOptionChange3}
-                                            value='Ghostwriting--I want to hire a professional to write or rewrite my book' />
+                                            value='bookwriting--I want to hire a professional to write or rewrite my book' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
-                                                Ghostwriting--I want to hire a professional to write or rewrite my book
+                                                bookwriting--I want to hire a professional to write or rewrite my book
                                             </label>
                                         </div>
                                     </Col>

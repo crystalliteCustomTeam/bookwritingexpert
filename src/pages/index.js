@@ -63,7 +63,7 @@ export default function Home() {
           className="dblockmobile color-blue hover textdocationnone"
           href="/"
         >
-          Professional Ghostwriter
+          Professional Book Writer
         </Link>
       </span>
     </span>
@@ -155,7 +155,7 @@ export default function Home() {
         {/* Talk To Our Experts! */}
         <Experts
           title={exprtSpan}
-          text="Hit us a message, or give us a call, and make the most of our <a href='https://www.bookwritingexperts.com/ghostwriting-services' class='textdocationnone text-white hover'>Professional Ghostwriters</a>."
+          text="Hit us a message, or give us a call, and make the most of our <a href='https://www.bookwritingexperts.com/ghostwriting-services' class='textdocationnone text-white hover'>Professional Book Writers</a>."
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
