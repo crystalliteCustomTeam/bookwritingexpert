@@ -16,5 +16,5 @@ export default async function graphqlRequest(query) {
 
     const resJson = await res.json();
     return resJson;
-
+ 
 }
