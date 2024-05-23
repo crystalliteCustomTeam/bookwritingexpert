@@ -264,7 +264,7 @@ const Header = () => {
                             </div>
                             <div className={`${styles.megaImgTxt} mt-4`}>
                               <p className='font15 fw700'>Book a call with one of our experts</p>
-                              <p className='font14'>Book a call with one of our experts get a customized solution by best publishing services Book Writing Experts Is waiting for you to Ask for a Professional Ghostwriter.</p>
+                              <p className='font14'>Book a call with one of our experts get a customized solution by best publishing services Book Writing Experts Is waiting for you to Ask for a Professional Writer.</p>
                               <Link href="tel:8555000057" className='text-white'>Book A Free Call
                                 <FaLocationArrow />
                               </Link>
