@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 const homebannerlogos = await import("/public/images/bannerimages/logos.png");
-const whychoose = await import("/public/images/whychoosebooks/bg-img.png");
+const whychoose = await import("/public/images/whychoosebooks/bg-img.webp");
 // import components
 const Banner = dynamic(() => import('../../components/Banner'));
 const Partners = dynamic(() => import('../../components/Partners'));
@@ -49,24 +49,10 @@ function Audiobookproduction() {
     }
   ]
 
-
-
-
-
-
-
-
-
   return (
     <>
 
-
-   
-
-
-      {/* googletagmanager */}
-
-   
+      {/* googletagmanager */}   
 
       <main>
         {/* banner components */}
