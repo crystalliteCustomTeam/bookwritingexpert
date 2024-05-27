@@ -128,7 +128,7 @@ const Getstarted = (props) => {
               {/* <input type="number" className={styles.formfree} required name="phone" placeholder="Phone Number" /> */}
               <select name="services" className={`${styles.formfree} ${styles.formdrop}`}>
                 <option value="">Please select Service(s)</option>
-                <option value="Ghost Writing">Ghost Writing</option>
+                {/* <option value="Ghost Writing">Ghost Writing</option> */}
                 <option value="Editing">Editing</option>
                 <option value="Publishing">Publishing</option>
                 <option value="Proofreading">Proofreading</option>
