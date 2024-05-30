@@ -16,7 +16,7 @@ const Aspiring = (props) => {
                         <Col md={7}>
 
                             <h2 className="fw700 font50 colortextgrey font-f mb-4">{props.title}</h2>
-                            <p className='color-lightgray font14 fw400 font-f mt-3'>{props.text}</p>
+                            <p className='color-lightgray font14 fw400 font-f mt-3' dangerouslySetInnerHTML={{__html: props.text }} />
                             <p className='color-lightgray font14 fw400 font-f mt-3'>{props.subtext}</p>
 
 

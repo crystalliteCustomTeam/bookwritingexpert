@@ -16,7 +16,7 @@ const Finetoothedbook = (props) => {
 
           <Image loading="lazy" alt="Book Writing Experts" src={props.img1} className='img-fluid' />
 
-          <h4 className="font20 fw600 colorexpertgrey font-f t-center">{props.title}</h4>
+          <h3 className="font20 fw600 colorexpertgrey font-f t-center">{props.title}</h3>
 
           {props.text ?
           <div className='scrollBox'>

@@ -19,7 +19,7 @@ const Selfpublishing = (props) => {
 
                             <div className={styles.cube}>
 
-                                <h3 className="fw700 font50 colorexpertgrey font-f mb-2">{props.title}</h3>
+                                <h2 className="fw700 font50 colorexpertgrey font-f mb-2">{props.title}</h2>
                                 <p className='font15  font-f textcolor'>{props.text}</p>
                                 {props.subtext ?
 

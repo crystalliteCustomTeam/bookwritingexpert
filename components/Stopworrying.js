@@ -18,7 +18,7 @@ const Stopworrying = (props) => {
 
             {props.title2 ?
 
-              <h3 className='font50 font-f t-center color-white fw300'> {props.title2} </h3>
+              <h2 className='font50 font-f t-center color-white fw300'> {props.title2} </h2>
               :
 
               ''
@@ -67,7 +67,7 @@ const Stopworrying = (props) => {
 
           
               <Link href='javascript:$zopim.livechat.window.show();' className={styles.btn1}> {props.btn2} </Link>
-              <Link href='tel:2132893888' className={styles.btn2}>Call Us At (855) 500 0057</Link>
+              <Link href='tel:2132893888' className={styles.btn2}>Call Us Now!</Link>
 
             </div>
 

@@ -68,17 +68,17 @@ const EbookWritingservices = () => {
   }, []);
 
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'> <Link className='color-white textdocationnone hover' href='/ebook-writing-services'>Book Formatting Services</Link> That Help You Proudly Put Your Name On Your Book! </h1>;
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>  Refine Your Book To Perfection with Our Professional <Link className='color-white textdocationnone hover' href='/ebook-writing-services'>Book Formatting Services</Link> </h1>;
 
-  const discuss = <span>LET'S DISCUSS</span>
+  const discuss = <span>Get A Quote </span>
 
 
   const bannertext = [
     {
       title: newSpan,
-      pra: 'We offer book formatting services that help make your book look professional and appealing to readers. We understand the importance of a well-formatted book, and our team of experts will work closely with you to ensure that your book meets all the necessary requirements. To help your masterpiece be error-free, our formatting services fit the bill! Hone your writing skills with us. Rest assured, we are the ones you need to make your book the best it can be!',
+      pra: 'We know how important a properly formatted book is, and our team of professionals will work directly with you to make sure your book satisfies all the standards. Our reliable book formatting services guarantee an error-free final product.  Refine Your book with us, rest assured that we are the experts that help your book reach its full potential!',
       discuss: discuss,
-      homebannernum: '(855) 500 0057',
+      homebannernum: 'Call Us Now!',
       banlogo: homebannerlogos,
       banners: 'articlewritingservices',
 
@@ -91,19 +91,19 @@ const EbookWritingservices = () => {
 
   const geta = <span className='fw700 color-black'>With Us, Get Ready To Finally See Your Hard Work In Print!</span>
 
-  const titleDb = <span className=' color-blue'>Do You Want To Captivate Your Readers From Beginning To End?
+  const titleDb = <span className=' color-blue'>Top Book Formatting Company That Gives Your Book the Look It Deserves.
   </span>
-  const posdata = <span className='fw700' >Give Your Book The Professional Look It Deserves With Our <Link className='color-white textdocationnone hover' href='/book-formatting-services'>Formatting Services!</Link> </span>
+  const posdata = <span className='fw700' >Provide Your Readers With An Eye-Catching Reading Experience With Our Professional  <Link className='color-white textdocationnone hover' href='/book-formatting-services'>Book Formatting Services.</Link> </span>
 
 
-  const WaitingForSomeone = <span>Waiting For Someone To <Link className='color-black textdocationnone hover' href='/ebook-writing-services' > Give Your Book An EBook Version?</Link></span>
+  const WaitingForSomeone = <span>Elegant And Versatile <Link className='color-black textdocationnone hover' href='/ebook-writing-services' > Book Formatting For Your Ebooks </Link></span>
 
   const fine = [
 
     {
       img: mission1,
-      title: 'Identifying and Rectifying the Flaws',
-      text: 'Our formatting professionals receive the manuscript from the clients to start spotting the flaws. With every possible error spotted, we jump-start fixing the imperfections to make the book impeccably flawless.',
+      title: 'Finding and Fixing the flaws',
+      text: 'When our book formatters receive your work, they immediately begin to identify any errors. Having identified every potential mistake, we promptly rectify the flaws to ensure the book is immaculate.',
       class: 'fintop',
 
 
@@ -111,8 +111,8 @@ const EbookWritingservices = () => {
 
     {
       img: mission2,
-      title: 'Bringing Right Expertise and Tools to the Table',
-      text: 'To format your book for success, our formatting pros go over the manuscript with a fine-tooth comb. They know how to best use the formatting tools to rectify the issues and make the book bright-eyed and bushy-tailed.',
+      title: 'Bringing the Perfect Skills and Tools to the Table',
+      text: 'Our formatting experts go through the text with a fine-tooth comb to prepare your book for success. They are adept at using formatting tools to address the problems and give the book a fresh, vibrant appearance.',
       class: 'fintop',
 
 
@@ -120,8 +120,8 @@ const EbookWritingservices = () => {
 
     {
       img: mission3,
-      title: 'Customized Formatting Services',
-      text: 'Our best book formatting services are designed by keeping the genre of your book and the unique requirements in mind. We ensure to leave no stone unturned when it comes to delivering the formatting services for your masterpiece!',
+      title: 'Personalized Book Formatting Services',
+      text: "Our top-notch book formatting company was organized by keeping your book's genre and specific needs in mind. When it comes to providing the formatting services for your masterpiece, we make sure to cover every ground!",
       class: 'fintop',
 
 
@@ -180,7 +180,7 @@ const EbookWritingservices = () => {
 
   ]
 
-  const text = <span>Get in touch with our professional book writing specialists today. Our eBooks Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!
+  const text = <span>Writing is a challenging skill to master, and even the most skilled writers require the helping hand of professional formatters. Luckily, the best formatting services are at your fingertips now! Our experts know how to showcase your book for maximum impact.  
   </span>;
 
 
@@ -233,7 +233,7 @@ const EbookWritingservices = () => {
         title={titleDb}
         title2={posdata}
         btn1='Get a free Proposal'
-        btn2='Talk to an expert'
+        btn2='Get A Quote '
       />
 
 
@@ -241,10 +241,10 @@ const EbookWritingservices = () => {
       <div className='pt-5 pb-5'>
         <Container>
           <Row className='pt-5 pb-5'>
-            <h2 className="color-lightgray font25 t-center font-f mb-2">Our Approach</h2>
+            <span className="color-lightgray font25 t-center font-f mb-2 fw500">Our Method</span>
 
-            <p className='font30 font-f fw500 colortextgrey t-center pb-2'>We Take Your Raw Manuscript And Turn It Into A Finished, Print-Ready Book.
-            </p>
+            <h2 className='font30 font-f fw500 colortextgrey t-center pb-2'>We Take Your Raw Manuscript And Convert It Into A Ready-To-Publish Book.
+            </h2>
 
           </Row>
 
@@ -313,8 +313,8 @@ const EbookWritingservices = () => {
         <Selfpublishing
           title={WaitingForSomeone}
           text={text}
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          number="Call Us (855) 500 0057"
+          discuss="Get A Quote "
           image={newimagetwoo}
           whychooseclass="marketyourbook"
         />
@@ -338,10 +338,10 @@ const EbookWritingservices = () => {
       {/* Aspiring */}
       <div className='datacloud'>
         <Aspiring
-          title='Professional Book Formatting Services We Give New Life To Your Words'
-          text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          title='Work with the Leading Book Formatting Services'
+          text="Our team is home to the most talented <a class='color-black textdocationnone hover' href='https://www.bookwritingexperts.com/book-writing-services'> book writing </a> and formatting professionals. Connect with vetted specialists who have worked on best-selling books for major publishers. "
+          number="Call Us (855) 500 0057"
+          discuss="Get A Quote "
         />
       </div>
 
