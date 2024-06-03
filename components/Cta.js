@@ -13,7 +13,7 @@ const Cta = () => {
                         <Col md={12}>
                             <div className={styles.dowemargin}>
                                 <h2 className="fw300 font50 text-white font-f mb-4">
-                                    <span>Access Our <Link className='color-blue fw700 hover textdocationnone' href='/book-publishing-services'> Book Writers </Link>at Your Fingertips </span>
+                                   Access Our <span className='color-blue fw700 hover textdocationnone' href='/book-publishing-services'> Book Writers </span>at Your Fingertips
                                 </h2>
                                 <p className='font15 fw400 font-f text-white pe-lg-5 pe-0'>
                                     <span>We have you covered in all the domains with our dedicated team of skilled book writers, talented designers, proactive publicists, and innovative marketers. With our proactive approach and diverse skill sets, we ensure that your projects are handled with precision and efficiency. So hire professional book writing services to stand in the competitive market!</span>

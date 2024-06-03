@@ -68,7 +68,7 @@ const EbookWritingservices = () => {
   }, []);
 
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>  Refine Your Book To Perfection with Our Professional <Link className='color-white textdocationnone hover' href='/ebook-writing-services'>Book Formatting Services</Link> </h1>;
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>  Refine Your Book To Perfection with Our Professional <br className='d-lg-block d-none'/><span className='color-blue textdocationnone'>Book Formatting Services</span> </h1>;
 
   const discuss = <span>Get A Quote </span>
 
@@ -93,10 +93,10 @@ const EbookWritingservices = () => {
 
   const titleDb = <span className=' color-blue'>Top Book Formatting Company That Gives Your Book the Look It Deserves.
   </span>
-  const posdata = <span className='fw700' >Provide Your Readers With An Eye-Catching Reading Experience With Our Professional  <Link className='color-white textdocationnone hover' href='/book-formatting-services'>Book Formatting Services.</Link> </span>
+  const posdata = <span className='fw700' >Provide Your Readers With An Eye-Catching Reading Experience With Our Professional  <span className='color-blue textdocationnone '>Book Formatting Services.</span> </span>
 
 
-  const WaitingForSomeone = <span>Elegant And Versatile <Link className='color-black textdocationnone hover' href='/ebook-writing-services' > Book Formatting For Your Ebooks </Link></span>
+  const WaitingForSomeone = <span>Elegant And Versatile <span className='color-blue textdocationnone'> Book Formatting For Your Ebooks </span></span>
 
   const fine = [
 

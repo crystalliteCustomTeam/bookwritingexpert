@@ -74,7 +74,7 @@ const Bookpublishingservices = () => {
 
 
 
-  const newSpan = <h1 className='font50  color-white font-f hero-span'> Turn Your Ideas Into Bestsellers With Our Professional <Link className='textdocationnone color-blue hover fw700' href="/book-writing-services">Book Writing Services!</Link></h1>;
+  const newSpan = <h1 className='font50  color-white font-f hero-span'> Turn Your Ideas Into Bestsellers With Our Professional <span class='textdocationnone color-blue fw700'>Book Writing Services! </span> </h1>;
 
   const discuss = <span>Let’s Write Your Book!</span>
 
@@ -95,9 +95,9 @@ const Bookpublishingservices = () => {
   ]
 
 
-  const geta = <span>Get Connected To Your Readers With <Link className='color-blue fw700 textdocationnone hover' href='/book-writing-services'> Book Writing Experts! <br></br> </Link></span>
+  const geta = <span>Get Connected To Your Readers With <span className='color-blue fw700 textdocationnone hover'> Book Writing Experts! <br></br> </span></span>
 
-  const posdata = <span>We Take Pride In Providing The Best <Link className='textdocationnone fw700 color-blue hover' href='/book-writing-services'> Book Writing Services </Link>, Ensuring To Win Your Trust For The Years To Come.   </span>
+  const posdata = <span>We Take Pride In Providing The Best <span className='textdocationnone fw700 color-blue hover'> Book Writing Services</span>, Ensuring To Win Your Trust For The Years To Come.   </span>
 
 
 
@@ -133,10 +133,10 @@ const Bookpublishingservices = () => {
 
   ]
 
-  const dateset = <span className='fw500'> Looking For a Reliable  <br></br> <Link href='javascript:$zopim.livechat.window.show();' className='color-blue textdocationnone hover fw700'>Book Writing Company? Hire Us Today!</Link> </span>
+  const dateset = <span className='fw500'> Looking For a Reliable  <br/> <span className='color-blue textdocationnone hover fw700'>Book Writing Company? Hire Us Today!</span> </span>
 
 
-  const datesettext = <span>  Our team of  <Link href='javascript:$zopim.livechat.window.show();' className='color-blue textdocationnone hover'>experienced book writers</Link> is ready to collaborate with you to create interesting stories that captivate your readers. We promise originality and quality and make sure that your journey from idea to publication is smooth and successful.</span>
+  const datesettext = <span>  Our team of  <span className='color-blue textdocationnone hover'>experienced book writers</span> is ready to collaborate with you to create interesting stories that captivate your readers. We promise originality and quality and make sure that your journey from idea to publication is smooth and successful.</span>
     
   const reasons = [
     
@@ -259,7 +259,7 @@ const Bookpublishingservices = () => {
           <Row >
             <span className="color-lightgray   font25   t-center font-f mb-2">Our Approach</span>
 
-            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>We Aim To Add Value To Your <Link className='textdocationnone color-blue hover fw700' href='/book-writing-services'> Books!</Link></h2>
+            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>We Aim To Add Value To Your <span className='textdocationnone color-blue hover fw700'> Books!</span></h2>
 
           </Row>
           {isSliderActive ?
