@@ -72,7 +72,7 @@ const businessplanWringservices = () => {
 
 
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Get Professional <Link href='/book-writing-services' className='color-blue textdocationnone hover'>Business Plan Writing Services</Link> To Meet Your Strategic Business Needs!</h1>;
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Get Professional <span className='color-blue textdocationnone'>Business Plan Writing Services</span> To Meet Your Strategic Business Needs!</h1>;
 
   const discuss = <span>Talk to an Expert</span>
 
@@ -133,7 +133,7 @@ const businessplanWringservices = () => {
 
   ]
 
-  const dateset = <span className='fw500'><Link href='javascript:$zopim.livechat.window.show();' className='color-blue textdocationnone hover fw700'> Best Business Plan Writing Services</Link> <br></br> at Affordable Price</span>
+  const dateset = <strong className='fw600'> <span className='color-blue'>Best Business Plan Writing Services</span><br/> at Affordable Price</strong>
 
 
   const datesettext = <span> Staffed with qualified writers, we have a team of professional business plan writers who have undergone our strict vetting process. They have developed more than 1000 projects for different companies across various sectors. Gain benefits from their wealth of knowledge and experience.</span>

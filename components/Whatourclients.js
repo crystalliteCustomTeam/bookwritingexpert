@@ -2,9 +2,12 @@ import React from 'react'
 import styles from '@/styles/Whatourclients.module.css'
 import Image from 'next/image'
 import { Container } from 'react-bootstrap'
-import avtar1 from '../public/images/testimonial/avatar-11.png'
-import avtar2 from '../public/images/testimonial/avatar-22.png'
-import avtar3 from '../public/images/testimonial/avatar-33.png'
+import avtar1 from '../public/images/testimonial/julian-anthony-pereira.png'
+import avtar2 from '../public/images/testimonial/silas-micah.png'
+import avtar3 from '../public/images/testimonial/terrif-hawlk.png'
+import avtar4 from '../public/images/testimonial/avatar-11.png'
+import avtar5 from '../public/images/testimonial/avatar-33.png'
+
 
 // footer icons
 import { AiFillStar } from 'react-icons/ai';
@@ -122,7 +125,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar3}
+                    src={avtar4}
                     alt='bookwritingexperts'
                   />
                 </div>
@@ -146,7 +149,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar1}
+                    src={avtar3}
                     alt='bookwritingexperts'
                   />
                 </div>
@@ -172,7 +175,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar2}
+                    src={avtar5}
                     alt='bookwritingexperts'
                   />
                 </div>
