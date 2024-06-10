@@ -6,7 +6,7 @@ import avtar1 from '../public/images/testimonial/julian-anthony-pereira.png'
 import avtar2 from '../public/images/testimonial/silas-micah.png'
 import avtar3 from '../public/images/testimonial/terrif-hawlk.png'
 import avtar4 from '../public/images/testimonial/glint.png'
-import avtar5 from '../public/images/testimonial/Abigail.png'
+import avtar5 from '../public/images/testimonial/abigail.png'
 
 
 // footer icons
