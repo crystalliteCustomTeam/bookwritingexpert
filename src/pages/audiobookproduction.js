@@ -18,17 +18,7 @@ const Serviceproviders = dynamic(() => import('../../components/Serviceproviders
 const Providestunning = dynamic(() => import('../../components/Providestunning'));
 const Professionalaudiobook = dynamic(() => import('../../components/Professionalaudiobook'));
 
-
-
-
-
-
-
-
 function Audiobookproduction() {
-
-
-
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Get Your</span>  <Link className='dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services">  Book Ghost Writing <br></br> Services </Link>  <span className=''> from Our Team of Top Ghost <br></br> Writing for Hire.</span> </h1>;
 
   const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='javascript:$zopim.livechat.window.show();'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
@@ -36,7 +26,7 @@ function Audiobookproduction() {
   const dataspan = <h1 className='font50 color-white font-f hero-span'>  <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Book Writing Experts </Link>  Is  waiting for you to Ask for a    <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Professional Ghost Writing </Link> </h1>;
 
 
-  const holddata =  <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/audiobookproduction">Audio Book  <br className="d-none d-xl-block" />Production</Link> </h2>
+  const holddata = <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/audiobookproduction">Audio Book  <br className="d-none d-xl-block" />Production</Link> </h2>
 
 
   const bannertext = [
@@ -51,12 +41,10 @@ function Audiobookproduction() {
 
   return (
     <>
-
-      {/* googletagmanager */}   
-
+      <Head>
+        <meta name="robots" content="noindex,nofollow" />
+      </Head>
       <main>
-        {/* banner components */}
-
         {/* banner components */}
 
         {bannertext.map((item, i) =>
@@ -93,24 +81,17 @@ function Audiobookproduction() {
         />
 
         <Professionalaudiobook />
-    
-
 
         <Providestunning
-        
-        title = {holddata}
-        
-        
+          title={holddata}
         />
-
-
 
         <Stoppublish
           title='Stop worrying about publishing books!'
           subtitle={posdata}
           btn1='Get a free Proposal'
           btn2='Talk to an expert'
-          stopworrying = 'stopworrying1'
+          stopworrying='stopworrying1'
         />
 
         {/* Why Choose book writing expert? */}
@@ -124,17 +105,12 @@ function Audiobookproduction() {
         {/* Customersatisfaction */}
         <Customersatisfaction />
 
-
-
-
-
-
         <div className='datacloud'>
           <Onestepsolutions />
         </div>
 
         <Serviceproviders
-     
+
         />
 
 
