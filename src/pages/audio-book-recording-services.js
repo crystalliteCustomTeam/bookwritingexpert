@@ -4,23 +4,16 @@ import Link from "next/link";
 import { Container, Row, Col } from "react-bootstrap";
 // images
 import homebannerlogos from "/public/images/bannerimages/logos.png";
-import typeofbooks from "/public/images/selfpublishingservices/1.jpg";
-import copy from "/public/images/selfpublishingservices/2.jpg";
-import marketyourbook from "/public/images/selfpublishingservices/3.jpg";
 import publishmybook from "/public/images/selfpublishingservices/4.jpg";
 // components
 import Banner from "../../components/Banner";
 import Dowecome from "../../components/Dowecome";
 import Stopworrying from "../../components/Stopworrying";
 import Aspiring from "../../components/Aspiring";
-import Ourprocess from "../../components/Ourprocess";
 import Whatourclients from "../../components/Whatourclients";
-import Makestoriesnew from "../../components/Makestoriesnew";
-import Whychoosebookwritingcube from "../../components/Whychoosebookwritingcube";
 import Selfpublishing from "../../components/Selfpublishing";
 import Lululogos from "../../components/Lululogos";
 import Customersatisfaction from "../../components/Customersatisfaction";
-import Bookpublishingservicesweoffer from "../../components/Bookpublishingservicesweoffer";
 // css
 import styles from "@/styles/Whybookpublishing.module.css";
 import mission1 from "/public/images/mission/1.png";
@@ -29,16 +22,6 @@ import mission3 from "/public/images/mission/3.png";
 import Finetoothedbook from "../../components/Finetoothedbook";
 
 const audioBookRecordingServices = () => {
-  const text = <span>We write, market, and review books of all kinds.</span>;
-  const subtext = (
-    <span>
-      {" "}
-      Profit from our wide range of book publication styles and forms to secure
-      your position as a book writing guru. In addition to publishing children's
-      books, we are among the top Amazon publishing service suppliers.
-    </span>
-  );
-
   const newSpan = (
     <h1 className="font50 fw700 color-white font-f hero-span">
       <Link

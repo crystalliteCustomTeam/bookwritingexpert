@@ -7,7 +7,6 @@ import homebannerlogos from '/public/images/bannerimages/logos.png'
 import mission1 from '/public/images/ebookwritingservices/fssf.png'
 import mission2 from '/public/images/ebookwritingservices/bgdf.png'
 import mission3 from '/public/images/ebookwritingservices/dfdgf.png'
-import publishmybook from '/public/images/selfpublishingservices/publishmybook.png'
 import newimagetwoo from '/public/images/booktrailerservcies/newimagetwoo.png'
 // components
 import Banner from '../../components/Banner'
@@ -15,26 +14,18 @@ import Dowecome from '../../components/Dowecome'
 import Stopworrying from '../../components/Stopworrying'
 import Finetoothedbook from '../../components/Finetoothedbook'
 import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Stillonthefence from '../../components/Stillonthefence'
 import Lululogos from '../../components/Lululogos'
 import Selfpublishing from '../../components/Selfpublishing'
 import Major from '../../components/Major'
-// css
-import styles from '@/styles/Whybookpublishing.module.css'
+// css 
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react'
 import { useState } from 'react'
-import Script from 'next/script'
-
-
 
 const EbookWritingservices = () => {
-
 
   var bookrecordingprojects = {
     dots: true,

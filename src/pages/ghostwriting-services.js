@@ -7,7 +7,6 @@ import homebannerlogos from '/public/images/bannerimages/logos.png'
 import mission1 from '/public/images/businessplanwriting/ss.png'
 import mission2 from '/public/images/businessplanwriting/fdf.png'
 import mission3 from '/public/images/businessplanwriting/hg.png'
-import bookmarketingservices3 from '/public/images/bookmarketingservices/3.png'
 import newimagetwoo from '/public/images/booktrailerservcies/newimagetwoo.png'
 // components
 import Banner from '../../components/Banner'
@@ -18,7 +17,6 @@ import Aspiring from '../../components/Aspiring'
 import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
 import Makestoriesnew from '../../components/Makestoriesnew'
-import Stillonthefence from '../../components/Stillonthefence'
 import Selfpublishing from '../../components/Selfpublishing'
 import Lululogos from '../../components/Lululogos'
 import Major from '../../components/Major'
@@ -169,7 +167,7 @@ const Bookpublishingservices = () => {
 
 
 
-  
+
 
 
 

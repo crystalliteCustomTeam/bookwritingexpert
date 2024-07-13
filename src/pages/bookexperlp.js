@@ -30,8 +30,6 @@ const bookexperlp = () => {
     <Partners />
     <Publicationslp />
     <Letstalk />
-   
-  
     </>
   );
 };

@@ -13,48 +13,30 @@ import email2 from '../../public/images/footer/email2.png'
 
 const Contact = () => {
 
-    const [ip, setIP] = useState('');
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-      setIP(res.data);
-    }
-    useEffect(() => {
-      getIPData()
-    }, [])
-
+    const [ip, setIP] = useState({});
     const [score, setScore] = useState('Submit Form');
-    const [selectedOption3, setSelectedOption3] = useState('');
-
-
     const [checkboxes, setCheckboxes] = useState([]);
-    const handleOptionChange3 = (e) => {
-      const { value, checked } = e.target;
-  
-      if (checked) {
-        setCheckboxes([...checkboxes, value]);
-      } else {
-        setCheckboxes(checkboxes.filter((checkbox) => checkbox !== value));
-      }
-  
-      
-    };
-
-
-
-    // const handleOptionChange3 = (e) => {
-    //     setSelectedOption3(e.target.value);
-
-    //   };
-
     const router = useRouter();
     const currentRoute = router.pathname;
 
+    const getIPData = async () => {
+        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        setIP(res.data);
+    };
+
+    useEffect(() => {
+        getIPData();
+    }, []);
+
+    const handleOptionChange3 = (e) => {
+        const { value, checked } = e.target;
+        setCheckboxes((prev) =>
+            checked ? [...prev, value] : prev.filter((checkbox) => checkbox !== value)
+        );
+    };
+
     const handleSubmit = async (e) => {
-
-        e.preventDefault()
-
-
+        e.preventDefault();
         const data = {
             name: e.target.name.value,
             email: e.target.email.value,
@@ -62,68 +44,106 @@ const Contact = () => {
             zip: e.target.zip.value,
             checknow: checkboxes,
             message: e.target.message.value,
-            pageUrl:currentRoute,
-        }
+            pageUrl: currentRoute,
+        };
 
-        const JSONdata = JSON.stringify(data)
-
+        const JSONdata = JSON.stringify(data);
         setScore('Sending Data');
 
+        try {
+            const response = await fetch('/api/contact/route', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                },
+                body: JSONdata,
+            });
 
-
-        fetch('api/contact/route', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata
-        }).then((res) => {
-            console.log(`Response received ${res}`)
-            if (res.status === 200) {
-                console.log(`Response Successed ${res}`)
+            if (response.status !== 200) {
+                throw new Error('Failed to send data');
             }
-        })
 
+            const currentdate = new Date().toLocaleString();
+            const headersList = {
+                "Accept": "*/*",
+                "Authorization": "Bearer YOUR_API_KEY",
+                "Content-Type": "application/json",
+            };
 
-        var currentdate = new Date().toLocaleString() + ''
-        let headersList = {
-          "Accept": "*/*",
-          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-          "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-          "Content-Type": "application/json"
-        }
-    
-        let bodyContent = JSON.stringify({
-          "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-          "Brand": "BOOK-WRITING-EXPERT",
-          "Page": `${currentRoute}`,
-          "Date": currentdate,
-          "Time": currentdate,
-          "JSON": JSONdata,
-        });
-        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-          method: "POST",
-          body: bodyContent,
-          headers: headersList
-        });
+            const bodyContent = JSON.stringify({
+                "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                "Brand": "BOOK-WRITING-EXPERT",
+                "Page": currentRoute,
+                "Date": currentdate,
+                "Time": currentdate,
+                "JSON": JSONdata,
+            });
 
+            await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+                method: "POST",
+                body: bodyContent,
+                headers: headersList,
+            });
 
-        const { pathname } = Router
-        if (pathname == pathname) {
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+
+            const hubspotData = JSON.stringify({
+                "fields": [
+                    { "objectTypeId": "0-1", "name": "email", "value": e.target.email.value },
+                    { "objectTypeId": "0-1", "name": "firstname", "value": e.target.name.value },
+                    { "objectTypeId": "0-1", "name": "phone", "value": e.target.phone.value },
+                    { "objectTypeId": "0-1", "name": "message", "value": e.target.message.value }
+                ],
+                "context": {
+                    "ipAddress": ip.IPv4,
+                    "pageUri": currentRoute,
+                    "pageName": currentRoute,
+                },
+                "legalConsentOptions": {
+                    "consent": {
+                        "consentToProcess": true,
+                        "text": "I agree to allow Example Company to store and process my personal data.",
+                        "communications": [
+                            {
+                                "value": true,
+                                "subscriptionTypeId": 999,
+                                "text": "I agree to receive marketing communications from Example Company.",
+                            }
+                        ],
+                    },
+                },
+            });
+
+            const requestOptions = {
+                method: "POST",
+                headers: myHeaders,
+                body: hubspotData,
+                redirect: "follow",
+            };
+
+            const hubspotResponse = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f", requestOptions);
+
+            if (!hubspotResponse.ok) {
+                throw new Error('HubSpot submission failed');
+            }
+
+            const result = await hubspotResponse.json();
+            console.log(result);
+
+            // Redirect after successful submission
             window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+        } catch (error) {
+            console.error('Error:', error);
         }
+    };
 
-    }
-
-
-
- 
 
     return (
         <>
 
-         
+
 
             <div className={styles.contactbg}>
 
@@ -147,7 +167,7 @@ const Contact = () => {
                                 </p>
                                 <p className='font20 fw500 font-f color-white'>
                                     <span className=''>Email:</span> <Link href='mailto:info(@)bookwritingcube(.)com' className={` fw700 color-white textdocationnone`}>
-                                    <Image src={email2} alt="Book Writing Experts" /> </Link>
+                                        <Image src={email2} alt="Book Writing Experts" /> </Link>
                                 </p>
 
                             </div>
@@ -211,9 +231,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                            checked={checkboxes.includes('bookwriting--I want to hire a professional to write or rewrite my book')}
-                                            onChange={handleOptionChange3}
-                                            value='bookwriting--I want to hire a professional to write or rewrite my book' />
+                                                checked={checkboxes.includes('bookwriting--I want to hire a professional to write or rewrite my book')}
+                                                onChange={handleOptionChange3}
+                                                value='bookwriting--I want to hire a professional to write or rewrite my book' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 bookwriting--I want to hire a professional to write or rewrite my book
                                             </label>
@@ -222,10 +242,10 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                           
-                                              checked={checkboxes.includes('Editing--I have written a manuscript and would like a professional to review and/or edit it')}
-                                              onChange={handleOptionChange3}
-                                            value='Editing--I have written a manuscript and would like a professional to review and/or edit it' />
+
+                                                checked={checkboxes.includes('Editing--I have written a manuscript and would like a professional to review and/or edit it')}
+                                                onChange={handleOptionChange3}
+                                                value='Editing--I have written a manuscript and would like a professional to review and/or edit it' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Editing--I have written a manuscript and would like a professional to review and/or edit it
                                             </label>
@@ -235,10 +255,10 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                            
-                                             checked={checkboxes.includes('Book Coaching--I want to write my book on my own, but with the help of a professional to guide me')}
-                                             onChange={handleOptionChange3}
-                                            value='Book Coaching--I want to write my book on my own, but with the help of a professional to guide me' />
+
+                                                checked={checkboxes.includes('Book Coaching--I want to write my book on my own, but with the help of a professional to guide me')}
+                                                onChange={handleOptionChange3}
+                                                value='Book Coaching--I want to write my book on my own, but with the help of a professional to guide me' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Book Coaching--I want to write my book on my own, but with the help of a professional to guide me
                                             </label>
@@ -247,10 +267,10 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                              
-                                               checked={checkboxes.includes('Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes')}
-                                               onChange={handleOptionChange3}
-                                            value='Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes' />
+
+                                                checked={checkboxes.includes('Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes')}
+                                                onChange={handleOptionChange3}
+                                                value='Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes
                                             </label>
@@ -263,9 +283,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                            checked={checkboxes.includes('Book Proposal')}
-                                            onChange={handleOptionChange3}
-                                            value='Book Proposal' />
+                                                checked={checkboxes.includes('Book Proposal')}
+                                                onChange={handleOptionChange3}
+                                                value='Book Proposal' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Book Proposal
                                             </label>
@@ -274,9 +294,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                             checked={checkboxes.includes('Beta Reader Services')}
-                                             onChange={handleOptionChange3}
-                                            value='Beta Reader Services' />
+                                                checked={checkboxes.includes('Beta Reader Services')}
+                                                onChange={handleOptionChange3}
+                                                value='Beta Reader Services' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Beta Reader Services
                                             </label>
@@ -286,9 +306,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                            checked={checkboxes.includes('Other')}
-                                            onChange={handleOptionChange3}
-                                            value='Other' />
+                                                checked={checkboxes.includes('Other')}
+                                                onChange={handleOptionChange3}
+                                                value='Other' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Other
                                             </label>
@@ -307,9 +327,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                             checked={checkboxes.includes('Business')}
-                                             onChange={handleOptionChange3}
-                                            value='Business' />
+                                                checked={checkboxes.includes('Business')}
+                                                onChange={handleOptionChange3}
+                                                value='Business' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Business
                                             </label>
@@ -318,9 +338,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                               checked={checkboxes.includes('Memoir/Biography')}
-                                               onChange={handleOptionChange3}
-                                            value='Memoir/Biography' />
+                                                checked={checkboxes.includes('Memoir/Biography')}
+                                                onChange={handleOptionChange3}
+                                                value='Memoir/Biography' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Memoir/Biography
                                             </label>
@@ -330,9 +350,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                               checked={checkboxes.includes('Health')}
-                                               onChange={handleOptionChange3}
-                                            value='Health' />
+                                                checked={checkboxes.includes('Health')}
+                                                onChange={handleOptionChange3}
+                                                value='Health' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Health
                                             </label>
@@ -341,9 +361,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                              checked={checkboxes.includes('Self-Help/Personal Development')}
-                                              onChange={handleOptionChange3}
-                                            value='Self-Help/Personal Development' />
+                                                checked={checkboxes.includes('Self-Help/Personal Development')}
+                                                onChange={handleOptionChange3}
+                                                value='Self-Help/Personal Development' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Self-Help/Personal Development
                                             </label>
@@ -356,9 +376,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                              checked={checkboxes.includes('Fiction')}
-                                              onChange={handleOptionChange3}
-                                            value='Fiction' />
+                                                checked={checkboxes.includes('Fiction')}
+                                                onChange={handleOptionChange3}
+                                                value='Fiction' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Fiction
                                             </label>
@@ -367,9 +387,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                             checked={checkboxes.includes('General Nonfiction')}
-                                             onChange={handleOptionChange3}
-                                            value='General Nonfiction' />
+                                                checked={checkboxes.includes('General Nonfiction')}
+                                                onChange={handleOptionChange3}
+                                                value='General Nonfiction' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 General Nonfiction
                                             </label>
@@ -381,7 +401,7 @@ const Contact = () => {
                                             <input className='form-check-input' type='checkbox' name='checknow'
                                                 checked={checkboxes.includes('Children’s')}
                                                 onChange={handleOptionChange3}
-                                            value='Children’s' />
+                                                value='Children’s' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Children’s
                                             </label>
@@ -390,9 +410,9 @@ const Contact = () => {
                                     <Col md={3}>
                                         <div className='form-check'>
                                             <input className='form-check-input' type='checkbox' name='checknow'
-                                             checked={checkboxes.includes('Others')}
-                                             onChange={handleOptionChange3}
-                                            value='Others' />
+                                                checked={checkboxes.includes('Others')}
+                                                onChange={handleOptionChange3}
+                                                value='Others' />
                                             <label className='form-check-label' htmlFor='flexCheckDefault'>
                                                 Others
                                             </label>

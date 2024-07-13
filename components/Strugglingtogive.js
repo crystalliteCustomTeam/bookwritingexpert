@@ -10,8 +10,6 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 
 const Strugglingtogive = (props) => {
-
-
     var bookrecordingprojects = {
         dots: false,
         arrows: false,
@@ -25,7 +23,6 @@ const Strugglingtogive = (props) => {
     const [isSliderActive, setIsSliderActive] = useState(true);
 
     useEffect(() => {
-
         const handleResize = () => {
             if (window.innerWidth < 480) {
                 setIsSliderActive(true);
@@ -33,19 +30,12 @@ const Strugglingtogive = (props) => {
                 setIsSliderActive(false);
             }
         };
-
         handleResize();
-
         window.addEventListener('resize', handleResize);
-
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-
-
-
     return (
         <div className={styles.strugglingtogive}>
 
@@ -57,23 +47,18 @@ const Strugglingtogive = (props) => {
                         {props.titleills ?
                             props.titleills
                             :
-
                             // <h2 className='color-blue font50 fw700 font-f mb-4'>Are You Struggling to give <br className='d-none d-md-block' /> Words to your Ideas?</h2>
                             ""
-
                         }
-                        {props.text ? 
-                       <p className='textcolor font-f mb-4 font15'> {props.text} </p>
-                        :
-<p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
-                    }
-                        
+                        {props.text ?
+                            <p className='textcolor font-f mb-4 font15'> {props.text} </p>
+                            :
+                            <p className='textcolor font-f mb-4 font15'>You may be a victim of the following nuisances</p>
+                        }
+
 
                         {isSliderActive ?
                             <Slider {...bookrecordingprojects} className='demodots'>
-
-
-
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list1}</div>
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list2}</div>
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list3}</div>
@@ -82,10 +67,6 @@ const Strugglingtogive = (props) => {
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list6}</div>
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list7}</div>
                                 <div className='textcolor font-f mb-4 font15'> <TiTick size={25} className={styles.rightcolor} /> {props.list8}</div>
-
-
-
-
                             </Slider>
                             :
                             <div className={styles.slow}>
@@ -105,8 +86,6 @@ const Strugglingtogive = (props) => {
 
                             </div>
                         }
-
-
                         <div>
                             <a href="#footercontact"> <button className={styles.btnget1}> {props.btn1} </button></a>
                             <a href="javascript:$zopim.livechat.window.show();"><button className={styles.btnget2}> {props.btn2} </button></a>
@@ -115,14 +94,10 @@ const Strugglingtogive = (props) => {
                     </Col>
 
                     <Col md={5}>
-
                         <Signup
                             bannershome='signup'
                             contacttext='contacttextblack'
                         />
-
-
-
                     </Col>
                 </Row>
             </Container>

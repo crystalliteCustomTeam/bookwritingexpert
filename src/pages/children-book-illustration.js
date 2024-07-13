@@ -116,7 +116,6 @@ const childrenBookIllustration = () => {
         img3={img3}
         img4={img4}
         img5={img5}
-
       />
       <BookPortfolio
         title="Some Of Our Best Children’s <br class='d-lg-none'/> Book Illustrations"

@@ -10,7 +10,6 @@ import BookWriting from '../../components/Bookwriting'
 import BookEditing from '../../components/Bookediting'
 import BookMarketing from '../../components/Bookmarketing'
 import BookProofRead from '../../components/Bookproofread'
-import BookGhostWriting from '../../components/Bookghostwriting'
 import BookChildrenPublish from '../../components/Bookchildrenpublish'
 import BookChildrenIllus from '../../components/Bookchildrenillus'
 import BookDigitalMarket from '../../components/Bookdigitalmarket'
@@ -41,7 +40,7 @@ const Pricing = () => {
   return (
 
     <>
-    
+
 
       {/* banner components */}
       {bannertext.map((item, i) =>

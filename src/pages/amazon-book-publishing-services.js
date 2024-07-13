@@ -37,7 +37,7 @@ const amazonbookpublishingservices = () => {
     <div className="font55 fw700 color-white font-f hero-span linh2">
       <h1 className="font55 fw700 textdocationnone color-blue hover d-inline">
         Amazon Book Publishing Services{" "}
-      </h1> 
+      </h1>
       To Our Struggling Authors
     </div>
   );
@@ -130,8 +130,6 @@ const amazonbookpublishingservices = () => {
     </span>
   );
 
-
-
   const fine = [
     {
       img: mission1,
@@ -157,8 +155,6 @@ const amazonbookpublishingservices = () => {
 
   return (
     <>
-    
-
       <ServiceBanner
         subtext={BannerSubText}
         title={newSpan}

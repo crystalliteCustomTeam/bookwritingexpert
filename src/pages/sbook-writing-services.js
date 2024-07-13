@@ -27,21 +27,10 @@ const Bookwritingservices = () => {
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookwritingservices',
-
-
-
     }
   ]
 
-
-
   const bookwritersforhire = <span>Pick up the phone or email us, and book our book consultancy services today! The only thing standing in your way of being a best-selling author is not signing up for our professional book writing services! Allow us to assist you in getting there and getting the best and the most affordable <Link className='textdocationnone' href="/book-writing-services"> book writers for hire </Link> today!</span>;
-
-
-
-
-
-
 
   const whybookpublishingdata = [
 
@@ -67,9 +56,6 @@ const Bookwritingservices = () => {
     },
 
   ]
-
-
-
 
   const reasons = [
 
@@ -142,23 +128,15 @@ const Bookwritingservices = () => {
       btn: 'LET`S DISCUSS'
 
     },
-
-
   ]
 
   return (
     <>
       <Head>
-        
         <link rel="icon" href="/favicon.svg" />
-
       </Head>
 
-
-
-
       {/* banner components */}
-
       {bannertext.map((item, i) =>
         <Banner key={i}
           title={item.title}
@@ -169,22 +147,16 @@ const Bookwritingservices = () => {
           bannershome={item.banners}
         />
       )}
-
-
       {/* partners components */}
-
-
       {/* Makestories */}
       <Makestoriesnew
         title='Our Book Writing Projects'
         para='Let Our Book Writing Team Help You.'
       />
 
-
       {/* Whybookpublishing */}
       <div className={styles.whybookpublishing}>
         <Container>
-
           <Row>
             <h2 className='font48 fw900 color-blue t-center'>Why Does One Need Professional Book Writing Services?</h2>
             <p className='font15  textcolor t-center pb-5'>
@@ -192,7 +164,6 @@ const Bookwritingservices = () => {
             </p>
 
           </Row>
-
           <Row>
             {whybookpublishingdata.map((item, i) =>
               <Whybookpublishing key={i}
@@ -204,8 +175,6 @@ const Bookwritingservices = () => {
           </Row>
         </Container>
       </div>
-
-
 
       {/* Stillonthefence component */}
       <div className={styles.stillbookwritingservices}>
@@ -226,10 +195,7 @@ const Bookwritingservices = () => {
 
           </Row>
         </Container>
-
       </div>
-
-
 
       {/* Dowecome */}
       <Dowecome
@@ -239,10 +205,6 @@ const Bookwritingservices = () => {
         discuss="LET'S DISCUSS"
         Dowecome="publishmybook"
         image={bookwritingcanbe}
-
-
-
-
       />
 
       {/* Lululogos components */}
@@ -250,15 +212,12 @@ const Bookwritingservices = () => {
       <div className='mt-5'>
         <Lululogos />
       </div>
-
-
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
             <h2 className='font48 fw900 color-blue  t-center font-f mb-2'>Fine-toothed book writing to give your readers a truly immersive experience with the help of our team of professional eBook writers!</h2>
 
             <p className='font15 fw500 colortextgrey t-center pb-2'>book writing expert is a portal to bring your thoughts, ideas, or dreams to paper for your readers.</p>
-
           </Row>
 
           <Row className='gy-5'>
@@ -274,20 +233,12 @@ const Bookwritingservices = () => {
         </Container>
       </div>
 
-
-
-
-
-
-
-
       {/* Why Choose book writing expert? */}
       <Whychoosebook
         title="What Is Our Book Writing Process?"
         text="Our professional book writing services is a collaborative process between our client and our team that has the following steps:"
         whychoose={bookwritingprocess}
       />
-
 
       {/* Aspiring */}
       <Aspiring
@@ -296,14 +247,6 @@ const Bookwritingservices = () => {
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />
-
-
-
-
-
-
-
-
     </>
   )
 }

@@ -96,8 +96,6 @@ export default function Home() {
 
   const discuss = <span>LET'S DISCUSS</span>;
 
-
-
   const [imagesLoaded, setImagesLoaded] = useState(false);
   useEffect(() => {
     const delay = 5000;
@@ -109,7 +107,6 @@ export default function Home() {
 
   return (
     <>
-    
 
       {imagesLoaded && (
         <noscript>

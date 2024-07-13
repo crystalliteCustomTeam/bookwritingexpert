@@ -16,22 +16,26 @@ const Banner = ({
 }) => {
 
     const [ip, setIP] = useState('');
-    //creating function to load ip address from the API
-    const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-        setIP(res.data);
-    }
-    useEffect(() => {
-        getIPData()
-    }, [])
-    const [score, setScore] = useState('Best time to jump on a quick call:');
-
+    const [score, setScore] = useState('Submit Details');
     const router = useRouter();
     const currentRoute = router.pathname;
+
+    // Function to load IP address from the API
+    const getIPData = async () => {
+        try {
+            const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+            setIP(res.data);
+        } catch (error) {
+            console.error("Error fetching IP data:", error);
+        }
+    };
+
+    useEffect(() => {
+        getIPData();
+    }, []);
+
     const handleSubmit = async (e) => {
-
-        e.preventDefault()
-
+        e.preventDefault();
 
         const data = {
             name: e.target.name.value,
@@ -39,57 +43,98 @@ const Banner = ({
             phone: e.target.phone.value,
             message: e.target.message.value,
             pageUrl: currentRoute,
-        }
+        };
 
-        const JSONdata = JSON.stringify(data)
-
+        const JSONdata = JSON.stringify(data);
         setScore('Sending Data');
 
+        try {
+            const emailResponse = await fetch('/api/email/route', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json, text/plain, */*',
+                    'Content-Type': 'application/json',
+                },
+                body: JSONdata,
+            });
 
-
-        fetch('api/email/route', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json, text/plain, */*',
-                'Content-Type': 'application/json'
-            },
-            body: JSONdata
-        }).then((res) => {
-            console.log(`Response received ${res}`)
-            if (res.status === 200) {
-                console.log(`Response Successed ${res}`)
+            if (emailResponse.status === 200) {
+                console.log('Email sent successfully');
             }
-        })
 
+            const currentdate = new Date().toLocaleString();
+            let headersList = {
+                "Accept": "*/*",
+                "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+                "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+                "Content-Type": "application/json",
+            };
 
-        var currentdate = new Date().toLocaleString() + ''
-        let headersList = {
-            "Accept": "*/*",
-            "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-            "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-            "Content-Type": "application/json"
-        }
+            let bodyContent = JSON.stringify({
+                "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                "Brand": "BOOK-WRITING-EXPERT",
+                "Page": currentRoute,
+                "Date": currentdate,
+                "Time": currentdate,
+                "JSON": JSONdata,
+            });
 
-        let bodyContent = JSON.stringify({
-            "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-            "Brand": "BOOK-WRITING-EXPERT",
-            "Page": `${currentRoute}`,
-            "Date": currentdate,
-            "Time": currentdate,
-            "JSON": JSONdata,
-        });
-        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-            method: "POST",
-            body: bodyContent,
-            headers: headersList
-        });
+            await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+                method: "POST",
+                body: bodyContent,
+                headers: headersList,
+            });
 
-        const { pathname } = Router
-        if (pathname == pathname) {
+            const pagenewurl = currentRoute;
+
+            const hubspotHeaders = new Headers();
+            hubspotHeaders.append("Content-Type", "application/json");
+
+            const hubspotBody = JSON.stringify({
+                "fields": [
+                    {
+                        "objectTypeId": "0-1",
+                        "name": "email",
+                        "value": e.target.email.value,
+                    },
+                    {
+                        "objectTypeId": "0-1",
+                        "name": "firstname",
+                        "value": e.target.name.value,
+                    },
+                    {
+                        "objectTypeId": "0-1",
+                        "name": "phone",
+                        "value": e.target.phone.value,
+                    },
+                    {
+                        "objectTypeId": "0-1",
+                        "name": "message",
+                        "value": e.target.message.value,
+                    },
+                ],
+                "context": {
+                    "ipAddress": ip.IPv4,
+                    "pageUri": pagenewurl,
+                    "pageName": pagenewurl,
+                },
+            });
+
+            const hubspotResponse = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f", {
+                method: "POST",
+                headers: hubspotHeaders,
+                body: hubspotBody,
+                redirect: "follow",
+            });
+
+            const hubspotResult = await hubspotResponse.text();
+            console.log(hubspotResult);
+
             window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+        } catch (error) {
+            console.error("Error submitting data:", error);
         }
-
-    }
+    };
 
     return (
         <section>
@@ -139,7 +184,7 @@ const Banner = ({
                                             </Row>
 
                                             <div className='d-flex justify-content-center mt-4'>
-                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`} type='submit'>Submit Details</button>
+                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`} type='submit'>{score}</button>
                                             </div>
                                         </form>
                                     </div>

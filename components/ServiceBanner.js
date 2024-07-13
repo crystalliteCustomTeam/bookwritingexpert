@@ -18,73 +18,29 @@ import Star from "../public/images/amazonbookpublishing/star.png";
 import { useRouter } from "next/router";
 
 const ServiceBanner = (props) => {
-  const bannerlogo = [
-    { banlogo: banslider1 },
-    { banlogo: banslider3 },
-    { banlogo: banslider4 },
-    { banlogo: banslider1 },
-    { banlogo: banslider3 },
-    { banlogo: banslider4 },
-  ];
-
-  var bannerslider = {
-    dots: false,
-    arrows: false,
-    autoplay: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    rows: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   // form start
+  const [ip, setIP] = useState('');
+  const [score, setScore] = useState('Get A Free Quote');
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
-  const [ip, setIP] = useState("");
-  //creating function to load ip address from the API
+  // Function to load IP address from the API
   const getIPData = async () => {
-    const res = await Axios.get(
-      "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
-    );
-    setIP(res.data);
+    try {
+      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+      setIP(res.data);
+    } catch (error) {
+      console.error('Error fetching IP data:', error);
+    }
   };
+
   useEffect(() => {
     getIPData();
   }, []);
-
-  const [score, setScore] = useState("Get A Free Quote");
-
-  const router = useRouter();
-  const currentRoute = router.pathname;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -99,57 +55,122 @@ const ServiceBanner = (props) => {
     };
 
     const JSONdata = JSON.stringify(data);
+    setScore('Sending Data');
 
-    setScore("Sending Data");
+    try {
+      const res = await fetch('/api/email/route', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+        body: JSONdata,
+      });
 
-    fetch("api/email/route", {
-      method: "POST",
-      headers: {
-        Accept: "application/json, text/plain, */*",
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    }).then((res) => {
       console.log(`Response received ${res}`);
       if (res.status === 200) {
-        console.log(`Response Successed ${res}`);
+        console.log(`Response succeeded ${res}`);
       }
-    });
 
-    var currentdate = new Date().toLocaleString() + "";
-    let headersList = {
-      Accept: "*/*",
-      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-      Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-      "Content-Type": "application/json",
-    };
+      const currentdate = new Date().toLocaleString();
+      const headersList = {
+        Accept: '*/*',
+        'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
+        Authorization: 'Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer',
+        'Content-Type': 'application/json',
+      };
 
-    let bodyContent = JSON.stringify({
-      IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-      Brand: "BOOK-WRITING-EXPERT",
-      Page: `${currentRoute}`,
-      Date: currentdate,
-      Time: currentdate,
-      JSON: JSONdata,
-    });
-    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-      method: "POST",
-      body: bodyContent,
-      headers: headersList,
-    });
+      const bodyContent = JSON.stringify({
+        IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+        Brand: 'BOOK-WRITING-EXPERT',
+        Page: currentRoute,
+        Date: currentdate,
+        Time: currentdate,
+        JSON: JSONdata,
+      });
 
-    const { pathname } = Router;
-    if (pathname == pathname) {
-      window.location.href = "https://www.bookwritingexperts.com/thank-you";
+      await fetch('https://sheetdb.io/api/v1/1ownp6p7a9xpi', {
+        method: 'POST',
+        body: bodyContent,
+        headers: headersList,
+      });
+
+      const myHeaders = new Headers();
+      myHeaders.append('Content-Type', 'application/json');
+
+      const hubspotBody = JSON.stringify({
+        fields: [
+          {
+            objectTypeId: '0-1',
+            name: 'email',
+            value: e.target.email.value,
+          },
+          {
+            objectTypeId: '0-1',
+            name: 'firstname',
+            value: e.target.name.value,
+          },
+          {
+            objectTypeId: '0-1',
+            name: 'phone',
+            value: e.target.phone.value,
+          },
+          {
+            objectTypeId: '0-1',
+            name: 'message',
+            value: e.target.message.value,
+          },
+          {
+            objectTypeId: '0-1',
+            name: 'services',
+            value: e.target.services.value,
+          },
+        ],
+        context: {
+          ipAddress: ip.IPv4,
+          pageUri: currentRoute,
+          pageName: currentRoute,
+        },
+        legalConsentOptions: {
+          consent: {
+            consentToProcess: true,
+            text: 'I agree to allow Example Company to store and process my personal data.',
+            communications: [
+              {
+                value: true,
+                subscriptionTypeId: 999,
+                text: 'I agree to receive marketing communications from Example Company.',
+              },
+            ],
+          },
+        },
+      });
+
+      await fetch(
+        'https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f',
+        {
+          method: 'POST',
+          headers: myHeaders,
+          body: hubspotBody,
+          redirect: 'follow',
+        }
+      )
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.error(error));
+
+      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+    } catch (error) {
+      console.error('Error submitting form:', error);
     }
   };
+
 
   return (
     <>
       <div
-        className={`${styles[props.bannershome]} ${
-          styles[props.servicesBanner]
-        }`}
+        className={`${styles[props.bannershome]} ${styles[props.servicesBanner]
+          }`}
       >
         <Container>
           <Row>
