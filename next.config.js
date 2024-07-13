@@ -9,6 +9,12 @@ const nextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "inhouse.cryscampus.com",
+        port: "",
+        pathname: "/**",
+      },
     ],
   }
 };
