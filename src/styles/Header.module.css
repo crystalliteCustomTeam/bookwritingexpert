@@ -68,6 +68,14 @@
   text-decoration: none;
   font-family: "Poppins";
 }
+.menuLinksCbi {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-family: "Poppins";
+}
 .navlinks {
   list-style: none;
 }
@@ -84,12 +92,30 @@
   color: #fff;
   font-family: "Poppins";
 }
-
+.headerTelCbi {
+  font-size: 15px;
+  padding: 0px 18px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background-color: #000;
+  border: 0;
+  color: #fff;
+  font-family: "Poppins";
+}
+.headerTelCbi:hover {
+  background-color: #ff9900;
+}
 .headerbtnspacing {
-  border: 2px solid #ff9900;
   background-color: transparent;
 }
-
+.headerBtnSpacingCbi {
+  background-color: #ff9900;
+}
+.headerBtnSpacingCbi:hover{
+  background-color: #292929;
+}
 .headertel.headerbtnspacing:hover,
 .headertel.headerbtnspacing a:hover {
   background-color: #ff9900;
@@ -100,7 +126,11 @@
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.headerbtnCBIcolor {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .navalign {
   justify-content: flex-end;
 }
@@ -113,7 +143,10 @@
   background-color: #223235;
   color: white;
 }
-
+.headerbtnCBIcolor:hover {
+  background-color: transparent;
+  color: white;
+}
 .megamenu ul li a {
   color: #fff;
 }
@@ -153,7 +186,10 @@
   display: flex;
   align-items: center;
 }
-
+.headerCBIicon {
+  display: flex;
+  align-items: center;
+}
 /* .bigIcon1 {
     position: relative;
     left: -4px;
@@ -250,6 +286,10 @@
 }
 
 .logonew {
+  width: 115px;
+  height: 85px;
+}
+.logoNewCbi {
   width: 115px;
   height: 85px;
 }
@@ -440,20 +480,29 @@
     padding: 0;
     margin-top: 4%;
   }
-
+  .logoNewCbi {
+    filter: brightness(0) invert(1);
+  }
   .headerhome {
-    position: unset;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: #141d29;
+    z-index: 99999999;
   }
   .headerblue {
-    position: unset;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color: #141d29;
   }
-
+  .headerCBI {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eee;
+    z-index: 99999999;
+  }
   .headerbtnspacing {
     position: relative;
     left: unset;
@@ -462,6 +511,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .headerCBIicon {
+    display: flex;
+    align-items: center;
   }
   .headertel {
     margin-top: 1%;
@@ -486,7 +539,9 @@
   .megamenu {
     margin: 0px !important;
   }
-
+  .menuLinksCbi {
+    color: #fff;
+  }
   .border {
     border: 0;
     padding-left: 0px;

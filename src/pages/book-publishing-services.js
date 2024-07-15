@@ -3,26 +3,28 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // images
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import typeofbooks from '/public/images/selfpublishingservices/1.jpg'
-import copy from '/public/images/selfpublishingservices/2.jpg'
-import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
-import publishmybook from '/public/images/selfpublishingservices/4.jpg'
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const typeofbooks = await import("/public/images/selfpublishingservices/1.jpg");
+const copy = await import("/public/images/selfpublishingservices/2.jpg");
+const marketyourbook = await import("/public/images/selfpublishingservices/3.jpg");
+const publishmybook = await import("/public/images/selfpublishingservices/4.jpg");
 // components
-import Banner from '../../components/Banner'
-import Dowecome from '../../components/Dowecome'
-import Stopworrying from '../../components/Stopworrying'
-import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
-import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
-import Selfpublishing from '../../components/Selfpublishing'
-import Lululogos from '../../components/Lululogos'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Bookpublishingservicesweoffer from '../../components/Bookpublishingservicesweoffer'
-import Major from '../../components/Major'
-import Cta from '../../components/Cta'
+import dynamic from 'next/dynamic'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Dowecome = dynamic(() => import('../../components/Dowecome'));
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
+const Aspiring = dynamic(() => import('../../components/Aspiring'));
+const Ourprocess = dynamic(() => import('../../components/Ourprocess'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Makestoriesnew = dynamic(() => import('../../components/Makestoriesnew'));
+const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'));
+const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
+const Lululogos = dynamic(() => import('../../components/Lululogos'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Bookpublishingservicesweoffer = dynamic(() => import('../../components/Bookpublishingservicesweoffer'));
+const Major = dynamic(() => import('../../components/Major'));
+const Cta = dynamic(() => import('../../components/Cta'));
+
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 
@@ -51,167 +53,13 @@ const Bookpublishingservices = () => {
     }
   ]
 
-  const work = <span>Your work is over after creating a masterpiece. Let us take the lead from here. Our <Link className='colortextgrey textdocationnone hover' href='/book-publishing-services/'> Amazon publishing services </Link> include the three crucial areas of the publishing process: Production, Marketing, and Distribution. As the best publishers, our experience lies in publishing many books by professional writers. And our publishing experts have upgraded many authors to published book authors universally. It’s time for you to get famous!</span>
+  
 
 
-  const schema = {
-
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-publishing-services/"
-    },
-    "headline": "Providing Full Fledged Book Publishing Services To Our Struggling Authors",
-    "description": "Top-Rated Book Publishing Services by Book Writing",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/publishing.jpg?id=8354",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-18"
-
-  }
-
-  const schema1 = {
-
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-
-
-  const schema3 = {
-
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "description": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "provider": {
-      "@type": "Organization",
-      "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-      "url": "https://www.bookwritingexperts.com/book-publishing-services/"
-    },
-    "serviceType": ["book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing"],
-    "areaServed": {
-      "@type": "country",
-      "name": "us"
-    }
-
-  }
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
 
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-        <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-      
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-        <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
-        <meta property="og:url" content="/book-publishing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:04:48+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="9 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
-        />
-
-
-      </Head>
 
 
 

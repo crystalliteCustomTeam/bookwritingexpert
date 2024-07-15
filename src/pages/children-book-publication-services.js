@@ -54,7 +54,7 @@ const Childrenbookpublicationservices = () => {
   ]
 
 
-  const posdata = <span>Let Our Best <Link className='textdocationnone color-blue hover fw700' href='/children-book-publication-services'>Amazon Kindle Direct Publishing (KDP)</Link> Service Providers Handle All Your Publishing Troubles!</span>
+  const posdata = <span>Let Our Best <Link className='textdocationnone color-blue hover fw700' href='https://www.bookwritingexperts.com/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link> Service Providers Handle All Your Publishing Troubles!</span>
 
 
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Providing Full Fledged</span> <Link className='textdocationnone color-blue hover' href="/children-book-publication-services"> Book Publishing Services  </Link>  <span className=''>To Our Struggling Authors</span> </h1>;
@@ -128,8 +128,28 @@ const Childrenbookpublicationservices = () => {
       
 
 
-        <link rel="icon" href="/favicon.svg" />
+        {/* <link rel="icon" href="/favicon.svg" /> */}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
+        <link rel="profile" href="http://gmpg.org/xfn/11" />
 
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+        <title>Hire The Best Children Book Publication Services - Book Writing Experts</title>
+        <meta name="description" content="By hiring Book Writing Experts, you can publish your childrens book with perfection. We offer children book publication services for kids with perfect illustrations." />
+
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Hire The Best Children Book Publication Services - Book Writing Experts" />
+        <meta property="og:description" content="By hiring Book Writing Experts, you can publish your children's book with perfection. We offer children book publication services for kids with perfect illustrations." />
+        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
+        <meta property="og:site_name" content="Book Writing" />
+        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="13 minutes" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
 
 

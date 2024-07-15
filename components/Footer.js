@@ -4,6 +4,7 @@ import styles from '@/styles/Footer.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 // images 
+import { useState,useEffect } from 'react'
 import footerlogo from '../public/images/logo.svg'
 import protectedlogo from '../public/images/footer/protected.png'
 import visa from '../public/images/footer/visa.png'
@@ -74,6 +75,16 @@ const footerlogosnew =
 
 
 const Footer = () => {
+
+
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  useEffect(() => {
+    const delay = 3000;
+    const timeoutId = setTimeout(() => {
+      setImagesLoaded(true);
+    }, delay);
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   var visalogo = {
     dots: false,
@@ -156,9 +167,11 @@ const Footer = () => {
               <Image loading="lazy" className={styles.footerlogosize} src={footerlogo} alt="Book Writing Experts"></Image>
               <ul className={styles.footermenu1}>
                 <li className={`${styles.footermenulinks} mt-4`}><MdEmail size={16} />  <Link className={styles.styleset} href="mailto:support@bookwritingexperts.com"><Image src={email} alt="Book Writing Experts" /></Link></li>
-                <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(855) 500 0057"> (855) 500 0057 </Link></li>
-                <li className={`${styles.footermenulinks} pt-3`}><BsFillTelephoneFill size={12} /> <Link className={styles.styleset} href="tel:(213) 289 3888"> (213) 289 3888 </Link></li>
+                <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> Toll Free:<Link className={styles.styleset} href="tel:8555000057"> (855) 500-0057 </Link></li>
+                <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>   <BsFillTelephoneFill size={12} /> For Sales Inquiry:<Link className={styles.styleset} href="tel:2135499870"> (213) 549-9870 </Link></li>
+                <li className={`${styles.footermenulinks} ${styles.footermenulinks2} pt-3`}>  <BsFillTelephoneFill size={12} /> For Project Inquiry:<Link className={styles.styleset} href="tel:2135499850"> (213) 549-9850 </Link></li>
                 <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 445 S.Figueroa Street, Los Angeles, CA 90071 </li>
+                <li className={`${styles.footermenulinks} pt-3`}> <ImLocation2 size={16} /> 502 W 7th Street STE 100, Erie PA 16502 </li>
 
 
 
@@ -186,7 +199,7 @@ const Footer = () => {
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/contact">Contact</Link></li>
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/faqs">Faq's</Link></li>
-                
+
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="javascript:$zopim.livechat.window.show();">Let's Get Started</Link></li>
 
@@ -213,7 +226,7 @@ const Footer = () => {
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/book-proofreading-services">Proofreading Services</Link></li>
 
-                <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/ghostwriting-services">Ghostwriting</Link></li>
+                {/* <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/ghostwriting-services">Ghostwriting</Link></li> */}
 
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/children-book-publication-services">Children Book Publication</Link></li>
 
@@ -233,24 +246,25 @@ const Footer = () => {
 
               <div className={styles.imgvisa}>
 
+                {imagesLoaded &&
 
-                <Slider {...visalogo}>
-
-
-
-                  {footerlogosnew.map((item, i) => {
-                    return (
-                      <div key={i} className={styles.rightlogo}>
-                        <Image loading="lazy" className='img-fluid' src={item.footerlogosfuncy} alt="Book Writing Experts"></Image>
-                      </div>
-                    )
-                  })}
+                  <Slider {...visalogo}>
 
 
 
+                    {footerlogosnew.map((item, i) => {
+                      return (
+                        <div key={i} className={styles.rightlogo}>
+                          <Image loading="lazy" className='img-fluid' src={item.footerlogosfuncy} alt="Book Writing Experts"></Image>
+                        </div>
+                      )
+                    })}
 
-                </Slider>
 
+
+
+                  </Slider>
+                }
 
 
 
@@ -258,19 +272,19 @@ const Footer = () => {
 
               </div>
               <div className={styles.imgvisa}>
+                {imagesLoaded &&
+                  <Slider {...awardslogo}>
 
-                <Slider {...awardslogo}>
+                    {footerlogos1.map((item, i) => {
+                      return (
+                        <div key={i} className={styles.rightlogo}>
+                          <Image loading="lazy" className='pt-1 img-fluid' src={item.footerimg1} alt="Book Writing Experts"></Image>
+                        </div>
+                      )
+                    })}
 
-                  {footerlogos1.map((item, i) => {
-                    return (
-                      <div key={i} className={styles.rightlogo}>
-                        <Image loading="lazy" className='pt-1 img-fluid' src={item.footerimg1} alt="Book Writing Experts"></Image>
-                      </div>
-                    )
-                  })}
-
-                </Slider>
-
+                  </Slider>
+                }
 
               </div>
 
@@ -285,7 +299,7 @@ const Footer = () => {
                 <Image loading="lazy" className='img-fluid' src={visa} alt="Book Writing Experts"></Image>
               </Col>
               <Col md={4}>
-                <p className='font14 text-center font-f'>© 2023 - All Rights Reserved</p>
+              <p className='font14 text-center font-f'>© 2024 - All Rights Reserved - <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/">Mini Investment</Link></p>
               </Col>
               <Col md={4}>
                 <div className={styles.aligntextrignt}>

@@ -1,0 +1,118 @@
+.childBanner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 150px 0 100px;
+    font-family: "SF Pro Display", sans-serif;
+    background: url(../../../public/images/childrenillustration/bg-Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btnGray {
+    background: #b9b9b9;
+    color: white;
+    padding: 8px 50px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.childBanner h3 {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.childBanner h1 {
+    font-size: 80px;
+    line-height: 90px;
+    color: #F7981D;
+}
+
+.childBanner p {
+    font-size: 18px;
+}
+
+.text-orange {
+    color: #F7981D;
+}
+
+.bg-orange {
+    background: #F7981D;
+}
+
+.childBanner .formClass {
+    background: #E8E8E8;
+    border-radius: 5px;
+}
+
+.childBanner .formClass input {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid;
+    background: transparent;
+    padding: 5px 0px;
+    width: 100%;
+}
+.childBanner .formClass input:focus {
+    border: none;
+    border-bottom: 1px solid;
+    outline: inherit;
+}
+
+.childBanner .formClass label {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin: 5px 0;
+}
+
+@media (max-width:1400px) {
+    .childBanner p {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width:1199.98px) {
+    .childBanner h1 {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .childBanner h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .childBanner p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width:991.98px) {
+    .childBanner {
+        padding: 150px 0 50px;
+    }
+
+    .childBanner h3 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .childBanner h1 {
+        font-size: 60px;
+        line-height: 65px;
+        color: #F7981D;
+        text-align: center;
+    }
+    .childBanner p {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+@media (max-width:575.98px) {
+    .childBanner {
+        padding: 150px 0 50px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,7 @@
+.slick-next:before {
+  content: "" !important;
+  background-image: url(../public/images/amazonbookpublishing/right-arrow.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+}

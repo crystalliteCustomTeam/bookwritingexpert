@@ -10,7 +10,6 @@ import BookWriting from '../../components/Bookwriting'
 import BookEditing from '../../components/Bookediting'
 import BookMarketing from '../../components/Bookmarketing'
 import BookProofRead from '../../components/Bookproofread'
-import BookGhostWriting from '../../components/Bookghostwriting'
 import BookChildrenPublish from '../../components/Bookchildrenpublish'
 import BookChildrenIllus from '../../components/Bookchildrenillus'
 import BookDigitalMarket from '../../components/Bookdigitalmarket'
@@ -20,7 +19,7 @@ const Pricing = () => {
 
   const priceHead = <h1 className='font50 fw700 color-blue'>The World Awaits Your Masterpiece!</h1>
 
-  const exprtSpan = <span className='fw500 font50 color-white font-f t-center font-f mb-4'><span className='color-blue fw700'>Book Writing Experts</span> Is waiting for you to Ask for a <span className='color-blue fw700'>Professional Ghostwriter</span></span>;
+  const exprtSpan = <span className='fw500 font50 color-white font-f t-center font-f mb-4'><span className='color-blue fw700'>Book Writing Experts</span> Is waiting for you to Ask for a <span className='color-blue fw700'>Professional Bookwriter</span></span>;
 
   const discuss = <span>LET'S DISCUSS</span>
 
@@ -36,102 +35,12 @@ const Pricing = () => {
     }
   ]
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/pricing/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/pricing/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
+
 
   return (
 
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        <title>Pricing - Book Writing Experts</title>
-        <meta name="description"
-          content="Ghostwriting packages that are affordable and designed keeping in mind your budget constraints. Give us a call and let the magic of words happen." />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Pricing - Book Writing Experts" />
-        <meta property="og:description"
-          content="Ghostwriting packages that are affordable and designed keeping in mind your budget constraints. Give us a call and let the magic of words happen." />
-        <meta property="og:url" content="/pricing" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2022-08-31T23:03:08+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="4 minutes" />
-        <link rel="icon" href="/favicon.svg" />
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-      </Head>
 
       {/* banner components */}
       {bannertext.map((item, i) =>
@@ -159,7 +68,7 @@ const Pricing = () => {
 
       <BookProofRead />
 
-      <BookGhostWriting />
+      {/* <BookGhostWriting /> */}
 
       <BookChildrenPublish />
 
@@ -170,7 +79,7 @@ const Pricing = () => {
       {/* Talk To Our Experts! */}
       <Experts
         title={exprtSpan}
-        text="Hit us a message, or give us a call, and make the most of our Professional Ghostwriters."
+        text="Hit us a message, or give us a call, and make the most of our Professional Bookwriters."
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />

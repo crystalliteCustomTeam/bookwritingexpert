@@ -1,37 +1,36 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import whychoose from '/public/images/whychoosebooks/bg-img.png'
+import dynamic from 'next/dynamic'
+// images
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const whychoose = await import("/public/images/whychoosebooks/ill.png");
+const banslider12 = await import("/public/images/illustrativebook/cartoon.svg");
 // import components
-import Banner from '../../components/Banner'
-import Partners from '../../components/Partners'
-import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
-import Whatourclients from '../../components/Whatourclients'
-import Requestafreequote from '../../components/Requestafreequote'
-import Stoppublish from '../../components/Stoppublish'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Strugglingtogive from '../../components/Strugglingtogive'
-import Illustrativebook from '../../components/Illustrativebook'
-import Onestepsolutions from '../../components/Onestepsolutions'
-import Script from 'next/script'
-import Stunningillustrations from '../../components/Stunningillustrations'
-import Serviceproviders from '../../components/Serviceproviders'
-import banslider12 from '/public/images/illustrativebook/cartoon.svg'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Partners = dynamic(() => import('../../components/Partners'));
+const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
+const Gotastory = dynamic(() => import('../../components/Gotastory'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
+const Stoppublish = dynamic(() => import('../../components/Stoppublish'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
+const Illustrativebook = dynamic(() => import('../../components/Illustrativebook'));
+const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+const Stunningillustrations = dynamic(() => import('../../components/Stunningillustrations'));
+const Serviceprovidersillutration = dynamic(() => import('../../components/Serviceprovidersillutration'));
 
 
 function Illustrationbook() {
 
 
 
-  const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Get Your Book Illustrations</span>  <br className="d-none d-xl-block" /> <Link className='dblockmobile textdocationnone color-blue hover' href="/illustration"> Illustration Services </Link>  <span className=''>from Our Team  <br className="d-none d-xl-block" />  of Top Illustrators for Hire.</span> </h1>;
+  const newSpan = <h1 className='font50 fw100 color-white font-f hero-span'> Turn Your Manuscript Into A Creative And <br /> Professional Looking Book With Our <br /> <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration Services</Link>.</h1>;
 
-  const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
+  const posdata = <>Let Our <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustrators</Link> For Hire Handle All Your <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration</Link> Needs!
+  </>
 
-  const dataspan = <h1 className='font50 color-white font-f hero-span'>  <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/illustration"> Book Writing Experts </Link>  Is  <br className="d-none d-xl-block" /> waiting for you to Ask for a   <br className="d-none d-xl-block" />  <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/illustration"> Professional Illustrative Book </Link> </h1>;
-
-
+  const dataspan = <h2 className='font50 color-white font-f hero-span'>  Hire Book Writing Experts: The Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration Company</Link> Ready To Turn Your Book Into A Masterpiece  </h2>;
 
   const bannertext = [
     {
@@ -49,105 +48,21 @@ function Illustrationbook() {
 
 
 
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
-    },
-    "headline": "Book Writing Company",
-    "description": "Book Writing Company",
-    "image": "",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-21"
-  }
+ 
 
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
 
-  const schema3 = {
-    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://www.bookwritingexperts.com/" },
-    "serviceType": ["book writing services book writing company book writers affordable book writing services"], "areaServed": { "@type": "country", "name": "us" }
-  }
+ 
 
   return (
     <>
 
 
-      <Head>
-
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Book Writing Services Company</title>
-        <meta name="description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Professional Book Writing Services Company" />
-        <meta property="og:description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="13 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
-        />
-
-        {/* <Schema /> */}
-
-      </Head>
+      
 
 
       {/* googletagmanager */}
 
-   
+
 
       <main>
         {/* banner components */}
@@ -172,16 +87,21 @@ function Illustrationbook() {
         <Partners />
 
         <Strugglingtogive
+          titleills={
+            <>
+              <h2 className='color-blue font50 fw700 font-f mb-4'>Need Help Making Your Book <br className='d-none d-md-block' />Look Appealing?</h2>
+            </>
+          }
           title=""
-          text="You may be a victim of the following nuisances"
+          text={<><p className='textcolor font-f mb-4 font15'>Book Writing Experts helps you overcome the following challenges:</p></>}
           list1="Slow Productivity"
           list2="Lack of Resources"
-          list3="Mismanaged Time Schedules"
+          list3="Time Management Issues"
           list4="Financial Constraints"
-          list5="Demotivation"
-          list6="Delayed Creativity Process"
-          list7="Delayed Writing Process"
-          list8="Continuous Revisions"
+          list5="Lack of Motivation"
+          list6="Lack of Creativity"
+          list7="Continuous Revisions"
+          list8="Failing To Grab Reader Attention"
           btn1="Get a free Proposal"
           btn2="Talk to an expert"
           btn3="(855) 500 0057"
@@ -189,30 +109,28 @@ function Illustrationbook() {
 
         <Illustrativebook
           title={dataspan}
-          para='Hit us a message, or give us a call, and make the most of our Professional Illustrative Book'
-          cartoonimg = {banslider12}
-          cartoon = 'cartoon'
+          para='Book Writing Experts has a team of book illustrators that can add colors to your book.
+          '
+          cartoonimg={banslider12}
+          cartoon='cartoon'
         />
 
         <Stunningillustrations />
 
-
-
-
-
-
         <Stoppublish
-          title='Stop worrying about publishing books!'
+          title='Our best book illustrators come together to create the most perfect book for you.
+          '
           subtitle={posdata}
           btn1='Get a free Proposal'
           btn2='Talk to an expert'
-          stopworrying = 'stopworrying'
+          stopworrying='stopworrying'
         />
 
         {/* Why Choose book writing expert? */}
         <Whychoosebook
-          title="Why Choose Book Writing Expert?"
-          text="We are aware of the distinctiveness of the content creation needs of our customers. We take great pride in the incredibly various opinions, experiences, and knowledge that our team of authors can contribute. To ensure the greatest efficacy, we firmly believe in and work towards a transparent collaboration between you and us. For the greatest candor, we develop intricate production processes that accommodate each of our clients uniquely. The typical content around here is remarkable, genuine, and original!"
+          title="Why Choose Book Writing Experts?"
+          text="We understand how unique our clients' needs are when it comes to book illustrations. We are proud of the remarkably diverse viewpoints, life experiences, and expertise that our team of book illustrators can offer. In order to guarantee optimal effectiveness, we sincerely believe in and strive for an open and honest collaboration between you and us. Hire Book Writing Experts today!
+          "
           whychoose={whychoose}
         />
 
@@ -220,20 +138,17 @@ function Illustrationbook() {
         {/* Customersatisfaction */}
         <Customersatisfaction />
 
-
-
-
-
-
         <div className='datacloud'>
           <Onestepsolutions />
         </div>
 
-        <Serviceproviders
-     
+        <Serviceprovidersillutration
+          title={<>  <h2 className='font40 font-f color-white fw300'>
+            Let The Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustrators</Link> Turn Your Boring Book Into An Interesting One
+          </h2></>}
+          text={<> <p className="text-white font-f mb-4 font15">Hire Book Writing Experts today and make sure that your readers become glued to your books with our perfect book illustration services.</p> </>}
+
         />
-
-
 
         {/* Talk To Our Whatourclients! */}
         <Whatourclients />

@@ -1,0 +1,52 @@
+.ready{
+  padding-bottom: 70px;
+  background-color: #F3F3F3;
+}
+
+.turn h2{
+  font-size: 25px;
+  color: #24303E;
+  line-height: 1.4;
+}
+.turn p{
+  color: #24303E;
+  font-size: 13.5px;
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+.turn{
+  align-items: flex-end;
+}
+
+
+@media (min-width: 1400px) { 
+
+  .great{
+    font-size: 15px;
+  }
+  .produce {
+    font-size: 15px;
+  }
+
+  .turn h2 {
+    font-size: 30px;
+    color: #24303E;
+    line-height: 1.4;
+}
+.turn p{
+  font-size: 15px;
+}
+}
+
+@media (max-width: 1200px) {  
+
+  .turn h2 {
+    font-size: 16px;
+    color: #24303E;
+    line-height: 1.4;
+    padding-top: 70px;
+}
+.turn {
+  align-items: center;
+}
+}

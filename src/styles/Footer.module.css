@@ -17,6 +17,10 @@ background-color: #24303E;
 
 
 }
+.footermenulinks2{
+    display: flex;
+    gap: 10px;
+}
 .footerlogosize{
     width:155px;
     height:93px;

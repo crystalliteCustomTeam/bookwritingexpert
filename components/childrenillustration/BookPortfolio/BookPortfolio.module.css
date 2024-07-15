@@ -1,0 +1,76 @@
+.bookPortfolio {
+    font-family: "SF Pro Display", sans-serif;
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+.font_50 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.font_20 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+@media (max-width:1400px) {
+    .font_50 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .font_20 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .font_50 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .font_20 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .font_50 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .font_20 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .bookPortfolio {
+        font-family: "SF Pro Display", sans-serif;
+        padding: 70px 0px 10px;
+        ;
+        text-align: center;
+    }
+}
+
+@media (max-width:767.98px) {
+    .font_50 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .bookPortfolio {
+        font-family: "SF Pro Display", sans-serif;
+        padding: 70px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:575.98px) {
+    .bookPortfolio {
+        padding: 0 0 50px;
+    }
+}

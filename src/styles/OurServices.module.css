@@ -1,0 +1,28 @@
+.ourServices {
+  padding: 80px 0 120px;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0%;
+  width: 2px;
+  height: 100%;
+}
+
+.crad {
+  height: 100%;
+  padding: 0 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .ourServices {
+    padding: 40px 0 65px;
+  }
+}

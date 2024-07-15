@@ -18,15 +18,12 @@ const Homebanner = (props) => {
 
     const bannerlogo =
         [
-
             { banlogo: banslider1 },
             { banlogo: banslider3 },
             { banlogo: banslider4 },
             { banlogo: banslider1 },
             { banlogo: banslider3 },
             { banlogo: banslider4 },
-
-
         ];
 
 
@@ -67,16 +64,13 @@ const Homebanner = (props) => {
         ]
     };
 
-
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-
-
     return (
         <>
-            <div className={`${styles[props.bannershome]} bannergllobal`}>
+            <div className={`${styles[props.bannershome]} ${styles[props.servicesBanner]}`}>
 
                 <Container>
                     <Row>

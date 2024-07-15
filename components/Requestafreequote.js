@@ -15,85 +15,128 @@ import { useRouter } from 'next/router';
 const Requestafreequote = () => {
 
   const [ip, setIP] = useState('');
-  //creating function to load ip address from the API
-  const getIPData = async () => {
-    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
-    setIP(res.data);
-  }
-  useEffect(() => {
-    getIPData()
-  }, [])
-
-
   const [score, setScore] = useState('Submit');
-
-
   const router = useRouter();
   const currentRoute = router.pathname;
 
+  // Function to load IP address from the API
+  const getIPData = async () => {
+    try {
+      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+      setIP(res.data);
+    } catch (error) {
+      console.error('Error fetching IP data:', error);
+    }
+  }
+
+  useEffect(() => {
+    getIPData();
+  }, []);
+
   const handleSubmit = async (e) => {
-
     e.preventDefault();
-
- 
-
 
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
-      pageUrl:currentRoute,
-      phone: e.target.phone.value,
+      pageUrl: currentRoute,
+      phone: e.target.phone.value, 
     }
 
-    const JSONdata = JSON.stringify(data)
-
+    const JSONdata = JSON.stringify(data);
     setScore('Sending Data');
 
+    try {
+      const response = await fetch('/api/quote/route', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSONdata
+      });
 
-
-    fetch('api/quote/route', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSONdata
-    }).then((res) => {
-      console.log(`Response received ${res}`)
-      if (res.status === 200) {
-        console.log(`Response Successed ${res}`)
+      if (response.status === 200) {
+        console.log('Response succeeded', response);
       }
-    })
 
-    var currentdate = new Date().toLocaleString() + ''
-    let headersList = {
+      const currentdate = new Date().toLocaleString();
+      const headersList = {
         "Accept": "*/*",
         "User-Agent": "Thunder Client (https://www.thunderclient.com)",
         "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
         "Content-Type": "application/json"
-       }
-       
-       let bodyContent = JSON.stringify({
+      }
+
+      const bodyContent = JSON.stringify({
         "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
         "Brand": "BOOK-WRITING-EXPERT",
-        "Page": `${currentRoute}`,
+        "Page": currentRoute,
         "Date": currentdate,
         "Time": currentdate,
-        "JSON": JSONdata,
-       
+        "JSON": JSONdata
       });
-       
-     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", { 
-         method: "POST",
-         body: bodyContent,
-         headers: headersList
-       });
 
-    const { pathname } = Router
-    if (pathname == pathname) {
+      await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList
+      });
+
+      const hubspotHeaders = new Headers();
+      hubspotHeaders.append("Content-Type", "application/json");
+
+      const hubspotBody = JSON.stringify({
+        "fields": [
+          {
+            "objectTypeId": "0-1",
+            "name": "email",
+            "value": e.target.email.value
+          },
+          {
+            "objectTypeId": "0-1",
+            "name": "firstname",
+            "value": e.target.name.value
+          },
+          {
+            "objectTypeId": "0-1",
+            "name": "phone",
+            "value": e.target.phone.value
+          }, 
+        ],
+        "context": {
+          "ipAddress": ip.IPv4,
+          "pageUri": currentRoute,
+          "pageName": currentRoute
+        },
+        "legalConsentOptions": {
+          "consent": {
+            "consentToProcess": true,
+            "text": "I agree to allow Example Company to store and process my personal data.",
+            "communications": [
+              {
+                "value": true,
+                "subscriptionTypeId": 999,
+                "text": "I agree to receive marketing communications from Example Company."
+              }
+            ]
+          }
+        }
+      });
+
+      await fetch("https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f", {
+        method: "POST",
+        headers: hubspotHeaders,
+        body: hubspotBody,
+        redirect: "follow"
+      }).then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.error(error));
+
       window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+    } catch (error) {
+      console.error('Error submitting form:', error);
     }
-
   }
 
 
@@ -106,9 +149,9 @@ const Requestafreequote = () => {
             <Row>
               <Col md={4}> <input type="text" className={styles.formfree} required name="name" placeholder='Name' /></Col>
 
-              <Col md={4}>  <input type="email" className={styles.formfree} required name="email" placeholder='Email'   /></Col>
+              <Col md={4}>  <input type="email" className={styles.formfree} required name="email" placeholder='Email' /></Col>
 
-              <Col md={4}>   <input type="tel" minLength="10" maxLength="13"  className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]*" /> </Col>
+              <Col md={4}>   <input type="tel" minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]*" /> </Col>
             </Row>
             <button className={styles.freebtn} type="submit"> {score} </button>
           </form>

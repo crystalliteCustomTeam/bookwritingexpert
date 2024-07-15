@@ -12,11 +12,11 @@ const Cta = () => {
                     <Row className={` ${styles.middle} gy-4`}>
                         <Col md={12}>
                             <div className={styles.dowemargin}>
-                                <h3 className="fw300 font50 text-white font-f mb-4">
-                                    <span>Get A Customized Solution By <Link className='d-block color-blue fw700 hover textdocationnone' href='/book-publishing-services'> Best Publishing Services </Link></span>
-                                </h3>
+                                <h2 className="fw300 font50 text-white font-f mb-4">
+                                   Access Our <span className='color-blue fw700 hover textdocationnone' href='/book-publishing-services'> Book Writers </span>at Your Fingertips
+                                </h2>
                                 <p className='font15 fw400 font-f text-white pe-lg-5 pe-0'>
-                                    <span>Your work is over after creating a masterpiece. Let us take the lead from here. Our <Link className='text-white textdocationnone hover' href='/book-publishing-services'> Amazon publishing services </Link> include the three crucial areas of the publishing process: Production, Marketing, and Distribution. As the best publishers, our experience lies in publishing many books by professional writers. And our publishing experts have upgraded many authors to published book authors universally. It’s time for you to get famous!</span>
+                                    <span>We have you covered in all the domains with our dedicated team of skilled book writers, talented designers, proactive publicists, and innovative marketers. With our proactive approach and diverse skill sets, we ensure that your projects are handled with precision and efficiency. So hire professional book writing services to stand in the competitive market!</span>
                                 </p>
                                 <div className='mt-5'>
                 

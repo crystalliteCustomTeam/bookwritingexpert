@@ -1,0 +1,67 @@
+.testimonial{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.testimonial h3{
+    font-family: "SF Pro Display", sans-serif;
+}
+.testimonialSlide{
+    position: relative;
+}
+.testimonialSlide::before{
+    position: absolute;
+    content:'';
+    background: #707070;
+    width: 1px;
+    height: 80%;
+    top: 10%;
+    left:50%;
+    z-index: 9999;
+}
+.testimonialData .slick-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    bottom: -25px;
+    left: 40px;
+  }
+  .testimonialData .slick-dots li {
+    background-color: #F7981D !important;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+  }
+  
+  .testimonialData .slick-dots li button {
+    background: #F7981D !important;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+  }
+  .testimonialData li.slick-active {
+    background: #F7981D;
+    width: 60px;
+    height: 15px;
+    color: #F7981D;
+    border-radius: 50px;
+  }
+
+
+@media (max-width:767.98px) {
+    .testimonialSlide::before{
+        display: none;
+    }
+    .testimonial{
+      padding: 50px 0;
+      display: flex;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+  }
+  .testimonialData p{
+    font-size: 14px;
+  }
+}

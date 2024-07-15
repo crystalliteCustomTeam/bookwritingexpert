@@ -1,0 +1,292 @@
+.bookProcess {
+    background: url('../../../public/images/childrenillustration/bookProcess.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+    padding: 0px 0 350px;
+    margin-top: 400px;
+    display: flex;
+    position: relative;
+}
+
+.heading {
+    position: relative;
+}
+
+.heading::before {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background: url('../../../public/images/childrenillustration/arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 100%;
+
+}
+
+.font_50 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.font_30 {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.font_40 {
+    font-size: 40px;
+    line-height: 50px;
+}
+.font_12{
+    font-size: 12px;
+    line-height: 15px;
+}
+.process {
+    font-family: "Poppins", sans-serif;
+    background: #242424;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -370px;
+    left: 52%;
+    width: 600px;
+    height: 90%;
+    content: '';
+    z-index: 999;
+    padding: 60px 40px;
+}
+
+.process::before {
+    background: url('../../../public/images/childrenillustration/bg-black1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    left: 0%;
+    width: 600px;
+    height: 500px;
+    content: '';
+    z-index: -999;
+}
+
+.processData {
+    margin-right: 20px;
+}
+
+.processData span {
+    font-size: 45px;
+    line-height: 50px;
+    color: #F7981D;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 30px;
+    color: #F7981D;
+    margin-bottom: 5px;
+}
+
+.processData h3 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.processData p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.font_45 {
+    font-size: 45px;
+    line-height: 50px;
+}
+
+@media (max-width:1400px) {
+    .process {
+        top: -370px;
+        left: 54%;
+        width: 520px;
+        height: 90%;
+        content: '';
+        z-index: 999;
+        padding: 30px 20px;
+    }
+
+    .process::before {
+        top: -30px;
+        left: 0%;
+        width: 520px;
+        height: 500px;
+    }
+
+    .font_40 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .processData h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .bookProcess {
+        background: url('../../../public/images/childrenillustration/bookProcess.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        padding: 0px 0 350px;
+        margin-top: 320px;
+        display: flex;
+        position: relative;
+    }
+    .process {
+        top: -300px;
+        left: 54%;
+        width: 400px;
+        height: 100%;
+        content: '';
+        z-index: 999;
+        padding: 30px 20px;
+    }
+
+    .process::before {
+        top: -30px;
+        left: 0%;
+        width: 400px;
+        height: 500px;
+    }
+
+    .processData span {
+        font-size: 30px;
+        line-height: 30px;
+        color: #F7981D;
+        margin-bottom: 5px;
+    }
+
+    .process h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .process p {
+        font-size: 12px;
+        line-height: 16px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .font_40 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .bookProcess {
+        background: url('../../../public/images/childrenillustration/bookProcess.png');
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: top;
+        padding: 0px 0 270px;
+        margin-top: 300px;
+        display: flex;
+        position: relative;
+    }
+    .process {
+        top: -230px;
+        left: 52%;
+        width: 350px;
+        height: 80%;
+        content: '';
+        z-index: 999;
+        padding: 30px 20px;
+    }
+
+    .process::before {
+        top: -30px;
+        left: 0%;
+        width: 350px;
+        height: 500px;
+    }
+
+    .processData span {
+        font-size: 25px;
+        line-height: 30px;
+        color: #F7981D;
+        margin-bottom: 5px;
+    }
+
+    .process h3 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .process p {
+        font-size: 12px;
+        line-height: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .font_18 {
+        font-size: 11px !important;
+        line-height: 14px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:767.98px) {
+    .bookProcess {
+        background: url('../../../public/images/childrenillustration/bg-black1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% center;
+        margin-top: 0px;
+        display: flex;
+        position: relative;
+        padding: 40px 0;
+        height: 100%;
+    }
+
+    .process {
+        background: #242424;
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: auto;
+        padding: 30px 20px;
+    }
+
+    .process::before {
+        display: none;
+    }
+
+    .heading::before {
+        display: none;
+    }
+    .process h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .font_18 {
+        font-size: 14px !important;
+        line-height: 14px;
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .font_40 {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+}

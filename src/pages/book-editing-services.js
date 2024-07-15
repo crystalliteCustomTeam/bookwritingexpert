@@ -47,10 +47,6 @@ const Bookpublishingservices = () => {
       homebannernum: 'Call Us Now At (855) 500 0057 ',
       banlogo: homebannerlogos,
       banners: 'bookeditingservices',
-
-
-
-
     }
   ]
 
@@ -84,8 +80,6 @@ const Bookpublishingservices = () => {
       title: finetitle,
       text: finepare,
       class: 'fintop',
-
-
     },
 
     {
@@ -93,8 +87,6 @@ const Bookpublishingservices = () => {
       title: finetitle1,
       text: finepare1,
       class: 'fintop',
-
-
     },
 
     {
@@ -102,8 +94,6 @@ const Bookpublishingservices = () => {
       title: finetitle2,
       text: finepare2,
       class: 'fintop',
-
-
     },
 
 
@@ -141,164 +131,9 @@ const Bookpublishingservices = () => {
   const perplexing = <span>Let us help you navigate the maze of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editing</Link>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editors</Link>. Call, text, or email us today to make your dream of becoming an author a reality!</span>
 
 
-  const schema = {
-
-
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-editing-services/"
-    },
-    "headline": "Professional Book Editing Services For All The Idealists Within Their Reach",
-    "description": "Book Editing Services",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/editing-jpg.jpg?id=8355",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-18"
-
-
-  }
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/book-editing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-  const schema2 = {
-
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/book-editing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-  const schema3 = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "book editing services book editing company book editors",
-    "description": "book editing services book editing company book editors book editing services book editing company book editors book editing services book editing company book editors",
-    "provider": {
-      "@type": "Organization",
-      "name": "book editing services book editing company book editors",
-      "url": "https://www.bookwritingexperts.com/book-editing-services/"
-    },
-    "serviceType": ["book editing services book editing company book editors"],
-    "areaServed": {
-      "@type": "country",
-      "name": "us"
-    }
-  }
-
-
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Book Editing Services - Book Writing Experts</title>
-        <meta name="description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
-  
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Professional Book Editing Services - Book Writing Experts" />
-        <meta property="og:description" content="Book editing services that fixes the writing flaws and make your book a flawless piece of content. Hire us today to get them at affordable pricing." />
-        <meta property="og:url" content="/book-editing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:01:27+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="9 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
-        />
-
-      </Head>
-
-
-
-
+   
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -474,12 +309,12 @@ const Bookpublishingservices = () => {
 
 
       {/* Stopworrying */}
-   
-        <Stopworrying
-          title2={mishaps}
-          text={errorless}
-          btn2='Chat With Our Experts Today!'
-        />
+
+      <Stopworrying
+        title2={mishaps}
+        text={errorless}
+        btn2='Chat With Our Experts Today!'
+      />
 
 
 

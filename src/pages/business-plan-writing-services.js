@@ -25,23 +25,64 @@ import Major from '../../components/Major'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 
-
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 const businessplanWringservices = () => {
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>  Business Plan Writing Services
-    To Help You Follow A Roadmap To Business Success! </h1>;
 
-  const discuss = <span>LET'S DISCUSS</span>
+
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+
+
+
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Get Professional <span className='color-blue textdocationnone'>Business Plan Writing Services</span> To Meet Your Strategic Business Needs!</h1>;
+
+  const discuss = <span>Talk to an Expert</span>
 
 
   const bannertext = [
     {
       title: newSpan,
-      pra: 'It goes unsaid that a business plan helps business owners secure financing, attract investors, and grow the business. If you need help getting your business off the ground, our team at Book Writing Experts can assist you. We specialize in creating customized business plans that will help you secure funding and launch your company successfully. Our services are affordable, and we offer a free consultation to get started. Contact us today to learn more about how we can help you achieve your business goals!',
+      pra: 'Securing funding, drawing in investors, and promoting business expansion all depend on having a strong business plan. Our team of skilled business plan writers can help you write a business plan that can effectively raise capital and establish your company. Get a free consultation and work with the best business plan writing company.',
       discuss: discuss,
-      homebannernum: '(855) 500 0057',
+      homebannernum: 'Call Us  (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'ghostwriting',
 
@@ -54,9 +95,9 @@ const businessplanWringservices = () => {
 
   const geta = <span className='fw700 color-black'>We Know What It Takes To Write A Business Plan That Wins!</span>
 
-  const posdata = <span className='fw700'>We Don’t Write Business Plans <br /> That Don’t Bring Results. </span>
+  const posdata = <span className='fw700'>We Write Professional Business Plans That Bring In Results </span>
 
-  const datap = <span className=''>We’ve helped countless businesses put together comprehensive and effective business plans, and our professional business plan writer can do the same for you. Buy a business plan online now!
+  const datap = <span className=''>Our Professional business plan writers are ready to work with you to create a complete business plan that meets your strategic needs. Our business plan writing services can help with everything ranging from planning bank loans to raising funds.
 
   </span>
 
@@ -65,7 +106,7 @@ const businessplanWringservices = () => {
     {
       img: mission1,
       title: 'Researching',
-      text: 'This step involves gathering information about your industry, competitors, and target market. We understand the dynamics of your industry and what it takes to succeed in it. This research will also help us develop realistic financial projections for your business.',
+      text: 'We study your target market, competition, and the goal of this step. We are aware of the workings of your sector and the requirements for success. We will be able to create more accurate financial estimates for your company with the aid of this research.',
       class: 'fintop',
 
 
@@ -74,7 +115,7 @@ const businessplanWringservices = () => {
     {
       img: mission2,
       title: 'Planning',
-      text: 'The next step is to develop a detailed business plan that includes your business model, marketing strategy, and financial projections. This planning process will help us identify your unique selling proposition and what it will take to achieve your goals.',
+      text: 'Creating a thorough business plan that covers your financial estimates, marketing strategy, and business model is the next stage. We will be able to determine your unique selling proposition and the steps necessary to reach your objectives with the aid of this planning process.',
       class: 'fintop',
 
 
@@ -83,7 +124,7 @@ const businessplanWringservices = () => {
     {
       img: mission3,
       title: 'Writing',
-      text: 'Once we have completed research and planning, our experienced writers will be ready to write your business plan. This document will be the roadmap for your business, so it is important to make sure it is clear, concise, and comprehensive. Include an executive summary, company description, market analysis, product/service offering, marketing strategy, financial projections, and management team bios.',
+      text: 'Your business plan acts as a roadmap for your business. We make sure to cover key elements such as executive summary, job description, market research, product or service offering, marketing strategies, financial projections, and in-depth bios of your board. ',
       class: 'fintop',
 
 
@@ -92,10 +133,10 @@ const businessplanWringservices = () => {
 
   ]
 
-  const dateset = <span className='fw500'>  Waiting For Someone To <br></br> <Link href='javascript:$zopim.livechat.window.show();' className='color-blue textdocationnone hover fw700'>Give Your Book An Book Version?</Link> </span>
+  const dateset = <strong className='fw600'> <span className='color-blue'>Best Business Plan Writing Services</span><br/> at Affordable Price</strong>
 
 
-  const datesettext = <span>  Get in touch with our <Link href='javascript:$zopim.livechat.window.show();' className='color-blue textdocationnone hover'>professional book writing</Link> specialists today. Our Books Writing Experts choose the most compelling words and perfect linguistics for your work. We promise original, customized, and timely delivery of your content without breaking your bank!</span>
+  const datesettext = <span> Staffed with qualified writers, we have a team of professional business plan writers who have undergone our strict vetting process. They have developed more than 1000 projects for different companies across various sectors. Gain benefits from their wealth of knowledge and experience.</span>
 
   const reasons = [
 
@@ -140,142 +181,19 @@ const businessplanWringservices = () => {
 
   ]
 
-  const text = <span>We believe that every business deserves a great plan. Our team of experienced writers will help you create an engaging and professional document, while our creative approach ensures that your plan stands out from the competition. So if you’re looking for an edge in today’s competitive marketplace, book writing expert is the perfect partner for business plan service.
+  const text = <span>A perfect business plan is all about detailing the company’s operations, SWOT analysis, revenue strategies, and financial projections so that it can attract potential investors. Our team of best business plan writers is ready to help you come up with an individualized operative plan that will launch your business toward the coveted development heights..
 
   </span>;
 
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/business-plan-writing-services"
-    },
-    "headline": "Business Plan Writing Services - Book Writing Experts",
-    "description": "Business Plan Writing Services offered by Book Writing Experts ensure to turn your dream into a successfully launched and hit business. Call us now.",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/ghost-writing-jpg.jpg?id=8337",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-18"
-  }
 
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/business-plan-writing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
 
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/business-plan-writing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
+
 
 
   return (
     <>
-      <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Business Plan Writing Services - Book Writing Experts</title>
-        <meta name="description" content="Business Plan Writing Services offered by Book Writing Experts ensure to turn your dream into a successfully launched and hit business. Call us now." />
-      
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Business Plan Writing Services - Book Writing Experts" />
-        <meta property="og:description" content="Business Plan Writing Services offered by Book Writing Experts ensure to turn your dream into a successfully launched and hit business. Call us now." />
-        <meta property="og:url" content="/business-plan-writing-services" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-03-31T12:00:32+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="6 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
-        />
-
-      </Head>
-
+  
 
       {/* banner components */}
 
@@ -318,7 +236,7 @@ const businessplanWringservices = () => {
 
       {/* Stopworrying */}
       <Stopworrying
-        title='Dealing with the stress of formatting your books?'
+        title='Let’s Get Paired With Our Expert Business Plan Writers '
         title2={posdata}
         subtext={datap}
         btn1='Get a free Proposal'
@@ -330,24 +248,42 @@ const businessplanWringservices = () => {
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
-            <h2 className="color-lightgray   font25   t-center font-f mb-2">Our Approach</h2>
+            <span className="color-lightgray font25 t-center font-f mb-2">Our Approach</span>
 
-            <p className='font30 font-f fw500 colortextgrey t-center pb-2'>Three-Step Game Plan to Writing an Effective Business Plan!
-            </p>
+            <h2 className='font30 font-f fw500 colortextgrey t-center pb-2'>Three-Step Formula for Creating a Winning Business Plan
+            </h2>
 
           </Row>
 
-          <Row className='gy-5'>
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-          </Row>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects}>
+
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Slider>
+            :
+
+
+
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 
@@ -356,24 +292,24 @@ const businessplanWringservices = () => {
       <Ourprocess
         title='Our Modernized Business Plan Writing Process'
 
-        heading1='Business Plan Brief'
-        para1='We will discuss your business ideas with you and get to know your business inside and out. This step is crucial in order to develop a custom-tailored plan that will set you up for success.'
+        heading1='Initial Discovery Phone Call'
+        para1='One of our expert consultants will organize a call. During this conversation, you will answer some basic questions to assist us in understanding the key features of your project and lay the groundwork for our work.'
         num1='01'
 
-        heading2='Comprehensive Research'
-        para2='We’ll conduct market research and feasibility studies to ensure that your business idea has potential.'
+        heading2='Review The Preliminary Draft'
+        para2="After careful evaluation, one of our business plan writers will start writing the first chapters of your business plan. This early draft will emphasize your plan's major aspects and structure. We will then email it to you for approval."
         num2='02'
 
-        heading3='Create a Financial Model'
-        para3='We’ll create a detailed financial model for your business, including pro forma statements and cash flow projections.'
+        heading3='Creating Financial Model'
+        para3='We will contact you with specific inquiries to acquire precise financial and market information. We will develop a complete financial model for your company, including pro forma statements and cash flow estimates.'
         num3='03'
 
-        heading4='Write the Plan'
-        para4='We’ll craft a well-written and convincing executive summary that will capture the attention of investors and lenders.'
+        heading4='Content Review'
+        para4='After integrating the research and financial data, you will receive the first full copy of your business plan. We will provide frequent updates throughout the process and give you plenty of opportunity to examine the draft. '
         num4='04'
 
-        heading5='Final Document'
-        para5='Finally, we’ll put everything together in a professional business plan document that you can use to raise capital and grow your business.'
+        heading5='Visually Appealing Design'
+        para5='Our design team will add a polished and professional look to your business plan after the written content is finished. We guarantee that the design is eye-catching and properly complements the logo of your business.'
         num5='05'
 
 
@@ -424,10 +360,10 @@ const businessplanWringservices = () => {
 
       <div>
         <Selfpublishing
-          title='Helping Entrepreneurs And Small Businesses Achieve Their Goals'
+          title='Writing Perfect Business Plans for Long-Term Success'
           text={text}
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          number="Call Us (855) 500 0057"
+          discuss="Talk To An Expert "
           image={newimagetwoo}
           whychooseclass="marketyourbook"
         />
@@ -451,10 +387,10 @@ const businessplanWringservices = () => {
       {/* Aspiring */}
       <div className='datacloud'>
         <Aspiring
-          title='Professional Business Plan Writing Services We Give New Life To Your Words'
-          text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
-          number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          title='Successful Companies Set Out with A Solid Business Plan'
+          text="Trust us to deliver a business plan that impresses investors and serves as a roadmap for your business's future growth and success."
+          number="Call Us  (855) 500 0057"
+          discuss="Get A Proposal "
         />
       </div>
 

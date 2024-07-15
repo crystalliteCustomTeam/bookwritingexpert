@@ -42,37 +42,39 @@ const Onestepsolutions = () => {
 
   const makestoriesimg =
     [
-
       {
         num: '01',
-        title: 'Fiction ',
-        text: numdat1,
-        storiesimg: book100
-      },
-      {
-        num: '02',
-        title: 'Non-Fiction',
-        text: 'We trigger emotions and engage the target readers with our impeccable writing styles. We make non-fiction exciting and interesting.',
-        storiesimg: book101
-      },
-      {
-        num: '03',
         title: 'Autobiography',
-        text: 'Our expert ghostwriters surely know all the tricks to captivate and engage the readers by showcasing your hassles and extraordinary life story.',
+        text: 'We at Book Writing Experts, provide expert solutions when it comes to book illustration services. Our team of book illustrators add vibrant illustrations so that your autobiography looks more interesting when it comes to reading.',
         storiesimg: book102
       },
       {
-        num: '04',
+        num: '02',
         title: 'Christian Book',
-        text: 'We significantly cover every life event by indexing the realness and keeping the emotional essence alive to take you back in time.',
+        text: 'By adding illustrations to your books we keep the emotional essense of your book alive.',
         storiesimg: book106
       },
       {
-        num: '05',
-        title: 'Children`s Book',
-        text: numdata5,
+        num: '03',
+        title: <>Children's Book</>,
+        text: 'For children’s books we create the most perfect illustrations that takes the young minds in an imaginative world and keeps their interest alive when reading books',
         storiesimg: book105
       },
+      {
+        num: '04',
+        title: 'Fiction ',
+        text: 'Fiction is something which everyone loves and enjoys while reading, so we at Book Writing Experts make sure that we create perfect illustrations for your fiction books.',
+        storiesimg: book100
+      },
+      {
+        num: '05',
+        title: 'Non-Fiction',
+        text: 'Reading non fiction books can sometimes become boring, isn’t it? This is exactly why we carefully put the most perfect art in non fiction books so that it becomes a page turner.',
+        storiesimg: book101
+      },
+     
+     
+     
 
     ];
 
@@ -121,7 +123,7 @@ const Onestepsolutions = () => {
         <Container>
           <Row>
             <Col md={12}>
-              <h2 className='font-f fw500 colortextgrey t-center mb-5'>Our <Link className='color-blue textdocationnone fw700' href="/">Book Writing Company</Link> Will Be A One Stop Solution For You!</h2>
+              <h2 className='font-f fw500 colortextgrey t-center mb-5'>Our  <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration Services</Link> Are A One Stop Solution For Your Books</h2>
             </Col>
 
             <Col md={12}>

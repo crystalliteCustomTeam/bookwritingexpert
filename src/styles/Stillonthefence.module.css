@@ -36,7 +36,7 @@
 }
 
 
-.number1 h5 {
+.number1 h3 {
     max-width: 200px;
     margin: 0 auto;
     height: 200px;
@@ -71,7 +71,7 @@
     .number:before {
         display: none;
     }
-    .number1 h5 {
+    .number1 h3 {
     max-width: unset;
     margin: 0 auto;
     height: unset;
@@ -92,7 +92,7 @@
 
 @media (max-width:480px)  {
 
-    .number1 h5 {
+    .number1 h3 {
         padding-bottom: 20px;
     }
 

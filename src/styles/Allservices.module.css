@@ -1,0 +1,40 @@
+.partners {
+  background-image: url(/images/newlp/allserv.png);
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  background-size: cover;
+  background-position: right;
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+}
+.newyouk h2{
+  text-align: center;
+  font-size: 40px;
+}
+.newyouk p{
+  text-align: center;
+  font-size: 13.5px;
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  padding-top: 10px;
+}
+
+@media (min-width: 1400px) { 
+
+  .newyouk h2{
+    font-size: 45px;
+  }
+  .newyouk p{
+    text-align: center;
+    font-size: 15px;
+    max-width: 80%;
+}
+}
+@media (max-width: 1200px) { 
+  .newyouk h2 {
+    text-align: center;
+    font-size: 25px;
+}
+}

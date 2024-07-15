@@ -1,0 +1,108 @@
+.card {
+    padding: 100px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.card h2 span {
+    color: #F7981D;
+}
+
+.card h2 {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    font-family: "SF Pro Display", sans-serif;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.cardDesign {
+    border: 0px solid;
+    border-radius: 20px;
+    padding: 50px 20px;
+    background: linear-gradient(0deg, rgba(245,245,245,0) 0%, rgba(233,233,233,1) 100%);
+}
+.cardDesign h3{
+    font-size: 25px;
+    line-height: 35px;
+}
+
+@media (max-width:1400px) {
+    .cardDesign h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .cardDesign h3{
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .card {
+        padding: 50px 0;
+        font-family: "Poppins", sans-serif;
+    }
+    .cardDesign {
+        padding: 40px 20px;
+        margin-bottom: 10px;
+        /* box-shadow: 0px 0px 10px 0px rgb(203, 203, 203); */
+    }
+    .card h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+    .card p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+}
+
+@media (max-width:767.98px) {
+    .card {
+        padding: 50px 0;
+        font-family: "Poppins", sans-serif;
+    }
+    .card h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .card p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .card {
+        padding: 50px 0;
+    }
+
+    .card h2 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .card p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .cardDesign {
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        -webkit-box-shadow: 0px 0px 10px 1px rgb(203, 203, 203);
+        -moz-box-shadow: 0px 0px 10px 1px rgb(203, 203, 203);
+        box-shadow: 0px 0px 10px 1px rgb(203, 203, 203);
+    }
+}

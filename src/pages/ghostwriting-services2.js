@@ -52,30 +52,7 @@ function Ghostwritingservices() {
 
 
 
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
-    },
-    "headline": "Book Writing Company",
-    "description": "Book Writing Company",
-    "image": "",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-21"
-  }
+
 
   const schema2 = {
     "@context": "https://schema.org",
@@ -107,7 +84,7 @@ function Ghostwritingservices() {
 
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+        <meta name='robots' content='noindex, nofollow' />
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -129,10 +106,7 @@ function Ghostwritingservices() {
 
 
 
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
+
 
         <script
           type="application/ld+json"
@@ -150,7 +124,7 @@ function Ghostwritingservices() {
 
       {/* googletagmanager */}
 
-   
+
 
       <main>
         {/* banner components */}

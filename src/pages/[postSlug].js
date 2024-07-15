@@ -50,10 +50,6 @@ export async function getStaticPaths() {
 
 export default function Post({ postData, featuredImageUrl }) {
 
-
-
-
-
     const [score, setScore] = useState('Submit Details');
 
     const router = useRouter();
@@ -99,22 +95,13 @@ export default function Post({ postData, featuredImageUrl }) {
         if (pathname == pathname) {
             window.location.href = 'https://www.bookwritingexperts.com/thank-you';
         }
-
     }
+
+    const newpath = router.asPath;
 
     return (
         <>
-            <Head>
-                <title key="title">{postData.title}</title>
-                <meta name="description" content={postData.metaDesc} key="metadesc" />
-                <meta property="og:title" content={postData.opengraphTitle} />
-                <meta key="og-description" property="og:description" content={postData.metaDesc} />
-                <meta property="og:url" content={postData.opengraphUrl} />
-                <meta property="og:type" content={postData.opengraphType} />
-                <meta property="og:locale" content="en_IN" />
-                <meta property="og:site_name" content={postData.opengraphSiteName} />
-                <link rel="icon" href="/favicon.svg" />
-            </Head>
+         
 
             <section className={styles.innerBlog}>
                 <Container>
@@ -125,7 +112,7 @@ export default function Post({ postData, featuredImageUrl }) {
                                     <h1>{postData.title}</h1>
                                     <h6 className={`${styles.detailDate} mt-5`}>
                                         <Image src={logo} alt="Book Writing Experts" width={25} height={25} />
-                                        <span>By Book Writing Experts Team in 2023</span>
+                                        <span>By Book Writing Experts Team in 2024</span>
                                     </h6>
                                     <h6 className="mt-3 mb-0 fw-bold font14">
                                         Published on  <Date dateString={postData.date} />
@@ -172,10 +159,10 @@ export default function Post({ postData, featuredImageUrl }) {
                                     <h5>Newsletter</h5>
                                     <form className="mt-4" onSubmit={handleSubmit}>
                                         <div>
-                                            <input type="text" name="first" required  placeholder="FULL NAME" />
+                                            <input type="text" name="first" required placeholder="FULL NAME" />
                                         </div>
                                         <div className="mt-3">
-                                            <input type="email" name="email" required  placeholder="EMAIL ADDRESS" />
+                                            <input type="email" name="email" required placeholder="EMAIL ADDRESS" />
                                         </div>
                                         <button type="submit" className={`${styles.arrowBtn} mt-4`}>
                                             <span>{score}</span>

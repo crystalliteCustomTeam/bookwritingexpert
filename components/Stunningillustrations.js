@@ -63,7 +63,7 @@ const Stunningillustrations = () => {
                         <Col lg={12}>
 
 
-                            <h2 className="font-f fw500 colortextgrey t-center mb-5">We Provide Stunning <Link className="color-blue textdocationnone fw700" href="javascript:$zopim.livechat.window.show();">Illustrations For  <br className="d-none d-xl-block" /> Your Book</Link> </h2>
+                            <h2 className="font-f fw500 colortextgrey t-center mb-5">We Can Make Your Book Look More Appealing, Check Out Our Impressive <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustrations</Link> </h2>
                         </Col>
                         <Col lg={4} className="p-0">
                             <div className={styles.stunimage}>

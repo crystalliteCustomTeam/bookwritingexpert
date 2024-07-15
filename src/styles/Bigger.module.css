@@ -1,0 +1,138 @@
+.ready{
+  background-image: url(/images/newlp/biggerbg.png);
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 500px;
+
+
+}
+
+.menuinto h2{
+  color:#ffff;
+  font-size: 37px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+}
+.menuinto p{ 
+  color: #ffff;
+  font-size: 13.5px;
+}
+.great {
+  background-color: #F7981D;
+  border: unset;
+  height: 38px;
+  width: 180px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+.great:hover, .produce:hover{
+  color: unset;
+}
+.produce {
+  background-color: white;
+  border: unset;
+  height: 38px;
+  width: 180px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: 1px solid #F7981D;
+  color: black;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Poppins";
+}
+.know{
+  display: flex;
+  gap: 20px;
+}
+.turn{
+  align-items: center;
+}
+
+
+
+.piximg img{
+  width: 90%;
+margin-left: auto;
+  display: block;
+}
+
+.menuinto {
+  max-width: 87%;
+}
+
+@media (min-width: 1400px) {
+
+  .ready {
+    height: 521px;
+}
+  
+  .menuinto h2 {
+    color: #ffff;
+    font-size: 43px;
+}
+.menuinto p {
+  color: #ffff;
+  font-size: 15px;
+}
+  .great{
+    font-size: 15px;
+  }
+  .produce {
+    font-size: 15px;
+  }
+
+  
+}
+
+@media (min-width: 1600px) {
+
+  .ready{
+    height: 600px;
+  
+  
+  }
+
+ }
+ @media (min-width: 1900px) {
+
+  .ready{
+    height: 700px;
+  
+  
+  }
+
+ }
+ @media (max-width: 1200px) { 
+  .menuinto h2 {
+    color: #ffff;
+    font-size: 25px;
+    line-height: 1.4;
+    padding-bottom: 10px;
+}
+}
+
+@media (max-width: 991px) {  
+.noflod{
+  width: 100%;
+}
+.ready {
+  background-color: #24303e;
+  background-image: unset;
+}
+}

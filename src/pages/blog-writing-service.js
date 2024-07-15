@@ -69,118 +69,13 @@ const blogWritingService = () => {
   </span>
 
 
-  const schema = {
-
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/book-publishing-services/"
-    },
-    "headline": "Providing Full Fledged Book Publishing Services To Our Struggling Authors",
-    "description": "Top-Rated Book Publishing Services by Book Writing",
-    "image": "https://www.bookwritingexperts.com/wp-content/uploads/2021/02/publishing.jpg?id=8354",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-18"
-
-  }
-
-  const schema1 = {
-
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
-
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "bookwritingexperts",
-    "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "@id": "",
-    "url": "https://www.bookwritingexperts.com/book-publishing-services/",
-    "telephone": "2132893888",
-    "priceRange": "$99",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "445 S Figueroa St",
-      "addressLocality": "Los Angeles",
-      "addressRegion": "CA",
-      "postalCode": "90071",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 34.0536155,
-      "longitude": -118.2568651
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-
-  }
 
 
-  const schema3 = {
 
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "description": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-    "provider": {
-      "@type": "Organization",
-      "name": "book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing",
-      "url": "https://www.bookwritingexperts.com/book-publishing-services/"
-    },
-    "serviceType": ["book publishing services book publishers amazon kdp amazon publishing services kindle direct publishing kdp publishing"],
-    "areaServed": {
-      "@type": "country",
-      "name": "us"
-    }
 
-  }
+
+
+
   const fine = [
 
     {
@@ -212,12 +107,63 @@ const blogWritingService = () => {
 
 
   ]
+  const websiteSchemaBlogWritingServices = {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  const professionalServiceSchemaBlogWritingServices = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "image": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "telephone": "855-500-0057",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "445 S.Figueroa Street",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90071",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 34.0533717,
+      "longitude": -118.2573536
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  const corporationSchemaBlogWritingServices = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    "name": "Blog Writing Services | Book Writing Experts",
+    "url": "https://www.bookwritingexperts.com/blog-writing-service",
+    "logo": "https://www.bookwritingexperts.com/_next/static/media/logo.015f1291.svg"
+  }
   return (
     <>
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -229,30 +175,30 @@ const blogWritingService = () => {
         <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
+        <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
         <meta property="article:modified_time" content="2023-03-31T12:04:48+00:00" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="9 minutes" />
         <link rel="icon" href="/favicon.svg" />
+        <meta name="DC.title" content="blog writing services, blog writing service, blog writing company" />
+        <meta name="geo.region" content="US" />
+        <meta name="geo.position" content="39.78373;-100.445882" />
+        <meta name="ICBM" content="39.78373, -100.445882" />
+
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchemaBlogWritingServices) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchemaBlogWritingServices) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(corporationSchemaBlogWritingServices) }}
         />
-
 
       </Head>
 
@@ -370,7 +316,7 @@ const blogWritingService = () => {
         </Container>
       </div>
       <Selfpublishing
-        title= "Make A World Of Difference In How You Express Yourself & How You Connect With The World!"
+        title="Make A World Of Difference In How You Express Yourself & How You Connect With The World!"
         text='With professional blog writers, we help you control the narrative and allow you to share your ideas and thoughts with the world! '
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"

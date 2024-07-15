@@ -1,32 +1,24 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import homebannerlogos from '/public/images/bannerimages/logos.png'
-import whychoose from '/public/images/whychoosebooks/bg-img.png'
+import dynamic from 'next/dynamic'
+const homebannerlogos = await import("/public/images/bannerimages/logos.png");
+const whychoose = await import("/public/images/whychoosebooks/bg-img.webp");
 // import components
-import Banner from '../../components/Banner'
-import Partners from '../../components/Partners'
-import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
-import Whatourclients from '../../components/Whatourclients'
-import Requestafreequote from '../../components/Requestafreequote'
-import Stoppublish from '../../components/Stoppublish'
-import Customersatisfaction from '../../components/Customersatisfaction'
-import Strugglingtogive from '../../components/Strugglingtogive'
-import Illustrativebook from '../../components/Illustrativebook'
-import Onestepsolutions from '../../components/Onestepsolutions'
-import Script from 'next/script'
-import Stunningillustrations from '../../components/Stunningillustrations'
-import Serviceproviders from '../../components/Serviceproviders'
-import banslider12 from '/public/images/illustrativebook/cartoon1.svg'
-import Providestunning from '../../components/Providestunning'
-import Professionalaudiobook from '../../components/Professionalaudiobook'
-
+const Banner = dynamic(() => import('../../components/Banner'));
+const Partners = dynamic(() => import('../../components/Partners'));
+const Whychoosebook = dynamic(() => import('../../components/Whychoosebook'));
+const Gotastory = dynamic(() => import('../../components/Gotastory'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Requestafreequote = dynamic(() => import('../../components/Requestafreequote'));
+const Stoppublish = dynamic(() => import('../../components/Stoppublish'));
+const Customersatisfaction = dynamic(() => import('../../components/Customersatisfaction'));
+const Strugglingtogive = dynamic(() => import('../../components/Strugglingtogive'));
+const Onestepsolutions = dynamic(() => import('../../components/Onestepsolutions'));
+const Serviceproviders = dynamic(() => import('../../components/Serviceproviders'));
+const Providestunning = dynamic(() => import('../../components/Providestunning'));
+const Professionalaudiobook = dynamic(() => import('../../components/Professionalaudiobook'));
 
 function Audiobookproduction() {
-
-
-
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Get Your</span>  <Link className='dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services">  Book Ghost Writing <br></br> Services </Link>  <span className=''> from Our Team of Top Ghost <br></br> Writing for Hire.</span> </h1>;
 
   const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='javascript:$zopim.livechat.window.show();'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
@@ -34,7 +26,7 @@ function Audiobookproduction() {
   const dataspan = <h1 className='font50 color-white font-f hero-span'>  <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Book Writing Experts </Link>  Is  waiting for you to Ask for a    <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Professional Ghost Writing </Link> </h1>;
 
 
-  const holddata =  <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/audiobookproduction">Audio Book  <br className="d-none d-xl-block" />Production</Link> </h2>
+  const holddata = <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/audiobookproduction">Audio Book  <br className="d-none d-xl-block" />Production</Link> </h2>
 
 
   const bannertext = [
@@ -47,114 +39,12 @@ function Audiobookproduction() {
     }
   ]
 
-
-
-
-
-
-
-  const schema1 = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://www.bookwritingexperts.com/"
-    },
-    "headline": "Book Writing Company",
-    "description": "Book Writing Company",
-    "image": "",
-    "author": {
-      "@type": "Organization",
-      "name": "Mini Investments"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "",
-      "logo": {
-        "@type": "ImageObject",
-        "url": ""
-      }
-    },
-    "datePublished": "2022-03-21"
-  }
-
-  const schema2 = {
-    "@context": "https://schema.org",
-    "@type": "Corporation",
-    "name": "bookwritingexperts",
-    "alternateName": "Book Writing Experts",
-    "url": "https://www.bookwritingexperts.com/",
-    "logo": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
-    "sameAs": [
-      "https://www.bookwritingexperts.com/",
-      "https://www.facebook.com/bookwritingexperts",
-      "https://twitter.com/bookwritingexp",
-      "https://www.instagram.com/bookwritingexpert/",
-      "https://www.linkedin.com/company/book-writing-exp/",
-      "https://www.pinterest.com/bookwritingexperts/"
-    ]
-  }
-
-  const schema3 = {
-    "@context": "https://schema.org", "@type": "Service", "name": "book writing services book writing company book writers affordable book writing services", "description": "book writing services book writing company book writers affordable book writing services book writing services book writing company book writers affordable book writing services", "provider": { "@type": "Organization", "name": "book writing services book writing company book writers affordable book writing services", "url": "https://www.bookwritingexperts.com/" },
-    "serviceType": ["book writing services book writing company book writers affordable book writing services"], "areaServed": { "@type": "country", "name": "us" }
-  }
-
   return (
     <>
-
-
       <Head>
-
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
-        <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
-
-        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Professional Book Writing Services Company</title>
-        <meta name="description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Professional Book Writing Services Company" />
-        <meta property="og:description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <meta property="og:url" content="https://www.bookwritingexperts.com/" />
-        <meta property="og:site_name" content="Book Writing" />
-        <meta property="article:modified_time" content="2023-01-12T00:00:46+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="13 minutes" />
-        <link rel="icon" href="/favicon.svg" />
-
-
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema1) }}
-        />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema3) }}
-        />
-
-        {/* <Schema /> */}
-
+        <meta name="robots" content="noindex,nofollow" />
       </Head>
-
-
-      {/* googletagmanager */}
-
-   
-
       <main>
-        {/* banner components */}
-
         {/* banner components */}
 
         {bannertext.map((item, i) =>
@@ -191,24 +81,17 @@ function Audiobookproduction() {
         />
 
         <Professionalaudiobook />
-    
-
 
         <Providestunning
-        
-        title = {holddata}
-        
-        
+          title={holddata}
         />
-
-
 
         <Stoppublish
           title='Stop worrying about publishing books!'
           subtitle={posdata}
           btn1='Get a free Proposal'
           btn2='Talk to an expert'
-          stopworrying = 'stopworrying1'
+          stopworrying='stopworrying1'
         />
 
         {/* Why Choose book writing expert? */}
@@ -222,17 +105,12 @@ function Audiobookproduction() {
         {/* Customersatisfaction */}
         <Customersatisfaction />
 
-
-
-
-
-
         <div className='datacloud'>
           <Onestepsolutions />
         </div>
 
         <Serviceproviders
-     
+
         />
 
 

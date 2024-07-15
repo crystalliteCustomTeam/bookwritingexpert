@@ -2,9 +2,12 @@ import React from 'react'
 import styles from '@/styles/Whatourclients.module.css'
 import Image from 'next/image'
 import { Container } from 'react-bootstrap'
-import avtar1 from '../public/images/testimonial/avatar-11.png'
-import avtar2 from '../public/images/testimonial/avatar-22.png'
-import avtar3 from '../public/images/testimonial/avatar-33.png'
+import avtar1 from '../public/images/testimonial/julian-anthony-pereira.png'
+import avtar2 from '../public/images/testimonial/silas-micah.png'
+import avtar3 from '../public/images/testimonial/terrif-hawlk.png'
+import avtar4 from '../public/images/testimonial/glint.png'
+import avtar5 from '../public/images/testimonial/abigail.png'
+
 
 // footer icons
 import { AiFillStar } from 'react-icons/ai';
@@ -70,7 +73,7 @@ const Whatourclients = () => {
               <h3 className='font18 fw700 color-blue mb-4'>Client Testimonials </h3>
               <h2 className={styles.value}>The Stamp of Approval for Our Services</h2>
               <p className={` ${styles.canva} font15 fw100 font-f color-black`}>
-                Book Writing Experts(BWE) has been an absolute lifesaver for me. Their ghostwriting services exceeded my expectations, as they skillfully transformed my ideas into a captivating story. Although there were a few minor hiccups during the ghostwriting process, such as some initial miscommunication about the tone and style I wanted for my book, BWE&#8217;s team was quick to address these concerns. They took the time to understand my vision and made the necessary adjustments to ensure the final product aligned with my expectations.
+                Book Writing Experts(BWE) has been an absolute lifesaver for me. Their book writing services exceeded my expectations, as they skillfully transformed my ideas into a captivating story. Although there were a few minor hiccups during the book writing process, such as some initial miscommunication about the tone and style I wanted for my book, BWE&#8217;s team was quick to address these concerns. They took the time to understand my vision and made the necessary adjustments to ensure the final product aligned with my expectations.
               </p>
 
               <div className={styles.clientData}>
@@ -122,7 +125,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar3}
+                    src={avtar4}
                     alt='bookwritingexperts'
                   />
                 </div>
@@ -146,7 +149,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar1}
+                    src={avtar3}
                     alt='bookwritingexperts'
                   />
                 </div>
@@ -172,7 +175,7 @@ const Whatourclients = () => {
               <div className={styles.clientData}>
                 <div>
                   <Image loading="lazy" className='img-fluid'
-                    src={avtar2}
+                    src={avtar5}
                     alt='bookwritingexperts'
                   />
                 </div>

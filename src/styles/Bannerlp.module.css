@@ -1,0 +1,212 @@
+.banner {
+  background-image: url(/images/newlp/banner.png);
+  background-repeat: no-repeat;
+  font-family: "Poppins";
+  background-size: cover;
+  height: 750px;
+  background-position: right;
+  display: flex;
+    align-items: center;
+}
+
+.newtown h1{
+  font-size: 52px;
+  position: relative;
+}
+.newtown h1::after{
+  position: absolute;
+  content: '';
+  background-color: #F7981D;
+  width: 74%;
+  height: 4px;
+  left: 0;
+  bottom: -4px;
+}
+.newtown h2{
+  font-size: 30px;
+}
+.newtown p{
+  font-size: 13.5px;
+  max-width: 550px;
+  color: white;
+  padding-top: 10px;
+}
+
+.publish input[type="text"] {
+  background-color: unset;
+  border: unset;
+      border-bottom: 1px solid #ffffff9c;
+  padding-bottom: 5px;
+  width: 100%;
+  color: white;
+}
+.publish input[type="text"]::placeholder{
+  color: #FFFFFF;
+  opacity: .2;
+  font-size: 13px;
+}
+
+.publish input[type="text"]:focus-visible, .publish input[type="tel"]:focus-visible, .publish input[type="email"]:focus-visible {
+outline:unset;
+}
+.publish input[type="tel"] {
+  background-color: unset;
+  border: unset;
+      border-bottom: 1px solid #ffffff9c;
+      padding-bottom: 5px;
+  width: 100%;
+  color: white;
+}
+.publish input[type="tel"]::placeholder{
+  color: #FFFFFF;
+  opacity: .2;
+  font-size: 13px;
+}
+.publish input[type="email"] {
+  background-color: unset;
+  border: unset;
+      border-bottom: 1px solid #ffffff9c;
+      padding-bottom: 5px;
+  width: 100%;
+  color: white;
+}
+.publish input[type="email"]::placeholder{
+  color: #FFFFFF;
+  opacity: .2;
+  font-size: 13px;
+}
+.publish {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 4%;
+}
+.publish div {
+  width: 50%;
+}
+.bookshowform{
+  background-color: #62636436;
+  backdrop-filter: blur(20px);
+  width: 75%;
+  padding: 15px 22px;
+  border: 1px solid #33455A;
+  border-radius: 10px;
+
+}
+
+.newtown {
+  padding-top: 9%;
+}
+
+.bookshowform h3{
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+
+.bookshowform input[type="submit"] {
+  background-color: #F7981D;
+  border: unset;
+  height: 38px;
+  width: 210px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.folpo img{
+  padding-right: 35px;
+  margin-top: 40px;
+}
+
+@media (min-width: 1400px) { 
+
+  .newtown h1 {
+    font-size: 60px;
+    position: relative;
+}
+.newtown h2 {
+  font-size: 35px;
+}
+.newtown p {
+  font-size: 15px;
+  max-width: 645px;
+}
+.bookshowform h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.bookshowform input[type="submit"]{
+  font-size: 15px;
+}
+
+.banner{
+  height: 815px;
+}
+
+}
+
+@media (min-width: 1600px) {  
+  
+  .banner {
+    height: 870px;
+}
+
+}
+
+@media (max-width: 1200px) { 
+
+  .bookshowform {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+  .newtown h1::after {
+
+    position: unset;
+
+  }
+  .newtown{
+    width: 100%;
+    text-align: center;
+  }
+  .newtown p {
+    max-width: unset;
+}
+  .banner {
+    background-image: unset;
+    background-repeat: no-repeat;
+    font-family: "Poppins";
+    background-size: cover;
+    height: 750px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    background-color: #141d29;
+}
+
+ }
+
+ @media (max-width: 767px) {
+
+  .newtown  h1 {
+    font-size: 30px;
+    position: relative;
+    padding-top: 50px;
+}
+
+  }
+ @media (max-width: 480px) {
+
+  .publish {
+    flex-direction: column;
+}
+.publish div {
+  width: 100%;
+}
+.banner {
+  height: 950px;
+}
+  }
