@@ -7,9 +7,49 @@ import bookediting from '../public/images/bookpublishingservices/book-editing.pn
 import pubicon01 from '../public/images/bookpublishingservices/pub-icon01.png'
 import pubicon02 from '../public/images/bookpublishingservices/pub-icon02.png'
 import book from '../public/images/bookpublishingservices/book.png'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 const Bookpublishingservicesweoffer = () => {
+
+
+
+
+    var bookrecordingprojects = {
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    }
+
+    const [isSliderActive, setIsSliderActive] = useState(true);
+
+    useEffect(() => {
+
+        const handleResize = () => {
+            if (window.innerWidth < 480) {
+                setIsSliderActive(true);
+            } else {
+                setIsSliderActive(false);
+            }
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const card =
         [
 
@@ -66,36 +106,69 @@ const Bookpublishingservicesweoffer = () => {
 
                     </Row>
 
-                    <Row className='mt-4'>
-                        {card.map((item, i) => {
-                            return (
-                                <Col className={`${styles.post} col-md-3`} key={i}>
+                    {isSliderActive ?
+                        <Slider {...bookrecordingprojects} className='newdotflod'>
+                           
+                                {card.map((item, i) => {
+                                    return (
+                                        
 
 
-                                    <div className={styles.flipcard}>
-                                        <div className={styles.flipcardinner}>
-                                            <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
-                                                <Image loading="lazy" width={80} height={80} className='img-fluid' src={item.image} alt="Book Writing Experts"></Image>
-                                                <h3>{item.subTitle}</h3>
+                                            <div className={styles.flipcard} key={i}>
+                                                <div className={styles.flipcardinner}>
+                                                    <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
+                                                        <Image loading="lazy" width={80} height={80} className='img-fluid' src={item.image} alt="Book Writing Experts"></Image>
+                                                        <h3>{item.subTitle}</h3>
+                                                    </div>
+                                                    <div className={styles.flipcardback}>
+                                                        <h3 className='text-white'>{item.title}</h3>
+                                                        <p className='text-white'>{item.pra}</p>
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className={styles.flipcardback}>
-                                                <h3 className='text-white'>{item.title}</h3>
-                                                <p className='text-white'>{item.pra}</p>
 
+
+                                  
+                                    )
+                                })}
+
+
+
+
+                          
+                        </Slider>
+                        :
+                        <Row className='mt-4'>
+                            {card.map((item, i) => {
+                                return (
+                                    <Col className={`${styles.post} col-md-3`} key={i}>
+
+
+                                        <div className={styles.flipcard}>
+                                            <div className={styles.flipcardinner}>
+                                                <div className={`${styles.flipcardfront}  ${styles.flipcardfront1}`}>
+                                                    <Image loading="lazy" width={80} height={80} className='img-fluid' src={item.image} alt="Book Writing Experts"></Image>
+                                                    <h3>{item.subTitle}</h3>
+                                                </div>
+                                                <div className={styles.flipcardback}>
+                                                    <h3 className='text-white'>{item.title}</h3>
+                                                    <p className='text-white'>{item.pra}</p>
+
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
 
-                                </Col>
-                            )
-                        })}
+                                    </Col>
+                                )
+                            })}
 
 
 
 
-                    </Row>
-
+                        </Row>
+                    }
                 </Container>
 
             </div>

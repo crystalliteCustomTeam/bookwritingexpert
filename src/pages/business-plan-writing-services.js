@@ -245,7 +245,7 @@ const businessplanWringservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Business Plan Writing Services - Book Writing Experts</title>
         <meta name="description" content="Business Plan Writing Services offered by Book Writing Experts ensure to turn your dream into a successfully launched and hit business. Call us now." />
-        <link rel="canonical" href="/business-plan-writing-services" />
+      
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Business Plan Writing Services - Book Writing Experts" />

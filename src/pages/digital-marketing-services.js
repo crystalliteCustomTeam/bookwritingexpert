@@ -169,7 +169,7 @@ const Digitalmarketingservices = () => {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Top Tier Digital Marketing Services - Book Writing Experts</title>
         <meta name="description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
-        <link rel="canonical" href="/digital-marketing-services" />
+      
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Top Tier Digital Marketing Services - Book Writing Experts" />

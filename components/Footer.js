@@ -151,7 +151,7 @@ const Footer = () => {
     <>
       <div className={styles.footer}>
         <Container>
-          <Row className='pb-5'>
+          <Row className='pb-5 footercolset'>
             <Col md={4}>
               <Image loading="lazy" className={styles.footerlogosize} src={footerlogo} alt="Book Writing Experts"></Image>
               <ul className={styles.footermenu1}>

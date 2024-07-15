@@ -80,7 +80,7 @@ const Homebanner = (props) => {
 
                 <Container>
                     <Row>
-                        <Col xl={6} lg={12} md={12} className={styles[props.alignclass]}>
+                        <Col xl={6} lg={8} md={12} className={styles[props.alignclass]}>
 
                             <div className={styles.homebannertext}>
 

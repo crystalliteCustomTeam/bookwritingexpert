@@ -220,6 +220,11 @@ body {
   color: #2d2a2a;
 }
 
+.colorthanks {
+  color: #e47926;
+}
+
+
 .hero-span span {
   color: #fff;
   font-weight: 300;
@@ -693,7 +698,7 @@ input::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 85vh;
+  height: auto;
   margin-top: 5%;
 
 
@@ -1137,6 +1142,15 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 1200px) {
+
+  .offpost .font18 {
+    font-size: 14px;
+  }
+
+  .offpost span.font25 {
+    font-size: 20px;
+  }
+
   .font40 {
     font-size: 34px;
   }
@@ -1148,7 +1162,31 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 991px) {
-  .thanksgiving .modal-content{
+
+  .offpost .font18 {
+    font-size: 20px;
+  }
+
+  .offpost span.font25 {
+    font-size: 20px;
+  }
+
+
+  .loading-screen {
+    display: none;
+  }
+
+  .footercolset .col-md-4,
+  .footercolset .col-md-3,
+  .footercolset .col-md-2 {
+    width: 100%;
+  }
+
+  .footercolset h3 {
+    margin-top: 15%;
+  }
+
+  .thanksgiving .modal-content {
     height: auto;
   }
 
@@ -1215,6 +1253,20 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 }
 
 @media (max-width: 767px) {
+
+  .offpost .font18 {
+    text-align: center;
+  }
+
+  .offpost span.font25 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .thanksgiving .modal-dialog {
+    max-width: 95%;
+    margin: 0 auto;
+  }
 
   .getmodal {
     margin: 1rem;
@@ -1297,16 +1349,38 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 
 @media (max-width: 480px) {
 
- 
+  .newdotflod .slick-dots li button:before{
+    color: white;
+  }
+
+  .newdotflod  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #ffffff;
+}
+  .newdotflodwhite .slick-dots li button:before{
+    color: black;
+  }
+
+  .newdotflodwhite  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+}
+
+
+
+  .modal-backdrop.show {
+    opacity: 0!important;
+}
+.thanksgiving{
+  display: none!important;
+}
 
   .togpost .w-50 {
     width: 90% !important;
     padding-top: 20px;
   }
 
-  .thanksgiving .modal-dialog {
-    max-width: 100%;
-  }
+  
 
 
   .scrollBox {

@@ -4,13 +4,24 @@ import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
 import Head from 'next/head'
 import Router from 'next/router';
-import axios from "axios";
+import Axios from "axios";
+import { useEffect } from 'react';
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import Image from 'next/image'
 import email2 from '../../public/images/footer/email2.png'
 
 const Contact = () => {
+
+    const [ip, setIP] = useState('');
+    //creating function to load ip address from the API
+    const getIPData = async () => {
+      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+      setIP(res.data);
+    }
+    useEffect(() => {
+      getIPData()
+    }, [])
 
     const [score, setScore] = useState('Submit Form');
     const [selectedOption3, setSelectedOption3] = useState('');
@@ -73,6 +84,30 @@ const Contact = () => {
                 console.log(`Response Successed ${res}`)
             }
         })
+
+
+        var currentdate = new Date().toLocaleString() + ''
+        let headersList = {
+          "Accept": "*/*",
+          "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+          "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+          "Content-Type": "application/json"
+        }
+    
+        let bodyContent = JSON.stringify({
+          "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+          "Brand": "BOOK-WRITING-EXPERT",
+          "Page": `${currentRoute}`,
+          "Date": currentdate,
+          "Time": currentdate,
+          "JSON": JSONdata,
+        });
+        await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+          method: "POST",
+          body: bodyContent,
+          headers: headersList
+        });
+
 
         const { pathname } = Router
         if (pathname == pathname) {
@@ -256,11 +291,11 @@ const Contact = () => {
 
                                 <Row className='gy-3'>
                                     <Col md={6}><input className={styles.inputfilet} required id='name' type='text' name='name' placeholder='Name' /></Col>
-                                    <Col md={6}><input className={styles.inputfilet} required id='email' type='text' name='email' placeholder='Email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /></Col>
+                                    <Col md={6}><input className={styles.inputfilet} required id='email' type='email' name='email' placeholder='Email' /></Col>
                                 </Row>
 
                                 <Row className='mt-3 mb-3 gy-3'>
-                                    <Col md={6}> <input className={styles.inputfilet} required id='phone' type='number' name='phone' placeholder='Phone' /> </Col>
+                                    <Col md={6}> <input className={styles.inputfilet} required id='phone' type="tel" minLength="10" maxLength="13" pattern="[0-9]*" name='phone' placeholder='Phone' /> </Col>
                                     <Col md={6}> <input className={styles.inputfilet} required id='tel' type='number' name='zip' placeholder='Location/Zip Code' /></Col>
                                 </Row>
 

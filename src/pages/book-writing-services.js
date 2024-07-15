@@ -24,11 +24,52 @@ import Major from '../../components/Major'
 import Cta from '../../components/Cta'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 
 
 const Bookpublishingservices = () => {
+
+
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
+
 
   const newSpan = <h1 className='font50  color-white font-f hero-span'> Leave Your Mark Forever: Our  <Link className='textdocationnone color-blue hover fw700' href="/book-writing-services">Book Marketing Services</Link>  <span className=''>Will Ensure Your Book To Leave a Lasting Impression!</span> </h1>;
 
@@ -248,13 +289,13 @@ const Bookpublishingservices = () => {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Professional Book Writing Services - Book Writing Experts</title>
         <meta name="description" content="Book Writing Services at the most honest rates by the experts. Give us a call and let them define your book success." />
-        <link rel="canonical" href="/book-writing-services" />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Professional Book Writing Services - Book Writing Experts" />
@@ -359,8 +400,9 @@ const Bookpublishingservices = () => {
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>We Aim To Add Value To Your <Link className='textdocationnone color-blue hover fw700' href='/book-writing-services'> Books!</Link></p>
 
           </Row>
-
-          <Row className='gy-5'>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects} className='newdotflodwhite'>
+        
             {fine.map((item, i) =>
               <Finetoothedbook key={i}
                 title={item.title}
@@ -370,7 +412,21 @@ const Bookpublishingservices = () => {
                 btn={item.btn}
               />
             )}
-          </Row>
+         
+          </Slider>
+          :
+          <Row className='gy-5'>
+          {fine.map((item, i) =>
+            <Finetoothedbook key={i}
+              title={item.title}
+              text={item.text}
+              classtop={item.class}
+              img1={item.img}
+              btn={item.btn}
+            />
+          )}
+        </Row>
+            }
         </Container>
       </div>
 
@@ -475,17 +531,31 @@ const Bookpublishingservices = () => {
             <h2 className='font50 fw700 color-white t-center font-f mb-5'>What Distinguishes Us?</h2>
           </Row>
 
-          <Row className='gy-5'>
-            {reasons.map((item, i) =>
-              <Stillonthefence key={i}
-                title={item.title}
-                text={item.text}
-                col6={item.col}
-                classnumber={item.classnum}
-              />
-            )}
-
-          </Row>
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects} className='newdotflod'>
+            
+                {reasons.map((item, i) =>
+                  <Stillonthefence key={i}
+                    title={item.title}
+                    text={item.text}
+                    col6={item.col}
+                    classnumber={item.classnum}
+                  />
+                )}
+         
+            </Slider>
+            :
+            <Row className='gy-5'>
+              {reasons.map((item, i) =>
+                <Stillonthefence key={i}
+                  title={item.title}
+                  text={item.text}
+                  col6={item.col}
+                  classnumber={item.classnum}
+                />
+              )}
+            </Row>
+          }
         </Container>
 
       </div>

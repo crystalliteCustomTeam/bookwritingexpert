@@ -82,8 +82,22 @@ background-color: #24303E;
     text-align: right;
 }
 
+@media (max-width:1199px)  { 
+
+
+    .footermenu1 .footermenulinks {
+        font-size: 12px;
+    }
+
+
+}
 @media (max-width:991px)  {
 
+  
+
+    .imgvisa img{
+        width: auto;
+    }
 
     .socialiconfooter .socaillinks {
        
@@ -171,7 +185,7 @@ background-color: #24303E;
 
     
 .footermenu1 .footermenulinks {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .imgvisa .rightlogo img {

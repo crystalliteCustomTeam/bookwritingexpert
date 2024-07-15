@@ -27,7 +27,7 @@ const Comprehensive = () => {
 
     var bookrecordingprojects = {
         dots: true,
-        arrows: true,
+        arrows: false,
         autoplay: true,
         infinite: true,
         speed: 500,

@@ -114,7 +114,7 @@ function Ghostwritingservices() {
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Professional Book Writing Services Company</title>
         <meta name="description" content="Book Writing Services that transform your ideas to the best-selling book. Call us if you need help writing a book or penning down your thoughts." />
-        <link rel="canonical" href="https://www.bookwritingexperts.com/" />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Professional Book Writing Services Company" />
@@ -150,19 +150,7 @@ function Ghostwritingservices() {
 
       {/* googletagmanager */}
 
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-210274244-13"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-210274244-13');
-        `}
-      </Script>
+   
 
       <main>
         {/* banner components */}

@@ -9,11 +9,22 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import logo5 from '../public/images/getstarted/sub.png'
 import textimage from '../public/images/getstarted/textimage.png'
-
+import Axios from "axios";
+import { useEffect } from 'react';
 
 const Thanksgiving = () => {
 
 
+
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
+  }
+  useEffect(() => {
+    getIPData()
+  }, [])
 
   const [score, setScore] = useState('Submit');
 
@@ -24,14 +35,14 @@ const Thanksgiving = () => {
   const handleSubmit = async (e) => {
 
     e.preventDefault();
-   
+
 
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
-      pageUrl:currentRoute,
-      giving : 'Thanks Giving'
+      pageUrl: currentRoute,
+      giving: 'Thanks Giving'
     }
 
     const JSONdata = JSON.stringify(data);
@@ -55,6 +66,33 @@ const Thanksgiving = () => {
       }
     })
 
+
+    var currentdate = new Date().toLocaleString() + ''
+    let headersList = {
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json"
+    }
+
+    let bodyContent = JSON.stringify({
+      "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+      "Brand": "BOOK-WRITING-EXPERT",
+      "Page": `${currentRoute}`,
+      "Date": currentdate,
+      "Time": currentdate,
+      "JSON": JSONdata,
+
+    });
+
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
+    });
+
+
+
     const { pathname } = Router
     if (pathname == pathname) {
       window.location.href = 'https://www.bookwritingexperts.com/thank-you';
@@ -74,48 +112,46 @@ const Thanksgiving = () => {
       <div className={styles.getstart}>
 
 
-        
-
-          <Container>
-            <Row className={styles.notes}>
-
-              <Col lg={5}>
-
-                <div className={styles.post}>
-                  <span className='togpost'>
-                    <Image src={textimage} className='img-fluid w-50 d-block m-auto' />
-                  </span>
-
-                  
-                  <form onSubmit={handleSubmit} className={styles.giving}>
-                 
-                    <input type="text" className={styles.formfree} required name="name" placeholder="Enter Your Name" />
-                    <input type="email" className={styles.formfree} required name="email" placeholder="Enter Your Email" />
-                    <input type="number" className={styles.formfree} required name="phone" placeholder="Enter Your Number" />
-                    <button className={styles.freebtn} type="submit"> {score}</button>
-                  
-
-                  </form>
-                </div>
-
-              </Col>
-
-              <Col lg={7}>
-
-                <div className='p-5'>
-                  <Image src={logo5} className='img-fluid' />
-                </div>
-              </Col>
 
 
+        <Container className='offpost'>
+          <Row className={styles.notes}>
+
+            <Col lg={5}>
+
+              <div className={styles.post}>
+                <span className='togpost'>
+                  <Image alt="Book Writing Experts" src={textimage} className='img-fluid w-50 d-block m-auto' />
+                </span>
+
+
+                <form onSubmit={handleSubmit} className={styles.giving}>
+
+                  <input type="text" className={styles.formfree} required name="name" placeholder="Enter Your Name" />
+                  <input type="email" className={styles.formfree} required name="email" placeholder="Enter Your Email" />
+                  <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" className={styles.formfree} required name="phone" placeholder="Enter Your Number" />
+                  <button className={styles.freebtn} type="submit"> {score}</button>
+
+                  <p className='black font18 fw700 font-f mt-3'>Publish Your Book for Only <span className='colorthanks fw800 font25'>$399</span> </p>
+                </form>
+              </div>
+
+            </Col>
+
+            <Col lg={7}>
+
+              <div className='p-5'>
+                <Image src={logo5} className='img-fluid' />
+              </div>
+            </Col>
 
 
 
 
-            </Row>
-          </Container>
 
 
+          </Row>
+        </Container>
 
 
 
@@ -126,7 +162,9 @@ const Thanksgiving = () => {
 
 
 
-       
+
+
+
 
 
 

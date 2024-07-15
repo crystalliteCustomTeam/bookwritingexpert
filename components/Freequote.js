@@ -5,8 +5,21 @@ import axios from "axios";
 import { useState } from "react";
 import Router from 'next/router'
 import { useRouter } from 'next/router';
+import Axios from "axios";
+import { useEffect } from 'react';
 
 const Freequote = (props) => {
+
+
+  const [ip, setIP] = useState('');
+  //creating function to load ip address from the API
+  const getIPData = async () => {
+    const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+    setIP(res.data);
+  }
+  useEffect(() => {
+    getIPData()
+  }, [])
 
 
   const [score, setScore] = useState('Submit');
@@ -49,6 +62,31 @@ const Freequote = (props) => {
       }
     })
 
+    
+    var currentdate = new Date().toLocaleString() + ''
+    let headersList = {
+        "Accept": "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        "Content-Type": "application/json"
+       }
+       
+       let bodyContent = JSON.stringify({
+        "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+        "Brand": "BOOK-WRITING-EXPERT",
+        "Page": `${currentRoute}`,
+        "Date": currentdate,
+        "Time": currentdate,
+        "JSON": JSONdata,
+       
+      });
+       
+     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", { 
+         method: "POST",
+         body: bodyContent,
+         headers: headersList
+       });
+
     const { pathname } = Router
     if (pathname == pathname) {
       window.location.href = 'https://www.bookwritingexperts.com/thank-you';
@@ -71,7 +109,7 @@ const Freequote = (props) => {
           <input type="email" className={styles.formfree} required name="email"   placeholder="Type Email Address" />
 
           <label className={styles.label}>Phone *</label>
-          <input type="number" className={styles.formfree} required name="phone" placeholder="123-456-7890" />
+          <input type="tel"  minLength="10" maxLength="13" pattern="[0-9]*" className={styles.formfree} required name="phone" placeholder="123-456-7890" />
 
           <label className={styles.label}>Message *</label>
           <textarea className={styles.formfree} required name="message" rows="2" placeholder="Type Your Message Here"></textarea>

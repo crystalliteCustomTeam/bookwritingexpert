@@ -23,11 +23,49 @@ import Major from '../../components/Major'
 import Cta from '../../components/Cta'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
+import Slider from 'react-slick'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 
 
 
 const Bookpublishingservices = () => {
+
+  var bookrecordingprojects = {
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    infinite: true,
+    adaptiveHeight: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
+
+  const [isSliderActive, setIsSliderActive] = useState(true);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+      if (window.innerWidth < 480) {
+        setIsSliderActive(true);
+      } else {
+        setIsSliderActive(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
 
   const bannertext = [
@@ -226,14 +264,14 @@ const Bookpublishingservices = () => {
 
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        
+
         <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
         <title>Book Promotion Services For Branding - Book Writing Experts</title>
         <meta name="description" content="Book Promotion Services to leave your competitors in the dust. We know the science of sales and art of marketing your books, hire us today." />
-        <link rel="canonical" href="/book-promotion-services" />
+
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Book Promotion Services For Branding - Book Writing Experts" />
@@ -326,17 +364,34 @@ const Bookpublishingservices = () => {
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Attract A Thriving Community Of Readers — Let Our Online <Link className='textdocationnone color-blue hover fw700' href='/book-promotion-services/'>Book Promotion Services</Link> Lead The Way!</p>
           </Row>
 
-          <Row className='gy-5'>
-            {fine.map((item, i) =>
-              <Finetoothedbook key={i}
-                title={item.title}
-                text={item.text}
-                classtop={item.class}
-                img1={item.img}
-                btn={item.btn}
-              />
-            )}
-          </Row>
+
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects} className='newdotflodwhite'>
+
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+
+            </Slider>
+            :
+            <Row className='gy-5'>
+              {fine.map((item, i) =>
+                <Finetoothedbook key={i}
+                  title={item.title}
+                  text={item.text}
+                  classtop={item.class}
+                  img1={item.img}
+                  btn={item.btn}
+                />
+              )}
+            </Row>
+          }
         </Container>
       </div>
 
@@ -425,18 +480,35 @@ const Bookpublishingservices = () => {
             </Col>
           </Row>
 
-          <Row className='gy-5'>
-            {reasons.map((item, i) =>
-              <Stillonthefence key={i}
-                title={item.title}
-                text={item.text}
-                text2={item.text2}
-                col6={item.col}
-                classnumber={item.classnum}
-              />
-            )}
+          {isSliderActive ?
+            <Slider {...bookrecordingprojects} className='newdotflod text-center'>
+         
+                {reasons.map((item, i) =>
+                  <Stillonthefence key={i}
+                    title={item.title}
+                    text={item.text}
+                    text2={item.text2}
+                    col6={item.col}
+                    classnumber={item.classnum}
+                  />
+                )}
 
-          </Row>
+           
+            </Slider>
+            :
+            <Row className='gy-5'>
+              {reasons.map((item, i) =>
+                <Stillonthefence key={i}
+                  title={item.title}
+                  text={item.text}
+                  text2={item.text2}
+                  col6={item.col}
+                  classnumber={item.classnum}
+                />
+              )}
+
+            </Row>
+          }
         </Container>
       </section>
 
