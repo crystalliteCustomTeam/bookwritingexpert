@@ -1,20 +1,21 @@
-import React, { useEffect, useState,Suspense  } from 'react'
+import React, { useState } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import styles from '@/styles/Ourportfolio.module.css'
 import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 
+// Loader component
+const LoaderSpinner = () => (
+    <div className="spinner-border"></div>
+);
 
-
-
-
-const ourportfolio = () => {
-
-    const [posts, setPosts] = useState([]);
+// Component
+const OurPortfolio = ({ initialPosts }) => {
+    const [posts, setPosts] = useState(initialPosts);
     const [year, setYear] = useState('2024');
     const [month, setMonth] = useState('01');
-    const [loader,setloader] = useState(false);
+    const [loader, setLoader] = useState(false);
 
     const handleYearChange = (event) => {
         setYear(event.target.value);
@@ -24,43 +25,15 @@ const ourportfolio = () => {
         setMonth(event.target.value);
     };
 
-    const handleLoader = (event)=>{
-        setloader(true);
-    }
-
-   
-
-    useEffect(() => {
-        const fetchPosts = async () => {
-            const res = await fetch('https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/publishbooks');
-            const data = await res.json();
-
-            // Fetch featured images
-            const postsWithImages = await Promise.all(
-                data.map(async (post) => {
-                    if (post.featured_media) {
-                        const mediaRes = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
-                        const mediaData = await mediaRes.json();
-
-                        return { ...post, featured_image_url: mediaData.source_url };
-                    } else {
-                        return { ...post, featured_image_url: bookpublishing1 };
-                    }
-                })
-            );
-          
-            setPosts(postsWithImages);
-        };
-        fetchPosts();
-    }, []);
-
-    const handleSearchClick = () => {
-    
-        fetchPostsfilter();
-       
+    const handleLoader = () => {
+        setLoader(true);
     };
 
-    const fetchPostsfilter = async () => {
+    const handleSearchClick = () => {
+        fetchPostsFilter();
+    };
+
+    const fetchPostsFilter = async () => {
         handleLoader();
         const startDate = `${year}-${month}-01T00:00:00`;
         const endDate = new Date(year, month, 0).toISOString().split('T')[0] + 'T23:59:59'; // Get last day of the month
@@ -68,8 +41,8 @@ const ourportfolio = () => {
         const res = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/publishbooks?after=${startDate}&before=${endDate}`);
         const data = await res.json();
 
-        if(data.length == 0){
-            setloader(false);
+        if (data.length === 0) {
+            setLoader(false);
         }
 
         // Fetch featured images
@@ -78,7 +51,6 @@ const ourportfolio = () => {
                 if (post.featured_media) {
                     const mediaRes = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
                     const mediaData = await mediaRes.json();
-                    setloader(false);
                     return { ...post, featured_image_url: mediaData.source_url };
                 } else {
                     return { ...post, featured_image_url: '/path/to/default/image.jpg' }; // Use your default image path
@@ -86,14 +58,12 @@ const ourportfolio = () => {
             })
         );
 
+        setLoader(false);
         setPosts(postsWithImages);
     };
 
-
     return (
-
         <>
-
             <Head>
                 <title>Book Publishing Portfolio</title>
                 <link rel="icon" href="/favicon.svg" />
@@ -102,14 +72,10 @@ const ourportfolio = () => {
                 <meta property="og:description" content="Read our professional book publishing portfolio and check out the best-sellers that we published. Get in touch with us to publish your book today." />
             </Head>
 
-
-
-
             <section className={styles.ourportfolio}>
-
                 <div className={styles.banner}>
                     <div className={styles.heading}>
-                        <h1 className='color-black font70 t-center'>Our <br></br>Publishing</h1>
+                        <h1 className='color-black font70 t-center'>Our <br />Publishing</h1>
                         <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
                     </div>
                 </div>
@@ -123,8 +89,7 @@ const ourportfolio = () => {
                                     <option value="2023">2023</option>
                                     <option value="2022">2022</option>
                                 </select>
-                                <select className={`form-control ${styles.filterselect}`} value={month}
-                                onChange={handleMonthChange}>
+                                <select className={`form-control ${styles.filterselect}`} value={month} onChange={handleMonthChange}>
                                     <option value="01">January</option>
                                     <option value="02">February</option>
                                     <option value="03">March</option>
@@ -138,35 +103,27 @@ const ourportfolio = () => {
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                <input type="button" className='btn btn-outline-dark' value="search"  onClick={handleSearchClick}/>
-                               
+                                <input type="button" className='btn btn-outline-dark' value="search" onClick={handleSearchClick} />
                             </div>
                             <hr />
                         </Col>
                     </Row>
 
-                    
                     <Row className='mt-5'>
-                    { loader ? <>
-                    
-                        <LoaderSpinner></LoaderSpinner>
-                    
-                    </> : <>
-                    
-                    {posts.length === 0 ? (
-                            <p>No posts found.</p>
+                        {loader ? (
+                            <LoaderSpinner />
                         ) : (
-                            <>
-                                {posts.map((post) => (
-                                    
+                            posts.length === 0 ? (
+                                <p>No posts found.</p>
+                            ) : (
+                                posts.map((post) => (
                                     <Col md={6} lg={4} xl={3} key={post.id} className='mb-5 gap-3'>
-
                                         <main>
                                             <div className={styles.bookcard}>
                                                 <div className={styles.bookcardcover}>
                                                     <div className={styles.bookcardbook}>
                                                         <div className={styles.bookcardbookfront}>
-                                                            <Image className={styles.bookcard__img} src={post.featured_image_url} width={200} height={300} alt="bookwritingexpert"/>
+                                                            <Image className={styles.bookcard__img} src={post.featured_image_url} width={200} height={300} alt="bookwritingexpert" />
                                                         </div>
                                                         <div className={styles.bookcardbookback}></div>
                                                         <div className={styles.bookcardbookside}></div>
@@ -183,37 +140,41 @@ const ourportfolio = () => {
                                                 </div>
                                             </div>
                                         </main>
-
                                     </Col>
-
-
-
-                                ))}
-                            </>
+                                ))
+                            )
                         )}
-                    
-                    </> }
-                        
                     </Row>
-
-
                 </Container>
-
-
-
-
             </section>
-
         </>
-    )
-}
+    );
+};
 
+// getStaticProps function
+export const getStaticProps = async () => {
+    const res = await fetch('https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/publishbooks');
+    const data = await res.json();
 
-function LoaderSpinner(){
-    return <>
-    <div className="spinner-border"></div>
-    </>
-}
+    // Fetch featured images
+    const postsWithImages = await Promise.all(
+        data.map(async (post) => {
+            if (post.featured_media) {
+                const mediaRes = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
+                const mediaData = await mediaRes.json();
+                return { ...post, featured_image_url: mediaData.source_url };
+            } else {
+                return { ...post, featured_image_url: '/path/to/default/image.jpg' }; // Use your default image path
+            }
+        })
+    );
 
+    return {
+        props: {
+            initialPosts: postsWithImages
+        },
+        revalidate: 10, // Revalidate every 10 seconds
+    };
+};
 
-export default ourportfolio
+export default OurPortfolio;
