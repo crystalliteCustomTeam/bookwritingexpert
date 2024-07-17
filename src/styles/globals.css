@@ -1855,7 +1855,23 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   font-size: 90px;
   line-height: 90px;
 }
-
+.bgWhite {
+  background-color: #fff;
+  padding: 8px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  color:#000;
+  display: flex;
+  justify-content: center;
+}
+.bgOrangeRoundednone {
+  background-color: #F7981D;
+  padding: 8px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
 .bgGray {
   background-color: #b9b9b9;
   padding: 8px 50px;
@@ -1932,6 +1948,12 @@ button.bgGray.formbgGray {
   .font_90 {
     font-size: 90px;
     line-height: 95px;
+  }
+  .bgWhite {
+    padding: 8px 30px;
+  }
+  .bgOrangeRoundednone {
+    padding: 8px 30px;
   }
 }
 

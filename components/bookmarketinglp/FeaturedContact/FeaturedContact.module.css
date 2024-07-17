@@ -1,0 +1,142 @@
+.featured {
+  padding: 100px 0px;
+  font-family: "Poppins", sans-serif;
+  background: url("../../../public/images/bookmarketinglp/featuredContact.png");
+  background-size: cover;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.featured h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.featured p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.featured .w45 {
+  width: 45% !important;
+}
+.featuredgrid {
+  padding: 30px;
+  background: #f3f3f3;
+  border-radius: 10px;
+}
+.featuredgrid ul li:not(:last-child){
+    border-right:1px solid #0000004d;
+    padding-right: 20px;
+}
+.featuredgrid ul li span {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #192d44;
+}
+.featuredgrid ul li p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.featured .formsection {
+  padding: 60px 40px;
+  border: 1px solid #f7981d;
+  border-radius: 20px;
+  margin: 0px 50px;
+}
+.featured .formsection h3 {
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 500;
+}
+.featured .formsection p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.featured .formbtn {
+  background: #192d44 !important;
+  height: 50px;
+  color: #fff;
+  border-radius: 4px;
+}
+.featured input .form-control {
+  height: 50px;
+  padding: 20px;
+  border: 1px solid #b4b4b4;
+}
+.featured input::placeholder {
+  color: #b4b4b4;
+  font-size: 14px;
+}
+.featured textarea::placeholder {
+  color: #b4b4b4;
+  font-size: 14px;
+}
+.featured input:focus {
+  box-shadow: none;
+}
+.featured textarea:focus {
+  box-shadow: none;
+}
+@media screen and (max-width: 1199px) {
+  .featured h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .featured p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  .featured .w45 {
+    width: 60% !important;
+  }
+  .featured .formsection {
+    margin: 0px 20px;
+  }
+  .featuredgrid {
+    padding: 20px 10px;
+    margin-bottom: 50px;
+  }
+  .featuredgrid ul li span {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .featuredgrid ul li p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width:991.98px) {
+    .featuredgrid {
+        padding: 30px 50px;
+        margin-bottom: 50px;
+      }
+      
+      .featured .w45 {
+        width: 40% !important;
+      }
+}
+@media screen and (max-width:767.98px) {
+    .featuredgrid {
+        padding: 20px 20px;
+        margin-bottom: 50px;
+      }
+      .featured .w45 {
+        width: 50% !important;
+      }
+}
+@media screen and (max-width:575.98px) {
+    .featuredgrid {
+        padding: 20px 20px;
+        margin-bottom: 50px;
+      }
+      .featured .w45 {
+        width: 100% !important;
+      }
+}

@@ -13,18 +13,19 @@ import Metas from "../../components/Metas";
 import Headerlp from "../../components/Headerlp";
 import Footerlp from "../../components/Footerlp";
 
-
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
   const handleLoaded = () => {
     zE("webWidget:on", "open", function () { });
   };
 
-  const sluginer = useRouter().asPath;
+  const sluginer = router.asPath;
 
 
   const weblink = "https://www.bookwritingexperts.com";
 
-  const newlop = useRouter().asPath == "/bookexperlp";
+  const newlop = router.asPath == "/bookexperlp";
+  const newbooklp = router.asPath == "/book-marketinglp";
 
   const newcol = weblink + sluginer;
 
@@ -83,14 +84,14 @@ export default function App({ Component, pageProps }) {
 
       </Script>
 
-      {newlop ?
+      {newlop || newbooklp ?
         <Headerlp />
         :
         <Header />
       }
       <Pixel />
       <Component {...pageProps} />
-      {newlop ?
+      {newlop || newbooklp ?
         <Footerlp />
         :
         <Footer />
