@@ -66,12 +66,11 @@ export default function App({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"
       ></Script>
       <Script strategy="lazyOnload">
-        {`  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-411006583');
+        {`  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-411006583');
         `}
       </Script>
+
+
       {/* Other meta tags and head elements */}
       <Script strategy="lazyOnload">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
