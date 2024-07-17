@@ -47,9 +47,7 @@ const Thankyou = () => {
         </Script>
       </Head>
 
-      {/* <Script>
-        {`gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`}
-      </Script> */}
+     
 
 
       {/* banner components */}
