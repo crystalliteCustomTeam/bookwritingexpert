@@ -48,10 +48,10 @@ export default function FeaturedContact() {
             <div className={`${style.formsection}`}>
                 <div className="text-center mb-5">
                 <h3>Request A Free Quote</h3>
-                <span className="">Cost-effectiveness. Consumer-centric—the <br className="d-xl-block d-none d-md-block"/> crudity of book marketing, delivered!</span>
+                <span className="">Cost-effectiveness. Consumer-centric—the <br className="d-xl-block d-none d-md-block d-lg-none"/> crudity of book marketing, delivered!</span>
                 </div>
                 <form action="" method="post">
-                    <div className="d-flex gap-3 mb-3">
+                    <div className="d-flex flex-md-row flex-column gap-3 mb-3">
                         <input type="text" name="name" placeholder="Full Name*" id=""  className="form-control"/>
                         <input type="email" name="email" placeholder="Email*" id=""  className="form-control"/>
                     </div>  

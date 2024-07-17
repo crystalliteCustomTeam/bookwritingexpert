@@ -1,5 +1,5 @@
 import React from "react";
-import {Banner, FeaturedContact} from "../../components/bookmarketinglp";
+import {Banner, CaseStudies, FeaturedContact, Portfolio} from "../../components/bookmarketinglp";
 import Services from "../../components/bookmarketinglp/Services/Services";
 
 export default function bookmarketinglp() {
@@ -8,6 +8,8 @@ export default function bookmarketinglp() {
       <Banner />
       <FeaturedContact/>
       <Services/>
+      <CaseStudies/>
+      <Portfolio/>
     </main>
   );
 }

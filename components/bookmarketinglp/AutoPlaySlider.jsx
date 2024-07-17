@@ -23,11 +23,11 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options, children
     return (
         <>
             <div className={`overflow-hidden ${wrapperClasses}`} ref={emblaRef}>
-                <div className="flex [margin-left:calc(1rem_*_-1)]">
+                <div className="d-flex gap-0 [margin-left:calc(0rem_*_-1)]">
                     {children}
                 </div>
             </div>
-            {arrows && <div className="flex gap-x-24 justify-center mt-10 lg:mt-16">
+            {arrows && <div className={`d-flex justify-content-center mt-5`}>
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} css={arrowsCss} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} css={arrowsCss} />
             </div>}

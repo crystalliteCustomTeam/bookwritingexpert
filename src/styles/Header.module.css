@@ -495,7 +495,7 @@
     top: 0;
     width: 100%;
     background-color: #141d29;
-    z-index: 99999999;
+    z-index: 99999;
   }
   .headerCBI {
     position: fixed;

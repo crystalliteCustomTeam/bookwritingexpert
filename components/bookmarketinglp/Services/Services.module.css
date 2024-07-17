@@ -1,4 +1,44 @@
 .service{
     padding: 100px 0;
     background: #F3F3F3;
+    font-family: "Poppins", sans-serif;
+}
+.service h3{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 50px;
+}
+.service p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+}
+.sliderClass {
+    padding: 40px 20px;
+    border: 1px solid #7070706d;
+    height: 400px;
+    position: relative;
+}
+.sliderClass h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #F7981D;
+}
+.sliderClass p{
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    text-align: unset;
+}
+.sliderClass .absLink{
+    position: absolute;
+    bottom: 30px;
+}
+.sliderClass a{
+    color: #F7981D;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #192D44;
+    padding-bottom: 5px;
 }

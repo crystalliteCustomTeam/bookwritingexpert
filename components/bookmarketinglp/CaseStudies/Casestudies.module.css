@@ -1,0 +1,161 @@
+.caseStudies{
+    padding: 100px 0px;
+    font-family: "Poppins",sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.caseStudies::before{
+    position: absolute;
+    content:'';
+    top:0px;
+    right: -110px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 200px;
+    z-index: 99999;
+    background: url(../../../public/images/bookmarketinglp/book.png);
+}
+/* .caseStudies::before{
+    position: absolute;
+    content:'';
+    top:30px;
+    left: 50px;
+    background-position: center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 141px;
+    background: url(../../../public/images/bookmarketinglp/book3.png);
+} */
+.caseStudies::after{
+    position: absolute;
+    content:'';
+    bottom:20px;
+    left: -90px;
+    background-size: auto;
+    background-position: 50% center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 180px;
+    background: url(../../../public/images/bookmarketinglp/3book.png);
+}
+.sliderClass{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 auto;
+    width: 25%;
+}
+.content{
+    width: 75%;
+    padding: 80px 100px 80px 0px;
+}
+.sliderClass h3{
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 500;
+}
+.sliderClass p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.content h3{
+    font-size: 30px;
+    line-height: 46px;
+    font-weight: 500;
+}
+.content p{
+    font-size: 16px;
+    line-height: 25px;
+}
+.content ul li{
+    font-size: 16px;
+    line-height: 25px;
+}
+@media screen and (max-width:1400px) {
+    .sliderClass{
+        width: 25%;
+    }
+    .content{
+        width: 75%;
+        padding: 80px 40px 80px 0px;
+    }
+}
+@media screen and (max-width:1199.98px) {
+    .sliderClass{
+        width: 35%;
+    }
+    .content{
+        width: 75%;
+        padding: 0;
+    }
+    .sliderClass h3{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .sliderClass p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .content h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .content ul li{
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:991px) {
+    .sliderClass{
+        width: 40%;
+    }
+    .content{
+        width: 60%;
+        padding: 0;
+    }
+    .sliderClass h3{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .sliderClass p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .content h3{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .content p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .content ul li{
+        font-size: 12px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:767.98px) {
+
+    .content{
+        width: 100%;
+        padding: 0;
+    }
+    .content h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .content p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .content ul li{
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
