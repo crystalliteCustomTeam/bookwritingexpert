@@ -2,6 +2,8 @@ import React from 'react'
 import Banner from '../../components/Banner'
 import Head from 'next/head'
 import Script from 'next/script'
+import { GoogleAnalytics,sendGAEvent  } from '@next/third-parties/google'
+
 
 const Thankyou = () => {
 
@@ -42,21 +44,17 @@ const Thankyou = () => {
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="1 minute" />
         <link rel="icon" href="/favicon.svg" />
-        <Script
-        strategy="lazyOnload"
-        src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"
-      ></Script>
-      <Script strategy="lazyOnload">
-        {`  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-411006583');
-        `}
-      </Script>
-        <Script>
-          {` gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`}
-        </Script>
       </Head>
 
      
 
+        
+      <Script
+        id="gtag-conversion"
+        dangerouslySetInnerHTML={{
+          __html: `gtag('event', 'conversion', {'send_to': 'AW-411006583/T2rUCNThjIoDEPfs_cMB'});`,
+        }}
+      />
 
       {/* banner components */}
 
