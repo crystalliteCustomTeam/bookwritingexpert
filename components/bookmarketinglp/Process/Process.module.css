@@ -115,7 +115,7 @@
     line-height: 25px;
   }
   .process .card {
-    min-height: 220px;
+    min-height: auto;
   }
   .process .card h3 {
     font-size: 16px;
@@ -137,7 +137,7 @@
     line-height: 25px;
   }
   .process .card {
-    min-height: 200px;
+    min-height: auto;
   }
   .process .card h3 {
     font-size: 16px;
