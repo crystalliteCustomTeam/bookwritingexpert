@@ -19,9 +19,9 @@
 .w75 {
   width: 75%;
 }
-@media screen and (max-width: 1399.99px) {
+@media screen and (max-width: 1399.98px) {
   .banner h1 {
-    font-size: 38px;
+    font-size: 35px;
     line-height: 50px;
   }
   .banner p {
@@ -29,7 +29,7 @@
     line-height: 25px;
   }
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .banner h1 {
     font-size: 30px;
     line-height: 40px;
@@ -39,7 +39,7 @@
     line-height: 25px;
   }
 }
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 991.98px) {
   .banner h1 {
     font-size: 30px;
     line-height: 40px;
@@ -49,7 +49,7 @@
     padding-bottom: 50px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .banner h1 {
     font-size: 30px;
     line-height: 40px;
@@ -58,12 +58,12 @@
     width: 90% !important;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
   .banner h1 {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 40px;
   }
   .w75 {
-    width: 90% !important;
+    width: 100% !important;
   }
 }

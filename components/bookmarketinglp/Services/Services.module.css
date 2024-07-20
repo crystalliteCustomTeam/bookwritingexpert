@@ -1,44 +1,146 @@
-.service{
-    padding: 100px 0;
-    background: #F3F3F3;
-    font-family: "Poppins", sans-serif;
+.service {
+  padding: 100px 0;
+  background: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  position: relative;
 }
-.service h3{
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 50px;
+.service h3 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
 }
-.service p{
+.service p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+.service .sliderClass {
+  padding: 40px 20px;
+  border: 1px solid #7070706d;
+  height: 400px;
+  position: relative;
+}
+.service .sliderClass h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #f7981d;
+}
+.service .sliderClass p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: unset;
+}
+.service .sliderClass .absLink {
+  position: absolute;
+  bottom: 30px;
+}
+.service .sliderClass a {
+  color: #f7981d;
+  font-size: 16px;
+  text-decoration: none;
+  border-bottom: 1px solid #192d44;
+  padding-bottom: 5px;
+}
+.Emblabtn {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: max-content;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1399.98px) {
+  .service h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .service p {
     font-size: 15px;
     line-height: 25px;
     font-weight: 300;
-}
-.sliderClass {
+  }
+  .sliderClass {
     padding: 40px 20px;
     border: 1px solid #7070706d;
-    height: 400px;
+    height: 450px;
     position: relative;
+  }
 }
-.sliderClass h3{
+
+@media screen and (max-width: 1199.98px) {
+    .service p {
+        font-size: 14px;
+      }
+}
+
+@media screen and (max-width: 991.98px) {
+  .service {
+    padding: 50px 0;
+  }
+  .service h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .service p {
+    font-size: 14px;
+  }
+  .service .sliderClass h3 {
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
-    color: #F7981D;
-}
-.sliderClass p{
-    font-size: 15px;
+    color: #f7981d;
+    text-align: start;
+  }
+  .service .sliderClass p {
+    font-size: 13px;
     line-height: 25px;
     font-weight: 300;
     text-align: unset;
-}
-.sliderClass .absLink{
+  }
+.Emblabtn {
     position: absolute;
-    bottom: 30px;
+    top: 15%;
+    right: 5%;
+    width: max-content;
+    gap: 10px;
 }
-.sliderClass a{
-    color: #F7981D;
-    font-size: 16px;
-    text-decoration: none;
-    border-bottom: 1px solid #192D44;
-    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .sliderClass {
+    padding: 40px 20px;
+    border: 1px solid #7070706d;
+    height: 420px;
+    position: relative;
+  }
+  .service h3 {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .service p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .Emblabtn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 100%;
+    gap: 10px;
+}
+}
+@media screen and (max-width: 575.98px) {
+  
+    .service h3 {
+        font-size: 25px;
+        line-height: 40px;
+      }
+      .service p {
+        font-size: 14px;
+      }
 }

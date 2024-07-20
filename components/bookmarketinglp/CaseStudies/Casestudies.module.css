@@ -3,6 +3,16 @@
     font-family: "Poppins",sans-serif;
     position: relative;
     overflow: hidden;
+    position: relative;
+}
+.caseStudies h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+}
+.caseStudies p{
+    font-size: 16px;
+    line-height: 25px;
 }
 .caseStudies::before{
     position: absolute;
@@ -16,18 +26,7 @@
     z-index: 99999;
     background: url(../../../public/images/bookmarketinglp/book.png);
 }
-/* .caseStudies::before{
-    position: absolute;
-    content:'';
-    top:30px;
-    left: 50px;
-    background-position: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    width: 120px;
-    height: 141px;
-    background: url(../../../public/images/bookmarketinglp/book3.png);
-} */
+
 .caseStudies::after{
     position: absolute;
     content:'';
@@ -41,121 +40,138 @@
     height: 180px;
     background: url(../../../public/images/bookmarketinglp/3book.png);
 }
-.sliderClass{
-    margin: 0 auto;
+.caseStudies .absimages:before{
+    position: absolute;
+    content:'';
+    top:5%;
+    left: 5%;
+    background-size: auto;
+    background-position: 50% center;
     overflow: hidden;
-    padding: 0 auto;
-    width: 25%;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    background: url(../../../public/images/bookmarketinglp/book3.png);
 }
-.content{
-    width: 75%;
-    padding: 80px 100px 80px 0px;
+
+.caseStudies .absimages:after{
+    position: absolute;
+    content:'';
+    bottom:20%;
+    right: 5%;
+    background-size: auto;
+    background-position: 50% center;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    background: url(../../../public/images/bookmarketinglp/openbook.png);
 }
-.sliderClass h3{
+
+.caseStudies .content h3{
     font-size: 30px;
     line-height: 46px;
     font-weight: 500;
 }
-.sliderClass p{
+.caseStudies .content p{
     font-size: 16px;
     line-height: 25px;
 }
-.content h3{
-    font-size: 30px;
-    line-height: 46px;
-    font-weight: 500;
-}
-.content p{
+.caseStudies .content ul li{
     font-size: 16px;
     line-height: 25px;
 }
-.content ul li{
-    font-size: 16px;
+.caseStudies .content ul li::marker{
+    color: #F7981D;
+    font-size: 20px;
     line-height: 25px;
 }
-@media screen and (max-width:1400px) {
-    .sliderClass{
-        width: 25%;
-    }
-    .content{
-        width: 75%;
-        padding: 80px 40px 80px 0px;
-    }
+.EmblaBtn {
+    position: relative;
+    bottom: 350px;
+    width:100%;
+    justify-content: space-between !important;
+}
+
+@media screen and (max-width:1399.98px) {
+   
+    
 }
 @media screen and (max-width:1199.98px) {
-    .sliderClass{
-        width: 35%;
-    }
-    .content{
-        width: 75%;
-        padding: 0;
-    }
-    .sliderClass h3{
+  
+    
+    .caseStudies h3{
         font-size: 30px;
-        line-height: 45px;
     }
-    .sliderClass p{
-        font-size: 16px;
+    .caseStudies .content h3{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .caseStudies .content p{
+        font-size: 14px;
         line-height: 25px;
     }
-    .content h3{
-        font-size: 25px;
-        line-height: 35px;
-    }
-    .content p{
-        font-size: 12px;
-        line-height: 20px;
-    }
-    .content ul li{
-        font-size: 12px;
+    .caseStudies .content ul li{
+        font-size: 14px;
         line-height: 25px;
     }
 }
-@media screen and (max-width:991px) {
-    .sliderClass{
-        width: 40%;
-    }
-    .content{
-        width: 60%;
-        padding: 0;
-    }
-    .sliderClass h3{
-        font-size: 30px;
-        line-height: 45px;
-    }
-    .sliderClass p{
-        font-size: 16px;
-        line-height: 25px;
-    }
-    .content h3{
-        font-size: 20px;
-        line-height: 35px;
-    }
-    .content p{
+@media screen and (max-width:991.98px) {
+    
+    .caseStudies p{
         font-size: 12px;
         line-height: 20px;
     }
-    .content ul li{
+    .caseStudies .content p{
         font-size: 12px;
-        line-height: 25px;
+        line-height: 20px;
+    }
+    .caseStudies .content ul li{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .EmblaBtn {
+        position: relative;
+        bottom: 10px;
+        width:100%;
+        justify-content: center !important;
     }
 }
 @media screen and (max-width:767.98px) {
-
-    .content{
-        width: 100%;
-        padding: 0;
+    .caseStudies{
+        padding: 50px 0px;
     }
-    .content h3{
+    .EmblaBtn {
+        position: relative;
+        bottom: 10px;
+        width:100%;
+        justify-content: center !important;
+    }
+    .caseStudies .content h3{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .caseStudies::before{
+       display: none;
+    }
+    
+    .caseStudies::after{
+       display: none;
+    }
+    .caseStudies .absimages:before{
+        display: none;
+    }
+    .caseStudies .absimages:after{
+      display: flex;
+    }
+}
+@media screen and (max-width:575.98px) {
+    .caseStudies h3{
         font-size: 25px;
-        line-height: 35px;
+        line-height: 40px;
     }
-    .content p{
-        font-size: 14px;
-        line-height: 25px;
-    }
-    .content ul li{
-        font-size: 14px;
-        line-height: 25px;
+    .caseStudies .content h3{
+        font-size: 18px;
+        line-height: 30px;
     }
 }

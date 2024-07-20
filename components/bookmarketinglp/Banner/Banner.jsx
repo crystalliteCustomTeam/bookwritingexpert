@@ -5,9 +5,9 @@ import {Col, Container, Row} from "react-bootstrap";
 import Image from "next/image";
 
 // Media
-import partnerlogo1 from "../../../public/images/bookmarketinglp/partnerlogo1.png";
-import partnerlogo2 from "../../../public/images/bookmarketinglp/partnerlogo2.png";
-import bannerbooks from "../../../public/images/bookmarketinglp/bannerbooks.png";
+import partnerlogo1 from "/public/images/bookmarketinglp/partnerlogo1.png";
+import partnerlogo2 from "/public/images/bookmarketinglp/partnerlogo2.png";
+import bannerbooks from "/public/images/bookmarketinglp/bannerbooks.png";
 import CTA from "../../CTA/CTA";
 
 export default function Banner({
@@ -26,14 +26,14 @@ export default function Banner({
               <div className={`${style.w75} mx-auto text-center pt-5`}>
                 <h1 className="fw500 mb-4" dangerouslySetInnerHTML={{__html: title}} />
                 <p className="fw400" dangerouslySetInnerHTML={{__html: desc}} />
-                <div className="d-flex gap-3 justify-content-center mb-4">
-                  <CTA text="(855) 500 0057" classes="hover:bg-secondary-100 !text-black" color="text-black" handle="" bg="bgWhite" link="tel:855-500-0057" />
+                <div className="d-flex flex-md-row flex-column gap-3 justify-content-center mb-4">
+                  <CTA text="(855) 500 0057" classes="!text-black" color="text-black" handle="" bg="bgWhite" link="tel:855-500-0057" />
                   <CTA
                     text="Get A Quote"
                     link="javascript:$zopim.livechat.window.show();"
                     bg="bgOrangeRoundednone"
                     color="text-white"
-                    border="border-primary-100 text-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
+                    border="text-white "
                   />
                 </div>
               </div>

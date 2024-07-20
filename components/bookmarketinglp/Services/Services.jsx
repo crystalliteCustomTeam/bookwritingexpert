@@ -4,7 +4,7 @@ import style from "../../../components/bookmarketinglp/Services/Services.module.
 import AutoPlaySlider from "../AutoPlaySlider";
 import Link from "next/link";
 import Image from "next/image";
-import rightArrow from "../../../public/images/bookmarketinglp/arrow.png"
+import rightArrow from "/public/images/bookmarketinglp/arrow.png"
 
 const data = [
   {
@@ -43,9 +43,9 @@ export default function Services() {
             </Col>
           </Row>
           <Row>
-            <AutoPlaySlider arrows={true} options={{align: "start"}} wrapperClasses="mt-3" direction="forward">
+            <AutoPlaySlider arrows={true} options={{align: "start"}} wrapperClasses="mt-3" direction="forward"  EmblaBtn={style.Emblabtn} >
               {data.map((e, i) => (
-                <Col key={i} sm={12} md={6} lg={4} xl={3} className="ps-0">
+                <Col key={i} xs={12} sm={6} md={6} lg={4} xl={3} className="ps-0">
                   <div className="d-flex align-items-center">
                     <div className={`${style.sliderClass}`}>
                       <h3 dangerouslySetInnerHTML={{__html: e.title}} />

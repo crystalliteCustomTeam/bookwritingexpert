@@ -9,7 +9,7 @@ export default function AutoScrollSlider({wrapperClasses = " ", direction = "for
   const [emblaRef] = useEmblaCarousel({align: "center", dragFree: true, loop: true}, plugins);
   return (
     <div className={`overflow-hidden ${wrapperClasses}`} ref={emblaRef}>
-      <div className="flex -mr-5">{children}</div>
+      <div className="d-flex ms-5">{children}</div>
     </div>
   );
 }

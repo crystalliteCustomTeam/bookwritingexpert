@@ -2,7 +2,7 @@ import style from "./cta.module.css"
 const CTA = ({
   text,
   link = "javascript:;",
-  classes = "",
+  classes = "fw500",
   bg = "bgGray",
   color = "text-white",
   border = "border-transparent",

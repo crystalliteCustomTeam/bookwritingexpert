@@ -1,12 +1,20 @@
 .featured {
   padding: 100px 0px;
   font-family: "Poppins", sans-serif;
-  background: url("../../../public/images/bookmarketinglp/featuredContact.png");
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.bgClasses {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: 50% center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  top: 0;
+  bottom: 0;
+  z-index: -99999;
 }
 .featured h2 {
   font-size: 40px;
@@ -26,9 +34,9 @@
   background: #f3f3f3;
   border-radius: 10px;
 }
-.featuredgrid ul li:not(:last-child){
-    border-right:1px solid #0000004d;
-    padding-right: 20px;
+.featuredgrid ul li:not(:last-child) {
+  border-right: 1px solid #0000004d;
+  padding-right: 20px;
 }
 .featuredgrid ul li span {
   font-size: 35px;
@@ -45,14 +53,14 @@
   padding: 60px 40px;
   border: 1px solid #f7981d;
   border-radius: 20px;
-  margin: 0px 50px;
+  margin: 0px 80px;
 }
 .featured .formsection h3 {
   font-size: 24px;
   line-height: 35px;
   font-weight: 500;
 }
-.featured .formsection p {
+.featured .formsection span {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
@@ -82,7 +90,17 @@
 .featured textarea:focus {
   box-shadow: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1399.98px) {
+  .featuredgrid ul li p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .featured .formsection span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
   .featured h2 {
     font-size: 30px;
     line-height: 40px;
@@ -112,31 +130,63 @@
     line-height: 20px;
   }
 }
-@media screen and (max-width:991.98px) {
-    .featuredgrid {
-        padding: 30px 50px;
-        margin-bottom: 50px;
-      }
-      
-      .featured .w45 {
-        width: 40% !important;
-      }
+@media screen and (max-width: 991.98px) {
+  .featured {
+    padding: 50px 0px;
+  }
+  .featuredgrid {
+    padding: 30px 50px;
+    margin-bottom: 50px;
+  }
+
+  .featured .w45 {
+    width: 40% !important;
+  }
 }
-@media screen and (max-width:767.98px) {
-    .featuredgrid {
-        padding: 20px 20px;
-        margin-bottom: 50px;
-      }
-      .featured .w45 {
-        width: 50% !important;
-      }
+@media screen and (max-width: 767.98px) {
+  .featured {
+    padding: 50px 0px;
+  }
+  .featuredgrid {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+  .featured .w45 {
+    width: 50% !important;
+  }
+
+  .featuredgrid ul li p {
+    text-align: start;
+  }
+  .featured .formsection h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .featured .formsection span {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  .featured .formsection {
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin: 0px 10px;
+  }
 }
-@media screen and (max-width:575.98px) {
-    .featuredgrid {
-        padding: 20px 20px;
-        margin-bottom: 50px;
-      }
-      .featured .w45 {
-        width: 100% !important;
-      }
+@media screen and (max-width: 575.98px) {
+  .featured h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .featuredgrid {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+  }
+  .featured .w45 {
+    width: 100% !important;
+  }
+  .featuredgrid ul li:not(:last-child) {
+    border-right: 0;
+    padding-right: 20px;
+  }
 }

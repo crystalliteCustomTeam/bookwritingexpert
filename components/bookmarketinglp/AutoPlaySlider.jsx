@@ -6,10 +6,10 @@ import Autoplay from "embla-carousel-autoplay"
 // Components
 import { PrevButton, NextButton, usePrevNextButtons } from "./SliderArrows"
 
-export default function AutoPlaySlider({ wrapperClasses = " ", options, children, arrows = true, arrowsCss = " " }) {
+export default function AutoPlaySlider({ wrapperClasses = " ", options, children, arrows = true, arrowsCss = " ", EmblaBtn="" }) {
     const plugins = [
         ClassNames(),
-        Autoplay({ delay: 3000, stopOnFocusIn: false, stopOnInteraction: false })
+        Autoplay({ delay: 30000, stopOnFocusIn: false, stopOnInteraction: false })
     ]
     const [emblaRef, emblaApi] = useEmblaCarousel({ dragFree: true, loop: true, ...options }, plugins)
 
@@ -23,11 +23,11 @@ export default function AutoPlaySlider({ wrapperClasses = " ", options, children
     return (
         <>
             <div className={`overflow-hidden ${wrapperClasses}`} ref={emblaRef}>
-                <div className="d-flex gap-0 [margin-left:calc(0rem_*_-1)]">
+                <div className="d-flex gap-0 [margin-left:calc(0rem_*_-1)] my-3">
                     {children}
                 </div>
             </div>
-            {arrows && <div className={`d-flex justify-content-center mt-5`}>
+            {arrows && <div className={`d-flex justify-content-center mt-5 ${EmblaBtn}`}>
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} css={arrowsCss} />
                 <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} css={arrowsCss} />
             </div>}
