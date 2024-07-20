@@ -13,6 +13,7 @@ import Metas from "../../components/Metas";
 import Headerlp from "../../components/Headerlp";
 import Footerlp from "../../components/Footerlp";
 import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer";
+import { GoogleTagManager,GoogleAnalytics } from '@next/third-parties/google'
 
 export default function App({Component, pageProps}) {
   const router = useRouter();
@@ -57,12 +58,26 @@ export default function App({Component, pageProps}) {
         `}
       </Script> */}
       <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
+
+
+{/*       
+      <Script
+        strategy="lazyOnload"
+        src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"
+      ></Script>
       <Script strategy="lazyOnload">
         {`  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-411006583');
         `}
       </Script>
+           */}
 
       {/* Other meta tags and head elements */}
+
+<GoogleAnalytics gaId="AW-411006583" />
+
+
+
+      {/* Other meta tags and head elements
       <Script strategy="lazyOnload">
         {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -71,6 +86,11 @@ export default function App({Component, pageProps}) {
           })(window,document,'script','dataLayer','GTM-K994MT85');
         `}
       </Script>
+
+      </Script> */}
+
+      
+      <GoogleTagManager gtmId="GTM-K994MT85" />
 
       {newlop || newbooklp ? <Headerlp /> : <Header />}
       <Pixel />
