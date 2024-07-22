@@ -1,0 +1,150 @@
+.process {
+  padding: 100px 0px 230px;
+  background: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+}
+.process h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.process p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.process .card {
+  height: 200px;
+  margin-bottom: 15px;
+  /* padding: 15px 10px; */
+  box-shadow: 0px 0px 10px #cacaca;
+  transition: all 0.4s ease-in-out;
+}
+.process .card h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+}
+.process .card p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.process .card:hover {
+  background: #f7981d;
+}
+
+.process .card:hover h3,
+.process .card:hover p {
+  color: #fff;
+}
+.process .position {
+  position: relative;
+}
+.process .imgPosition {
+  position: absolute;
+  top: 0;
+  bottom: -14%;
+  content: "";
+  width: 100%;
+  height: 135%;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width: 1399.98px) {
+  .process {
+    padding: 100px 0px 100px;
+    background: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .process .card {
+    min-height: 230px;
+  }
+  .process .imgPosition {
+    bottom: 0%;
+    content: "";
+    width: 100%;
+    height: 835px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .process h3 {
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  .process p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .process .card {
+    min-height: 220px;
+  }
+  .process .card p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .process .imgPosition {
+    bottom: -14%;
+    content: "";
+    width: 100%;
+    height: 114%;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .process {
+    padding: 50px 0px;
+    background: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .process {
+    padding: 50px 0px;
+    background: #f3f3f3;
+    font-family: "Poppins", sans-serif;
+  }
+  .process h3 {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 500;
+  }
+  .process p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .process .card {
+    min-height: auto;
+  }
+  .process .card h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+  .process .card p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .process h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .process p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .process .card {
+    min-height: auto;
+  }
+  .process .card h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .process .card p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}

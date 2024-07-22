@@ -8,7 +8,7 @@ const CTAGroup = ({
         <div className={`d-flex gap-3 ${classes}`}>
             <CTA
                 text="Let's Discuss"
-                classes="hover:bg-secondary-100"
+                classes=""
                 handle=""
                 bg="bgGray"
                 link="javascript:$zopim.livechat.window.show();"
@@ -18,7 +18,7 @@ const CTAGroup = ({
                 link="tel:302-883-8877"
                 bg="transparent"
                 color="bgOrange"
-                border="border-primary-100 text-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
+                border="text-white"
             />
         </div>
     )

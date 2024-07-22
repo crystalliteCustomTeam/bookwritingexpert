@@ -1,0 +1,104 @@
+.faqs {
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+.faqs h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.faqsStyle {
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  padding: 0;
+  margin-bottom: 0px;
+}
+.faqs .faqsStyle1 {
+}
+.faqs .btnCss {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 20px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.faqs .btnCollapse {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: start;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 20px #00000027;
+  border: none;
+}
+.faqs .btnCss h4 {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.faqs .btnCss p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.rotateArrow {
+  transform: rotate(0deg); /* Default rotation */
+  transition: transform 0.6s ease-in-out; /* Smooth transition for animation */
+}
+@media screen and (max-width: 1399.98px) {
+  .faqs h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .faqs h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .faqs {
+    padding: 50px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .faqs .btnCss h4 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .faqs .btnCss p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .faqs .btnCss h4 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .faqs .btnCss p {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 576.98px) {
+    .faqs h2 {
+        font-size: 25px;
+        line-height: 40px;
+      }
+    .faqs .btnCss h4 {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .faqs .btnCss p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .faqs .btnCollapse h4{
+        font-size: 20px;
+        line-height: 30px;
+      }
+}

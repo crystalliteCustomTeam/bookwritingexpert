@@ -1,0 +1,57 @@
+.partnersCompanies {
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+.scrollSlider {
+  display: flex;
+  padding: 10px 60px;
+  border-right: 2px solid #e8e8e8;
+  margin: 30px auto;
+}
+.partnersCompanies h3 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 500;
+}
+.partnersCompanies p {
+  font-size: 16px;
+  line-height: 25px;
+}
+@media screen and (max-width:1399.98px) {
+  .partnersCompanies h3 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width:1199.98px) {
+    
+}
+
+@media screen and (max-width:991.98px) {
+  .partnersCompanies {
+    padding: 50px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .partnersCompanies h3 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .partnersCompanies p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+@media screen and (max-width:767.98px) {
+  .partnersCompanies p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width:576.98px) {
+  .partnersCompanies h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}

@@ -1,0 +1,107 @@
+.services {
+  padding: 100px 0;
+  font-family: "Poppins", sans-serif;
+}
+.services h3 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 500;
+}
+.services p {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+}
+.services .cardClass {
+  border-bottom: 5px solid #192d44;
+  padding: 20px 10px;
+  margin: 10px 20px;
+}
+.services .cardClass:hover {
+  background: transparent;
+  border-bottom: 5px solid #f7981d;
+  box-shadow: 0px 0px 4px #f7f7f7;
+}
+.services .cardClass:hover h4 {
+  color: #f7981d;
+}
+.services .cardClass h4{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 38px;
+}
+.services .cardClass p{
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.services .classes .absolute:before {
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  background: #f7981d;
+  z-index: 9999;
+  content: "";
+}
+.cta {
+  background: #192d44;
+}
+@media screen and (max-width: 1399.98px) {
+  .services h3 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .services .cardClass {
+    padding: 20px 10px;
+    margin: 10px 10px;
+  }
+  
+  .services p{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .services .cardClass h4{
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .services .cardClass p{
+    font-size: 14px;
+    line-height: 25px;
+  }
+  
+}
+
+@media screen and (max-width: 991.98px) {
+  .services {
+    padding: 50px 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .services h3 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+  }
+  .services p {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .services .classes .absolute:before {
+    display: none;
+  }
+}
+@media screen and (max-width: 576.98px) {
+  .services h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}

@@ -1855,12 +1855,49 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   font-size: 90px;
   line-height: 90px;
 }
-
+.bgWhite {
+  background-color: #fff;
+  padding: 8px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  color:#000;
+  display: flex;
+  justify-content: center;
+}
+.bgOrangeRoundednone {
+  background-color: #F7981D;
+  padding: 8px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #f7981d;
+}
+.bgOrangeRoundednone:hover {
+  background-color: #192D44;
+  color: #fff !important;
+  border: transparent;
+}
 .bgGray {
   background-color: #b9b9b9;
   padding: 8px 50px;
   border-radius: 50px;
   text-decoration: none;
+}
+
+.bgBlue{
+  background: #192D44;
+  padding: 8px 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  border: transparent;
+}
+.bgBlue:hover{
+  background: transparent;
+ border: 1px solid #192D44;
+ color: #192D44 !important;
 }
 
 .bgOrange {
@@ -1926,16 +1963,38 @@ button.bgGray.formbgGray {
 .childrenTestimonial ul.slick-dots li button {
   display: none;
 }
+/* Book Marketing Lp Css */
+.__testiCard .is-snapped.is-in-view {
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #0000002f;
+  padding: 60px 40px;
+  transform: scale(1);
+  margin: 0px 0px;
+  
+}
 
+
+.__testiCard .is-in-view {
+  padding: 60px 40px;
+ margin: 0px 20px;
+ transform: scale(0.9);
+}
 
 @media (max-width:1400px) {
   .font_90 {
     font-size: 90px;
     line-height: 95px;
   }
+  .bgWhite {
+    padding: 8px 30px;
+  }
+  .bgOrangeRoundednone {
+    padding: 8px 30px;
+  }
 }
 
-@media (max-width:1199px) {
+@media (max-width:1199.98px) {
   .bgOrange {
     background-color: #F7981D;
     padding: 8px 30px;
@@ -1959,6 +2018,14 @@ button.bgGray.formbgGray {
     font-size: 18px;
     line-height: 25px;
   }
+  .__testiCard .is-snapped.is-in-view {
+    padding: 40px 40px;
+    transform: scale(0.9);
+  }
+  .__testiCard .is-in-view {
+    padding: 40px 40px;
+  }
+  
 }
 
 @media (max-width:991px) {
@@ -1982,6 +2049,10 @@ button.bgGray.formbgGray {
     font-size: 40px;
     line-height: 50px;
   }
+  .bgOrangeRoundednone {
+    padding: 8px 12px;
+  }
 }
 
 @media (max-width:576px) {}
+
