@@ -90,6 +90,11 @@
 .featured textarea:focus {
   box-shadow: none;
 }
+.formsection input, .formsection textarea {
+  border: 1px solid #00000083 !important;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
 @media screen and (max-width: 1399.98px) {
   .featuredgrid ul li p {
     font-size: 12px;

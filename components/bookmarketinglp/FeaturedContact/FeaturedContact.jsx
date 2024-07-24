@@ -31,7 +31,7 @@ export default function FeaturedContact({
                     link="javascript:$zopim.livechat.window.show();"
                     bg="bgOrangeRoundednone"
                     color="text-white"
-                    border="border-primary-100 text-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
+                    border="text-white"
                     classes="mb-5"
                   />
                 </div>
@@ -44,7 +44,7 @@ export default function FeaturedContact({
                     link="javascript:$zopim.livechat.window.show();"
                     bg="bgOrangeRoundednone"
                     color="text-white"
-                    border="border-primary-100 text-white hover:!bg-primary-100 hover:border-transparent hover:text-white"
+                    border="text-white"
                   />
                 </div>
               )}

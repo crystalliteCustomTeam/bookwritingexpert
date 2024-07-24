@@ -19,7 +19,7 @@ export default function PublishingServices({
           <Row className="align-items-center">
             <Col md={12} lg={5} xl={5} className="">
               <h3 dangerouslySetInnerHTML={{__html: title}} />
-              <p className="text-justify" dangerouslySetInnerHTML={{__html: desc}} />
+              <p className="text-left" dangerouslySetInnerHTML={{__html: desc}} />
               {cta && (
                 <div className={style.w45}>
                   <CTA text="Book An Appointment" link="javascript:$zopim.livechat.window.show();" color="text-white" classes="mb-5" bg="bg-white" />

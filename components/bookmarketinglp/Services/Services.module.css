@@ -20,6 +20,12 @@
   height: 400px;
   position: relative;
 }
+.service .sliderClass:hover {
+  background: #f7981d;
+}
+.service .sliderClass:hover h3, .sliderClass:hover  p{
+  color: #fff;
+}
 .service .sliderClass h3 {
   font-size: 20px;
   font-weight: 500;
@@ -42,6 +48,10 @@
   text-decoration: none;
   border-bottom: 1px solid #192d44;
   padding-bottom: 5px;
+}
+.service .sliderClass:hover a {
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 .Emblabtn {
   position: absolute;

@@ -1973,12 +1973,18 @@ button.bgGray.formbgGray {
   margin: 0px 0px;
   
 }
-
+.__bannerSliderClass .emblaSlider{
+  width: 25% !important;
+}
 
 .__testiCard .is-in-view {
   padding: 60px 40px;
  margin: 0px 20px;
  transform: scale(0.9);
+}
+.rfm-initial-child-container{
+  --width: 100% !important;
+  display: block !important;
 }
 
 @media (max-width:1400px) {

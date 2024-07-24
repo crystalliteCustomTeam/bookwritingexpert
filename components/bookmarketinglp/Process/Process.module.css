@@ -1,5 +1,5 @@
 .process {
-  padding: 100px 0px 230px;
+  padding: 100px 0px 210px;
   background: #f3f3f3;
   font-family: "Poppins", sans-serif;
 }
@@ -19,21 +19,28 @@
   box-shadow: 0px 0px 10px #cacaca;
   transition: all 0.4s ease-in-out;
 }
-.process .card h3 {
+.process .card2 {
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 10px #cacaca;
+  transition: all 0.4s ease-in-out;
+}
+.process .card h3 ,.card2 h3  {
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
 }
-.process .card p {
+.process .card p, .card2 p {
   font-size: 16px;
   line-height: 25px;
 }
-.process .card:hover {
+.process .card:hover, .card2:hover {
   background: #f7981d;
 }
 
 .process .card:hover h3,
-.process .card:hover p {
+.process .card:hover p,
+.process .card2:hover h3,
+.process .card2:hover p {
   color: #fff;
 }
 .process .position {
@@ -79,7 +86,7 @@
   .process .card {
     min-height: 220px;
   }
-  .process .card p {
+  .process .card p, .card2 p {
     font-size: 14px;
     line-height: 25px;
   }
@@ -117,12 +124,12 @@
   .process .card {
     min-height: auto;
   }
-  .process .card h3 {
+  .process .card h3, .card2 h3 {
     font-size: 16px;
     line-height: 25px;
     font-weight: 500;
   }
-  .process .card p {
+  .process .card p, .card2 p {
     font-size: 12px;
     line-height: 22px;
   }
@@ -139,11 +146,11 @@
   .process .card {
     min-height: auto;
   }
-  .process .card h3 {
+  .process .card h3, .card2 h3 {
     font-size: 16px;
     line-height: 25px;
   }
-  .process .card p {
+  .process .card p, .card2 p {
     font-size: 12px;
     line-height: 22px;
   }

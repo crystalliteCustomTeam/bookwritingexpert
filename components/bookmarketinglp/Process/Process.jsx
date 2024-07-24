@@ -23,7 +23,7 @@ const cardData = [
 ];
 const cardData2=[
     {
-        title:"Effective Marketing Strategy <br/> Is What Is Needed:",
+        title:"Effective Marketing Strategy Is What Is Needed:",
         desc:"As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy"
     }
 ]
@@ -59,7 +59,7 @@ export default function Process({
                 ))}
                 {cardData2?.map((e, i) => (
                   <Col key={i} md={12} lg={12} xl={12}>
-                    <Card className={style.card}>
+                    <Card className={style.card2}>
                       <Card.Body>
                         <h3 dangerouslySetInnerHTML={{__html: e.title}} />
                         <p dangerouslySetInnerHTML={{__html: e.desc}} />

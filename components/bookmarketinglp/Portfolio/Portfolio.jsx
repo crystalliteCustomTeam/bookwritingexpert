@@ -45,10 +45,10 @@ export default function Portfolio() {
           <Row>
             <AutoPlaySlider arrows={true} options={{align: "start"}} wrapperClasses="mt-3" direction="forward">
               {[Portfolio1,Portfolio2,Portfolio3,Portfolio4,Portfolio5,Portfolio6,Portfolio7,Portfolio8,Portfolio9,Portfolio10,Portfolio11,Portfolio12,Portfolio13,Portfolio14,Portfolio15,Portfolio16,Portfolio17,Portfolio18].map((imgPortfolio, i) => (
-                <Col key={i} xs={6} sm={4} md={3} lg={3} xl={3} className="ps-1">
+                <Col key={i} xs={6} sm={4} md={3} lg={3} xl={3} className="ps-lg-3 ps-2">
                   <div className="d-flex align-items-center">
                     <div className={`${style.sliderClass}`}>
-                      <Image src={imgPortfolio} alt="Book Marketing" className="img-fluid" width={360} height={300} />
+                      <Image src={imgPortfolio} alt="Book Marketing" className="img-fluid" width={480} height={300} />
                     </div>
                   </div>
                 </Col>
