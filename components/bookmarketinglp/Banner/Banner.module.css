@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
   position: relative;
 }
-.BannerImg{
+.BannerImg {
   position: absolute;
   z-index: -9999;
   top: 0;
@@ -24,20 +24,15 @@
 .w75 {
   width: 75%;
 }
-.__bannerSliderClass .emblaSlide{
-  width:  25%;
-}
 
-.MarqueeClass{
-  width: 100%;
-}
+
 .embla {
   max-width: 48rem;
   margin: auto;
   --slide-height: 30rem;
   --slide-spacing: 1rem;
   --slide-size: 25%;
-  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(247,152,29,1) 51%, rgba(0,212,255,0) 100%);
+  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(247, 152, 29, 1) 51%, rgba(0, 212, 255, 0) 100%);
   height: 80%;
 }
 .embla__viewport {
@@ -50,14 +45,13 @@
   margin-top: calc(var(--slide-spacing) * -1);
   height: calc(var(--slide-spacing) + var(--slide-height));
   flex-direction: column;
- align-items: center;
+  align-items: center;
 }
 .embla__slide {
   flex: 0 0 var(--slide-size);
   min-height: 0;
   padding-top: var(--slide-spacing);
 }
-
 
 @media screen and (max-width: 1399.98px) {
   .banner h1 {

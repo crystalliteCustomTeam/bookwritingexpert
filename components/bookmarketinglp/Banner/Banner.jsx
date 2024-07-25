@@ -30,6 +30,8 @@ import rightCarousel7 from "/public/images/bookmarketinglp/banner/rightlogo/Amaz
 import CTA from "../../CTA/CTA";
 import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
+
+
 export default function Banner({
   title = "Make Your Book Unforgettable <br class='d-lg-block d-none'/> with Our Marketing!",
   desc = "Our marketing services will make your book stand out. With targeted strategies and expert promotion, we'll ensure it leaves a lasting impression.",
