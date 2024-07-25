@@ -20,7 +20,7 @@ const Contact = () => {
     const currentRoute = router.pathname;
 
     const getIPData = async () => {
-        const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+        const res = await Axios.get('https://ipwho.is/');
         setIP(res.data);
     };
 
@@ -72,7 +72,7 @@ const Contact = () => {
             };
 
             const bodyContent = JSON.stringify({
-                "IP": `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
+                "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
                 "Brand": "BOOK-WRITING-EXPERT",
                 "Page": currentRoute,
                 "Date": currentdate,

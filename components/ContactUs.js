@@ -20,7 +20,7 @@ const ContactUs = () => {
   // Function to load IP address from the API
   const getIPData = async () => {
     try {
-      const res = await Axios.get('https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8');
+      const res = await Axios.get('https://ipwho.is/');
       setIP(res.data);
     } catch (error) {
       console.error('Error fetching IP data:', error);

@@ -15,7 +15,7 @@ const RequestQuote = () => {
   //creating function to load ip address from the API
   const getIPData = async () => {
     const res = await Axios.get(
-      "https://geolocation-db.com/json/f2e84010-e1e9-11ed-b2f8-6b70106be3c8"
+      "https://ipwho.is/"
     );
     setIP(res.data);
   };
