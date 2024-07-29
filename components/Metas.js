@@ -2661,6 +2661,13 @@ const Metas = () => {
                 <Head>
                     <meta name="robots" content="noindex" />
                 </Head>
+            ) : newpath === '/book-marketinglp' ? (
+                <Head>
+                    <meta name="robots" content="noindex" />
+                    <title>Trusted Book Marketing Company To Promote Your Manuscript</title>
+                    <meta name="description" content="Promote your story with the best book marketing company, using innovative and personalized strategies to boost your book's visibility and sales."
+                    />
+                </Head>
             ) : null
 
             }

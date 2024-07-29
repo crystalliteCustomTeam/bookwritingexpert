@@ -5,31 +5,32 @@ import Image from "next/image";
 import processImg from "/public/images/bookmarketinglp/bookProcess.png"
 const cardData = [
   {
-    title: "The Comprehensive <br/> Marketing Plan:",
-    desc: "As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy",
+    title: "The Comprehensive <br/> Marketing Plan",
+    desc: "We create a detailed, step-by-step marketing plan tailored to your book’s needs. This ensures your book reaches the right readers and gains maximum visibility and engagement across all platforms.",
+  },
+  {
+    title: "Target Audience",
+    desc: "We find the best readers for your book by looking at demographics and reader behavior. This helps us connect your book with the right audience, increasing interest and sales.",
   },
   {
     title: "Social Media And Additional <br/> Media Channels:",
-    desc: "As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy",
+    desc: "We use social media and other marketing channels such as book reviews, optimizing Amazon descriptions, digital marketing, and website development to create engagement with your readership. ",
   },
   {
     title: "Marketing Plan <br/> Implementation:",
-    desc: "As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy",
+    desc: "Our team carefully follows your personalized marketing plan, making sure every step is done right. We monitor progress and make changes as needed to get the best results.",
   },
-  {
-    title: "Target Audience:",
-    desc: "As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy",
-  },
+  
 ];
 const cardData2=[
     {
-        title:"Effective Marketing Strategy Is What Is Needed:",
-        desc:"As experts in book marketing, we understand that successful promotion requires a step-by-step plan. Our comprehensive marketing strategy"
+        title:"Innovative Marketing Strategies:",
+        desc:"We use proven methods and new ideas to make your book stand out. Our strategies drive interest and boost sales, making sure your book gets noticed."
     }
 ]
 export default function Process({
   title = "Our Streamlined Book Marketing Process",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost <br class='d-lg-block d-none'/> your literal presence. Our seasoned marketing professionals",
+  desc = "Our book marketing pros will build a custom plan for your book launch, covering all the important steps. We don't do generic - we find what makes your book special and create a mix of promotions to make it shine.",
 }) {
   return (
     <section>

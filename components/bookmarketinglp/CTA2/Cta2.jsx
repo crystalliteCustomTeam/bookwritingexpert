@@ -3,8 +3,8 @@ import {Col, Container, Row} from "react-bootstrap";
 import style from "./Cta2.module.css";
 import CTA from "../../CTA/CTA";
 export default function Cta2({
-  title = "Let's Turn Your Book Into A Best Seller",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost <br class='d-xl-block d-none'/> your literal presence. Our seasoned marketing professionals",
+  title = "The Next Best Selling Author Is You!",
+  desc = "Hire our expert marketing team for your book promotion and watch your book become the next best seller. Let's build your dream fanbase together!",
 }) {
   return (
     <section>

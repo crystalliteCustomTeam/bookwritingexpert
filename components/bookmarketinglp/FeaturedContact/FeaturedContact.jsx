@@ -6,8 +6,8 @@ import bgImg1 from "/public/images/bookmarketinglp/featuredContact.png"
 
 import Image from "next/image";
 export default function FeaturedContact({
-  title = "How We Market Your Book?",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness.",
+  title = "Book Marketing Agency for Success!",
+  desc = "Have you published your book but aren’t seeing the sales you hoped for? No worries! it’s not too late to achieve your goals! If you’re serious about impacting, our expert book marketers will help! Schedule a call to discuss your goals and create a book marketing plan to connect your book with eager readers. Let's make it happen!",
   cta = true,
   cta2 = false,
   list= true,
@@ -77,9 +77,9 @@ export default function FeaturedContact({
             <Col lg={6} xl={6} className="mt-lg-0 mt-5">
               <div className={`${style.formsection} ${formclasses}`}>
                 <div className="text-center mb-5 ">
-                  <h3>Request A Free Quote</h3>
+                  <h3>Get Your Free Quote</h3>
                   <span className="">
-                    Cost-effectiveness. Consumer-centric—the <br className="d-md-block d-lg-none"/> crudity of book marketing, delivered!
+                  Discuss Your Story & Get a  <br className="d-md-block d-lg-none"/> Personalized Book Marketing Plan.
                   </span>
                 </div>
                 <form action="" method="post">

@@ -22,8 +22,8 @@ import CTA from "../../CTA/CTA";
 const imageArray = [partners1, partners2, partners3, partners4, partners5, partners6, partners7, partners8, partners9, partners10, partners11, partners12];
 
 export default function PartnersCompanies({
-  title = "Just By Working With US.",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to <br class='d-lg-block d-none'/> boost your literal presence. Our seasoned marketing professionals",
+  title = "Get Your Book Featured On Leading Publications!",
+  desc = "We collaborate with leading authors and publishers to implement marketing strategies that boost visibility and ensure success across various genres and platforms.",
 }) {
   return (
     <section>

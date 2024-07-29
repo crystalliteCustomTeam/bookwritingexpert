@@ -14,44 +14,40 @@ import delivery from "/public/images/bookmarketinglp/delivery-time.png";
 const servicData = [
   {
     IconImg: service,
-    title: "Quality Work",
-    desc: "Our Top Focus Is Giving Our Clients High-Quality Work, And Our Book Writers For Hire Constantly Think Of The Ideal Strategy.",
+    title: "Proven Results",
+    desc: "We consistently deliver successful outcomes, helping authors achieve their marketing and sales goals by getting their books noticed and increasing their readership.",
   },
   {
     IconImg: customer,
-    title: "Customer Satisfaction",
-    desc: "Transform Your Writing Aspirations Into A Reality With Our Book Writing Services. We Guarantee Satisfaction For Every Book We Craft.",
+    title: "Personalized Strategies",
+    desc: "We create customized marketing plans tailored to each book's unique needs and target audience, ensuring effective promotion and maximum impact.",
   },
 ];
 const servicData2 = [
   {
     IconImg: delivery,
-    title: "Timely Delivery",
-    desc: "We're Skilled, Quick, And Prepared. We Make Sure That Our Team Meets All Deadlines. We're Always Ahead Of Time.",
+    title: "Dedicated Support",
+    desc: "We offer continuous, hands-on support to guide you through every step of the marketing process, making sure you never feel lost or alone.",
   },
   {
     IconImg: ownership,
-    title: "100% Ownership",
-    desc: "We Give 100% Ownership Of The Book-Writing Content To Our Clients.",
+    title: "Customer Satisfaction",
+    desc: "We prioritize your satisfaction, working closely with you to ensure your expectations are met and your book reaches its full potential.",
   },
 ];
 const faqsContent = [
   [
-    "Is it better to self-publish or get a publisher?",
-    "Choosing between self-publishing and traditional publishing depends on your goals. Self-publishing offers more control and higher royalty rates, while traditional publishing provides support from agents and industry professionals. We at Best Selling Publisher offer both services, allowing you to choose the path that best suits your needs and ensuring your book's success.",
+    "Can I hire someone to market my book?",
+    "Yes, you can hire book marketing services to boost your sales. A book marketing company can enhance your Amazon description, choose effective keywords, and improve your website to attract more readers and drive sales.",
   ],
   [
-    "How long does it take to publish a book?",
-    "The book publication time varies, typically ranging from a few months to a year. Factors like editing, design, and marketing plans impact the timeline. We streamline the process, ensuring efficient progress while maintaining high-quality standards, so your book reaches readers as soon as possible.",
+    "What is the difference between a book publicist and a book marketer?",
+    "A book marketer focuses on paid promotions, like ads and optimized sales pages, to drive sales. A book publicist handles earned promotions, such as media coverage and book signings, to generate organic interest and buzz.",
   ],
   [
-    "Can I publish both print and e-book versions?",
-    "Yes, you can publish both print and e-book versions of your book. We offer comprehensive services to format, design, and distribute your book across multiple platforms, ensuring it reaches a wide audience in both physical and digital formats.",
-  ],
-  [
-    "Do I retain the rights to my book?",
-    "Yes, with our self-publishing services, you retain all rights to your book. For traditional publishing, rights depend on the contract terms. We provide clear guidance on rights management, ensuring you make informed decisions that best suit your publishing goals.",
-  ],
+    "Can you sell a book without marketing?",
+    "No, selling a book without marketing is very difficult, especially in self-publishing. Marketing is essential to reach readers, generate interest, and drive sales. Without it, your book is unlikely to gain the visibility needed for success.",
+  ]
 ];
 export default function bookmarketinglp() {
   return (
@@ -68,8 +64,8 @@ export default function bookmarketinglp() {
       <PartnersCompanies />
       <Testimonials />
       <FeaturedContact
-        title="Let's Turn Your Book <br class='d-lg-block d-none'/> Into A Best Seller"
-        desc="Best Selling Publisher stands as the pinnacle of excellence in the world of publishing services, renowned for its unparalleled commitment to author success. With a dedicated team of industry experts and innovative resources at their disposal, Best Selling Publisher goes above and beyond. <br/> <br/>Don't hesitate to reach out and take the first step towards literary success with one of the finest publishers in the industry."
+        title="Be Among the 10,000+ Authors Who Have Achieved Greatness!"
+        desc="We know the book marketing world inside and out. We have worked with big names like Amazon's CreateSpace, Kindle Direct Publishing, and other publishing companies. Let us help you market your story and watch your Readership grow bigger than ever! <br/> <br/>Imagine happy readers talking about your book, excited to share it with everyone they know. We'll help you build you a readership who can't wait to read your story and tell the world how much they enjoyed it"
         cta={false}
         cta2={true}
         bgImg={bgImgNew}

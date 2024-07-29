@@ -5,8 +5,8 @@ import Image from "next/image";
 import CTA from "../../CTA/CTA";
 
 export default function PublishingServices({
-  title = "Why Should You Choose <br class='d-xl-block d-lg-none d-md-block d-none'/> Our Book Publishing <br class='d-xl-block d-none'/> Services?",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency. Cost-effectiveness.",
+  title = "Why Should You Choose Our Book Marketing Service?",
+  desc = "Our expert book marketers created smart book marketing plans that helped many books get featured in top newspapers and media outlets. We understand how important your book is to you, and we work hard to create a personalized marketing plan that fits your book’s needs. Authors choose us for our team's experience and dedication, we ensure that your book stands out and gets the attention it deserves. Let us help you make your book a bestseller.",
   data,
   data2,
   cta2 = true,

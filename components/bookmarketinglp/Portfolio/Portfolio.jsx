@@ -36,7 +36,7 @@ export default function Portfolio() {
             <Col md={10} lg={8} xl={8} className="mx-auto text-center">
               <h3>Our Genre Portfolio</h3>
               <p>
-                Our seasoned marketing professionals expertly employ advanced, effective <br className="d-lg-block d-none" /> techniques to boost your literal presence.
+              We love all genres! Our book marketing experts help authors with personalized  <br className="d-lg-block d-none" /> book marketing plans to target the right readers, ignite excitement, and boost visibility.
               </p>
             </Col>
           </Row>

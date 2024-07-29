@@ -13,7 +13,7 @@
   line-height: 25px;
 }
 .process .card {
-  height: 200px;
+  height: 220px;
   margin-bottom: 15px;
   /* padding: 15px 10px; */
   box-shadow: 0px 0px 10px #cacaca;
@@ -63,7 +63,7 @@
     font-family: "Poppins", sans-serif;
   }
   .process .card {
-    min-height: 230px;
+    min-height: 250px;
   }
   .process .imgPosition {
     bottom: 0%;
@@ -84,7 +84,7 @@
     line-height: 25px;
   }
   .process .card {
-    min-height: 220px;
+    min-height: 245px;
   }
   .process .card p, .card2 p {
     font-size: 14px;
@@ -122,7 +122,7 @@
     line-height: 25px;
   }
   .process .card {
-    min-height: auto;
+    min-height: 260px;
   }
   .process .card h3, .card2 h3 {
     font-size: 16px;

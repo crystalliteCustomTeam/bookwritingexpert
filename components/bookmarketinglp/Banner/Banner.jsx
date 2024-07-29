@@ -33,8 +33,8 @@ import AutoScroll from "embla-carousel-auto-scroll";
 
 
 export default function Banner({
-  title = "Make Your Book Unforgettable <br class='d-lg-block d-none'/> with Our Marketing!",
-  desc = "Our marketing services will make your book stand out. With targeted strategies and expert promotion, we'll ensure it leaves a lasting impression.",
+  title = "Smash Sales Records With A <br class='d-lg-block d-none'/> Leading Book Marketing Company!",
+  desc = "We've helped 500+ authors become bestsellers. Our proven book marketing services boost visibility, engage readers, and skyrocket sales. Let's make your book the next big hit!",
   bannerImg = Bannerimg1,
 }) {
   const [emblaRef] = useEmblaCarousel({axis: "y", dragFree: true, loop: true, slidesToScroll: "auto"}, [AutoScroll({playOnInit: true})]);
@@ -60,7 +60,7 @@ export default function Banner({
               </section>
             </Col>
             <Col md={11} lg={8} xl={8} className="mx-auto">
-              <div className={`${style.w75} mx-auto text-center pt-5`}>
+              <div className={`${style.w85} mx-auto text-center pt-5`}>
                 <h1 className="fw500 mb-4" dangerouslySetInnerHTML={{__html: title}} />
                 <p className="fw400" dangerouslySetInnerHTML={{__html: desc}} />
                 <div className="d-flex flex-md-row flex-column gap-3 justify-content-center mb-4">

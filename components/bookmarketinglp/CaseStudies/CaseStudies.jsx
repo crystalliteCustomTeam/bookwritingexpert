@@ -10,42 +10,41 @@ import Image from "next/image";
 const dataSlider = [
   {
     imgPortfolio: imgcase1,
-    title: "The Adventures Of Solo And Yogi",
-    desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.Our seasoned marketing professionals expertly employ advanced,",
+    title: "Neon Dragon",
+    desc: 'Kai Nakamura, a debut author, penned the unique cyberpunk thriller "Neon Dragon." We crafted a multi-platform campaign highlighting its genre-bending elements and fast-paced action. The novel became a cult classic, securing a film adaptation deal.',
     list: [
-      "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
+      "Delivered cinematic book trailers that captivated audiences.",
+      "Partnered with top sci-fi influencers for engaging content and reviews.",
+      "Offered limited edition pre-order bonuses to drive early sales.",
     ],
     partnerlogo1: imgcaselogo,
   },
   {
     imgPortfolio: imgcase3,
-    title: "God's Spoken Word OF Grace",
-    desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.Our seasoned marketing professionals expertly employ advanced,",
+    title: "Love Under the Monsoon",
+    desc: 'We helped Anya Patel, a self-published romance novelist, by developing a targeted social media campaign with captivating visuals and reader testimonials.  Her novel, "Love Under the Monsoon," earned the #5 spot on Amazon.',
     list: [
-      "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
+      "Launched visually appealing social media campaigns.",
+      "Ran contests and giveaways on social media to boost engagement.",
+      "Increased sales through strategic Amazon targeted ads.",
     ],
     partnerlogo1: imgcaselogo,
   },
   {
     imgPortfolio: imgcase2,
-    title: "True Confessions Of An Anti Vaxer",
-    desc: "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your Consistency.Our seasoned marketing professionals expertly employ advanced,",
+    title: "Bayou Bloodshed",
+    desc: '"Bayou Bloodshed" by Sarah Jones, a detective thriller set in Louisiana, struggled initially. struggled initially. Our multi-channel campaigns with interactive quizzes and hashtags like #BayouBloodshed propelled it to become a bestseller.',
     list: [
-      "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
-      "Our seasoned marketing professionals expertly employ advanced, effective",
+      "Utilized targeted hashtags for increased visibility.",
+      "Drove sales with targeted Amazon Ads and effective marketing strategies."
     ],
     partnerlogo1: imgcaselogo,
   },
 ];
 
 export default function CaseStudies({
-  title = "Our Casestudy's",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your",
+  title = "Our Case Studies",
+  desc = "Here, we showcase real-life examples of how our book marketing strategies transformed the journeys of authors across genres.",
 }) {
   return (
     <section>

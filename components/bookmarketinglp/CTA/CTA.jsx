@@ -5,8 +5,8 @@ import CTA from "../../CTA/CTA";
 import Image from "next/image";
 import ctaBook from "/public/images/bookmarketinglp/ctabook.png"
 export default function Cta({
-  title="Ready To Make Your <br class='d-block'/> Book Stand Out?",
-  desc="Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence. Our seasoned marketing professionals "
+  title="Book Marketing Gets Your Story Heard 2X Louder!",
+  desc="Silence no more! Spread your story with us. We'll craft a personalized book marketing plan to attract your target audience and boost your sales."
 }) {
   return (
     <section>

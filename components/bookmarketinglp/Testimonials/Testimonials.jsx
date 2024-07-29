@@ -10,46 +10,46 @@ import nicon from "/public/images/bookmarketinglp/Nicon.png"
 
 const dataTestimonial=[
     {
-        title:"Antonio L. Rivers",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Dr. Liam O'Malley",
+        position:"Astrophysicist ",
+        desc:"Book Writing Experts launched my sci-fi novel 'Celestial Cradle' into the literary stratosphere! Their targeted marketing strategies propelled my book past the competition, creating a gravitational pull of reader interest.",
         imgIcon: trustpilot,
     },
     {
-        title:"Robert R. King",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Willow Green",
+        position:"Herbalist",
+        desc:"As a self-published author of plant-powered guides, I was hesitant about book promotion. Their team has set up a perfect marketing plan, reaching a new audience eager to explore the healing power of nature.",
         imgIcon: googleReview,
     },
     {
-        title:"Carol T. McKeehan",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Enzo Rossi",
+        position:"Wildlife photographer",
+        desc:"Their visual storytelling brought 'Nature's Symphony' to life. Their captivating campaigns transformed my wildlife photography into a visual feast, leaving readers enthralled by the beauty of the natural world.",
         imgIcon: nicon,
     },
     {
-        title:"Antonio L. Rivers",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Isabela Rodriguez",
+        position:"Chef",
+        desc:"My cookbook 'Sabor Latino' wouldn't be a global fiesta without them. Their multicultural marketing strategies transformed my humble recipes into a vibrant culinary adventure for audiences worldwide.",
         imgIcon: trustpilot,
     },
     {
-        title:"Robert R. King",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Dr. Nikolai Petrov",
+        position:"Philosopher",
+        desc:"The team is fantastic, they sparked a philosophical wildfire with my book 'Beyond Existence.' Their online marketing ignited intellectual debates, drawing readers into a vortex of thought-provoking ideas.",
         imgIcon: googleReview,
     },
     {
-        title:"Carol T. McKeehan",
-        position:"Book Marketing",
-        desc:"Our seasoned marketing professionals expertly employ advanced, effective techniques to boost your literal presence.Our seasoned marketing professionals expertly employ advanced, effective",
+        title:"Fiona Davies",
+        position:"Tech Entrepreneur",
+        desc:"Their team is awesome! They decoded the tech jargon in my book 'Coding for Change.' Their marketing strategies hacked into a new generation of tech enthusiasts ready to revolutionize the world.",
         imgIcon: nicon,
     },
 ]
 
 export default function Testimonials({
-  title = "Our Client Testimonials",
-  desc = "Our seasoned marketing professionals expertly employ advanced, effective techniques to <br class='d-lg-block d-none'> boost your literal presence. Our seasoned marketing professionals",
+  title = "Insights From Our Valued Clients",
+  desc = "Hear what our authors have to say about their experience working with our book promotion company. See how we've helped them achieve their publishing goals.",
 }) {
   return (
     <section>
