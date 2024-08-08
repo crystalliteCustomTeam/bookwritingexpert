@@ -22,13 +22,13 @@ import mission3 from '/public/images/mission/3.png'
 import Finetoothedbook from '../../components/Finetoothedbook'
 
 const articleWritingServices = () => {
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Magical <Link className='textdocationnone color-blue hover' href="/article-writing-services">Article Writing Services</Link> That Cast <br /> A Spell on Your Target Readers!</h1>;
-  const discuss = <span>LET'S DISCUSS</span>
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Expert <Link className='textdocationnone color-blue hover' href="/article-writing-services">Article Writing Services</Link> To <br /> Engage Your Target Audience</h1>;
+  const discuss = <span className='text-transform'>Get a Free Consultation</span>
 
   const bannertext = [
     {
       title: newSpan,
-      pra: 'Words have an enchanting effect on people, which is why we offer professional article writing services to produce captivating articles that leave your readers wanting more. Our team of highly-skilled and talented article writers understands the importance of content when it comes to expanding your reach for greater success. Book Writing Experts aims to curate compelling pieces that aid your business’s success always!',
+      pra: 'Get high-quality, 100% original articles custom-written to meet your specific requirements. Our skilled writers, with expertise in over 40 different areas in article writing, ensure that your content is accurate, engaging, and perfectly tailored to your needs. As a premium-grade article writing company, we thoroughly research and expertly edit each piece, customizing it to resonate with your target audience. Trust us to deliver audience-centric articles that make a significant impact across different platforms.',
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
@@ -40,29 +40,33 @@ const articleWritingServices = () => {
 
   const work = <span>At Book Writing Experts, our team of brilliant writers has the knowledge of the latest tricks and techniques that go into creating article pieces that increase engagement and boost a brand’s reach. Many of our writers have been behind some of the best-selling novels in recent years. Our aim is to help struggling authors make their mark in the ever-lasting and evolving industry of books. By collaborating with writers at Book Writing Experts, you unlock the true potential of your talent and achieve your goals!</span>
 
-  const dateset = <span className='fw500'><Link href="/article-writing-services/" className='textdocationnone color-blue hover'>Article Writing Services</Link> Aimed At Entertaining <br /> And Educating Your Ideal Readers!</span>
+  const dateset = <span className='fw500'><Link href="/article-writing-services/" className='textdocationnone color-blue hover'>Article Writers</Link> for Hire Who Understand <br /> Your Industry
+    and Audience</span>
 
   const fine = [
     {
       img: mission1,
-      title: 'Experienced Article Writers',
-      text: 'Book Writing Experts’ Article Writers are familiar with the exact technique of adding flair to their articles, which enraptures your target audience every time. We come up with the greatest methods possible for our greatest clients!',
+      title: 'Expertise on Demand',
+      text: 'Our article writers are experienced &amp; field experts, so you get articles that are engaging, accurate, and full of information.Be it blogs, websites, newsletters, or brochure content, our writers can produce top- notch copy on your timeline.',
       class: 'fintop',
     },
     {
       img: mission2,
-      title: 'Compelling Content',
-      text: 'Our skilled writers work on unique and high-quality pieces according to our client’s requirements. All our content is plagiarism-free and error-free!',
+      title: 'Converting Content',
+      text: 'We provide the best article writing services that ensure all content is unique and customized to your brand voice. To drive conversions effectively, every article is fashioned to reflect the unique selling points of your brand, making your website a go-to resource for your audience.',
       class: 'fintop',
     },
 
     {
       img: mission3,
-      title: 'Quality Assurance',
-      text: 'Before the content is delivered to our clients, we carry out thorough quality checks to ensure our work is polished to perfection just for you!',
+      title: 'Unlimited Revisions',
+      text: 'As one of the top article writing services, our commitment to excellence means that we offer unlimited revisions, working closely with you to satisfy your needs and support your business growth.',
       class: 'fintop',
     },
   ]
+
+  const selfpublishingDesc = <span>Content is the real king for a high SERP. High-quality, fresh content enhances your position on SERP, drives more traffic, and increases business. Our article writers are skilled in developing engaging, sales-oriented content while catering to your exact specifications, providing quality pieces, with deep industry knowledge. < br /><br /> Hire top-quality article writers who are great at fluently integrating keywords in a very readable way that attracts more readers/customers to your website. We care about your budget and the quality you seek. Let us help you with our affordable article writing services to grow your business with impactful content.</span>
+
   return (
     <>
       <Head>
@@ -73,13 +77,17 @@ const articleWritingServices = () => {
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-        <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <title>Top Article Writing Services - Book Writing Experts</title>
+        <meta name="description" content="Hire the best article writing company and get your
+magical articles written that can engage your target audience in no time.
+Call us now!" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-        <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <meta property="og:title" content="Top Article Writing Services - Book Writing Experts" />
+        <meta property="og:description" content="Hire the best article writing company and get your
+magical articles written that can engage your target audience in no time.
+Call us now!" />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="article:modified_time" content="2023-03-31T12:04:48+00:00" />
@@ -124,18 +132,18 @@ const articleWritingServices = () => {
       <div className='dataSetCo'>
         <Stopworrying
           title2={dateset}
-          subtitle3='Are You Looking For An Enthusiastic Writer To Convey Your Message To The World?'
+          subtitle3='Experience stress-free content creation with our high quality article writing services. Share your requirements and our expert writers will handle everything from topic selection to delivering polished drafts. Enjoy clear communication, best articles, on-time delivery, and affordable pricing.'
           btn1='Get a free Proposal'
-          btn2='Talk to an expert'
+          btn2='Get a Free Consultation'
         />
       </div>
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
-            <h2 className='color-lightgray   font25   t-center font-f mb-2'>Our Approach</h2>
+            <h3 className='color-lightgray   font25   t-center font-f mb-2'>Get High-Quality Results</h3>
 
-            <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Our <Link className='textdocationnone color-blue hover fw700' href='/article-writing-services/'>Professional Article Writing Services</Link> Are <br /> Designed To Captivate Your Readers</p>
+            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>100% <Link className='textdocationnone color-blue hover fw700' href='/article-writing-services/'>Original and Custom Content Guaranteed</Link> from <br /> Your Go-To Article Writing Company!</h2>
           </Row>
           <Row className='gy-5'>
             {fine.map((item, i) =>
@@ -151,10 +159,10 @@ const articleWritingServices = () => {
         </Container>
       </div>
       <Selfpublishing
-        title='Want Articles That Boost Engagement And Expand Your Reach?'
-        text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
+        title='Our Article Writers Produce Sales-Driven Content That Converts!'
+        text={selfpublishingDesc}
         number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
+        discuss="Get a Free Consultation"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
@@ -174,10 +182,16 @@ const articleWritingServices = () => {
 
       <div className='datacloud'>
         <Aspiring
-          title='Book Cover Designs That Stand Out'
-          text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
+          title='Experience Excellence With A Leading Article Writing
+Company!'
+          text='When you partner up with our article writers, you can be certain of 100% original content,
+custom-written by an expert. Our content is professionally proofread and edited to contain zero
+mistakes. We make any necessary changes until you are happy with the final results. Our 24/7
+customer support ensures that you are always informed about the progress of your content. We
+believe in open communication and collaboration to ensure that the content we deliver meets
+your expectations and achieves your desired impact.'
           number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          discuss="Get a Free Consultation "
         />
       </div>
     </>

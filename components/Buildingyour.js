@@ -74,23 +74,23 @@ const Buildingyour = (props) => {
 
         <Container>
           <h2 className="fw700 font50 color-blue font-f t-center mb-4">We Are Building Your Identity </h2>
-          <h2 className="font15 textcolor font-f t-center mb-4"> Done With Book Publishing? It’s High Time You Market Your Asset to Control the Narrative. Need Helping Hands? Our Digital Marketing Agency Is Here To Help You Climb The Ladder Of Success!</h2>
+          <p className="font15 textcolor font-f t-center mb-4"> Done With Book Publishing? It’s High Time You Market Your Asset to Control the Narrative. Need Helping Hands? Our Digital Marketing Agency Is Here To Help You Climb The Ladder Of Success!</p>
 
           {isSliderActive ?
             <Slider {...bookrecordingprojects}>
 
-           
-                {makestoriesimg.map((item, i) => {
-                  return (
-                    <Col md={3} key={i}>
-                      <div>
-                        <Image loading="lazy" className='pt-3 img-fluid' src={item.storiesimg} alt="Book Writing Experts"></Image>
-                      </div>
-                    </Col>
-                  )
-                })}
 
-              
+              {makestoriesimg.map((item, i) => {
+                return (
+                  <Col md={3} key={i}>
+                    <div>
+                      <Image loading="lazy" className='pt-3 img-fluid' src={item.storiesimg} alt="Book Writing Experts"></Image>
+                    </div>
+                  </Col>
+                )
+              })}
+
+
 
             </Slider>
             :

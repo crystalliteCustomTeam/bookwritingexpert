@@ -31,7 +31,7 @@ const Makestoriesnew = (props) => {
       { storiesimg: cover2 },
       { storiesimg: cover3 },
       { storiesimg: cover4 },
-      
+
 
     ];
 
@@ -127,7 +127,7 @@ const Makestoriesnew = (props) => {
 
         <Container>
           <h2 className="fw700 font50 color-blue font-f t-center">{props.title} </h2>
-          <h2 className="font18  font-f t-center mt-3 mb-5 textcolor"> {props.para}</h2>
+          <p className="font18  font-f t-center mt-3 mb-5 textcolor"> {props.para}</p>
 
           <Slider {...makestories} className='makestories'>
 

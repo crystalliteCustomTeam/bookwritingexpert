@@ -1885,7 +1885,7 @@ const Metas = () => {
                 <Head>
                     <meta charSet="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-                    
+
                     <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
                     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
@@ -1937,12 +1937,16 @@ const Metas = () => {
                     <meta name="msvalidate.01" content="B2F5CD44F715E2885953E1B75D19ED7B" />
                     <link rel="profile" href="http://gmpg.org/xfn/11" />
                     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-                    <title>Web Content Writing Service - Book Writing Experts</title>
-                    <meta name="description" content="Web Content Writing Service to help you create a striking impression on your ideal audience. Get in touch with our seasoned writers." />
+                    <title>Web Content Writing Services - Book Writing Experts</title>
+                    <meta name="description" content="Web Content Writing Service to help you create a
+striking impression on your ideal audience. Contact our professional web
+content writers today." />
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="article" />
-                    <meta property="og:title" content="Web Content Writing Service - Book Writing Experts" />
-                    <meta property="og:description" content="Web Content Writing Service to help you create a striking impression on your ideal audience. Get in touch with our seasoned writers." />
+                    <meta property="og:title" content="Web Content Writing Services - Book Writing Experts" />
+                    <meta property="og:description" content="Web Content Writing Service to help you create a
+striking impression on your ideal audience. Contact our professional web
+content writers today." />
                     <meta property="og:url" content="/web-content-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
@@ -2077,13 +2081,17 @@ const Metas = () => {
                     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
                     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-                    <title>Top Tier Digital Marketing Services - Book Writing Experts</title>
-                    <meta name="description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
+                    <title>Best Digital Marketing Services - Book Writing Experts</title>
+                    <meta name="description" content="We&#39;re a leading digital marketing company offering top-
+notch services for books and author websites to increase visibility and drive
+sales. Call us now!" />
 
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="article" />
-                    <meta property="og:title" content="Top Tier Digital Marketing Services - Book Writing Experts" />
-                    <meta property="og:description" content="Digital Marketing Services that will help your business grow. We offer various services to help you achieve ultimate success. Call us to get them." />
+                    <meta property="og:title" content="Best Digital Marketing Services - Book Writing Experts" />
+                    <meta property="og:description" content="We&#39;re a leading digital marketing company offering top-
+notch services for books and author websites to increase visibility and drive
+sales. Call us now!" />
                     <meta property="og:url" content="/digital-marketing-services" />
                     <meta property="og:site_name" content="Book Writing" />
                     <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
@@ -2322,7 +2330,7 @@ const Metas = () => {
 
                     <meta property="og:locale" content="en_US" />
                     <meta property="og:type" content="website" />
-                    <meta property="og:title" content="Best Book Illustration Services - Book Writing Experts" />
+                    <meta property="og:title" content="Best Article Writing Services - Book Writing Experts" />
                     <meta property="og:description" content="Hire the best illustration services offered by us to creatively make your book look a professional one. Our illustration company can make the best illustrations for your book" />
                     <meta property="og:url" content="https://www.bookwritingexperts.com/article-writing-services" />
                     <meta property="og:site_name" content="Book Writing" />

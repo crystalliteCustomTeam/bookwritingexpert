@@ -35,13 +35,13 @@ const authorWebsiteDesignServices = () => {
   const text = <span>We write, market, and review books of all kinds.</span>;
   const subtext = <span> Profit from our wide range of book publication styles and forms to secure your position as a book writing guru. In addition to publishing children's books, we are among the top Amazon publishing service suppliers.</span>;
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'><Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Author Website Design Services</Link> Helping <br /> You Up Your Branding Game!</h1>;
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Create a Memorable Online Presence with <br /> Our<Link className='textdocationnone color-blue hover' href="/author-website-design-services/"> Author Website Design Services!</Link></h1>;
   const discuss = <span>LET'S DISCUSS</span>
 
   const bannertext = [
     {
       title: newSpan,
-      pra: 'Do you want the world to know you? Read your book and relate to your story? What is better than getting a professional website then? You are only Book Writing Experts away from being a best-seller novelist or writer. Our customized and fully-featured web platform is customized for your needs in a way that most mass platforms simply do not. Get your author’s website done by the professionals today!',
+      pra: 'A well-crafted website serves as a hub for showcasing your work, connecting with readers, and building your personal brand. As a top-grade author website design company, we bring over 12 years of rich experience in creating websites that are visually appealing, highly functional, and customized to meet the unique needs of authors. We’ll help you design a website that supports your career goals, such as growing your readership, promoting your books, or connecting with other writers and industry professionals!',
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
@@ -63,7 +63,8 @@ const authorWebsiteDesignServices = () => {
     <span>An author’s website is the shortest yet easiest way to get the world to know you. If you do not have a professional website yet, it’s time you up your game and get the professionals to make your author website. Be the brand that you have always wanted to be, and get in touch with the Book Writing Experts today to give your name a professional look!</span>
   </>
 
-  const dateset = <span className='fw500'>Why Not Hire The Professional <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Website Developers</Link> <br /> To Create Your Professional Identity?</span>
+  const dateset = <span className='fw500'>Hire Expert <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Author Website Designers</Link> to Create <br /> a User-
+    Friendly Website For Your Books!</span>
 
 
 
@@ -79,8 +80,8 @@ const authorWebsiteDesignServices = () => {
 
     {
       img: mission1,
-      title: 'Easy User Interface',
-      text: 'Our experts prepare your website by keeping your customers in mind and ensure a smooth and seamless customer experience.',
+      title: 'Seamless User Experience',
+      text: 'Our expert website designers for authors craft websites with your readers in mind, ensuring a smooth and seamless user experience that keeps them engaged.',
       class: 'fintop',
 
 
@@ -88,8 +89,8 @@ const authorWebsiteDesignServices = () => {
 
     {
       img: mission2,
-      title: 'Attractive layout',
-      text: 'Give us the design you have in your mind, and we will transform it into a reality for you. Or if not, we can create one as per your preferences.',
+      title: 'Customized Designs',
+      text: 'Do you have a design in mind or a fresh concept? Share it with us and our author website designers tailor everything to your preferences.',
       class: 'fintop',
 
 
@@ -97,8 +98,8 @@ const authorWebsiteDesignServices = () => {
 
     {
       img: mission3,
-      title: 'Light on the pocket',
-      text: 'The money will not be the problem here; Book Writing Experts do not believe in minting money off their clients’ needs. Therefore, we have pretty affordable packages for our customers.',
+      title: 'Affordable Excellence',
+      text: 'Our packages are designed to be budget-friendly, so you can get professional website designs for authors without any financial stress.',
       class: 'fintop',
 
 
@@ -167,12 +168,16 @@ const authorWebsiteDesignServices = () => {
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-        <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <title>Author Website Design Services - Book Writing Experts</title>
+        <meta name="description" content="Get professional author website design services to
+showcase your books and engage your audience with custom designs,
+technology, and storytelling. Hire us today!" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-        <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <meta property="og:title" content="Author Website Design Services - Book Writing Experts" />
+        <meta property="og:description" content="Get professional author website design services to
+showcase your books and engage your audience with custom designs,
+technology, and storytelling. Hire us today!" />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
@@ -273,9 +278,11 @@ const authorWebsiteDesignServices = () => {
       <div className='dataSetCo'>
         <Stopworrying
           title2={dateset}
-          subtitle3='Are You Having Troubles Setting Up Your Author Website?'
+          subtitle3='Our team of expert-vetted designers can build custom websites that perfectly reflect your unique
+voice and style! We create author website designs that connect deeply with your audience,
+using stunning visuals and seamless navigation.'
           btn1='Get a free Proposal'
-          btn2='Talk to an expert'
+          btn2='Talk To Expert'
         />
       </div>
 
@@ -295,9 +302,10 @@ const authorWebsiteDesignServices = () => {
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
-            <h2 className='color-lightgray   font25   t-center font-f mb-2'>Our Approach</h2>
+            <h3 className='color-lightgray   font25   t-center font-f mb-2'>Author Website Excellence</h3>
 
-            <p className='font50 font-f fw500 colortextgrey t-center pb-2'>We Aim To Make You A Record Breaking Author With <br /> Our Expert <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Website Developers!</Link></p>
+            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>Enhance Your Digital Identity with <br /> the Best <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Author
+              Website Designers!</Link></h2>
 
           </Row>
 
@@ -316,9 +324,11 @@ const authorWebsiteDesignServices = () => {
       </div>
       <Selfpublishing
         title="Anxious To Get Your Name On A Professional Website?"
-        text='Get a hold of our experts today and get the job done! Book Writing Experts provide reliable and trustworthy website development services, just according to your needs.'
+        text='We understand the importance of a professional online presence for authors. Having built over
+500+ websites, our book website designers skillfully blend design, technology, and storytelling
+to showcase your books and engage your audience.'
         number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
+        discuss="Talk To An Expert"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
@@ -374,8 +384,14 @@ const authorWebsiteDesignServices = () => {
 
       <div className='datacloud'>
         <Aspiring
-          title='Book Cover Designs That Stand Out'
-          text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
+          title='Personalized Author Website Design Services For Every
+Storyteller!'
+          text='We understand the everyday challenges and opportunities that come along with building a
+writing career, and we know the importance of having a website that does justice to your work.
+We are experts at creating perfect author website designs for writers who want a
+comprehensive showcase of their books. Our author website designers also help established
+authors with an existing audience to upgrade their online presence. Hire author website design
+services from Book Writing Experts to build a website that boosts your book brand!'
 
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"

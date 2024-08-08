@@ -35,8 +35,9 @@ const bookCoverDesignServices = () => {
   const text = <span>We write, market, and review books of all kinds.</span>;
   const subtext = <span> Profit from our wide range of book publication styles and forms to secure your position as a book writing guru. In addition to publishing children's books, we are among the top Amazon publishing service suppliers.</span>;
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'><Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Design Services</Link> To Help Your Manuscript <br /> The Best Selling Book Of All Times!</h1>;
-  const discuss = <span>LET'S DISCUSS</span>
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Sell More Books With Our Premium <br /><Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">  Book
+    Cover Design Services!</Link> </h1>;
+  const discuss = <span>LET'S TALK</span>
 
   const bannertext = [
     {
@@ -63,7 +64,7 @@ const bookCoverDesignServices = () => {
     <span>Our team of specialists at Book Writing Experts knows that your book covers are able to obtain the outcomes that you need. That is why our renowned design experts give unique design solutions that are exceptional and ideal for the market where you want to sell.</span>
   </>
 
-  const dateset = <span className='fw500'>Why Not Give A Call To Professional <br /> <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Designers!</Link></span>
+  const dateset = <span className='fw500'>100% Satisfaction Guaranteed with <br /> Our <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Designers!</Link></span>
 
 
 
@@ -77,8 +78,8 @@ const bookCoverDesignServices = () => {
 
     {
       img: mission1,
-      title: 'Customized Designs',
-      text: 'Our experts keep the customers in loop while designing the book cover and take their regular input on the designs. We make sure the design reflects the book genre effortlessly therefore we create a customized book cover for every customer.',
+      title: 'Unmatched Customer Satisfaction',
+      text: 'Experience flawless book design services with unlimited free revisions and clear, upfront pricing. Our full-time in-house designers will work closely with you to turn your vision into reality. We deliver the perfect book cover design every time.',
       class: 'fintop',
 
 
@@ -86,8 +87,8 @@ const bookCoverDesignServices = () => {
 
     {
       img: mission2,
-      title: 'Affordable Packages',
-      text: 'If you are looking for the best book cover designing services at affordable rates, you are at the right place. Book Writing Experts cater to all your needs in a cost-efficient manner.',
+      title: 'Customized Book Cover Design',
+      text: 'Our expert book cover designers are supremely experienced and always stay in touch with you to produce a book cover that reflects your imagination. We are focused on providing you with a smooth design experience by focusing on your unique needs and preferences.',
       class: 'fintop',
 
 
@@ -95,8 +96,8 @@ const bookCoverDesignServices = () => {
 
     {
       img: mission3,
-      title: 'Customer Centric',
-      text: 'We are striving each day to provide the best customer services. If you are not happy with the book cover we can make the one that satisfies you the most. After all you are what we are working for.',
+      title: 'Transparent Pricing',
+      text: 'Get a full fixed price before you make a payment, with no hidden commissions or hourly rates. Our transparent pricing structure keeps you informed of exactly what you are paying for, ensuring your budget and avoiding a shock of additional costs.',
       class: 'fintop',
 
 
@@ -104,6 +105,25 @@ const bookCoverDesignServices = () => {
 
 
   ]
+
+  const selfpublishingDesc = <span>
+    First impressions matter a lot for books. Even if you’ve written a bestseller, readers might not
+    pick it up if the cover doesn’t catch their eye. Think about your book sitting on a shelf next to
+    many others in the same genre. The secret to getting noticed is a cover that stands out.
+    <br /><br />
+    An eye-catching cover can boost your book’s sales. When people are browsing through many
+    options, a great cover can make all the difference. It tells readers that your book is professional
+    and worth their time.
+    <br /><br />
+    Our top book cover designers in US create stunning book covers that help authors maximize
+    sales. No matter if it’s on a physical shelf or an online platform like Amazon, our covers will
+    make readers want to pick up your book.
+    <br /><br />
+    With our traditional and ebook cover design services, you’ll get a book cover that helps your
+    book shine, both in stores and online. Let us help you make that memorable first impression and
+    increase your book’s sales.
+  </span>
+
   const websiteSchemaBookCoverDesignServices = {
     "@context": "https://schema.org/",
     "@type": "WebSite",
@@ -166,13 +186,17 @@ const bookCoverDesignServices = () => {
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-        <title>Get Your Book on Amazon KDP with Top-Rated Book Publishing Services</title>
-        <meta name="description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <title>Book Cover Design Services - Book Writing Experts</title>
+        <meta name="description" content="Design the best book covers and make your book look
+attractive at first glance with our book cover designers for hire. Increase
+your book sales today!" />
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Get Your Book on Amazon KDP with Top-Rated Book Publishing Services" />
-        <meta property="og:description" content="Looking for a reliable Book Publishing Company? BWE can help you get your book published using Amazon Publishing Services and Kindle Direct Publishing. Call us now to bring your book to life today!" />
+        <meta property="og:title" content="Book Cover Design Services - Book Writing Experts" />
+        <meta property="og:description" content="Design the best book covers and make your book look
+attractive at first glance with our book cover designers for hire. Increase
+your book sales today!" />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />
@@ -243,9 +267,10 @@ const bookCoverDesignServices = () => {
 
       <Stopworrying
         title2={dateset}
-        subtitle3='In Search For Enticing Book Covers?'
+        subtitle3='We&#39;re confident you&#39;ll love our book cover designs, crafted to captivate readers and boost your
+book&#39;s marketability.'
         btn1='Get a free Proposal'
-        btn2='Talk to an expert'
+        btn2='Free Consultation'
       />
 
 
@@ -265,9 +290,9 @@ const bookCoverDesignServices = () => {
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
-            <h2 className='color-lightgray   font25   t-center font-f mb-2'>Our Approach</h2>
+            <h3 className='color-lightgray   font25   t-center font-f mb-2'>Cover Design Excellence</h3>
 
-            <p className='font50 font-f fw500 colortextgrey t-center pb-2'>We Aim to Design Extremely Eye-Catching <br /> <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Covers</Link> for your Masterpiece</p>
+            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>Experience Quality &amp; Timely Delivery With The  <br /> Best <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Design Services</Link> </h2>
 
           </Row>
 
@@ -323,10 +348,10 @@ const bookCoverDesignServices = () => {
       <Customersatisfaction />
 
       <Selfpublishing
-        title="Don’t Know How To Give Your Book An Attractive Cover?"
-        text='We Can Help You! Book Writing Experts Have Ideas For You That Will Work.'
+        title="Attract Readers With Eye Catching Custom Book Covers"
+        text={selfpublishingDesc}
         number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
+        discuss="LET'S TALK"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
@@ -346,8 +371,12 @@ const bookCoverDesignServices = () => {
 
       <div className='datacloud'>
         <Aspiring
-          title='Book Cover Designs That Stand Out'
-          text='We are a fantastic choice for cover designs, page layouts, and book designs. We have a group of qualified graphic designers who have created dozens of book covers and page layouts. Our designers will work with you to ensure that your book and cover are supplied according to specifications using all of the information they have. To address any potential technical issues, we offer efficient maintenance for the given files.'
+          title='Stand Out Loud With Our Book Cover Design Service!'
+          text='Book Writing Experts is the top choice for best book cover design services. Our clients love us,
+and our customer list fills up quickly. Why? Because our covers aren&#39;t just pretty; they&#39;re
+captivating and help sell books. We offer a team of top book cover designers who truly
+understand your book. For self-publishing authors, our custom book covers will make your book
+stand out. Let us design a book cover that truly represents your story.'
 
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"

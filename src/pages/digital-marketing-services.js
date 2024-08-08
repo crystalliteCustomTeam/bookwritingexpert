@@ -24,11 +24,15 @@ const Digitalmarketingservices = () => {
     {
       title: (
         <>
-          <h1 className='font50 fw300 text-white font-f hero-span'>Propel Your Book's Success With Customized <Link className='textdocationnone fw700 color-blue hover' href="/digital-marketing-services/">Digital Book Marketing Services</Link>, Designed To Enrich The Reader Experience.</h1>
+          <h1 className='font50 fw300 text-white font-f hero-span'>Data-Driven Digital <Link className='textdocationnone fw700 color-blue hover' href="/digital-marketing-services/">Book Marketing Services </Link><br /> to Enhance Your Visibility and Impact!</h1>
         </>
       ),
       pra: (
-        <> Supercharge Your Book Sales with Our Innovative <Link className='textdocationnone text-white hover' href="/digital-marketing-services/">Digital Book Marketing Services</Link>. Expand Your Reach, Build  Extraordinary Credibility, and Engage an Ever-Growing Audience. </>
+        <> Our expert-vetted marketers can increase your ROI by enhancing your visibility in the digital
+          space. With our reputation as the best digital marketing company, we utilize in-depth data
+          analysis to create targeted campaigns that have increased book sales by 150% and boosted
+
+          online presence for authors by 200%. </>
       ),
       discuss: "LET'S DISCUSS",
       homebannernum: '(855) 500 0057',
@@ -39,8 +43,8 @@ const Digitalmarketingservices = () => {
   ]
 
 
- 
- 
+
+
 
 
 
@@ -49,7 +53,7 @@ const Digitalmarketingservices = () => {
 
   return (
     <>
-    
+
 
 
 
@@ -80,7 +84,13 @@ const Digitalmarketingservices = () => {
       <Major />
 
       {/* Cta */}
-      <Cta />
+      <Cta
+        title=" How We Deliver Exceptional <span class='color-blue fw700 hover textdocationnone' href='/book-publishing-services'>  Digital Marketing Services </span>"
+        desc=" <span>As a leading digital marketing company, we bring a fresh perspective and expertise to create
+custom plans that are focused and effective. With project management tools, we monitor
+progress in real time and provide regular reports. Our flexible strategies emphasize effective
+communication, creativity, and achieving your core goals, driving your digital marketing success.</span>"
+      />
 
       {/* Makestories */}
       <div className='dataset sliderImg'>
@@ -104,8 +114,16 @@ const Digitalmarketingservices = () => {
 
       {/* Aspiring */}
       <Aspiring
-        title='Eye-Catching Book Cover Designs: Standing Out From The Crowd'
-        text={<> Our exceptional <Link className='textdocationnone color-lightgray hover' href="/digital-marketing-services/">digital book marketing services</Link> help to design cover designs, page layouts, and book designs, that are the perfect choice for your business. Our highly skilled graphic designers have crafted numerous captivating book covers and page layouts. By hiring our skilled designers, we ensure that your book and cover are specifically customized to meet your business needs and requirements. </>}
+        title='Sales-Centric Digital Marketing Company That Drives
+
+Revenue Growth!'
+        text={<> Our <Link className='textdocationnone color-lightgray hover' href="/digital-marketing-services/">digital marketing services</Link> for books optimize your sales through targeted digital advertising
+          campaigns. We focus on maximizing customer interest by capturing attention and increasing
+          reach on search engines. With our expertise, your book can achieve a global impact. Strategies
+          are developed to enhance visibility, engage potential readers, and drive revenue growth. Hire
+          Book Writing Experts today for the best digital marketing services that deliver outstanding sales
+
+          results! </>}
         number="(855) 500 0057"
         discuss="Chat With Us Today!"
       />
@@ -124,8 +142,19 @@ const Digitalmarketingservices = () => {
       {/* Aspiring */}
       <div className='newdatecloud'>
         <Aspiring
-          title={<> Relieve Your Marketing Burden With Our <Link className='textdocationnone color-blue hover' href="/digital-marketing-services/">Digital Book Marketing Agency</Link>! </>}
-          text={<> Marketing, especially book marketing, can be a challenging task for many. However, for <strong>Book Writing Experts</strong>, it's a breeze. We understand the intricacies of advertising, from crafting compelling pitches to devising profitable social media campaigns and beyond. While these tasks may seem overwhelming to you, we have the expertise and experience to handle them with ease. Let us shoulder the marketing strain and pave the way for your success! </>}
+          title={<> Why Choose Us As Your <Link className='textdocationnone color-blue hover' href="/digital-marketing-services/">Digital Book Marketing
+
+            Company</Link>? </>}
+          text={`When you hire book digital marketers from us, you gain access to the best services available.
+            We are passionate about book marketing and optimizing your author websites, offering
+            expertise in all areas. Our team dynamically employs tried and tested methods, resulting in
+            numerous success stories our clients love! Outsourcing your marketing campaign to us, you
+            benefit from comprehensive strategies, including social media and influencer marketing, digital
+            advertising, SEO, and content marketing. We create engaging book trailers and conduct author
+            interviews to captivate your audience, generate excitement, and create a deeper connection
+            with readers. Choose us to get the best digital marketing services and see your book&#39;s visibility
+
+            and sales grow significantly!` }
           number="Dial (855) 500 0057"
           img={youareonestepcloserto}
 
@@ -144,11 +173,13 @@ const Digitalmarketingservices = () => {
 
 
       <Stopworrying
-        title='Conquer the Challenges of Book Selling!'
-        subtitle='One-Stop Solution For bookwriting, Promoting, And Branding Your Digital Riches.'
-        subtitle2='Trust your books to be crafted by our team of professional writers.'
+        title='Finding It Hard to Stand Out in the Digital Space?'
+        subtitle='We Are Your One-Stop Solution for Professional Digital
+
+Marketing Services!'
+        subtitle2='Join us and watch your online impact grow!'
         btn1='Get a free Proposal'
-        btn2='Hire Our Digital Book Marketing Services Now! '
+        btn2='Get Started Today! '
       />
 
 

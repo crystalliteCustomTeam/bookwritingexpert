@@ -55,8 +55,11 @@ const Buildyourownidentity = () => {
                 <Container>
                     <Row className='mb-3'>
                         <Col>
-                            <h2 className="fw700 font50 color-blue font-f mb-2 t-center">Craft Your Distinct Identity</h2>
-                            <p className='font15 textcolor font-f t-center'><Link className='textdocationnone hover textcolor' href='/digital-marketing-services/'>Digital book marketing</Link> is a delicate art that demands strategy and finesse. It requires a touch of creativity and persuasive pitching. From conceptualizing captivating social media campaigns to generating excitement through influencer collaborations, marketing is a multidimensional endeavor. Leveraging the power of influencers and public figures is a pivotal aspect of pre-launch marketing, expanding your reach to new audiences and potential clients.</p>
+                            <h2 className="fw700 font50 color-blue font-f mb-2 t-center">The Range Of Services We Offer As a <br />Top-Grade Digital
+
+                                Marketing Agency</h2>
+                            <p className='font15 textcolor font-f t-center'>As a leading<Link className='textdocationnone hover textcolor' href='/digital-marketing-services/'>digital book marketing service</Link> provider, our expertise covers promoting books and
+                                creating impactful author websites. Here are the services you’ll get if you partner with us</p>
                         </Col>
                     </Row>
 
@@ -69,26 +72,26 @@ const Buildyourownidentity = () => {
 
 
                             <div>
-                                <h4 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h4>
+                                <h3 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h3>
                                 <p className='font15  textcolor t-center font-f'>Ignite brand growth and engagement by leveraging the power of social media platforms.</p>
                                 <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
                             <div>
-                                <h4 className='font17 fw500 color-blue t-center font-f'>EMAIL MARKETING PLANS</h4>
+                                <h3 className='font17 fw500 color-blue t-center font-f'>EMAIL MARKETING PLANS</h3>
                                 <p className='font15  textcolor t-center font-f'>Expand your reach and nurture customer relationships with strategic email campaigns.</p>
                                 <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
 
                             <div className=''>
-                                <h4 className='font17 fw500 color-blue t-center font-f'>ADVERTISING PLANS</h4>
+                                <h3 className='font17 fw500 color-blue t-center font-f'>ADVERTISING PLANS</h3>
                                 <p className='font15  textcolor t-center font-f'>Amplify your brand's visibility through targeted social media advertising for enhanced reach.</p>
                                 <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
                             </div>
 
                             <div>
-                                <h4 className='font17 fw500 color-blue t-center font-f'>SEO SERVICES</h4>
+                                <h3 className='font17 fw500 color-blue t-center font-f'>SEO SERVICES</h3>
                                 <p className='font15  textcolor t-center font-f'>Increase your visibility on search engines with our proven SEO strategies.</p>
                                 <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Chat With Us To Get Your Book Marketing Plan</Link>
 
@@ -106,15 +109,16 @@ const Buildyourownidentity = () => {
                             <Col md={3}>
 
                                 <div>
-                                    <h4 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h4>
-                                    <p className='font15  textcolor t-center font-f'>Ignite brand growth and engagement by leveraging the power of social media platforms.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                    <h3 className='font17 fw500 color-blue t-center font-f'>Social Media &amp; Influencer Marketing</h3>
+                                    <p className='font15  textcolor t-center font-f'>Stand out with impactful social media campaigns and collaborations with familiar faces in the
+                                        industry.</p>
+                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
                                 </div>
 
                                 <div className='mt-5'>
-                                    <h4 className='font17 fw500 color-blue t-center font-f'>EMAIL MARKETING PLANS</h4>
-                                    <p className='font15  textcolor t-center font-f'>Expand your reach and nurture customer relationships with strategic email campaigns.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                    <h3 className='font17 fw500 color-blue t-center font-f'>Digital Advertising</h3>
+                                    <p className='font15  textcolor t-center font-f'>Reach the right audience with cost-effective paid advertising and informed decision-making.</p>
+                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
                                 </div>
 
 
@@ -127,15 +131,16 @@ const Buildyourownidentity = () => {
                             <Col md={3}>
 
                                 <div className=''>
-                                    <h4 className='font17 fw500 color-blue t-center font-f'>ADVERTISING PLANS</h4>
-                                    <p className='font15  textcolor t-center font-f'>Amplify your brand's visibility through targeted social media advertising for enhanced reach.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                    <h3 className='font17 fw500 color-blue t-center font-f'>SEO</h3>
+                                    <p className='font15  textcolor t-center font-f'>Optimize your book and author website with targeted keywords and top-notch SEO strategies.</p>
+                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
                                 </div>
 
                                 <div className='mt-5'>
-                                    <h4 className='font17 fw500 color-blue t-center font-f'>SEO SERVICES</h4>
-                                    <p className='font15  textcolor t-center font-f'>Increase your visibility on search engines with our proven SEO strategies.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Chat With Us To Get Your Book Marketing Plan</Link>
+                                    <h3 className='font17 fw500 color-blue t-center font-f'>Content Marketing</h3>
+                                    <p className='font15  textcolor t-center font-f'>Engage readers with book trailers, author interviews, and podcast features discussing their
+                                        journey.</p>
+                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
 
                                 </div>
 

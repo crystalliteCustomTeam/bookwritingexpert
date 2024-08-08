@@ -59,15 +59,15 @@ const EbookWritingservices = () => {
   }, []);
 
 
-  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'><Link className='color-white textdocationnone hover' href='/web-content-writing-services'>Web Content Writing Service</Link> That Gives Your Business Persona A Professional Look! </h1>;
+  const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Convert Visitors Into Clients With Quality <br /><Link className='color-white textdocationnone hover' href='/web-content-writing-services'>Web Content Writing Services!</Link> </h1>;
 
-  const discuss = <span>LET'S DISCUSS</span>
+  const discuss = <span>FREE CONSULTATION</span>
 
 
   const bannertext = [
     {
       title: newSpan,
-      pra: 'Is your website content outdated? Let us help you with it! At Book Writing Experts, we create Search Engine Optimized and high-quality website content that guarantees increased traffic and conversions. We have a team of writers with the experience and skill set required to provide the best and cost-effective writing solutions.',
+      pra: 'Hire web content writers to grow your client base quickly and cost-effectively. Our trained writers and editors have over 10 years of experience creating high quality web copy that communicates the value of your product, service, or business effectively. We understand digital trends and modern SEO, ensuring your web copy is both engaging and optimized for search engines. Let us help you launch your website faster without waiting for quality content. Focus on your business while we handle your web content needs efficiently and expertly.',
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
@@ -82,19 +82,24 @@ const EbookWritingservices = () => {
 
   const geta = <span className='fw700 color-black'><Link className='color-black textdocationnone hover' href='/web-content-writing-services'> Web Content Writing Service</Link> That Voices Your Brand Values In The Most Professional Tone! </span>
 
-  const titleDb = <span className=' color-blue'>Want To Boost Traffic? </span>
+  const titleDb = <span className=' color-blue'>Experience High Organic Rankings</span>
   const posdata = <span className='fw700'>
-    Discuss Your Requirements With Our Qualified Team Of <Link className='color-white textdocationnone hover' href='/web-content-writing-services'>Content Writers</Link>  And Get Best Solutions!</span>
+    Our Website Content Writers Produce Results-Driven <br />
+    Copies For Maximum ROI!</span>
 
 
-  const WaitingForSomeone = <span>Tired Of The Same Outdated Content On Your Website?</span>
+  const WaitingForSomeone = <span>We Create Website Content That Speaks Your
+    Customers' Language!</span>
+
+  const WaitingForSomeone2 = <span>Lead the Market With The Best Web Content Writing
+    Company</span>
 
   const fine = [
 
     {
       img: mission1,
-      title: 'Top notch Content',
-      text: 'We have a team of experts who knows how to present words that make the content attractive to the reader’s eye. Our website content is search engine optimized to help you get a higher ranking on the search engine result page.',
+      title: 'Expertise and Industry Knowledge',
+      text: 'We have recruited the top web content writers who are industry veterans and possess years of experience and in-depth knowledge at the core of the business, ensuring that the website content is correct and highly relevant to your audience.',
       class: 'fintop',
 
 
@@ -102,8 +107,8 @@ const EbookWritingservices = () => {
 
     {
       img: mission2,
-      title: 'Quick Turnaround',
-      text: 'Our team of expert content writers makes sure that each project is completed before the deadline so that we have time to get client’s feedback and make changes if required.',
+      title: 'SEO-Optimized Content',
+      text: 'Our web content writing services include researching long-tail keywords relevant to your industry/niche to increase your website performance and ranking on search engines. This ensures that the right audience finds your content, leading to higher engagement and conversion rates.',
       class: 'fintop',
 
 
@@ -111,8 +116,8 @@ const EbookWritingservices = () => {
 
     {
       img: mission3,
-      title: '100% Content Satisfaction',
-      text: 'We keep our clients in the loop while working for them. All the content is discussed with them and finalized only after their approval. If the client is not satisfied with any piece of content, we redesign it for their satisfaction.',
+      title: 'Cost-Effective Solutions',
+      text: 'We understand that budget is always a sensitive matter for every business. Our affordable web content writing services offer different budget ranges, meaning you can get quality content that is best suited to your needs at the best price.',
       class: 'fintop',
 
 
@@ -170,12 +175,22 @@ const EbookWritingservices = () => {
 
   ]
 
-  const text = <span>Allow us to provide some refreshments to your website and make it beneficial for your visitors.
+  const text = <span>Modern consumers are savvier, more knowledgeable, and more demanding than ever. They
+    want authenticity, reliability, easy discoverability, and mobile-friendly access. Here at Book
+    Writing Experts, our website content writing services help fulfill those needs through detailed
+    industry research and engaging content creation in such a way that it gives your target audience
+    the personal touch they crave.
 
 
   </span>;
 
+  const text2 = <span>Take action now and enhance your online presence through our top-rated web content writing
+    services. Be it your new website content, blog posts, or informational articles, we have your
+    back! Don&#39;t let average content hold you back—partner with the best web content writers and let
+    your business boom!
 
+
+  </span>;
 
 
 
@@ -227,6 +242,12 @@ const EbookWritingservices = () => {
       <Stopworrying
         title={titleDb}
         title2={posdata}
+        subtitle2="Today&#39;s audience simply wants content that speaks to them. They want information that is
+relevant and incisive, tailored to their particular needs and interests. Our professional web
+content writers conduct comprehensive research on your industry and target readers; then, they
+craft the type of content your audience is already looking for. Let us take the reins, and we&#39;ll
+carry you way ahead of the competition with content that matches your unique brand voice and
+targets the right audience!"
         btn1='Get a free Proposal'
         btn2='Talk to an expert'
       />
@@ -237,7 +258,7 @@ const EbookWritingservices = () => {
           title={WaitingForSomeone}
           text={text}
           number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          discuss="Free Consultation"
           image={newimagetwoo}
           whychooseclass="marketyourbook"
         />
@@ -246,10 +267,11 @@ const EbookWritingservices = () => {
       <div className='pt-5 pb-5'>
         <Container>
           <Row className='pt-5 pb-5'>
-            <h2 className="color-lightgray   font25   t-center font-f mb-2">Our Approach</h2>
+            <h3 className="color-lightgray   font25   t-center font-f mb-2">Market-Focused Solutions!</h3>
 
-            <p className='font30 font-f fw500 colortextgrey t-center pb-2'>We Aim To Enhance Your ROI By Fueling Your Website With Impressive Content!
-            </p>
+            <h2 className='font30 font-f fw500 colortextgrey t-center pb-2'>Attract, Engage, And Convert With Targeted Web Content
+              Writing Services!
+            </h2>
 
           </Row>
 
@@ -316,10 +338,10 @@ const EbookWritingservices = () => {
 
       <div>
         <Selfpublishing
-          title={WaitingForSomeone}
-          text={text}
+          title={WaitingForSomeone2}
+          text={text2}
           number="(855) 500 0057"
-          discuss="LET'S DISCUSS"
+          discuss="Get Free Consultation"
           image={newimagetwoo}
           whychooseclass="marketyourbook"
         />
@@ -343,8 +365,15 @@ const EbookWritingservices = () => {
       {/* Aspiring */}
       <div className='datacloud'>
         <Aspiring
-          title='Professional Web Content Writing Services We Give New Life To Your Words'
-          text="Your idea is unique, and you need a company that will take it from start to finish. We are here for all the steps, so your legacy can live in words."
+          title='Hire Web Content Writers to Grow Your Client Base'
+          text="Our web content writers for hire are professionals who understand the minute happenings and
+complexities of your industry. They stay updated on the latest trends and developments,
+ensuring that your content is always current and impactful for the readers.
+Our website content writing services include SEO-optimized web pages, detailed articles,
+informative blog posts, and other industry-specific content. We deliver content that speaks
+directly to your audience and drives results.
+Call us now to discuss your web content needs, and let us show you real results for your
+business!"
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />
