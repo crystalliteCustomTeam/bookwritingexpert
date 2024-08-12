@@ -42,7 +42,7 @@ const bookCoverDesignServices = () => {
   const bannertext = [
     {
       title: newSpan,
-      pra: 'Although we cannot judge a book by its cover, an attractive one captivates more attention and results in more conversions. At Book Writing Experts, We bring your ideas into reality by designing alluring book covers that guarantee ROI.',
+      pra: "A dull book cover can hold your sales back. Increase your book&#39;s appeal and captivate your audience with a stunning cover from expert book cover designers. Partner with us as we are a professional book cover design company that can revamp your book's appearance so that it can grab reader's attention at first glance.",
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,

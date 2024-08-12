@@ -47,7 +47,7 @@ const articleWritingServices = () => {
     {
       img: mission1,
       title: 'Expertise on Demand',
-      text: 'Our article writers are experienced &amp; field experts, so you get articles that are engaging, accurate, and full of information.Be it blogs, websites, newsletters, or brochure content, our writers can produce top- notch copy on your timeline.',
+      text: 'Our article writers are experienced & field experts, so you get articles that are engaging, accurate, and full of information.Be it blogs, websites, newsletters, or brochure content, our writers can produce top- notch copy on your timeline.',
       class: 'fintop',
     },
     {
@@ -143,7 +143,7 @@ Call us now!" />
           <Row >
             <h3 className='color-lightgray   font25   t-center font-f mb-2'>Get High-Quality Results</h3>
 
-            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>100% <Link className='textdocationnone color-blue hover fw700' href='/article-writing-services/'>Original and Custom Content Guaranteed</Link> from <br /> Your Go-To Article Writing Company!</h2>
+            <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>100% <Link className='textdocationnone color-blue hover fw700' href='/article-writing-services/'>Original and Custom Content Guaranteed</Link> <br className='d-none d-xl-block' /> from Your Go-To Article Writing Company!</h2>
           </Row>
           <Row className='gy-5'>
             {fine.map((item, i) =>

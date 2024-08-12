@@ -128,7 +128,7 @@ const Bestinclass = () => {
 
 
                             </Col>
-                            <Col md={6}>
+                            <Col md={6} className='text-center'>
 
                                 <Image loading="lazy" src={buildyourownidentity} className='img-fluid' alt="Book Writing Experts"></Image>
 

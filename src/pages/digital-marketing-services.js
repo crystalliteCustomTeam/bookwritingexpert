@@ -117,13 +117,13 @@ communication, creativity, and achieving your core goals, driving your digital m
         title='Sales-Centric Digital Marketing Company That Drives
 
 Revenue Growth!'
-        text={<> Our <Link className='textdocationnone color-lightgray hover' href="/digital-marketing-services/">digital marketing services</Link> for books optimize your sales through targeted digital advertising
+        text={`Our <a class='textdocationnone color-lightgray hover' href="/digital-marketing-services/">digital marketing services</a> for books optimize your sales through targeted digital advertising
           campaigns. We focus on maximizing customer interest by capturing attention and increasing
           reach on search engines. With our expertise, your book can achieve a global impact. Strategies
           are developed to enhance visibility, engage potential readers, and drive revenue growth. Hire
           Book Writing Experts today for the best digital marketing services that deliver outstanding sales
 
-          results! </>}
+          results`}
         number="(855) 500 0057"
         discuss="Chat With Us Today!"
       />

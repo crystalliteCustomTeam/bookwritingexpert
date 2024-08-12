@@ -171,13 +171,13 @@ const authorWebsiteDesignServices = () => {
         <title>Author Website Design Services - Book Writing Experts</title>
         <meta name="description" content="Get professional author website design services to
 showcase your books and engage your audience with custom designs,
-technology, and storytelling. Hire us today!" />
+technology, and storytelling." />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Author Website Design Services - Book Writing Experts" />
         <meta property="og:description" content="Get professional author website design services to
 showcase your books and engage your audience with custom designs,
-technology, and storytelling. Hire us today!" />
+technology, and storytelling." />
         <meta property="og:url" content="/book-publishing-services" />
         <meta property="og:site_name" content="Book Writing" />
         <meta property="og:image" content="https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/33273cf2-6458-4ba5-0f78-ec679c919a00/public" />

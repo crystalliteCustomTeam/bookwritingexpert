@@ -41,7 +41,7 @@ const blogWritingService = () => {
   const bannertext = [
     {
       title: newSpan,
-      pra: 'Ever wish your audience gets lost in your stories? With blog writing services, our professionals help your dreams turn into reality. It’s not a piece of cake to bring in motivated readers and target customers to the arsenal. However, experts at our company excel at driving promising leads to your website and generating more interest in what you have to offer. Our blog writing services serve as the ideal mode of marketing and advertising for your business or book. So, are you ready to attract new customers and promote your products or services in a positive light? Just give us a call, and let the pros do wonders with our content blog writing services!',
+      pra: 'Did you know that 80% of businesses see a 13x return on investment from blogging? We help you share your brand’s story, attract new leads, and increase brand awareness. Invest in our affordable blog writing services that enhance your authority in the industry and connect directly with consumers. Our expert-vetted writers deliver 100% unique, high-quality content, ensuring your blog is always fresh as well as optimized for search engines. Transform your content strategy with a blog writing company that delivers measurable results.',
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
@@ -92,7 +92,7 @@ const blogWritingService = () => {
     {
       img: mission2,
       title: 'Keep Your Content Confidential and Secure',
-      text: 'As a top-grade blog writing company, we guarantee 100% confidentiality for all our clients. Throughout the content creation process, your information remains secure, and you retain full authorship rights.Trust our professional blog writing services to protect your content and ensure your peace of mind.',
+      text: 'As a top-grade blog writing company, we guarantee 100% confidentiality for all our clients. Throughout the content creation process, your information remains secure, and you retain full authorship rights. Trust our professional blog writing services to protect your content and ensure your peace of mind.',
       class: 'fintop',
 
 
@@ -101,7 +101,7 @@ const blogWritingService = () => {
     {
       img: mission3,
       title: 'Stand Out from the Crowd with Exceptional Content',
-      text: 'In various industries and business areas, our writers&#39; skills, knowledge, and experience make every word count. Professional writers ensure your content is exceptional, helping your brand stand out from the competition and capture your audience&#39;s attention.',
+      text: "In various industries and business areas, our writer's skills, knowledge, and experience make every word count. Professional writers ensure your content is exceptional, helping your brand stand out from the competition and capture your audience's attention.",
       class: 'fintop',
 
 

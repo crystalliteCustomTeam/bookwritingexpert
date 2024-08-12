@@ -39,7 +39,7 @@ const audioBookRecordingServices = () => {
   const bannertext = [
     {
       title: newSpan,
-      pra: "With a 95% success rate in sales and audience engagement, we can help you reach new audiences with our high- quality audiobook creation services.We manage everything from recording to post - production and distribution, eliminating the need to collaborate with multiple teams.As the best audiobook recording company, we offer the highest royalty rates and maximize your book’s impact across multiple platforms. ",
+      pra: "With a 95% success rate in sales and audience engagement, we can help you reach new audiences with our high- quality audiobook creation services. We manage everything from recording to post - production and distribution, eliminating the need to collaborate with multiple teams. As the best audiobook recording company, we offer the highest royalty rates and maximize your book’s impact across multiple platforms. ",
       discuss: discuss,
       homebannernum: "(855) 500 0057",
       banlogo: homebannerlogos,
