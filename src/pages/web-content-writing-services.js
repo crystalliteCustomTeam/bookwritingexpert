@@ -186,7 +186,7 @@ const EbookWritingservices = () => {
 
   const text2 = <span>Take action now and enhance your online presence through our top-rated web content writing
     services. Be it your new website content, blog posts, or informational articles, we have your
-    back! Don&#39;t let average content hold you back—partner with the best web content writers and let
+    back! Don't let average content hold you back—partner with the best web content writers and let
     your business boom!
 
 
@@ -242,10 +242,10 @@ const EbookWritingservices = () => {
       <Stopworrying
         title={titleDb}
         title2={posdata}
-        subtitle2="Today&#39;s audience simply wants content that speaks to them. They want information that is
+        subtitle2="Today's audience simply wants content that speaks to them. They want information that is
 relevant and incisive, tailored to their particular needs and interests. Our professional web
 content writers conduct comprehensive research on your industry and target readers; then, they
-craft the type of content your audience is already looking for. Let us take the reins, and we&#39;ll
+craft the type of content your audience is already looking for. Let us take the reins, and we'll
 carry you way ahead of the competition with content that matches your unique brand voice and
 targets the right audience!"
         btn1='Get a free Proposal'

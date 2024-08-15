@@ -42,7 +42,7 @@ const bookCoverDesignServices = () => {
   const bannertext = [
     {
       title: newSpan,
-      pra: "A dull book cover can hold your sales back. Increase your book&#39;s appeal and captivate your audience with a stunning cover from expert book cover designers. Partner with us as we are a professional book cover design company that can revamp your book's appearance so that it can grab reader's attention at first glance.",
+      pra: "A dull book cover can hold your sales back. Increase your book's appeal and captivate your audience with a stunning cover from expert book cover designers. Partner with us as we are a professional book cover design company that can revamp your book's appearance so that it can grab reader's attention at first glance.",
       discuss: discuss,
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
@@ -267,8 +267,8 @@ your book sales today!" />
 
       <Stopworrying
         title2={dateset}
-        subtitle3='We&#39;re confident you&#39;ll love our book cover designs, crafted to captivate readers and boost your
-book&#39;s marketability.'
+        subtitle3="We're confident you'll love our book cover designs, crafted to captivate readers and boost your
+        book's marketability."
         btn1='Get a free Proposal'
         btn2='Free Consultation'
       />
@@ -372,11 +372,10 @@ book&#39;s marketability.'
       <div className='datacloud'>
         <Aspiring
           title='Stand Out Loud With Our Book Cover Design Service!'
-          text='Book Writing Experts is the top choice for best book cover design services. Our clients love us,
-and our customer list fills up quickly. Why? Because our covers aren&#39;t just pretty; they&#39;re
-captivating and help sell books. We offer a team of top book cover designers who truly
-understand your book. For self-publishing authors, our custom book covers will make your book
-stand out. Let us design a book cover that truly represents your story.'
+          text="Book Writing Experts is the top choice for best book cover design services. Our clients love us, and our customer list fills up quickly. Why? Because our covers aren't just pretty; they're
+          captivating and help sell books. We offer a team of top book cover designers who truly
+          understand your book. For self-publishing authors, our custom book covers will make your book
+          stand out. Let us design a book cover that truly represents your story."
 
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
