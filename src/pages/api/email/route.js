@@ -10,7 +10,7 @@ export default async function POST(req, res) {
       secure: true,
       auth: {
         user: "signups@bookwritingexperts.com",
-        pass: "jS8FG6SjQh4d3jW%",
+        pass: "10@Kskwoks",
       },
     });
 
