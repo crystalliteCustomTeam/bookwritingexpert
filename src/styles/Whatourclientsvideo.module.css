@@ -1,0 +1,15 @@
+.__testiPlayIcon::before {
+  content: url("https://imagedelivery.net/nJwaBs__P2JfMUeYJ4vmjQ/dfe0f5dc-1442-4cc0-2d3c-fb7a07143500/public");
+  position: absolute;
+  background-color: #ffffffad;
+  border-radius: 100%;
+  padding: 8px 10px 5px 10px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: max-content;
+  height: max-content;
+  margin: auto;
+  display: block;
+}

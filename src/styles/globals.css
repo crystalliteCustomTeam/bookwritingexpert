@@ -1554,7 +1554,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   .navbar-toggler-icon {
     filter: invert(1);
   }
-  
+
   .navbar-toggler-icon-cbi {
     filter: inherit;
   }
@@ -1855,15 +1855,17 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   font-size: 90px;
   line-height: 90px;
 }
+
 .bgWhite {
   background-color: #fff;
   padding: 8px 50px;
   border-radius: 5px;
   text-decoration: none;
-  color:#000;
+  color: #000;
   display: flex;
   justify-content: center;
 }
+
 .bgOrangeRoundednone {
   background-color: #F7981D;
   padding: 8px 50px;
@@ -1873,11 +1875,13 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   justify-content: center;
   border: 1px solid #f7981d;
 }
+
 .bgOrangeRoundednone:hover {
   background-color: #192D44;
   color: #fff !important;
   border: transparent;
 }
+
 .bgGray {
   background-color: #b9b9b9;
   padding: 8px 50px;
@@ -1885,7 +1889,7 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   text-decoration: none;
 }
 
-.bgBlue{
+.bgBlue {
   background: #192D44;
   padding: 8px 50px;
   border-radius: 5px;
@@ -1894,10 +1898,11 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
   justify-content: center;
   border: transparent;
 }
-.bgBlue:hover{
+
+.bgBlue:hover {
   background: transparent;
- border: 1px solid #192D44;
- color: #192D44 !important;
+  border: 1px solid #192D44;
+  color: #192D44 !important;
 }
 
 .bgOrange {
@@ -1933,7 +1938,8 @@ section.elementor-section.elementor-top-section.elementor-element.elementor-elem
 button.bgGray.formbgGray {
   border: none;
 }
-.formbgGray:hover{
+
+.formbgGray:hover {
   background: #F7981D;
 }
 
@@ -1963,6 +1969,7 @@ button.bgGray.formbgGray {
 .childrenTestimonial ul.slick-dots li button {
   display: none;
 }
+
 /* Book Marketing Lp Css */
 .__testiCard .is-snapped.is-in-view {
   background: transparent;
@@ -1971,20 +1978,90 @@ button.bgGray.formbgGray {
   padding: 60px 40px;
   transform: scale(1);
   margin: 0px 0px;
-  
+
 }
-.__bannerSliderClass .emblaSlider{
+
+.__bannerSliderClass .emblaSlider {
   width: 25% !important;
 }
 
 .__testiCard .is-in-view {
   padding: 60px 40px;
- margin: 0px 20px;
- transform: scale(0.9);
+  margin: 0px 20px;
+  transform: scale(0.9);
 }
-.rfm-initial-child-container{
+
+.rfm-initial-child-container {
   --width: 100% !important;
   display: block !important;
+}
+
+.video-testi .slick-list {
+  margin-bottom: 30px;
+}
+
+body .video-testi .slick-dots {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: -35px 0 0;
+  font-size: 10px;
+  padding: 0;
+  list-style-type: none;
+}
+
+body .video-testi li button {
+  display: block;
+  width: 0.7rem;
+  height: 0.7rem;
+  padding: 0;
+  border-radius: inherit !important;
+  border: none;
+  cursor: pointer;
+  background-color: grey;
+  text-indent: -9999px;
+}
+
+body .video-testi li.slick-active button {
+  background-color: #FF9900
+}
+
+.video-testi button.slick-prev.slick-arrow {
+  position: absolute;
+  left: 35%;
+  top: inherit !important;
+  bottom: -3px;
+  z-index: 9;
+}
+
+.video-testi .slick-prev:after {
+  content: "";
+  background-image: url(/arrows1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 9px;
+  display: block;
+}
+
+.video-testi button.slick-next.slick-arrow {
+  position: absolute;
+  right: 36%;
+  top: inherit !important;
+  bottom: -3px;
+  z-index: 9;
+}
+
+.video-testi .slick-next:after {
+  content: "";
+  background-image: url(/arrows2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 9px;
+  display: block;
 }
 
 @media (max-width:1400px) {
@@ -1992,9 +2069,11 @@ button.bgGray.formbgGray {
     font-size: 90px;
     line-height: 95px;
   }
+
   .bgWhite {
     padding: 8px 30px;
   }
+
   .bgOrangeRoundednone {
     padding: 8px 30px;
   }
@@ -2024,14 +2103,16 @@ button.bgGray.formbgGray {
     font-size: 18px;
     line-height: 25px;
   }
+
   .__testiCard .is-snapped.is-in-view {
     padding: 40px 40px;
     transform: scale(0.9);
   }
+
   .__testiCard .is-in-view {
     padding: 40px 40px;
   }
-  
+
 }
 
 @media (max-width:991px) {
@@ -2048,6 +2129,14 @@ button.bgGray.formbgGray {
     border-radius: 50px;
     text-decoration: none;
   }
+
+  .video-testi button.slick-prev.slick-arrow {
+    left: 24%;
+  }
+
+  .video-testi button.slick-next.slick-arrow {
+    right: 26%;
+  }
 }
 
 @media (max-width:767px) {
@@ -2055,10 +2144,18 @@ button.bgGray.formbgGray {
     font-size: 40px;
     line-height: 50px;
   }
+
   .bgOrangeRoundednone {
     padding: 8px 12px;
   }
 }
 
-@media (max-width:576px) {}
+@media (max-width:576px) {
+  .video-testi button.slick-prev.slick-arrow {
+    left: 16%;
+  }
 
+  .video-testi button.slick-next.slick-arrow {
+    right: 18%;
+  }
+}
