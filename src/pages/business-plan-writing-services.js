@@ -7,7 +7,6 @@ import homebannerlogos from '/public/images/bannerimages/logos.png'
 import mission1 from '/public/images/businessplanwriting/ss.png'
 import mission2 from '/public/images/businessplanwriting/fdf.png'
 import mission3 from '/public/images/businessplanwriting/hg.png'
-import publishmybook from '/public/images/selfpublishingservices/publishmybook.png'
 import newimagetwoo from '/public/images/booktrailerservcies/newimagetwoo.png'
 // components
 import Banner from '../../components/Banner'
@@ -17,8 +16,6 @@ import Finetoothedbook from '../../components/Finetoothedbook'
 import Aspiring from '../../components/Aspiring'
 import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Stillonthefence from '../../components/Stillonthefence'
 import Lululogos from '../../components/Lululogos'
 import Selfpublishing from '../../components/Selfpublishing'
 import Major from '../../components/Major'
@@ -33,9 +30,6 @@ import { useState } from 'react'
 
 
 const businessplanWringservices = () => {
-
-
-
   var bookrecordingprojects = {
     dots: true,
     arrows: false,
@@ -67,16 +61,9 @@ const businessplanWringservices = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-
-
-
-
   const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Get Professional <span className='color-blue textdocationnone'>Business Plan Writing Services</span> To Meet Your Strategic Business Needs!</h1>;
 
   const discuss = <span>Talk to an Expert</span>
-
-
   const bannertext = [
     {
       title: newSpan,
@@ -85,9 +72,6 @@ const businessplanWringservices = () => {
       homebannernum: 'Call Us  (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'ghostwriting',
-
-
-
 
     }
   ]
@@ -133,7 +117,7 @@ const businessplanWringservices = () => {
 
   ]
 
-  const dateset = <strong className='fw600'> <span className='color-blue'>Best Business Plan Writing Services</span><br/> at Affordable Price</strong>
+  const dateset = <strong className='fw600'> <span className='color-blue'>Best Business Plan Writing Services</span><br /> at Affordable Price</strong>
 
 
   const datesettext = <span> Staffed with qualified writers, we have a team of professional business plan writers who have undergone our strict vetting process. They have developed more than 1000 projects for different companies across various sectors. Gain benefits from their wealth of knowledge and experience.</span>
@@ -193,7 +177,7 @@ const businessplanWringservices = () => {
 
   return (
     <>
-  
+
 
       {/* banner components */}
 

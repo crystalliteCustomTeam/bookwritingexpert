@@ -17,8 +17,6 @@ import Stillonthefence from '../../components/Stillonthefence'
 const Audiobookrecordingservices = () => {
 
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>    <Link className='fw700 textdocationnone color-blue hover' href="/book-formatting-services">Audiobook Recording Services  </Link> to Add a Touch of Captivity to Your Manuscripts’ Words!! </span>   </h1>;
-
-
   const bannertext = [
     {
       title: newSpan,
@@ -27,16 +25,9 @@ const Audiobookrecordingservices = () => {
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'audiobookrecordingservices',
-
-
-
     }
   ]
-
-
-
   const whybookpublishingdata = [
-
     {
       title: 'What is the best audiobook service?',
       text: 'As an author, you want your audiobook to be perfect. You want every word to be clear, and you want the overall performance to be engaging. This is why so many authors choose book writing expert’s audiobook recording service. We are the best in the industry for a reason. Our team of professional voice actors has years of experience performing audiobooks. They know how to bring a book to life, and they know how to make sure every word is clear. Plus, they’re just plain fun to listen to! ',
@@ -57,15 +48,9 @@ const Audiobookrecordingservices = () => {
       text: 'Audiobook recording rates can vary depending on the length of the audiobook, the quality of the recording, and the number of people who are involved in the recording process. For a typical audiobook that is around 8 hours long, the recording rate might be around $200-$400. However, for an audiobook that is longer than 10 hours, the rate may increase to $500 or more.',
       col6: '6',
     },
-
   ]
 
-
-
-
-
   const reasons = [
-
     {
       title: 'Professional & High-Quality',
       text: 'Our audiobook recording services are professional and of the highest quality. We use state-of-the-art equipment and have a team of experienced professionals who are dedicated to providing you with the best possible service.',
@@ -103,29 +88,13 @@ const Audiobookrecordingservices = () => {
       col: '6',
       classnum: 'number',
     },
-
-
   ]
-
-
 
   return (
     <>
       <Head>
-
-
-
-
-
         <link rel="icon" href="/favicon.svg" />
-
-
-
       </Head>
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -139,13 +108,8 @@ const Audiobookrecordingservices = () => {
         />
       )}
 
-
       {/* partners components */}
-
-
       <Audiobookrecordingprojects />
-
-
       {/* Whybookpublishing */}
       <div className={styles.whybookpublishing}>
         <Container>
@@ -172,11 +136,6 @@ const Audiobookrecordingservices = () => {
 
       {/* Lululogos components */}
       <Lululogos />
-
-
-
-
-
       {/* Stillonthefence component */}
 
       <Container className='still'>
@@ -198,15 +157,6 @@ const Audiobookrecordingservices = () => {
 
         </Row>
       </Container>
-
-
-
-
-
-
-
-
-
       {/* Why Choose book writing expert? */}
       <Whychoosebook
         title="Storytelling Made Easy With Our Audio Book Recording Services"
@@ -222,14 +172,6 @@ const Audiobookrecordingservices = () => {
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />
-
-
-
-
-
-
-
-
     </>
   )
 }

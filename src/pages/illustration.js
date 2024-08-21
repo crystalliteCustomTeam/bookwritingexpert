@@ -23,8 +23,6 @@ const Serviceprovidersillutration = dynamic(() => import('../../components/Servi
 
 function Illustrationbook() {
 
-
-
   const newSpan = <h1 className='font50 fw100 color-white font-f hero-span'> Turn Your Manuscript Into A Creative And <br /> Professional Looking Book With Our <br /> <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration Services</Link>.</h1>;
 
   const posdata = <>Let Our <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustrators</Link> For Hire Handle All Your <Link className='dblockmobile textdocationnone color-blue hover fw700' href="/illustration">Book Illustration</Link> Needs!
@@ -41,29 +39,9 @@ function Illustrationbook() {
       banners: 'illustrationbook',
     }
   ]
-
-
-
-
-
-
-
- 
-
-
- 
-
   return (
     <>
-
-
-      
-
-
       {/* googletagmanager */}
-
-
-
       <main>
         {/* banner components */}
 

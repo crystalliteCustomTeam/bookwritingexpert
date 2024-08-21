@@ -11,121 +11,130 @@ import Contact from "../public/images/amazonbookpublishing/contactImage.png";
 import Image from "next/image";
 
 const ContactUs = () => {
-
-  const [ip, setIP] = useState('');
-  const [score, setScore] = useState('Let’s Discuss');
+  const [ip, setIP] = useState("");
+  const [score, setScore] = useState("Let's Discuss");
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
 
   // Function to load IP address from the API
   const getIPData = async () => {
     try {
-      const res = await Axios.get('https://ipwho.is/');
+      const res = await Axios.get("https://ipwho.is/");
       setIP(res.data);
     } catch (error) {
-      console.error('Error fetching IP data:', error);
+      console.error("Error fetching IP data:", error);
     }
   };
 
   useEffect(() => {
     getIPData();
+    setPagenewurl(window.location.href)
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      pageUrl: currentRoute,
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value
+      }
     };
 
     const JSONdata = JSON.stringify(data);
-    setScore('Sending Data');
+    console.log(data);
+
+    setScore("Sending Data");
 
     try {
-      const res = await fetch('/api/email/route', {
-        method: 'POST',
+      const emailResponse = await fetch("https://brandsapi.cryscampus.com/api/v1/leads", {
+        method: "POST",
         headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
         },
         body: JSONdata,
       });
 
-      console.log(`Response received ${res}`);
-      if (res.status === 200) {
-        console.log(`Response succeeded ${res}`);
+      if (emailResponse.status === 200) {
+        console.log("Email sent successfully");
       }
 
       const currentdate = new Date().toLocaleString();
-      const headersList = {
-        Accept: '*/*',
-        'User-Agent': 'Thunder Client (https://www.thunderclient.com)',
-        Authorization: 'Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer',
-        'Content-Type': 'application/json',
+      let headersList = {
+        Accept: "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        "Content-Type": "application/json",
       };
 
-      const bodyContent = JSON.stringify({
-        IP: `${ip.IPv4} - ${ip.country_name} - ${ip.city}`,
-        Brand: 'BOOK-WRITING-EXPERT',
+      let bodyContent = JSON.stringify({
+        IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+        Brand: "BOOK-WRITING-EXPERT",
         Page: currentRoute,
         Date: currentdate,
         Time: currentdate,
         JSON: JSONdata,
       });
 
-      await fetch('https://sheetdb.io/api/v1/1ownp6p7a9xpi', {
-        method: 'POST',
+      await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+        method: "POST",
         body: bodyContent,
         headers: headersList,
       });
 
-      const myHeaders = new Headers();
-      myHeaders.append('Content-Type', 'application/json');
+
+      const hubspotHeaders = new Headers();
+      hubspotHeaders.append("Content-Type", "application/json");
 
       const hubspotBody = JSON.stringify({
         fields: [
-          { objectTypeId: '0-1', name: 'email', value: e.target.email.value },
-          { objectTypeId: '0-1', name: 'firstname', value: e.target.name.value },
-          { objectTypeId: '0-1', name: 'phone', value: e.target.phone.value },
-          { objectTypeId: '0-1', name: 'message', value: e.target.message.value },
+          {
+            objectTypeId: "0-1",
+            name: "email",
+            value: e.target.email.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "firstname",
+            value: e.target.name.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "phone",
+            value: e.target.phone.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "message",
+            value: e.target.message.value,
+          },
         ],
         context: {
           ipAddress: ip.IPv4,
-          pageUri: currentRoute,
-          pageName: currentRoute,
-        },
-        legalConsentOptions: {
-          consent: {
-            consentToProcess: true,
-            text: 'I agree to allow Example Company to store and process my personal data.',
-            communications: [
-              {
-                value: true,
-                subscriptionTypeId: 999,
-                text: 'I agree to receive marketing communications from Example Company.',
-              },
-            ],
-          },
+          pageUri: pagenewurl,
+          pageName: pagenewurl,
         },
       });
 
-      await fetch('https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f', {
-        method: 'POST',
-        headers: myHeaders,
+      const hubspotResponse = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f", {
+        method: "POST",
+        headers: hubspotHeaders,
         body: hubspotBody,
-        redirect: 'follow',
-      })
-        .then((response) => response.text())
-        .then((result) => console.log(result))
-        .catch((error) => console.error(error));
+        redirect: "follow",
+      });
 
-      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+      const hubspotResult = await hubspotResponse.text();
+      console.log(hubspotResult);
+
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting data:", error);
     }
   };
 

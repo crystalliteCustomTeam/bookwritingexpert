@@ -4,32 +4,22 @@ import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // images
 import homebannerlogos from '/public/images/bannerimages/logos.png'
-import typeofbooks from '/public/images/selfpublishingservices/1.jpg'
-import copy from '/public/images/selfpublishingservices/2.jpg'
-import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
 import publishmybook from '/public/images/selfpublishingservices/4.jpg'
 // components
 import Banner from '../../components/Banner'
 import Dowecome from '../../components/Dowecome'
 import Stopworrying from '../../components/Stopworrying'
 import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
 import Selfpublishing from '../../components/Selfpublishing'
 import Lululogos from '../../components/Lululogos'
 import Customersatisfaction from '../../components/Customersatisfaction'
-import Bookpublishingservicesweoffer from '../../components/Bookpublishingservicesweoffer'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 import mission1 from '/public/images/mission/1.png'
 import mission2 from '/public/images/mission/2.png'
 import mission3 from '/public/images/mission/3.png'
 import Finetoothedbook from '../../components/Finetoothedbook'
-
-
-
 
 const authorWebsiteDesignServices = () => {
   const text = <span>We write, market, and review books of all kinds.</span>;
@@ -47,14 +37,8 @@ const authorWebsiteDesignServices = () => {
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
-
-
-
     }
   ]
-
-
-
 
   const geta = <span>Get Recognized By The World With A Professional And Reliable <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Author Website</Link></span>
 
@@ -66,16 +50,6 @@ const authorWebsiteDesignServices = () => {
   const dateset = <span className='fw500'>Hire Expert <Link className='textdocationnone color-blue hover' href="/author-website-design-services/">Author Website Designers</Link> to Create <br /> a User-
     Friendly Website For Your Books!</span>
 
-
-
-
-
-
-
-
-
-
-
   const fine = [
 
     {
@@ -83,8 +57,6 @@ const authorWebsiteDesignServices = () => {
       title: 'Seamless User Experience',
       text: 'Our expert website designers for authors craft websites with your readers in mind, ensuring a smooth and seamless user experience that keeps them engaged.',
       class: 'fintop',
-
-
     },
 
     {
@@ -92,8 +64,6 @@ const authorWebsiteDesignServices = () => {
       title: 'Customized Designs',
       text: 'Do you have a design in mind or a fresh concept? Share it with us and our author website designers tailor everything to your preferences.',
       class: 'fintop',
-
-
     },
 
     {
@@ -101,10 +71,7 @@ const authorWebsiteDesignServices = () => {
       title: 'Affordable Excellence',
       text: 'Our packages are designed to be budget-friendly, so you can get professional website designs for authors without any financial stress.',
       class: 'fintop',
-
-
     },
-
 
   ]
   const websiteSchemaAuthorWebsiteDesignServices = {
@@ -206,9 +173,6 @@ technology, and storytelling." />
         />
       </Head>
 
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -226,9 +190,6 @@ technology, and storytelling." />
         />
       )}
 
-
-
-
       {/* Dowecome */}
       <Dowecome
         title={geta}
@@ -237,67 +198,17 @@ technology, and storytelling." />
 
       />
 
-
-      {/* Makestories */}
-      {/* <div className='dataset sliderImg'>
-        <Makestoriesnew
-          title='Our Latest Book Publishing Projects'
-          para='Let Our Book Publishing Team Help You'
-        />
-      </div> */}
-
-      {/* Bookpublishingservicesweoffer */}
-      {/* <Bookpublishingservicesweoffer /> */}
-
-      {/* <Ourprocess
-        title='What Is Our Process of Publishing a Book?'
-        text='Without compromising the quality of the finished product, we have developed a complex workflow procedure. We accomplish this through a thorough process that involves informing our clients at each project stage and requesting approvals. This makes the customer more aware of what`s happening at each stage. These six processes, which are listed below, comprise our self-publishing process.'
-        heading1='Manuscript Submission'
-        para1='The writer contacts us for submission of their full-length manuscript, while submitting, we discuss our publishing rules and sign the contract.'
-        num1='01'
-
-        heading2='Peers Review'
-        para2='Our experienced editors then review the manuscript and make the required changes with the writer’s permission.'
-        num2='02'
-
-        heading3='Formatting and Typesetting'
-        para3='After the manuscript is reviewed by editors, our experts do the formatting and add images.'
-        num3='03'
-
-        heading4='Book Production'
-        para4='We design the first copy of the book and take reviews from the writer. The rest of the books are produced on the same pattern while keeping all the important aspects into consideration.'
-        num4='04'
-
-        heading5='Marketing, Publishing, and Distribution'
-        para5='Before publishing, we spread awareness about the book to create demand. And Voila! The book is published now!'
-        num5='05'
-      /> */}
-
-
       {/* Stopworrying */}
       <div className='dataSetCo'>
         <Stopworrying
           title2={dateset}
           subtitle3='Our team of expert-vetted designers can build custom websites that perfectly reflect your unique
-voice and style! We create author website designs that connect deeply with your audience,
-using stunning visuals and seamless navigation.'
+              voice and style! We create author website designs that connect deeply with your audience,
+              using stunning visuals and seamless navigation.'
           btn1='Get a free Proposal'
           btn2='Talk To Expert'
         />
       </div>
-
-
-
-      {/* <section className={styles.publicservices}>
-        <Container>
-          <Row>
-            <Col>
-              <h2 className='color-blue fw700 font50 font-f t-center'>Why Choose Our Amazon Publishing Services?</h2>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/* Selfpublishing */}
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
@@ -325,47 +236,13 @@ using stunning visuals and seamless navigation.'
       <Selfpublishing
         title="Anxious To Get Your Name On A Professional Website?"
         text='We understand the importance of a professional online presence for authors. Having built over
-500+ websites, our book website designers skillfully blend design, technology, and storytelling
-to showcase your books and engage your audience.'
+            500+ websites, our book website designers skillfully blend design, technology, and storytelling
+            to showcase your books and engage your audience.'
         number="(855) 500 0057"
         discuss="Talk To An Expert"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='Our Willingness To Publish Knows No Bounds!'
-        text={text}
-        subtext={subtext}
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={typeofbooks}
-        whychooseclass="marketyourbook"
-      /> */}
-
-      {/* Selfpublishing */}
-      {/* <Selfpublishing
-        title='Want Articles That Boost Engagement And Expand Your Reach?'
-        text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={copy}
-        whychooseclass="marketyourbook"
-      /> */}
-
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='All Of Your Burning Book Marketing Questions- Answered!'
-        text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
-        subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={marketyourbook}
-        whychooseclass="marketyourbook"
-      /> */}
-
 
       {/* Customersatisfaction */}
       <Customersatisfaction />
@@ -385,40 +262,18 @@ to showcase your books and engage your audience.'
       <div className='datacloud'>
         <Aspiring
           title='Personalized Author Website Design Services For Every
-Storyteller!'
+              Storyteller!'
           text='We understand the everyday challenges and opportunities that come along with building a
-writing career, and we know the importance of having a website that does justice to your work.
-We are experts at creating perfect author website designs for writers who want a
-comprehensive showcase of their books. Our author website designers also help established
-authors with an existing audience to upgrade their online presence. Hire author website design
-services from Book Writing Experts to build a website that boosts your book brand!'
-
+              writing career, and we know the importance of having a website that does justice to your work.
+              We are experts at creating perfect author website designs for writers who want a
+              comprehensive showcase of their books. Our author website designers also help established
+              authors with an existing audience to upgrade their online presence. Hire author website design
+              services from Book Writing Experts to build a website that boosts your book brand!'
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
-
         />
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
   )
 }

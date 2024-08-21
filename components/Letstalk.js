@@ -12,7 +12,6 @@ import link from '../public/images/newlp/link.png'
 import email from '../public/images/newlp/email.png'
 import tel from '../public/images/newlp/tel.png'
 import Link from 'next/link'
-import Router from 'next/router'
 import { useRouter } from 'next/router';
 import Axios from "axios";
 import { useEffect } from 'react';
@@ -20,15 +19,16 @@ import { useState } from "react";
 
 
 const Letstalk = () => {
-  const [ip, setIP] = useState('');
-  const [score, setScore] = useState('Send Message');
+  const [ip, setIP] = useState("");
+  const [score, setScore] = useState("Send Message");
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
 
   // Function to load IP address from the API
   const getIPData = async () => {
     try {
-      const res = await Axios.get('https://ipwho.is/');
+      const res = await Axios.get("https://ipwho.is/");
       setIP(res.data);
     } catch (error) {
       console.error("Error fetching IP data:", error);
@@ -37,51 +37,57 @@ const Letstalk = () => {
 
   useEffect(() => {
     getIPData();
+    setPagenewurl(window.location.href)
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      pageUrl: currentRoute,
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value
+      }
     };
 
     const JSONdata = JSON.stringify(data);
-    setScore('Sending Data');
+    console.log(data);
+
+    setScore("Sending Data");
 
     try {
-      const emailResponse = await fetch('/api/email/route', {
-        method: 'POST',
+      const emailResponse = await fetch("https://brandsapi.cryscampus.com/api/v1/leads", {
+        method: "POST",
         headers: {
-          'Accept': 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
         },
         body: JSONdata,
       });
 
       if (emailResponse.status === 200) {
-        console.log('Email sent successfully');
+        console.log("Email sent successfully");
       }
 
       const currentdate = new Date().toLocaleString();
       let headersList = {
-        "Accept": "*/*",
+        Accept: "*/*",
         "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
         "Content-Type": "application/json",
       };
 
       let bodyContent = JSON.stringify({
-        "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
-        "Brand": "BOOK-WRITING-EXPERT",
-        "Page": currentRoute,
-        "Date": currentdate,
-        "Time": currentdate,
-        "JSON": JSONdata,
+        IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+        Brand: "BOOK-WRITING-EXPERT",
+        Page: currentRoute,
+        Date: currentdate,
+        Time: currentdate,
+        JSON: JSONdata,
       });
 
       await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
@@ -90,38 +96,37 @@ const Letstalk = () => {
         headers: headersList,
       });
 
-      const pagenewurl = currentRoute;
 
       const hubspotHeaders = new Headers();
       hubspotHeaders.append("Content-Type", "application/json");
 
       const hubspotBody = JSON.stringify({
-        "fields": [
+        fields: [
           {
-            "objectTypeId": "0-1",
-            "name": "email",
-            "value": e.target.email.value,
+            objectTypeId: "0-1",
+            name: "email",
+            value: e.target.email.value,
           },
           {
-            "objectTypeId": "0-1",
-            "name": "firstname",
-            "value": e.target.name.value,
+            objectTypeId: "0-1",
+            name: "firstname",
+            value: e.target.name.value,
           },
           {
-            "objectTypeId": "0-1",
-            "name": "phone",
-            "value": e.target.phone.value,
+            objectTypeId: "0-1",
+            name: "phone",
+            value: e.target.phone.value,
           },
           {
-            "objectTypeId": "0-1",
-            "name": "message",
-            "value": e.target.message.value,
+            objectTypeId: "0-1",
+            name: "message",
+            value: e.target.message.value,
           },
         ],
-        "context": {
-          "ipAddress": ip.IPv4,
-          "pageUri": pagenewurl,
-          "pageName": pagenewurl,
+        context: {
+          ipAddress: ip.IPv4,
+          pageUri: pagenewurl,
+          pageName: pagenewurl,
         },
       });
 
@@ -135,12 +140,11 @@ const Letstalk = () => {
       const hubspotResult = await hubspotResponse.text();
       console.log(hubspotResult);
 
-      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+      // window.location.href = "https://www.bookwritingexperts.com/thank-you";
     } catch (error) {
       console.error("Error submitting data:", error);
     }
   };
-
   return (
     <>
       <div className={styles.banner}>

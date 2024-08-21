@@ -6,26 +6,19 @@ import whychoose from '/public/images/whychoosebooks/bg-img.png'
 import Banner from '../../components/Banner'
 import Partners from '../../components/Partners'
 import Whychoosebook from '../../components/Whychoosebook'
-import Gotastory from '../../components/Gotastory'
-import Experts from '../../components/Experts'
+import Gotastory from '../../components/Gotastory' 
 import Whatourclients from '../../components/Whatourclients'
 import Requestafreequote from '../../components/Requestafreequote'
 import Stoppublish from '../../components/Stoppublish'
 import Customersatisfaction from '../../components/Customersatisfaction'
 import Strugglingtogive from '../../components/Strugglingtogive'
 import Illustrativebook from '../../components/Illustrativebook'
-import Onestepsolutions from '../../components/Onestepsolutions'
-import Script from 'next/script'
-import Stunningillustrations from '../../components/Stunningillustrations'
+import Onestepsolutions from '../../components/Onestepsolutions' 
 import Serviceproviders from '../../components/Serviceproviders'
 import banslider12 from '/public/images/illustrativebook/cartoon1.svg'
 import Providestunning from '../../components/Providestunning'
 
-
 function Ghostwritingservices() {
-
-
-
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Get Your</span>  <Link className='dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services">  Book Ghost Writing <br></br> Services </Link>  <span className=''> from Our Team of Top Ghost <br></br> Writing for Hire.</span> </h1>;
 
   const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
@@ -33,8 +26,6 @@ function Ghostwritingservices() {
   const dataspan = <h1 className='font50 color-white font-f hero-span'>  <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Book Writing Experts </Link>  Is  waiting for you to Ask for a    <Link className='fw700 dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services"> Professional Ghost Writing </Link> </h1>;
 
   const holddata = <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/ghostwriting-services">Ghost Writing  <br className="d-none d-xl-block" /> For Your Book</Link> </h2>
-
-
 
   const bannertext = [
     {
@@ -44,15 +35,7 @@ function Ghostwritingservices() {
       banlogo: homebannerlogos,
       banners: 'ghost',
     }
-  ]
-
-
-
-
-
-
-
-
+  ] 
 
   const schema2 = {
     "@context": "https://schema.org",
@@ -79,7 +62,6 @@ function Ghostwritingservices() {
   return (
     <>
 
-
       <Head>
 
         <meta charSet="UTF-8" />
@@ -105,9 +87,6 @@ function Ghostwritingservices() {
         <link rel="icon" href="/favicon.svg" />
 
 
-
-
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema2) }}
@@ -120,14 +99,8 @@ function Ghostwritingservices() {
         {/* <Schema /> */}
 
       </Head>
-
-
-      {/* googletagmanager */}
-
-
-
-      <main>
-        {/* banner components */}
+      {/* googletagmanager */} 
+      <main> 
 
         {/* banner components */}
 
@@ -143,7 +116,6 @@ function Ghostwritingservices() {
             processs={item.process}
           />
         )}
-
 
         {/* partners components */}
         <Partners />
@@ -171,15 +143,9 @@ function Ghostwritingservices() {
           cartoon='cartoon1'
         />
 
-
         <Providestunning
           title={holddata}
         />
-
-
-
-
-
 
         <Stoppublish
           title='Stop worrying about publishing books!'
@@ -196,15 +162,8 @@ function Ghostwritingservices() {
           whychoose={whychoose}
         />
 
-
         {/* Customersatisfaction */}
         <Customersatisfaction />
-
-
-
-
-
-
         <div className='datacloud'>
           <Onestepsolutions />
         </div>
@@ -212,9 +171,6 @@ function Ghostwritingservices() {
         <Serviceproviders
 
         />
-
-
-
         {/* Talk To Our Whatourclients! */}
         <Whatourclients />
 

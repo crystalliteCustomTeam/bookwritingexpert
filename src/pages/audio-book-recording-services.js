@@ -273,41 +273,6 @@ engage listeners worldwide!"
       {/* Dowecome */}
       <Dowecome title={geta} text={work} Dowecome="publishmybook" />
 
-      {/* Makestories */}
-      {/* <div className='dataset sliderImg'>
-        <Makestoriesnew
-          title='Our Latest Book Publishing Projects'
-          para='Let Our Book Publishing Team Help You'
-        />
-      </div> */}
-
-      {/* Bookpublishingservicesweoffer */}
-      {/* <Bookpublishingservicesweoffer /> */}
-
-      {/* <Ourprocess
-        title='What Is Our Process of Publishing a Book?'
-        text='Without compromising the quality of the finished product, we have developed a complex workflow procedure. We accomplish this through a thorough process that involves informing our clients at each project stage and requesting approvals. This makes the customer more aware of what`s happening at each stage. These six processes, which are listed below, comprise our self-publishing process.'
-        heading1='Manuscript Submission'
-        para1='The writer contacts us for submission of their full-length manuscript, while submitting, we discuss our publishing rules and sign the contract.'
-        num1='01'
-
-        heading2='Peers Review'
-        para2='Our experienced editors then review the manuscript and make the required changes with the writer’s permission.'
-        num2='02'
-
-        heading3='Formatting and Typesetting'
-        para3='After the manuscript is reviewed by editors, our experts do the formatting and add images.'
-        num3='03'
-
-        heading4='Book Production'
-        para4='We design the first copy of the book and take reviews from the writer. The rest of the books are produced on the same pattern while keeping all the important aspects into consideration.'
-        num4='04'
-
-        heading5='Marketing, Publishing, and Distribution'
-        para5='Before publishing, we spread awareness about the book to create demand. And Voila! The book is published now!'
-        num5='05'
-      /> */}
-
       {/* Stopworrying */}
       <div className="dataSetCo">
         <Stopworrying
@@ -317,17 +282,6 @@ engage listeners worldwide!"
           btn2="Talk to an expert"
         />
       </div>
-
-      {/* <section className={styles.publicservices}>
-        <Container>
-          <Row>
-            <Col>
-              <h2 className='color-blue fw700 font50 font-f t-center'>Why Choose Our Amazon Publishing Services?</h2>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/* Selfpublishing */}
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
@@ -358,49 +312,16 @@ engage listeners worldwide!"
       <Selfpublishing
         title="Who Should Consider Professional Audiobook Recording Services?"
         text="Authors of both fiction and non-fiction can greatly benefit from our audiobook production
-services. Working with a reputable audiobook recording company and utilizing our audiobook
-services for hire allows you to extend your reach to a larger audience. If you prefer to narrate
-your own story, our professional services can accommodate that. Additionally, authors who
-embrace the latest in technology and accessibility will find our services invaluable in making
-
-their work widely accessible."
+            services. Working with a reputable audiobook recording company and utilizing our audiobook
+            services for hire allows you to extend your reach to a larger audience. If you prefer to narrate
+            your own story, our professional services can accommodate that. Additionally, authors who
+            embrace the latest in technology and accessibility will find our services invaluable in making
+            their work widely accessible."
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='Our Willingness To Publish Knows No Bounds!'
-        text={text}
-        subtext={subtext}
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={typeofbooks}
-        whychooseclass="marketyourbook"
-      /> */}
-
-      {/* Selfpublishing */}
-      {/* <Selfpublishing
-        title='Want Articles That Boost Engagement And Expand Your Reach?'
-        text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={copy}
-        whychooseclass="marketyourbook"
-      /> */}
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='All Of Your Burning Book Marketing Questions- Answered!'
-        text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
-        subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={marketyourbook}
-        whychooseclass="marketyourbook"
-      /> */}
 
       {/* Customersatisfaction */}
       <Customersatisfaction />
@@ -417,16 +338,13 @@ their work widely accessible."
 
       <div className="datacloud">
         <Aspiring
-          title="Why Hire Audiobook Recording Services For Your Next
-
-Project?"
+          title="Why Hire Audiobook Recording Services For Your Next Project?"
           text="Smart authors know that 67% of audiobook listeners say they “read” more with audiobooks than
-traditional books. With busy lifestyles, people enjoy audiobooks while commuting, exercising, or
-doing chores. Plus, you can reach the visually impaired audience and expand globally, offering
-books in native languages or English fluently. With increased engagement, a growing market,
-multiple distribution channels, and higher royalties, hiring top audiobook recording services is a
-
-smart move for your next project."
+                traditional books. With busy lifestyles, people enjoy audiobooks while commuting, exercising, or
+                doing chores. Plus, you can reach the visually impaired audience and expand globally, offering
+                books in native languages or English fluently. With increased engagement, a growing market,
+                multiple distribution channels, and higher royalties, hiring top audiobook recording services is a
+                smart move for your next project."
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
         />

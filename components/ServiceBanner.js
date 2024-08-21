@@ -3,17 +3,12 @@ import styles from "@/styles/Banner.module.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
-import Router from "next/router";
 import Axios from "axios";
-import Slider from "react-slick";
 import Modal from "react-bootstrap/Modal";
 import { useState, useEffect } from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 
-// images
-import banslider1 from "../public/images/bannerimages/banslider1.png";
-import banslider3 from "../public/images/bannerimages/banslider3.png";
-import banslider4 from "../public/images/bannerimages/banslider4.png";
+// images 
 import Star from "../public/images/amazonbookpublishing/star.png";
 import { useRouter } from "next/router";
 
@@ -27,6 +22,7 @@ const ServiceBanner = (props) => {
   const [score, setScore] = useState('Get A Free Quote');
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -40,25 +36,30 @@ const ServiceBanner = (props) => {
 
   useEffect(() => {
     getIPData();
+    setPagenewurl(window.location.href)
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
+    e.preventDefault(); 
     const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      services: e.target.services.value,
-      pageUrl: currentRoute,
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value,
+        services: e.target.services.value,
+      }
     };
 
     const JSONdata = JSON.stringify(data);
+    console.log(data);
+    
     setScore('Sending Data');
 
     try {
-      const res = await fetch('/api/email/route', {
+      const res = await fetch('https://brandsapi.cryscampus.com/api/v1/leads', {
         method: 'POST',
         headers: {
           Accept: 'application/json, text/plain, */*',
@@ -128,8 +129,8 @@ const ServiceBanner = (props) => {
         ],
         context: {
           ipAddress: ip.IPv4,
-          pageUri: currentRoute,
-          pageName: currentRoute,
+          pageUri: pagenewurl,
+          pageName: pagenewurl,
         },
         legalConsentOptions: {
           consent: {

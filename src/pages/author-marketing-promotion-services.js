@@ -1,8 +1,7 @@
 import React from 'react'
 import homebannerlogos from '/public/images/bannerimages/logos.png'
 import Banner from '../../components/Banner'
-import Head from 'next/head'
-import Partners from '../../components/Partners'
+import Head from 'next/head' 
 import Makestoriesnew from '../../components/Makestoriesnew'
 import Lululogos from '../../components/Lululogos'
 import Aspiring from '../../components/Aspiring'
@@ -33,13 +32,9 @@ const Authormarketingpromotionservices = () => {
       discuss: 'LET S DISCUSS',
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
-      banners: 'authormarketingpromotionservices',
-
-
-
+      banners: 'authormarketingpromotionservices', 
     }
   ]
-
 
   const whybookpublishingdata = [
 
@@ -65,11 +60,6 @@ const Authormarketingpromotionservices = () => {
     },
 
   ]
-
-
-
-
-
   const reasons = [
 
     {
@@ -109,8 +99,6 @@ const Authormarketingpromotionservices = () => {
       col: '6',
       classnum: 'number',
     },
-
-
   ]
 
 
@@ -122,8 +110,6 @@ const Authormarketingpromotionservices = () => {
 
   const posdata = <span>Let Our Best <Link className='textdocationnone color-blue hover' href='/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link> Service Providers Handle All Your Publishing Troubles!</span>
 
-
-
   const fine = [
 
     {
@@ -131,8 +117,6 @@ const Authormarketingpromotionservices = () => {
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
       class: 'fintop',
-
-
     },
 
     {
@@ -140,8 +124,6 @@ const Authormarketingpromotionservices = () => {
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
       class: 'fintop',
-
-
     },
 
     {
@@ -149,29 +131,16 @@ const Authormarketingpromotionservices = () => {
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
       class: 'fintop',
-
-
     },
-
-
   ]
 
   const dateset = <span>Let’s <Link className='textdocationnone color-blue hover' href='/book-publishing-services'> Publish Your <br></br> Masterpiece</Link>  Together! </span>
 
-
   return (
     <>
       <Head>
-
-     
-
         <link rel="icon" href="/favicon.svg" />
-
       </Head>
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -183,45 +152,26 @@ const Authormarketingpromotionservices = () => {
           homebanlogos={item.banlogo}
           bannershome={item.banners}
         />
-      )}
-
-
-      {/* partners components */}
-
-
-
-
+      )} 
       {/* Dowecome */}
       <Dowecome
         title={geta}
         text={work}
-        Dowecome="publishmybook"
-
-      />
-
-
-
-
+        Dowecome="publishmybook" 
+      /> 
       <Stopworrying
         title='Stop worrying about publishing books!'
         subtitle={posdata}
         btn1='Get a free Proposal'
         btn2='Talk to an expert'
-      />
-
-
-
-
-
+      /> 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
             <h2 className='color-lightgray   font48   t-center font-f mb-2'>Our Approach</h2>
 
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Our Mission Is To Maximize Value For Our Authors With Online <Link className='textdocationnone color-blue hover' href='/book-publishing-services'>Book Marketing</Link></p>
-
           </Row>
-
           <Row className='gy-5'>
             {fine.map((item, i) =>
               <Finetoothedbook key={i}
@@ -258,12 +208,7 @@ const Authormarketingpromotionservices = () => {
         heading5='Marketing, Publishing, and Distribution'
         para5='Before publishing, we spread awareness about the book to create demand. And Voila! The book is published now!'
         num5='05'
-
-
       />
-
-
-
       {/* Aspiring */}
       <Aspiring
         title={dateset}
@@ -273,24 +218,14 @@ const Authormarketingpromotionservices = () => {
         discuss="LET'S DISCUSS"
         img={together}
       />
-
-
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
-
-
-
-
-
-
-
 
       {/* Makestories */}
       <Makestoriesnew
         title='A Quick Look At Our Spectacular Author Marketing Projects'
         para='With extensive knowledge and creativity, our marketing experts transform your career and set it up for success!'
       />
-
 
       {/* Whybookpublishing */}
       <div className={styles.whybookpublishing}>
@@ -301,9 +236,7 @@ const Authormarketingpromotionservices = () => {
             <p className='font15 fw500 colortextgrey t-center pb-5'>
               In general, the purpose of the author is to entertain the readers with the story, inform them of reality, and persuade them of the truth. But with digital marketing on the rise, this purpose has an additional aspect—to market themselves for readership. The author's skill is reflected in the narrative and style they write in, but their readership is built when they are marketed well. With book writing expert's author promotion services, we create captivation ads for authors. Whether they are Facebook ads for authors or Amazon ads for authors, we deliver!
             </p>
-
           </Row>
-
           <Row>
             {whybookpublishingdata.map((item, i) =>
               <Whybookpublishing key={i}
@@ -319,13 +252,9 @@ const Authormarketingpromotionservices = () => {
       {/* Lululogos components */}
       <Lululogos />
 
-
-
       {/* Stillonthefence component */}
 
       <Container className='still'>
-
-
         <Row >
           <h2 className='font48 fw900 color-blue t-center font-f mb-5'>Why Our Author Marketing Services Are Ideal For You</h2>
         </Row>
@@ -342,20 +271,12 @@ const Authormarketingpromotionservices = () => {
 
         </Row>
       </Container>
-
-
-
-
-
-
       {/* Why Choose book writing expert? */}
       <Whychoosebook
         title="Our Efficient Author Marketing Process"
         text="The book writing expert's 5-step author marketing process is designed to help authors connect with their audience, build a platform, and sell more books."
         whychoose={ourefficientauthor}
       />
-
-
       {/* Aspiring */}
       <Aspiring
         title='Create the right buzz for every title you pen down with our Author Marketing Promotion Services!'
@@ -363,14 +284,6 @@ const Authormarketingpromotionservices = () => {
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
       />
-
-
-
-
-
-
-
-
     </>
   )
 }

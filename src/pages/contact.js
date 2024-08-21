@@ -2,8 +2,6 @@ import React from 'react'
 import styles from '@/styles/Contact.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Link from 'next/link'
-import Head from 'next/head'
-import Router from 'next/router';
 import Axios from "axios";
 import { useEffect } from 'react';
 import { useState } from "react";
@@ -18,14 +16,20 @@ const Contact = () => {
     const [checkboxes, setCheckboxes] = useState([]);
     const router = useRouter();
     const currentRoute = router.pathname;
+    const [pagenewurl, setPagenewurl] = useState('')
 
     const getIPData = async () => {
-        const res = await Axios.get('https://ipwho.is/');
-        setIP(res.data);
+        try {
+            const res = await Axios.get("https://ipwho.is/");
+            setIP(res.data);
+        } catch (error) {
+            console.error("Error fetching IP data:", error);
+        }
     };
 
     useEffect(() => {
         getIPData();
+        setPagenewurl(window.location.href)
     }, []);
 
     const handleOptionChange3 = (e) => {
@@ -38,20 +42,25 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const data = {
-            name: e.target.name.value,
-            email: e.target.email.value,
-            phone: e.target.phone.value,
-            zip: e.target.zip.value,
-            checknow: checkboxes,
-            message: e.target.message.value,
-            pageUrl: currentRoute,
+            page_url: pagenewurl,
+            user_ip: `${ip.ip}`,
+            lead_data: {
+                name: e.target.name.value,
+                email: e.target.email.value,
+                phone: e.target.phone.value,
+                zip: e.target.zip.value,
+                services: checkboxes.join(),
+                message: e.target.message.value
+            }
         };
 
         const JSONdata = JSON.stringify(data);
+        console.log(data);
+
         setScore('Sending Data');
 
         try {
-            const response = await fetch('/api/contact/route', {
+            const response = await fetch('https://brandsapi.cryscampus.com/api/v1/leads', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json, text/plain, */*',
@@ -133,29 +142,22 @@ const Contact = () => {
             console.log(result);
 
             // Redirect after successful submission
-            window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+            // window.location.href = 'https://www.bookwritingexperts.com/thank-you';
         } catch (error) {
             console.error('Error:', error);
         }
     };
 
-
     return (
         <>
 
-
-
             <div className={styles.contactbg}>
-
                 <Container>
                     <Row className='gy-4'>
                         <Col md={5}>
-
-
                             <h2 className='color-blue font50 fw700 font-f'>
                                 Have your story read.
                                 Get published.
-
                             </h2>
                             <div className={`${styles.published} pt-5`}>
 
@@ -169,9 +171,7 @@ const Contact = () => {
                                     <span className=''>Email:</span> <Link href='mailto:info(@)bookwritingcube(.)com' className={` fw700 color-white textdocationnone`}>
                                         <Image src={email2} alt="Book Writing Experts" /> </Link>
                                 </p>
-
                             </div>
-
 
                             <p className='fw500 font20 color-white font-f mt-5'>
                                 Unable to reach us? Fill out the  <Link href='#contpost' className='textdocationnone color-white'>form below</Link>
@@ -181,34 +181,21 @@ const Contact = () => {
 
                         <Col md={1}></Col>
                         <Col md={6}>
-
-
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.6200791070223!2d-118.25944002448333!3d34.053615473156526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c7b26b2805e7%3A0x631167a0f496a896!2sUnion%20Bank%20Plaza%2C%20445%20S%20Figueroa%20St%2C%20Los%20Angeles%2C%20CA%2090071%2C%20USA!5e0!3m2!1sen!2s!4v1681986458438!5m2!1sen!2s" width='100%' height='252' ></iframe>
-
-
-
                             <h4 className='font-f fw400 font20 color-white t-center mt-3' >(Operations)</h4>
                             <p className='font-f fw300 mt-3 color-white t-center' >
                                 445 S.Figueroa Street, Los Angeles, CA 90071
                             </p>
-
-
                         </Col>
                     </Row>
                 </Container>
-
             </div>
-
-
             <div className={styles.contfom}>
 
                 <Container className='contpost' id='contpost'>
                     <Row className={styles.conrow}>
                         <Col md={9}>
                             <h2 className='t-center fw700 font50 color-blue font-f mb-5'> Fill Out The Form Below We Will Contact You Promptly</h2>
-
-
-
                             <form className={styles.label2} onSubmit={handleSubmit}>
 
                                 <Row className='gy-3'>
@@ -230,7 +217,7 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('bookwriting--I want to hire a professional to write or rewrite my book')}
                                                 onChange={handleOptionChange3}
                                                 value='bookwriting--I want to hire a professional to write or rewrite my book' />
@@ -241,7 +228,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
 
                                                 checked={checkboxes.includes('Editing--I have written a manuscript and would like a professional to review and/or edit it')}
                                                 onChange={handleOptionChange3}
@@ -254,7 +241,7 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
 
                                                 checked={checkboxes.includes('Book Coaching--I want to write my book on my own, but with the help of a professional to guide me')}
                                                 onChange={handleOptionChange3}
@@ -266,7 +253,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
 
                                                 checked={checkboxes.includes('Cultural Accuracy Reading--I would like a professional to review my manuscript and ensure it isn’t offensive, inaccurate, or perpetuating harmful stereotypes')}
                                                 onChange={handleOptionChange3}
@@ -282,7 +269,7 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Book Proposal')}
                                                 onChange={handleOptionChange3}
                                                 value='Book Proposal' />
@@ -293,7 +280,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Beta Reader Services')}
                                                 onChange={handleOptionChange3}
                                                 value='Beta Reader Services' />
@@ -305,7 +292,7 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Other')}
                                                 onChange={handleOptionChange3}
                                                 value='Other' />
@@ -326,7 +313,7 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Business')}
                                                 onChange={handleOptionChange3}
                                                 value='Business' />
@@ -337,7 +324,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Memoir/Biography')}
                                                 onChange={handleOptionChange3}
                                                 value='Memoir/Biography' />
@@ -349,7 +336,7 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Health')}
                                                 onChange={handleOptionChange3}
                                                 value='Health' />
@@ -360,7 +347,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Self-Help/Personal Development')}
                                                 onChange={handleOptionChange3}
                                                 value='Self-Help/Personal Development' />
@@ -375,7 +362,7 @@ const Contact = () => {
                                 <Row className='gy-3'>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Fiction')}
                                                 onChange={handleOptionChange3}
                                                 value='Fiction' />
@@ -386,7 +373,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('General Nonfiction')}
                                                 onChange={handleOptionChange3}
                                                 value='General Nonfiction' />
@@ -398,7 +385,7 @@ const Contact = () => {
 
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Children’s')}
                                                 onChange={handleOptionChange3}
                                                 value='Children’s' />
@@ -409,7 +396,7 @@ const Contact = () => {
                                     </Col>
                                     <Col md={3}>
                                         <div className='form-check'>
-                                            <input className='form-check-input' type='checkbox' name='checknow'
+                                            <input className='form-check-input' type='checkbox' name='services'
                                                 checked={checkboxes.includes('Others')}
                                                 onChange={handleOptionChange3}
                                                 value='Others' />

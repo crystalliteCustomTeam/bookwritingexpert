@@ -4,32 +4,22 @@ import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // images
 import homebannerlogos from '/public/images/bannerimages/logos.png'
-import typeofbooks from '/public/images/selfpublishingservices/1.jpg'
-import copy from '/public/images/selfpublishingservices/2.jpg'
-import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
 import publishmybook from '/public/images/selfpublishingservices/4.jpg'
 // components
 import Banner from '../../components/Banner'
 import Dowecome from '../../components/Dowecome'
 import Stopworrying from '../../components/Stopworrying'
 import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
 import Selfpublishing from '../../components/Selfpublishing'
 import Lululogos from '../../components/Lululogos'
 import Customersatisfaction from '../../components/Customersatisfaction'
-import Bookpublishingservicesweoffer from '../../components/Bookpublishingservicesweoffer'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 import mission1 from '/public/images/mission/1.png'
 import mission2 from '/public/images/mission/2.png'
 import mission3 from '/public/images/mission/3.png'
 import Finetoothedbook from '../../components/Finetoothedbook'
-
-
-
 
 const blogWritingService = () => {
   const text = <span>We write, market, and review books of all kinds.</span>;
@@ -47,17 +37,9 @@ const blogWritingService = () => {
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
-
-
-
     }
   ]
-
-
-
-
   const geta = <span>Take Off The Marketing Strain From Your Shoulders With Our <Link className='textdocationnone color-blue hover' href="/blog-writing-service/">Online Blog Writing Services!</Link></span>
-
 
   const work = <>
     <span>To help authors and business owners nail their marketing efforts, we offer informative and engaging content, better known as blog writing. We know you wear many hats, and marketing may serve as an additional chore on your plate; however, not anymore. Book Writing Experts offers high-quality content more quickly than you could on your own, signifying that your blog section will stay fresh and updated with new content on a regular basis.</span>
@@ -69,14 +51,6 @@ const blogWritingService = () => {
 
     Brand’s Voice!
   </span>
-
-
-
-
-
-
-
-
 
   const fine = [
 
@@ -94,8 +68,6 @@ const blogWritingService = () => {
       title: 'Keep Your Content Confidential and Secure',
       text: 'As a top-grade blog writing company, we guarantee 100% confidentiality for all our clients. Throughout the content creation process, your information remains secure, and you retain full authorship rights. Trust our professional blog writing services to protect your content and ensure your peace of mind.',
       class: 'fintop',
-
-
     },
 
     {
@@ -103,10 +75,7 @@ const blogWritingService = () => {
       title: 'Stand Out from the Crowd with Exceptional Content',
       text: "In various industries and business areas, our writer's skills, knowledge, and experience make every word count. Professional writers ensure your content is exceptional, helping your brand stand out from the competition and capture your audience's attention.",
       class: 'fintop',
-
-
     },
-
 
   ]
   const websiteSchemaBlogWritingServices = {
@@ -208,9 +177,6 @@ for you in no time." />
 
       </Head>
 
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -227,79 +193,23 @@ for you in no time." />
           processs={item.process}
         />
       )}
-
-
-
-
       {/* Dowecome */}
       <Dowecome
         title={geta}
         text={work}
         Dowecome="publishmybook"
-
-      />
-
-
-      {/* Makestories */}
-      {/* <div className='dataset sliderImg'>
-        <Makestoriesnew
-          title='Our Latest Book Publishing Projects'
-          para='Let Our Book Publishing Team Help You'
-        />
-      </div> */}
-
-      {/* Bookpublishingservicesweoffer */}
-      {/* <Bookpublishingservicesweoffer /> */}
-
-      {/* <Ourprocess
-        title='What Is Our Process of Publishing a Book?'
-        text='Without compromising the quality of the finished product, we have developed a complex workflow procedure. We accomplish this through a thorough process that involves informing our clients at each project stage and requesting approvals. This makes the customer more aware of what`s happening at each stage. These six processes, which are listed below, comprise our self-publishing process.'
-        heading1='Manuscript Submission'
-        para1='The writer contacts us for submission of their full-length manuscript, while submitting, we discuss our publishing rules and sign the contract.'
-        num1='01'
-
-        heading2='Peers Review'
-        para2='Our experienced editors then review the manuscript and make the required changes with the writer’s permission.'
-        num2='02'
-
-        heading3='Formatting and Typesetting'
-        para3='After the manuscript is reviewed by editors, our experts do the formatting and add images.'
-        num3='03'
-
-        heading4='Book Production'
-        para4='We design the first copy of the book and take reviews from the writer. The rest of the books are produced on the same pattern while keeping all the important aspects into consideration.'
-        num4='04'
-
-        heading5='Marketing, Publishing, and Distribution'
-        para5='Before publishing, we spread awareness about the book to create demand. And Voila! The book is published now!'
-        num5='05'
-      /> */}
-
-
+      /> 
       {/* Stopworrying */}
       <div className='dataSetCo'>
         <Stopworrying
           title2={dateset}
           subtitle3='Our expert blog post writing services focus on your industry, providing pertinent information for
-your audience. We create content aligned with your marketing persona, making it attention-
-grabbing and highly effective.'
+        your audience. We create content aligned with your marketing persona, making it attention-
+        grabbing and highly effective.'
           btn1='Get a free Proposal'
           btn2='Talk to an expert'
         />
       </div>
-
-
-
-      {/* <section className={styles.publicservices}>
-        <Container>
-          <Row>
-            <Col>
-              <h2 className='color-blue fw700 font50 font-f t-center'>Why Choose Our Amazon Publishing Services?</h2>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/* Selfpublishing */}
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
@@ -307,9 +217,7 @@ grabbing and highly effective.'
             <h3 className='color-lightgray   font25   t-center font-f mb-2'>Our Approach</h3>
 
             <h2 className='font50 font-f fw500 colortextgrey t-center pb-2'>Why You Need Our Experts For <br /> <Link className='textdocationnone color-blue hover' href="/blog-writing-service/">Blog Writing Service</Link></h2>
-
           </Row>
-
           <Row className='gy-5'>
             {fine.map((item, i) =>
               <Finetoothedbook key={i}
@@ -325,55 +233,19 @@ grabbing and highly effective.'
       </div>
       <Selfpublishing
         title="Get 5X More Engagement with Our Expert Blog Post
-
-Writing Services!"
+        Writing Services!"
         text='Blogging results in 67% more leads than non-blogging sites and offers 97% more links. Our blog
-writers deliver value-driven content that strengthens your brand voice and effectively targets
-your audience. Additionally, blogging can double your email traffic by 50%, driving significant
-engagement.'
+        writers deliver value-driven content that strengthens your brand voice and effectively targets
+        your audience. Additionally, blogging can double your email traffic by 50%, driving significant
+        engagement.'
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
 
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='Our Willingness To Publish Knows No Bounds!'
-        text={text}
-        subtext={subtext}
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={typeofbooks}
-        whychooseclass="marketyourbook"
-      /> */}
-
-      {/* Selfpublishing */}
-      {/* <Selfpublishing
-        title='Want Articles That Boost Engagement And Expand Your Reach?'
-        text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={copy}
-        whychooseclass="marketyourbook"
-      /> */}
-
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='All Of Your Burning Book Marketing Questions- Answered!'
-        text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
-        subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={marketyourbook}
-        whychooseclass="marketyourbook"
-      /> */}
-
-
       {/* Customersatisfaction */}
       <Customersatisfaction />
-
 
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
@@ -382,47 +254,22 @@ engagement.'
       <div>
         <Lululogos />
       </div>
-
-
       {/* Aspiring */}
 
       <div className='datacloud'>
         <Aspiring
           title='Stand Out Online and Achieve Higher Rankings With the
-
-Best Blog Writing Services!'
+            Best Blog Writing Services!'
           text='We, as one of the leading blog writing companies, ensure your content ranks higher on search
-engines. Our attention-grabbing blog posts target your audience and integrate keyword
-searches seamlessly into your business plan and editorial calendar. We transform complex
-topics into engaging information, enhancing your marketing persona and effectively promoting
-your goods or services. Trust our tactics to boost your online presence and drive success..'
-
+            engines. Our attention-grabbing blog posts target your audience and integrate keyword
+            searches seamlessly into your business plan and editorial calendar. We transform complex
+            topics into engaging information, enhancing your marketing persona and effectively promoting
+            your goods or services. Trust our tactics to boost your online presence and drive success..'
           number="(855) 500 0057"
           discuss="LET'S DISCUSS"
 
         />
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div> 
     </>
   )
 }

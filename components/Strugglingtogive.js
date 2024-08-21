@@ -42,8 +42,6 @@ const Strugglingtogive = (props) => {
             <Container>
                 <Row className={` ${styles.forent} gy-4`}>
                     <Col md={7}>
-
-
                         {props.titleills ?
                             props.titleills
                             :

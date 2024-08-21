@@ -31,9 +31,6 @@ const Childrenbookillustrationsservices = () => {
       homebannernum: '(855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
-
-
-
     }
   ]
 
@@ -70,11 +67,7 @@ const Childrenbookillustrationsservices = () => {
       classnum: 'number1',
 
     },
-
-
   ]
-
-
 
   const geta = <span>Get A Customized Solution By <Link className='fw700 color-blue hover textdocationnone' href='/book-publishing-services'> Best Publishing Services </Link></span>
 
@@ -84,17 +77,13 @@ const Childrenbookillustrationsservices = () => {
 
   const posdata = <span>Let Our Best <Link className='textdocationnone color-blue hover fw700' href='/book-publishing-services'>Amazon Kindle Direct Publishing (KDP)</Link> Service Providers Handle All Your Publishing Troubles!</span>
 
-
-
   const fine = [
 
     {
       img: mission1,
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
-      class: 'fintop',
-
-
+      class: 'fintop', 
     },
 
     {
@@ -102,8 +91,6 @@ const Childrenbookillustrationsservices = () => {
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
       class: 'fintop',
-
-
     },
 
     {
@@ -111,33 +98,19 @@ const Childrenbookillustrationsservices = () => {
       title: 'Outstanding Marketing Campaigns',
       text: 'Our team has the expertise, experience and know-how to run excellent book marketing campaigns. We are familiar with the best strategies to target the right prospects to sell your books.',
       class: 'fintop',
-
-
     },
-
 
   ]
 
   const dateset = <span className='fw500'>Let’s <Link className='textdocationnone fw700 color-blue hover' href='/book-publishing-services'> Publish Your <br></br> Masterpiece</Link>  Together! </span>
 
-
-
-
   return (
     <>
       <Head>
-
-
-     
-
         <link rel="icon" href="/favicon.svg" />
         <title>Hire The Best Children Book Publication Services - Book Writing Experts</title>
         <meta name="description" content="" />
       </Head>
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -153,13 +126,6 @@ const Childrenbookillustrationsservices = () => {
 
 
       {/* partners components */}
-
-
-
-
-
-
-
       {/* Dowecome */}
       <Dowecome
         title={geta}
@@ -182,10 +148,6 @@ const Childrenbookillustrationsservices = () => {
         btn1='Get a free Proposal'
         btn2='Talk to an expert'
       />
-
-
-
-
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
@@ -232,22 +194,7 @@ const Childrenbookillustrationsservices = () => {
         heading5='We Actively Seek Feedback:'
         para5='At this stage of the process, the illustrator would send the client what they had put together on their storyboard or show it to them in person to receive their feedback. They attentively consider the input they receive after releasing the first artwork and make an effort to take it into consideration.'
         num5='05'
-
-
       />
-
-      {/* Aspiring */}
-      {/* <div className='dataset'>
-<Aspiring
- title= {dateset}
- text= 'It’s time you get book marketing experts on board and take their help in marketing your book. Your story needs to be heard by everyone; make sure you are not going for the shady agency and putting your book reputation in jeopardy.'
- subtext= 'Trust the marketing professionals for it, do not risk it!'
- number="(855) 500 0057"
- discuss="LET'S DISCUSS"
- img= {together}
-/>
-</div> */}
-
 
       {/* Stopworrying */}
       <div className='dataSetCo'>
@@ -262,38 +209,7 @@ const Childrenbookillustrationsservices = () => {
 
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* Lululogos components */}
-      {/* <Lululogos/> */}
-
-
-
+      
       {/* Stillonthefence component */}
       <div className={styles.stillbookwritingservices}>
         <Container >
@@ -315,12 +231,7 @@ const Childrenbookillustrationsservices = () => {
 
           </Row>
         </Container>
-
       </div>
-
-
-
-
       {/* Selfpublishing */}
 
       <Selfpublishing
@@ -332,19 +243,7 @@ const Childrenbookillustrationsservices = () => {
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
-
-
-
-
-
-      {/* Why Choose book writing expert? */}
-      {/* <Whychoosebook
-   title="5 Steps To Our Children's Book Illustrations Process!"
-  text="We at book writing expert have a detailed five-step process to getting your Children's Book Illustrations as good as you want them to be. This process is pretty much similar for illustrators all over the world, and we appreciate it if we educate our clients beforehand on what goes on in the entire illustration process."
-  whychoose= {stepstoour}
- /> */}
-
-
+      
       {/* Aspiring */}
       <div className='datacloud'>
         <Aspiring
@@ -354,13 +253,6 @@ const Childrenbookillustrationsservices = () => {
           discuss="LET'S DISCUSS"
         />
       </div>
-
-
-
-
-
-
-
     </>
   )
 }

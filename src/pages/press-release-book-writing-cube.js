@@ -20,19 +20,11 @@ const Announcement = () => {
         }
     ]
 
-
-
     return (
 
         <>
-
             <Head>
-
-
-
                 <link rel="icon" href="/favicon.svg" />
-
-
             </Head>
 
             {/* banner components */}
@@ -46,9 +38,7 @@ const Announcement = () => {
                 />
             )}
 
-
             <div className={styles.announcement}>
-
                 <Container>
                     <Row>
                         <Col md={12}>
@@ -141,10 +131,7 @@ const Announcement = () => {
                         </Col>
                     </Row>
                 </Container>
-
             </div>
-
-
             {/* Aspiring */}
             <Aspiring
                 title='Professional Book Writing and Publishing We Give New Life To Your Words'
@@ -152,8 +139,6 @@ const Announcement = () => {
                 number="(855) 500 0057"
                 discuss="LET'S DISCUSS"
             />
-
-
         </>
     )
 }

@@ -38,8 +38,6 @@ import { useState } from 'react'
 
 
 const Bookpublishingservices = () => {
-
-
   var bookrecordingprojects = {
     dots: true,
     arrows: false,
@@ -72,11 +70,6 @@ const Bookpublishingservices = () => {
     };
   }, []);
 
-
-
-
-
-
   const newSpan = <h1 className='font50  color-white font-f hero-span'> Leave Your Mark Forever: Our <Link className='textdocationnone fw700 color-blue hover' href="/book-marketing-services"> Book Marketing Services </Link> <span className='font50   color-white font-f hero-span'>Will Ensure Your Book To Leave a Lasting Impression!</span>   </h1>;
 
   const discuss = <span>Market Your Book Now!</span>
@@ -89,10 +82,6 @@ const Bookpublishingservices = () => {
       homebannernum: 'Call Our Team At (855) 500 0057',
       banlogo: homebannerlogos,
       banners: 'bookpromotionservices',
-
-
-
-
     }
   ]
 
@@ -173,18 +162,8 @@ const Bookpublishingservices = () => {
 
   const challenging = <span>Ready to take your book from 'just another story' to a literary sensation? Join forces with us and let's create a <Link className='textdocationnone color-blue hover1' href='/book-marketing-services'>book marketing</Link> strategy that will make your book stand out in a sea of competitors. Don't go at it alone - let's make your story the talk of the town!</span>
 
-
-
-
-
-
   return (
     <>
-   
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -220,10 +199,7 @@ const Bookpublishingservices = () => {
         subtitle={posdata}
         btn1='Get a free Proposal'
         btn2='Chat With Our Book Marketing Experts Now!'
-      />
-
-
-
+      /> 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
@@ -231,10 +207,7 @@ const Bookpublishingservices = () => {
 
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Commence on Literary Triumph with Our Online <Link className='textdocationnone color-blue hover fw700' href='/book-marketing-services'>  Book Marketing Services</Link> Attracting New Readers!</p>
 
-          </Row>
-
-
-
+          </Row> 
           {isSliderActive ?
             <Slider {...bookrecordingprojects}>
               {fine.map((item, i) =>
@@ -263,9 +236,7 @@ const Bookpublishingservices = () => {
           }
         </Container>
       </div>
-
-
-
+ x
       <Ourprocess
         title={potential}
         text={marketing}
@@ -300,12 +271,7 @@ const Bookpublishingservices = () => {
           btn1='Get a free Proposal'
           btn2='Chat With our Experts!'
         />
-      </div>
-
-
-
-
-
+      </div> 
       <section className={styles.servicetitle}>
         <Container>
           <Row>
@@ -379,30 +345,7 @@ const Bookpublishingservices = () => {
           number="Call Our Team - (855) 500 0057"
         />
 
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div> 
     </>
   )
 }

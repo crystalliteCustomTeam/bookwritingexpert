@@ -8,81 +8,133 @@ import { useRouter } from 'next/router';
 import Axios from "axios";
 import { useEffect } from 'react';
 import { useState } from "react";
-
-
 const Banner = () => {
-  const [ip, setIP] = useState('');
-  //creating function to load ip address from the API
-  const getIPData = async () => {
-    const res = await Axios.get('https://ipwho.is/');
-    setIP(res.data);
-  }
-  useEffect(() => {
-    getIPData()
-  }, [])
-
-  const [score, setScore] = useState('SUBMIT');
-
+  const [ip, setIP] = useState("");
+  const [score, setScore] = useState("Send Message");
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
+
+  // Function to load IP address from the API
+  const getIPData = async () => {
+    try {
+      const res = await Axios.get("https://ipwho.is/");
+      setIP(res.data);
+    } catch (error) {
+      console.error("Error fetching IP data:", error);
+    }
+  };
+
+  useEffect(() => {
+    getIPData();
+    setPagenewurl(window.location.href)
+  }, []);
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    e.preventDefault()
     const data = {
-      name: e.target.firstname.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      pageUrl: currentRoute,
-    }
-
-    const JSONdata = JSON.stringify(data)
-
-    setScore('Sending Data');
-
-    fetch('api/popup/route', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-      body: JSONdata
-    }).then((res) => {
-      console.log(`Response received ${res}`)
-      if (res.status === 200) {
-        console.log(`Response Successed ${res}`)
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value
       }
-    })
+    };
 
-    var currentdate = new Date().toLocaleString() + ''
-    let headersList = {
-      "Accept": "*/*",
-      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-      "Content-Type": "application/json"
+    const JSONdata = JSON.stringify(data);
+    console.log(data);
+    
+    setScore("Sending Data");
+
+    try {
+      const emailResponse = await fetch("https://brandsapi.cryscampus.com/api/v1/leads", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSONdata,
+      });
+
+      if (emailResponse.status === 200) {
+        console.log("Email sent successfully");
+      }
+
+      const currentdate = new Date().toLocaleString();
+      let headersList = {
+        Accept: "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        Authorization: "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+        "Content-Type": "application/json",
+      };
+
+      let bodyContent = JSON.stringify({
+        IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
+        Brand: "BOOK-WRITING-EXPERT",
+        Page: currentRoute,
+        Date: currentdate,
+        Time: currentdate,
+        JSON: JSONdata,
+      });
+
+      await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList,
+      });
+
+
+      const hubspotHeaders = new Headers();
+      hubspotHeaders.append("Content-Type", "application/json");
+
+      const hubspotBody = JSON.stringify({
+        fields: [
+          {
+            objectTypeId: "0-1",
+            name: "email",
+            value: e.target.email.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "firstname",
+            value: e.target.name.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "phone",
+            value: e.target.phone.value,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "message",
+            value: e.target.message.value,
+          },
+        ],
+        context: {
+          ipAddress: ip.IPv4,
+          pageUri: pagenewurl,
+          pageName: pagenewurl,
+        },
+      });
+
+      const hubspotResponse = await fetch("https://api.hsforms.com/submissions/v3/integration/submit/24288885/76cb04eb-d5c5-4ad8-975e-e852f0ba416f", {
+        method: "POST",
+        headers: hubspotHeaders,
+        body: hubspotBody,
+        redirect: "follow",
+      });
+
+      const hubspotResult = await hubspotResponse.text();
+      console.log(hubspotResult);
+
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
+    } catch (error) {
+      console.error("Error submitting data:", error);
     }
-
-    let bodyContent = JSON.stringify({
-      "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
-      "Brand": "BOOK-WRITING-EXPERT",
-      "Page": `${currentRoute}`,
-      "Date": currentdate,
-      "Time": currentdate,
-      "JSON": JSONdata,
-    });
-
-    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
-      method: "POST",
-      body: bodyContent,
-      headers: headersList
-    });
-    const { pathname } = Router
-    if (pathname == pathname) {
-      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
-    }
-
-  }
+  };
 
   return (
     <>
@@ -101,7 +153,7 @@ const Banner = () => {
                 <form onSubmit={handleSubmit}>
                   <div className={styles.publish}>
                     <div>
-                      <input type="text" required class="" name="firstname" placeholder="Full Name*" />
+                      <input type="text" required class="" name="name" placeholder="Full Name*" />
                     </div>
                     <div>
                       <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" class="" required name="phone" placeholder="Phone*" />
@@ -115,7 +167,7 @@ const Banner = () => {
                       <input type="text" class="" required name="message" placeholder="Details" />
                     </div>
                   </div>
-                  <input type="submit" class="" required name="name" value="Send Message" />
+                  <input type="submit" value={score} />
                 </form>
               </div>
               <div className={styles.folpo}>

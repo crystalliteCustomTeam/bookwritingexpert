@@ -29,9 +29,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react'
 import { useState } from 'react'
 
-
-
-
 const Bookpublishingservices = () => {
 
   var bookrecordingprojects = {
@@ -66,8 +63,6 @@ const Bookpublishingservices = () => {
     };
   }, []);
 
-
-
   const bannertext = [
     {
       title: (
@@ -83,17 +78,13 @@ const Bookpublishingservices = () => {
     }
   ]
 
-
-
   const fine = [
-
     {
       img: mission1,
       title: 'Promoting Your Book Creatively',
       text: (<> At Book Writing Expert, we excel in book promotion, captivating your target audience and inspiring them to delve into your book. Count on our innovative marketing experts to make your book stand out!</>),
       class: 'fintop',
     },
-
     {
       img: mission2,
       title: 'Right People, Right Time',
@@ -108,10 +99,7 @@ const Bookpublishingservices = () => {
       class: 'fintop',
     },
   ]
-
-
   const reasons = [
-
     {
       title: 'Proven Track Record: Delivering Results',
       text: (<> Our <Link className='textdocationnone text-white hover' href="/book-promotion-services/">book promotion company</Link> excels in executing successful book promotion strategies, consistently delivering tangible results to our clients. </>),
@@ -153,17 +141,8 @@ const Bookpublishingservices = () => {
 
   ]
 
-
-
-
-
   return (
     <>
-    
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -180,8 +159,6 @@ const Bookpublishingservices = () => {
           processs={item.process}
         />
       )}
-
-
       {/* Dowecome */}
       <Dowecome
         Dowecome="publishmybook"
@@ -192,8 +169,6 @@ const Bookpublishingservices = () => {
 
       {/* Cta */}
       <Cta />
-
-
       {/* Makestories */}
       <div className='dataSetCo sliderImg'>
         <Makestoriesnew
@@ -201,17 +176,12 @@ const Bookpublishingservices = () => {
           para='Let Our Book Editing Team Help You.'
         />
       </div>
-
-
       <Stopworrying
         title={`Don't wait any longer for your book to be discovered!`}
         subtitle={<> Take Control Of Your <Link className='textdocationnone color-blue hover fw700' href='/book-promotion-services/'>Book Promotions</Link> And Let The Experts Work Their Magic! </>}
         btn1='Need Guidance?'
         btn2='Our Book Promotion Expert is Just One Click Away!'
       />
-
-
-
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
@@ -219,8 +189,6 @@ const Bookpublishingservices = () => {
 
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Attract A Thriving Community Of Readers — Let Our Online <Link className='textdocationnone color-blue hover fw700' href='/book-promotion-services/'>Book Promotion Services</Link> Lead The Way!</p>
           </Row>
-
-
           {isSliderActive ?
             <Slider {...bookrecordingprojects} className='newdotflodwhite'>
 
@@ -233,7 +201,6 @@ const Bookpublishingservices = () => {
                   btn={item.btn}
                 />
               )}
-
             </Slider>
             :
             <Row className='gy-5'>
@@ -250,9 +217,6 @@ const Bookpublishingservices = () => {
           }
         </Container>
       </div>
-
-
-
       <Ourprocess
         title={<> Discover The Mastery Of <Link className='textdocationnone color-blue hover fw700' href='/book-promotion-services/'>Book Promotion Services!</Link> </>}
         text="Our dedicated team of marketing experts leaves no stone unturned in promoting your book to the widest possible audience. Here's an overview of our proven promotion strategy:"
@@ -277,9 +241,6 @@ const Bookpublishingservices = () => {
         para5={<> Our <Link className='textdocationnone color-lightgray hover' href='/book-promotion-services/'>book promotion services</Link> go beyond just publication and distribution assistance. We are here to help you connect with your target audience and find the perfect platforms to promote your Books. </>}
         num5='05'
       />
-
-
-
       {/* Stopworrying */}
       <div className='dataSetCo'>
         <Stopworrying
@@ -290,42 +251,8 @@ const Bookpublishingservices = () => {
         />
       </div>
 
-
-
-      {/* Whybookpublishing */}
-      {/* <div className={styles.whybookpublishing}>
-        <Container>
-
-          <Row>
-            <h2 className='font50 fw700 color-blue t-center'>Untangle The Complexity Of Your Manuscript Selling With Our Book Marketing Services!</h2>
-            <p className='font15  textcolor t-center pb-5 mt-3'>
-              book writing expert is a creative studio that offers book promotion services to help authors and business personas get their work noticed by potential readers. We offer various services to suit your needs, including book trailer creation, social media marketing, and more. We're here to help you get your work out there and seen by as many people as possible. Here are a few FAQs that our professional book marketers curated to add information to your knowledge bag.
-            </p>
-
-          </Row>
-
-          <Row>
-            {whybookpublishingdata.map((item, i) =>
-              <Whybookpublishing key={i}
-                title={item.title}
-                text={item.text}
-                col6={item.col6}
-              />
-            )}
-          </Row>
-        </Container>
-      </div> */}
-
-
-
-
-
-
-
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
-
-
 
       {/* Stillonthefence component */}
       <section className='still'>
@@ -367,7 +294,6 @@ const Bookpublishingservices = () => {
           }
         </Container>
       </section>
-
 
       {/* Aspiring */}
       <div className='datacloud'>

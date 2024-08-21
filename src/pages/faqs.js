@@ -136,16 +136,8 @@ const Faqs = () => {
         />
       )}
 
-
-
-
-
-
       {/* Faqslist */}
       <Faqslist />
-
-
-
 
       {/* Aspiring */}
       <div className='datacloudco'>
@@ -156,11 +148,7 @@ const Faqs = () => {
           discuss="LET'S DISCUSS"
         />
 
-
-
       </div>
-
-
     </>
   )
 }

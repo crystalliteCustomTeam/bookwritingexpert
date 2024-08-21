@@ -12,7 +12,6 @@ const Signup = (props) => {
   const router = useRouter();
   const currentRoute = router.pathname;
   const [pagenewurl, setPagenewurl] = useState('')
-  
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -127,7 +126,7 @@ const Signup = (props) => {
       const hubspotResult = await hubspotResponse.text();
       console.log(hubspotResult);
 
-      // window.location.href = "https://www.bookwritingexperts.com/thank-you";
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
     } catch (error) {
       console.error("Error submitting data:", error);
     }

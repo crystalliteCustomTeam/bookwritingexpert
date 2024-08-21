@@ -1,6 +1,4 @@
-import React from "react";
-import Image from "next/image";
-
+import React from "react"; 
 import {Banner, CaseStudies, CTA, Cta2, Faqs, FeaturedContact, PartnersCompanies, Portfolio, Process, PublishingServices, Testimonials} from "../../components/bookmarketinglp";
 import Services from "../../components/bookmarketinglp/Services/Services";
 

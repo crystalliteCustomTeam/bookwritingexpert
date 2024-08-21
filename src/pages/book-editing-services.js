@@ -34,11 +34,7 @@ const Bookpublishingservices = () => {
 
   const ideas = <span> <Link className='textdocationnone color-blue hover' href="/book-editing-services">Hire book editors</Link> and transform your manuscript into a page-turning sensation that leaves readers craving for more.</span>
 
-
-  const discuss = <span>Book Your Free Consultation Now!</span>
-
-
-
+  const discuss = <span>Book Your Free Consultation Now!</span> 
   const bannertext = [
     {
       title: newSpan,
@@ -60,8 +56,6 @@ const Bookpublishingservices = () => {
 
   const finepare = <span> While grammar checkers and self-editing can catch some errors, a professional book editor brings a superior level of proficiency into your work. Hiring a <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>book editing company</Link> is an investment in the success of your book. </span>
 
-
-
   const finetitle1 = <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>Novel Editing Service</Link>
 
   const finepare1 = <span> <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>Novel editors</Link> refine your words, make your characters shine, and your plots thrive. Get in touch with the Book Writing Experts, the sorcerers of storytelling and <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>novel editing</Link>. Never settle for less!</span>
@@ -69,7 +63,6 @@ const Bookpublishingservices = () => {
   const finetitle2 = <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>Non-Fiction Editing Service</Link>
 
   const finepare2 = <span> <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>Non-fiction editing</Link>, the art of transforming raw facts into a captivating narrative – Infuse your words with clarity, precision, and a touch of literary magic. Don't let your ideas languish in mediocrity and hire <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>non-fiction editors</Link> to make your book successful.</span>
-
 
   const title2 = <span>A Glimpse into Our <Link className='textdocationnone colortextgrey fw700 hover1' href='/book-editing-services'>Book Editing</Link> Process</span>
 
@@ -95,8 +88,6 @@ const Bookpublishingservices = () => {
       text: finepare2,
       class: 'fintop',
     },
-
-
   ]
 
   const dateset = <span>Are You Ready to Bid Farewell to <br /> the Nightmares of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>Book Editing</Link>? </span>
@@ -130,12 +121,9 @@ const Bookpublishingservices = () => {
 
   const perplexing = <span>Let us help you navigate the maze of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editing</Link>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editors</Link>. Call, text, or email us today to make your dream of becoming an author a reality!</span>
 
-
   return (
     <>
-   
       {/* banner components */}
-
       {bannertext.map((item, i) =>
         <Banner key={i}
           title={item.title}
@@ -150,19 +138,12 @@ const Bookpublishingservices = () => {
           processs={item.process}
         />
       )}
-
-
-
-
-
       {/* Dowecome */}
       <Dowecome
         title={geta}
         text='Errors are inevitable! But the solutions are not! The professional editing experts at Book Writing Experts leave no gaps in assisting your writing drafts with top-notch, unique, and customized editing solutions. We further take complete guarantee of what we deliver and keep client satisfaction above everything.'
         Dowecome="publishmybook"
-
       />
-
       {/* Major */}
       <Major />
 
@@ -176,8 +157,6 @@ const Bookpublishingservices = () => {
           para={book}
         />
       </div>
-
-
       {/* Stopworrying */}
       <Stopworrying
         title='Lost in the Editing Maze? Or Trapped in the Editing Enigma?'
@@ -186,15 +165,11 @@ const Bookpublishingservices = () => {
         btn2='Chat With Us Now!'
       />
 
-
-
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
             <h2 className="colortextgrey font25 t-center font-f mb-2"> <Link className='textdocationnone color-blue hover' href='/book-editing-services'>Book Editing Services</Link> That We’re Offering</h2>
-
             <p className='font50 font-f fw500  colortextgrey t-center pb-2'> Find The Best Editing Style For Your Manuscript </p>
-
           </Row>
 
           <Row className='gy-5'>
@@ -210,8 +185,6 @@ const Bookpublishingservices = () => {
           </Row>
         </Container>
       </div>
-
-
       <Ourprocess
         title2={title2}
         heading1='In-Depth Manuscript Analysis'
@@ -233,10 +206,7 @@ const Bookpublishingservices = () => {
         heading5='Quality Assurance '
         para5='Our rigorous book QA ensures that your book undergoes a final review, ensuring that all edits have been implemented carefully and your manuscript is ready for publication.'
         num5='05'
-
-
       />
-
 
       {/* Stopworrying */}
       <div className='dataSetCo'>
@@ -247,12 +217,6 @@ const Bookpublishingservices = () => {
           btn2='Chat With Us To Get Your Book Edited Today!'
         />
       </div>
-
-
-
-
-
-
       <section className={styles.servicetitle}>
         <Container>
           <Row>
@@ -273,7 +237,6 @@ const Bookpublishingservices = () => {
         whychooseclass="marketyourbook"
       />
 
-
       {/* Whychoosebookwritingcube */}
       <Whychoosebookwritingcube
         title='Editorial Assessment Service'
@@ -283,9 +246,6 @@ const Bookpublishingservices = () => {
         image={whychooseourbookeditingservices2}
         whychooseclass="marketyourbook"
       />
-
-
-
       {/* Selfpublishing */}
       <Selfpublishing
         title={structural}
@@ -306,30 +266,17 @@ const Bookpublishingservices = () => {
         image={whychooseourbookeditingservices4}
         whychooseclass="marketyourbook"
       />
-
-
       {/* Stopworrying */}
-
       <Stopworrying
         title2={mishaps}
         text={errorless}
         btn2='Chat With Our Experts Today!'
       />
-
-
-
-
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
 
-
       {/* Lululogos components */}
-
-
       <Lululogos />
-
-
-
       {/* Aspiring */}
       <div className='datacloud'>
         <Aspiring
@@ -338,10 +285,6 @@ const Bookpublishingservices = () => {
           number="Call Us At (855) 500 0057 "
         />
       </div>
-
-
-
-
     </>
   )
 }

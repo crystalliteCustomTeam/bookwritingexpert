@@ -28,10 +28,7 @@ const About = () => {
 
   return (
     <>
-
-      <Head>
-
-     
+      <Head>  
         <link rel="icon" href="/favicon.svg" />
 
       </Head>
@@ -79,7 +76,6 @@ const About = () => {
         discuss="LET'S DISCUSS"
         image={whychoosebookritingcube}
         whychooseclass="whychoosebookwritingcube"
-
       />
 
       {/* Talk To Our Experts! */}
@@ -101,11 +97,7 @@ const About = () => {
         text="“A book is all about the verbal artificiality of reality and how well you convey your idea through this—and this is what we aim to bring out. We respect the efforts of every client, as we know what it takes to write a book. That’s why we try not to disrupt the original idea but make it sound convincing.” – A message from teams of The Bookwriting Cube."
         number="(855) 500 0057"
         discuss="LET'S DISCUSS"
-      />
-
-
-
-
+      /> 
     </>
   )
 }

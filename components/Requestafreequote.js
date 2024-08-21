@@ -5,8 +5,7 @@ import Link from 'next/link'
 import { useState } from "react";
 // footer icons
 import { BsFillTelephoneFill } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md';
-import Router from 'next/router';
+import { MdEmail } from 'react-icons/md'; 
 import Axios from "axios";
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -35,14 +34,7 @@ const Requestafreequote = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // const data = {
-    //   name: e.target.name.value,
-    //   email: e.target.email.value,
-    //   pageUrl: currentRoute,
-    //   phone: e.target.phone.value, 
-    // }
+    e.preventDefault(); 
     const data = {
       page_url: pagenewurl,
       user_ip: `${ip.ip}`,
@@ -144,12 +136,11 @@ const Requestafreequote = () => {
         .then(result => console.log(result))
         .catch(error => console.error(error));
 
-      // window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
     } catch (error) {
       console.error('Error submitting form:', error);
     }
   }
-
 
   return (
     <>

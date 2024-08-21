@@ -4,23 +4,16 @@ import Link from 'next/link'
 import { Container, Row, Col } from 'react-bootstrap'
 // images
 import homebannerlogos from '/public/images/bannerimages/logos.png'
-import typeofbooks from '/public/images/selfpublishingservices/1.jpg'
-import copy from '/public/images/selfpublishingservices/2.jpg'
-import marketyourbook from '/public/images/selfpublishingservices/3.jpg'
 import publishmybook from '/public/images/selfpublishingservices/4.jpg'
 // components
 import Banner from '../../components/Banner'
 import Dowecome from '../../components/Dowecome'
 import Stopworrying from '../../components/Stopworrying'
 import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
 import Whatourclients from '../../components/Whatourclients'
-import Makestoriesnew from '../../components/Makestoriesnew'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
 import Selfpublishing from '../../components/Selfpublishing'
 import Lululogos from '../../components/Lululogos'
 import Customersatisfaction from '../../components/Customersatisfaction'
-import Bookpublishingservicesweoffer from '../../components/Bookpublishingservicesweoffer'
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
 import mission1 from '/public/images/mission/1.png'
@@ -29,11 +22,7 @@ import mission3 from '/public/images/mission/3.png'
 import Finetoothedbook from '../../components/Finetoothedbook'
 
 
-
-
 const bookCoverDesignServices = () => {
-  const text = <span>We write, market, and review books of all kinds.</span>;
-  const subtext = <span> Profit from our wide range of book publication styles and forms to secure your position as a book writing guru. In addition to publishing children's books, we are among the top Amazon publishing service suppliers.</span>;
 
   const newSpan = <h1 className='font50 fw700 color-white font-f hero-span'>Sell More Books With Our Premium <br /><Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">  Book
     Cover Design Services!</Link> </h1>;
@@ -48,41 +37,20 @@ const bookCoverDesignServices = () => {
       banlogo: homebannerlogos,
       banners: 'bookpublishingservices',
       process: 'OUR PROCESS, IN A MINUTE',
-
-
-
     }
   ]
-
-
-
-
   const geta = <span>Increase ROI With The Most Creative <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Design Services</Link></span>
-
-
   const work = <>
     <span>Our team of specialists at Book Writing Experts knows that your book covers are able to obtain the outcomes that you need. That is why our renowned design experts give unique design solutions that are exceptional and ideal for the market where you want to sell.</span>
   </>
 
   const dateset = <span className='fw500'>100% Satisfaction Guaranteed with <br /> Our <Link className='textdocationnone color-blue hover' href="/book-cover-design-services/">Book Cover Designers!</Link></span>
-
-
-
-
-
-
-
-
-
   const fine = [
-
     {
       img: mission1,
       title: 'Unmatched Customer Satisfaction',
       text: 'Experience flawless book design services with unlimited free revisions and clear, upfront pricing. Our full-time in-house designers will work closely with you to turn your vision into reality. We deliver the perfect book cover design every time.',
       class: 'fintop',
-
-
     },
 
     {
@@ -90,8 +58,6 @@ const bookCoverDesignServices = () => {
       title: 'Customized Book Cover Design',
       text: 'Our expert book cover designers are supremely experienced and always stay in touch with you to produce a book cover that reflects your imagination. We are focused on providing you with a smooth design experience by focusing on your unique needs and preferences.',
       class: 'fintop',
-
-
     },
 
     {
@@ -99,11 +65,7 @@ const bookCoverDesignServices = () => {
       title: 'Transparent Pricing',
       text: 'Get a full fixed price before you make a payment, with no hidden commissions or hourly rates. Our transparent pricing structure keeps you informed of exactly what you are paying for, ensuring your budget and avoiding a shock of additional costs.',
       class: 'fintop',
-
-
     },
-
-
   ]
 
   const selfpublishingDesc = <span>
@@ -227,10 +189,6 @@ your book sales today!" />
 
 
       </Head>
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -247,22 +205,12 @@ your book sales today!" />
           processs={item.process}
         />
       )}
-
-
-
-
       {/* Dowecome */}
       <Dowecome
         title={geta}
         text={work}
         Dowecome="publishmybook"
-
       />
-
-
-
-
-
       {/* Stopworrying */}
 
       <Stopworrying
@@ -272,20 +220,6 @@ your book sales today!" />
         btn1='Get a free Proposal'
         btn2='Free Consultation'
       />
-
-
-
-
-      {/* <section className={styles.publicservices}>
-        <Container>
-          <Row>
-            <Col>
-              <h2 className='color-blue fw700 font50 font-f t-center'>Why Choose Our Amazon Publishing Services?</h2>
-            </Col>
-          </Row>
-        </Container>
-      </section> */}
-      {/* Selfpublishing */}
 
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
@@ -310,40 +244,6 @@ your book sales today!" />
         </Container>
       </div>
 
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='Our Willingness To Publish Knows No Bounds!'
-        text={text}
-        subtext={subtext}
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={typeofbooks}
-        whychooseclass="marketyourbook"
-      /> */}
-
-      {/* Selfpublishing */}
-      {/* <Selfpublishing
-        title='Want Articles That Boost Engagement And Expand Your Reach?'
-        text='Connect with our experienced writers that have the knowledge of the latest industry trends to write gripping articles, paving the way to success for you!'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={copy}
-        whychooseclass="marketyourbook"
-      /> */}
-
-
-      {/* Whychoosebookwritingcube */}
-      {/* <Whychoosebookwritingcube
-        title='All Of Your Burning Book Marketing Questions- Answered!'
-        text='Not sure how to promote or organize your next book debut? You can select the marketing service at Book Writing Experts based on what you want to achieve, and each of our services is concentrated on a few key areas to help you best promote your book.'
-        subtext='Whether you are an experienced writer or a beginner, our advice and marketing tactics will help you build a global internet presence. Our book marketing experts will assist your book and brand in achieving the success they deserve.'
-        number="(855) 500 0057"
-        discuss="LET'S DISCUSS"
-        image={marketyourbook}
-        whychooseclass="marketyourbook"
-      /> */}
-
-
       {/* Customersatisfaction */}
       <Customersatisfaction />
 
@@ -355,9 +255,6 @@ your book sales today!" />
         image={publishmybook}
         whychooseclass="marketyourbook"
       />
-
-
-
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
 
@@ -365,8 +262,6 @@ your book sales today!" />
       <div>
         <Lululogos />
       </div>
-
-
       {/* Aspiring */}
 
       <div className='datacloud'>
@@ -381,28 +276,7 @@ your book sales today!" />
           discuss="LET'S DISCUSS"
 
         />
-
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </>
   )
 }

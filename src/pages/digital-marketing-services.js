@@ -41,23 +41,8 @@ const Digitalmarketingservices = () => {
 
     }
   ]
-
-
-
-
-
-
-
-
-
-
   return (
     <>
-
-
-
-
-
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -71,9 +56,7 @@ const Digitalmarketingservices = () => {
         />
       )}
 
-
       {/* partners components */}
-
 
       {/* Dowecome */}
       <Dowecome
@@ -87,9 +70,9 @@ const Digitalmarketingservices = () => {
       <Cta
         title=" How We Deliver Exceptional <span class='color-blue fw700 hover textdocationnone' href='/book-publishing-services'>  Digital Marketing Services </span>"
         desc=" <span>As a leading digital marketing company, we bring a fresh perspective and expertise to create
-custom plans that are focused and effective. With project management tools, we monitor
-progress in real time and provide regular reports. Our flexible strategies emphasize effective
-communication, creativity, and achieving your core goals, driving your digital marketing success.</span>"
+          custom plans that are focused and effective. With project management tools, we monitor
+          progress in real time and provide regular reports. Our flexible strategies emphasize effective
+          communication, creativity, and achieving your core goals, driving your digital marketing success.</span>"
       />
 
       {/* Makestories */}
@@ -103,35 +86,21 @@ communication, creativity, and achieving your core goals, driving your digital m
       {/* Lululogos components */}
 
       <Lululogos />
-
-
-
-      <Buildyourownidentity />
-
-
-
-
+      <Buildyourownidentity /> 
 
       {/* Aspiring */}
       <Aspiring
         title='Sales-Centric Digital Marketing Company That Drives
-
-Revenue Growth!'
+          Revenue Growth!'
         text={`Our <a class='textdocationnone color-lightgray hover' href="/digital-marketing-services/">digital marketing services</a> for books optimize your sales through targeted digital advertising
           campaigns. We focus on maximizing customer interest by capturing attention and increasing
           reach on search engines. With our expertise, your book can achieve a global impact. Strategies
           are developed to enhance visibility, engage potential readers, and drive revenue growth. Hire
           Book Writing Experts today for the best digital marketing services that deliver outstanding sales
-
           results`}
         number="(855) 500 0057"
         discuss="Chat With Us Today!"
       />
-
-
-
-
-
 
       <div className='dataset'>
         <Buildingyour />
@@ -160,33 +129,22 @@ Revenue Growth!'
 
         />
       </div>
-
-
       <Companypull
         title={<> Expanding Your Story's Global Presence through Comprehensive <Link className='textdocationnone text-white hover' href="/digital-marketing-services/">Digital Marketing Services</Link>! </>}
         text={<> Contact Us Today to Illuminate Your Book's Path to Success. </>}
         number="Call At (855) 500 0057"
       />
-
-
       <Bestinclass />
-
-
       <Stopworrying
         title='Finding It Hard to Stand Out in the Digital Space?'
-        subtitle='We Are Your One-Stop Solution for Professional Digital
-
-Marketing Services!'
+        subtitle='We Are Your One-Stop Solution for Professional Digital Marketing Services!'
         subtitle2='Join us and watch your online impact grow!'
         btn1='Get a free Proposal'
         btn2='Get Started Today! '
       />
 
-
-
       {/* Talk To Our Whatourclients! */}
       <Whatourclients />
-
     </>
   )
 }
