@@ -12,6 +12,7 @@ const Whychoosebook = dynamic(() => import("../../components/Whychoosebook"));
 const Gotastory = dynamic(() => import("../../components/Gotastory"));
 const Experts = dynamic(() => import("../../components/Experts"));
 const Whatourclients = dynamic(() => import("../../components/Whatourclients"));
+const Whatourclientsvideo = dynamic(() => import("../../components/Whatourclientsvideo"));
 const Requestafreequote = dynamic(() =>
   import("../../components/Requestafreequote")
 );
@@ -182,7 +183,7 @@ export default function Home() {
           text="We are well aware of unique content creation requirements for each client. With a team equipped with a wide array of expertise, experiences and knowledge, we are always an author’s top preference. Book Writing Expert will simplify the Writing, Editing, Publication and Marketing needs for you. Our collaboration would be transparent and hassle-free, reducing all the intricacies from your end. We only deliver content that is remarkable, genuine and original."
           whychoose={whychoose}
         />
-        
+
         <div className="sliderImg2">
           <Onestepsolutions />
         </div>
@@ -199,6 +200,9 @@ export default function Home() {
 
         {/* Talk To Our Whatourclients! */}
         <Whatourclients />
+
+        {/* Talk To Our Whatourclientsvideo! */}
+        <Whatourclientsvideo />
 
         {/* Got a Story */}
         <Gotastory />
