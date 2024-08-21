@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "@/styles/Signup.module.css";
-import {useState} from "react";
+import { useState } from "react";
 import Axios from "axios";
-import {useEffect} from "react";
+import { useEffect } from "react";
 
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const Signup = (props) => {
   const [ip, setIP] = useState("");
   const [score, setScore] = useState("Best time to jump on a quick call:");
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
+  
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -24,25 +26,28 @@ const Signup = (props) => {
 
   useEffect(() => {
     getIPData();
+    setPagenewurl(window.location.href)
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      phone: e.target.phone.value,
-      message: e.target.message.value,
-      IP: `${ip.ip} - ${ip.country} - ${ip.city}`,
-      pageUrl: currentRoute,
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: e.target.message.value
+      }
     };
 
     const JSONdata = JSON.stringify(data);
     setScore("Sending Data");
 
     try {
-      const emailResponse = await fetch("/api/email/route", {
+      const emailResponse = await fetch("https://brandsapi.cryscampus.com/api/v1/leads", {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -78,7 +83,6 @@ const Signup = (props) => {
         headers: headersList,
       });
 
-      const pagenewurl = currentRoute;
 
       const hubspotHeaders = new Headers();
       hubspotHeaders.append("Content-Type", "application/json");
@@ -123,7 +127,7 @@ const Signup = (props) => {
       const hubspotResult = await hubspotResponse.text();
       console.log(hubspotResult);
 
-      window.location.href = "https://www.bookwritingexperts.com/thank-you";
+      // window.location.href = "https://www.bookwritingexperts.com/thank-you";
     } catch (error) {
       console.error("Error submitting data:", error);
     }

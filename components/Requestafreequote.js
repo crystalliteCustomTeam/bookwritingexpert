@@ -13,11 +13,11 @@ import { useRouter } from 'next/router';
 
 
 const Requestafreequote = () => {
-
   const [ip, setIP] = useState('');
   const [score, setScore] = useState('Submit');
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [pagenewurl, setPagenewurl] = useState('')
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -31,23 +31,34 @@ const Requestafreequote = () => {
 
   useEffect(() => {
     getIPData();
+    setPagenewurl(window.location.href)
   }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // const data = {
+    //   name: e.target.name.value,
+    //   email: e.target.email.value,
+    //   pageUrl: currentRoute,
+    //   phone: e.target.phone.value, 
+    // }
     const data = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      pageUrl: currentRoute,
-      phone: e.target.phone.value, 
-    }
+      page_url: pagenewurl,
+      user_ip: `${ip.ip}`,
+      lead_data: {
+        name: e.target.name.value,
+        email: e.target.email.value,
+        phone: e.target.phone.value,
+        message: ''
+      }
+    };
 
     const JSONdata = JSON.stringify(data);
     setScore('Sending Data');
 
     try {
-      const response = await fetch('/api/quote/route', {
+      const response = await fetch('https://brandsapi.cryscampus.com/api/v1/leads', {
         method: 'POST',
         headers: {
           'Accept': 'application/json, text/plain, */*',
@@ -106,8 +117,8 @@ const Requestafreequote = () => {
         ],
         "context": {
           "ipAddress": ip.IPv4,
-          "pageUri": currentRoute,
-          "pageName": currentRoute
+          "pageUri": pagenewurl,
+          "pageName": pagenewurl
         },
         "legalConsentOptions": {
           "consent": {
@@ -133,7 +144,7 @@ const Requestafreequote = () => {
         .then(result => console.log(result))
         .catch(error => console.error(error));
 
-      window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+      // window.location.href = 'https://www.bookwritingexperts.com/thank-you';
     } catch (error) {
       console.error('Error submitting form:', error);
     }

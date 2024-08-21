@@ -60,14 +60,8 @@ const Whatourclients = () => {
   return (
     <>
       <div className={styles.ourclients}>
-        <Container className='testtimonials clintTesti'>
-
-
-
-
-          <Slider {...whatourclients}>
-
-
+        <Container className='testtimonials clintTesti'> 
+          <Slider {...whatourclients}> 
             <div>
               <div className={styles.whatclientlogo}></div>
               <h3 className='font18 fw700 color-blue mb-4'>Client Testimonials </h3>
