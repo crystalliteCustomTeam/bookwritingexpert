@@ -1,11 +1,12 @@
-.contact{
+.contact {
     padding: 100px 0;
     position: relative;
     z-index: 999;
     display: flex;
     font-family: "Poppins", sans-serif;
 }
-.contact::before{
+
+.contact::before {
     background: url(../../../public/images/childrenillustration/floor.png);
     background-size: cover;
     background-position: bottom;
@@ -18,23 +19,28 @@
     position: absolute;
     z-index: -9999;
 }
-.contact h3{
+
+.contact h3 {
     font-family: "SF Pro Display", sans-serif;
 }
-.contact label{
+
+.contact label {
     font-family: "SF Pro Display", sans-serif;
     font-size: 16px;
     line-height: 20px;
 }
-.contact input{
+
+.contact input {
     border: none;
-    border-bottom:1px solid #000;
+    border-bottom: 1px solid #000;
     padding: 10px 0 30px;
     border-radius: 0px;
 }
-.contact input:focus{
-   outline: inherit;
+
+.contact input:focus {
+    outline: inherit;
 }
+
 .contact .form-control:focus {
     color: #212529;
     background-color: inherit !important;
@@ -42,23 +48,31 @@
     outline: inherit !important;
     box-shadow: inherit !important;
 }
-.contact input::placeholder{
+
+.contact input::placeholder {
     color: #707070;
 }
-.contact textarea{
+
+.contact textarea {
     border: none;
-    border-bottom:1px solid #000;
+    border-bottom: 1px solid #000;
     padding: 10px 0 30px;
     border-radius: 0px;
 }
-.submitDetails{
+
+.submitDetails {
     position: relative;
 }
-.submitDetails::before{
-    content:'';
-    position:absolute;
-    top:0;
-    right:-14px;
+
+.submitDetails:disabled {
+    opacity: 0.5;
+}
+
+.submitDetails::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -14px;
     background: url('../../../public/images/childrenillustration/smilebtn.png');
     background-size: cover;
     background-position: 50% center;

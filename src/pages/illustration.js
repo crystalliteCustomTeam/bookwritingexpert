@@ -71,7 +71,7 @@ function Illustrationbook() {
             </>
           }
           title=""
-          text={<><p className='textcolor font-f mb-4 font15'>Book Writing Experts helps you overcome the following challenges:</p></>}
+          text={<>Book Writing Experts helps you overcome the following challenges:</>}
           list1="Slow Productivity"
           list2="Lack of Resources"
           list3="Time Management Issues"

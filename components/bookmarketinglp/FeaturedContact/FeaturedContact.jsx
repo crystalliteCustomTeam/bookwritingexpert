@@ -22,8 +22,8 @@ export default function FeaturedContact({
   const [score, setScore] = useState("Submit");
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
-
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
   // Function to load IP address from the API
   const getIPData = async () => {
     try {
@@ -41,6 +41,7 @@ export default function FeaturedContact({
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       page_url: pagenewurl,
@@ -223,7 +224,7 @@ export default function FeaturedContact({
                   <div className="d-flex gap-3 mb-3">
                     <textarea rows="5" name="message" placeholder="Massage" id="" className="form-control" />
                   </div>
-                  <button type="submit" className={`btn ${style.formbtn} w-100`}>
+                  <button type="submit" className={`btn ${style.formbtn} w-100`} disabled={isdisabled}>
                     {score}
                   </button>
                 </form>

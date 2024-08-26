@@ -51,7 +51,7 @@ export async function getStaticPaths() {
 export default function Post({ postData, featuredImageUrl }) {
 
     const [score, setScore] = useState('Submit Details');
-
+    const [isdisabled, setIsdisabled] = useState(false)
     const router = useRouter();
     const { postSlug } = router.query;
     const path = router.pathname;
@@ -59,9 +59,8 @@ export default function Post({ postData, featuredImageUrl }) {
     const slug = `${postSlug}`;
 
     const handleSubmit = async (e) => {
-
         e.preventDefault();
-
+        setIsdisabled(true);
 
         const data = {
             name: e.target.first.value,
@@ -164,7 +163,7 @@ export default function Post({ postData, featuredImageUrl }) {
                                         <div className="mt-3">
                                             <input type="email" name="email" required placeholder="EMAIL ADDRESS" />
                                         </div>
-                                        <button type="submit" className={`${styles.arrowBtn} mt-4`}>
+                                        <button type="submit" className={`${styles.arrowBtn} mt-4`} disabled={isdisabled}>
                                             <span>{score}</span>
                                             <Image className='img-fluid' src={arrow} alt="Book Writing Experts" />
                                         </button>

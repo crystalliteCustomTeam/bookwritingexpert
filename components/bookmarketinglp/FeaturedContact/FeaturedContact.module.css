@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
 }
+
 .bgClasses {
   position: absolute;
   width: 100%;
@@ -16,81 +17,103 @@
   bottom: 0;
   z-index: -99999;
 }
+
 .featured h2 {
   font-size: 40px;
   line-height: 50px;
   font-weight: 500;
 }
+
 .featured p {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
 }
+
 .featured .w45 {
   width: 45% !important;
 }
+
 .featuredgrid {
   padding: 30px;
   background: #f3f3f3;
   border-radius: 10px;
 }
+
 .featuredgrid ul li:not(:last-child) {
   border-right: 1px solid #0000004d;
   padding-right: 20px;
 }
+
 .featuredgrid ul li span {
   font-size: 35px;
   line-height: 45px;
   font-weight: 500;
   color: #192d44;
 }
+
 .featuredgrid ul li p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
 }
+
 .featured .formsection {
   padding: 60px 40px;
   border: 1px solid #f7981d;
   border-radius: 20px;
   margin: 0px 80px;
 }
+
 .featured .formsection h3 {
   font-size: 24px;
   line-height: 35px;
   font-weight: 500;
 }
+
 .featured .formsection span {
   font-size: 16px;
   line-height: 25px;
   font-weight: 400;
 }
+
 .featured .formbtn {
   background: #192d44 !important;
   height: 50px;
   color: #fff;
   border-radius: 4px;
 }
+
+.featured .formbtn:disabled {
+  opacity: 0.5;
+}
+
 .featured input .form-control {
   height: 50px;
   padding: 20px;
   border: 1px solid #b4b4b4;
 }
+
 .featured input::placeholder {
   color: #b4b4b4;
   font-size: 14px;
 }
+
 .featured textarea::placeholder {
   color: #b4b4b4;
   font-size: 14px;
 }
+
 .featured input:focus {
   box-shadow: none;
 }
+
 .featured textarea:focus {
   box-shadow: none;
 }
-.formsection input, .formsection textarea {
+
+.formsection input,
+.formsection textarea {
   border: 1px solid #00000083 !important;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -100,6 +123,7 @@
     font-size: 12px;
     line-height: 20px;
   }
+
   .featured .formsection span {
     font-size: 14px;
   }
@@ -110,35 +134,43 @@
     font-size: 30px;
     line-height: 40px;
   }
+
   .featured p {
     font-size: 14px;
     line-height: 25px;
     font-weight: 300;
     text-align: justify;
   }
+
   .featured .w45 {
     width: 60% !important;
   }
+
   .featured .formsection {
     margin: 0px 20px;
   }
+
   .featuredgrid {
     padding: 20px 10px;
     margin-bottom: 50px;
   }
+
   .featuredgrid ul li span {
     font-size: 24px;
     line-height: 35px;
   }
+
   .featuredgrid ul li p {
     font-size: 12px;
     line-height: 20px;
   }
 }
+
 @media screen and (max-width: 991.98px) {
   .featured {
     padding: 50px 0px;
   }
+
   .featuredgrid {
     padding: 30px 50px;
     margin-bottom: 50px;
@@ -148,14 +180,17 @@
     width: 40% !important;
   }
 }
+
 @media screen and (max-width: 767.98px) {
   .featured {
     padding: 50px 0px;
   }
+
   .featuredgrid {
     padding: 20px 20px;
     margin-bottom: 20px;
   }
+
   .featured .w45 {
     width: 50% !important;
   }
@@ -163,33 +198,40 @@
   .featuredgrid ul li p {
     text-align: start;
   }
+
   .featured .formsection h3 {
     font-size: 20px;
     line-height: 30px;
   }
+
   .featured .formsection span {
     font-size: 14px;
     line-height: 25px;
     font-weight: 400;
   }
+
   .featured .formsection {
     padding: 30px 20px;
     border-radius: 20px;
     margin: 0px 10px;
   }
 }
+
 @media screen and (max-width: 575.98px) {
   .featured h2 {
     font-size: 25px;
     line-height: 40px;
   }
+
   .featuredgrid {
     padding: 20px 20px;
     margin-bottom: 20px;
   }
+
   .featured .w45 {
     width: 100% !important;
   }
+
   .featuredgrid ul li:not(:last-child) {
     border-right: 0;
     padding-right: 20px;

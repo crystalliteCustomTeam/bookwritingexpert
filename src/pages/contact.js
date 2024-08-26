@@ -16,7 +16,8 @@ const Contact = () => {
     const [checkboxes, setCheckboxes] = useState([]);
     const router = useRouter();
     const currentRoute = router.pathname;
-    const [pagenewurl, setPagenewurl] = useState('')
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [isdisabled, setIsdisabled] = useState(false)
 
     const getIPData = async () => {
         try {
@@ -41,6 +42,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsdisabled(true);
         const data = {
             page_url: pagenewurl,
             user_ip: `${ip.ip}`,
@@ -142,7 +144,7 @@ const Contact = () => {
             console.log(result);
 
             // Redirect after successful submission
-            // window.location.href = 'https://www.bookwritingexperts.com/thank-you';
+            window.location.href = 'https://www.bookwritingexperts.com/thank-you';
         } catch (error) {
             console.error('Error:', error);
         }
@@ -420,15 +422,10 @@ const Contact = () => {
                                         You may find our confidentiality policy <Link className='textdocationnone colortextgrey' href="/privacy-policy"><strong className={styles.numpost}>here</strong></Link> , or request a signed NDA by email: <Link className='textdocationnone colortextgrey' href="mailto:support@bookwritingexperts.com"> <strong className={styles.numpost}>support@bookwritingexperts.com</strong></Link> This site is protected by reCAPTCHA and the Google
                                         <Link className='textdocationnone colortextgrey' href="/privacy-policy"><strong className={styles.numpost}> Privacy Policy</strong></Link>  and Terms of Service <Link className='textdocationnone colortextgrey' href="/terms-of-use"> <strong className={styles.numpost}>Terms of Service</strong> </Link> apply.
                                     </em>
-
                                 </Col>
 
-                                <button className={styles.submitform} type='submit'>{score}</button>
-
+                                <button className={styles.submitform} type='submit' disabled={isdisabled}>{score}</button>
                             </form>
-
-
-
                         </Col>
                     </Row>
                 </Container>

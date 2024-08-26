@@ -156,6 +156,10 @@
   color: #000;
 }
 
+.arrowBtn:disabled {
+  opacity: 0.5;
+}
+
 .newsLetter .arrowBtn {
   border: 0;
   font-size: 15px;

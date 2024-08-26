@@ -75,6 +75,10 @@
   margin-top: 25px;
 }
 
+.ContactUs button:disabled {
+  opacity: 0.5;
+}
+
 .ContactUs button:hover {
   color: white;
   background: #f7981d;

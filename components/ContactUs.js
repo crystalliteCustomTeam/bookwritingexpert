@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useRouter } from "next/router";
-import Axios from "axios";
-import Router from "next/router";
+import Axios from "axios"; 
 
 import styles from "@/styles/ContactUs.module.css";
 
@@ -15,7 +14,8 @@ const ContactUs = () => {
   const [score, setScore] = useState("Let's Discuss");
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -34,6 +34,7 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       page_url: pagenewurl,
@@ -193,7 +194,7 @@ const ContactUs = () => {
                     <label>Message *</label>
                     <textarea rows={4} placeholder="Type Details" name="message" required />
                   </Col>
-                  <button className={`${styles.formBtn}`} type="submit">
+                  <button className={`${styles.formBtn}`} disabled={isdisabled} type="submit">
                     {score}
                   </button>
                 </Row>

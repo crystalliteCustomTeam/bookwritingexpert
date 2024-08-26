@@ -37,6 +37,10 @@
   margin-left: 11px;
 }
 
+.formBtn:disabled {
+  opacity: 0.5;
+}
+
 .Quote hr {
   border: 1px solid #707070;
 }

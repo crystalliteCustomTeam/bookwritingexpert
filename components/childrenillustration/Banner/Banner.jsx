@@ -19,7 +19,8 @@ const Banner = ({
     const [score, setScore] = useState("Send Message");
     const router = useRouter();
     const currentRoute = router.pathname;
-    const [pagenewurl, setPagenewurl] = useState('')
+    const [pagenewurl, setPagenewurl] = useState('');
+    const [isdisabled, setIsdisabled] = useState(false)
 
     // Function to load IP address from the API
     const getIPData = async () => {
@@ -38,7 +39,7 @@ const Banner = ({
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        setIsdisabled(true);
         const data = {
             page_url: pagenewurl,
             user_ip: `${ip.ip}`,
@@ -189,7 +190,7 @@ const Banner = ({
                                             </Row>
 
                                             <div className='d-flex justify-content-center mt-4'>
-                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`} type='submit'>{score}</button>
+                                                <button className={`${"bgGray"} ${"formbgGray"} text-white position-relative`} type='submit' disabled={isdisabled}>{score}</button>
                                             </div>
                                         </form>
                                     </div>

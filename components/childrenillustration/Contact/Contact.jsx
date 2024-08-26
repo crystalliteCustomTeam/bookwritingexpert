@@ -13,6 +13,7 @@ const Contact = ({ title, desc }) => {
   const [score, setScore] = useState('Submit Details');
   const router = useRouter();
   const currentRoute = router.pathname;
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -30,7 +31,7 @@ const Contact = ({ title, desc }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsdisabled(true);
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
@@ -160,6 +161,7 @@ const Contact = ({ title, desc }) => {
                   <div className='d-flex flex-lg-row flex-column align-items-lg-start align-items-center gap-4 mt-3 mb-3'>
                     <CTA
                       text={score}
+                      disabled={isdisabled}
                       bg="bgGray"
                       classes={`${style.submitDetails} formbgGray py-2`}
                       btn={true}

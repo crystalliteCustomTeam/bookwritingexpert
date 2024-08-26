@@ -36,6 +36,10 @@
     border-radius: 7px;
 }
 
+.popUpBottom button:disabled {
+    opacity: 0.5;
+}
+
 .popUpBottom button:focus {
     outline: none;
 }

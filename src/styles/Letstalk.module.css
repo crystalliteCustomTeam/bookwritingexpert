@@ -1,9 +1,9 @@
-.banner{
+.banner {
   padding-bottom: 70px;
   font-family: "Poppins";
 }
 
-.newlongtsk{
+.newlongtsk {
   background-color: #F3F3F3;
   padding: 65px 35px;
   border-radius: 10px;
@@ -15,32 +15,36 @@
   gap: 25px;
   margin-bottom: 7%;
 }
-.newlongtsk h2{
+
+.newlongtsk h2 {
   font-size: 40px;
   color: #24303E;
 }
-.newlongtsk p{
+
+.newlongtsk p {
   font-size: 12px;
   color: #24303E;
   padding-bottom: 13px;
   padding-top: 7px;
 }
 
-.publish div{
+.publish div {
   width: 70%;
 }
 
 .publish input[type="text"] {
   width: 100%;
-    font-family: "Poppins";
+  font-family: "Poppins";
 }
+
 .publish input[type="email"] {
   width: 100%;
-    font-family: "Poppins";
+  font-family: "Poppins";
 }
+
 .publish input[type="tel"] {
   width: 100%;
-    font-family: "Poppins";
+  font-family: "Poppins";
 }
 
 .newtown input[type="submit"] {
@@ -55,6 +59,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.newtown input[type="submit"]:disabled {
+  opacity: 0.5;
+}
+
 .publish input[type="text"] {
   background-color: unset;
   border: unset;
@@ -63,6 +71,7 @@
   width: 100%;
   color: #24303E;
 }
+
 .publish input[type="text"]::placeholder {
   color: #24303E;
   opacity: .3;
@@ -78,6 +87,7 @@
   width: 100%;
   color: #24303E;
 }
+
 .publish input[type="email"]::placeholder {
   color: #24303E;
   opacity: .3;
@@ -93,6 +103,7 @@
   width: 100%;
   color: #24303E;
 }
+
 .publish input[type="tel"]::placeholder {
   color: #24303E;
   opacity: .3;
@@ -100,16 +111,19 @@
 
 }
 
-.publish input[type="text"]:focus-visible, .publish input[type="tel"]:focus-visible, .publish input[type="email"]:focus-visible {
+.publish input[type="text"]:focus-visible,
+.publish input[type="tel"]:focus-visible,
+.publish input[type="email"]:focus-visible {
 
   outline: unset;
 
 }
 
-.social{
+.social {
   position: relative;
 }
-.gosto{
+
+.gosto {
   position: absolute;
   bottom: 5px;
   padding-left: 30px;
@@ -119,27 +133,30 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .gosto ul {
   padding: 0;
   display: flex;
   gap: 10px;
   text-align: right;
 }
-.gosto ul li{
+
+.gosto ul li {
   list-style: none;
 }
-.gosto ul li img{
+
+.gosto ul li img {
   width: 85%;
 }
 
-.gosto h3{
+.gosto h3 {
   font-size: 23px;
   color: white;
   font-family: "Poppins";
   font-weight: 600;
 }
 
-.down{
+.down {
   background-color: #F7981D;
   border-radius: 10px;
   display: flex;
@@ -152,7 +169,7 @@
 
 }
 
-.flow h3{
+.flow h3 {
   font-weight: bold;
   font-size: 25px;
   color: white;
@@ -160,14 +177,15 @@
   margin-bottom: 0;
 }
 
-.flow1 h4{
+.flow1 h4 {
   font-weight: 600;
   font-size: 17px;
   color: white;
   font-family: "Poppins";
   margin-bottom: 2px;
 }
-.flow1 a{
+
+.flow1 a {
   font-weight: 400;
   font-size: 11px;
   color: white;
@@ -175,18 +193,20 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-.flow1 img{
+
+.flow1 img {
   width: 16px;
 }
 
-.flow2 h4{
+.flow2 h4 {
   font-weight: 600;
   font-size: 17px;
   color: white;
   font-family: "Poppins";
   margin-bottom: 2px;
 }
-.flow2 a{
+
+.flow2 a {
   font-weight: 400;
   font-size: 11px;
   color: white;
@@ -194,122 +214,137 @@
   margin-bottom: 0;
   text-decoration: none;
 }
-.flow2 img{
+
+.flow2 img {
   width: 16px;
 }
 
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
 
-  .Letstalk_newtown__qKj3P input[type="submit"]{
+  .Letstalk_newtown__qKj3P input[type="submit"] {
     font-size: 15px;
   }
+
   .newlongtsk h2 {
     font-size: 45px;
     color: #24303E;
-}
-.newlongtsk p {
-  font-size: 15px;
-  color: #24303E;
-  padding-bottom: 13px;
-  padding-top: 7px;
-}
-.newlongtsk  {
-  background-color: #F3F3F3;
-  padding: 85px 35px;
-  border-radius: 10px;
-}
-.flow h3 {
-  font-weight: bold;
-  font-size: 30px;
-}
-.flow1 h4 {
-  font-size: 20px;
-}
-.flow2 h4 {
-  font-size: 20px;
-}
-.flow1 a {
-  font-size: 12px;
-}
-.flow2 a {
-  font-size: 12px;
-}
+  }
+
+  .newlongtsk p {
+    font-size: 15px;
+    color: #24303E;
+    padding-bottom: 13px;
+    padding-top: 7px;
+  }
+
+  .newlongtsk {
+    background-color: #F3F3F3;
+    padding: 85px 35px;
+    border-radius: 10px;
+  }
+
+  .flow h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .flow1 h4 {
+    font-size: 20px;
+  }
+
+  .flow2 h4 {
+    font-size: 20px;
+  }
+
+  .flow1 a {
+    font-size: 12px;
+  }
+
+  .flow2 a {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 1200px) {  
+@media (max-width: 1200px) {
 
   .Publicsec h2 {
     font-size: 25px;
     color: #24303E;
-}
-.newlongtsk h2 {
-  font-size: 25px;
-  color: #24303E;
-}
-.newlongtsk  {
-  background-color: #F3F3F3;
-  padding: 35px 35px;
-  border-radius: 10px;
-}
+  }
+
+  .newlongtsk h2 {
+    font-size: 25px;
+    color: #24303E;
+  }
+
+  .newlongtsk {
+    background-color: #F3F3F3;
+    padding: 35px 35px;
+    border-radius: 10px;
+  }
 }
 
-@media (max-width: 991px) {  
-  
+@media (max-width: 991px) {
+
   .down {
-   
+
     padding-left: 30px;
     padding-right: 30px;
-}
+  }
 
   .newlongtsk {
     background-color: #F3F3F3;
     padding: 25px 35px;
     border-radius: 10px;
-}
+  }
 
   .publish {
     display: flex;
     gap: 25px;
     margin-bottom: 4%;
-}
+  }
 
   .newlongtsk p {
     font-size: 9px;
     color: #24303E;
     padding-bottom: 0;
     padding-top: 0px;
-}
+  }
 
 }
 
-@media (max-width: 767px) {   
+@media (max-width: 767px) {
   .down {
     flex-direction: column;
     gap: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .gosto {
+    position: absolute;
+    bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-.gosto {
-  position: absolute;
-  bottom: 5px;
-  padding-left: 30px;
-  padding-right: 30px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
-}
+
 @media (max-width: 480px) {
 
   .publish {
     flex-direction: column;
-}
-.publish div {
-  width: 100%;
-}
-.banner {
-  height: 950px;
-}
   }
+
+  .publish div {
+    width: 100%;
+  }
+
+  .banner {
+    height: 950px;
+  }
+}

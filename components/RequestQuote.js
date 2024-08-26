@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Image from "next/image";
-import Axios from "axios";
-import Router from "next/router";
+import Axios from "axios"; 
 import Styles from "@/styles/Quote.module.css";
 
 // Images
@@ -12,6 +11,7 @@ import { useRouter } from "next/router";
 const RequestQuote = () => {
   const [ip, setIP] = useState("");
   const [score, setScore] = useState("Get A Quote");
+  const [isdisabled, setIsdisabled] = useState(false)
   const router = useRouter();
   const currentRoute = router.pathname;
   const [pagenewurl, setPagenewurl] = useState('')
@@ -33,7 +33,7 @@ const RequestQuote = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    setIsdisabled(true);
     const data = {
       page_url: pagenewurl,
       user_ip: `${ip.ip}`,
@@ -191,7 +191,7 @@ const RequestQuote = () => {
                       name="message"
                     />
                   </Col>
-                  <button className={`${Styles.formBtn}`} type="submit">
+                  <button className={`${Styles.formBtn}`} type="submit" disabled={isdisabled}>
                     {score}
                   </button>
                 </Row>

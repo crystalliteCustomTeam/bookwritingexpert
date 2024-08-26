@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Freequote.module.css'
-import Link from 'next/link'
-import axios from "axios";
+import Link from 'next/link' 
 import { useState } from "react";
 import Router from 'next/router'
 import { useRouter } from 'next/router';
@@ -12,6 +11,7 @@ const Freequote = (props) => {
 
 
   const [ip, setIP] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
   //creating function to load ip address from the API
   const getIPData = async () => {
     const res = await Axios.get('https://ipwho.is/');
@@ -21,18 +21,14 @@ const Freequote = (props) => {
     getIPData()
   }, [])
 
-
   const [score, setScore] = useState('Submit');
-
 
   const router = useRouter();
   const currentRoute = router.pathname;
 
-
   const handleSubmit = async (e) => {
-
     e.preventDefault()
-
+    setIsdisabled(true);
 
     const data = {
       name: e.target.name.value,
@@ -45,8 +41,6 @@ const Freequote = (props) => {
     const JSONdata = JSON.stringify(data)
 
     setScore('Sending Data');
-
-
 
     fetch('api/email/route', {
       method: 'POST',
@@ -113,22 +107,17 @@ const Freequote = (props) => {
 
           <label className={styles.label}>Message *</label>
           <textarea className={styles.formfree} required name="message" rows="2" placeholder="Type Your Message Here"></textarea>
-          <button className={styles.freebtn} type="submit">{score} </button>
+          <button className={styles.freebtn} disabled={isdisabled} type="submit">{score} </button>
         </form>
-
 
         {props.show ?
 
           <div className='mt-4'>
             <Link className={styles.freediscuss} href="javascript:$zopim.livechat.window.show();">LET'S DISCUSS</Link>
             <Link className={styles.freehomenumer} href="tel:(855) 500 0057">(855) 500 0057</Link>
-          </div>
+          </div> 
 
-
-          : ''}
-
-
-
+          : ''} 
       </div>
 
 

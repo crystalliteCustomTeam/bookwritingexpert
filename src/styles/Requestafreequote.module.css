@@ -1,12 +1,12 @@
-.freequote{
+.freequote {
 
     padding-bottom: 70px;
     padding-bottom: 100px;
     background-color: #fff;
-    font-family: 'Poppins'; 
+    font-family: 'Poppins';
 }
 
-.formfree{
+.formfree {
     padding: 20px;
     border-radius: 0;
     box-shadow: 0 0 20px 0 #ddd;
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.freebtn{
+.freebtn {
     border: 0;
     padding: 12px 30px;
     border-radius: 0;
@@ -28,35 +28,44 @@
     margin-top: 3%;
     margin-bottom: 6%;
     border-radius: 50px;
-    
+
 
 }
-.formalign{
+
+.freebtn:disabled {
+    opacity: 0.5;
+}
+
+.formalign {
     padding-top: 2%;
 }
-.bookemail{
+
+.bookemail {
     color: #223235;
     font-weight: 500;
     font-size: 15px;
     list-style: none;
-    font-family: 'Poppins'; 
+    font-family: 'Poppins';
 }
-.emailhref{
+
+.emailhref {
     color: #383838;
     text-decoration: none;
 }
-@media (max-width:991px)  { 
+
+@media (max-width:991px) {
 
     .emailhref {
         font-size: 11px;
     }
 
-    .bookemail{
+    .bookemail {
         font-size: 14px;
     }
 
- } 
-@media (max-width:767px)  {
+}
+
+@media (max-width:767px) {
     .freebtn {
         width: 50%;
     }
@@ -67,18 +76,20 @@
 
 }
 
-@media (max-width:480px)  {
+@media (max-width:480px) {
     .emailhref {
         font-size: 14px;
     }
 
-    .bookemail{
+    .bookemail {
         font-size: 17px;
     }
-    .leftemail{
+
+    .leftemail {
         margin-left: 1%;
         margin-top: 50px;
     }
+
     .freebtn {
         width: 70%;
     }

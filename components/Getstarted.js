@@ -13,6 +13,7 @@ const Getstarted = (props) => {
 
 
   const [ip, setIP] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
   //creating function to load ip address from the API
   const getIPData = async () => {
     const res = await Axios.get('https://ipwho.is/');
@@ -30,27 +31,22 @@ const Getstarted = (props) => {
   const currentRoute = router.pathname;
 
   const handleSubmit = async (e) => {
-
     e.preventDefault()
-
-    
-
-
+    setIsdisabled(true);
+ 
     const data = {
       name: e.target.name.value,
       email: e.target.email.value,
       phone: e.target.phone.value,
       services: e.target.services.value,
       message: e.target.message.value,
-      pageUrl:currentRoute,
+      pageUrl: currentRoute,
     }
 
     const JSONdata = JSON.stringify(data)
 
     setScore('Sending Data');
-
-
-
+ 
     fetch('api/popup/route', {
       method: 'POST',
       headers: {
@@ -68,37 +64,34 @@ const Getstarted = (props) => {
 
     var currentdate = new Date().toLocaleString() + ''
     let headersList = {
-        "Accept": "*/*",
-        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-        "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
-        "Content-Type": "application/json"
-       }
-       
-       let bodyContent = JSON.stringify({
-        "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
-        "Brand": "BOOK-WRITING-EXPERT",
-        "Page": `${currentRoute}`,
-        "Date": currentdate,
-        "Time": currentdate,
-        "JSON": JSONdata,
-      });
-       
-     await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", { 
-         method: "POST",
-         body: bodyContent,
-         headers: headersList
-       });
+      "Accept": "*/*",
+      "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+      "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",
+      "Content-Type": "application/json"
+    }
 
+    let bodyContent = JSON.stringify({
+      "IP": `${ip.ip} - ${ip.country} - ${ip.city}`,
+      "Brand": "BOOK-WRITING-EXPERT",
+      "Page": `${currentRoute}`,
+      "Date": currentdate,
+      "Time": currentdate,
+      "JSON": JSONdata,
+    });
 
-
+    await fetch("https://sheetdb.io/api/v1/1ownp6p7a9xpi", {
+      method: "POST",
+      body: bodyContent,
+      headers: headersList
+    });
+ 
     const { pathname } = Router
     if (pathname == pathname) {
       window.location.href = 'https://www.bookwritingexperts.com/thank-you';
     }
 
   }
-
-
+ 
 
   return (
     <>
@@ -116,7 +109,7 @@ const Getstarted = (props) => {
               <input type="text" className={styles.formfree} required name="name" placeholder="Enter Your Name" />
             </Col>
             <Col md={6}>
-              <input type="email" className={styles.formfree} required name="email"   placeholder="Enter Your Email" />
+              <input type="email" className={styles.formfree} required name="email" placeholder="Enter Your Email" />
             </Col>
 
 
@@ -124,19 +117,16 @@ const Getstarted = (props) => {
             <Col md={6}>
               <input type="tel" minLength="10" maxLength="13" pattern="[0-9]*" className={styles.formfree} required name="phone" placeholder="Phone Number" />
             </Col>
-            <Col md={6}>
-              {/* <input type="number" className={styles.formfree} required name="phone" placeholder="Phone Number" /> */}
+            <Col md={6}> 
               <select name="services" className={`${styles.formfree} ${styles.formdrop}`}>
-                <option value="">Please select Service(s)</option>
-                {/* <option value="Ghost Writing">Ghost Writing</option> */}
+                <option value="">Please select Service(s)</option> 
                 <option value="Editing">Editing</option>
                 <option value="Publishing">Publishing</option>
                 <option value="Proofreading">Proofreading</option>
                 <option value="Blog Writing">Blog Writing</option>
                 <option value="Website Content Writing">Website Content Writing</option>
                 <option value="Book Promotion">Book Promotion</option>
-                <option value="Book Writing">Book Writing</option>
-
+                <option value="Book Writing">Book Writing</option> 
               </select>
             </Col>
 
@@ -145,28 +135,9 @@ const Getstarted = (props) => {
             </Col>
 
           </Row>
-
-
-
-
-
-
-
-
-
-
-
-          <button className={styles.freebtn} type="submit"> {score} </button>
+          <button className={styles.freebtn} disabled={isdisabled} type="submit"> {score} </button>
         </form>
-
-
-
-
-
-
       </div>
-
-
     </>
   )
 }

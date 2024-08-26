@@ -23,7 +23,8 @@ const Letstalk = () => {
   const [score, setScore] = useState("Send Message");
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -42,6 +43,7 @@ const Letstalk = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       page_url: pagenewurl,
@@ -140,7 +142,7 @@ const Letstalk = () => {
       const hubspotResult = await hubspotResponse.text();
       console.log(hubspotResult);
 
-      // window.location.href = "https://www.bookwritingexperts.com/thank-you";
+      window.location.href = "https://www.bookwritingexperts.com/thank-you";
     } catch (error) {
       console.error("Error submitting data:", error);
     }
@@ -173,7 +175,7 @@ const Letstalk = () => {
                       <input type="text" class="" required name="message" placeholder="Details" />
                     </div>
                   </div>
-                  <input type="submit" class="" name="name" value={score} />
+                  <input type="submit" class="" name="name" value={score} disabled={isdisabled} />
                 </form>
               </div>
             </Col>
@@ -194,10 +196,7 @@ const Letstalk = () => {
                     <li> <Link href="https://www.youtube.com/channel/UCMwHkNiJzrMd6MlPOBFMmLA">  <Image alt="Book Writing Experts" src={link} className='img-fluid' /> </Link> </li>
                   </ul>
                 </div>
-              </div>
-
-
-
+              </div> 
             </Col>
 
             <Col lg={12}>

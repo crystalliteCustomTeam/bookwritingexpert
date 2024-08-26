@@ -16,7 +16,8 @@ const Requestafreequote = () => {
   const [score, setScore] = useState('Submit');
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -35,6 +36,7 @@ const Requestafreequote = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); 
+    setIsdisabled(true);
     const data = {
       page_url: pagenewurl,
       user_ip: `${ip.ip}`,
@@ -155,7 +157,7 @@ const Requestafreequote = () => {
 
               <Col md={4}>   <input type="tel" minLength="10" maxLength="13" className={styles.formfree} required name="phone" placeholder='Phone' pattern="[0-9]*" /> </Col>
             </Row>
-            <button className={styles.freebtn} type="submit"> {score} </button>
+            <button className={styles.freebtn} type="submit" disabled={isdisabled}> {score} </button>
           </form>
           <Row className={styles.leftemail}>
             <Col md={4}>    <h3 className="fw700 font48 colorexpertgrey font-f t-left">Email Us</h3></Col>
@@ -171,7 +173,6 @@ const Requestafreequote = () => {
               <div>
                 <h4 className='fw700 font17 colorexpertgrey font-f'> For other inquiries only: </h4>
                 <p className={styles.bookemail}><BsFillTelephoneFill size={12} />
-
                   <Link className={`${styles.emailhref} hover`} href="tel:(855) 500 0057"> (855) 500 0057 </Link> </p>
               </div>
             </Col>

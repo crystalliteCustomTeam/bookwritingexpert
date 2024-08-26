@@ -8,24 +8,20 @@ import Router from 'next/router'
 
 const Blogform = () => {
     const [score, setScore] = useState('Submit Details');
+    const [isdisabled, setIsdisabled] = useState(false)
 
     const router = useRouter();
     const currentRoute = router.pathname;
 
     const handleSubmit = async (e) => {
-
         e.preventDefault()
-
+        setIsdisabled(true);
 
         const data1 = {
             name: e.target.first.value,
             email: e.target.email.value,
             pageUrl: currentRoute,
         }
-   
-        
-      
-
         const JSONdata = JSON.stringify(data1)
 
         setScore('Sending Data');
@@ -62,13 +58,13 @@ const Blogform = () => {
                 <h5>Newsletter</h5>
                 <form className="mt-4" onSubmit={handleSubmit}>
                     <div>
-                
+
                         <input type="text" required name="first" placeholder="FULL NAME" />
                     </div>
                     <div className="mt-3">
                         <input type="email" name="email" id="email" placeholder="EMAIL ADDRESS" />
                     </div>
-                    <button type="submit" className={`${styles.arrowBtn} mt-4`}>
+                    <button type="submit" disabled={isdisabled} className={`${styles.arrowBtn} mt-4`}>
                         <span>{score}</span>
                         <Image className='img-fluid' src={arrow} alt="Book Writing Experts" />
                     </button>

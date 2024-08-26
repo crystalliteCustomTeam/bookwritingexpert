@@ -2,8 +2,7 @@ import React from 'react'
 import styles from '@/styles/Bannerlp.module.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'next/image'
-import bannerlogos from '../public/images/newlp/bannerlogos.png'
-import Router from 'next/router'
+import bannerlogos from '../public/images/newlp/bannerlogos.png' 
 import { useRouter } from 'next/router';
 import Axios from "axios";
 import { useEffect } from 'react';
@@ -13,7 +12,8 @@ const Banner = () => {
   const [score, setScore] = useState("Send Message");
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -32,6 +32,7 @@ const Banner = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       page_url: pagenewurl,
@@ -167,7 +168,7 @@ const Banner = () => {
                       <input type="text" class="" required name="message" placeholder="Details" />
                     </div>
                   </div>
-                  <input type="submit" value={score} />
+                  <input type="submit" disabled={isdisabled} value={score} />
                 </form>
               </div>
               <div className={styles.folpo}>

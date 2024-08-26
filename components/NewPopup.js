@@ -16,7 +16,7 @@ const NewPopup = () => {
   // State variables for managing pop-up visibility
   const [topPopup, setTopPopup] = useState(false);
   const [bottomPopup, setBottomPopup] = useState(false);
-
+  const [isdisabled, setIsdisabled] = useState(false)
   // useEffect to set topPopup to true when the component mounts
   useEffect(() => {
     setTopPopup(true);
@@ -26,6 +26,7 @@ const NewPopup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       name: e.target.name.value,
@@ -124,7 +125,7 @@ const NewPopup = () => {
                         <button
                           type="submit"
                           className={`font-f fw500 ${styles.popupBtn}`}
-                        >
+                          disabled={isdisabled}>
                           <span>
                             <Image
                               src={BellIcon}

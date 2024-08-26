@@ -11,7 +11,8 @@ const Signup = (props) => {
   const [score, setScore] = useState("Best time to jump on a quick call:");
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -30,6 +31,7 @@ const Signup = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
 
     const data = {
       page_url: pagenewurl,
@@ -147,7 +149,7 @@ const Signup = (props) => {
         <input type="email" className={styles.nametext} required name="email" placeholder="Email Address:" />
         <input type="tel" className={styles.nametext} required name="phone" minLength="10" maxLength="13" pattern="[0-9]*" placeholder="Phone Number:" />
         <textarea required className={styles.textareanew} name="message" cols="40" rows="10" placeholder="Your project brief:"></textarea>
-        <button className={styles.freebtn} type="submit">
+        <button className={styles.freebtn} disabled={isdisabled} type="submit">
           {score}{" "}
         </button>
       </form>

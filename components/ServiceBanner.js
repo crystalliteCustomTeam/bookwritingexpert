@@ -22,7 +22,8 @@ const ServiceBanner = (props) => {
   const [score, setScore] = useState('Get A Free Quote');
   const router = useRouter();
   const currentRoute = router.pathname;
-  const [pagenewurl, setPagenewurl] = useState('')
+  const [pagenewurl, setPagenewurl] = useState('');
+  const [isdisabled, setIsdisabled] = useState(false)
 
   // Function to load IP address from the API
   const getIPData = async () => {
@@ -41,6 +42,7 @@ const ServiceBanner = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault(); 
+    setIsdisabled(true);
     const data = {
       page_url: pagenewurl,
       user_ip: `${ip.ip}`,
@@ -327,8 +329,8 @@ const ServiceBanner = (props) => {
                 <button
                   type="submit"
                   className={`font18 fw600 color-white mb-2 ${styles.serviceBtn}`}
-                >
-                  {/* Get A Free Quote */}
+                  disabled={isdisabled}
+                > 
                   {score}
                 </button>
               </form>

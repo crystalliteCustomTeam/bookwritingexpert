@@ -54,6 +54,7 @@
     padding: 5px 0px;
     width: 100%;
 }
+
 .childBanner .formClass input:focus {
     border: none;
     border-bottom: 1px solid;
@@ -78,10 +79,12 @@
         font-size: 60px;
         line-height: 70px;
     }
+
     .childBanner h3 {
         font-size: 30px;
         line-height: 35px;
     }
+
     .childBanner p {
         font-size: 14px;
     }
@@ -104,6 +107,7 @@
         color: #F7981D;
         text-align: center;
     }
+
     .childBanner p {
         font-size: 16px;
         text-align: center;

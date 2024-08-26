@@ -1,6 +1,4 @@
-import React from 'react'
-import Head from 'next/head'
-import Link from 'next/link'
+import React from 'react' 
 import dynamic from 'next/dynamic'
 import { Container, Row } from 'react-bootstrap'
 
@@ -31,14 +29,10 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect } from 'react'
-import { useState } from 'react'
-
-
-
+import { useState } from 'react' 
 
 const Bookpublishingservices = () => {
-
-
+ 
   var bookrecordingprojects = {
     dots: true,
     arrows: false,

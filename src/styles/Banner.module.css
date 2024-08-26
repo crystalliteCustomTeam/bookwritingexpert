@@ -522,6 +522,7 @@
 .servicesBanner form input:focus {
   outline: 0;
 }
+
 .servicesBanner form select {
   display: block;
   width: 100%;
@@ -553,6 +554,10 @@
   width: 100%;
   display: block;
   border-radius: 4px;
+}
+
+.serviceBtn:disabled {
+  opacity: 0.5;
 }
 
 .homebannerlogo {
@@ -636,6 +641,7 @@
     margin-top: 100px;
   }
 }
+
 @media (max-width: 1440px) {
   .subText {
     width: 61%;

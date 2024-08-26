@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '@/styles/Signup.module.css'
-import { useState } from "react";
-import Router from 'next/router'
+import { useState } from "react"; 
 import Axios from "axios";
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
@@ -10,6 +9,7 @@ const Signup = (props) => {
   const [ip, setIP] = useState('');
   const [score, setScore] = useState('Submit');
   const router = useRouter();
+  const [isdisabled, setIsdisabled] = useState(false)
   const currentRoute = router.pathname;
   const [pagenewurl, setPagenewurl] = useState('')
 
@@ -30,6 +30,7 @@ const Signup = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsdisabled(true);
     const data = {
       page_url: pagenewurl,
       user_ip: `${ip.ip}`,
@@ -145,7 +146,7 @@ const Signup = (props) => {
         <input type="text" className={styles.nametext} required name="name" placeholder="Full Name:" />
         <input type="email" className={styles.nametext} required name="email" placeholder="Email Address:" />
         <input type="tel" className={styles.nametext} required name="phone" minLength="10" maxLength="13" pattern="[0-9]*" placeholder="Phone Number:" />
-        <button className={styles.freebtn} type="submit">{score} </button>
+        <button className={styles.freebtn} type="submit" disabled={isdisabled}>{score} </button>
       </form>
     </div>
   )

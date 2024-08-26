@@ -65,10 +65,12 @@
   font-size: 26px;
   line-height: 36px;
 }
+
 .contentBody h3 {
   font-size: 22px;
   line-height: 32px;
 }
+
 .contentBody h4,
 .contentBody h5 {
   font-size: 18px;
@@ -208,23 +210,27 @@
   color: black;
 }
 
+.arrowBtn:disabled {
+  opacity: 0.5;
+}
+
 .newsLetter .arrowBtn {
   border: 0;
   font-size: 15px;
   background-color: #fff;
 }
 
-.arrowBtn > span {
+.arrowBtn>span {
   margin-right: 8px;
   transition: 0.4s;
 }
 
-.arrowBtn:hover > span {
+.arrowBtn:hover>span {
   margin-right: 30px;
   color: #000;
 }
 
-.arrowBtn > img {
+.arrowBtn>img {
   display: inline-block;
   margin: unset;
 }
@@ -237,11 +243,13 @@
     width: 100%;
     height: auto;
   }
+
   .ctaBtn {
     max-width: 100%;
     min-width: 150px;
   }
 }
+
 @media screen and (max-width: 991px) {
   .platForm .subTitle {
     font-size: 16px;
