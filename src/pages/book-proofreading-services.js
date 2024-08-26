@@ -27,9 +27,7 @@ import { useState } from 'react'
 
 
 
-const Bookpublishingservices = () => {
-
-
+const Bookpublishingservices = () => { 
 
   var bookrecordingprojects = {
     dots: true,
@@ -72,11 +70,7 @@ const Bookpublishingservices = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
-
-
-
-
+ 
   const newSpan = <h1 className='font50 color-white font-f hero-span'> Refine Your Book with Impeccable Mastery through our Professional <Link className='textdocationnone fw700 color-blue hover' href="/book-proofreading-services">Book Proofreading Services</Link>!</h1>;
 
   const discuss = <span>Hire The Best Book Proofreading Services!</span>
@@ -96,16 +90,10 @@ const Bookpublishingservices = () => {
       discuss: discuss,
       homebannernum: 'Call Us At (855) 500 0057',
       banlogo: homebannerlogos,
-      banners: 'offeringyoubook',
-
-
-
-
+      banners: 'offeringyoubook', 
     }
   ]
-
-
-
+ 
   const reasons = [
 
     {
@@ -177,10 +165,6 @@ const Bookpublishingservices = () => {
 
   const geta = <span> <Link className='color-blue textdocationnone hover fw700' href='/book-proofreading-services'>Professional Proofreading Services</Link> to Turn Your Words into a Masterpiece!</span>
 
-
-
-
-
   const fine = [
 
     {
@@ -240,25 +224,10 @@ const Bookpublishingservices = () => {
 
   </>
 
-  const qualified = <>
-
-    When the going gets tough, rely on our team of qualified editors to lend a helping hand. Contact us to enlist their expertise in reviewing your paper and rectifying any mistakes. Whether it's a minor oversight or a significant grammatical error, our <Link className='textdocationnone color-blue hover fw700' href='/book-proofreading-services'>book proofreading services</Link> team will ensure your work is flawlessly polished before you submit it.
-
-  </>
-
-
-
-
- 
-
+  const qualified = "When the going gets tough, rely on our team of qualified editors to lend a helping hand. Contact us to enlist their expertise in reviewing your paper and rectifying any mistakes. Whether it's a minor oversight or a significant grammatical error, our <a class='textdocationnone color-blue hover fw700' href='/book-proofreading-services'>book proofreading services</a> team will ensure your work is flawlessly polished before you submit it."
 
   return (
-    <>
-  
-
-
-
-
+    <> 
       {/* banner components */}
 
       {bannertext.map((item, i) =>
@@ -278,12 +247,7 @@ const Bookpublishingservices = () => {
 
 
       {/* partners components */}
-
-
-
-
-
-
+ 
       {/* Dowecome */}
       <Dowecome
         title={geta}
@@ -367,11 +331,7 @@ const Bookpublishingservices = () => {
 
 
       />
-
-
-
-
-
+ 
       {/* Stopworrying */}
       <div className='dataSetCo'>
         <Stopworrying
@@ -381,42 +341,9 @@ const Bookpublishingservices = () => {
           btn2='Chat With Us To Seek Our Expertise'
         />
       </div>
-
-
-
-
+ 
       {/* Talk To Our Whatourclients! */}
-      <Whatourclients />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <Whatourclients /> 
 
       {/* Stillonthefence component */}
 
@@ -439,7 +366,6 @@ const Bookpublishingservices = () => {
               />
             )}
           </Slider>
-
           :
           <Row className='gy-5'>
             {reasons.map((item, i) =>
@@ -456,10 +382,7 @@ const Bookpublishingservices = () => {
         }
 
       </Container>
-
-
-
-
+ 
 
       {/* Aspiring */}
 
@@ -471,14 +394,7 @@ const Bookpublishingservices = () => {
         />
 
       </div>
-
-
-
-
-
-
-
-
+ 
     </>
   )
 }

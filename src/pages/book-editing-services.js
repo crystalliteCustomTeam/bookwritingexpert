@@ -34,7 +34,7 @@ const Bookpublishingservices = () => {
 
   const ideas = <span> <Link className='textdocationnone color-blue hover' href="/book-editing-services">Hire book editors</Link> and transform your manuscript into a page-turning sensation that leaves readers craving for more.</span>
 
-  const discuss = <span>Book Your Free Consultation Now!</span> 
+  const discuss = <span>Book Your Free Consultation Now!</span>
   const bannertext = [
     {
       title: newSpan,
@@ -119,7 +119,7 @@ const Bookpublishingservices = () => {
 
   const glance = <span> Through the Complexity of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>Book Editing</Link>, Let Our Professional Book Editors Illuminate Your Path! </span>
 
-  const perplexing = <span>Let us help you navigate the maze of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editing</Link>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <Link className='textdocationnone color-blue hover' href='/book-editing-services'>book editors</Link>. Call, text, or email us today to make your dream of becoming an author a reality!</span>
+  const perplexing = 'Let us help you navigate the maze of <a class="textdocationnone color-blue hover" href="/book-editing-services">book editing</a>, proofreading, and self-publishing. your manuscript will become a best seller with our expert team of <a class="textdocationnone color-blue hover" href="/book-editing-services">book editors</a>. Call, text, or email us today to make your dream of becoming an author a reality!'
 
   return (
     <>
