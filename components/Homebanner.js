@@ -7,63 +7,9 @@ import Slider from 'react-slick'
 import Modal from 'react-bootstrap/Modal'
 import { useState } from 'react';
 import { BsFillPlayFill } from 'react-icons/bs'
-
-
-// images
-import banslider1 from '../public/images/bannerimages/banslider1.png'
-import banslider3 from '../public/images/bannerimages/banslider3.png'
-import banslider4 from '../public/images/bannerimages/banslider4.png'
+ 
 
 const Homebanner = (props) => {
-
-    const bannerlogo =
-        [
-            { banlogo: banslider1 },
-            { banlogo: banslider3 },
-            { banlogo: banslider4 },
-            { banlogo: banslider1 },
-            { banlogo: banslider3 },
-            { banlogo: banslider4 },
-        ];
-
-
-    var bannerslider = {
-        dots: false,
-        arrows: false,
-        autoplay: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        rows: 0,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
-
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -123,40 +69,13 @@ const Homebanner = (props) => {
 
                                             <div className={styles.homebannerlogo}>
                                                 <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-3`} src={props.homebanlogos} alt="Book Writing Experts" ></Image>
-                                            </div>
-                                            {/* <div className={styles.homebannerlogo2}>
-                                                <Image loading="lazy" className={`${styles.homelogoimgnone} img-fluid mt-5`} src={props.homebanlogos2} alt="Book Writing Experts" ></Image>
-                                            </div> */}
+                                            </div> 
                                         </div>
                                     </div>
                                     :
                                     ''
-                                }
-
-
-                                {/* <div className="row">
-                                    <div className="col-12 col-lg-12">
-                                        <Slider {...bannerslider} className='mt-5 homeSlider'>
-                                            {bannerlogo.map((item, i) => {
-                                                return (
-                                                    <div key={i}>
-                                                        <Image loading="lazy" className='pt-3 img-fluid brandnewlogo' src={item.banlogo} alt="Book Writing Experts"></Image>
-                                                    </div>
-                                                )
-                                            })}
-                                        </Slider>
-                                    </div>
-                                </div> */}
-
-
-
-
-
-
-                            </div>
-
-
-
+                                } 
+                            </div> 
 
                         </Col>
                     </Row>

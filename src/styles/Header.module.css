@@ -189,16 +189,13 @@
 .headerCBIicon {
   display: flex;
   align-items: center;
-}
-/* .bigIcon1 {
-    position: relative;
-    left: -4px;
-} */
+} 
 
 .headerhome {
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 .headerblue {
   position: absolute;

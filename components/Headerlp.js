@@ -242,31 +242,22 @@ const Headerlp = () => {
 
                 <li className={`${styles.navlinks} ${styles.headertel}`}>
 
-                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="javascript:$zopim.livechat.window.show();">
-
+                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="javascript:$zopim.livechat.window.show();"> 
                     Let’s Discuss </Link>
 
-                </li>
-
-
+                </li> 
                 <li className={`${styles.navlinks} ${styles.headertel} ${styles.headerbtnspacing}`}><Link className={styles.headerbtncolor} href="tel:8555000057">(855) 500 0057</Link></li>
 
               </ul>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-
       </header>
-
       <Sticky />
-
 
       <Modal show={show} centered onHide={closemodal} className='getmodal'>
         <Modal.Body> <Getstarted /> <span onClick={closemodal} className={styles.cross}>x</span> </Modal.Body>
-
       </Modal>
-
-
     </>
   )
 }
