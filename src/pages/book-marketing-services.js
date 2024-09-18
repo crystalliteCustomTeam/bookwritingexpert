@@ -28,7 +28,7 @@ const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
 const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'));
 const Major = dynamic(() => import('../../components/Major'));
 
-// css
+// css 
 import styles from '@/styles/Whybookpublishing.module.css'
 
 import Slider from 'react-slick'
