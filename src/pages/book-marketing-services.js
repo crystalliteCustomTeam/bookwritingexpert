@@ -15,17 +15,17 @@ import bookmarketingservices4 from '/public/images/bookmarketingservices/4.png'
 
 
 // components
-import Banner from '../../components/Banner'
-import Dowecome from '../../components/Dowecome'
-import Stopworrying from '../../components/Stopworrying'
-import Finetoothedbook from '../../components/Finetoothedbook'
-import Aspiring from '../../components/Aspiring'
-import Ourprocess from '../../components/Ourprocess'
-import Whatourclients from '../../components/Whatourclients'
-import Lululogos from '../../components/Lululogos'
-import Selfpublishing from '../../components/Selfpublishing'
-import Whychoosebookwritingcube from '../../components/Whychoosebookwritingcube'
-import Major from '../../components/Major'
+const Banner = dynamic(() => import('../../components/Banner'));
+const Dowecome = dynamic(() => import('../../components/Dowecome'));
+const Stopworrying = dynamic(() => import('../../components/Stopworrying'));
+const Finetoothedbook = dynamic(() => import('../../components/Finetoothedbook'));
+const Aspiring = dynamic(() => import('../../components/Aspiring'));
+const Ourprocess = dynamic(() => import('../../components/Ourprocess'));
+const Whatourclients = dynamic(() => import('../../components/Whatourclients'));
+const Lululogos = dynamic(() => import('../../components/Lululogos'));
+const Selfpublishing = dynamic(() => import('../../components/Selfpublishing'));
+const Whychoosebookwritingcube = dynamic(() => import('../../components/Whychoosebookwritingcube'));
+const Major = dynamic(() => import('../../components/Major'));
 
 // css
 import styles from '@/styles/Whybookpublishing.module.css'
@@ -199,7 +199,7 @@ const Bookpublishingservices = () => {
         subtitle={posdata}
         btn1='Get a free Proposal'
         btn2='Chat With Our Book Marketing Experts Now!'
-      /> 
+      />
       <div className={`${styles.finetoothedbook} customizedbook`}>
         <Container>
           <Row >
@@ -207,7 +207,7 @@ const Bookpublishingservices = () => {
 
             <p className='font50 font-f fw500 colortextgrey t-center pb-2'>Commence on Literary Triumph with Our Online <Link className='textdocationnone color-blue hover fw700' href='/book-marketing-services'>  Book Marketing Services</Link> Attracting New Readers!</p>
 
-          </Row> 
+          </Row>
           {isSliderActive ?
             <Slider {...bookrecordingprojects}>
               {fine.map((item, i) =>
@@ -236,7 +236,7 @@ const Bookpublishingservices = () => {
           }
         </Container>
       </div>
- x
+      x
       <Ourprocess
         title={potential}
         text={marketing}
@@ -271,7 +271,7 @@ const Bookpublishingservices = () => {
           btn1='Get a free Proposal'
           btn2='Chat With our Experts!'
         />
-      </div> 
+      </div>
       <section className={styles.servicetitle}>
         <Container>
           <Row>
@@ -345,7 +345,7 @@ const Bookpublishingservices = () => {
           number="Call Our Team - (855) 500 0057"
         />
 
-      </div> 
+      </div>
     </>
   )
 }
