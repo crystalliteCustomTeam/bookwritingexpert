@@ -14,7 +14,6 @@ import Headerlp from "../../components/Headerlp";
 import Footerlp from "../../components/Footerlp";
 import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer";
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
-import { fontSecondary, primaryFont } from './fonts'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -37,7 +36,7 @@ export default function App({ Component, pageProps }) {
       <Script src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
       <GoogleAnalytics gaId="AW-411006583" />
       <GoogleTagManager gtmId="GTM-K994MT85" />
-      <div className={`${primaryFont.variable} ${fontSecondary.variable}`}>
+      <div>
         {newlop || newbooklp ? <Headerlp /> : <Header />}
         <Pixel />
         <Component {...pageProps} />
