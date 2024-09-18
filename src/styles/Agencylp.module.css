@@ -8,7 +8,7 @@
   font-size: 38px;
   color: #24303E;
   line-height: 1.4;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .turn h4{
   font-size: 16px;
@@ -16,7 +16,7 @@
   color: #F7981D;
   line-height: 1.6;
   padding-top: 10px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .turn p{
   color: #24303E;
@@ -45,7 +45,7 @@
 .help h5{
   color: #24303E;
   font-size: 12.5px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -63,7 +63,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .great:hover{
   color: white;
@@ -123,7 +123,7 @@
 .help h5 {
   color: #24303E;
   font-size: 10.5px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 0;
   font-weight: 400;
 }

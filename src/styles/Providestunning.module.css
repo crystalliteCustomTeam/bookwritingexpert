@@ -18,7 +18,7 @@
     color: #fff;
     text-decoration: unset;
     border: 1px solid #ff9900;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     width: 20%;
     text-align: center;
     display: block;

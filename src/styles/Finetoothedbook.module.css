@@ -49,7 +49,7 @@
     color: #fff;
     box-shadow: 0 0 14px 7px #ddd;
     text-decoration: none;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 
 }
 .btnfine:hover{

@@ -21,7 +21,7 @@
 }
 
 .audiobookrecordingprojects{
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 

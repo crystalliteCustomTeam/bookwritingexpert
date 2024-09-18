@@ -3,7 +3,7 @@
     padding-bottom: 70px;
     padding-bottom: 100px;
     background-color: #fff;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 .formfree {
@@ -45,7 +45,7 @@
     font-weight: 500;
     font-size: 15px;
     list-style: none;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 .emailhref {

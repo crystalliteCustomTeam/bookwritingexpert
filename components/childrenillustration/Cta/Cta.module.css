@@ -15,14 +15,14 @@
     margin-bottom: -50px;
 }
 .ctaSection h3{
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 40px;
     line-height: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 .ctaSection p{
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 20px;
@@ -30,13 +30,13 @@
 
 @media (max-width:1199.98px) {
     .ctaSection h3{
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         font-size: 30px;
         line-height: 40px;
         margin-top: 50px;
     }
     .ctaSection p{
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 20px;
@@ -45,13 +45,13 @@
 
 @media (max-width:991.98px) {
     .ctaSection h3{
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         font-size: 25px;
         line-height: 35px;
 
     }
     .ctaSection p{
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 10px;
@@ -76,7 +76,7 @@
         margin-bottom: 0px;
     }
     .ctaSection h3{
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         font-size: 45px;
         line-height: 55px;
         margin-top: 20px;
@@ -84,7 +84,7 @@
         text-align: center;
     }
     .ctaSection p{
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 10px;
@@ -93,7 +93,7 @@
 }
 @media (max-width:576px) {
     .ctaSection h3{
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         font-size: 45px;
         line-height: 55px;
         margin-top: 20px;
@@ -101,7 +101,7 @@
         text-align: center;
     }
     .ctaSection p{
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
         font-size: 16px;
         line-height: 25px;
         margin-bottom: 10px;

@@ -45,7 +45,7 @@
     line-height: 15px;
 }
 .process {
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
     background: #242424;
     background-repeat: no-repeat;
     background-position: center;

@@ -17,7 +17,7 @@
 /* .tableofcontent{
     font-weight: 800;
     font-size: 1.5rem;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     margin-bottom: 5%;
     margin-top: 10%;
     padding-left: 10%;
@@ -27,7 +27,7 @@
     color: #223235;
     font-weight: 600;
     text-decoration: underline;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
   
 }
 .understand li {

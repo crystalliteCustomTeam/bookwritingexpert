@@ -1,5 +1,5 @@
 .bookPortfolio {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     padding: 100px 0 40px;
     text-align: center;
 }
@@ -50,7 +50,7 @@
     }
 
     .bookPortfolio {
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         padding: 70px 0px 10px;
         ;
         text-align: center;
@@ -63,7 +63,7 @@
         line-height: 50px;
     }
     .bookPortfolio {
-        font-family: "SF Pro Display", sans-serif;
+        font-family: var(--font-primary), sans-serif;
         padding: 70px 0;
         text-align: center;
     }

@@ -2,7 +2,7 @@
     counter-increment: section;
     content: counter(section);
     position: absolute;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     font-size: 5.5em;
     font-weight: 900;
     color: #e9e8e8;
@@ -14,7 +14,7 @@
     counter-increment: section;
     content: counter(section);
     position: absolute;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     font-weight: 500;
     color: #fff;
     text-align: center;

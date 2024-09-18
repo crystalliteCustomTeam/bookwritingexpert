@@ -2,10 +2,10 @@
     padding: 100px 0;
     display: flex;
     align-items: center;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
 }
 .testimonial h3{
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
 }
 .testimonialSlide{
     position: relative;
@@ -59,7 +59,7 @@
       padding: 50px 0;
       display: flex;
       align-items: center;
-      font-family: "Poppins", sans-serif;
+      font-family: var(--font-secondary);
   }
   .testimonialData p{
     font-size: 14px;

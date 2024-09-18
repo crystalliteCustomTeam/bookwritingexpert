@@ -1,6 +1,6 @@
 .services {
   padding: 100px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
 }
 .services h3 {
   font-size: 40px;
@@ -79,7 +79,7 @@
 @media screen and (max-width: 991.98px) {
   .services {
     padding: 50px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
   .services h3 {
     font-size: 30px;

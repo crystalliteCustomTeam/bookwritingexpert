@@ -1,6 +1,6 @@
 .faqs {
   padding: 100px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
 }
 .faqs h2 {
   font-size: 40px;
@@ -62,7 +62,7 @@
 @media screen and (max-width: 991.98px) {
   .faqs {
     padding: 50px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
   .faqs .btnCss h4 {
     font-size: 18px;

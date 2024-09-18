@@ -1,5 +1,5 @@
 .bookShelf {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     padding: 70px 0;
     background: url('../../../public//images/childrenillustration/table-and-bottom.png');
     background-size: contain;

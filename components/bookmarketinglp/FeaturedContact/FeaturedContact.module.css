@@ -1,6 +1,6 @@
 .featured {
   padding: 100px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   display: flex;
   align-items: center;
   position: relative;

@@ -2,7 +2,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #24303E;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .expertdiscuss {
@@ -21,7 +21,7 @@
   text-decoration: none;
   color: #223235;
   text-transform: uppercase;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .expertnum a {
   text-decoration: none;

@@ -1,6 +1,6 @@
 .__testimonials {
   padding: 100px 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
 }
 .__testimonials h3 {
   font-size: 40px;
@@ -43,7 +43,7 @@
 @media screen and (max-width: 1199.98px) {
   .__testimonials {
     padding: 50px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
   .__testimonials h3 {
     font-size: 30px;
@@ -66,7 +66,7 @@
 @media screen and (max-width: 991.98px) {
   .__testimonials {
     padding: 50px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
 }
 

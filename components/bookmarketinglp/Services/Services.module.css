@@ -1,7 +1,7 @@
 .service {
   padding: 100px 0;
   background: #f3f3f3;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   position: relative;
 }
 .service h3 {

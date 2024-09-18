@@ -1,7 +1,7 @@
 .choosebook{
     padding-top: 100px;
     padding-bottom: 100px;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 .whytext{

@@ -1,7 +1,7 @@
 .banner {
   background-image: url(/images/newlp/banner.png);
   background-repeat: no-repeat;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   background-size: cover;
   height: 750px;
   background-position: right;
@@ -202,7 +202,7 @@
   .banner {
     background-image: unset;
     background-repeat: no-repeat;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     background-size: cover;
     height: 750px;
     background-position: right;

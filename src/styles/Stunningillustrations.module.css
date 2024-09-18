@@ -24,7 +24,7 @@
     transition: color 1s;
     border: 2px solid #ee9d2d;
     width: 26%;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     text-decoration: none;
     margin: 0 auto;
     text-align: center;

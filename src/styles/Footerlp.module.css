@@ -30,13 +30,13 @@
 background-color: #24303E;
   color: #fff;
   padding-top: 80px;
-  font-family: 'Poppins';
+  font-family: var(--font-secondary);
 }
 .footermenu1{
     padding-left: unset;
 }
 .footermenu1 .footermenulinks{
-    font-family: 'Poppins'; 
+    font-family: var(--font-secondary); 
     color: #fff;
     font-weight: 400;
     font-size: 12px;

@@ -21,7 +21,7 @@
     text-transform: capitalize;
     transition: color 1s;
     color: #fff;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     border-radius: 50px;
 
 }
@@ -36,7 +36,7 @@
     text-transform: capitalize;
     transition: color 1s;
     color: #223235;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     margin-left: 3%;
     border-radius: 50px;
 }

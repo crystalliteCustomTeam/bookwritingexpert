@@ -1,5 +1,5 @@
 .gotastory{
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     width: 100%;
 }
 .bgVideo{

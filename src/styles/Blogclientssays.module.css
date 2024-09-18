@@ -31,7 +31,7 @@
     margin: 0 auto;
     margin-top: 5%;
     color: #223235;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 .more{
     border: none;
@@ -39,7 +39,7 @@
     padding-top: 7px;
     cursor: pointer;
     color: #f29a12;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     font-weight: 700;
     display: block;
 }

@@ -8,13 +8,13 @@
   border-radius: 3px;
   padding: 0 15px;
   border-radius: 0px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   color: #898989;
   font-size: 14px;
 }
 
 .nametext::placeholder {
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   font-size: 14px;
 }
 
@@ -67,7 +67,7 @@
   outline: none;
   resize: none;
   text-align: left;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .freebtn {
@@ -84,7 +84,7 @@
   font-size: 16px;
   background: #fc9e31;
   width: 100%;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .freebtn:disabled {
@@ -95,7 +95,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 5px;
   margin-top: 10px;
 }
@@ -103,7 +103,7 @@
 .offfree {
   color: #fc9e31;
   font-size: 28px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .signsimg {

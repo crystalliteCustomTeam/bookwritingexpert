@@ -1,7 +1,7 @@
 .ready{
   background-image: url(/images/newlp/biggerbg.png);
   background-repeat: no-repeat;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   background-size: cover;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .great:hover, .produce:hover{
   color: unset;
@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .know{
   display: flex;

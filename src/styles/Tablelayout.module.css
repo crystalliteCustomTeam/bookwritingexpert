@@ -11,7 +11,7 @@
     font-weight: 500;
     padding: 0.25rem;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 .rightcolor{

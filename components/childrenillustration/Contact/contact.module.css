@@ -3,7 +3,7 @@
     position: relative;
     z-index: 999;
     display: flex;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
 }
 
 .contact::before {
@@ -21,11 +21,11 @@
 }
 
 .contact h3 {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
 }
 
 .contact label {
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 16px;
     line-height: 20px;
 }

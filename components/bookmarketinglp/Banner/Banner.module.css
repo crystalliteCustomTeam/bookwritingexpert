@@ -2,7 +2,7 @@
   padding-top: 150px;
   padding-bottom: 50px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
   position: relative;
 }
 .BannerImg {

@@ -1,5 +1,5 @@
 .aspiring{
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 
@@ -20,7 +20,7 @@
     border: 2px solid #EE9D2D;
     color: #fff ;
     width: 100%;
-    font-family: 'Poppins'; 
+    font-family: var(--font-secondary); 
     text-decoration: none;
 }
 
@@ -45,7 +45,7 @@
     color: #223235;
     border: 2px solid #223235;
     width: 100%;
-    font-family: 'Poppins'; 
+    font-family: var(--font-secondary); 
     text-decoration: none;
     margin-left: 3%;
 }

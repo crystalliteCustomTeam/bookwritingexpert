@@ -1,6 +1,6 @@
 .card {
     padding: 100px 0;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
 }
 
 .card h2 span {
@@ -11,7 +11,7 @@
     font-size: 50px;
     line-height: 60px;
     text-align: center;
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
 }
 
 .card p {
@@ -48,7 +48,7 @@
 @media (max-width:991.98px) {
     .card {
         padding: 50px 0;
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
     }
     .cardDesign {
         padding: 40px 20px;
@@ -69,7 +69,7 @@
 @media (max-width:767.98px) {
     .card {
         padding: 50px 0;
-        font-family: "Poppins", sans-serif;
+        font-family: var(--font-secondary);
     }
     .card h2 {
         font-size: 40px;

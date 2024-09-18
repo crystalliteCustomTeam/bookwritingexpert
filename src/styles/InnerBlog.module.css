@@ -2,7 +2,7 @@
   padding-top: 175px;
   overflow: hidden;
   padding-bottom: 50px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .innerBlog a {

@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: row;
     padding: 150px 0 100px;
-    font-family: "SF Pro Display", sans-serif;
+    font-family: var(--font-primary), sans-serif;
     background: url(../../../public/images/childrenillustration/bg-Banner.png);
     background-repeat: no-repeat;
     background-size: cover;

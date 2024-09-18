@@ -14,29 +14,18 @@ import Headerlp from "../../components/Headerlp";
 import Footerlp from "../../components/Footerlp";
 import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer";
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import { fontSecondary, primaryFont } from './fonts'
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const handleLoaded = () => {
     zE("webWidget:on", "open", function () { });
   };
-
   const sluginer = router.asPath;
-
   const weblink = "https://www.bookwritingexperts.com";
-
   const newlop = router.asPath == "/bookexperlp";
   const newbooklp = router.asPath == "/book-marketinglp";
   const newcol = weblink + sluginer;
-
-  const [imagesLoaded, setImagesLoaded] = useState(false);
-  useEffect(() => {
-    const delay = 3000;
-    const timeoutId = setTimeout(() => {
-      setImagesLoaded(true);
-    }, delay);
-    return () => clearTimeout(timeoutId);
-  }, []);
 
   return (
     <>
@@ -45,21 +34,16 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href={newcol} />
       </Head>
       <Metas />
-      <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
-
-      {/* Other meta tags and head elements */}
-
+      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-411006583"></Script>
       <GoogleAnalytics gaId="AW-411006583" />
-
       <GoogleTagManager gtmId="GTM-K994MT85" />
-
-      {newlop || newbooklp ? <Headerlp /> : <Header />}
-      <Pixel />
-      <Component {...pageProps} />
-      {newlop ? <Footerlp /> : (newbooklp ? <NewbooklpFooter /> : <Footer />)}
-      <div>
-        <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
+      <div className={`${primaryFont.variable} ${fontSecondary.variable}`}>
+        {newlop || newbooklp ? <Headerlp /> : <Header />}
+        <Pixel />
+        <Component {...pageProps} />
+        {newlop ? <Footerlp /> : (newbooklp ? <NewbooklpFooter /> : <Footer />)}
       </div>
+      <Zendesk defer zendeskKey={ZENDESK_KEY} onLoaded={handleLoaded} />
     </>
   );
 }

@@ -16,7 +16,7 @@
     border: 1px solid #a6a6a6;
     padding: 15px;
     width: 100%;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 
 }
 
@@ -24,7 +24,7 @@
     background-color: #fff;
     box-shadow: 0 0 20px 1px #ddd;
     padding: 7%;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 }
 
 .blogformsaspire {
@@ -32,7 +32,7 @@
     padding: 7%;
     margin-top: 25%;
     margin-left: 10%;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     padding-top: 15%;
     position: sticky;
     top: 10%;
@@ -50,7 +50,7 @@
     color: #223235;
     margin-top: 12px;
     font-size: 14px;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
 
 }
 
@@ -75,7 +75,7 @@
     text-decoration: unset;
     border: 1px solid #223235;
     border-radius: 50px;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     width: fit-content;
     margin: 0 auto;
     display: block;
@@ -96,7 +96,7 @@
     padding: 12px 34px;
     border: 2px solid #FF9900;
     color: #223235;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     text-decoration: none;
     border-radius: 50px;
 }
@@ -114,7 +114,7 @@
     border: 2px solid #FF9900;
     color: #fff;
     margin-left: 3%;
-    font-family: 'Poppins';
+    font-family: var(--font-secondary);
     text-decoration: none;
     border-radius: 50px;
 }

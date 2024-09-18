@@ -2,11 +2,11 @@
   padding-top: 175px;
   overflow: hidden;
   padding-bottom: 50px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .postList {
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 .postList a {
   text-decoration: none;

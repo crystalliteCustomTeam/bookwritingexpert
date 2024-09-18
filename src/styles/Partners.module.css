@@ -1,7 +1,7 @@
 .partners {
   padding: 35px 0;
   background-color: #141d29;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 @media only screen and (max-width: 991px) {

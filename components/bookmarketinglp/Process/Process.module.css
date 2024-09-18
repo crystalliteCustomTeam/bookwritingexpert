@@ -1,7 +1,7 @@
 .process {
   padding: 100px 0px 210px;
   background: #f3f3f3;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-secondary);
 }
 .process h3 {
   font-size: 40px;
@@ -60,7 +60,7 @@
   .process {
     padding: 100px 0px 100px;
     background: #f3f3f3;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
   .process .card {
     min-height: 250px;
@@ -102,7 +102,7 @@
   .process {
     padding: 50px 0px;
     background: #f3f3f3;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
 }
 
@@ -110,7 +110,7 @@
   .process {
     padding: 50px 0px;
     background: #f3f3f3;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--font-secondary);
   }
   .process h3 {
     font-size: 25px;

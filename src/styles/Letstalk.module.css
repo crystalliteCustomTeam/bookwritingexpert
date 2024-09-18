@@ -1,6 +1,6 @@
 .banner {
   padding-bottom: 70px;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .newlongtsk {
@@ -34,17 +34,17 @@
 
 .publish input[type="text"] {
   width: 100%;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .publish input[type="email"] {
   width: 100%;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .publish input[type="tel"] {
   width: 100%;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
 }
 
 .newtown input[type="submit"] {
@@ -152,7 +152,7 @@
 .gosto h3 {
   font-size: 23px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   font-weight: 600;
 }
 
@@ -173,7 +173,7 @@
   font-weight: bold;
   font-size: 25px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 0;
 }
 
@@ -181,7 +181,7 @@
   font-weight: 600;
   font-size: 17px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 2px;
 }
 
@@ -189,7 +189,7 @@
   font-weight: 400;
   font-size: 11px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 0;
   text-decoration: none;
 }
@@ -202,7 +202,7 @@
   font-weight: 600;
   font-size: 17px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 2px;
 }
 
@@ -210,7 +210,7 @@
   font-weight: 400;
   font-size: 11px;
   color: white;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   margin-bottom: 0;
   text-decoration: none;
 }

@@ -9,7 +9,7 @@
     background-color: #ff9900;
     border: 0;
     color: #fff;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     text-decoration: none;
     border-radius: 50px;
     float: right;
@@ -40,7 +40,7 @@
     height: 100vh;
     display: flex;
     background-position: center;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     background-position: center;
     align-items: center;
     justify-content: center;
@@ -60,7 +60,7 @@
     font-size: 14px;
     background: #FD9802;
     width: 25%;
-    font-family: "Poppins";
+    font-family: var(--font-secondary);
     text-decoration: none;
 }
 

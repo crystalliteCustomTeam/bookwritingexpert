@@ -1,7 +1,7 @@
 .partners {
   background-image: url(/images/newlp/allserv.png);
   background-repeat: no-repeat;
-  font-family: "Poppins";
+  font-family: var(--font-secondary);
   background-size: cover;
   background-position: right;
   padding-top: 80px;
