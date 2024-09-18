@@ -33,6 +33,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.8.1"
+    "@builder.io/partytown": "^0.8.1",
+    "typescript": "^5.6.2"
   }
 }
