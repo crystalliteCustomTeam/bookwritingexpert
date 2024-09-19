@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Agencylp.module.css'
+import styles from '@/styles/Agencylp.module.min.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Image from 'next/image'
 import marketing from '../public/images/newlp/marketing.png'

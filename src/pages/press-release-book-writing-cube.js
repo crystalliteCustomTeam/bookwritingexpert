@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Announcement.module.css'
+import styles from '@/styles/Announcement.module.min.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Banner from '../../components/Banner'
 import Aspiring from '../../components/Aspiring'
