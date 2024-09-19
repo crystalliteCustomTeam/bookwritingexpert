@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }) {
         <Component {...pageProps} />
         {newlop ? <Footerlp /> : (newbooklp ? <NewbooklpFooter /> : <Footer />)}
       </div>
-      <Script strategy="lazyOnload" id="facebook-snippet">
+      <Script id="facebook-snippet">
         {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -69,10 +69,9 @@ export default function App({ Component, pageProps }) {
             fbq('track', 'PageView');
         `}
       </Script>
-      <GoogleAnalytics strategy="lazyOnload" gaId="AW-411006583" />
-      <GoogleTagManager strategy="lazyOnload" gtmId="GTM-K994MT85" />
+      <GoogleAnalytics gaId="AW-411006583" />
+      <GoogleTagManager gtmId="GTM-K994MT85" />
       <Script
-        strategy="lazyOnload"
         id="ze-snippet"
         src="https://static.zdassets.com/ekr/snippet.js?key=d1d4aa8a-5573-473a-b921-5b6a8eb467ad"
       />
