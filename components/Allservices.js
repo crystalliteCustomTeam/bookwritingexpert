@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/Allservices.module.min.css'
+import styles from '@/styles/Allservices.module.css'
 import Image from 'next/image'
 import { Container, Row, Col } from 'react-bootstrap'
 
