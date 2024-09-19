@@ -14,7 +14,26 @@ import Headerlp from "../../components/Headerlp";
 import Footerlp from "../../components/Footerlp";
 import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer";
 import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
-import { fontSecondary, primaryFont } from './fonts'
+import localFont from "next/font/local"
+import { Poppins as FontSecondary } from "next/font/google"
+
+
+const fontSecondary = FontSecondary({
+  subsets: ["latin"],
+  variable: "--font-secondary",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["italic", "normal"],
+  display: "swap",
+  fallback: ['system-ui', 'arial']
+})
+
+const primaryFont = localFont({
+  src: "../font/SFProDisplay-Regular.ttf",
+  variable: "--font-primary",
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+  subsets: ["latin"]
+})
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
