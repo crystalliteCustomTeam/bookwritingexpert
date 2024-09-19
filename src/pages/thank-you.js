@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../../components/Banner'
 import Head from 'next/head'
 import Script from 'next/script'
-import { GoogleAnalytics,sendGAEvent  } from '@next/third-parties/google'
+import { GoogleAnalytics, sendGAEvent } from '@next/third-parties/google'
 
 
 const Thankyou = () => {
@@ -46,9 +46,9 @@ const Thankyou = () => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-     
 
-        
+
+
       <Script
         id="gtag-conversion"
         dangerouslySetInnerHTML={{
