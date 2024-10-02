@@ -2,7 +2,7 @@ import React from 'react'
 import Banner from '../../components/Banner'
 import Head from 'next/head'
 import Script from 'next/script'
-import { GoogleAnalytics, sendGAEvent } from '@next/third-parties/google'
+import { GoogleAnalytics, GoogleTagManager, sendGAEvent } from '@next/third-parties/google'
 
 
 const Thankyou = () => {
@@ -48,7 +48,8 @@ const Thankyou = () => {
 
 
 
-
+      <GoogleAnalytics strategy="lazyOnload" gaId="AW-411006583" />
+      <GoogleTagManager strategy="lazyOnload" gtmId="GTM-K994MT85" />
       <Script
         id="gtag-conversion"
         dangerouslySetInnerHTML={{
