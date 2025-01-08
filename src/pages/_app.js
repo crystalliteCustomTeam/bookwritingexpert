@@ -1,22 +1,21 @@
-import "@/styles/globals.css";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import "@/styles/globals.css"
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 // const ZENDESK_KEY = "d1d4aa8a-5573-473a-b921-5b6a8eb467ad";
 // import Zendesk, { ZendeskAPI } from "../pages/ZendexConfig";
-import Script from "next/script";
-import Pixel from "../../components/Pixel";
-import Head from "next/head";
-import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
-import Loader from "../../components/Loader";
-import Metas from "../../components/Metas";
-import Headerlp from "../../components/Headerlp";
-import Footerlp from "../../components/Footerlp";
-import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer";
-import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import Script from "next/script"
+import Pixel from "../../components/Pixel"
+import Head from "next/head"
+import { useState, useEffect } from "react"
+import { useRouter } from "next/router"
+import Loader from "../../components/Loader"
+import Metas from "../../components/Metas"
+import Headerlp from "../../components/Headerlp"
+import Footerlp from "../../components/Footerlp"
+import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer"
+import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google"
 import localFont from "next/font/local"
 import { Poppins as FontSecondary } from "next/font/google"
-
 
 const fontSecondary = FontSecondary({
   subsets: ["latin"],
@@ -24,7 +23,7 @@ const fontSecondary = FontSecondary({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   style: ["italic", "normal"],
   display: "swap",
-  fallback: ['system-ui', 'arial']
+  fallback: ["system-ui", "arial"],
 })
 
 const primaryFont = localFont({
@@ -32,31 +31,34 @@ const primaryFont = localFont({
   variable: "--font-primary",
   display: "swap",
   fallback: ["system-ui", "arial"],
-  subsets: ["latin"]
+  subsets: ["latin"],
 })
 
 export default function App({ Component, pageProps }) {
-  const router = useRouter();
-  const sluginer = router.asPath;
-  const weblink = "https://www.bookwritingexperts.com";
-  const newlop = router.asPath == "/bookexperlp";
-  const newbooklp = router.asPath == "/book-marketinglp";
-  const newcol = weblink + sluginer;
+  const router = useRouter()
+  const sluginer = router.asPath
+  const weblink = "https://www.bookwritingexperts.com"
+  const newlop = router.asPath == "/bookexperlp"
+  const newbooklp = router.asPath == "/book-marketinglp"
+  const newcol = weblink + sluginer
 
   return (
     <>
       <Head>
-        <meta name="google-site-verification" content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM" />
+        <meta
+          name="google-site-verification"
+          content="LeCTlf6XFkdNEsNBD622lw9OyimFlgL8Vbkq6ZiYYxM"
+        />
         <link rel="canonical" href={newcol} />
       </Head>
       <Metas />
       <div className={`${primaryFont.variable} ${fontSecondary.variable}`}>
         {newlop || newbooklp ? <Headerlp /> : <Header />}
         <Component {...pageProps} />
-        {newlop ? <Footerlp /> : (newbooklp ? <NewbooklpFooter /> : <Footer />)}
+        {newlop ? <Footerlp /> : newbooklp ? <NewbooklpFooter /> : <Footer />}
       </div>
       <Script>
-            {`
+        {`
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function() {
           var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
@@ -67,7 +69,7 @@ export default function App({ Component, pageProps }) {
           s0.parentNode.insertBefore(s1, s0);
         })();
         `}
-          </Script>
+      </Script>
       <Script strategy="lazyOnload" id="facebook-snippet">
         {`
             !function(f,b,e,v,n,t,s)
@@ -90,5 +92,5 @@ export default function App({ Component, pageProps }) {
         src="https://static.zdassets.com/ekr/snippet.js?key=d1d4aa8a-5573-473a-b921-5b6a8eb467ad"
       />
     </>
-  );
+  )
 }
