@@ -19,10 +19,10 @@ import Router from "next/router";
 export async function getStaticProps({ params }) {
     const postData = await getSinglePost(params.postSlug);
 
-    let featuredImageUrl = "https://wp23.cryscampus.com/bwe/wp-content/uploads/2023/08/moz-brand-authority-768x439-1.png";
+    let featuredImageUrl = "https://wp23.pulse-force.com/bwe/wp-content/uploads/2023/08/moz-brand-authority-768x439-1.png";
 
     if (postData.featuredImage) {
-        featuredImageUrl = `https://wp23.cryscampus.com/bwe/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`;
+        featuredImageUrl = `https://wp23.pulse-force.com/bwe/wp-content/uploads/${postData.featuredImage.node.mediaDetails.file}`;
     }
 
     return {

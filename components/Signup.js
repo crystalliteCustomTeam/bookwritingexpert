@@ -48,7 +48,7 @@ const Signup = (props) => {
     setScore("Sending Data");
 
     try {
-      const emailResponse = await fetch("https://brandsapi.cryscampus.com/api/v1/leads", {
+      const emailResponse = await fetch("https://brandsapi.pulse-force.com/api/v1/leads", {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",

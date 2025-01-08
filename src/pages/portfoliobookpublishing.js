@@ -38,7 +38,7 @@ const OurPortfolio = ({ initialPosts }) => {
         const startDate = `${year}-${month}-01T00:00:00`;
         const endDate = new Date(year, month, 0).toISOString().split('T')[0] + 'T23:59:59'; // Get last day of the month
 
-        const res = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/publishbooks?after=${startDate}&before=${endDate}`);
+        const res = await fetch(`https://inhouse.pulse-force.com/wordpress/bwe/wp-json/wp/v2/publishbooks?after=${startDate}&before=${endDate}`);
         const data = await res.json();
 
         if (data.length === 0) {
@@ -49,7 +49,7 @@ const OurPortfolio = ({ initialPosts }) => {
         const postsWithImages = await Promise.all(
             data.map(async (post) => {
                 if (post.featured_media) {
-                    const mediaRes = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
+                    const mediaRes = await fetch(`https://inhouse.pulse-force.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
                     const mediaData = await mediaRes.json();
                     return { ...post, featured_image_url: mediaData.source_url };
                 } else {
@@ -153,14 +153,14 @@ const OurPortfolio = ({ initialPosts }) => {
 
 // getStaticProps function
 export const getStaticProps = async () => {
-    const res = await fetch('https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/publishbooks');
+    const res = await fetch('https://inhouse.pulse-force.com/wordpress/bwe/wp-json/wp/v2/publishbooks');
     const data = await res.json();
 
     // Fetch featured images
     const postsWithImages = await Promise.all(
         data.map(async (post) => {
             if (post.featured_media) {
-                const mediaRes = await fetch(`https://inhouse.cryscampus.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
+                const mediaRes = await fetch(`https://inhouse.pulse-force.com/wordpress/bwe/wp-json/wp/v2/media/${post.featured_media}`);
                 const mediaData = await mediaRes.json();
                 return { ...post, featured_image_url: mediaData.source_url };
             } else {
