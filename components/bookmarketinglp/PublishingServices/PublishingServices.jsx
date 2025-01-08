@@ -22,13 +22,13 @@ export default function PublishingServices({
               <p className="text-left" dangerouslySetInnerHTML={{__html: desc}} />
               {cta && (
                 <div className={style.w45}>
-                  <CTA text="Book An Appointment" link="javascript:$zopim.livechat.window.show();" color="text-white" classes="mb-5" bg="bg-white" />
+                  <CTA text="Book An Appointment" link="javascript:void(Tawk_API.toggle())" color="text-white" classes="mb-5" bg="bg-white" />
                 </div>
               )}
               {cta2 && (
                 <div className="d-flex flex-sm-row flex-column gap-3 justify-content-sm-start justify-content-center mt-4">
                   <CTA text="(855) 500 0057" classes="" color="text-white" handle="" bg="bgBlue" link="tel:855-500-0057" />
-                  <CTA text="Get A Quote" link="javascript:$zopim.livechat.window.show();" bg="bgOrangeRoundednone" color="text-white" />
+                  <CTA text="Get A Quote" link="javascript:void(Tawk_API.toggle())" bg="bgOrangeRoundednone" color="text-white" />
                 </div>
               )}
             </Col>

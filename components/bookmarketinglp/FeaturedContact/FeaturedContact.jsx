@@ -159,7 +159,7 @@ export default function FeaturedContact({
                 <div className={style.w45}>
                   <CTA
                     text="Book An Appointment"
-                    link="javascript:$zopim.livechat.window.show();"
+                    link="javascript:void(Tawk_API.toggle())"
                     bg="bgOrangeRoundednone"
                     color="text-white"
                     border="text-white"
@@ -172,7 +172,7 @@ export default function FeaturedContact({
                   <CTA text="(855) 500 0057" classes="!text-black" color="text-black" handle="" bg="bgWhite" link="tel:855-500-0057" />
                   <CTA
                     text="Get A Quote"
-                    link="javascript:$zopim.livechat.window.show();"
+                    link="javascript:void(Tawk_API.toggle())"
                     bg="bgOrangeRoundednone"
                     color="text-white"
                     border="text-white"

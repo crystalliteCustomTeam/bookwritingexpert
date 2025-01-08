@@ -23,7 +23,7 @@ const Bigger = (props) => {
 
 
                 <div className={styles.know}>
-                  <Link className={styles.great} href="javascript:$zopim.livechat.window.show();">Let’s Discuss</Link>
+                  <Link className={styles.great} href="javascript:void(Tawk_API.toggle())">Let’s Discuss</Link>
                   <Link className={styles.produce} href="tel:8555000057">(855) 500 0057</Link>
                 </div>
               </div>

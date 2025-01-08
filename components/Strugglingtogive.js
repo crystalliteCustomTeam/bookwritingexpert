@@ -86,7 +86,7 @@ const Strugglingtogive = (props) => {
                         }
                         <div>
                             <a href="#footercontact"> <button className={styles.btnget1}> {props.btn1} </button></a>
-                            <a href="javascript:$zopim.livechat.window.show();"><button className={styles.btnget2}> {props.btn2} </button></a>
+                            <a href="javascript:void(Tawk_API.toggle())"><button className={styles.btnget2}> {props.btn2} </button></a>
                             <a href="tel:(855) 500 0057"><button className={styles.btnget2}> {props.btn3} </button></a>
                         </div>
                     </Col>

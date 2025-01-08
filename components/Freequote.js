@@ -113,7 +113,7 @@ const Freequote = (props) => {
         {props.show ?
 
           <div className='mt-4'>
-            <Link className={styles.freediscuss} href="javascript:$zopim.livechat.window.show();">LET'S DISCUSS</Link>
+            <Link className={styles.freediscuss} href="javascript:void(Tawk_API.toggle())">LET'S DISCUSS</Link>
             <Link className={styles.freehomenumer} href="tel:(855) 500 0057">(855) 500 0057</Link>
           </div> 
 

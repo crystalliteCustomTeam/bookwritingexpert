@@ -28,7 +28,7 @@ const Professionalseo = () => {
                             <div className={styles.blog}>
                                 <Image loading="lazy" src={blog1} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
-                                    <a className='textdocationnone' href="javascript:$zopim.livechat.window.show();">
+                                    <a className='textdocationnone' href="javascript:void(Tawk_API.toggle())">
                                         <h5 className='fw700 font17 color-blue font-f'> Quality </h5> </a>
                                     <p className='font15 fw500 font-f'> At book writing expert, we only work with experienced and professional writers who
                                         are experts in their field. This ensures that your articles will be of the highest quality
@@ -44,7 +44,7 @@ const Professionalseo = () => {
                             <div className={styles.blog}>
                                 <Image loading="lazy" src={blog2} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
-                                    <a className='textdocationnone' href="javascript:$zopim.livechat.window.show();">
+                                    <a className='textdocationnone' href="javascript:void(Tawk_API.toggle())">
                                         <h5 className='fw700 font17 color-blue font-f'> Creativity </h5> </a>
                                     <p className='font15 fw500 font-f'> Our content development team is also highly creative, meaning they can come up with unique and engaging ways to present your information. This helps to make your articles stand out from the rest and gives readers a reason to keep coming back.
                                     </p>
@@ -59,7 +59,7 @@ const Professionalseo = () => {
                             <div className={styles.blog}>
                                 <Image loading="lazy" src={blog3} className='img-fluid' alt="Book Writing Experts"></Image>
                                 <div className={styles.cardbody}>
-                                    <a className='textdocationnone' href="javascript:$zopim.livechat.window.show();">
+                                    <a className='textdocationnone' href="javascript:void(Tawk_API.toggle())">
                                         <h5 className='fw700 font17 color-blue font-f'> Plagiarism Free </h5> </a>
                                     <p className='font15 fw500 font-f'> When you are looking for SEO article writing services, it is important to find one that offers plagiarism-free content. This is something that book writing expert takes pride in offering. All of their articles are written from scratch, so you can be sure that the content is 100% original.
                                     </p>

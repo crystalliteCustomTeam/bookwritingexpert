@@ -27,7 +27,7 @@ A Best-Selling Audio Book?</h2>
 <p className='font-f'>We know what it takes to produce a great audiobook. With our award-winning production team, we can turn any type of story into an unforgettable audio experience. Whether you're an author or publisher, we've got you covered!</p>
            
            <div className={styles.know}>
-            <Link className={styles.great} href="javascript:$zopim.livechat.window.show();">Let’s Discuss</Link> 
+            <Link className={styles.great} href="javascript:void(Tawk_API.toggle())">Let’s Discuss</Link> 
             <Link className={styles.produce} href="tel:8555000057">(855) 500 0057</Link> 
            </div>
            

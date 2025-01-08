@@ -242,7 +242,7 @@ const Headerlp = () => {
 
                 <li className={`${styles.navlinks} ${styles.headertel}`}>
 
-                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="javascript:$zopim.livechat.window.show();"> 
+                  <Link className={`${styles.headerbtncolor} ${styles.headericon}`} href="javascript:void(Tawk_API.toggle())"> 
                     Let’s Discuss </Link>
 
                 </li> 

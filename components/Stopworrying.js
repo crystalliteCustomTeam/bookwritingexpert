@@ -66,7 +66,7 @@ const Stopworrying = (props) => {
             <div className={styles.aligntop}>
 
           
-              <Link href='javascript:$zopim.livechat.window.show();' className={styles.btn1}> {props.btn2} </Link>
+              <Link href='javascript:void(Tawk_API.toggle())' className={styles.btn1}> {props.btn2} </Link>
               <Link href='tel:2132893888' className={styles.btn2}>Call Us Now!</Link>
 
             </div>

@@ -21,7 +21,7 @@ const Unique = () => {
             <p className='font-f'> <span>Books are published to be sold:</span> Every project starts with a plan for getting people to find your book — after all, you can't market a book that no one can find. Your book is then created, rather than the other way around.</p>
            
             <div className={styles.know}>
-            <Link className={styles.great} href="javascript:$zopim.livechat.window.show();">Let’s Discuss</Link> 
+            <Link className={styles.great} href="javascript:void(Tawk_API.toggle())">Let’s Discuss</Link> 
            </div>
             </Col>
           

@@ -74,26 +74,26 @@ const Buildyourownidentity = () => {
                             <div>
                                 <h3 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h3>
                                 <p className='font15  textcolor t-center font-f'>Ignite brand growth and engagement by leveraging the power of social media platforms.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>LET'S DISCUSS</Link>
                             </div>
 
                             <div>
                                 <h3 className='font17 fw500 color-blue t-center font-f'>EMAIL MARKETING PLANS</h3>
                                 <p className='font15  textcolor t-center font-f'>Expand your reach and nurture customer relationships with strategic email campaigns.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>LET'S DISCUSS</Link>
                             </div>
 
 
                             <div className=''>
                                 <h3 className='font17 fw500 color-blue t-center font-f'>ADVERTISING PLANS</h3>
                                 <p className='font15  textcolor t-center font-f'>Amplify your brand's visibility through targeted social media advertising for enhanced reach.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>LET'S DISCUSS</Link>
                             </div>
 
                             <div>
                                 <h3 className='font17 fw500 color-blue t-center font-f'>SEO SERVICES</h3>
                                 <p className='font15  textcolor t-center font-f'>Increase your visibility on search engines with our proven SEO strategies.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Chat With Us To Get Your Book Marketing Plan</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Chat With Us To Get Your Book Marketing Plan</Link>
 
                             </div>
 
@@ -112,13 +112,13 @@ const Buildyourownidentity = () => {
                                     <h3 className='font17 fw500 color-blue t-center font-f'>Social Media &amp; Influencer Marketing</h3>
                                     <p className='font15  textcolor t-center font-f'>Stand out with impactful social media campaigns and collaborations with familiar faces in the
                                         industry.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
+                                    <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Let’s Connect!</Link>
                                 </div>
 
                                 <div className='mt-5'>
                                     <h3 className='font17 fw500 color-blue t-center font-f'>Digital Advertising</h3>
                                     <p className='font15  textcolor t-center font-f'>Reach the right audience with cost-effective paid advertising and informed decision-making.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
+                                    <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Let’s Connect!</Link>
                                 </div>
 
 
@@ -133,14 +133,14 @@ const Buildyourownidentity = () => {
                                 <div className=''>
                                     <h3 className='font17 fw500 color-blue t-center font-f'>SEO</h3>
                                     <p className='font15  textcolor t-center font-f'>Optimize your book and author website with targeted keywords and top-notch SEO strategies.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
+                                    <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Let’s Connect!</Link>
                                 </div>
 
                                 <div className='mt-5'>
                                     <h3 className='font17 fw500 color-blue t-center font-f'>Content Marketing</h3>
                                     <p className='font15  textcolor t-center font-f'>Engage readers with book trailers, author interviews, and podcast features discussing their
                                         journey.</p>
-                                    <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Connect!</Link>
+                                    <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Let’s Connect!</Link>
 
                                 </div>
 

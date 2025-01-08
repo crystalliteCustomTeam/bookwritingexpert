@@ -11,7 +11,7 @@ const CTAGroup = ({
                 classes=""
                 handle=""
                 bg="bgGray"
-                link="javascript:$zopim.livechat.window.show();"
+                link="javascript:void(Tawk_API.toggle())"
             />
             <CTA
                 text="(302) 883-8877"

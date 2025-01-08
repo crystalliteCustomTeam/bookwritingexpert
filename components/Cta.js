@@ -20,7 +20,7 @@ const Cta = ({
 
                                 <div className='mt-5'>
 
-                                    <Link className={styles.btn1} href="javascript:$zopim.livechat.window.show();">Chat With Our Expert Now!</Link>
+                                    <Link className={styles.btn1} href="javascript:void(Tawk_API.toggle())">Chat With Our Expert Now!</Link>
                                     <Link className={styles.btn2} href="tel:(855) 500 0057"> Call Us At (855) 500 0057</Link>
                                 </div>
                             </div>

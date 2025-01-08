@@ -19,7 +19,7 @@ const Experts = (props) => {
                 <Link className='fw500 color-white font18 font-f' href="tel:(855) 500 0057">{props.number}</Link>
               </div>
               <div className={styles.expertdiscuss}>
-                <Link className={`${styles.discuss1} hover`} href="javascript:$zopim.livechat.window.show();">{props.discuss}</Link>
+                <Link className={`${styles.discuss1} hover`} href="javascript:void(Tawk_API.toggle())">{props.discuss}</Link>
                 <Image />
               </div>
             </Col>

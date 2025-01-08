@@ -99,7 +99,7 @@ const ourportfolio = () => {
             <h1 className="color-black font70 t-center linhight mb-4">
               Our <br></br> Portfolio
             </h1>
-            <Link className={styles.free} href="javascript:$zopim.livechat.window.show();">
+            <Link className={styles.free} href="javascript:void(Tawk_API.toggle())">
               {" "}
               FREE AUTHOR CONSULTATION CALL{" "}
             </Link>

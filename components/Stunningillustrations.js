@@ -114,7 +114,7 @@ const Stunningillustrations = () => {
 
                     <Row>
                         <Col>
-                            <Link className={styles.btn1} href="javascript:$zopim.livechat.window.show();">OUR PORTFOLIO</Link>
+                            <Link className={styles.btn1} href="javascript:void(Tawk_API.toggle())">OUR PORTFOLIO</Link>
                         </Col>
                     </Row>
 
@@ -127,7 +127,7 @@ const Stunningillustrations = () => {
 
             <Container>
 
-                <h2 className="font-f fw500 colortextgrey t-center mb-5">We Provide Stunning <Link className="color-blue textdocationnone fw700" href="javascript:$zopim.livechat.window.show();">Illustrations For  <br className="d-none d-xl-block" /> Your Book</Link> </h2>
+                <h2 className="font-f fw500 colortextgrey t-center mb-5">We Provide Stunning <Link className="color-blue textdocationnone fw700" href="javascript:void(Tawk_API.toggle())">Illustrations For  <br className="d-none d-xl-block" /> Your Book</Link> </h2>
 
 
                 <Slider {...makestories}>
@@ -184,7 +184,7 @@ const Stunningillustrations = () => {
 
                 <Row className='mt-5'>
                     <Col>
-                        <Link className={styles.btn1} href="javascript:$zopim.livechat.window.show();">OUR PORTFOLIO</Link>
+                        <Link className={styles.btn1} href="javascript:void(Tawk_API.toggle())">OUR PORTFOLIO</Link>
                     </Col>
                 </Row>
 

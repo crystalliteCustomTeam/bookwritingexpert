@@ -26,7 +26,7 @@ const Publish = (props) => {
 <p className='font-f pb-2'>We specialize in audio books narration and audio book production for both fiction and non-fiction books. Our services are unparalleled, and we offer an affordable solution that works well for authors on tight budgets too.</p>
            
            <div className={styles.know}>
-            <Link className={styles.great} href="javascript:$zopim.livechat.window.show();">Let’s Discuss</Link> 
+            <Link className={styles.great} href="javascript:void(Tawk_API.toggle())">Let’s Discuss</Link> 
             <Link className={styles.produce} href="tel:8555000057">(855) 500 0057</Link> 
            </div>
            

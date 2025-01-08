@@ -65,7 +65,7 @@ export default function Banner({
                 <p className="fw400" dangerouslySetInnerHTML={{__html: desc}} />
                 <div className="d-flex flex-md-row flex-column gap-3 justify-content-center mb-4">
                   <CTA text="(855) 500 0057" classes="!text-black" color="text-black" handle="" bg="bgWhite" link="tel:855-500-0057" />
-                  <CTA text="Get A Quote" link="javascript:$zopim.livechat.window.show();" bg="bgOrangeRoundednone" color="text-white" border="text-white " />
+                  <CTA text="Get A Quote" link="javascript:void(Tawk_API.toggle())" bg="bgOrangeRoundednone" color="text-white" border="text-white " />
                 </div>
               </div>
               <div className="mx-auto">

@@ -201,7 +201,7 @@ const Footer = () => {
                 <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="/faqs">Faq's</Link></li>
 
 
-                <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="javascript:$zopim.livechat.window.show();">Let's Get Started</Link></li>
+                <li className={`${styles.footermenulinks} pt-3`}><Link className={styles.styleset} href="javascript:void(Tawk_API.toggle())">Let's Get Started</Link></li>
 
               </ul>
 

@@ -21,7 +21,7 @@ const Professionalaudiobook = dynamic(() => import('../../components/Professiona
 function Audiobookproduction() {
   const newSpan = <h1 className='font50 fw700 color-blue font-f hero-span'> <span className=''>Get Your</span>  <Link className='dblockmobile textdocationnone color-blue hover' href="/ghostwriting-services">  Book Ghost Writing <br></br> Services </Link>  <span className=''> from Our Team of Top Ghost <br></br> Writing for Hire.</span> </h1>;
 
-  const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='javascript:$zopim.livechat.window.show();'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
+  const posdata = <span>Let Our Best <Link className='dblockmobile textdocationnone color-blue hover fw700' href='javascript:void(Tawk_API.toggle())'>Amazon Kindle Direct Publishing (KDP)</Link>Service Providers Handle All Your Publishing Troubles!</span>
   const holddata = <h2 className='font-f font50 t-center'> We Provide Stunning <Link className="color-blue textdocationnone fw700 hover" href="/audiobookproduction">Audio Book  <br className="d-none d-xl-block" />Production</Link> </h2>
 
   const bannertext = [

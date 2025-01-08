@@ -76,7 +76,7 @@ const OurPortfolio = ({ initialPosts }) => {
                 <div className={styles.banner}>
                     <div className={styles.heading}>
                         <h1 className='color-black font70 t-center'>Our <br />Publishing</h1>
-                        <Link className={styles.free} href="javascript:$zopim.livechat.window.show();"> FREE AUTHOR CONSULTATION CALL </Link>
+                        <Link className={styles.free} href="javascript:void(Tawk_API.toggle())"> FREE AUTHOR CONSULTATION CALL </Link>
                     </div>
                 </div>
 

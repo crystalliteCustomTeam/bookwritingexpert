@@ -50,7 +50,7 @@ export default function PartnersCompanies({
             <CTA text="(855) 500 0057" classes="" color="text-white" handle="" bg="bgBlue" link="tel:855-500-0057" />
             <CTA
               text="Get A Quote"
-              link="javascript:$zopim.livechat.window.show();"
+              link="javascript:void(Tawk_API.toggle())"
               bg="bgOrangeRoundednone"
               color="text-white"
               border="text-white"

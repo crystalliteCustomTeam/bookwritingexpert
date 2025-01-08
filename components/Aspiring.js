@@ -18,7 +18,7 @@ const Aspiring = (props) => {
                             <p className='color-lightgray font14 fw400 font-f mt-3' dangerouslySetInnerHTML={{ __html: props.text }} />
                             <p className='color-lightgray font14 fw400 font-f mt-3'>{props.subtext}</p>
                             <div className='mt-5'>
-                                <Link className={styles.btn1} href="javascript:$zopim.livechat.window.show();">Get A Free Proposal</Link>
+                                <Link className={styles.btn1} href="javascript:void(Tawk_API.toggle())">Get A Free Proposal</Link>
                                 <Link className={styles.btn2} href="tel:(855) 500 0057"> {props.number}</Link>
                             </div>
                         </Col>

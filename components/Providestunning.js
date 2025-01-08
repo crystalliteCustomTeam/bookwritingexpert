@@ -137,7 +137,7 @@ const Providestunning = (props) => {
 
                     <Col lg={12}>
 
-                        <Link className={styles.portfolio} href="javascript:$zopim.livechat.window.show();">OUR PORTFOLIO</Link>
+                        <Link className={styles.portfolio} href="javascript:void(Tawk_API.toggle())">OUR PORTFOLIO</Link>
 
                     </Col>
                 </Row>

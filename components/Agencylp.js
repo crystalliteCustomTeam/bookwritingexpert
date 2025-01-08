@@ -47,7 +47,7 @@ const Agencylp = () => {
 
            </div>
            <div className={styles.know}>
-            <Link className={styles.great} href="javascript:$zopim.livechat.window.show();">Discover More</Link> 
+            <Link className={styles.great} href="javascript:void(Tawk_API.toggle())">Discover More</Link> 
 
            </div>
             </Col>

@@ -74,13 +74,13 @@ const Bestinclass = () => {
                             <div>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>SOCIAL MEDIA MARKETING</h4>
                                 <p className='font15  textcolor t-center font-f'>Get the expertise of our world-class social media marketers, who craft exceptional content and growth-focused campaigns to boost your publication's sales potential.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Let’s Discuss Now!</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Let’s Discuss Now!</Link>
                             </div>
 
                             <div>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>AMAZON BOOK MARKETING</h4>
                                 <p className='font15  textcolor t-center font-f'>Discover the true power of <Link className='textdocationnone textcolor hover' href="/book-marketing-services/">Amazon book marketing</Link> by enabling, emerging, and establishing authors to promote their narratives like never before. Our creative team designs personalized ads that target readers who are most likely to be interested in your publication.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>Hire Us Today!</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>Hire Us Today!</Link>
                             </div>
 
 
@@ -93,13 +93,13 @@ const Bestinclass = () => {
                             <div className=''>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>BOOK COVER DESIGN</h4>
                                 <p className='font15  textcolor t-center font-f'>Don't underestimate the impact of a book cover! Our <Link className='textdocationnone textcolor hover' href="/digital-marketing-services/">digital marketing services</Link> include captivating book cover designs that act as the missing piece to enhance your book's popularity. After all, it's true that people do judge a book by its cover!</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S DISCUSS</Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>LET'S DISCUSS</Link>
                             </div>
 
                             <div>
                                 <h4 className='font17 fw500 color-blue t-center font-f'>SEO</h4>
                                 <p className='font15  textcolor t-center font-f'>By cashing in on the perks of Search Engine Optimization, our marketers highlights the opportunity to help your book win the search game. With search engine marketing, we tap the untapped marketing odds, helpful for your book to grasp the maximum attention.</p>
-                                <Link className={styles.lets} href='javascript:$zopim.livechat.window.show();'>LET'S  DISCUSS </Link>
+                                <Link className={styles.lets} href='javascript:void(Tawk_API.toggle())'>LET'S  DISCUSS </Link>
 
                             </div>
 
@@ -153,7 +153,7 @@ const Bestinclass = () => {
                             </Col>
                             <Col className='text-center'>
                                 <div className='d-inline-block'>
-                                    <Link className={`${styles.lets} w-100`} href='javascript:$zopim.livechat.window.show();'>Hire Us Today!</Link>
+                                    <Link className={`${styles.lets} w-100`} href='javascript:void(Tawk_API.toggle())'>Hire Us Today!</Link>
                                 </div>
                             </Col>
                         </Row>
