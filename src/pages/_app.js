@@ -63,7 +63,7 @@ export default function App({ Component, pageProps }) {
         (function() {
           var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
           s1.async = true;
-          s1.src = 'https://embed.tawk.to/677dc97f49e2fd8dfe03fd14/1ih1lm789';
+          s1.src = 'https://embed.tawk.to/677eaf1949e2fd8dfe046557/1ih3dnvtn';
           s1.charset = 'UTF-8';
           s1.setAttribute('crossorigin', '*');
           s0.parentNode.insertBefore(s1, s0);
@@ -86,11 +86,11 @@ export default function App({ Component, pageProps }) {
       </Script>
       <GoogleAnalytics strategy="lazyOnload" gaId="AW-411006583" />
       <GoogleTagManager strategy="lazyOnload" gtmId="GTM-K994MT85" />
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         id="ze-snippet"
         src="https://static.zdassets.com/ekr/snippet.js?key=d1d4aa8a-5573-473a-b921-5b6a8eb467ad"
-      />
+      /> */}
     </>
   )
 }
