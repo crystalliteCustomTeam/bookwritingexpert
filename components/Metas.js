@@ -67,7 +67,7 @@ const Metas = () => {
         "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
         "@id": "",
         "url": "https://www.bookwritingexperts.com/contact-us/",
-        "telephone": "2132893888",
+        "telephone": "+18555000057",
         "priceRange": "$99",
         "address": {
             "@type": "PostalAddress",
@@ -131,7 +131,7 @@ const Metas = () => {
         "image": "https://cdn-cpmon.nitrocdn.com/sKNWrfOsKSxqdRuCiSOtyhAZTjxpwVrv/assets/static/optimized/rev-f0cb152/wp-content/uploads/2022/06/BWE-logo-2.png",
         "@id": "",
         "url": "https://www.bookwritingexperts.com/pricing/",
-        "telephone": "2132893888",
+        "telephone": "+18555000057",
         "priceRange": "$99",
         "address": {
             "@type": "PostalAddress",

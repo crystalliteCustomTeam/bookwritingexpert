@@ -5,7 +5,7 @@ import styles from "@/styles/White.module.css";
 const WhiteBtn = ({ btnShadow }) => {
   return (
     <>
-      <Link href="javascript:;"className={`${styles.WhiteBtn} ${
+      <Link href="javascript:void(Tawk_API.toggle());"className={`${styles.WhiteBtn} ${
           btnShadow ? styles.blackShadow : styles.whiteShadow
         }`}>
         Let’s Discuss

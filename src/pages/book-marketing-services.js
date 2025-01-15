@@ -342,7 +342,7 @@ const Bookpublishingservices = () => {
       <div className='datacloud'>
         <Aspiring
           title={industry}
-          text={challenging}
+          subtext={challenging}
           number="Call Our Team - (855) 500 0057"
         />
 

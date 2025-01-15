@@ -6,10 +6,8 @@ const YellowBtn = ({ btnShadow }) => {
   return (
     <>
       <Link
-        href={btnShadow ? "tel:;" : "javascript:;"}
-        className={`${styles.YellowBtn} ${
-          btnShadow ? styles.blackShadow : styles.whiteShadow
-        }`}
+        href={btnShadow ? "tel:+18555000057" : "javascript:;"}
+        className={`${styles.YellowBtn}`}
       >
         {btnShadow ? <div>(855) 500 0057</div> : <div>Learn More</div>}
       </Link>

@@ -117,7 +117,7 @@ const ServicesPublishing = (props) => {
                   <p className="mb-4">{contentData[activeSlide].description}</p>
                   <hr />
                   <div className="d-flex align-items-center gap-3 mt-4">
-                    <YellowBtn />
+                    <YellowBtn  btnShadow={'tel:'}/>
                     <WhiteBtn />
                   </div>
                 </>

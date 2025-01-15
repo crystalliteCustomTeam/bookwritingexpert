@@ -11,7 +11,7 @@ const Sticky = () => {
         <ul className={styles.sticky}>
           <li>
             <BsFillTelephoneFill size={28} />
-            <p><a href="tel:2132893888" target="_self">(855) 500 0057</a></p>
+            <p><a href="tel:+18555000057" target="_self">(855) 500 0057</a></p>
           </li>
           <li>
             <FaRegComments size={28} />
