@@ -11,7 +11,7 @@ import {
   PrevButton,
   NextButton,
   usePrevNextButtons,
-} from "./slider/sliderarrows/sliderarrows"
+} from "./slider/sliderarrows/SliderArrows"
 const ClientLogos = dynamic(() => import("./ClientLogos"))
 const Qualify = dynamic(() => import("./Qualify"))
 const PromoteBook = dynamic(() => import("./PromoteBook"))
