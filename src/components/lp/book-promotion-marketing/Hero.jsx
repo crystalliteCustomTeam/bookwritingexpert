@@ -38,8 +38,12 @@ const Hero = () => {
                   media.
                 </p>
                 <div className="d-flex align-items-center gap-3">
-                  <CTA css={styles.heroCTA1} />
-                  <CTA text="Live Chat" css={styles.heroCTA2} />
+                  <CTA link="tel:+18555000057" css={styles.heroCTA1} />
+                  <CTA
+                    link="javascript:void(Tawk_API.toggle())"
+                    text="Live Chat"
+                    css={styles.heroCTA2}
+                  />
                 </div>
               </div>
             </Col>

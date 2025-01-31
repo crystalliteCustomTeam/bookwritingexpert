@@ -94,8 +94,16 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <div className="d-flex align-items-center justify-content-center gap-3 mt-2">
-                    <CTA text="Order Now" css={styles.pricingCTA1} />
-                    <CTA text="Live Chat" css={styles.pricingCTA2} />
+                    <CTA
+                      link="tel:+18555000057"
+                      text="Order Now"
+                      css={styles.pricingCTA1}
+                    />
+                    <CTA
+                      link="javascript:void(Tawk_API.toggle())"
+                      text="Live Chat"
+                      css={styles.pricingCTA2}
+                    />
                   </div>
                 </div>
               </Col>

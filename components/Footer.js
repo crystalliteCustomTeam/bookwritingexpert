@@ -299,7 +299,7 @@ const Footer = () => {
                 <Image loading="lazy" className='img-fluid' src={visa} alt="Book Writing Experts"></Image>
               </Col>
               <Col md={4}>
-              <p className='font14 text-center font-f'>© 2024 - All Rights Reserved - <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/">Mini Investment</Link></p>
+              <p className='font14 text-center font-f'>© 2025 - All Rights Reserved - <Link className='font14 text-center font-f text-white text-decoration-none' target='_blank' href="https://mini-investments.net/">Infinti Media INC</Link></p>
               </Col>
               <Col md={4}>
                 <div className={styles.aligntextrignt}>

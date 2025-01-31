@@ -12,7 +12,7 @@ const BookPromotionFooter = () => {
           <Row>
             <Col xs="12">
             <div className={styles.content}>
-              <span>Copyright © 2025, Mini Investment All Rights Reserved</span>
+              <span>Copyright © 2025, Infinti Media INC All Rights Reserved</span>
               <Link href="/terms-of-use">Terms Conditions</Link>
               <Link href="/privacy-policy">Privacy Policy</Link>
             </div>

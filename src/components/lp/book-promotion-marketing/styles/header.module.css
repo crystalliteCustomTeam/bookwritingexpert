@@ -13,6 +13,23 @@
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.cross {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  background-color: #223235;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  cursor: pointer;
+}
 .navbar {
   padding: 10px 0;
 }

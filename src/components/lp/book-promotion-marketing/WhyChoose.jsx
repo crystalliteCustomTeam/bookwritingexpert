@@ -59,8 +59,12 @@ const WhyChoose = () => {
                   book promotion & marketing?
                 </p>
                 <div className="d-flex align-items-center gap-3 mt-2">
-                  <CTA css={styles.whyChooseCTA1} />
-                  <CTA text="Live Chat" css={styles.whyChooseCTA2} />
+                  <CTA link="tel:+18555000057" css={styles.whyChooseCTA1} />
+                  <CTA
+                    link="javascript:void(Tawk_API.toggle())"
+                    text="Live Chat"
+                    css={styles.whyChooseCTA2}
+                  />
                 </div>
               </div>
             </Col>
