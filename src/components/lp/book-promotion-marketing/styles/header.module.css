@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: max-content;
+  inset: 0;
+  background: transparent;
+  transition: background-color 0.5s ease, padding 0.5s ease, transform 0.3s ease;
+}
+.scrolled {
+  position: fixed;
+  background-color: #101914;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar {
+  padding: 10px 0;
+}
+.logonew {
+  width: 150px;
+  height: auto;
+}
+.unorderdList {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  align-items: center;
+  gap: 40px;
+}
+.unorderdList .callCTA span:nth-child(1),
+.unorderdList .chatCTA span:nth-child(1) {
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #cdc37e;
+}
+.unorderdList .callCTA span:nth-child(2),
+.unorderdList .chatCTA span:nth-child(2) {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1199px) {
+  .unorderdList .callCTA span:nth-child(2),
+  .unorderdList .chatCTA span:nth-child(2) {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .logonew {
+    display: block;
+    margin: 0 auto;
+  }
+  .unorderdList {
+    margin: 20px 0 0 !important;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .unorderdList {
+    gap: 15px;
+  }
+  .unorderdList .callCTA span:nth-child(2),
+  .unorderdList .chatCTA span:nth-child(2) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

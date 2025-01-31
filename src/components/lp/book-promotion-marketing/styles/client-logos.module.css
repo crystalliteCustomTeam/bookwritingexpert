@@ -1,0 +1,10 @@
+.root {
+  background-color: #484f4b;
+  padding: 20px 0;
+}
+.slides {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  flex: 0 0 auto;
+}

@@ -1,0 +1,56 @@
+.root {
+  position: relative;
+  padding: 50px 0;
+  background-color: #00343f;
+}
+.content {
+  color: white;
+  text-align: center;
+  padding: 0 0 50px;
+}
+.content h2 {
+  font-size: 45px;
+  line-height: 55px;
+  margin: 0;
+  font-weight: 500;
+}
+.slides {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  flex: 0 0 33.33%;
+}
+.card {
+  padding: 20px 10px 20px 10px;
+  color: #222;
+  text-align: center;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 14.627px 13.64px 109px 0px rgba(23, 23, 23, 0.06);
+}
+@media screen and (max-width: 991px) {
+  .content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .slides {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .slides {
+    flex: 0 0 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .content h2 {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0 0 15px;
+  }
+}

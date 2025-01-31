@@ -1,0 +1,29 @@
+.cta {
+    text-decoration: none;
+    padding: 13px 30px;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: #0b80ba;
+    border-radius: 8px;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1.42857143;
+    display: inline-block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+  }
+  .cta:hover {
+    background-color: white;
+    color: black;
+  }

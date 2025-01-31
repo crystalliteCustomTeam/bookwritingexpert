@@ -1,0 +1,10 @@
+.overflowHidden {
+    overflow: hidden;
+  }
+  
+  .emblaWrapper {
+    display: flex;
+    margin-left: calc(1rem * -1);
+    align-items: center;
+  }
+  

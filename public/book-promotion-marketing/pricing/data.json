@@ -1,0 +1,74 @@
+{
+  "packages": [
+    {
+      "name": "Silver",
+      "bestSeller": false,
+      "features": [
+        "Google Preview Book",
+        "Social Media Promotion for 1 month",
+        "Marketing Strategy Call - 90 Min",
+        "Amazon Optimization",
+        "Search Engine Optimization - (1 Month)",
+        "Video Reviews - 3 Reviews",
+        "Book Launch Animated Video - one 1-minute video",
+        "Author Website Setup - 1",
+        "Website for author and book",
+        "Promotional Bookmarks Design - 3 each",
+        "Promotional Postcards Design - 3 each",
+        "Promotional Business Cards Design - 10 each",
+        "Blogs/Articles Marketing - 10",
+        "Blogs written and posted on high authority domain platforms",
+        "Press Release Campaign - 5",
+        "Media Outlets - 5 Press Releases"
+      ]
+    },
+    {
+      "name": "Gold",
+      "bestSeller": true,
+      "features": [
+        "Google Preview Book",
+        "Social Media Promotion for 3 months",
+        "Marketing Strategy Call - 90 Min",
+        "Amazon Optimization",
+        "Search Engine Optimization - (3 Months)",
+        "Video Reviews - 5 Reviews",
+        "Book Launch Animated Video - one 1-minute video",
+        "Author Website Setup - 1",
+        "Website for author and book",
+        "Promotional Bookmarks Design - 5 each",
+        "Promotional Postcards Design - 5 each",
+        "Promotional Business Cards Design - 10 each",
+        "Blogs/Articles Marketing - 15",
+        "Blogs written and posted on high authority domain platforms",
+        "Press Release Campaign - 5",
+        "Media Outlets - 10 Press Releases",
+        "Wikipedia Page for the book",
+        "Google Knowledge Panel for the book"
+      ]
+    },
+    {
+      "name": "Platinum",
+      "bestSeller": true,
+      "features": [
+        "Google Preview Book",
+        "Social Media Promotion for 6 months",
+        "Marketing Strategy Call - 90 Min",
+        "Amazon Optimization",
+        "Search Engine Optimization - (6 Months)",
+        "Video Reviews - 10 Reviews",
+        "Book Launch Animated Video - two 1-minute videos",
+        "Author Website Setup - 1",
+        "Website for author and book",
+        "Promotional Bookmarks Design - 10 each",
+        "Promotional Postcards Design - 10 each",
+        "Promotional Business Cards Design - 10 each",
+        "Blogs/Articles Marketing - 30",
+        "Blogs written and posted on high authority domain platforms",
+        "Press Release Campaign - 10",
+        "Media Outlets - 10 Press Releases",
+        "Wikipedia Page for the book",
+        "Google Knowledge Panel for the book"
+      ]
+    }
+  ]
+}

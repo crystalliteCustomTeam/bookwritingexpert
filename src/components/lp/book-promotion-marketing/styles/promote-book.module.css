@@ -1,0 +1,155 @@
+.root {
+  position: relative;
+  padding: 50px 0;
+}
+.content {
+  padding: 0 0 25px;
+}
+
+.content h2 {
+  text-align: center;
+  font-size: 45px;
+  line-height: 55px;
+  padding: 0 0 20px;
+  font-weight: 500;
+}
+.root2 {
+  position: relative;
+  z-index: 10;
+}
+.root2 .before {
+  background-color: #ffffffe0;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  inset: 0 0 auto 0;
+  z-index: 11;
+}
+.root2 .after {
+  background-color: #ffffffe0;
+  position: absolute;
+  width: 20%;
+  height: 100%;
+  inset: 0 0 0 auto;
+  z-index: 11;
+}
+.slides {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  flex: 0 0 20%;
+}
+.card {
+  height: 100%;
+  padding: 25px 20px;
+  background-color: #101914;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  max-width: 155px;
+  margin: 0 auto 15px;
+}
+.card p {
+  margin: 15px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.slidesArrows {
+  z-index: 12;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.slidesPrevArrow,
+.slidesNextArrow {
+  border: none;
+  position: absolute;
+}
+.slidesNextArrow {
+  right: 17%;
+}
+.slidesPrevArrow {
+  left: 17%;
+}
+@media screen and (max-width: 1399px) {
+  .slides {
+    flex: 0 0 25%;
+  }
+  .root2 .before {
+    width: 25%;
+  }
+  .root2 .after {
+    width: 25%;
+  }
+  .slidesNextArrow {
+    right: 20%;
+  }
+  .slidesPrevArrow {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .slides {
+    flex: 0 0 33.33%;
+  }
+  .root2 .before {
+    width: 33.33%;
+  }
+  .root2 .after {
+    width: 33.33%;
+  }
+  .slidesNextArrow {
+    right: 28%;
+  }
+  .slidesPrevArrow {
+    left: 28%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .slides {
+    flex: 0 0 50%;
+  }
+  .root2 .before {
+    display: none;
+  }
+  .root2 .after {
+    display: none;
+  }
+  .slidesArrows {
+    margin: 40px 0 0 !important;
+    position: static;
+    justify-content: center !important;
+    gap: 30px !important;
+  }
+  .slidesPrevArrow,
+  .slidesNextArrow {
+    position: static;
+  }
+}
+@media screen and (max-width: 575px) {
+  .content h2 {
+    font-size: 25px;
+    line-height: 35px;
+    padding: 0 0 15px;
+  }
+  .slides {
+    flex: 0 0 100%;
+  }
+}

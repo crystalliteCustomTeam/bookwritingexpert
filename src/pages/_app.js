@@ -1,4 +1,5 @@
 import "@/styles/globals.css"
+import "@/components/lp/book-promotion-marketing/styles/globals2.css"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 // const ZENDESK_KEY = "d1d4aa8a-5573-473a-b921-5b6a8eb467ad";
@@ -15,12 +16,30 @@ import Footerlp from "../../components/Footerlp"
 import NewbooklpFooter from "../../components/bookmarketinglp/Footer/Footer"
 import { GoogleTagManager, GoogleAnalytics } from "@next/third-parties/google"
 import localFont from "next/font/local"
-import { Poppins as FontSecondary } from "next/font/google"
+import {
+  Poppins as FontSecondary,
+  Cormorant_Garamond as FontSans,
+} from "next/font/google"
+
+// Book Promotion Marketing Header Footer
+import {
+  BookPromotionFooter,
+  BookPromotionHeader,
+} from "@/components/lp/book-promotion-marketing"
+// Book Promotion Marketing Header Footer
 
 const fontSecondary = FontSecondary({
   subsets: ["latin"],
   variable: "--font-secondary",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["italic", "normal"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
+})
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  weight: ["300", "400", "500", "600", "700"],
   style: ["italic", "normal"],
   display: "swap",
   fallback: ["system-ui", "arial"],
@@ -40,6 +59,7 @@ export default function App({ Component, pageProps }) {
   const weblink = "https://www.bookwritingexperts.com"
   const newlop = router.asPath == "/bookexperlp"
   const newbooklp = router.asPath == "/book-marketinglp"
+  const bookPromotionLp = router.asPath == "/lp/book-promotion-marketing"
   const newcol = weblink + sluginer
 
   return (
@@ -52,11 +72,21 @@ export default function App({ Component, pageProps }) {
         <link rel="canonical" href={newcol} />
       </Head>
       <Metas />
-      <div className={`${primaryFont.variable} ${fontSecondary.variable}`}>
-        {newlop || newbooklp ? <Headerlp /> : <Header />}
-        <Component {...pageProps} />
-        {newlop ? <Footerlp /> : newbooklp ? <NewbooklpFooter /> : <Footer />}
-      </div>
+      {bookPromotionLp ? (
+        <>
+          <main className={`${fontSans.variable} ${fontSecondary.variable}`}>
+            <BookPromotionHeader />
+            <Component {...pageProps} />
+            <BookPromotionFooter />
+          </main>
+        </>
+      ) : (
+        <div className={`${primaryFont.variable} ${fontSecondary.variable}`}>
+          {newlop || newbooklp ? <Headerlp /> : <Header />}
+          <Component {...pageProps} />
+          {newlop ? <Footerlp /> : newbooklp ? <NewbooklpFooter /> : <Footer />}
+        </div>
+      )}
       <Script id="tawkto-snippet">
         {`
           var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
