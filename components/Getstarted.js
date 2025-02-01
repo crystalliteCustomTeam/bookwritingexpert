@@ -23,7 +23,7 @@ const Getstarted = (props) => {
     setPagenewurl(window.location.href)
   }, [])
 
-  const [score, setScore] = useState("SUBMdasIT")
+  const [score, setScore] = useState("SUBMIT")
 
   const router = useRouter()
   const currentRoute = router.pathname
